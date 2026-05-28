@@ -27,10 +27,14 @@ jobs:
 
       - name: Publier sur GitHub Pages
         run: |
+          echo "=== Contenu de docs/ ==="
+          ls -la docs/ || echo "ERREUR : dossier docs introuvable"
+          echo "=== Git status ==="
+          git status
           git config user.name "Quiz Bot"
           git config user.email "quiz-bot@ar.fr"
           git add docs/
-          git commit -m "Quiz du jour $(date +%Y-%m-%d)" || echo "Nothing to commit"
+          git commit -m "Quiz du jour $(date +%Y-%m-%d)"
           git push
 
       - name: Envoyer la notification
