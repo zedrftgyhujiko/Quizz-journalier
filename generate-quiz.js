@@ -79,13 +79,12 @@ Règles : contextes cliniques réalistes, une seule bonne réponse, distracteurs
 
 function generateHTML(topic, questions, dateStr) {
   const quizData = JSON.stringify({ topic, questions, dateStr });
-
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz AR – ${topic}</title>
+<title>Quiz AR</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f4f8; min-height: 100vh; padding: 16px; }
@@ -97,14 +96,14 @@ function generateHTML(topic, questions, dateStr) {
   .progress-fill { background: white; height: 4px; border-radius: 4px; transition: width 0.3s; }
   .progress-txt { font-size: 12px; opacity: 0.8; margin-top: 6px; }
   .card { background: white; border-radius: 16px; padding: 20px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin-bottom: 12px; text-transform: uppercase; }
   .badge-facile { background: #d1fae5; color: #065f46; }
   .badge-intermediaire { background: #fef3c7; color: #92400e; }
   .badge-difficile { background: #fee2e2; color: #991b1b; }
   .context { font-size: 13px; color: #64748b; line-height: 1.5; margin-bottom: 12px; padding: 10px 12px; background: #f8fafc; border-radius: 8px; border-left: 3px solid #1a56a0; }
   .question { font-size: 16px; font-weight: 600; line-height: 1.5; color: #1e293b; margin-bottom: 16px; }
   .options { display: flex; flex-direction: column; gap: 8px; }
-  .opt { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.15s; background: white; text-align: left; font-size: 14px; line-height: 1.4; color: #334155; width: 100%; }
+  .opt { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; background: white; text-align: left; font-size: 14px; line-height: 1.4; color: #334155; width: 100%; }
   .opt:hover:not(:disabled) { border-color: #1a56a0; background: #eff6ff; }
   .opt-letter { font-weight: 700; color: #1a56a0; min-width: 18px; }
   .opt.correct { border-color: #059669; background: #d1fae5; color: #064e3b; }
@@ -112,17 +111,14 @@ function generateHTML(topic, questions, dateStr) {
   .opt.wrong { border-color: #dc2626; background: #fee2e2; color: #7f1d1d; }
   .opt.wrong .opt-letter { color: #dc2626; }
   .opt.reveal { border-color: #059669; background: #d1fae5; color: #064e3b; }
-  .opt.reveal .opt-letter { color: #059669; }
   .opt:disabled { cursor: default; }
   .explanation { margin-top: 14px; padding: 12px 14px; background: #eff6ff; border-radius: 10px; border-left: 3px solid #1a56a0; font-size: 13px; line-height: 1.6; color: #1e40af; }
   .next-btn { display: block; width: 100%; margin-top: 14px; padding: 13px; background: #1a56a0; color: white; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; }
-  .next-btn:hover { opacity: 0.9; }
-  .score-header { text-align: center; padding: 10px 0; }
-  .score-big { font-size: 64px; font-weight: 700; color: #1a56a0; line-height: 1; }
-  .score-total { font-size: 18px; color: #64748b; margin-top: 4px; }
-  .score-msg { font-size: 15px; font-weight: 600; margin-top: 12px; color: #1e293b; }
-  .review-item { display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid #f1f5f9; align-items: flex-start; }
-  .review-icon { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+  .score-big { font-size: 64px; font-weight: 700; color: #1a56a0; line-height: 1; text-align: center; padding-top: 10px; }
+  .score-total { font-size: 18px; color: #64748b; margin-top: 4px; text-align: center; }
+  .score-msg { font-size: 15px; font-weight: 600; margin-top: 12px; color: #1e293b; text-align: center; margin-bottom: 10px; }
+  .review-item { display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
+  .review-icon { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
   .review-ok { background: #d1fae5; color: #059669; }
   .review-ko { background: #fee2e2; color: #dc2626; }
   .review-q { font-size: 13px; color: #1e293b; line-height: 1.4; }
@@ -135,109 +131,61 @@ function generateHTML(topic, questions, dateStr) {
 <script>
 const DATA = ${quizData};
 let current = 0, selected = null, revealed = false, answers = [];
-
-function scoreMsg(s, t) {
-  const p = s/t;
-  if (p >= 0.9) return "Excellent ! Maitrise solide du sujet.";
-  if (p >= 0.7) return "Bon niveau — quelques points a consolider.";
-  if (p >= 0.5) return "Resultats corrects — revisions recommandees.";
-  return "A retravailler — repasse ce sujet bientot.";
-}
-
-function render() {
-  const app = document.getElementById('app');
-  const qs = DATA.questions;
-
-  if (current >= qs.length) {
-    const score = answers.filter((a,i) => a === qs[i].correct).length;
-    app.innerHTML = '<div class="header"><div class="header-date">' + DATA.dateStr + '</div><div class="header-topic">' + DATA.topic + '</div><div class="progress-wrap"><div class="progress-fill" style="width:100%"></div></div><div class="progress-txt">Quiz termine</div></div><div class="card"><div class="score-header"><div class="score-big">' + score + '/' + qs.length + '</div><div class="score-total">' + Math.round(score/qs.length*100) + '% de bonnes reponses</div><div class="score-msg">' + scoreMsg(score, qs.length) + '</div></div></div><div class="card"><div style="font-size:13px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Recapitulatif</div>' + qs.map((q,i) => { const ok = answers[i] === q.correct; return '<div class="review-item"><div class="review-icon ' + (ok ? 'review-ok' : 'review-ko') + '">' + (ok ? '✓' : '✗') + '</div><div><div class="review-q">Q' + q.num + '. ' + q.question + '</div>' + (!ok ? '<div class="review-answer">Ta reponse : ' + (answers[i]||'—') + ' · Bonne reponse : ' + q.correct + '</div>' : '') + '</div></div>'; }).join('') + '<button class="restart-btn" onclick="restart()">Recommencer</button></div>';
-    return;
+function scoreMsg(s,t){const p=s/t;if(p>=0.9)return"Excellent ! Maitrise solide.";if(p>=0.7)return"Bon niveau, quelques points a consolider.";if(p>=0.5)return"Correct, revisions recommandees.";return"A retravailler.";}
+function render(){
+  const app=document.getElementById('app');
+  const qs=DATA.questions;
+  if(current>=qs.length){
+    const score=answers.filter((a,i)=>a===qs[i].correct).length;
+    let h='<div class="header"><div class="header-date">'+DATA.dateStr+'</div><div class="header-topic">'+DATA.topic+'</div><div class="progress-wrap"><div class="progress-fill" style="width:100%"></div></div><div class="progress-txt">Termine</div></div>';
+    h+='<div class="card"><div class="score-big">'+score+'/'+qs.length+'</div><div class="score-total">'+Math.round(score/qs.length*100)+'%</div><div class="score-msg">'+scoreMsg(score,qs.length)+'</div></div>';
+    h+='<div class="card"><div style="font-size:13px;font-weight:600;color:#64748b;text-transform:uppercase;margin-bottom:12px">Recapitulatif</div>';
+    qs.forEach((q,i)=>{const ok=answers[i]===q.correct;h+='<div class="review-item"><div class="review-icon '+(ok?'review-ok':'review-ko')+'">'+(ok?'✓':'✗')+'</div><div><div class="review-q">Q'+q.num+'. '+q.question+'</div>'+(!ok?'<div class="review-answer">Reponse : '+q.correct+'</div>':'')+'</div></div>';});
+    h+='<button class="restart-btn" onclick="restart()">Recommencer</button></div>';
+    app.innerHTML=h;return;
   }
-
-  const q = qs[current];
-  const pct = (current / qs.length * 100).toFixed(0);
-  const letters = ['A','B','C','D'];
-  const badgeClass = q.difficulty === 'difficile' ? 'badge-difficile' : q.difficulty === 'intermediaire' || q.difficulty === 'intermédiaire' ? 'badge-intermediaire' : 'badge-facile';
-
-  let html = '<div class="header"><div class="header-date">' + DATA.dateStr + '</div><div class="header-topic">' + DATA.topic + '</div><div class="progress-wrap"><div class="progress-fill" style="width:' + pct + '%"></div></div><div class="progress-txt">Question ' + (current+1) + ' / ' + qs.length + '</div></div>';
-  html += '<div class="card"><span class="badge ' + badgeClass + '">' + q.difficulty + '</span>';
-  if (q.context) html += '<div class="context">' + q.context + '</div>';
-  html += '<div class="question">' + q.question + '</div><div class="options" id="opts">';
-  letters.forEach(l => {
-    let cls = '';
-    if (revealed) {
-      if (l === q.correct) cls = selected === l ? 'correct' : 'reveal';
-      else if (l === selected) cls = 'wrong';
-    }
-    html += '<button class="opt ' + cls + '" data-l="' + l + '"' + (revealed ? ' disabled' : '') + '><span class="opt-letter">' + l + '</span><span>' + q.options[l] + '</span></button>';
+  const q=qs[current];
+  const pct=(current/qs.length*100).toFixed(0);
+  const bc=q.difficulty==='difficile'?'badge-difficile':q.difficulty&&q.difficulty.includes('interm')?'badge-intermediaire':'badge-facile';
+  let h='<div class="header"><div class="header-date">'+DATA.dateStr+'</div><div class="header-topic">'+DATA.topic+'</div><div class="progress-wrap"><div class="progress-fill" style="width:'+pct+'%"></div></div><div class="progress-txt">Question '+(current+1)+' / '+qs.length+'</div></div>';
+  h+='<div class="card"><span class="badge '+bc+'">'+q.difficulty+'</span>';
+  if(q.context)h+='<div class="context">'+q.context+'</div>';
+  h+='<div class="question">'+q.question+'</div><div class="options" id="opts">';
+  ['A','B','C','D'].forEach(l=>{
+    let cls='';
+    if(revealed){if(l===q.correct)cls=selected===l?'correct':'reveal';else if(l===selected)cls='wrong';}
+    h+='<button class="opt '+cls+'" data-l="'+l+'"'+(revealed?' disabled':'')+"><span class='opt-letter'>"+l+"</span><span>"+q.options[l]+"</span></button>";
   });
-  html += '</div>';
-  if (revealed) {
-    html += '<div class="explanation"><strong>Reponse : ' + q.correct + '</strong> — ' + q.explanation + '</div>';
-    html += '<button class="next-btn" onclick="next()">' + (current < qs.length-1 ? 'Question suivante →' : 'Voir les resultats →') + '</button>';
-  }
-  html += '</div>';
-  app.innerHTML = html;
-
-  if (!revealed) {
-    document.getElementById('opts').addEventListener('click', e => {
-      const btn = e.target.closest('[data-l]');
-      if (!btn) return;
-      selected = btn.dataset.l;
-      answers[current] = selected;
-      revealed = true;
-      render();
-    });
-  }
+  h+='</div>';
+  if(revealed){h+='<div class="explanation"><strong>Reponse : '+q.correct+'</strong> — '+q.explanation+'</div><button class="next-btn" onclick="next()">'+(current<qs.length-1?'Question suivante →':'Voir les resultats →')+'</button>';}
+  h+='</div>';
+  app.innerHTML=h;
+  if(!revealed){document.getElementById('opts').addEventListener('click',e=>{const b=e.target.closest('[data-l]');if(!b)return;selected=b.dataset.l;answers[current]=selected;revealed=true;render();});}
 }
-
-function next() { current++; selected = null; revealed = false; render(); }
-function restart() { current = 0; selected = null; revealed = false; answers = []; render(); }
-
+function next(){current++;selected=null;revealed=false;render();}
+function restart(){current=0;selected=null;revealed=false;answers=[];render();}
 render();
 </script>
 </body>
 </html>`;
 }
 
-async function sendNotif(ntfyTopic, title, message, url) {
-  const response = await fetch(`https://ntfy.sh/${ntfyTopic}`, {
-    method: "POST",
-    headers: {
-      "Title": title,
-      "Priority": "high",
-      "Tags": "stethoscope",
-      "Click": url,
-      "Content-Type": "text/plain; charset=utf-8",
-    },
-    body: message,
-  });
-  if (!response.ok) throw new Error(`ntfy erreur ${response.status}`);
-}
-
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) throw new Error("ANTHROPIC_API_KEY manquante");
-  if (!process.env.NTFY_TOPIC) throw new Error("NTFY_TOPIC manquante");
 
   const topic = getTodayTopic();
   console.log(`Theme : ${topic}`);
 
-  console.log("Generation du quiz...");
+  console.log("Generation...");
   const data = await generateQuiz(topic);
   console.log(`${data.questions.length} questions generees`);
 
-  const dateStr = new Date().toLocaleDateString("fr-FR", {
-    weekday: "long", day: "numeric", month: "long"
-  });
-
+  const dateStr = new Date().toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
   const html = generateHTML(topic, data.questions, dateStr);
+
   fs.mkdirSync("docs", { recursive: true });
   fs.writeFileSync(path.join("docs", "index.html"), html, "utf8");
-  console.log("Fichier docs/index.html cree");
-
-  const notifMsg = `${topic} — 5 questions\nAppuie pour ouvrir le quiz interactif`;
-  await sendNotif(process.env.NTFY_TOPIC, "Quiz AR du jour", notifMsg, PAGES_URL);
-  console.log(`Notification envoyee`);
+  console.log("docs/index.html cree");
 }
 
 main().catch(err => { console.error("Erreur :", err.message); process.exit(1); });
