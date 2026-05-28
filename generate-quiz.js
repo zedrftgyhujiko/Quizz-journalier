@@ -1,22 +1,22 @@
 const TOPICS = [
-  "Voies aériennes et intubation difficile",
-  "Pharmacologie anesthésique (curares, morphiniques, halogénés)",
-  "États de choc (septique, hémorragique, anaphylactique, cardiogénique)",
-  "Réanimation cardio-pulmonaire (RCP adulte)",
-  "Anesthésie locorégionale (rachianesthésie, péridurale, blocs périphériques)",
-  "Ventilation mécanique et syndrome de détresse respiratoire aiguë",
-  "Sédation-analgésie en réanimation",
-  "Analgésie et prise en charge de la douleur aiguë",
-  "Pancréatite aiguë sévère",
-  "Méningites bactériennes et encéphalites",
-  "Hémostase, coagulopathies et transfusion",
-  "Monitorage peropératoire (BIS, TOF, Vigileo...)",
+  "Voies aeriennes et intubation difficile",
+  "Pharmacologie anesthesique (curares, morphiniques, halogenes)",
+  "Etats de choc (septique, hemorragique, anaphylactique, cardiogenique)",
+  "Reanimation cardio-pulmonaire (RCP adulte)",
+  "Anesthesie locoregionale (rachianesthesie, peridurale, blocs peripheriques)",
+  "Ventilation mecanique et syndrome de detresse respiratoire aigue",
+  "Sedation-analgesie en reanimation",
+  "Analgesie et prise en charge de la douleur aigue",
+  "Pancreatite aigue severe",
+  "Meningites bacteriennes et encephalites",
+  "Hemostase, coagulopathies et transfusion",
+  "Monitorage peroperatoire (BIS, TOF, Vigileo)",
   "Sepsis et choc septique (Surviving Sepsis Campaign)",
-  "Insuffisance rénale aiguë en réanimation",
+  "Insuffisance renale aigue en reanimation",
   "Traumatologie grave et damage control",
-  "Anesthésie du patient à estomac plein",
-  "Complications peranesthésiques (hypotension, bronchospasme, allergie...)",
-  "Période postopératoire et SSPI",
+  "Anesthesie du patient a estomac plein",
+  "Complications peranesthesiques (hypotension, bronchospasme, allergie)",
+  "Periode postoperatoire et SSPI",
 ];
 
 function getTodayTopic() {
@@ -27,38 +27,37 @@ function getTodayTopic() {
 }
 
 async function generateQuiz(topic) {
-  const systemPrompt = `Tu es un formateur expert en anesthésie-réanimation pour internes français (DES/DESC). Génère exactement 5 questions QCM cliniques de niveau DESC sur : "${topic}".
+  const systemPrompt = `Tu es un formateur expert en anesthesie-reanimation pour internes francais (DES/DESC). Genere exactement 5 questions QCM cliniques de niveau DESC sur : "${topic}".
 
-Réponds UNIQUEMENT en JSON valide, sans markdown, sans texte avant ou après. Format strict :
+Reponds UNIQUEMENT en JSON valide, sans markdown, sans texte avant ou apres. Format strict :
 {
   "topic": "${topic}",
   "questions": [
     {
       "num": 1,
-      "difficulty": "intermédiaire",
-      "question": "Question clinique précise ?",
+      "difficulty": "intermediaire",
+      "question": "Question clinique precise ?",
       "options": { "A": "...", "B": "...", "C": "...", "D": "..." },
       "correct": "B",
-      "explanation": "Explication pédagogique concise en 2-3 phrases, avec le piège principal."
+      "explanation": "Explication pedagogique concise en 2-3 phrases."
     }
   ]
 }
 
-Règles impératives :
-- Contextes cliniques réalistes (sexe/âge/paramètres vitaux)
-- Une seule bonne réponse par question
-- Distracteurs plausibles qui correspondent à des erreurs classiques d'internes
-- Référence aux guidelines françaises/européennes récentes quand pertinent
-- Varie les difficultés : 2 faciles, 2 intermédiaires, 1 difficile`;
+Regles : contextes cliniques realistes, une seule bonne reponse, distracteurs plausibles, references aux guidelines recentes. Varie les difficultes : 2 faciles, 2 intermediaires, 1 difficile.`;
 
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": process.env.ANTHROPIC_API_KEY,
+      "anthropic-version": "2023-06-01",
+    },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
       max_tokens: 4000,
       system: systemPrompt,
-      messages: [{ role: "user", content: `Génère 5 QCM sur : ${topic}` }],
+      messages: [{ role: "user", content: `Genere 5 QCM sur : ${topic}` }],
     }),
   });
 
@@ -73,54 +72,56 @@ Règles impératives :
   return JSON.parse(clean);
 }
 
-function formatQuestionsMessage(quiz) {
+function formatMessage(quiz) {
   const today = new Date().toLocaleDateString("fr-FR", {
     weekday: "long",
     day: "numeric",
     month: "long",
   });
 
-  let msg = `📅 ${today}\n\n`;
+  let msg = `Quiz du jour - ${quiz.topic}\n`;
+  msg += `${today}\n\n`;
 
   for (const q of quiz.questions) {
-    const badge = q.difficulty === "difficile" ? "🔴" : q.difficulty === "intermédiaire" ? "🟡" : "🟢";
-    msg += `${badge} Q${q.num}. ${q.question}\n`;
-    msg += `   A) ${q.options.A}\n`;
-    msg += `   B) ${q.options.B}\n`;
-    msg += `   C) ${q.options.C}\n`;
-    msg += `   D) ${q.options.D}\n\n`;
+    const level = q.difficulty === "difficile" ? "[Difficile]" : q.difficulty === "intermediaire" ? "[Moyen]" : "[Facile]";
+    msg += `Q${q.num} ${level}\n`;
+    msg += `${q.question}\n`;
+    msg += `A) ${q.options.A}\n`;
+    msg += `B) ${q.options.B}\n`;
+    msg += `C) ${q.options.C}\n`;
+    msg += `D) ${q.options.D}\n\n`;
   }
 
-  msg += `━━━━━━━━━━━━━━━\n`;
-  msg += `💡 Réponses ci-dessous — réfléchis d'abord !\n`;
-  msg += `━━━━━━━━━━━━━━━\n\n`;
+  msg += `-------- REPONSES --------\n\n`;
 
   for (const q of quiz.questions) {
-    msg += `Q${q.num} → ${q.correct} : ${q.explanation}\n\n`;
+    msg += `Q${q.num} -> ${q.correct} : ${q.explanation}\n\n`;
   }
 
   return msg.trim();
 }
 
-async function sendNtfyNotification(topic, message, ntfyTopic) {
-  const title = `🏥 Quiz du jour — ${topic.split("(")[0].trim()}`;
+async function sendNotification(topic, message, ntfyTopic) {
+  const title = `Quiz AR - ${topic.split("(")[0].trim()}`;
+  const encoded = Buffer.from(message, "utf8");
 
   const response = await fetch(`https://ntfy.sh/${ntfyTopic}`, {
     method: "POST",
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
-      Title: title,
-      Priority: "default",
-      Tags: "stethoscope,brain",
+      "Title": Buffer.from(title, "utf8").toString("latin1"),
+      "Priority": "default",
+      "Tags": "stethoscope",
     },
-    body: message,
+    body: encoded,
   });
 
   if (!response.ok) {
-    throw new Error(`ntfy erreur ${response.status}`);
+    const err = await response.text();
+    throw new Error(`ntfy erreur ${response.status}: ${err}`);
   }
 
-  console.log(`✅ Notification envoyée sur ntfy.sh/${ntfyTopic}`);
+  console.log(`Notification envoyee sur ntfy.sh/${ntfyTopic}`);
 }
 
 async function main() {
@@ -130,34 +131,21 @@ async function main() {
   if (!apiKey) throw new Error("Variable ANTHROPIC_API_KEY manquante");
   if (!ntfyTopic) throw new Error("Variable NTFY_TOPIC manquante");
 
-  // Patch fetch pour inclure la clé API Anthropic
-  const originalFetch = global.fetch;
-  global.fetch = (url, options = {}) => {
-    if (url.includes("anthropic.com")) {
-      options.headers = {
-        ...options.headers,
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-      };
-    }
-    return originalFetch(url, options);
-  };
-
   const topic = getTodayTopic();
-  console.log(`📚 Thème du jour : ${topic}`);
+  console.log(`Theme du jour : ${topic}`);
 
-  console.log("⏳ Génération du quiz...");
+  console.log("Generation du quiz...");
   const quiz = await generateQuiz(topic);
-  console.log(`✅ ${quiz.questions.length} questions générées`);
+  console.log(`${quiz.questions.length} questions generees`);
 
-  const message = formatQuestionsMessage(quiz);
-  console.log("📤 Envoi de la notification...");
-  await sendNtfyNotification(topic, message, ntfyTopic);
+  const message = formatMessage(quiz);
+  console.log("Envoi de la notification...");
+  await sendNotification(topic, message, ntfyTopic);
 
-  console.log("🎉 Quiz du jour envoyé avec succès !");
+  console.log("Quiz du jour envoye avec succes !");
 }
 
 main().catch((err) => {
-  console.error("❌ Erreur :", err.message);
+  console.error("Erreur :", err.message);
   process.exit(1);
 });
