@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Récupérer le code
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configurer Node.js
         uses: actions/setup-node@v4
@@ -25,14 +23,15 @@ jobs:
       - name: Générer le quiz HTML
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: node generate-quiz.js
 
-      - name: Publier sur GitHub Pages
-        run: |
-          git config user.name "Quiz Bot"
-          git config user.email "quiz-bot@ar.fr"
-          git add docs/index.html
-          git status
-          git diff --staged --quiet || git commit -m "Quiz du jour $(date +%Y-%m-%d)"
-          git push origin main
+      - name: Publier le fichier sur GitHub
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Quiz du jour"
+          file_pattern: docs/index.html
+
+      - name: Envoyer la notification
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: node send-notif.js
