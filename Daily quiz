@@ -6,11 +6,20 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  send-quiz:
+  build-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Récupérer le code
         uses: actions/checkout@v4
@@ -25,17 +34,17 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node generate-quiz.js
 
-      - name: Publier sur GitHub Pages
-        run: |
-          echo "=== Contenu de docs/ ==="
-          ls -la docs/ || echo "ERREUR : dossier docs introuvable"
-          echo "=== Git status ==="
-          git status
-          git config user.name "Quiz Bot"
-          git config user.email "quiz-bot@ar.fr"
-          git add docs/
-          git commit -m "Quiz du jour $(date +%Y-%m-%d)"
-          git push
+      - name: Configurer Pages
+        uses: actions/configure-pages@v5
+
+      - name: Préparer l'artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Envoyer la notification
         env:
