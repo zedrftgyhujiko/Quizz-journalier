@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+const PAGES_URL = "https://zedrftgyhujiko.github.io/Quizz-journalier/";
+
 const TOPICS = [
   "Voies aériennes et intubation difficile",
   "Pharmacologie anesthésique (curares, morphiniques, halogénés)",
@@ -102,7 +104,7 @@ function generateHTML(topic, questions, dateStr) {
   .context { font-size: 13px; color: #64748b; line-height: 1.5; margin-bottom: 12px; padding: 10px 12px; background: #f8fafc; border-radius: 8px; border-left: 3px solid #1a56a0; }
   .question { font-size: 16px; font-weight: 600; line-height: 1.5; color: #1e293b; margin-bottom: 16px; }
   .options { display: flex; flex-direction: column; gap: 8px; }
-  .opt { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.15s; background: white; text-align: left; font-size: 14px; line-height: 1.4; color: #334155; }
+  .opt { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer; transition: all 0.15s; background: white; text-align: left; font-size: 14px; line-height: 1.4; color: #334155; width: 100%; }
   .opt:hover:not(:disabled) { border-color: #1a56a0; background: #eff6ff; }
   .opt-letter { font-weight: 700; color: #1a56a0; min-width: 18px; }
   .opt.correct { border-color: #059669; background: #d1fae5; color: #064e3b; }
@@ -113,8 +115,7 @@ function generateHTML(topic, questions, dateStr) {
   .opt.reveal .opt-letter { color: #059669; }
   .opt:disabled { cursor: default; }
   .explanation { margin-top: 14px; padding: 12px 14px; background: #eff6ff; border-radius: 10px; border-left: 3px solid #1a56a0; font-size: 13px; line-height: 1.6; color: #1e40af; }
-  .explanation strong { font-weight: 700; }
-  .next-btn { display: block; width: 100%; margin-top: 14px; padding: 13px; background: #1a56a0; color: white; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; transition: opacity 0.15s; }
+  .next-btn { display: block; width: 100%; margin-top: 14px; padding: 13px; background: #1a56a0; color: white; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; }
   .next-btn:hover { opacity: 0.9; }
   .score-header { text-align: center; padding: 10px 0; }
   .score-big { font-size: 64px; font-weight: 700; color: #1a56a0; line-height: 1; }
@@ -127,24 +128,20 @@ function generateHTML(topic, questions, dateStr) {
   .review-q { font-size: 13px; color: #1e293b; line-height: 1.4; }
   .review-answer { font-size: 12px; color: #64748b; margin-top: 2px; }
   .restart-btn { display: block; width: 100%; margin-top: 16px; padding: 13px; background: #f1f5f9; color: #1e293b; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; }
-  .hidden { display: none; }
 </style>
 </head>
 <body>
 <div class="container" id="app"></div>
 <script>
 const DATA = ${quizData};
-let current = 0;
-let selected = null;
-let revealed = false;
-let answers = [];
+let current = 0, selected = null, revealed = false, answers = [];
 
 function scoreMsg(s, t) {
   const p = s/t;
-  if (p >= 0.9) return "Excellent ! Maîtrise solide du sujet.";
-  if (p >= 0.7) return "Bon niveau — quelques points à consolider.";
-  if (p >= 0.5) return "Résultats corrects — révisions recommandées.";
-  return "À retravailler — repasse ce sujet bientôt.";
+  if (p >= 0.9) return "Excellent ! Maitrise solide du sujet.";
+  if (p >= 0.7) return "Bon niveau — quelques points a consolider.";
+  if (p >= 0.5) return "Resultats corrects — revisions recommandees.";
+  return "A retravailler — repasse ce sujet bientot.";
 }
 
 function render() {
@@ -153,73 +150,34 @@ function render() {
 
   if (current >= qs.length) {
     const score = answers.filter((a,i) => a === qs[i].correct).length;
-    app.innerHTML = \`
-      <div class="header">
-        <div class="header-date">\${DATA.dateStr}</div>
-        <div class="header-topic">\${DATA.topic}</div>
-        <div class="progress-wrap"><div class="progress-fill" style="width:100%"></div></div>
-        <div class="progress-txt">Quiz terminé</div>
-      </div>
-      <div class="card">
-        <div class="score-header">
-          <div class="score-big">\${score}/\${qs.length}</div>
-          <div class="score-total">\${Math.round(score/qs.length*100)}% de bonnes réponses</div>
-          <div class="score-msg">\${scoreMsg(score, qs.length)}</div>
-        </div>
-      </div>
-      <div class="card">
-        <div style="font-size:13px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Récapitulatif</div>
-        \${qs.map((q,i) => {
-          const ok = answers[i] === q.correct;
-          return \`<div class="review-item">
-            <div class="review-icon \${ok ? 'review-ok' : 'review-ko'}">\${ok ? '✓' : '✗'}</div>
-            <div>
-              <div class="review-q">Q\${q.num}. \${q.question}</div>
-              \${!ok ? \`<div class="review-answer">Ta réponse : \${answers[i] || '—'} · Bonne réponse : \${q.correct}</div>\` : ''}
-            </div>
-          </div>\`;
-        }).join('')}
-        <button class="restart-btn" onclick="restart()">Recommencer</button>
-      </div>
-    \`;
+    app.innerHTML = '<div class="header"><div class="header-date">' + DATA.dateStr + '</div><div class="header-topic">' + DATA.topic + '</div><div class="progress-wrap"><div class="progress-fill" style="width:100%"></div></div><div class="progress-txt">Quiz termine</div></div><div class="card"><div class="score-header"><div class="score-big">' + score + '/' + qs.length + '</div><div class="score-total">' + Math.round(score/qs.length*100) + '% de bonnes reponses</div><div class="score-msg">' + scoreMsg(score, qs.length) + '</div></div></div><div class="card"><div style="font-size:13px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Recapitulatif</div>' + qs.map((q,i) => { const ok = answers[i] === q.correct; return '<div class="review-item"><div class="review-icon ' + (ok ? 'review-ok' : 'review-ko') + '">' + (ok ? '✓' : '✗') + '</div><div><div class="review-q">Q' + q.num + '. ' + q.question + '</div>' + (!ok ? '<div class="review-answer">Ta reponse : ' + (answers[i]||'—') + ' · Bonne reponse : ' + q.correct + '</div>' : '') + '</div></div>'; }).join('') + '<button class="restart-btn" onclick="restart()">Recommencer</button></div>';
     return;
   }
 
   const q = qs[current];
   const pct = (current / qs.length * 100).toFixed(0);
   const letters = ['A','B','C','D'];
-  const badgeClass = q.difficulty === 'difficile' ? 'badge-difficile' : q.difficulty === 'intermédiaire' ? 'badge-intermediaire' : 'badge-facile';
+  const badgeClass = q.difficulty === 'difficile' ? 'badge-difficile' : q.difficulty === 'intermediaire' || q.difficulty === 'intermédiaire' ? 'badge-intermediaire' : 'badge-facile';
 
-  app.innerHTML = \`
-    <div class="header">
-      <div class="header-date">\${DATA.dateStr}</div>
-      <div class="header-topic">\${DATA.topic}</div>
-      <div class="progress-wrap"><div class="progress-fill" style="width:\${pct}%"></div></div>
-      <div class="progress-txt">Question \${current+1} / \${qs.length}</div>
-    </div>
-    <div class="card">
-      <span class="badge \${badgeClass}">\${q.difficulty}</span>
-      \${q.context ? \`<div class="context">\${q.context}</div>\` : ''}
-      <div class="question">\${q.question}</div>
-      <div class="options" id="opts">
-        \${letters.map(l => {
-          let cls = '';
-          if (revealed) {
-            if (l === q.correct) cls = selected === l ? 'correct' : 'reveal';
-            else if (l === selected) cls = 'wrong';
-          }
-          return \`<button class="opt \${cls}" data-l="\${l}" \${revealed ? 'disabled' : ''}>
-            <span class="opt-letter">\${l}</span>
-            <span>\${q.options[l]}</span>
-          </button>\`;
-        }).join('')}
-      </div>
-      \${revealed ? \`
-        <div class="explanation"><strong>Réponse : \${q.correct}</strong> — \${q.explanation}</div>
-        <button class="next-btn" onclick="next()">\${current < qs.length-1 ? 'Question suivante →' : 'Voir les résultats →'}</button>
-      \` : ''}
-    </div>
-  \`;
+  let html = '<div class="header"><div class="header-date">' + DATA.dateStr + '</div><div class="header-topic">' + DATA.topic + '</div><div class="progress-wrap"><div class="progress-fill" style="width:' + pct + '%"></div></div><div class="progress-txt">Question ' + (current+1) + ' / ' + qs.length + '</div></div>';
+  html += '<div class="card"><span class="badge ' + badgeClass + '">' + q.difficulty + '</span>';
+  if (q.context) html += '<div class="context">' + q.context + '</div>';
+  html += '<div class="question">' + q.question + '</div><div class="options" id="opts">';
+  letters.forEach(l => {
+    let cls = '';
+    if (revealed) {
+      if (l === q.correct) cls = selected === l ? 'correct' : 'reveal';
+      else if (l === selected) cls = 'wrong';
+    }
+    html += '<button class="opt ' + cls + '" data-l="' + l + '"' + (revealed ? ' disabled' : '') + '><span class="opt-letter">' + l + '</span><span>' + q.options[l] + '</span></button>';
+  });
+  html += '</div>';
+  if (revealed) {
+    html += '<div class="explanation"><strong>Reponse : ' + q.correct + '</strong> — ' + q.explanation + '</div>';
+    html += '<button class="next-btn" onclick="next()">' + (current < qs.length-1 ? 'Question suivante →' : 'Voir les resultats →') + '</button>';
+  }
+  html += '</div>';
+  app.innerHTML = html;
 
   if (!revealed) {
     document.getElementById('opts').addEventListener('click', e => {
@@ -233,17 +191,8 @@ function render() {
   }
 }
 
-function next() {
-  current++;
-  selected = null;
-  revealed = false;
-  render();
-}
-
-function restart() {
-  current = 0; selected = null; revealed = false; answers = [];
-  render();
-}
+function next() { current++; selected = null; revealed = false; render(); }
+function restart() { current = 0; selected = null; revealed = false; answers = []; render(); }
 
 render();
 </script>
@@ -269,14 +218,13 @@ async function sendNotif(ntfyTopic, title, message, url) {
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) throw new Error("ANTHROPIC_API_KEY manquante");
   if (!process.env.NTFY_TOPIC) throw new Error("NTFY_TOPIC manquante");
-  if (!process.env.PAGES_URL) throw new Error("PAGES_URL manquante");
 
   const topic = getTodayTopic();
-  console.log(`Thème : ${topic}`);
+  console.log(`Theme : ${topic}`);
 
-  console.log("Génération du quiz...");
+  console.log("Generation du quiz...");
   const data = await generateQuiz(topic);
-  console.log(`${data.questions.length} questions générées`);
+  console.log(`${data.questions.length} questions generees`);
 
   const dateStr = new Date().toLocaleDateString("fr-FR", {
     weekday: "long", day: "numeric", month: "long"
@@ -285,12 +233,11 @@ async function main() {
   const html = generateHTML(topic, data.questions, dateStr);
   fs.mkdirSync("docs", { recursive: true });
   fs.writeFileSync(path.join("docs", "index.html"), html, "utf8");
-  console.log("Fichier docs/index.html créé");
+  console.log("Fichier docs/index.html cree");
 
-  const url = process.env.PAGES_URL;
-  const notifMsg = `${topic} — ${data.questions.length} questions\nAppuie pour ouvrir le quiz interactif`;
-  await sendNotif(process.env.NTFY_TOPIC, "Quiz AR du jour", notifMsg, url);
-  console.log(`Notification envoyée → ${url}`);
+  const notifMsg = `${topic} — 5 questions\nAppuie pour ouvrir le quiz interactif`;
+  await sendNotif(process.env.NTFY_TOPIC, "Quiz AR du jour", notifMsg, PAGES_URL);
+  console.log(`Notification envoyee`);
 }
 
 main().catch(err => { console.error("Erreur :", err.message); process.exit(1); });
