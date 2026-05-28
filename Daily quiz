@@ -25,11 +25,13 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node generate-quiz.js
 
-      - name: Publier le fichier sur GitHub
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Quiz du jour"
-          file_pattern: docs/index.html
+      - name: Publier sur GitHub Pages
+        run: |
+          git config user.name "Quiz Bot"
+          git config user.email "quiz-bot@ar.fr"
+          git add docs/
+          git commit -m "Quiz du jour $(date +%Y-%m-%d)" || echo "Nothing to commit"
+          git push
 
       - name: Envoyer la notification
         env:
