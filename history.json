@@ -199,5 +199,361 @@
         "explanation": "La recirculation est la première cause à évaluer en VV-ECMO lorsque la saturation reste basse malgré une FiO2 100% sur le circuit et un débit adéquat. Elle survient quand une fraction du sang oxygéné sortant de la canule de réinjection est directement aspirée par la canule de drainage avant de circuler dans le lit vasculaire pulmonaire. Diagnostic : SaO2 en entrée d'oxygénateur (=sang drainé) proche de la SaO2 en sortie (>95%) plutôt que d'être à la saturation veineuse mixte (<70%). Causes : canules trop proches l'une de l'autre, débit ECMO excessif par rapport au débit cardiaque natif, mauvais positionnement des canules. Solution : repositionnement des canules (augmenter la distance entre les extrémités), ou réduction du débit ECMO si tolérable. L'option B (dysfonction membranaire) se manifeste par une saturation en sortie d'oxygénateur basse (< 95-98%) plutôt que par une saturation du patient basse avec sortie oxygénateur normale. L'option D (thrombose de canule) entraîne une chute du débit ECMO mesurable sur la console. Le piège est de confondre recirculation et dysfonction membranaire, deux situations nécessitant des actions thérapeutiques très différentes."
       }
     ]
+  },
+  {
+    "date": "2026-05-29",
+    "dateStr": "vendredi 29 mai",
+    "topic": "Prise en charge du syndrome d'hypertension intracrânienne aiguë en réanimation : cibles tensionnelles, osmothérapie et neuromonitorage",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le syndrome d'hypertension intracrânienne (HTIC) aiguë est une urgence neurologique dont le pronostic vital et fonctionnel dépend de la rapidité et de la rigueur de la prise en charge. En réanimation, la maîtrise des cibles de pression de perfusion cérébrale (PPC), des modalités d'osmothérapie et des outils de neuromonitorage est indispensable pour prévenir les lésions ischémiques secondaires, principale cause de mortalité évitable.",
+      "sections": [
+        {
+          "title": "1. Définitions et rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **pression intracrânienne (PIC)** normale est de **5 à 15 mmHg** chez l'adulte en décubitus dorsal. Une **HTIC** est définie par une PIC > **20 mmHg** de manière soutenue (> 5 minutes), seuil retenu par les recommandations de la Brain Trauma Foundation (BTF) 2016 et confirmé en pratique courante."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**PIC** : pression intracrânienne normale 5–15 mmHg ; HTIC si > 20 mmHg de façon soutenue",
+                "**PPC** (Pression de Perfusion Cérébrale) = PAM − PIC ; cible 60–70 mmHg en neuro-réanimation",
+                "**Compliance cérébrale** : relation volume/pression, non linéaire ; au-delà du point d'inflexion, toute augmentation de volume entraîne une élévation brutale de la PIC",
+                "**Doctrine de Monroe-Kellie** : volume intracrânien total constant = parenchyme (≈ 80%) + LCS (≈ 10%) + volume sanguin cérébral (≈ 10%) ; la compensation est limitée",
+                "**Autorégulation cérébrale** : maintien du DSC constant pour PAM entre 50 et 150 mmHg chez le sujet sain ; fréquemment altérée en cas de traumatisme crânien grave (TCG) ou d'AVC sévère",
+                "**Pression de fermeture critique** : pression en dessous de laquelle le DSC s'annule ; distincte de la PIC isolée"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "PPC = PAM − PIC | Cible PPC : 60–70 mmHg (BTF 2016, grade IIB) | HTIC définie : PIC > 20 mmHg > 5 minutes"
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas confondre HTIC et engagement cérébral : l'engagement peut survenir sans HTIC préalable documentée (ex. : hématome extradural expansif rapide). La PIC peut également être normalisée après osmothérapie tout en persistant une ischémie de perfusion si la PAM n'est pas maintenue."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie et mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'augmentation de la PIC résulte d'un déséquilibre entre les volumes des compartiments intracrâniens. Les mécanismes sont : **augmentation du parenchyme** (œdème cytotoxique, vasogénique ou osmotique), **augmentation du volume sanguin cérébral** (vasodilatation, thrombose veineuse), **augmentation du LCS** (hydrocéphalie obstructive ou hypersécrétoire), ou **combinaison de ces facteurs**."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Œdème cytotoxique** : mort cellulaire, passage intracellulaire de l'eau, insensible aux corticoïdes ; typique du TC et de l'AVC ischémique",
+                "**Œdème vasogénique** : rupture de la BHE, passage d'albumine et d'eau dans l'espace extracellulaire ; sensible aux corticoïdes (tumeur, abcès) ; insensible dans le TC",
+                "**Ischémie cérébrale secondaire** : PPC < 50 mmHg → ischémie ; déclenchement de la cascade excitotoxique (glutamate, Ca²⁺ intracellulaire, apoptose)",
+                "**Effet Cushing** : réponse sympathique tardive (hypertension artérielle + bradycardie + bradypnée) signant une ischémie du tronc cérébral ; signe de gravité extrême",
+                "**Vasoréactivité au CO₂** : le CO₂ est le plus puissant vasodilatateur cérébral ; chaque mmHg de PaCO₂ modifie le DSC de ≈ 3% ; justifie l'hyperventilation de sauvetage (transitoire)",
+                "**Phénomène de Lundberg** : ondes A (plateau, PIC > 50 mmHg, durée 5–20 min) = signe de compliance effondrée et d'HTIC sévère ; ondes B et C moins spécifiques"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "DSC (mL/100g/min) ∝ PPC / Résistances vasculaires cérébrales | Variation DSC ≈ 3% par mmHg de PaCO₂ | Vasoréactivité perdue si TC sévère ou mort encéphalique"
+            },
+            {
+              "type": "warning",
+              "content": "Les corticoïdes sont formellement contre-indiqués dans l'HTIC post-traumatique (étude CRASH 2004 : surmortalité démontrée). Ils ne sont indiqués que pour les œdèmes péri-tumoraux ou les méningo-encéphalites bactériennes (dexaméthasone). L'utiliser dans le TCG est une erreur grave."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation et diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le diagnostic d'HTIC repose sur un faisceau d'arguments cliniques, radiologiques et de **monitorage invasif**. Aucun signe clinique isolé n'est pathognomonique. La clinique oriente mais le **capteur de PIC** reste le gold standard pour le diagnostic et le suivi thérapeutique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Clinique** : céphalées, nausées/vomissements en jet, flou visuel, œdème papillaire (tardif), troubles de conscience (GCS ↓), anisocorie (engagement temporal = urgence chirurgicale immédiate)",
+                "**Scanner cérébral** : effacement des sillons, compression des ventricules, déviation de la ligne médiane > 5 mm, disparition des citernes de la base, hydrocéphalie — signes indirects mais non quantitatifs",
+                "**Capteur de PIC invasif** — méthode de référence ; deux types principaux :",
+                "**Cathéter ventriculaire** (DVE = dérivation ventriculaire externe) : mesure PIC dans le LCS, permet la soustraction de LCS thérapeutique ; risque infectieux (+0,5–1%/jour au-delà de J5)",
+                "**Capteur intraparenchymateux** (Codman®, Camino®, Raumedic®) : mesure fiable, moins de risque infectieux, non drainant — zéro drift possible avec le temps",
+                "**Doppler transcrânien (DTC)** : non invasif, mesure les vélocités des artères cérébrales (ACM) ; calcul de l'index de pulsatilité (IP = [systolique − diastolique] / moyen) ; IP > 1,4 suggère une HTIC ; permet l'évaluation de l'autorégulation (Mx index)",
+                "**NIRS (Near-InfraRed Spectroscopy)** : saturation régionale en O₂ (rSO₂) ; valeur normale > 60% ; chute bilatérale < 50% corrèle avec l'ischémie ; outil de monitoring non invasif adjuvant",
+                "**Pression tissulaire en O₂ (PtiO₂)** (Licox®) : mesure directe de la PO₂ dans le parenchyme cérébral ; valeur normale > 20 mmHg ; cible thérapeutique > 20 mmHg (BTF 2016) ; seuil critique < 10 mmHg",
+                "**Microdialyse cérébrale** : mesure du lactate, pyruvate, glucose, glutamate cérébraux ; ratio lactate/pyruvate > 40 = souffrance métabolique ; plutôt outil de recherche mais utilisé dans les centres experts"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Index de Pulsatilité DTC : IP = (V_sys − V_diast) / V_moy | IP normal : 0,6–1,1 | IP > 1,4 : HTIC probable | IP > 2 : DSC diastolique nul/rétrograde → engagement imminent"
+            },
+            {
+              "type": "warning",
+              "content": "La ponction lombaire est contre-indiquée en cas de suspicion d'HTIC avant un scanner et une évaluation du fond d'œil : risque d'engagement bulbaire mortel par décompression brutale du compartiment sous-tentoriel. Ce piège tue des patients."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge : cibles, osmothérapie et mesures étagées",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge suit une **approche en escalade thérapeutique** (« staircase approach », Güiza 2021), du moins invasif au plus invasif, en maintenant en permanence les cibles hémodynamiques et ventilatoires de base. La rapidité d'initiation des mesures de premier palier conditionne l'évolution."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mesures générales (Tier 0 — non spécifiques mais essentielles)** :",
+                "Position : tête surélevée à **30°**, axe tête-cou aligné (éviter la rotation/flexion du cou qui comprime les jugulaires et augmente la PIC)",
+                "Sédation-analgésie : contrôle de la douleur et de l'agitation ; **propofol** ou **midazolam** + opioïdes (fentanyl, sufentanil) ; éviter la kétamine en monothérapie si HTIC établie (mais données récentes moins formelles)",
+                "Normothermie stricte : fièvre augmente les besoins métaboliques cérébraux et la PIC ; cible T° < **37,5°C** ; paracétamol IV, couverture refroidissante si besoin",
+                "Normoglycémie : cible **6–10 mmol/L** (hypoglycémie aggrave les lésions ; hyperglycémie favorise l'acidose lactique cérébrale)",
+                "Normovolémie : éviter l'hypovolémie (↓ PAM → ↓ PPC) et l'hypervolémie (↑ PIC par œdème)",
+                "Sérum salé isotonique (NaCl 0,9%) ou légèrement hypertonique comme soluté de base ; éviter les solutés hypotoniques (Ringer Lactate, G5%) formellement contre-indiqués",
+                "**Cibles ventilatoires (Tier 1)** :",
+                "PaCO₂ : **35–40 mmHg** (normocapnie) ; une hypercapnie aggrave la vasodilatation et la PIC",
+                "PaO₂ > **60 mmHg** (éviter hypoxémie) ; SpO₂ ≥ 95%",
+                "PEEP : la plus basse compatible avec l'oxygénation (en général 5 cmH₂O) ; la PEEP élevée peut augmenter la PIC via la pression veineuse centrale",
+                "**Osmothérapie (Tier 2)** : voir section dédiée ci-dessous",
+                "**Hyperventilation de sauvetage (Tier 3)** : PaCO₂ cible **30–35 mmHg**, courte durée (< 30 min), en pont avant intervention chirurgicale ou avant osmothérapie ; ne jamais maintenir de façon prolongée (ischémie par vasoconstriction, effet rebond)",
+                "**Hypothermie thérapeutique (Tier 3)** : cible **35–36°C** en HTIC réfractaire post-TC ; données favorables sur la PIC mais pas de bénéfice pronostique démontré (POLAR 2018, EUROTHERM3235 2015) ; risque infectieux et cardiaque",
+                "**Barbituriques (Tier 4)** : thiopental ou pentobarb ; réduction du CMRO₂ ; réservé à l'HTIC réfractaire ; doses : **thiopental 3–5 mg/kg bolus puis 3–10 mg/kg/h** ; risque majeur : hypotension (contre-indiqué si instabilité hémodynamique) ; nécessite EEG en continu (cible burst-suppression)",
+                "**Craniectomie décompressive (Tier 4)** : en dernier recours pour HTIC réfractaire post-TC ou infarctus malin du territoire de l'ACM (DESTINY 2007, HAMLET 2009) ; bénéfice sur la survie mais séquelles fonctionnelles importantes"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "OSMOTHÉRAPIE — Mannitol 20% : 0,25–1 g/kg IV en 15–20 min | Effet en 15–30 min, durée 2–6h | Osmolarité plasmatique cible : < 320 mOsm/kg (risque rénal au-delà) | Trou osmolaire à surveiller (normal < 10 mOsm/kg ; arrêt si > 20 mOsm/kg)\nNaCl hypertonique 7,5% ou 20% : 1–2 mL/kg ou 100–150 mL de NaCl 20% ; Natrémie cible : 145–155 mmol/L (certains centres 155–160 mmol/L en réfractaire) | Osmolarité cible : ≤ 320 mOsm/kg\nPPC cible : 60–70 mmHg (BTF 2016, grade IIB) | PPC minimale acceptable : 50 mmHg | PPC > 70 mmHg : risque SDRA si recours aux vasopresseurs excessif"
+            },
+            {
+              "type": "text",
+              "content": "L'**osmothérapie** repose sur deux agents : le **mannitol 20%** et le **sérum salé hypertonique (SSH)**. Les données récentes (Esquenazi 2021 ; COBI trial 2023) tendent à montrer une supériorité du SSH en termes d'efficacité sur la PIC et de stabilité hémodynamique, notamment chez les patients hypovolémiques ou hypotendus."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mannitol 20%** : diurèse osmotique puissante → risque de déshydratation et d'insuffisance rénale si osmolarité > 320 mOsm/kg ; effet rebond possible si BHE lésée (accumulation dans le parenchyme)",
+                "**SSH (NaCl 7,5% ou 20%)** : préféré si hypovolémie, hypotension, insuffisance rénale pré-existante ; corriger la natrémie progressivement lors de l'arrêt pour éviter l'œdème cérébral rebond",
+                "**Ne jamais administrer de soluté hypotonique** (G5%, Ringer Lactate) chez un patient HTIC : abaisse l'osmolarité plasmatique et aggrave l'œdème cérébral",
+                "**Drainage de LCS** via la DVE : 3–5 mL de LCS à la demande ; maintenir hauteur de drainage adaptée (en général 10–15 cmH₂O au-dessus du tragus)",
+                "**Noradrénaline** : vasopresseur de choix pour maintenir la PPC ; objectif PAM calculé selon PPC cible et PIC monitorée"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Le mannitol est contre-indiqué (ou très prudent) en cas d'insuffisance rénale sévère (accumulation, surcharge) et en cas d'osmolarité > 320 mOsm/kg. L'arrêt brutal du SSH peut induire un œdème cérébral rebond par effondrement rapide de l'osmolarité plasmatique : toujours décroître progressivement."
+            }
+          ]
+        },
+        {
+          "title": "5. Complications et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Engagement cérébral** (uncal, central, amygdalien) : anisocorie, décortication/décérébration, troubles végétatifs ; traitement immédiat = hyperventilation de sauvetage + mannitol ou SSH + appel neurochirurgical",
+                "**Hémorragie sur DVE** : risque à la pose et en cours de cathétérisme ; surveillance TDM systématique après pose",
+                "**Ventriculite sur DVE** : incidence 5–15% ; risque augmente avec la durée ; prévention = asepsie rigoureuse, antibioprophylaxie en discussion ; traitement = antibiothérapie systémique ± intrathécale selon germe",
+                "**Insuffisance rénale aiguë sous mannitol** : par déshydratation et effet osmotique direct sur le tubule ; prévention par surveillance osmolarité et créatinine bi-quotidienne",
+                "**Dysnatrémie** : hypernatrémie iatrogène sous SSH (risque de myélinolyse osmotique si correction trop rapide), ou hyponatrémie de rebond à l'arrêt ; corriger la natrémie ≤ 10 mmol/L/24h",
+                "**Ischémie cérébrale sous hyperventilation** : vasoconstriction excessive si PaCO₂ < 30 mmHg prolongée ; surveillance obligatoire DTC ou PtiO₂ pendant l'hyperventilation",
+                "**Hypotension sous barbituriques** : nécessite souvent noradrénaline ; l'hypotension annule le bénéfice sur la PPC malgré la baisse de PIC",
+                "**Convulsions** : augmentent la PIC par hyperémie cérébrale et CMRO₂ ; traitement par benzodiazépines IV puis lévétiracétam ou valproate ; EEG continu si suspicion de status non convulsivant",
+                "**Mort encéphalique** : complication ultime ; PIC proche de la PAM → PPC nulle ; DTC : aspect de flux nul ou rétrograde ; confirmation selon protocole légal"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Les crises convulsives infracliniques (status non convulsif) sont fréquemment méconnues en réanimation neurologique : tout patient avec HTIC réfractaire inexpliquée sous sédation doit bénéficier d'un EEG continu ou d'au moins un EEG de 30 minutes. L'oubli de ce diagnostic retarde la prise en charge et aggrave les lésions."
+            }
+          ]
+        },
+        {
+          "title": "6. Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**BTF 2016 (Brain Trauma Foundation, 4ème édition)** : PIC > 20 mmHg = seuil de traitement (grade IIB) ; PPC cible 60–70 mmHg (grade IIB) ; PtiO₂ cible > 20 mmHg adjuvant (grade III)",
+                "**SFAR/SRLF 2020 (TC grave)** : recommandent monitorage multimodal, osmothérapie par mannitol ou SSH en première intention, maintien PPC 60–70 mmHg, éviter hyperthermie et hypercapnie",
+                "**ESO/ESICM 2022 (infarctus malin ACM)** : craniectomie décompressive recommandée chez patients < 60 ans, GCS ≤ 14, dans les 48h (grade A pour la survie) ; bénéfice fonctionnel discuté",
+                "**ESICM 2020 (monitoring neurologique en réanimation)** : recommande DTC quotidien en neuro-réanimation, NIRS comme outil adjuvant, EEG continu si suspicion de status",
+                "**Corticoïdes dans TCG — CRASH 2004 (Lancet)** : dexaméthasone associée à une surmortalité (RR 1,18) → CONTRE-INDIQUÉS dans le TCG (grade A de contre-indication)",
+                "**POLAR trial 2018 (NEJM)** : hypothermie prophylactique préhospitalière dans TCG sévère → pas de bénéfice fonctionnel (mRS à 6 mois identique), possiblement délétère ; l'hypothermie reste une option en HTIC réfractaire mais sans preuve de bénéfice sur le pronostic",
+                "**COBI trial 2023 (ICM)** : SSH continu versus bolus de mannitol dans le TC → SSH non inférieur, meilleure tolérance hémodynamique, réduction des épisodes d'HTIC",
+                "**Kétamine et PIC** : données récentes (Zeiler 2020, meta-analyse) suggèrent que la kétamine n'augmente pas la PIC si le patient est ventilé et normocapnique ; son utilisation pour la sédation procédurale est désormais acceptable"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Résumé des seuils clés :\n• PIC normale : 5–15 mmHg | HTIC : > 20 mmHg\n• PPC cible : 60–70 mmHg | PPC min : ≥ 50 mmHg\n• PaCO₂ cible : 35–40 mmHg (hyperventilation sauvetage : 30–35 mmHg, < 30 min)\n• Osmolarité max mannitol : < 320 mOsm/kg | Trou osmolaire max : < 20 mOsm/kg\n• Natrémie cible SSH : 145–155 mmol/L\n• PtiO₂ cible : > 20 mmHg | Critique : < 10 mmHg\n• IP DTC : normal < 1,2 | HTIC probable > 1,4"
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**PIC > 20 mmHg** = seuil de traitement (BTF 2016, grade IIB) ; la **PPC = PAM − PIC** doit être maintenue entre **60 et 70 mmHg** ; ces deux cibles sont indissociables en pratique.",
+        "**L'osmothérapie** repose sur le mannitol 20% (0,25–1 g/kg) ou le SSH ; surveiller l'osmolarité (< 320 mOsm/kg) et le trou osmolaire (< 20 mOsm/kg) ; ne jamais utiliser de solutés hypotoniques (G5%, Ringer Lactate).",
+        "**L'hyperventilation** est une mesure de sauvetage uniquement (PaCO₂ 30–35 mmHg, < 30 min) : elle agit vite mais provoque une vasoconstriction risquant l'ischémie si prolongée ; ne pas la maintenir en entretien.",
+        "**Les corticoïdes sont contre-indiqués dans le TCG** (CRASH 2004, surmortalité démontrée) ; ils ne sont indiqués que dans les œdèmes péri-tumoraux et certaines méningites bactériennes.",
+        "**Le neuromonitorage multimodal** (PIC, PtiO₂, DTC, EEG continu) permet d'individualiser les cibles et de détecter précocement les agressions cérébrales secondaires (ACSI) ; penser systématiquement à l'EEG devant une HTIC réfractaire inexpliquée (status non convulsif)."
+      ],
+      "references": [
+        "Carney N et al. — Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition — Neurosurgery 2017 (Brain Trauma Foundation 2016)",
+        "SFAR/SRLF — Prise en charge du traumatisme crânien grave à la phase précoce — Recommandations formalisées d'experts — Anaesth Crit Care Pain Med 2020",
+        "Jüttler E et al. — DESTINY II : Decompressive Surgery for the Treatment of Malignant Infarction of the Middle Cerebral Artery — NEJM 2014 (suivi ESO/ESICM 2022)",
+        "Cooper DJ et al. — POLAR : Prehospital Hypothermia in Patients with Severe Traumatic Brain Injury — NEJM 2018",
+        "Edwards P et al. (CRASH Trial Collaborators) — Final results of MRC CRASH, a randomised placebo-controlled trial of intravenous corticosteroid in adults with head injury — Lancet 2005",
+        "Roquilly A et al. — COBI trial : Continuous Hyperosmolar Therapy for Traumatic Brain-Injured Patients — ICM / NEJM Evidence 2023",
+        "Zeiler FA et al. — The Ketamine Effect on ICP in Traumatic Brain Injury : Systematic Review — Neurocrit Care 2020",
+        "Czosnyka M, Pickard JD — Monitoring and interpretation of intracranial pressure — J Neurol Neurosurg Psychiatry 2004 (référence physiopathologique fondamentale)",
+        "Robba C et al. — ESICM — Multimodal non-invasive cerebral monitoring in acute brain injured patients — ICM 2020",
+        "Güiza F et al. — Visualizing the pressure and time burden of intracranial hypertension in adult and paediatric TBI — Intensive Care Med 2015 (concept staircase approach)"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un homme de 34 ans est admis en réanimation pour TCG (GCS 6 après chute de 3 mètres). Scanner : contusion frontale bilatérale, pas d'hématome évacuable. Un capteur de PIC intraparenchymateux est posé. PIC = 28 mmHg, PAM = 88 mmHg. Le patient est sédaté, en normocapnie, tête à 30°. Vous administrez du mannitol 20% 1 g/kg IV. Quelle surveillance est PRIORITAIRE dans l'heure qui suit ?",
+        "question": "Quelle surveillance biologique est prioritaire dans l'heure suivant l'injection de mannitol 20% 1 g/kg ?",
+        "options": {
+          "A": "Natrémie et kaliémie pour dépister une hypernatrémie iatrogène",
+          "B": "Osmolarité plasmatique et trou osmolaire pour ne pas dépasser 320 mOsm/kg",
+          "C": "Créatininémie et diurèse horaire pour dépister une insuffisance rénale aiguë précoce",
+          "D": "Glycémie capillaire pour dépister une hyperglycémie de stress post-osmothérapie"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la surveillance prioritaire après mannitol est l'osmolarité plasmatique (mesurée) et le trou osmolaire (osmolarité mesurée − osmolarité calculée). Le risque majeur du mannitol est le dépassement du seuil de 320 mOsm/kg (toxicité rénale tubulaire) et un trou osmolaire > 20 mOsm/kg (accumulation de mannitol, perte d'efficacité, risque rénal). Cette surveillance conditionne la possibilité de réinjection. Piège A : la natrémie peut légèrement baisser par dilution avec le mannitol (soluté isotonique relatif) mais n'est pas la priorité immédiate — c'est surtout l'osmolarité totale qui compte. Piège C : l'IRA au mannitol est un risque réel mais se constitue sur plusieurs heures/jours ; la créatinine à 1h n'est pas informative. Piège D : le mannitol n'a pas d'effet direct sur la glycémie."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Patiente de 67 ans, AVC ischémique malin du territoire de l'ACM gauche, J1. GCS 8, anisocorie débutante gauche, PIC monitorée à 32 mmHg. Elle est traitée par SSH 20% en continu ; natrémie = 158 mmol/L, osmolarité = 328 mOsm/kg. L'équipe envisage d'ajouter du mannitol en bolus pour réduire rapidement la PIC.",
+        "question": "Quelle est la décision la plus appropriée concernant l'ajout de mannitol ?",
+        "options": {
+          "A": "Administrer mannitol 0,5 g/kg car son mécanisme d'action est différent du SSH et les deux sont synergiques",
+          "B": "Contre-indiquer le mannitol car l'osmolarité dépasse déjà 320 mOsm/kg, risque de toxicité rénale",
+          "C": "Administrer mannitol 0,25 g/kg en réduisant simultanément la perfusion de SSH",
+          "D": "Utiliser la glycérine IV comme alternative osmotique pour éviter le risque rénal"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'osmolarité mesurée à 328 mOsm/kg dépasse le seuil de sécurité de 320 mOsm/kg pour le mannitol. L'administration de mannitol dans ce contexte expose à une toxicité tubulaire rénale sévère et une accumulation avec perte d'efficacité osmotique. La priorité est d'optimiser les autres mesures (drainage LCS si DVE, sédation, hémodynamique). Piège A : bien que les mécanismes soient partiellement distincts (diurèse osmotique pour mannitol vs expansion plasmatique pour SSH), l'association est contre-indiquée si l'osmolarité est > 320 mOsm/kg — la synergie ne justifie pas de dépasser le seuil de sécurité. Piège C : réduire le SSH pour faire de la place au mannitol expose à une rebond d'HTIC sans garantir un résultat supérieur. Piège D : la glycérine IV n'est pas validée dans ce contexte en réanimation neurologique adulte."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Homme de 28 ans, TCG sévère GCS 5 post-AVP. PIC = 45 mmHg, PAM = 75 mmHg. Il reçoit sédation, SSH en continu, tête à 30°. L'équipe décide d'une hyperventilation de sauvetage (PaCO₂ cible 30 mmHg) en attendant le neurochirurgien.",
+        "question": "Quelle est la durée maximale recommandée de l'hyperventilation de sauvetage à PaCO₂ = 30 mmHg et pourquoi ?",
+        "options": {
+          "A": "Indéfinie si la PIC reste > 20 mmHg, car le bénéfice sur la PIC l'emporte sur tout risque",
+          "B": "Maximum 2 heures, car l'acidose cérébrospinale compense la vasoconstriction après ce délai",
+          "C": "Maximum 30 minutes, en pont vers une thérapeutique causale, en raison du risque d'ischémie cérébrale par vasoconstriction excessive",
+          "D": "Maximum 6 heures, durée identique à celle d'un bolus de mannitol, permettant la relève par l'osmothérapie"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : l'hyperventilation de sauvetage doit être limitée à moins de 30 minutes. La réduction de la PaCO₂ à 30 mmHg provoque une vasoconstriction cérébrale qui diminue la PIC mais réduit aussi le DSC, exposant à l'ischémie cérébrale. De plus, le LCS se tamponne en quelques heures (sécrétion de bicarbonate), réduisant l'efficacité et créant un effet rebond si arrêt brutal. Elle est une mesure de sauvetage uniquement, en attente d'une thérapeutique définitive. Piège A : maintenir une hyperventilation agressive de façon prolongée est l'une des erreurs les plus graves en neuro-réanimation — l'ischémie peut survenir en quelques dizaines de minutes. Piège B : la compensation du LCS commence dès 4–6h mais ce n'est pas la raison de limiter à 2h ; le seuil de 30 min est la limite de sécurité clinique. Piège D : la durée d'action du mannitol ne conditionne pas la durée de l'hyperventilation."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Femme de 52 ans hospitalisée pour hémorragie sous-arachnoïdienne grade WFNS 4. Elle présente une HTIC réfractaire à J3 (PIC = 35 mmHg sous SSH et drainage LCS). L'équipe discute l'introduction de thiopental.",
+        "question": "Parmi les conditions suivantes, laquelle est une contre-indication ABSOLUE à l'utilisation des barbituriques pour contrôler l'HTIC ?",
+        "options": {
+          "A": "PaCO₂ à 38 mmHg sous ventilation contrôlée",
+          "B": "PAM à 58 mmHg malgré noradrénaline 0,8 µg/kg/min",
+          "C": "PtiO₂ à 15 mmHg (légèrement sous la cible de 20 mmHg)",
+          "D": "Natrémie à 152 mmol/L sous SSH"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'instabilité hémodynamique avec PAM < 60 mmHg malgré des doses élevées de vasopresseurs est une contre-indication absolue aux barbituriques. Le thiopental est un puissant dépresseur cardiaque et vasodilatateur veineux ; il aggrave l'hypotension et annule tout bénéfice sur la PPC (on baisse la PIC mais on effondre la PAM, donc la PPC reste insuffisante voire diminue). Piège A : la normocapnie est au contraire une condition favorable ; ce n'est pas une contre-indication. Piège C : une PtiO₂ à 15 mmHg est légèrement sous la cible mais pas une contre-indication absolue aux barbituriques ; l'augmentation de la PPC par contrôle de la PIC pourrait au contraire améliorer la PtiO₂. Piège D : l'hypernatrémie modérée liée au SSH est attendue et n'est pas une contre-indication aux barbituriques."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Aux urgences, un interne prend en charge un patient de 45 ans, GCS 10, avec une hernie transtentorielle gauche débutante sur hématome extra-dural. Il souhaite administrer de la dexaméthasone pour réduire l'œdème cérébral en attendant le bloc opératoire.",
+        "question": "Quelle est la réponse la plus appropriée face à cette décision ?",
+        "options": {
+          "A": "Approuver : la dexaméthasone réduit l'œdème vasogénique péri-lésionnel et peut gagner du temps",
+          "B": "Refuser : les corticoïdes sont contre-indiqués dans le TC car associés à une surmortalité démontrée (CRASH 2004)",
+          "C": "Approuver uniquement si l'hématome est associé à une contusion cérébrale avec composante d'œdème vasogénique",
+          "D": "Refuser uniquement si le GCS est < 8 ; au-delà, le rapport bénéfice/risque est favorable"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'étude CRASH (Lancet 2005) a démontré une augmentation significative de la mortalité à 2 semaines (RR 1,18, p = 0,0001) avec la méthylprednisolone dans le TCG, quel que soit le GCS initial. Les corticoïdes sont formellement contre-indiqués dans tout traumatisme crânien, qu'il s'agisse d'un HED, d'un HSD ou d'une contusion. Piège A : le mécanisme vasogénique justifie les corticoïdes dans les œdèmes péri-tumoraux, pas dans le TC où l'œdème cytotoxique prédomine et où l'effet global est délétère. Piège C : la nature de l'œdème ne modifie pas la contre-indication dans le TC — les données CRASH portaient sur l'ensemble des TC graves. Piège D : le GCS ne constitue pas un critère de sélection ; la contre-indication est absolue indépendamment du score neurologique initial."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patient de 38 ans, TCG grave, monitoré par DVE. PIC stable à 18 mmHg depuis 48h. La PPC est à 65 mmHg. Le DTC montre un index de pulsatilité à 1,6 dans l'ACM droite, avec des vélocités diastoliques très basses (9 cm/s). La PtiO₂ est à 11 mmHg.",
+        "question": "Quelle interprétation et quelle action sont les plus appropriées ?",
+        "options": {
+          "A": "La PIC < 20 mmHg est rassurante ; l'IP élevé est lié à la sédation ; pas de modification du traitement",
+          "B": "L'association IP > 1,4 et PtiO₂ < 15 mmHg traduit une inadéquation perfusionnelle malgré une PIC acceptable ; augmenter la PAM cible pour améliorer la PPC",
+          "C": "Administrer un bolus de mannitol pour réduire une HTIC probablement sous-estimée par le capteur DVE",
+          "D": "Réaliser une hyperventilation de contrôle (PaCO₂ 33 mmHg) pour tester la vasoréactivité au CO₂"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : un IP > 1,4 avec vélocités diastoliques très basses (risque de flux nul) et une PtiO₂ < 15 mmHg (seuil critique à 10 mmHg, cible à 20 mmHg) indiquent une souffrance tissulaire ischémique malgré une PIC dans la zone limite haute normale. Ce tableau est cohérent avec une autorégulation altérée et une PPC fonctionnellement insuffisante pour ce patient. L'action prioritaire est d'augmenter la PAM (titration de noradrénaline) pour améliorer la PPC au-delà de 65 mmHg et réévaluer la PtiO₂. Piège A : une PIC entre 18 et 20 mmHg n'est pas rassurante en contexte d'IP élevé et de PtiO₂ basse ; le monitorage multimodal doit être interprété globalement. Piège C : le mannitol n'est pas indiqué si la PIC est < 20 mmHg et l'osmolarité n'est pas vérifiée ; de plus, ce n'est pas le levier principal ici. Piège D : une hyperventilation réduirait encore plus les vélocités diastoliques et aggraverait l'ischémie — c'est l'inverse de ce qu'il faut faire."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Vous gérez une patiente de 29 ans, HTIC post-méningo-encéphalite herpétique, sous aciclovir. PIC = 26 mmHg. La famille demande si les corticoïdes peuvent être utiles pour réduire l'inflammation.",
+        "question": "Concernant l'utilisation des corticoïdes dans cette situation (méningo-encéphalite herpétique avec HTIC), quelle est la position la plus correcte ?",
+        "options": {
+          "A": "Les corticoïdes sont indiqués de façon systématique dans toute méningo-encéphalite comme dans la méningite bactérienne",
+          "B": "Les corticoïdes sont contre-indiqués dans l'encéphalite herpétique car ils réduiraient l'immunité anti-virale et favoriseraient la réplication du VHS",
+          "C": "Les données sur les corticoïdes dans l'encéphalite herpétique sont insuffisantes pour une recommandation ferme ; des essais sont en cours (GRADE) ; l'utilisation n'est ni recommandée ni formellement contre-indiquée en routine",
+          "D": "Les corticoïdes sont indiqués uniquement si la PIC dépasse 30 mmHg, seuil à partir duquel le bénéfice anti-œdémateux l'emporte sur le risque viral"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : contrairement à la méningite bactérienne (dexaméthasone recommandée), le rôle des corticoïdes dans l'encéphalite herpétique reste non établi. L'étude GRADE (française, Granerod 2010 et suivi) n'a pas fourni de réponse définitive. Des essais randomisés sont en cours (EUREKA). L'utilisation est parfois proposée en cas d'HTIC sévère ou d'encéphalite auto-immune associée, mais sans recommandation forte. Piège A : les corticoïdes sont recommandés dans la méningite bactérienne (dexaméthasone avant ou avec la première dose d'antibiotique), mais cette recommandation ne se transpose pas automatiquement à l'encéphalite virale. Piège B : la crainte d'une immunosuppression virale est un argument souvent avancé mais non formellement prouvé à dose thérapeutique courte ; cela ne suffit pas à qualifier de contre-indication formelle. Piège D : il n'existe pas de seuil de PIC validé pour l'utilisation des corticoïdes dans ce contexte."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Patient de 55 ans, AVC ischémique malin de l'ACM droite J1 (territoire > 2/3 de l'ACM, effet de masse). GCS 11, déviation conjuguée du regard. Pas d'hématome secondaire. La famille est informée du risque d'engagement à J2–J3.",
+        "question": "Selon les recommandations européennes (ESO/ESICM 2022), quelle est la fenêtre temporelle et la limite d'âge pour envisager une craniectomie décompressive préventive dans l'infarctus malin de l'ACM ?",
+        "options": {
+          "A": "Pas de limite d'âge, fenêtre de 72h après le début des symptômes",
+          "B": "Âge < 60 ans, fenêtre de 48h après le début des symptômes",
+          "C": "Âge < 70 ans, fenêtre de 24h après le début des symptômes",
+          "D": "Âge < 60 ans, fenêtre de 96h après le début des symptômes"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les essais randomisés fondateurs (DESTINY, HAMLET, DECIMAL) et leurs méta-analyses définissent la craniectomie décompressive préventive dans l'infarctus malin de l'ACM avec une efficacité démontrée chez les patients de moins de 60 ans, réalisée dans les 48 premières heures. Au-delà de 60 ans (DESTINY II 2014), la survie augmente mais au prix de séquelles fonctionnelles sévères (mRS 4–5), ce qui impose une discussion éthique approfondie avec la famille. Piège A : l'absence de limite d'âge est incorrecte ; au-delà de 60 ans, la décision n'est plus systématique. Piège C : la fenêtre de 24h est trop restrictive selon les données des essais (48h) ; 70 ans n'est pas le seuil validé. Piège D : 96h est au-delà de la fenêtre démontrée efficace dans les essais ; l'œdème et les lésions définitives réduisent le bénéfice au-delà de 48h."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un patient de 41 ans, TCG grave à J5, présente une HTIC réfractaire (PIC 30–35 mmHg malgré SSH, drainage LCS, sédation profonde). L'EEG de surface montre des ondes lentes delta diffuses sans activité épileptique évidente. La GasB montre PaCO₂ = 37 mmHg, PaO₂ = 98 mmHg. Le chef de clinique propose un essai d'hypothermie thérapeutique à 35°C.",
+        "question": "Quelle affirmation sur l'hypothermie thérapeutique dans l'HTIC réfractaire post-TC est la plus exacte selon les données actuelles (2024) ?",
+        "options": {
+          "A": "L'hypothermie à 33°C est recommandée en première ligne de traitement de l'HTIC réfractaire par les guidelines BTF 2016",
+          "B": "L'hypothermie réduit efficacement la PIC mais n'a pas démontré d'amélioration du pronostic fonctionnel à 6 mois dans les essais randomisés de haut niveau (EUROTHERM3235, POLAR)",
+          "C": "L'hypothermie thérapeutique est contre-indiquée dans le TCG car elle augmente le risque de saignement intracrânien secondaire",
+          "D": "L'hypothermie doit être maintenue au minimum 72h puis réchauffée à 0,5°C/h pour éviter un rebond d'HTIC"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les deux principaux essais randomisés de niveau 1 dans ce domaine — EUROTHERM3235 (Andrews 2015, NEJM) et POLAR (Cooper 2018, NEJM) — n'ont pas démontré de bénéfice fonctionnel de l'hypothermie dans le TCG grave. L'hypothermie réduit bien la PIC mais au prix de complications (infections, troubles du rythme, coagulopathie) sans amélioration du mRS à 6 mois. Elle reste une option de dernier recours dans les centres experts pour l'HTIC réfractaire (Tier 3), mais sans grade fort de recommandation. Piège A : la BTF 2016 ne recommande pas l'hypothermie en première ligne ; elle mentionne que l'hypothermie prophylactique précoce n'est pas recommandée (grade IIB négatif). Piège C : l'hypothermie n'est pas formellement contre-indiquée pour risque hémorragique ; c'est une contre-indication relative non absolue ; le vrai problème est l'absence de bénéfice pronostique. Piège D : le rythme de réchauffement de 0,5°C/h est souvent cité mais n'est pas validé par des essais spécifiques dans ce contexte ; la durée minimale de 72h est également empirique."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Un interne présente le cas d'un patient sous sédation pour TCG grave à J3. La PIC oscille entre 22 et 28 mmHg malgré le traitement. L'enregistrement de la PIC montre des épisodes répétés d'élévation brutale à 50–60 mmHg durant 8–12 minutes, revenant spontanément à la baseline. L'interne les attribue à des pics de douleur lors des soins.",
+        "question": "Quel est le diagnostic physiologique le plus probable pour ces épisodes répétés de PIC à 50–60 mmHg durant 8–12 minutes, et quelle est leur signification pronostique ?",
+        "options": {
+          "A": "Ondes de Lundberg de type B, bénignes, liées aux cycles respiratoires ; aucune signification pronostique péjorative",
+          "B": "Ondes de Lundberg de type A (ondes en plateau), signant une compliance intracrânienne effondrée et une HTIC sévère ; valeur pronostique péjorative",
+          "C": "Artéfacts liés au capteur intraparenchymateux ; recalibrer le capteur et répéter la mesure",
+          "D": "Pics hypertensifs systémiques transmis au capteur de PIC par perte d'autorégulation ; traiter l'HTA pour réduire ces épisodes"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les ondes de Lundberg de type A, dites 'ondes en plateau', sont définies par une élévation de la PIC > 50 mmHg durant 5 à 20 minutes, revenant spontanément à la ligne de base. Elles signent un effondrement de la compliance intracrânienne, une vasodilatation cérébrale avec perte d'autorégulation, et sont associées à un mauvais pronostic. Leur survenue répétée impose une escalade thérapeutique immédiate et une discussion neurochirurgicale. Piège A : les ondes de type B ont une amplitude plus faible (20–50 mmHg) et une durée de 0,5–2 minutes ; elles ont une signification moins sévère mais restent pathologiques. Les ondes de type C (< 20 mmHg, rythme ≈ 6/min) sont les moins spécifiques. Piège C : des artéfacts de capteur sont possibles mais ne présentent pas ce pattern répété stéréotypé — un artéfact est habituellement isolé et ne correspond pas à un profil physiologique reconnaissable. Piège D : bien que la perte d'autorégulation puisse transmettre des variations tensionnelles à la PIC (concept du PRx index), des pics de PIC aussi soutenus et atteignant 50–60 mmHg avec retour spontané correspondent spécifiquement aux ondes A de Lundberg et non à de simples artefacts de transmission."
+      }
+    ]
   }
 ]
