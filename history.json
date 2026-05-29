@@ -1,0 +1,203 @@
+[
+  {
+    "date": "2026-05-29",
+    "dateStr": "vendredi 29 mai",
+    "topic": "Prise en charge du syndrome de détresse respiratoire aiguë (SDRA) sévère : stratégie ventilatoire protectrice et thérapies de sauvetage",
+    "cat": "Réanimation respiratoire",
+    "course": {
+      "intro": "Le SDRA sévère (PaO2/FiO2 < 100 mmHg sous PEEP ≥ 5 cmH2O) représente une urgence ventilatoire avec une mortalité atteignant 40-50% dans les formes sévères. La stratégie ventilatoire protectrice reste le pilier thérapeutique, mais son application rigoureuse exige la maîtrise des interactions complexes entre mécanique respiratoire, hémodynamique et biologie pulmonaire. Les thérapies de sauvetage (décubitus ventral, curarisation, NO inhalé, ECMO veino-veineuse) s'intègrent dans une escalade thérapeutique codifiée par les recommandations ESICM 2023 et SRLF. Comprendre la physiopathologie du stress/strain pulmonaire est indispensable pour individualiser la ventilation et éviter le VILI (Ventilator-Induced Lung Injury).",
+      "sections": [
+        {
+          "title": "Définitions / Rappels",
+          "content": "DÉFINITION DE BERLIN (2012) : SDRA = début aigu (< 7 jours d'un facteur déclenchant), opacités bilatérales non expliquées par épanchements/atélectasies/nodules, origine non cardiogénique (PAPO < 18 ou absence de surcharge), sous ventilation mécanique avec PEEP ≥ 5 cmH2O. SÉVÉRITÉ : Mild : PaO2/FiO2 200-300 ; Moderate : 100-200 ; Severe : < 100. LIMITES DE BERLIN : ne tient pas compte de la mécanique respiratoire ni de la compliance. CONCEPT DE BABY LUNG (Gattinoni) : seule une fraction du poumon (20-30%) est aérée et participe aux échanges gazeux. Le reste est soit consolidé (non recruté) soit à risque de sur-distension. PHÉNOTYPES : SDRA 'focal' (condensation lobaire postéro-basale, recrutemant potentiel élevé) vs 'non focal' ou 'diffus' (consolidation étendue bilatérale, recrutabilité limitée). Cette distinction, proposée par Gattinoni et Pelosi, guide la stratégie ventilatoire individualisée. VILI (Ventilator-Induced Lung Injury) : résulte du barotraumatisme (pression transpulmonaire élevée), volutraumatisme (Vt excessif), atelectrauma (cycles ouverture/fermeture des alvéoles), biotrauma (libération médiateurs pro-inflammatoires). DRIVING PRESSURE (ΔP = Vt/Crs = Pplat - PEEP) : paramètre mécanique le plus corrélé à la mortalité dans l'analyse de Amato et al. (NEJM 2015) ; objectif < 15 cmH2O, idéalement ≤ 13 cmH2O. MECHANICAL POWER : énergie transférée au poumon par cycle × fréquence respiratoire ; corrélée au VILI ; formule simplifiée : MP = 0.098 × FR × Vt × (Ppeak - ΔP/2)."
+        },
+        {
+          "title": "Évaluation / Physiopathologie",
+          "content": "PHYSIOPATHOLOGIE EN 3 PHASES : Phase exsudative (J1-J7) : lésion de l'épithélium alvéolaire (pneumocytes I) et de l'endothélium capillaire → augmentation perméabilité → œdème protéique intra-alvéolaire → inactivation surfactant → atélectasies → shunt intrapulmonaire. Phase proliférative (J7-J21) : prolifération pneumocytes II, dépôt collagène, organisation des membranes hyalines. Phase fibrotique (> J21) : fibrose pulmonaire irréversible dans certains cas, corrélée à la durée de VM. MÉCANISMES DE L'HYPOXÉMIE : Effet shunt (principal) : zones consolidées non ventilées mais perfusées. Inadéquation VA/Q. Trouble de diffusion (mineur en phase aiguë). Réponse à l'O2 : le shunt pur ne répond PAS à l'augmentation de FiO2 → nécessité de recruter (PEEP, DV). HÉMODYNAMIQUE : Hypoxémie → vasoconstriction pulmonaire hypoxique → HTAP → IVD (cœur pulmonaire aigu) → déviation septale gauche → compression VG → baisse débit cardiaque. Risque majoré par PEEP élevée (augmentation RVP, réduction précharge VG). MONITORING DE LA MÉCANIQUE RESPIRATOIRE : Compliance respiratoire totale (Crs) = Vt / (Pplat - PEEP) ; normale 50-80 mL/cmH2O, SDRA souvent < 30. Compliance thoracopariétale (Ccw) : mesurée via cathéter œsophagien → permet de distinguer la contribution pulmonaire. Pression transpulmonaire (Ptp) = Paw - Pœso : objectif Ptp fin inspiration < 25-27 cmH2O, Ptp fin expiration > 0 (prévention atélectasie). STRESS RATIO (SR) : Ptp / Pœso > 0.5 = risque sur-distension. RECRUTABILITÉ PULMONAIRE : évaluée par test de recrutement (RAMP PEEP), scanner thoracique (gold standard), ou variation de compliance avec variation PEEP. SDRA focal = faible recrutabilité (risque de sur-distension avec PEEP élevée). SDRA non focal = haute recrutabilité (bénéfice PEEP élevée)."
+        },
+        {
+          "title": "Stratégie de prise en charge / Ventilation protectrice",
+          "content": "VENTILATION PROTECTRICE (Niveau de preuve A) : Vt 6 mL/kg de poids idéal théorique (PIT) : PIT homme = 50 + 0.91 × (taille cm - 152.4) ; PIT femme = 45.5 + 0.91 × (taille cm - 152.4). Pplat ≤ 30 cmH2O. Driving pressure ΔP < 15 cmH2O (objectif ≤ 13). FiO2 minimale pour SpO2 88-95% / PaO2 55-80 mmHg. Fréquence respiratoire 20-35/min pour cible pH > 7.20. PEEP : PEEP MINIMALE 5 cmH2O. Titration selon tables ARMA (Low PEEP/High FiO2 ou High PEEP/Low FiO2). Pas de stratégie PEEP unique supérieure démontrée (études ALVEOLI, LOVS, ExPress). Individualisation recommandée : guidage par compliance (PEEP optimale = meilleure Crs), driving pressure, ou pression œsophagienne. PERMISSIVE HYPERCAPNIE : PaCO2 jusqu'à 60-80 mmHg tolérée si pH ≥ 7.20 pour limiter FR et Vt. Contre-indications : HTAP sévère, HIC, instabilité hémodynamique sévère. CURARISATION PRÉCOCE : Étude ACURASYS (2010, Papazian) : atracurium 48h → réduction mortalité à J90. Étude ROSE (2019) : pas de bénéfice de la curarisation systématique vs sédation légère. Recommandation actuelle ESICM 2023 : curarisation à considérer si ΔP > 15 cmH2O malgré sédation profonde, asynchronies sévères, ou comme adjuvant au DV. Durée : 48h maximum. POSITION VENTRALE (DÉCUBITUS VENTRAL, DV) : Indication : SDRA sévère PF < 150 mmHg persistant après 12-24h de ventilation optimale. Mécanisme : redistribution de la perfusion, recrutement zones dorsales, homogénéisation de la ventilation, amélioration drainage sécrétions, réduction compression cardiaque. Étude PROSEVA (Guérin, NEJM 2013) : DV ≥ 16h/jour → réduction mortalité 28j de 32.8% à 16% (NNT = 6). Technique : sessions de 16-18h minimum, retournement en décubitus dorsal (DD) si critères de sortie atteints (PaO2/FiO2 > 150 sous FiO2 ≤ 0.6 et PEEP ≤ 10 pendant 4h en DD). Contre-indications relatives : instabilité rachidienne, brûlures face/abdomen étendues, sternotomie récente, HTIC. Complications : obstruction/extubation sonde, escarres, œdème facial, PNO. NO INHALÉ : Vasodilatateur pulmonaire sélectif (alvéoles ventilées) → améliore rapport VA/Q, réduit HTAP, améliore oxygénation à court terme. Posologie : 5-40 ppm. Pas de bénéfice sur la mortalité démontré (méta-analyses). Utilisation comme 'bridge' vers ECMO ou DV. Effet rebond à l'arrêt (sevrage progressif). ALMITRINE : Vasoconstricteur pulmonaire (zones non ventilées) → potentialise la VPH. Utilisée en association avec NO (synergie). Dose : 2-8 μg/kg/min IV. Non disponible dans tous les pays. RECRUTEMENT ALVÉOLAIRE (RM) : Manœuvre de recrutement controversée (étude ART 2017 : augmentation mortalité avec RM agressif + PEEP décrémantale dans population non sélectionnée). Manœuvres douces (CPAP 40 cmH2O × 40 sec) acceptables dans SDRA non focal recrutables, avec surveillance hémodynamique stricte. Contre-indiquées en cas de pneumothorax, HTAP sévère, IVD, SDRA focal. ECMO VEINO-VEINEUSE (VV-ECMO) : Indications : SDRA sévère réfractaire malgré optimisation (DV, NO, curarisation) avec PaO2/FiO2 < 80 sous FiO2 1.0 et PEEP ≥ 10, et/ou hypercapnie sévère (pH < 7.20 malgré FR max), ou comme bridge en attente de transplantation. Étude CESAR (2009) : bénéfice VV-ECMO dans centres experts. Étude EOLIA (Combes, NEJM 2018) : tendance non significative à réduction mortalité à J60 (35% vs 46%, p=0.07) ; analyse post-hoc et cross-over (28% bras contrôle sauvés par ECMO) suggèrent bénéfice dans population sélectionnée. Ultra-protective ventilation sous ECMO : Vt 3-4 mL/kg, FR 5-10/min, Pplat ≤ 25, PEEP ≥ 10 → permet repos pulmonaire. Complications ECMO : hémorragies (anticoagulation), thrombose circuit, infections, ischémie membre, hémoglobinurie. ULTRA-PROTECTIVE VENTILATION SANS ECMO : Vt 4 mL/kg + FR ↑ + tampon (bicarbonate) → hypercapnie permissive extrême. Données insuffisantes pour recommandation formelle. SÉDATION-ANALGÉSIE : Sédation profonde (RASS -3 à -5) justifiée lors de la phase aiguë initiale, DV, et curarisation. Dès stabilisation : sédation légère (RASS 0 à -2), protocoles d'analgésie-sédation (analgosédation). Éviter midazolam en première intention (accumulation). Propofol ou dexmédétomidine préférés pour flexibilité. Analgésie : morphiniques IV titrés (rémifentanil, sufentanil). HÉMODYNAMIQUE ET SDRA : Bilan hydrique neutre à négatif dès stabilisation hémodynamique (étude FACTT, NEJM 2006 : bilan négatif → réduction durée VM et séjour en réa, sans différence mortalité). Éviter hypervolémie (aggrave œdème pulmonaire lésionnel). Échocardiographie systématique pour dépistage IVD (cœur pulmonaire aigu) : présent dans 20-25% des SDRA sévères."
+        },
+        {
+          "title": "Complications et leur gestion",
+          "content": "PNEUMOTHORAX SOUS TENSION : Complication redoutée sous VM à hautes pressions. Diagnostic : désaturation brutale, hypotension, asymétrie auscultatoire, déviation trachéale, distension veineuse jugulaire. Traitement en urgence : exsufflation à l'aiguille (2e EIC ligne médio-claviculaire), puis drainage pleural. CŒUR PULMONAIRE AIGU (CPA) : Prévalence 20-25% dans SDRA sévère. Facteurs favorisants : PaCO2 élevée, PaO2 basse, Pplat élevée, driving pressure élevée. Diagnostic : échocardiographie (dilatation VD, septum paradoxal, rapport VD/VG > 0.6, TAPSE bas, OD dilatée). Conséquences : baisse débit cardiaque, hypotension, hypoxémie aggravée. Traitement : optimisation ventilateur (réduction PaCO2, réduction Pplat), NO inhalé, décubitus ventral (améliore hémodynamique VD), dobutamine si défaillance VD sévère, levosimendan dans certains cas, ECMO VA si choc cardiogénique réfractaire. BAROTRAUMATISME : emphysème sous-cutané, pneumomédiastin, pneumopéricarde → surveillance radiologique quotidienne. INFECTIONS NOSOCOMIALES : PAVM (pneumonie acquise sous ventilation mécanique) : incidence 9-27%. Prévention : position demi-assise 30-45° (contre-indiquée DV), hygiène bucco-dentaire, décontamination oropharyngée sélective, gestion ballonnet (pression 25-30 cmH2O), extubation précoce si possible. Diagnostic : critères CPIS, BALF, aspirations trachéales. Antibiothérapie ciblée selon résultats microbiologiques. FAIBLESSE MUSCULAIRE ACQUISE EN RÉANIMATION (ICUAW) : Prévalence 25-50% après SDRA sévère. Favorisée par immobilisation, curarisation prolongée, corticothérapie, hyperglycémie, malnutrition. Prévention : mobilisation précoce (kiné dès J1-J2), contrôle glycémique strict, nutrition optimisée, réduction durée curarisation. DELIRIUM : Fréquent en réanimation (60-80% patients ventilés). Évaluation : CAM-ICU. Prévention non pharmacologique : réorientation, lumière naturelle, maintien cycle veille/sommeil, lunettes/appareils auditifs. Traitement : dexmédétomidine (supérieure halopéridol selon étude MENDS2). PNEUMONIE POST-EXTUBATION : Stridor post-extubation : test à la fuite (cuff-leak test) avant extubation si VM > 48h. Corticothérapie préventive (méthylprednisolone) si cuff-leak test négatif. SEVRAGE VENTILATEUR : Épreuve de ventilation spontanée (EVS) quotidienne dès critères atteints : PaO2/FiO2 > 150 sous FiO2 ≤ 0.4 et PEEP ≤ 8 cmH2O, patient éveillé, stable hémodynamiquement, toux efficace. Méthode EVS : AI 5-8 cmH2O ou pièce en T 30 minutes. Succès → extubation. Échec → reprise VM, recherche cause réversible."
+        },
+        {
+          "title": "Points clés des recommandations",
+          "content": "ESICM GUIDELINES 2023 (Guidelines on ARDS management, Intensive Care Med 2023) : Recommandations fortes : Vt 6 mL/kg PIT (Grade 1A), Pplat ≤ 30 cmH2O (1A), DV ≥ 16h si PF < 150 (1A). Recommandations conditionnelles : curarisation si asynchronies/ΔP non contrôlés (2B), PEEP élevée dans SDRA modéré-sévère avec recrutabilité évaluée (2B), ECMO VV dans SDRA réfractaire en centre expert (2B). Pas de recommandation pour RM systématiques (étude ART). SRLF/SFAR RECOMMANDATIONS 2019-2022 : Consensus d'experts SDRA : ventilation protectrice systématique, DV précoce (< 36h) dans SDRA sévère, curarisation 48h si SDRA sévère < 48h, NO inhalé en bridge ECMO. Recommandations SFAR sur sédation-analgésie 2020 : analgosédation, sédation légère cible, protocoles de réveil quotidien. NICE GUIDELINES (2019) : Recommande DV dans SDRA sévère, suggère ECMO dans centres experts. ATS/ESICM/SCCM GUIDELINES (Am J Respir Crit Care Med 2017) : Recommandent fortement Vt bas (6 mL/kg), DV ≥ 12h/jour, PEEP élevée dans SDRA modéré-sévère. Suggèrent ECMO dans SDRA réfractaire, déconseillent HFOV (High-Frequency Oscillatory Ventilation) après études OSCILLATE et OSCAR (surmortalité). CORTICOTHÉRAPIE DANS LE SDRA : Méthylprednisolone : données contradictoires. Étude LaSRS (NHLBI) : pas de bénéfice si débutée > J14. DEXA-ARDS (Villar, Lancet Respir Med 2020) : dexaméthasone 20 mg/j J1-5 puis 10 mg/j J6-10 → réduction mortalité à J60 et augmentation jours sans VM. Recommandation ESICM 2023 : corticothérapie précoce à considérer dans SDRA modéré-sévère (recommandation conditionnelle, niveau de preuve modéré). NUTRITION DANS LE SDRA : Démarrage entéral précoce (< 48h). Éviter sur-alimentation (aggrave hypercapnie). Formules enrichies en omega-3 : pas de bénéfice démontré (étude OMEGA). Immunonutrition : non recommandée en routine. Position demi-assise 30-45° (sauf DV). CONTRÔLE GLYCÉMIQUE : Cible 7.8-10 mmol/L (140-180 mg/dL) selon recommandations SRLF/SFAR. Hypoglycémie < 4.4 mmol/L à éviter absolument (surmortalité)."
+        }
+      ],
+      "keypoints": [
+        "La driving pressure (ΔP = Vt/Crs = Pplat - PEEP) est le paramètre ventilatoire le plus corrélé à la mortalité : maintenir < 15 cmH2O, idéalement ≤ 13 cmH2O, même si Pplat ≤ 30 et Vt = 6 mL/kg.",
+        "Le décubitus ventral (≥ 16h/session, PROSEVA 2013) est la seule thérapie de sauvetage ayant démontré une réduction significative de la mortalité (NNT = 6) dans le SDRA sévère (PF < 150), et doit être initié précocement (< 36h).",
+        "La distinction phénotypique SDRA focal vs non focal guide la titration de la PEEP : SDRA focal (faible recrutabilité) = risque de sur-distension avec PEEP élevée ; SDRA non focal (haute recrutabilité) = bénéfice attendu d'une PEEP plus élevée.",
+        "Le cœur pulmonaire aigu (IVD aiguë) complique 20-25% des SDRA sévères et constitue un facteur de mortalité indépendant : dépistage systématique par échocardiographie, la driving pressure élevée et l'hypercapnie en sont les principaux facteurs de risque.",
+        "La VV-ECMO est une thérapie de sauvetage dans le SDRA réfractaire (PF < 80 sous FiO2 1.0 et PEEP ≥ 10) permettant l'ultra-protective ventilation (Vt 3-4 mL/kg, FR 5-10/min) ; son bénéfice est probable en centre expert selon l'analyse de l'étude EOLIA, mais doit être discuté dans un réseau organisé.",
+        "Les manœuvres de recrutement alvéolaire agressives sont contre-indiquées en routine depuis l'étude ART (2017) qui a montré une surmortalité ; elles restent utilisables de façon ponctuelle et douce dans les SDRA non focaux très recrutables avec surveillance hémodynamique.",
+        "La corticothérapie précoce (dexaméthasone, étude DEXA-ARDS) est désormais une option thérapeutique dans le SDRA modéré-sévère (recommandation conditionnelle ESICM 2023), à distinguer de l'introduction tardive (> J14) qui est délétère.",
+        "La curarisation systématique précoce n'est plus recommandée depuis l'étude ROSE (2019) ; elle reste indiquée en cas d'asynchronies sévères, driving pressure non contrôlée malgré sédation profonde, ou comme adjuvant au décubitus ventral.",
+        "L'HFOV (High-Frequency Oscillatory Ventilation) est contre-indiquée dans le SDRA depuis les études OSCILLATE et OSCAR qui ont montré une tendance à la surmortalité.",
+        "Le bilan hydrique négatif dès stabilisation hémodynamique (étude FACTT) réduit la durée de ventilation mécanique sans augmenter la mortalité ; l'hypervolémie aggrave l'œdème pulmonaire lésionnel et doit être évitée."
+      ],
+      "references": [
+        "ESICM 2023 – Clinical practice guidelines for the management of ARDS, Intensive Care Med 2023",
+        "SRLF/SFAR 2019 – Prise en charge du SDRA de l'adulte : consensus d'experts",
+        "SFAR 2020 – Recommandations formalisées d'experts sur la sédation-analgésie en réanimation",
+        "Guérin C et al. (PROSEVA) – Prone Positioning in Severe ARDS, NEJM 2013",
+        "Combes A et al. (EOLIA) – ECMO for Severe ARDS, NEJM 2018",
+        "Papazian L et al. (ACURASYS) – Neuromuscular Blockers in Early ARDS, NEJM 2010",
+        "National Heart, Lung, and Blood Institute (ROSE trial) – Early Neuromuscular Blockade in ARDS, NEJM 2019",
+        "Amato MBP et al. – Driving Pressure and Survival in ARDS, NEJM 2015",
+        "Villar J et al. (DEXA-ARDS) – Dexamethasone treatment for ARDS, Lancet Respir Med 2020",
+        "Writing Group and Steering Committee (ART trial) – Effect of Lung Recruitment and PEEP Decremental on 28-Day Mortality, JAMA 2017",
+        "Fan E et al. – ATS/ESICM/SCCM Clinical Practice Guidelines for Mechanical Ventilation in ARDS, Am J Respir Crit Care Med 2017",
+        "Wiedemann HP et al. (FACTT trial) – Comparison of Two Fluid-Management Strategies in ARDS, NEJM 2006",
+        "Gattinoni L, Pesenti A – The concept of baby lung, Intensive Care Med 2005",
+        "Laffey JG, Bellani G (LUNG SAFE) – Epidemiology, Patterns of Care, and Mortality for Patients with ARDS, JAMA 2016"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Patient de 58 ans, 75 kg (taille 178 cm), SDRA sévère post-pneumonie à S. pneumoniae. Paramètres ventilatoires actuels : mode VC, Vt 450 mL, FR 22/min, PEEP 10 cmH2O, FiO2 0.8, Ppeak 35 cmH2O, Pplat 28 cmH2O. GdS : PaO2 65 mmHg, PaCO2 52 mmHg, pH 7.31.",
+        "question": "Quel est le paramètre ventilatoire le plus préoccupant chez ce patient et quelle est la priorité de réglage ?",
+        "options": {
+          "A": "La Pplat à 28 cmH2O dépasse le seuil de sécurité de 25 cmH2O recommandé en pratique courante ; réduire le Vt à 400 mL",
+          "B": "La driving pressure (ΔP = Pplat - PEEP = 18 cmH2O) dépasse 15 cmH2O ; réduire le Vt au poids idéal théorique (PIT = 74.8 kg → Vt cible 449 mL, donc recalculer le PIT et viser 6 mL/kg soit ~445 mL, insuffisant) et/ou augmenter la PEEP pour réduire ΔP",
+          "C": "Le Vt de 450 mL est excessif pour un PIT de 74.8 kg (6 mL/kg = 449 mL) ; le paramètre le plus préoccupant est en réalité la driving pressure à 18 cmH2O, et la priorité est de réduire le Vt à 6 mL/kg PIT strict (445 mL) puis réévaluer",
+          "D": "L'hypercapnie à 52 mmHg avec pH 7.31 est la priorité absolue ; augmenter la fréquence respiratoire à 30/min pour normaliser le pH"
+        },
+        "correct": "C",
+        "explanation": "Le PIT chez cet homme de 178 cm = 50 + 0.91 × (178 - 152.4) = 50 + 23.3 = 73.3 kg → Vt cible 6 mL/kg = 440 mL. Le Vt actuel de 450 mL est donc légèrement supérieur. Mais surtout, la ΔP = 28 - 10 = 18 cmH2O est le paramètre le plus corrélé à la mortalité (Amato 2015) et dépasse le seuil de 15 cmH2O. La priorité est donc de réduire la ΔP en baissant le Vt à 6 mL/kg PIT strict. L'augmentation de la FR (option D) pour corriger l'hypercapnie est une erreur car elle augmente la puissance mécanique et l'hypercapnie permissive (pH > 7.20) est acceptable. La Pplat à 28 cmH2O est dans les limites (≤ 30), mais la ΔP reste le paramètre prioritaire. Le piège classique est de se focaliser sur Pplat < 30 en négligeant la ΔP."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Patient en SDRA sévère (PF = 90), en DV depuis 18h. Échocardiographie : VD dilaté (rapport VD/VG 0.7), septum paradoxal, TAPSE 12 mm. Paramètres : Vt 6 mL/kg PIT, Pplat 30 cmH2O, PEEP 12 cmH2O, FR 28/min, FiO2 0.9, PaCO2 72 mmHg, pH 7.18.",
+        "question": "Concernant la prise en charge du cœur pulmonaire aigu (CPA) dans ce contexte, quelle affirmation est CORRECTE ?",
+        "options": {
+          "A": "Le DV doit être interrompu car il aggrave la dilatation du VD par augmentation des résistances vasculaires pulmonaires",
+          "B": "La priorité est de réduire la PaCO2 (facteur vasoconstricteur pulmonaire majeur) en augmentant la FR à 35/min, même si cela implique d'accepter une Pplat à 32 cmH2O",
+          "C": "Le DV doit être poursuivi (effet bénéfique sur l'hémodynamique VD), la PaCO2 doit être réduite sans dépasser Pplat 30 cmH2O (réduction Vt impossible si déjà à 6 mL/kg → reconsidérer ECMO VV pour permettre réduction FR), et le NO inhalé est indiqué",
+          "D": "La dobutamine est le traitement de première ligne du CPA en SDRA, permettant de restaurer la contractilité VD sans modifier les résistances vasculaires pulmonaires"
+        },
+        "correct": "C",
+        "explanation": "Le DV améliore l'hémodynamique VD en réduisant la pression des voies aériennes, en homogénéisant la ventilation, et en réduisant la compression cardiaque par le poumon : il ne doit pas être interrompu. La PaCO2 élevée (72 mmHg) et le pH acide (7.18) sont des vasoconstricteurs pulmonaires puissants aggravant le CPA : leur correction est prioritaire. Cependant, augmenter la FR pour réduire PaCO2 en dépassant Pplat 30 cmH2O (option B) est délétère (barotraumatisme, aggravation de la postcharge VD). La solution est d'envisager la VV-ECMO permettant l'ultra-protective ventilation avec réduction de FR. Le NO inhalé (vasodilatateur pulmonaire sélectif) est une thérapie d'appoint logique pour réduire les RVP. La dobutamine (option D) est un inotrope mais augmente la consommation en O2 du VD et n'est pas le traitement de première ligne ; le levosimendane ou le NO sont préférables. Le piège est d'interrompre le DV par crainte de l'HTAP, alors qu'il est justement bénéfique sur l'hémodynamique VD."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Vous prenez en charge un SDRA sévère (PF = 85) depuis 30h, en DV depuis 18h avec réponse partielle (PF actuel 110). La question de l'initiation de la VV-ECMO se pose.",
+        "question": "Selon les recommandations ESICM 2023 et les données de l'étude EOLIA, quel critère est le PLUS pertinent pour décider de l'initiation de la VV-ECMO ?",
+        "options": {
+          "A": "PaO2/FiO2 < 150 mmHg malgré DV ≥ 16h et PEEP ≥ 10 cmH2O",
+          "B": "PaO2/FiO2 < 80 mmHg sous FiO2 = 1.0 et PEEP ≥ 10 cmH2O après optimisation (DV, curarisation, NO), ou pH < 7.25 malgré FR maximale, persistant > 6h",
+          "C": "Nécessité d'une FiO2 > 0.8 pendant plus de 24h malgré ventilation protectrice optimale",
+          "D": "Compliance respiratoire < 20 mL/cmH2O et Pplat > 30 cmH2O ne permettant pas d'atteindre un Vt de 6 mL/kg PIT"
+        },
+        "correct": "B",
+        "explanation": "Les critères d'inclusion de l'étude EOLIA (les mieux validés à ce jour) pour la VV-ECMO sont : PaO2/FiO2 < 80 mmHg sous FiO2 = 1.0 et PEEP ≥ 10 cmH2O après ≥ 6h d'optimisation (incluant DV, curarisation, NO) ; OU PaCO2 ≥ 60 mmHg avec pH < 7.25 malgré FR maximale tolérée ; OU patient en état de mort imminente. Ces critères sont repris dans les recommandations ESICM 2023 (recommandation conditionnelle). L'option A (PF < 150) correspond au seuil d'initiation du DV, non de l'ECMO. L'option C est un critère trop peu spécifique. L'option D (compliance effondrée) peut orienter vers l'ECMO mais n'est pas un critère formel validé. Le piège classique est d'initier l'ECMO trop précocement (PF < 150) sans avoir optimisé toutes les thérapies de sauvetage disponibles."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Patiente de 42 ans, SDRA post-SARS-CoV-2 sévère (PF = 95), sous ventilation protectrice optimale depuis 48h. Scanner thoracique : condensations bilatérales diffuses et symétriques sans prédominance de lésion lobaire. Compliance 18 mL/cmH2O.",
+        "question": "Concernant la stratégie de titration de la PEEP chez cette patiente, quelle approche est la plus adaptée selon le phénotype SDRA ?",
+        "options": {
+          "A": "SDRA focal : utiliser la table PEEP élevée/FiO2 basse (High PEEP) car les condensations postéro-basales sont recrutables par la PEEP",
+          "B": "SDRA non focal (diffus) : la recrutabilité est élevée, donc une PEEP élevée guidée par la meilleure compliance ou la pression œsophagienne est préférée ; éviter cependant les manœuvres de recrutement agressives",
+          "C": "SDRA non focal (diffus) : la recrutabilité est faible, la PEEP doit être réduite au minimum (5-8 cmH2O) pour éviter la sur-distension des zones encore aérées",
+          "D": "Le phénotype scanner n'a pas d'impact sur la stratégie de PEEP ; seule la table ARMA Low PEEP doit être appliquée systématiquement pour éviter le barotraumatisme"
+        },
+        "correct": "B",
+        "explanation": "Les condensations bilatérales diffuses et symétriques sans prédominance de lobe définissent le phénotype 'non focal' (ou 'diffus') décrit par Gattinoni et Pelosi. Dans ce phénotype, la recrutabilité alvéolaire est élevée (nombreuses alvéoles effondrées mais potentiellement réouvrables) car les lésions sont homogènes. Une PEEP élevée, guidée par la meilleure compliance ou la pression transpulmonaire (cathéter œsophagien), est bénéfique pour maintenir le recrutement alvéolaire. En revanche, les manœuvres de recrutement agressives (type ART) doivent être évitées (surmortalité démontrée). Le SDRA focal présente une prédominance lobaire postéro-basale de consolidation avec recrutabilité limitée et risque de sur-distension des zones aérées restantes sous PEEP élevée : c'est l'inverse. L'option C (PEEP basse dans non-focal) est l'erreur classique par confusion des phénotypes."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patient de 65 ans, SDRA sévère depuis 52h. PF = 105 sous FiO2 0.9, PEEP 14 cmH2O, Vt 6 mL/kg PIT, Pplat 29 cmH2O, ΔP 15 cmH2O. Curares administrés les 48 premières heures. La question du DV se pose.",
+        "question": "Par rapport à l'initiation du décubitus ventral à ce stade (52h), quelle affirmation est CORRECTE selon l'étude PROSEVA et les recommandations actuelles ?",
+        "options": {
+          "A": "Le DV n'est plus indiqué car il doit être initié dans les 36 premières heures ; au-delà, le bénéfice sur la mortalité est nul",
+          "B": "Le DV reste indiqué car le PF < 150 persiste malgré une ventilation optimale ; les recommandations ESICM 2023 ne fixent pas de délai maximal absolu mais préconisent une initiation précoce (idéalement < 36h)",
+          "C": "Le DV est contre-indiqué car la compliance est acceptable (ΔP à 15 cmH2O) et le PF dépasse 100 mmHg",
+          "D": "Le DV doit être initié uniquement si PF < 80 mmHg sous FiO2 = 1.0, les autres cas relevant du NO inhalé en première intention"
+        },
+        "correct": "B",
+        "explanation": "L'étude PROSEVA a inclus des patients avec PF < 150 mmHg et délai médian d'initiation du DV à 28h. Les recommandations ESICM 2023 préconisent une initiation précoce (< 36h) pour maximiser le bénéfice (réduction de la mortalité), mais le DV reste indiqué tant que la PF < 150 persiste sous ventilation optimale, y compris au-delà de 36-52h si non encore réalisé. L'option A est incorrecte : il n'existe pas de délai maximal absolu après lequel le DV devient contre-indiqué ; le bénéfice est moindre si initié tardivement mais pas nul. L'option C est incorrecte : le seuil d'indication est PF < 150, indépendamment de la ΔP. L'option D correspond aux critères ECMO, non du DV. Le piège classique est de manquer la fenêtre thérapeutique du DV par excès de prudence ou erreur sur le seuil PF (150 et non 80)."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Vous êtes appelé pour un SDRA sévère (PF = 88) compliqué d'un cœur pulmonaire aigu sévère (rapport VD/VG 0.85, septum paradoxal, ITV sous-aortique 12 cm). La tension artérielle est à 80/45 mmHg malgré noradrénaline 0.8 μg/kg/min.",
+        "question": "Quel type d'ECMO doit être considéré en priorité dans cette situation ?",
+        "options": {
+          "A": "VV-ECMO exclusivement, car le SDRA est la cause primaire et la dysfonction VD est fonctionnelle et réversible sous ventilation optimale et NO inhalé",
+          "B": "VA-ECMO en première intention car le choc cardiogénique réfractaire lié à la défaillance VD aiguë impose un support hémodynamique ; une configuration VAV-ECMO peut être nécessaire si hypoxémie réfractaire persiste",
+          "C": "VV-ECMO en configuration VV car elle améliore également la fonction VD par réduction de la FiO2 et de la PaCO2 ; la VA-ECMO est réservée aux arrêts cardiaques",
+          "D": "ECMO contre-indiquée en cas de CPA sévère compliquant un SDRA car le rapport risque/bénéfice est défavorable"
+        },
+        "correct": "B",
+        "explanation": "En cas de défaillance VD aiguë réfractaire avec choc cardiogénique (tableau de corpulmonale aigu sévère compliquant un SDRA), la VA-ECMO s'impose en priorité car elle assure un support hémodynamique direct en déchargeant le VD défaillant. La VV-ECMO améliore la fonction VD indirectement (par réduction de l'hypoxémie et de l'hypercapnie qui sont des vasoconstricteurs pulmonaires) mais ne peut pas corriger un choc cardiogénique par défaillance VD aiguë. La configuration VAV-ECMO (veino-arterio-veineuse) peut être nécessaire si l'hypoxémie réfractaire persiste malgré la VA-ECMO (syndrome d'Arlequin). La VV-ECMO seule (option A) est insuffisante face à un choc réfractaire. L'option D est incorrecte : le CPA n'est pas une contre-indication à l'ECMO, au contraire. Le piège est de choisir VV-ECMO par réflexe 'SDRA = VV' sans analyser l'hémodynamique."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Patient ventilé pour SDRA modéré (PF = 145) depuis J2. RASS -2, pas de curarisation. Vous observez une asynchronie de type 'double-triggering' avec un effort inspiratoire patient qui se poursuit pendant l'expiration machine, générant un Vt total de 9 mL/kg PIT.",
+        "question": "Concernant le mécanisme et la gestion de cette asynchronie, quelle proposition est EXACTE ?",
+        "options": {
+          "A": "Le double-triggering est causé par une fuite autour du ballonnet ; gonfler le ballonnet à 30 cmH2O et vérifier l'étanchéité du circuit",
+          "B": "Le double-triggering résulte d'une durée d'insufflation machine < effort neural inspiratoire du patient ; la demande ventilatoire du patient dépasse les réglages machine, générant un second cycle avant la fin de l'effort → risque de VILI par breath-stacking avec Vt effectif 9 mL/kg PIT ; gestion : augmenter Ti machine, adapter sédation/analgésie, et considérer la curarisation si asynchronie persiste",
+          "C": "Le double-triggering est bénin dans le SDRA modéré (PF > 100) et ne nécessite pas de modification immédiate des réglages",
+          "D": "La solution optimale est de passer en mode PSV (aide inspiratoire) pour laisser le patient synchroniser librement ses cycles, éliminant ainsi le risque de breath-stacking"
+        },
+        "correct": "B",
+        "explanation": "Le double-triggering est une asynchronie survenant quand l'effort neural inspiratoire du patient est plus long que la durée d'insufflation réglée sur le ventilateur : le patient continue d'inspirer après la fin du cycle machine et déclenche un second cycle, créant un 'breath-stacking' avec un Vt double (ici 9 mL/kg PIT = 150% du Vt cible), source majeure de VILI. La gestion implique : augmenter le temps inspiratoire machine (ou l'I:E), optimiser l'analgosédation pour réduire le drive respiratoire, et si l'asynchronie persiste malgré ces mesures, envisager la curarisation (indication validée selon recommandations ESICM 2023). Le passage en PSV (option D) est contre-intuitif et risqué car en PSV, le patient garde le contrôle du Ti et peut générer de grands volumes courants si le drive est élevé. L'option C est dangereuse : tout Vt > 8 mL/kg PIT sous ventilation mécanique représente un risque de VILI, même dans le SDRA modéré. Le piège est de sous-estimer le Vt effectif lors du double-triggering."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Un patient de 70 ans présente un SDRA sévère post-opératoire (chirurgie aortique). PF = 95 à H24. Compliance 22 mL/cmH2O. Décision d'initier le DV. Lors du retournement, SpO2 chute à 78%, avec déplacement de la sonde d'intubation (confirmation sur le scope).",
+        "question": "Quelle est la séquence de prise en charge CORRECTE dans la première minute suivant la complication ?",
+        "options": {
+          "A": "Replacer immédiatement en décubitus dorsal, fibroscopie en urgence pour repositionner la sonde, puis reprendre le DV après stabilisation",
+          "B": "Rester en DV, ventiler au masque facial en attendant le matériel de fibroscopie, et appeler un deuxième opérateur",
+          "C": "Rester en DV ou retourner en décubitus dorsal selon la sévérité (si Sp02 < 80% persistante et non rattrapable) ; sécuriser les voies aériennes en priorité absolue (repositionnement ou reintubation en urgence si extubation accidentelle) avec ventilation manuelle au BAVU pendant la procédure ; appel renforts immédiats",
+          "D": "Augmenter la FiO2 à 1.0 et la PEEP à 20 cmH2O pour compenser la désaturation ; le déplacement de sonde sera géré après stabilisation de l'oxygénation"
+        },
+        "correct": "C",
+        "explanation": "La sécurisation des voies aériennes est la priorité absolue devant toute complication ventilatoire lors du DV. En cas de déplacement/extubation de sonde en DV, la décision de rester en DV ou de repositionner en décubitus dorsal dépend de la sévérité de la désaturation et de la capacité à gérer les voies aériennes dans la position actuelle. La règle générale est de gérer en urgence les voies aériennes avec le renfort immédiat de l'équipe. Augmenter la PEEP à 20 (option D) est dangereux et inefficace si la sonde est déplacée (insufflation sélective ou œsophagienne possible). L'option A (replacer en DD immédiatement puis fibroscopie) est raisonnable mais la priorité est la ventilation du patient, pas le retournement. L'option B (masque facial en DV) est techniquement difficile et hasardeuse. Le protocole SFAR/SRLF recommande la présence d'au moins 5 personnes lors du retournement, dont un médecin senior chargé spécifiquement des voies aériennes. Le piège est de prioriser le retournement avant la sécurisation des voies aériennes."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Patiente de 55 ans, SDRA modéré-sévère (PF = 130) depuis J3 de pneumonie virale. Score SOFA 9. L'équipe discute d'une corticothérapie par dexaméthasone selon le protocole DEXA-ARDS.",
+        "question": "Concernant l'utilisation de la dexaméthasone dans le SDRA, quelle affirmation est CORRECTE selon les données les plus récentes ?",
+        "options": {
+          "A": "La dexaméthasone est formellement contre-indiquée dans le SDRA d'origine infectieuse (pneumonie bactérienne ou virale) car elle aggrave l'immunosuppression et retarde la clairance bactérienne",
+          "B": "La dexaméthasone (20 mg/j J1-5 puis 10 mg/j J6-10) a montré une réduction significative de la mortalité à J60 et une augmentation des jours sans VM dans l'étude DEXA-ARDS (2020) ; les recommandations ESICM 2023 en font une option conditionnelle dans le SDRA modéré à sévère, quelle que soit l'étiologie",
+          "C": "La méthylprednisolone est supérieure à la dexaméthasone dans le SDRA selon les méta-analyses récentes et doit être préférée à la dose de 2 mg/kg/j pendant 14 jours",
+          "D": "L'introduction de corticothérapie est indiquée uniquement en phase fibrotique tardive (> J14) pour prévenir la fibrose irréversible, selon les recommandations ATS/ESICM"
+        },
+        "correct": "B",
+        "explanation": "L'étude DEXA-ARDS (Villar et al., Lancet Respir Med 2020) a randomisé 277 patients SDRA modéré-sévère (PF < 200 sous PEEP ≥ 10 à H24 de ventilation optimale) et a montré que la dexaméthasone 20 mg/j J1-5 puis 10 mg/j J6-10 réduisait significativement la mortalité à J60 (21% vs 36%) et augmentait les jours sans VM. Les recommandations ESICM 2023 classent la corticothérapie précoce comme recommandation conditionnelle (niveau de preuve modéré) dans le SDRA modéré-sévère. L'option A est incorrecte : la corticothérapie n'est pas contre-indiquée dans les SDRA d'origine infectieuse (elle a d'ailleurs montré un bénéfice dans certains SDRA post-COVID). L'option C est incorrecte : il n'existe pas de données robustes montrant la supériorité de la méthylprednisolone vs dexaméthasone dans ce contexte. L'option D est l'erreur historique basée sur des données obsolètes (étude LaSRS) ; l'introduction tardive > J14 est effectivement délétère, mais cela ne signifie pas que seule l'introduction tardive est indiquée. Le piège est d'extrapoler l'étude LaSRS (introduction tardive, délétère) à toute corticothérapie dans le SDRA."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Patient de 48 ans, SDRA sévère (PF = 78) sous VV-ECMO depuis J2 (double canulation veino-veineuse jugulo-fémorale). Paramètres ECMO : débit 4.5 L/min, FiO2 gaz de balayage 1.0, sweep gas 8 L/min. Paramètres ventilateur : Vt 3 mL/kg PIT, FR 8/min, PEEP 14 cmH2O, FiO2 vent 0.5. SpO2 82% malgré FiO2 gaz balayage 1.0.",
+        "question": "Vous constatez une SpO2 à 82% malgré une FiO2 de 1.0 sur le circuit ECMO. Quelle est la cause la plus probable à évaluer en priorité ?",
+        "options": {
+          "A": "Recirculation sur le circuit ECMO : le sang oxygéné sortant de la canule de réinjection est partiellement aspiré par la canule de drainage ; évaluer en mesurant la SaO2 en sortie d'oxygénateur et en positionnement des canules",
+          "B": "Dysfonction de la membrane oxygénatrice : saturation du sang en sortie d'oxygénateur < 95% signant une défaillance membranaire nécessitant le changement du circuit",
+          "C": "Hyperdébit cardiaque natif du patient (shunt cardiaque droit-gauche intracardique) : la saturation du sang natif dilue le sang oxygéné de l'ECMO",
+          "D": "Thrombose de la canule de réinjection jugulaire : réduction du débit ECMO effectif avec persistance du shunt pulmonaire natif"
+        },
+        "correct": "A",
+        "explanation": "La recirculation est la première cause à évaluer en VV-ECMO lorsque la saturation reste basse malgré une FiO2 100% sur le circuit et un débit adéquat. Elle survient quand une fraction du sang oxygéné sortant de la canule de réinjection est directement aspirée par la canule de drainage avant de circuler dans le lit vasculaire pulmonaire. Diagnostic : SaO2 en entrée d'oxygénateur (=sang drainé) proche de la SaO2 en sortie (>95%) plutôt que d'être à la saturation veineuse mixte (<70%). Causes : canules trop proches l'une de l'autre, débit ECMO excessif par rapport au débit cardiaque natif, mauvais positionnement des canules. Solution : repositionnement des canules (augmenter la distance entre les extrémités), ou réduction du débit ECMO si tolérable. L'option B (dysfonction membranaire) se manifeste par une saturation en sortie d'oxygénateur basse (< 95-98%) plutôt que par une saturation du patient basse avec sortie oxygénateur normale. L'option D (thrombose de canule) entraîne une chute du débit ECMO mesurable sur la console. Le piège est de confondre recirculation et dysfonction membranaire, deux situations nécessitant des actions thérapeutiques très différentes."
+      }
+    ]
+  }
+]
