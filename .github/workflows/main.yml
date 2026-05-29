@@ -5,9 +5,21 @@ on:
     - cron: "0 5 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  send-quiz:
+  build-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Récupérer le code
         uses: actions/checkout@v4
@@ -17,8 +29,24 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Générer et envoyer le quiz
+      - name: Générer le quiz HTML
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: node generate-quiz.js
+
+      - name: Configurer Pages
+        uses: actions/configure-pages@v5
+
+      - name: Préparer l'artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Envoyer la notification
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: node send-notif.js
