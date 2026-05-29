@@ -15,19 +15,38 @@ function saveHistory(history) {
   fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), "utf8");
 }
 
-async function apiCall(messages, maxTokens = 500) {
-  const resp = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": process.env.ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: maxTokens, messages }),
-  });
-  if (!resp.ok) throw new Error(`API ${resp.status}: ${await resp.text()}`);
-  const data = await resp.json();
-  return data.content.map(b => b.text || "").join("").replace(/```json|```/g, "").trim();
+async function apiCall(messages, maxTokens = 500, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": process.env.ANTHROPIC_API_KEY,
+          "anthropic-version": "2023-06-01",
+        },
+        body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: maxTokens, messages }),
+      });
+      if (resp.ok) {
+        const data = await resp.json();
+        return data.content.map(b => b.text || "").join("").replace(/```json|```/g, "").trim();
+      }
+      const errText = await resp.text();
+      if (resp.status >= 500 && attempt < retries) {
+        console.log(`    Tentative ${attempt}/${retries} échouée (${resp.status}), retry dans 10s...`);
+        await new Promise(r => setTimeout(r, 10000));
+      } else {
+        throw new Error(`API ${resp.status}: ${errText}`);
+      }
+    } catch (e) {
+      if (attempt < retries && (e.message.includes("fetch") || e.message.includes("503"))) {
+        console.log(`    Tentative ${attempt}/${retries} — erreur réseau, retry dans 10s...`);
+        await new Promise(r => setTimeout(r, 10000));
+      } else {
+        throw e;
+      }
+    }
+  }
 }
 
 async function generateTopic(history) {
