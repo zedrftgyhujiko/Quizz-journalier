@@ -88,7 +88,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
 
 Règles : fiche dense et à jour (dernières recommandations), 10 questions toutes de niveau difficile/expert, distracteurs très plausibles inspirés d'erreurs classiques d'internes avancés.`;
 
-  const raw = await apiCall([{ role: "user", content: prompt }], 8000);
+  const raw = await apiCall([{ role: "user", content: prompt }], 16000);
   return JSON.parse(raw);
 }
 
