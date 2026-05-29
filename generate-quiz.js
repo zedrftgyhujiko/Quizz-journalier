@@ -53,31 +53,47 @@ Réponds UNIQUEMENT en JSON valide :
 }
 
 async function generateContent(topic) {
-  const prompt = `Tu es un expert en anesthésie-réanimation (DESC) et un pédagogue rigoureux. Génère une fiche de révision niveau DESC sur "${topic}".
+  const prompt = `Tu es un expert sénior en anesthésie-réanimation (DESC/PH) et un pédagogue rigoureux. Génère une fiche de révision de haute qualité sur "${topic}".
 
-IMPORTANT - Format du contenu des sections : utilise du markdown simple pour la lisibilité :
-- **terme important** pour les termes clés
-- Commence chaque point important par "• " (puce)
-- Sépare les blocs distincts par une ligne vide
-- Pas de texte en bloc dense : structure en points clairs
+PROCESSUS EN 2 TEMPS — tu dois faire les deux avant de répondre :
+TEMPS 1 — Génère le contenu complet (cours + 10 QCM)
+TEMPS 2 — Avant de répondre, relis et vérifie mentalement :
+  • Chaque chiffre, seuil, grade de recommandation est-il exact ?
+  • Chaque QCM a-t-il exactement UNE bonne réponse ?
+  • Les distracteurs sont-ils vraiment plausibles (erreurs classiques d'internes) ?
+  • Les références sont-elles réelles et récentes (≥ 2020 si possible) ?
+  • Le cours est-il structuré et lisible (pas de blocs denses) ?
+  Corrige tout problème avant de retourner le JSON.
+
+FORMAT DES SECTIONS — utilise ces types d'items pour la lisibilité :
+- type "text" : paragraphe court (2-3 lignes max), utilise **gras** pour les termes clés
+- type "list" : liste de points factuels avec **gras** sur les termes importants
+- type "warning" : piège clinique, contre-indication, erreur fréquente
+- type "formula" : formule, seuil chiffré, critère diagnostique précis
 
 Réponds UNIQUEMENT en JSON valide, sans markdown autour :
 {
   "course": {
-    "intro": "Introduction clinique percutante en 2-3 phrases maximum",
+    "intro": "Introduction clinique percutante en 2-3 phrases — pourquoi ce sujet est crucial en pratique",
     "sections": [
       {
         "title": "Définitions / Rappels essentiels",
         "items": [
-          { "type": "text", "content": "Paragraphe court ou point isolé" },
-          { "type": "list", "items": ["Item 1 avec **terme clé** si besoin", "Item 2", "Item 3"] },
-          { "type": "warning", "content": "Point d'alerte ou piège clinique important" },
-          { "type": "formula", "content": "Formule ou valeur seuil : ex PIT homme = 50 + 0.91 × (taille - 152.4)" }
+          { "type": "text", "content": "Texte court avec **termes clés** en gras" },
+          { "type": "list", "items": ["**Terme** : définition précise", "**Terme** : définition précise"] },
+          { "type": "warning", "content": "Piège ou erreur fréquente à éviter" },
+          { "type": "formula", "content": "Formule ou seuil : valeur numérique précise" }
         ]
       }
     ],
-    "keypoints": ["**Point clé 1** : explication courte", "**Point clé 2** : ...", "**Point clé 3** : ...", "**Point clé 4** : ...", "**Point clé 5** : ..."],
-    "references": ["Auteurs, Titre, Journal Année", "SFAR/SRLF/ESICM/ESA + année + sujet"]
+    "keypoints": [
+      "**Point 1** : explication courte et actionnable",
+      "**Point 2** : ...",
+      "**Point 3** : ...",
+      "**Point 4** : ...",
+      "**Point 5** : ..."
+    ],
+    "references": ["Auteurs — Titre — Journal Année", "SFAR/SRLF/ESICM/ESA — Sujet — Année"]
   },
   "questions": [
     {
@@ -87,36 +103,24 @@ Réponds UNIQUEMENT en JSON valide, sans markdown autour :
       "question": "Question précise niveau DESC ?",
       "options": { "A": "Option plausible", "B": "Option plausible", "C": "Option plausible", "D": "Option plausible" },
       "correct": "B",
-      "explanation": "Explication rigoureuse en 2-3 phrases : pourquoi B, pourquoi pas les autres (nommer les pièges)."
+      "explanation": "Réponse B correcte car [raison précise]. Piège A : [pourquoi erroné]. Piège C : [pourquoi erroné]."
     }
   ]
 }
 
-Sections à inclure (adapte les titres au thème) :
+Sections obligatoires (adapte les titres au thème) :
 1. Définitions / Rappels essentiels
 2. Physiopathologie / Mécanismes
 3. Évaluation / Diagnostic
-4. Stratégie de prise en charge
+4. Stratégie de prise en charge (détaillée, avec seuils et doses si pertinent)
 5. Complications et leur gestion
-6. Points clés des recommandations (avec années et grades)
+6. Recommandations clés (avec grades et années)
 
-Règles QCM : 10 questions toutes de niveau expert/difficile, distracteurs très plausibles correspondant à des erreurs classiques d'internes avancés, explications qui nomment les pièges.`;
-
-  return JSON.parse(await apiCall([{ role: "user", content: prompt }], 16000));
-}
-
-async function reviewContent(topic, content) {
-  console.log("Relecture et correction par Claude...");
-  const prompt = `Tu es un expert sénior en anesthésie-réanimation. Relis cette fiche de révision sur "${topic}" et :
-1. Corrige toute erreur médicale ou imprécision (chiffres, grades, recommandations)
-2. Améliore la clarté des explications trop vagues
-3. Vérifie que chaque QCM a bien une SEULE bonne réponse et des distracteurs vraiment plausibles
-4. Assure-toi que les références sont réelles et récentes
-5. Renforce les points clés si trop génériques
-
-Retourne le JSON CORRIGÉ et AMÉLIORÉ (même format exactement), UNIQUEMENT en JSON valide sans markdown :
-
-${JSON.stringify(content)}`;
+Règles QCM absolues :
+- 10 questions TOUTES de niveau expert/difficile
+- Distracteurs = erreurs classiques d'internes avancés (vraisemblables, pas absurdes)
+- Explication = nomme le piège principal de chaque mauvaise réponse
+- Varie les types : dose/seuil, mécanisme, indication, contre-indication, complication, conduite à tenir`;
 
   return JSON.parse(await apiCall([{ role: "user", content: prompt }], 16000));
 }
@@ -407,16 +411,13 @@ async function main() {
 
   const history = loadHistory();
 
-  console.log("1/4 — Génération du thème...");
+  console.log("1/3 — Génération du thème...");
   const topicObj = await generateTopic(history);
   console.log(`    Thème : ${topicObj.topic} [${topicObj.cat}]`);
 
-  console.log("2/4 — Génération du cours + 10 questions...");
-  const raw = await generateContent(topicObj.topic);
-
-  console.log("3/4 — Relecture et correction par Claude...");
-  const content = await reviewContent(topicObj.topic, raw);
-  console.log(`    Cours relu, ${content.questions.length} questions vérifiées`);
+  console.log("2/3 — Génération cours + 10 questions (avec auto-vérification intégrée)...");
+  const content = await generateContent(topicObj.topic);
+  console.log(`    ${content.questions.length} questions générées et vérifiées`);
 
   const today = new Date();
   const date = today.toISOString().slice(0, 10);
@@ -426,7 +427,7 @@ async function main() {
   history.push(entry);
   saveHistory(history);
 
-  console.log("4/4 — Génération des pages HTML...");
+  console.log("3/3 — Génération des pages HTML...");
   fs.mkdirSync("docs", { recursive: true });
   for (const e of history) {
     fs.writeFileSync(path.join("docs", `${e.date}.html`), generateDailyHTML(e), "utf8");
