@@ -557,8 +557,8 @@
     ]
   },
   {
-    "date": "2026-05-30",
-    "dateStr": "samedi 30 mai",
+    "date": "2026-05-26",
+    "dateStr": "mardi 26 mai",
     "topic": "Prise en charge du choc cardiogénique réfractaire en réanimation : place et timing de l'assistance circulatoire mécanique (IABP, Impella, ECMO-VA)",
     "cat": "Réanimation",
     "course": {
@@ -771,7 +771,7 @@
       {
         "num": 2,
         "difficulty": "expert",
-        "context": "Patiente de 28 ans, myocardite fulminante sous ECMO-VA depuis 48h (débit 4 L/min). SpO₂ à 88% au doigt de pied droit mais 97% au pouce droit. La radiographie pulmonaire montre un œdème pulmonaire bilatéral.",
+        "context": "Patiente de 28 ans, myocardite fulminante sous ECMO-VA depuis 48h (débit 4 L/min). SpO₂ à 97% au doigt de pied droit mais 88% au pouce droit. La radiographie pulmonaire montre un œdème pulmonaire bilatéral.",
         "question": "Quel mécanisme physiopathologique explique le mieux cette discordance de SpO₂ ?",
         "options": {
           "A": "Thrombose partielle de la canule artérielle d'ECMO avec embolie distale",
