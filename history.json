@@ -555,5 +555,345 @@
         "explanation": "Réponse B correcte : les ondes de Lundberg de type A, dites 'ondes en plateau', sont définies par une élévation de la PIC > 50 mmHg durant 5 à 20 minutes, revenant spontanément à la ligne de base. Elles signent un effondrement de la compliance intracrânienne, une vasodilatation cérébrale avec perte d'autorégulation, et sont associées à un mauvais pronostic. Leur survenue répétée impose une escalade thérapeutique immédiate et une discussion neurochirurgicale. Piège A : les ondes de type B ont une amplitude plus faible (20–50 mmHg) et une durée de 0,5–2 minutes ; elles ont une signification moins sévère mais restent pathologiques. Les ondes de type C (< 20 mmHg, rythme ≈ 6/min) sont les moins spécifiques. Piège C : des artéfacts de capteur sont possibles mais ne présentent pas ce pattern répété stéréotypé — un artéfact est habituellement isolé et ne correspond pas à un profil physiologique reconnaissable. Piège D : bien que la perte d'autorégulation puisse transmettre des variations tensionnelles à la PIC (concept du PRx index), des pics de PIC aussi soutenus et atteignant 50–60 mmHg avec retour spontané correspondent spécifiquement aux ondes A de Lundberg et non à de simples artefacts de transmission."
       }
     ]
+  },
+  {
+    "date": "2026-05-30",
+    "dateStr": "samedi 30 mai",
+    "topic": "Prise en charge du choc cardiogénique réfractaire en réanimation : place et timing de l'assistance circulatoire mécanique (IABP, Impella, ECMO-VA)",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le choc cardiogénique réfractaire (CCR) représente la forme la plus sévère d'insuffisance circulatoire aiguë, avec une mortalité hospitalière dépassant 50% malgré les thérapeutiques conventionnelles. L'assistance circulatoire mécanique (ACM) offre un soutien hémodynamique bridgeur, mais son timing, son choix et sa gestion conditionnent le pronostic. Maîtriser les indications, les contre-indications et les spécificités de chaque dispositif est indispensable pour tout médecin de réanimation.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **choc cardiogénique** est défini par une hypoperfusion tissulaire d'origine cardiaque primitive, irréductible par le seul remplissage vasculaire. Il se distingue des autres états de choc par la présence concomitante d'une **élévation des pressions de remplissage** et d'une **réduction du débit cardiaque**."
+            },
+            {
+              "type": "formula",
+              "content": "Critères diagnostiques ESC 2021 : PAS < 90 mmHg pendant > 30 min (ou nécessité de vasopresseurs) + signes d'hypoperfusion (lactatémie > 2 mmol/L, oligurie < 0,5 mL/kg/h, marbrures, confusion) + IC < 2,2 L/min/m² et/ou PAPO > 15 mmHg"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Choc cardiogénique réfractaire (CCR)** : persistance du choc malgré doses optimisées de catécholamines (noradrénaline > 0,5 µg/kg/min et/ou dobutamine > 5 µg/kg/min) pendant > 30 min, sans cause curable immédiate",
+                "**IABP** (Intra-Aortic Balloon Pump) : ballon intra-aortique de contre-pulsion, dispositif le plus ancien, déflation systolique / inflation diastolique — augmente la pression de perfusion coronarienne et réduit la postcharge",
+                "**Impella** : micro-pompe axiale percutanée propulsant le sang du VG vers l'aorte ascendante — décharge active le VG et augmente le débit cardiaque (Impella CP : jusqu'à 3,7 L/min ; Impella 5.5 : jusqu'à 5,5 L/min)",
+                "**ECMO-VA** (Extra-Corporeal Membrane Oxygenation — veino-artérielle) : circuit extracorporel de circulation assistée avec oxygénateur, drainant le sang veineux et le réinjectant en artériel — assure la totalité du débit cardiaque si nécessaire (jusqu'à 5-7 L/min)",
+                "**INTERMACS** : classification en 7 niveaux de gravité de l'insuffisance cardiaque avancée — le CCR correspond aux niveaux 1 (« crash and burn ») et 2 (« sliding on inotropes »)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : confondre choc cardiogénique et insuffisance cardiaque aiguë décompensée. L'œdème pulmonaire aigu isolé SANS hypoperfusion périphérique n'est PAS un choc cardiogénique et ne justifie pas l'ACM en urgence."
+            },
+            {
+              "type": "formula",
+              "content": "Index cardiaque (IC) = Débit cardiaque (L/min) / Surface corporelle (m²) — Valeur normale : 2,5–4,0 L/min/m²"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le CCR s'installe selon une **spirale délétère** : dysfonction myocardique → réduction du débit cardiaque → hypotension → hypoperfusion coronarienne → ischémie aggravée → dysfonction myocardique. L'activation neurohumorale (catécholamines endogènes, SRAA, vasopressine) majore la vasoconstriction périphérique et la demande en O₂ myocardique, amplifiant la défaillance."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mécanisme de l'IABP** : contre-pulsion diastolique (inflation du ballon) augmente la pression diastolique aortique (+10–15 mmHg) → améliore la perfusion coronarienne ; déflation proto-systolique réduit la postcharge VG (réduction du travail myocardique ~20%)",
+                "**Mécanisme Impella** : pompe axiale aspirant activement le sang du VG (via valve mitrale) et l'éjectant dans l'aorte ascendante → décharge directe du VG (réduction de la PTDVG et de la consommation d'O₂), augmentation du débit aortique",
+                "**Mécanisme ECMO-VA** : drainage veineux (VCI/OD) → oxygénation extracorporelle → réinjection artérielle fémorale — supprime la précharge VD et assure l'oxygénation, mais **augmente la postcharge VG** (sang réinjecté remonte vers l'aorte et s'oppose à l'éjection ventriculaire)",
+                "**Couplage ventricule-artère** : en ECMO-VA isolée, l'augmentation de postcharge VG peut majorer la stase ventriculaire → élévation des pressions de remplissage → œdème pulmonaire → distension VG (**LV distension** ou **LV stun**)",
+                "**Réponse inflammatoire systémique** (SIRS) : présente dans le CCR, aggravée par l'ECMO (activation du complément, contact sang-membrane) — contribue à la défaillance multiviscérale"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE PHYSIOPATHOLOGIQUE : l'ECMO-VA augmente la postcharge VG. Si le VG est défaillant et ne peut éjecter contre cette postcharge, une distension ventriculaire gauche avec œdème pulmonaire réfractaire peut survenir malgré (ou à cause de) l'ECMO. Une stratégie de décharge VG associée est alors nécessaire (IABP ou Impella sur ECMO = « ECPELLA »)."
+            },
+            {
+              "type": "formula",
+              "content": "Travail myocardique = Pression × Volume (aire PV loop) — L'Impella réduit l'aire de la boucle PV de 30–50% vs ECMO-VA seule qui peut l'augmenter en cas de VG non éjectant"
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation / Diagnostic et monitoring",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation du CCR repose sur une approche **clinique, biologique et hémodynamique** convergente. L'**échocardiographie transthoracique (ETT)** est l'examen pivot (FEVG, cinétique segmentaire, complications mécaniques, pressions de remplissage estimées). Le cathéter artériel pulmonaire de Swan-Ganz reste la référence pour guider l'ACM dans les centres experts."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Score SCAI** (Society for Cardiovascular Angiography and Interventions, 2019) : 5 stades A→E — Stade D = détérioration malgré traitement / Stade E = extrémis (arrêt cardiaque, RCP) — corrèle au pronostic et guide l'indication d'ACM",
+                "**Paramètres hémodynamiques cibles sous ACM** : IC > 2,2 L/min/m², PAM > 65 mmHg, ScvO₂ > 70%, SvO₂ > 65%, lactates décroissants, diurèse > 0,5 mL/kg/h",
+                "**Cathéter de Swan-Ganz** : mesure directe PAPO, DC (thermodilution), calcul RVS et RVSP — indiqué en cas de choc mixte ou incertitude diagnostique (IC = 1b ESC 2021)",
+                "**ETT urgente** : élimine tamponnade, insuffisance mitrale aiguë, CIV post-IDM, embolie pulmonaire massive — ces complications mécaniques modifient radicalement la prise en charge",
+                "**Biomarqueurs clés** : lactate artériel (cinétique > valeur isolée), NT-proBNP, troponine hs, créatininémie, bilan hépatique (cytolyse = marqueur d'hypoperfusion splanchnique)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : une ScvO₂ normale (> 70%) en choc cardiogénique sévère peut refléter une extraction tissulaire altérée (mitochondries défaillantes) et NON une correction hémodynamique. Ne pas se rassurer sur une ScvO₂ haute isolée sans amélioration des lactates et de la diurèse."
+            },
+            {
+              "type": "formula",
+              "content": "Rapport lactate/pyruvate > 10 et/ou lactate > 4 mmol/L persistant à 6h = marqueur de pronostic défavorable justifiant l'escalade vers ACM"
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge — Place et timing de l'ACM",
+          "items": [
+            {
+              "type": "text",
+              "content": "La stratégie d'ACM dans le CCR suit une logique d'**escalade structurée et précoce**, adaptée à l'étiologie (SCA, myocardite fulminante, post-cardiotomie, cardiomyopathie décompensée) et au profil hémodynamique. Le concept de **« door-to-support »** précoce (avant la défaillance d'organe constituée) est central dans les centres d'excellence."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Traitement de première ligne** : correction des facteurs déclenchants (revascularisation coronarienne en urgence si SCA), optimisation volémique prudente, noradrénaline (vasopresseur de première intention, cible PAM ≥ 65 mmHg), dobutamine (inotrope positif, dose initiale 2,5–5 µg/kg/min, max 20 µg/kg/min)",
+                "**IABP — Place actuelle** : RETRAIT des recommandations de classe I — essai IABP-SHOCK II (2012, Thiele) n'a pas montré de bénéfice en mortalité à 30 jours dans le SCA-CCR. Recommandation ESC 2021 : IIb (peut être considérée). Usage limité à certaines complications mécaniques (IM aiguë, CIV) ou pont vers autre ACM",
+                "**Impella — Indications** : CCR avec FEVG effondrée (< 30–35%), support hémodynamique pour ICP à haut risque (Impella CP), pont vers ECMO ou transplantation. Nécessite une valve mitrale fonctionnelle et une aorte non sévèrement calcifiée. CI absolue : insuffisance aortique ≥ modérée",
+                "**ECMO-VA — Indications** : CCR réfractaire avec défaillance biventriculaire, arrêt cardiaque réfractaire (E-CPR), myocardite fulminante, choc post-cardiotomie — débit maximal 5–7 L/min. Abord fémoral percutané le plus fréquent (artère/veine fémorale). Perfuseur de jambe OBLIGATOIRE (risque ischémie membre inférieur)",
+                "**Timing recommandé** : implantation précoce avant lactates > 8–10 mmol/L et avant défaillance multiviscérale constituée (score SOFA < 9–10 = meilleure survie sous ECMO). Le bénéfice de l'ECMO diminue drastiquement après 6h de choc non corrigé",
+                "**Stratégie ECPELLA** : association ECMO-VA + Impella (ou IABP) pour décharger le VG sur ECMO — indiquée si distension VG (PCP > 25 mmHg, absence d'ouverture de valve aortique en ETT). Améliore la survie en cas de LV distension réfractaire",
+                "**Sevrage de l'ACM** : évaluation quotidienne dès J2–J3 — sevrage ECMO si récupération cardiaque (ETT : FEVG > 20–25%, ouverture valve aortique, VTI LVOT > 10 cm) + paramètres hémodynamiques stables à débit réduit (1,5–2 L/min sous catécholamines minimales)",
+                "**Objectif du soutien (« bridge »)** : bridge to recovery (myocardite, sidération post-IDM), bridge to transplantation, bridge to LVAD (assistance ventriculaire longue durée), bridge to decision (évaluation pronostique)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE THÉRAPEUTIQUE MAJEUR : ne pas implanter une ECMO-VA sans vérifier l'ouverture de la valve aortique en ETT. Un VG non éjectant sous ECMO génère une stase sanguine intra-VG → thrombus ventriculaire et distension. L'absence d'ouverture de valve aortique est une indication à la décharge VG associée (Impella ou septostomie atriale)."
+            },
+            {
+              "type": "formula",
+              "content": "Débit ECMO de départ : 2,5–3 L/min → augmentation rapide selon tolérance jusqu'à correction hémodynamique (ScvO₂ > 70%, PAM > 65 mmHg, lactates < 2 mmol/L). Ne pas dépasser 80% du débit théorique calculé (risque de drainage excessif et collapsus des cavités droites)"
+            },
+            {
+              "type": "formula",
+              "content": "Anticoagulation ECMO : héparine non fractionnée (HNF) IV continue — objectif TCA 60–80 sec (ou anti-Xa 0,3–0,5 UI/mL selon les centres). Pas d'anticoagulation systématique sous Impella seule si durée < 6h"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE HÉMODYNAMIQUE ECMO : en ECMO-VA fémoro-fémorale, le sang oxygéné remonte depuis l'aorte iliaque vers l'aorte, MAIS si le VG continue à éjecter (partiellement), un syndrome dit de « Harlequin » (ou différentiel nord-sud) peut survenir : membres supérieurs et cerveau perfusés par le sang non oxygéné du VG natif (en cas de défaillance pulmonaire associée), tandis que les membres inférieurs sont perfusés par l'ECMO. Surveillance SpO₂ au membre SUPÉRIEUR droit obligatoire."
+            }
+          ]
+        },
+        {
+          "title": "5. Complications et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Complications vasculaires (ECMO/Impella)** : ischémie du membre inférieur (5–15% des ECMO fémorales) — prévention par introducteur de perfusion distale 6Fr sur l'artère fémorale superficielle dès l'implantation ; hématome inguinal, pseudoanévrisme",
+                "**Hémolyse** : fréquente sous Impella (LDH élevées, hémoglobinurie) — réduire le débit Impella, vérifier positionnement (ETT : tip à 3,5 cm au-dessus de la valve aortique) ; arrêt si hémoglobinémie plasmatique > 500 mg/L persistante",
+                "**Thrombose de circuit ECMO** : surveillance de la D-dimères, fibrinogène, aspect du circuit — rinçage interdit ; changement de circuit si thrombose confirmée",
+                "**Saignements** : liés à l'anticoagulation et à la coagulopathie de dilution/consommation — transfusion guidée par ROTEM/TEG ; éviter les plaquettes < 50 G/L sous ECMO",
+                "**Syndrome de LV distension** : PAPO élevée, absence d'ouverture valve aortique en ETT, œdème pulmonaire réfractaire sous ECMO → stratégie de décharge : Impella, IABP, venting chirurgical (purge de l'apex VG), septostomie atriale percutanée (en urgence si toutes les autres options impossibles)",
+                "**Syndrome de Harlequin** (voir ci-dessus) : repositionner la canule d'injection en position sous-clavière ou augmenter l'assistance ventilatoire",
+                "**Infections** : bactériémies sur circuit (Staphylocoques, entérobactéries) — soins de cathéter rigoureux, pas d'antibioprophylaxie systématique prolongée",
+                "**Défaillance rénale aiguë** : fréquente (40–60% des CCR) — épuration extrarénale continue (CVVHDF) compatible avec ECMO sur le même circuit veineux si nécessaire",
+                "**Thrombocytopénie induite par l'héparine (TIH)** : y penser si thrombopénie > 50% entre J4 et J14 — score 4T, anticorps anti-FP4, substitution par argatroban ou bivalirudine"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE GRAVE : ne jamais clamper les deux lignes d'un circuit ECMO simultanément en dehors du bloc opératoire sans préparation — risque de thrombus massif intracircuit en quelques secondes. Le clampage doit être séquentiel et limité au minimum."
+            }
+          ]
+        },
+        {
+          "title": "6. Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ESC Guidelines 2021 (McDonagh et al.)** : CCR — noradrénaline vasopresseur de 1ère ligne (IC), dobutamine inotrope de 1ère ligne (IIa), IABP non recommandée en routine dans le SCA-CCR (IIb), ECMO-VA peut être considérée en CCR réfractaire (IIb, LOE C)",
+                "**ESC Guidelines SCA-ST+ 2023 (Van der Werf et al.)** : revascularisation coronarienne urgente recommandée même en CCR (IA). L'ECMO-VA de routine avant ICP n'est pas recommandée (IIIA) — données de l'essai ECMO-CS 2022 (Ostadal) et ANCHOR",
+                "**Essai IABP-SHOCK II (Thiele, NEJM 2012)** : 600 patients SCA-CCR, pas de différence de mortalité à 30j IABP vs contrôle (39,7% vs 41,3%, p = 0,69) — a conduit au déclassement de l'IABP",
+                "**Essai ECMO-CS 2022 (Ostadal, JACC)** : ECMO-VA précoce vs thérapie conventionnelle dans CCR — pas de bénéfice sur le critère composite à 30j, tendance à plus de complications vasculaires — effectif limité (117 pts), résultats à nuancer",
+                "**Essai EURO SHOCK (2023, EHJ)** : ECMO-VA vs soins conventionnels dans CCR post-SCA — arrêt prématuré, tendance non significative, renforce la nécessité d'un RCT de grande taille",
+                "**SFAR/SRLF recommandations ACM 2022** : ECMO-VA indiquée en CCR réfractaire AVANT survenue de la défaillance multiviscérale ; centre expert (≥ 20 ECMO/an) recommandé ; évaluation multidisciplinaire systématique (cardiologue, réanimateur, chirurgien cardiovasculaire)",
+                "**ELSO Guidelines 2021** : anticoagulation HNF, surveillance circuit toutes les 4–8h, TCA cible 60–80 sec, échange de la membrane si D-dimères effondrés ou hémolyse sévère",
+                "**Position statement ESC HFA 2020 (Thiele et al.)** : algorithme de décision ACM dans CCR — prioriser correction de la cause (revascularisation), puis escalade ACM selon profil hémodynamique et score SCAI"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "POINT CLEF 2024 : les données des RCT sur l'ECMO-VA dans le CCR post-SCA sont décevantes en termes de mortalité. L'ECMO reste indiquée en CCR réfractaire HORS SCA (myocardite, post-cardiotomie, arrêt cardiaque) et comme bridge à la transplantation. La sélection des patients est DÉTERMINANTE."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Le timing est décisif** : implanter l'ACM AVANT la défaillance multiviscérale constituée (score SOFA < 9–10, lactates < 8–10 mmol/L) pour maximiser le bénéfice. Chaque heure de délai aggrave le pronostic.",
+        "**L'IABP n'est plus recommandée en routine** dans le SCA-CCR (ESC IIb, niveau C) depuis l'essai IABP-SHOCK II — elle garde une place limitée dans les complications mécaniques et comme bridge vers autre ACM.",
+        "**L'ECMO-VA augmente la postcharge VG** : surveiller systématiquement l'ouverture de la valve aortique en ETT et anticiper la stratégie de décharge VG (ECPELLA) si le VG ne s'ouvre pas.",
+        "**Le syndrome de Harlequin** est une complication spécifique de l'ECMO-VA fémoro-fémorale en cas d'insuffisance respiratoire concomitante : surveiller la SpO₂ au membre supérieur DROIT, pas au lobe d'oreille ou au pied.",
+        "**La décision d'ACM est multidisciplinaire** (cardiologue interventionnel, réanimateur, chirurgien CV) et doit intégrer l'étiologie, le potentiel de récupération et les objectifs du patient — un patient INTERMACS 1 avec comorbidités majeures ne bénéficiera pas nécessairement d'une ECMO."
+      ],
+      "references": [
+        "Thiele H et al. — Intraaortic Balloon Pump in Cardiogenic Shock (IABP-SHOCK II) — NEJM 2012",
+        "McDonagh TA et al. — ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure 2021 — Eur Heart J 2021",
+        "Van der Werf F et al. — ESC Guidelines for the management of acute myocardial infarction in patients presenting with ST-segment elevation 2023 — Eur Heart J 2023",
+        "Ostadal P et al. — Extracorporeal Membrane Oxygenation in the Therapy of Cardiogenic Shock (ECMO-CS) — JACC 2022",
+        "Baran DA et al. — SCAI clinical expert consensus statement on the classification of cardiogenic shock — Catheter Cardiovasc Interv 2019",
+        "Thiele H et al. — Management of cardiogenic shock complicating myocardial infarction: an update 2019 — Eur Heart J 2019",
+        "ELSO — ELSO Adult Cardiac Failure Supplement to the ELSO General Guidelines — Version 1.4 — 2021",
+        "Combes A et al. — Position paper for the organization of ECMO programs in acute respiratory failure — Intensive Care Med 2020",
+        "SFAR/SRLF — Recommandations formalisées d'experts : assistance circulatoire mécanique en réanimation — 2022",
+        "Naidu SS et al. — SCAI SHOCK Stage Classification Expert Consensus Update 2022 — J Am Coll Cardiol 2022"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 62 ans est admis en USIC pour SCA-ST+ antérieur étendu, FEVG à 15% en ETT, lactatémie à 6,2 mmol/L, sous noradrénaline 0,8 µg/kg/min et dobutamine 10 µg/kg/min après ICP primaire réussie. La valve aortique ne s'ouvre plus en ETT. Vous décidez d'implanter une ECMO-VA fémoro-fémorale.",
+        "question": "Parmi les mesures suivantes, laquelle est la plus urgente dans les 30 premières minutes après démarrage de l'ECMO-VA ?",
+        "options": {
+          "A": "Débuter une perfusion de lévosimendane pour favoriser la récupération myocardique",
+          "B": "Vérifier l'ouverture de la valve aortique en ETT et planifier une stratégie de décharge VG si elle reste fermée",
+          "C": "Augmenter le débit ECMO à 5 L/min d'emblée pour corriger rapidement le bas débit",
+          "D": "Administrer du bicarbonate de sodium IV pour corriger l'acidose lactique avant toute autre mesure"
+        },
+        "correct": "B",
+        "explanation": "La vérification de l'ouverture de la valve aortique est prioritaire : en ECMO-VA, l'augmentation de la postcharge VG peut empêcher le VG défaillant d'éjecter, entraînant une stase intra-ventriculaire, une distension VG, un thrombus et un œdème pulmonaire réfractaire. L'absence d'ouverture impose une décharge VG immédiate (Impella, IABP ou septostomie). Piège A : le lévosimendane n'est pas une urgence dans les 30 premières minutes et ne résout pas la distension VG. Piège C : augmenter brutalement le débit à 5 L/min risque un drainage excessif des cavités droites (collapsus), doit être progressif. Piège D : la correction de l'acidose est secondaire à la correction hémodynamique — les bicarbonates n'améliorent pas la perfusion et peuvent aggraver l'hypercapnie."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Patiente de 28 ans, myocardite fulminante sous ECMO-VA depuis 48h (débit 4 L/min). SpO₂ à 88% au doigt de pied droit mais 97% au pouce droit. La radiographie pulmonaire montre un œdème pulmonaire bilatéral.",
+        "question": "Quel mécanisme physiopathologique explique le mieux cette discordance de SpO₂ ?",
+        "options": {
+          "A": "Thrombose partielle de la canule artérielle d'ECMO avec embolie distale",
+          "B": "Syndrome de Harlequin : le VG natif éjecte un sang non oxygéné (insuffisance respiratoire) qui perfuse la crosse aortique et le territoire coronarocerebral, tandis que l'ECMO perfuse le territoire inférieur",
+          "C": "Ischémie du membre inférieur sur occlusion de l'artère fémorale superficielle droite",
+          "D": "Défaut de calibration du capteur de SpO₂ au membre inférieur en contexte de bas débit périphérique"
+        },
+        "correct": "B",
+        "explanation": "Le syndrome de Harlequin (ou syndrome nord-sud / differential hypoxia) survient en ECMO-VA fémoro-fémorale quand le VG natif conserve une éjection partielle mais dans un contexte d'insuffisance respiratoire sévère : le sang non oxygéné éjecté par le VG perfuse en priorité la crosse aortique, les coronaires et le cerveau (territoire supérieur), alors que le sang oxygéné de l'ECMO perfuse l'aorte descendante et les membres inférieurs. La SpO₂ haute au pouce DROIT (territoire sous-clavier droit, premier tronc supra-aortique) et basse au pied confirme ce mécanisme. Piège A : une thromboembolie donnerait une ischémie localisée, pas une discordance spatialement cohérente nord-sud. Piège C : une ischémie fémorale toucherait uniquement le membre concerné sans expliquer la SpO₂ haute à la main. Piège D : le bas débit peut altérer la qualité du signal mais pas de façon aussi cohérente avec la topographie."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un patient de 71 ans est sous ECMO-VA depuis J5 pour choc cardiogénique post-IDM. Les lactates ont normalisé (1,4 mmol/L). L'ETT montre une FEVG à 28%, un VTI sous-aortique à 12 cm, une ouverture de valve aortique franche. Le débit ECMO a été réduit progressivement à 2 L/min. La noradrénaline est à 0,1 µg/kg/min.",
+        "question": "Quelle est la condition ETT la plus importante à vérifier avant de procéder au sevrage (décanulation) de l'ECMO ?",
+        "options": {
+          "A": "FEVG > 35% avec doppler tissulaire normal",
+          "B": "Absence de thrombus intracavitaire et ouverture franche de la valve aortique à débit ECMO réduit à 1,5–2 L/min, avec stabilité hémodynamique sur 30–60 min à ce débit",
+          "C": "Disparition complète de l'insuffisance mitrale fonctionnelle",
+          "D": "Normalisation du diamètre télédiastolique du VG (DTDVG < 55 mm)"
+        },
+        "correct": "B",
+        "explanation": "Le sevrage ECMO-VA repose sur un test de bas débit (1,5–2 L/min) avec maintien de la stabilité hémodynamique pendant 30 à 60 minutes, l'ouverture franche de la valve aortique confirmant que le VG natif assure l'éjection. La présence de thrombus contre-indique la poursuite du sevrage. La FEVG seuil n'est pas 35% mais environ 20–25% selon les centres (un patient peut être sevré avec une FEVG encore altérée si le VD est fonctionnel et l'éjection franche). Piège A : exiger une FEVG > 35% est trop strict et retarderait le sevrage chez des patients capables d'être décanulés ; le doppler tissulaire n'est pas un critère de sevrage ECMO validé. Piège C : l'insuffisance mitrale fonctionnelle peut persister et ne conditionne pas à elle seule le sevrage. Piège D : la normalisation du DTDVG n'est pas un critère de sevrage — une cardiomégalie résiduelle peut persister."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Implantation d'une Impella CP pour choc cardiogénique dans un SCA antérieur. L'ETT montre un positionnement de la pompe à 2 cm au-dessus de la valve aortique. Le patient présente une hémoglobinurie et des LDH à 4 800 UI/L (N < 250). Le débit Impella est à P8 (débit maximal).",
+        "question": "Quelle est la cause la plus probable de l'hémolyse et quelle est la première mesure à prendre ?",
+        "options": {
+          "A": "Surdosage en héparine → réduire l'anticoagulation",
+          "B": "Mauvais positionnement de l'Impella (trop proche de la valve aortique) et/ou débit excessif → repositionner sous contrôle ETT à 3,5 cm au-dessus de la valve aortique et réduire le niveau de performance",
+          "C": "Thrombose de la roue de la pompe → arrêt immédiat de l'Impella et anticoagulation renforcée",
+          "D": "Anémie hémolytique auto-immune déclenchée par le matériel étranger → corticothérapie IV"
+        },
+        "correct": "B",
+        "explanation": "L'hémolyse sous Impella est le plus souvent liée à un mauvais positionnement (trop proximal = proche de la valve aortique, risque d'aspiration de la valve sur la pompe) et/ou à un débit trop élevé créant des forces de cisaillement excessives. La prise en charge est le repositionnement sous guidage ETT (tip à 3,5 cm au-dessus de la valve aortique, au milieu de l'aorte ascendante) et la réduction du niveau de performance (P). Piège A : l'anticoagulation n'est pas la cause de l'hémolyse mécanique ; la réduire aggraverait le risque thrombotique. Piège C : la thrombose de roue est une cause d'hémolyse sous Impella mais est rare et diagnostiquée devant une chute brutale du débit avec alarme — le repositionnement est prioritaire. Piège D : l'hémolyse auto-immune est un diagnostic d'élimination, non la première cause à évoquer en contexte d'Impella."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Homme de 55 ans, CCR sous ECMO-VA depuis J8, ATCD de chirurgie valvulaire il y a 3 ans. À J8, thrombopénie à 38 G/L (était à 210 G/L à J0). Pas de saignement actif. Score 4T calculé à 6 points.",
+        "question": "Quelle est la conduite à tenir la plus appropriée ?",
+        "options": {
+          "A": "Transfuser des concentrés plaquettaires pour maintenir les plaquettes > 50 G/L et continuer l'héparine",
+          "B": "Stopper l'héparine, doser les anticorps anti-PF4/héparine et substituer par argatroban ou bivalirudine en attente des résultats",
+          "C": "Réduire la dose d'héparine de 50% et contrôler les plaquettes à 6h",
+          "D": "Arrêter l'ECMO en urgence car l'anticoagulation est impossible en cas de TIH confirmée"
+        },
+        "correct": "B",
+        "explanation": "Un score 4T ≥ 6 points indique une probabilité élevée de TIH. La conduite à tenir est l'arrêt immédiat de l'héparine (toutes sources : HNF de circuit, rinçage, flush) et la substitution par un anticoagulant alternatif (argatroban ou bivalirudine, tous deux validés sous ECMO), SANS attendre la confirmation sérologique. Les anticorps anti-PF4/héparine (méthode ELISA) confirment le diagnostic. Piège A : transfuser des plaquettes ne traite pas la TIH et peut aggraver le risque thrombotique (thrombocytopénie paradoxale avec thrombose veineuse et artérielle). Piège C : réduire l'héparine ne stoppe pas la réponse immunitaire ; c'est insuffisant. Piège D : l'ECMO peut être maintenu sous anticoagulation alternative — l'arrêt de l'ECMO serait fatal si le patient en dépend encore."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Un patient de 48 ans est admis pour arrêt cardiaque extrahospitalier réfractaire (no-flow 3 min, low-flow 45 min sous MCE). Rythme initial : FV. Scanner corps entier post-RACS : pas de cause neurochirurgicale, pneumopathie d'inhalation bilatérale, coronarographie : occlusion proximale IVA thrombotique.",
+        "question": "Concernant l'indication d'une ECMO-VA dans ce contexte d'E-CPR (ECMO-assisted CPR), quel critère est le plus important pour décider de l'implantation ?",
+        "options": {
+          "A": "Âge < 65 ans et rythme initial choquable (FV/TV)",
+          "B": "No-flow < 5 min, low-flow < 60 min, absence de comorbidité majeure irréversible et cause potentiellement curable identifiée",
+          "C": "Dosage de la NSE < 33 µg/L à H24 confirmant l'absence de lésion neurologique sévère",
+          "D": "FEVG > 10% en ETT post-RACS documentant une activité myocardique résiduelle"
+        },
+        "correct": "B",
+        "explanation": "Les critères de sélection pour l'E-CPR combinent : no-flow très court (< 5 min), low-flow < 60 min (voire < 75–90 min dans certains centres très entraînés), cause potentiellement curable (ici SCA), absence de comorbidités majeures irréversibles. Ces critères reflètent la probabilité de récupération neurologique et cardiaque. Piège A : l'âge et le rythme initial sont des facteurs pronostiques mais pas des critères suffisants à eux seuls — une FV avec no-flow 0 min et low-flow 35 min chez un patient de 70 ans sans comorbidité peut être une indication valide. Piège C : la NSE à H24 est un marqueur pronostique neurologique mais n'est pas disponible en urgence pour décider de l'ECMO — elle guide le pronostic neurologique a posteriori. Piège D : une FEVG > 10% n'est pas un critère d'implantation ECMO — même un VG « quiescent » peut bénéficier de l'ECMO pour le bridge to recovery."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Patient de 67 ans, CCR post-SCA, sous ECMO-VA depuis 72h. Les paramètres hémodynamiques sont stabilisés (PAM 72 mmHg, lactates 1,8 mmol/L) mais la SpO₂ au membre supérieur droit chute à 85%, avec une gazométrie artérielle radiale droite montrant PaO₂ = 45 mmHg. La gazométrie sur la ligne artérielle fémorale (provenant du circuit ECMO) montre PaO₂ = 380 mmHg.",
+        "question": "Parmi les interventions suivantes, laquelle est la plus adaptée en première intention pour corriger cette complication ?",
+        "options": {
+          "A": "Augmenter le débit ECMO à 6 L/min pour que le sang oxygéné remonte davantage vers l'aorte ascendante",
+          "B": "Optimiser la ventilation mécanique pour améliorer l'oxygénation du sang éjecté par le VG natif (augmentation de FiO₂ et de PEP)",
+          "C": "Repositionner la canule artérielle ECMO en position axillaire droite pour oxygéner en priorité le territoire coronarien et cérébral",
+          "D": "Administrer de l'almitrine pour améliorer le rapport ventilation-perfusion pulmonaire"
+        },
+        "correct": "B",
+        "explanation": "Le syndrome de Harlequin est ici confirmé (sang hypoxique éjecté par le VG natif perfuse le territoire coronarien et cérébral, sang oxygéné ECMO perfuse le territoire inférieur). La première mesure est d'améliorer l'oxygénation pulmonaire native pour que le VG éjecte un sang mieux oxygéné : optimisation de la ventilation mécanique (FiO₂ 1,0, augmentation de la PEP, recrutement alvéolaire), réduction de l'espace mort, position demi-assise. Si insuffisant, repositionnement de la canule artérielle en sous-clavière droite ou ajout d'un oxygénateur sur le circuit de retour VG (configuration VV-ECMO ajoutée). Piège A : augmenter le débit ECMO peut paradoxalement aggraver le Harlequin en augmentant la pression rétrograde aortique et en réduisant encore l'éjection du VG natif. Piège C : le repositionnement en axillaire est une option valide mais invasive — réservée si l'optimisation ventilatoire échoue ; ce n'est pas la première étape. Piège D : l'almitrine améliore le rapport V/Q en hypoxémie localisée mais son effet est limité dans un poumon gravement atteint et ne constitue pas une réponse urgente au Harlequin."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Un patient de 59 ans est admis pour choc cardiogénique dans le cadre d'une insuffisance aortique aiguë sévère (dissection de type A avant chirurgie). FEVG estimée à 25%, lactatémie à 7 mmol/L, sous noradrénaline 1,2 µg/kg/min.",
+        "question": "Parmi les dispositifs d'assistance circulatoire suivants, lequel est formellement contre-indiqué dans ce contexte ?",
+        "options": {
+          "A": "ECMO-VA fémoro-fémorale",
+          "B": "Ballon de contre-pulsion intra-aortique (IABP)",
+          "C": "Impella CP",
+          "D": "ECMO-VA avec canulation artérielle axillaire droite"
+        },
+        "correct": "C",
+        "explanation": "L'insuffisance aortique modérée à sévère est une contre-indication absolue à l'Impella. La pompe axiale Impella traverse la valve aortique depuis l'aorte ascendante vers le VG : en présence d'une IA sévère, la pompe aggraverait considérablement la régurgitation (le dispositif maintient la valve ouverte et le sang reflue massivement), majorant la surcharge volumique du VG et rendant le dispositif inefficace voire délétère. Piège A : l'ECMO-VA fémoro-fémorale n'est pas contre-indiquée par l'IA (bien qu'elle augmente la postcharge) — c'est un bridge vers la chirurgie en urgence ; elle peut être utilisée avec prudence. Piège B : l'IABP est également problématique (inflation diastolique aggrave le reflux aortique en IA sévère) mais sa contre-indication est relative ; l'Impella reste la CI absolue la plus classique à retenir. Piège D : l'ECMO avec canulation axillaire n'est pas contre-indiquée par l'IA."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Femme de 44 ans, myocardite fulminante sous ECMO-VA à 4,5 L/min. À J4, apparition d'un saignement important sur le site de canulation fémorale, plaquettes à 45 G/L, TP 42%, fibrinogène 0,8 g/L. Le ROTEM montre un EXTEM CT allongé et un FIBTEM A5 à 2 mm.",
+        "correct": "B",
+        "explanation": "Le ROTEM montre une coagulopathie mixte : allongement du temps de coagulation (déficit en facteurs) + FIBTEM A5 effondré (hypofibrinogénémie). La correction prioritaire est la fibrinogénémie (cible ≥ 1,5 g/L, voire ≥ 2 g/L sous ECMO selon les centres) par concentré de fibrinogène ou plasma frais congelé, associée à des PFC pour corriger le TP. La transfusion plaquettaire est également indiquée (< 50 G/L avec saignement actif, cible > 80 G/L sous ECMO en cas de saignement actif selon certains centres). Le ROTEM guide la thérapeutique ciblée. Piège A : l'arrêt de l'anticoagulation ECMO expose à la thrombose du circuit en quelques heures — sauf saignement engageant le pronostic vital immédiat, on réduit au minimum et on traite la coagulopathie. Piège C : la protamine neutralise l'héparine mais aggrave le risque thrombotique du circuit sans corriger la coagulopathie de consommation. Piège D : l'acide tranexamique peut être utile en cas de fibrinolyse documentée au ROTEM (EXTEM LI60 < 85%) mais ne suffit pas seul en cas d'hypofibrinogénémie sévère.",
+        "question": "Quelle est la stratégie transfusionnelle la plus appropriée guidée par le ROTEM dans ce contexte ?",
+        "options": {
+          "A": "Arrêt immédiat de l'anticoagulation ECMO et attente de la normalisation spontanée",
+          "B": "Concentré de fibrinogène (cible ≥ 1,5–2 g/L) + PFC pour corriger le TP + concentrés plaquettaires (cible > 80 G/L en cas de saignement actif), guidé par le ROTEM",
+          "C": "Injection de protamine sulfate pour neutraliser l'héparine et arrêter le saignement",
+          "D": "Acide tranexamique IV 1 g en bolus comme seul traitement initial"
+        }
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Patient de 52 ans, CCR post-SCA, discussion en réunion multidisciplinaire pour escalade vers assistance longue durée. Il est sous ECMO-VA depuis J10 avec tentatives de sevrage échouées (FEVG stagnante à 12%, pas de récupération). Score INTERMACS estimé à 1–2. Bilan pré-transplantation en cours.",
+        "question": "Concernant la stratégie de « bridge to decision » en attendant la décision finale (transplantation vs LVAD vs limitation thérapeutique), quel élément est le PLUS déterminant pour définir la stratégie à J10–J14 ?",
+        "options": {
+          "A": "Le taux de NT-proBNP à J10 — s'il est > 5 000 pg/mL, indiquer un LVAD",
+          "B": "L'évaluation de la récupération d'organe (rein, foie, cerveau), l'étiologie (myocardite vs ischémique étendue), la contre-indication ou non à la transplantation, et la volonté du patient/famille",
+          "C": "La durée sous ECMO — au-delà de 10 jours, l'ECMO doit être systématiquement remplacée par un LVAD car le risque infectieux est prohibitif",
+          "D": "La FEVG à J10 — si < 15%, indication automatique au LVAD sans discussion complémentaire"
+        },
+        "correct": "B",
+        "explanation": "La décision à J10–J14 sous ECMO repose sur une évaluation multidimensionnelle : (1) récupération ou non d'organes vitaux (défaillance rénale ou hépatique irréversible contre-indique la transplantation et aggrave le pronostic du LVAD), (2) l'étiologie (myocardite = meilleur potentiel de récupération tardive vs nécrose ischémique étendue), (3) l'éligibilité à la transplantation (groupe sanguin, anticorps, comorbidités), (4) les valeurs et souhaits du patient et de sa famille (processus de décision partagée). Piège A : le NT-proBNP est un marqueur pronostique général mais n'est pas le critère de décision entre LVAD et autres stratégies — il n'existe pas de seuil validé pour cette indication. Piège C : il n'existe pas de durée limite systématique de 10 jours pour switcher vers LVAD ; certains patients sont maintenus sous ECMO plus longtemps si les organes sont préservés et la décision en cours. Piège D : la FEVG à J10 ne suffit pas à décider seule d'un LVAD — certaines myocardites récupèrent après 3–4 semaines d'assistance ; une FEVG de 12% ne condamne pas automatiquement à un LVAD sans évaluation étiologique et pronostique complète."
+      }
+    ]
   }
 ]
