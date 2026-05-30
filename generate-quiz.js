@@ -51,23 +51,29 @@ async function apiCall(messages, maxTokens = 500, retries = 3) {
 
 async function generateTopic(history) {
   const done = history.map(h => `- ${h.topic}`).join("\n") || "Aucun thème encore traité.";
+
+  // Détecte le déséquilibre sur les 4 derniers thèmes
+  const recent = history.slice(-4).map(h => h.cat || "");
+  const recentRea = recent.filter(c => c.toLowerCase().includes("réa") || c.toLowerCase().includes("rea")).length;
+  const recentAnes = recent.length - recentRea;
+  let forceDirection = "";
+  if (recentRea >= 3) forceDirection = "IMPORTANT : Les derniers thèmes étaient tous en réanimation. Choisis OBLIGATOIREMENT un thème d'ANESTHÉSIE cette fois (cardio-anesthésie, ALR, anesthésie obstétricale, voies aériennes, anesthésie du patient à risque, pharmacologie peranesthésique, période périopératoire...).";
+  else if (recentAnes >= 3) forceDirection = "IMPORTANT : Les derniers thèmes étaient tous en anesthésie. Choisis OBLIGATOIREMENT un thème de RÉANIMATION cette fois (choc, défaillance d'organe, ventilation mécanique, infections graves, neuroréanimation...).";
+
   const prompt = `Tu es un expert en anesthésie-réanimation (DESC). Propose UN thème de révision très spécifique et clinique pour un interne avancé en DESC anesthésie-réanimation.
+
+${forceDirection}
 
 Thèmes déjà traités (ne pas répéter) :
 ${done}
 
 Niveau attendu (exemples) :
-- "Gestion des anticoagulants et antiplaquettaires en périopératoire"
-- "Anesthésie pour patient avec rétrécissement aortique serré non opéré"
-- "Prise en charge de la défaillance ventriculaire droite aiguë en réanimation"
-- "Anesthésie pour césarienne en urgence extrême (code rouge)"
-- "Bloc interscalénique : indications, technique et complications"
-- "Choc anaphylactique peranesthésique : diagnostic et traitement"
-- "Anesthésie du patient cirrhotique Child-Pugh B/C"
-- "Gestion des voies aériennes difficiles prévues : stratégie et outils"
+Anesthésie : "Gestion des anticoagulants en périopératoire", "Anesthésie pour rétrécissement aortique serré", "Bloc interscalénique : technique et complications", "Anesthésie pour césarienne en urgence", "Anesthésie du patient cirrhotique", "Prise en charge du choc anaphylactique peranesthésique"
+Réanimation : "Défaillance ventriculaire droite aiguë en réa", "HTIC : monitorage et escalade thérapeutique", "Sevrage de la ventilation mécanique", "Choc septique réfractaire : vasopresseurs et corticothérapie", "CIVD en réanimation"
 
 Réponds UNIQUEMENT en JSON valide :
-{ "topic": "Titre très précis et clinique", "cat": "Catégorie (ex: Cardio-anesthésie, ALR, Obstétrique, Périopératoire, Voies aériennes, Réanimation, Urgences peranesthésiques...)" }`;
+{ "topic": "Titre très précis et clinique", "cat": "Catégorie (Cardio-anesthésie, ALR, Obstétrique, Périopératoire, Voies aériennes, Urgences peranesthésiques, Réanimation, Neuroréanimation, Choc & Hémodynamique, Réa respiratoire...)" }`;
+
   return JSON.parse(await apiCall([{ role: "user", content: prompt }], 300));
 }
 
@@ -373,6 +379,11 @@ function restartQ(){cur=0;sel=null;rev=false;ans=[];started=false;rQ();}
 }
 
 function generateIndexHTML(history) {
+  // Toutes les questions de l'historique avec leur thème
+  const allQuestions = history.flatMap(e =>
+    (e.questions || []).map(q => ({ ...q, topic: e.topic }))
+  );
+
   const cards = [...history].reverse().map(e => {
     const c = catColor(e.cat);
     return `<a href="./${e.date}.html" class="card-link">
@@ -386,6 +397,27 @@ function generateIndexHTML(history) {
     </a>`;
   }).join("");
 
+  // Calcul du streak
+  const dates = history.map(e => e.date).sort().reverse();
+  let streak = 0;
+  const today = new Date();
+  let check = new Date(today);
+  // On accepte que le dernier quiz soit aujourd'hui ou hier (en cas de retard cron)
+  const lastDate = dates[0];
+  const diffWithToday = Math.floor((today - new Date(lastDate)) / 86400000);
+  if (diffWithToday <= 1) {
+    for (const d of dates) {
+      const expected = new Date(check);
+      expected.setDate(expected.getDate() - (streak === 0 && diffWithToday === 1 ? 1 : 0) - (streak > 0 ? 1 : 0));
+      const expectedStr = expected.toISOString().slice(0, 10);
+      if (d === expectedStr || (streak === 0 && diffWithToday <= 1)) {
+        streak++;
+        check = new Date(d);
+      } else break;
+    }
+  }
+  const streakMsg = streak >= 7 ? "🔥 En feu !" : streak >= 3 ? "💪 Bonne série !" : streak >= 1 ? "✅ C'est parti !" : "😴 Reprends le rythme";
+
   return `<!DOCTYPE html>
 <html lang="fr"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -394,13 +426,17 @@ function generateIndexHTML(history) {
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f4f8;padding:16px}
 .container{max-width:720px;margin:0 auto}
-.header{background:#1a3a5c;color:white;border-radius:16px;padding:24px;margin-bottom:20px}
+.header{background:#1a3a5c;color:white;border-radius:16px;padding:24px;margin-bottom:16px}
 .header-title{font-size:22px;font-weight:700;margin-bottom:4px}
 .header-sub{font-size:14px;opacity:.75}
-.stats{display:flex;gap:12px;margin-top:16px}
-.stat{background:rgba(255,255,255,.15);border-radius:10px;padding:10px 16px;text-align:center;flex:1}
-.stat-num{font-size:26px;font-weight:700}
-.stat-label{font-size:11px;opacity:.8;margin-top:2px}
+.streak-box{display:flex;align-items:center;gap:16px;margin-top:16px;background:rgba(255,255,255,.12);border-radius:12px;padding:14px 16px}
+.streak-num{font-size:42px;font-weight:800;line-height:1}
+.streak-right{display:flex;flex-direction:column;gap:2px}
+.streak-label{font-size:13px;font-weight:600;opacity:.9}
+.streak-msg{font-size:12px;opacity:.7}
+.random-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:white;border:none;border-radius:14px;font-size:15px;font-weight:700;color:#1a3a5c;cursor:pointer;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .15s,box-shadow .15s}
+.random-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.random-btn .dice{font-size:20px}
 .section-title{font-size:12px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
 .card-link{text-decoration:none;display:block;margin-bottom:10px}
 .card{background:white;border-radius:14px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);transition:transform .15s,box-shadow .15s}
@@ -408,20 +444,120 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .badge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px}
 .card-date{font-size:12px;color:#94a3b8}
 .card-topic{font-size:15px;font-weight:600;color:#1e293b;line-height:1.4;margin-top:6px}
+#random-panel{display:none}
+.back-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#64748b;background:white;border:1px solid #e2e8f0;border-radius:8px;padding:6px 12px;cursor:pointer;margin-bottom:14px}
+.progress-wrap{background:#e2e8f0;border-radius:4px;height:4px;margin-bottom:16px}
+.progress-fill{background:#1a3a5c;height:4px;border-radius:4px;transition:width .3s}
+.q-num{font-size:13px;color:#64748b;margin-bottom:14px;font-weight:500}
+.q-topic{font-size:11px;color:#94a3b8;margin-bottom:10px;font-style:italic}
+.q-diff{display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:10px}
+.d-expert{background:#fdf2f8;color:#9d174d}.d-difficile{background:#fee2e2;color:#991b1b}.d-intermediaire{background:#fef3c7;color:#92400e}
+.q-context{font-size:13px;color:#64748b;line-height:1.6;margin-bottom:12px;padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #1a3a5c}
+.q-text{font-size:16px;font-weight:600;line-height:1.6;color:#1e293b;margin-bottom:16px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 14px;border:1.5px solid #e2e8f0;border-radius:10px;cursor:pointer;background:white;text-align:left;font-size:14px;line-height:1.5;color:#334155;width:100%;transition:all .12s}
+.opt:hover:not(:disabled){border-color:#1a3a5c;background:#f0f7ff}
+.opt-l{font-weight:800;color:#1a3a5c;min-width:20px;font-size:15px}
+.opt.correct{border-color:#059669;background:#d1fae5;color:#064e3b}
+.opt.correct .opt-l{color:#059669}
+.opt.wrong{border-color:#dc2626;background:#fee2e2;color:#7f1d1d}
+.opt.wrong .opt-l{color:#dc2626}
+.opt.reveal{border-color:#059669;background:#ecfdf5;color:#064e3b}
+.opt:disabled{cursor:default}
+.expl{margin-top:14px;padding:14px;background:#eff6ff;border-radius:10px;border-left:4px solid #1a3a5c;font-size:14px;line-height:1.7;color:#1e40af}
+.expl strong{font-weight:700;color:#1e3a8a}
+.next-btn{display:block;width:100%;margin-top:14px;padding:13px;background:#1a3a5c;color:white;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer}
+.score-wrap{text-align:center;padding:16px 0}
+.score-big{font-size:64px;font-weight:800;color:#1a3a5c;line-height:1}
+.score-pct{font-size:18px;color:#64748b;margin-top:6px}
+.score-msg{font-size:15px;font-weight:600;margin-top:12px;color:#1e293b}
+.review-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #f1f5f9}
+.r-icon{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+.r-ok{background:#d1fae5;color:#059669}.r-ko{background:#fee2e2;color:#dc2626}
+.r-q{font-size:13px;color:#1e293b;line-height:1.4}
+.r-ans{font-size:12px;color:#64748b;margin-top:2px}
+.btn-sec{display:block;width:100%;margin-top:12px;padding:13px;background:#f1f5f9;color:#1e293b;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer}
 </style>
 </head><body>
 <div class="container">
-  <div class="header">
-    <div class="header-title">Mes révisions AR</div>
-    <div class="header-sub">Anesthésie-Réanimation · DESC</div>
-    <div class="stats">
-      <div class="stat"><div class="stat-num">${history.length}</div><div class="stat-label">Séances</div></div>
-      <div class="stat"><div class="stat-num">${history.length * 10}</div><div class="stat-label">Questions</div></div>
+  <div id="main-panel">
+    <div class="header">
+      <div class="header-title">Mes révisions AR</div>
+      <div class="header-sub">Anesthésie-Réanimation · DESC</div>
+      <div class="streak-box">
+        <div class="streak-num">${streak}</div>
+        <div class="streak-right">
+          <div class="streak-label">jour${streak > 1 ? 's' : ''} de suite 🔥</div>
+          <div class="streak-msg">${streakMsg}</div>
+        </div>
+      </div>
     </div>
+    ${allQuestions.length >= 10 ? `<button class="random-btn" onclick="startRandom()"><span class="dice">🎲</span> Quiz aléatoire · 10 questions</button>` : ''}
+    <div class="section-title">Toutes les séances</div>
+    ${cards || '<div style="text-align:center;padding:40px;color:#94a3b8">Aucune séance pour l\'instant</div>'}
   </div>
-  <div class="section-title">Toutes les séances</div>
-  ${cards || '<div style="text-align:center;padding:40px;color:#94a3b8">Aucune séance pour l\'instant</div>'}
-</div></body></html>`;
+
+  <div id="random-panel">
+    <button class="back-btn" onclick="stopRandom()">← Retour</button>
+    <div id="random-app"></div>
+  </div>
+</div>
+
+<script>
+const ALL_QS = ${JSON.stringify(allQuestions)};
+let rCur=0, rSel=null, rRev=false, rAns=[], rQs=[];
+
+function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
+
+function startRandom(){
+  rQs = shuffle(ALL_QS).slice(0,10).map((q,i)=>({...q, num:i+1}));
+  rCur=0; rSel=null; rRev=false; rAns=[];
+  document.getElementById('main-panel').style.display='none';
+  document.getElementById('random-panel').style.display='block';
+  renderRandom();
+}
+
+function stopRandom(){
+  document.getElementById('main-panel').style.display='block';
+  document.getElementById('random-panel').style.display='none';
+}
+
+function scoreMsg(s,t){const p=s/t;if(p>=0.9)return"🎯 Excellent — niveau DESC solide.";if(p>=0.7)return"👍 Bon niveau — consolide les lacunes.";if(p>=0.5)return"📚 Correct — révisions nécessaires.";return"🔁 À retravailler.";}
+
+function renderRandom(){
+  const app=document.getElementById('random-app');
+  if(rCur>=rQs.length){
+    const score=rAns.filter((a,i)=>a===rQs[i].correct).length;
+    let h='<div class="card"><div class="score-wrap"><div class="score-big">'+score+'/'+rQs.length+'</div><div class="score-pct">'+Math.round(score/rQs.length*100)+'%</div><div class="score-msg">'+scoreMsg(score,rQs.length)+'</div></div></div>';
+    h+='<div class="card"><div style="font-size:12px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px">Récapitulatif</div>';
+    rQs.forEach((q,i)=>{const ok=rAns[i]===q.correct;h+='<div class="review-item"><div class="r-icon '+(ok?'r-ok':'r-ko')+'">'+(ok?'✓':'✗')+'</div><div><div class="r-q">'+q.question+'</div>'+(!ok?'<div class="r-ans">Bonne réponse : '+q.correct+'</div>':'')+'</div></div>';});
+    h+='<button class="next-btn" onclick="startRandom()">Nouveau quiz aléatoire 🎲</button>';
+    h+='<button class="btn-sec" onclick="stopRandom()">Retour au menu</button></div>';
+    app.innerHTML=h; return;
+  }
+  const q=rQs[rCur];
+  const pct=(rCur/rQs.length*100).toFixed(0);
+  const diff=q.difficulty||'difficile';
+  const dc=diff==='expert'?'d-expert':diff.includes('interm')?'d-intermediaire':'d-difficile';
+  let h='<div class="progress-wrap"><div class="progress-fill" style="width:'+pct+'%"></div></div>';
+  h+='<div class="q-num">Question '+(rCur+1)+' sur '+rQs.length+'</div>';
+  h+='<div class="card"><div class="q-topic">'+q.topic+'</div><span class="q-diff '+dc+'">'+diff+'</span>';
+  if(q.context)h+='<div class="q-context">'+q.context+'</div>';
+  h+='<div class="q-text">'+q.question+'</div><div class="opts" id="ropts">';
+  ['A','B','C','D'].forEach(l=>{
+    let cls='';
+    if(rRev){if(l===q.correct)cls=rSel===l?'correct':'reveal';else if(l===rSel)cls='wrong';}
+    h+='<button class="opt '+cls+'" data-l="'+l+'"'+(rRev?' disabled':'')+"><span class='opt-l'>"+l+"</span><span>"+q.options[l]+"</span></button>";
+  });
+  h+='</div>';
+  if(rRev)h+='<div class="expl"><strong>Réponse : '+q.correct+'</strong> — '+q.explanation+'</div><button class="next-btn" onclick="rNext()">'+(rCur<rQs.length-1?'Question suivante →':'Voir les résultats →')+'</button>';
+  h+='</div>';
+  app.innerHTML=h;
+  if(!rRev)document.getElementById('ropts').addEventListener('click',e=>{const b=e.target.closest('[data-l]');if(!b)return;rSel=b.dataset.l;rAns[rCur]=rSel;rRev=true;renderRandom();});
+}
+function rNext(){rCur++;rSel=null;rRev=false;renderRandom();}
+</script>
+</body></html>`;
 }
 
 async function main() {
@@ -456,4 +592,3 @@ async function main() {
 }
 
 main().catch(err => { console.error("Erreur :", err.message); process.exit(1); });
-
