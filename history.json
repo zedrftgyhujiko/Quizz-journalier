@@ -895,5 +895,384 @@
         "explanation": "La décision à J10–J14 sous ECMO repose sur une évaluation multidimensionnelle : (1) récupération ou non d'organes vitaux (défaillance rénale ou hépatique irréversible contre-indique la transplantation et aggrave le pronostic du LVAD), (2) l'étiologie (myocardite = meilleur potentiel de récupération tardive vs nécrose ischémique étendue), (3) l'éligibilité à la transplantation (groupe sanguin, anticorps, comorbidités), (4) les valeurs et souhaits du patient et de sa famille (processus de décision partagée). Piège A : le NT-proBNP est un marqueur pronostique général mais n'est pas le critère de décision entre LVAD et autres stratégies — il n'existe pas de seuil validé pour cette indication. Piège C : il n'existe pas de durée limite systématique de 10 jours pour switcher vers LVAD ; certains patients sont maintenus sous ECMO plus longtemps si les organes sont préservés et la décision en cours. Piège D : la FEVG à J10 ne suffit pas à décider seule d'un LVAD — certaines myocardites récupèrent après 3–4 semaines d'assistance ; une FEVG de 12% ne condamne pas automatiquement à un LVAD sans évaluation étiologique et pronostique complète."
       }
     ]
+  },
+  {
+    "date": "2026-05-30",
+    "dateStr": "samedi 30 mai",
+    "topic": "Prise en charge de l'état de mal épileptique réfractaire et super-réfractaire en réanimation : séquence thérapeutique, sédation anesthésique et monitorage EEG continu",
+    "cat": "Réanimation neurologique",
+    "course": {
+      "intro": "L'état de mal épileptique (EME) réfractaire concerne 30 à 40 % des EME initiaux et engage le pronostic neurologique et vital. La prise en charge en réanimation repose sur une séquence thérapeutique codifiée, une sédation anesthésique titrée sur l'EEG continu, et la prévention des complications systémiques. Maîtriser ce protocole est indispensable pour tout praticien de réanimation ou de neurologie intensive.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'EME est défini par une activité épileptique continue ou répétée sans retour à la conscience interictale, dépassant un seuil temporel au-delà duquel les mécanismes d'arrêt spontané sont dépassés et les lésions neuronales s'installent."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**EME convulsif généralisé (EMECG)** : crises tonico-cloniques continues ou répétées > 5 min, ou ≥ 2 crises sans retour à la conscience entre elles",
+                "**EME réfractaire (EMER)** : EME persistant après deux lignes thérapeutiques correctement dosées (1 benzodiazépine + 1 antiépileptique IV de 2e ligne)",
+                "**EME super-réfractaire (EMSR)** : EME persistant ou récidivant ≥ 24 h après introduction d'une anesthésie générale à dose anesthésique, incluant les récidives lors du sevrage",
+                "**EME non convulsif (EMNC)** : absence de manifestations motrices visibles, diagnostic EEG — nécessite une haute suspicion clinique en réanimation",
+                "**Opérationnalisation temporelle** : T1 = 5 min (traiter), T2 = 30 min (risque lésionnel établi), T3 = 60 min (EME réfractaire probable)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Après 30 à 45 min d'EME, les manifestations motrices peuvent s'estomper (épuisement musculaire) alors que l'activité électrique épileptique persiste — c'est l'EME électrique pur. Ne pas interrompre la surveillance EEG ni le traitement sur la seule disparition des convulsions cliniques."
+            },
+            {
+              "type": "formula",
+              "content": "Critère diagnostique EEG d'EME non convulsif (critères de Salzburg 2015) : décharges épileptiformes > 2,5 Hz OU décharges ≤ 2,5 Hz avec amélioration clinique et/ou EEG après benzodiazépine IV"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'EME résulte d'un déséquilibre entre hyperactivité glutamatergique (NMDA, AMPA) et défaillance GABAergique. La persistance de l'activité épileptique entraîne une internalisation progressive des récepteurs GABA-A synaptiques et une surexpression des récepteurs NMDA, expliquant la perte de sensibilité pharmacodynamique aux benzodiazépines au fil du temps."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Internalisation des récepteurs GABA-A** : mécanisme central de la pharmacorésistance aux benzodiazépines — apparaît dès 20-30 min d'EME, justifiant l'urgence thérapeutique",
+                "**Excitotoxicité glutamatergique** : afflux massif de Ca²⁺ intracellulaire → mort neuronale → lésions hippocampiques et corticales irréversibles",
+                "**Hyperactivité sympathique** : tachycardie, hypertension, hyperthermie, hyperlactatémie — aggravées par les lésions hypothalamiques",
+                "**Dérangements métaboliques** : hypoglycémie, acidose lactique, rhabdomyolyse, hypoxie — créent un cercle vicieux pro-épileptique",
+                "**Œdème cérébral cytotoxique** : conséquence de l'excitotoxicité, peut majorer la pression intracrânienne dans l'EMSR prolongé",
+                "**Neuroinflammation** : activation microgliale et astrocytaire, production de cytokines pro-épileptiques — cible thérapeutique émergente dans l'encéphalite auto-immune"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE PHYSIOPATHOLOGIQUE : L'efficacité des benzodiazépines diminue exponentiellement avec la durée de l'EME — une dose de diazépam efficace à 5 min peut être totalement inefficace à 30 min. Ne pas répéter indéfiniment les benzodiazépines au détriment du passage à la 2e ligne."
+            },
+            {
+              "type": "formula",
+              "content": "Fenêtre thérapeutique optimale des BZD : efficacité maximale dans les 5-20 premières minutes d'EME. Au-delà de 30 min, l'internalisation des récepteurs GABA-A synaptiques réduit l'efficacité de 80 à 90 %."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation / Diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le diagnostic d'EME est clinique pour l'EMECG, mais requiert l'**EEG continu** pour l'EMNC et pour guider l'anesthésie dans l'EMER/EMSR. L'enquête étiologique est simultanée et indispensable car elle conditionne le traitement spécifique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bilan biologique urgent** : glycémie capillaire immédiate, ionogramme, calcémie, magnésémie, NFS, bilan hépatique, dosage des antiépileptiques, lactates, CPK, gaz du sang, toxicologie urinaire et sanguine",
+                "**Neuroimagerie** : IRM cérébrale avec séquences FLAIR/DWI/gadolinium en première intention (si stable) ; TDM cérébral si instabilité hémodynamique ou impossibilité d'IRM",
+                "**Ponction lombaire** : systématique en l'absence de contre-indication si étiologie non identifiée — recherche méningite/encéphalite bactérienne, virale (HSV++), auto-immune",
+                "**Bilan auto-immun** : anticorps anti-NMDA, anti-LGI1, anti-CASPR2, anti-GABA-B, anti-AMPA dans le sang et le LCR — à demander d'emblée car les délais de rendu sont longs",
+                "**EEG continu** : à débuter dans les 60 min suivant l'admission en réanimation pour tout EME non contrôlé ou patient sédaté — gold standard pour monitorer la réponse thérapeutique",
+                "**Critères de mise sous anesthésie générale** : EMER confirmé après 2 lignes + critères EEG de persistance d'activité épileptique"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Indication d'EEG continu selon ACNS 2021 : tout patient en réanimation avec trouble de conscience inexpliqué OU EME traité OU à risque élevé d'EMNC (trauma crânien sévère, AVC, encéphalite). Durée recommandée ≥ 48 h pour détecter 95 % des événements épileptiques."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE DIAGNOSTIQUE : L'EMNC peut mimer une encéphalopathie métabolique, une démence aiguë ou un trouble psychiatrique. En réanimation, tout trouble de conscience fluctuant sans explication claire doit faire réaliser un EEG en urgence. Le taux d'EMNC en réanimation est estimé à 8-10 % des troubles de conscience inexpliqués."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge — Séquence thérapeutique",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge suit une **séquence thérapeutique en 4 phases** strictement chronologisée. Chaque phase doit être réalisée rapidement et sans hésitation en cas d'échec, avec un objectif EEG précis. Les mesures générales (voie veineuse, oxygénation, glycémie, température) sont concomitantes."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**PHASE 0 — Mesures générales immédiates (T0-T5 min)** : Position latérale de sécurité, O2 au masque (SpO2 > 94 %), voie veineuse périphérique, glycémie capillaire, protection des voies aériennes, monitoring continu (SpO2, FC, PA, ECG), ne pas chercher à contraindre les mouvements",
+                "**PHASE 1 — 1ère ligne BZD (T5-T20 min)** : Lorazépam IV 0,1 mg/kg (max 4 mg) en 2 min — si voie IV absente : midazolam IM 0,2 mg/kg (max 10 mg) ou buccal 10 mg ou diazépam rectal 10-20 mg. Peut être répété 1 fois après 5 min si inefficace",
+                "**PHASE 2 — 2ème ligne anti-épileptique IV (T20-T40 min)** : Valproate de sodium IV 40 mg/kg (max 3000 mg) sur 15 min OU lévétiracétam IV 60 mg/kg (max 4500 mg) sur 15 min OU phénytoïne/fosphénytoïne IV 20 mg/kg (max 1500 mg EQ-phénytoïne) sur 20 min. Le phénobarbital IV 20 mg/kg (max 1000 mg) est une alternative, notamment en pédiatrie",
+                "**PHASE 3 — Anesthésie générale = EMER (T40-T60 min)** : Intubation oro-trachéale en séquence rapide → sédation anesthésique IV continue titrée sur EEG : midazolam IV (0,2 mg/kg bolus puis 0,05-2 mg/kg/h), propofol IV (1-2 mg/kg bolus puis 1-10 mg/kg/h, max 5 mg/kg/h > 48 h — PRIS), ou thiopental IV (3-5 mg/kg bolus puis 3-7 mg/kg/h)",
+                "**Objectif EEG de la phase 3** : suppression des décharges épileptiques → burst-suppression pattern ou suppression complète selon sévérité (cf. ci-dessous)",
+                "**PHASE 4 — EMSR (> 24 h sous AG)** : Adjonction de kétamine IV (1-2 mg/kg bolus puis 1-5 mg/kg/h), immunothérapie si suspicion auto-immune, régime cétogène, hypothermie thérapeutique ciblée (35-36°C), ECT, stimulation magnétique transcrânienne, chirurgie épileptique en dernier recours"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Doses anesthésiques de référence (adulte) — EMER :\n• Midazolam : bolus 0,2 mg/kg IV puis IVSE 0,05 à 2 mg/kg/h\n• Propofol : bolus 1-2 mg/kg IV puis IVSE 1-10 mg/kg/h (≤ 4-5 mg/kg/h si > 48 h)\n• Thiopental : bolus 3-5 mg/kg IV puis IVSE 3-7 mg/kg/h (choix en cas d'échec propofol/midazolam)\n• Kétamine (EMSR) : bolus 1-2 mg/kg IV puis IVSE 1-5 mg/kg/h (propriété antagoniste NMDA)"
+            },
+            {
+              "type": "formula",
+              "content": "Objectif EEG sous anesthésie — 2 stratégies selon consensus d'experts :\n1. Contrôle des crises (suppression des décharges épileptiques) — objectif minimal recommandé\n2. Burst-suppression pattern (BSP) : ratio suppression/activité 50-80 % — pour les EMER sévères\n3. Suppression complète (iso-électrique) : EMSR rebelle uniquement, à éviter en première intention (pronostic aggravé si prolongé)"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE THÉRAPEUTIQUE : Le propofol est contre-indiqué à doses élevées (> 4-5 mg/kg/h) au-delà de 48 h en raison du risque de Propofol Infusion Syndrome (PRIS) — acidose métabolique, insuffisance cardiaque, rhabdomyolyse. Surveiller CPK, lactates, troponine, et ECG (bloc de branche, sus-ST V1-V3) quotidiennement sous propofol haute dose."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Valproate de sodium** : à éviter en cas de maladie mitochondriale suspectée (risque d'hépatotoxicité fulminante), contre-indiqué en grossesse (tératogénèse), pancreatite, déficit en cycle de l'urée",
+                "**Lévétiracétam** : adaptation à la fonction rénale (DFG < 30 mL/min : réduction de dose 50 %), pas d'interaction majeure, bonne tolérance hémodynamique — avantage en réanimation",
+                "**Fosphénytoïne** : contre-indiquée en cas de bloc auriculo-ventriculaire du 2e et 3e degré, bradycardie sévère ; monitoring ECG obligatoire pendant le perfusion ; attention aux interactions médicamenteuses (inducteur enzymatique puissant)",
+                "**Kétamine** : antagoniste NMDA → intérêt dans l'EMSR par mécanisme complémentaire aux BZD et propofol ; ne pas associer seule mais en adjuvant ; effet sympathomimétique potentiellement bénéfique sur la pression artérielle en réanimation",
+                "**Hypothermie thérapeutique** dans l'EMSR : cible 34-35°C, durée 24-48 h, effet antiépileptique (diminue la libération de glutamate, augmente la transmission GABAergique) — données de niveau faible mais utilisée en pratique dans les centres experts"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "La **durée de l'anesthésie** avant tentative de sevrage est débattue : consensus d'experts recommande 24-48 h de contrôle EEG stable avant toute décroissance progressive, sous couverture antiépileptique optimisée. Chaque récidive lors du sevrage repart pour 24 h minimum."
+            }
+          ]
+        },
+        {
+          "title": "5. Monitorage EEG continu en réanimation",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'**EEG continu** (cEEG) est le gold standard pour monitorer l'activité cérébrale épileptique sous sédation anesthésique. Il permet de titrer l'anesthésie à l'objectif thérapeutique, de détecter les crises infracliniques, et de guider le sevrage de sédation."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Modalités pratiques** : 19-21 électrodes (système 10-20) ou électrodes réduites à l'admission en urgence (8 électrodes minimum) — enregistrement continu 24h/24 avec revue régulière par expert (toutes les 2-4 h minimum)",
+                "**EEG quantifié (qEEG)** : outils de tendance (Compressed Spectral Array, aEEG, Rhythmicity Spectrogram) facilitant la surveillance continue par les équipes paramédicales — détecte les variations mais ne remplace pas la lecture experte",
+                "**Terminologie standardisée ACNS 2021** : Critical Care EEG Terminology — utiliser les termes : GRDA (Generalized Rhythmic Delta Activity), LRDA, LPD, GPD, BIPD pour décrire les patterns",
+                "**Patterns ictal-interictal continuum (IIC)** : patterns EEG ambigus dont la signification clinique est incertaine — délai thérapeutique : test au midazolam IV 1-2 mg si suspicion de pattern ictal, évaluation de l'amélioration clinique et EEG",
+                "**Indication de sevrage de sédation** : EEG stable sans décharge épileptique depuis 24-48 h, antiépileptiques de fond optimisés, cause traitée si possible — décroissance lente sur 12-24 h avec surveillance EEG renforcée",
+                "**Détection des crises sous sédation musculaire** : le cEEG est indispensable si curares utilisés (les manifestations cliniques sont abolies) — ne pas utiliser de curares sans cEEG dans l'EME"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE PRATIQUE : L'utilisation de curares (pour faciliter la ventilation ou lors de l'intubation) abolit toute manifestation motrice épileptique — l'EEG continu devient alors la seule fenêtre sur l'activité cérébrale. Utiliser les curares de longue durée dans l'EMECG sans cEEG est une faute grave pouvant masquer un EMNC persistant."
+            },
+            {
+              "type": "formula",
+              "content": "Durée recommandée de cEEG selon ACNS/ESICM : ≥ 48 h pour détecter 95 % des crises non convulsives. En pratique en EMER/EMSR : maintenu jusqu'à 24-48 h après le dernier épisode épileptique EEG ET sevrage complet de sédation anesthésique."
+            }
+          ]
+        },
+        {
+          "title": "6. Complications et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications de l'EME réfractaire sont à la fois **neurologiques** (lésions excitotoxiques, œdème cérébral), **systémiques** (PRIS, instabilité hémodynamique, sepsis), et **iatrogènes** (pneumopathie acquise sous ventilation mécanique, thrombose veineuse). Leur prévention et détection précoce conditionnent le pronostic."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Propofol Infusion Syndrome (PRIS)** : triade acidose métabolique + insuffisance cardiaque + rhabdomyolyse. Facteurs de risque : dose > 4-5 mg/kg/h, durée > 48 h, alimentation glucidique insuffisante, corticoïdes. Traitement : arrêt immédiat du propofol, épuration extrarénale si insuffisance rénale sévère",
+                "**Hypotension artérielle** : complication quasi-constante des anesthésiques IV à fortes doses (propofol, thiopental, midazolam) — expansion volémique, noradrénaline en IVSE, objectif PAM > 65 mmHg (> 80 mmHg si HTIC suspectée)",
+                "**Syndrome de sevrage aux BZD** : agitation, tremblements, convulsions lors du sevrage de midazolam après perfusion prolongée — décroissance progressive sur plusieurs jours, relais per os si possible",
+                "**Pneumopathie acquise sous ventilation mécanique (PAVM)** : prévention par bundle VAP (position demi-assise 30-45°, soins de bouche chlorhexidine, dépressurage du ballonnet, sevrage ventilatoire précoce)",
+                "**Thrombose veineuse profonde / embolie pulmonaire** : prophylaxie systématique par HBPM dès que possible (héparine calcique si thrombopénie), bas de contention",
+                "**Hyperthermie** : fréquente dans l'EME (centrale et infectieuse) — aggraver l'excitotoxicité, traitement actif par antipyrétiques et refroidissement externe. Température cible ≤ 37,5°C",
+                "**Rhabdomyolyse** : liée aux crises tonico-cloniques et aux drogues anesthésiques — surveillance CPK, créatinine, diurèse, hydratation abondante (diurèse > 1 mL/kg/h)",
+                "**Complications neurologiques à long terme** : altération cognitive, déficits focaux, épilepsie chronique — évaluation neuropsychologique à 3 et 12 mois"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE THÉRAPEUTIQUE IATROGÈNE : Le thiopental sodique entraîne un iléus prolongé, une immunosuppression, une accumulation tissulaire (demi-vie terminale jusqu'à 40 h) et une hypotension réfractaire. Il ne doit être utilisé que dans les EMER sévères après échec des autres agents, avec surveillance hémodynamique intensive (objectif de niveau de preuve très limité)."
+            }
+          ]
+        },
+        {
+          "title": "7. Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**SFMU/SRLF/SFAR 2021 (Protocole national EME)** : Lorazépam IV 0,1 mg/kg ou midazolam IM/buccal en 1re ligne (Grade A) — valproate, lévétiracétam ou phénytoïne en 2e ligne (Grade B) — anesthésie générale après 2 lignes d'échec (Grade A)",
+                "**ESICM Consensus 2022 (EME en réanimation)** : EEG continu recommandé pour tout EME traité en réanimation (Grade fort) — objectif de suppression des crises EEG plutôt que burst-suppression systématique (Grade faible — accord d'experts)",
+                "**ACNS Critical Care EEG Terminology 2021** : standardisation de la terminologie EEG en réanimation — adoption recommandée pour la communication inter-équipes",
+                "**AAN Practice Guideline Update 2016 (toujours référence)** : les trois agents de 2e ligne (valproate, lévétiracétam, fosphénytoïne) ont une efficacité similaire — choix selon comorbidités et terrain (Grade B)",
+                "**ESETT Trial (NEJM 2019)** : essai randomisé multicentrique confirmant l'absence de supériorité entre lévétiracétam, fosphénytoïne et valproate en 2e ligne — taux de contrôle ~50 % pour chacun",
+                "**Essai RAMPART (NEJM 2012)** : midazolam IM non inférieur au lorazépam IV pour l'EME préhospitalier — justifie l'utilisation du midazolam IM en 1re ligne hors milieu hospitalier",
+                "**Régime cétogène dans l'EMSR** : séries de cas et revues systématiques 2021-2023 — efficacité rapportée dans 50-60 % des EMSR réfractaires aux anesthésiques — grade de recommandation faible (C), utilisé en pratique dans les centres experts après avis pluridisciplinaire",
+                "**Immunothérapie dans l'EMSR d'origine auto-immune** : méthylprednisolone IV 1 g/j × 5 j + IgIV 2 g/kg sur 5 j en 1re intention ± échanges plasmatiques — rituximab ou cyclophosphamide en 2e ligne (Grade C — accord d'experts, EFNS 2020)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE RÉGLEMENTAIRE : En France, le lévétiracétam est utilisé en pratique courante à des doses jusqu'à 4500 mg/j en IV dans l'EME, bien que l'AMM en intraveineuse ne couvre pas l'indication 'état de mal' à ces doses — utilisation hors AMM à documenter et justifier dans le dossier médical."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Urgence temporelle absolue** : chaque minute d'EME non traité aggrave le pronostic neurologique — agir selon la séquence BZD → antiépileptique IV → anesthésie générale sans délai inutile",
+        "**Internalisation des GABA-A** : la résistance pharmacologique aux benzodiazépines s'installe dès 20-30 min — ne jamais répéter plus de 2 doses de BZD sans passer à la 2e ligne",
+        "**EEG continu = instrument de pilotage** : titrer la sédation anesthésique sur l'EEG, pas sur la clinique seule — les curares abolissent les manifestations motrices sans contrôler l'activité épileptique",
+        "**PRIS sous propofol** : ne pas dépasser 4-5 mg/kg/h sur plus de 48 h — surveiller CPK, lactates, troponine, ECG quotidiennement et avoir un plan de relais (midazolam ou thiopental)",
+        "**Étiologie = clé du pronostic** : chercher une encéphalite auto-immune (anti-NMDA, anti-LGI1...) dans tout EMSR — l'immunothérapie précoce change le pronostic radicalement et doit être débutée dès la suspicion clinique sans attendre les résultats définitifs"
+      ],
+      "references": [
+        "Leitinger M et al. — Epidemiology of Status Epilepticus in Adults: A Population-Based Study on Incidence, Causes, and Outcomes — Epilepsia 2019",
+        "Glauser T et al. — Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults — Epilepsy Currents 2016",
+        "Kapur J et al. (ESETT Investigators) — Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus — NEJM 2019",
+        "Silbergleit R et al. (RAMPART Investigators) — Intramuscular versus Intravenous Therapy for Prehospital Status Epilepticus — NEJM 2012",
+        "Herman ST et al. — Consensus Statement on Continuous EEG in Critically Ill Adults and Children (ACNS) — Journal of Clinical Neurophysiology 2015 (mise à jour terminologie 2021)",
+        "Leitinger M et al. — Salzburg Consensus Criteria for Non-Convulsive Status Epilepticus — Epilepsia 2015 (révisé 2020)",
+        "Rossetti AO et al. — Management of Refractory Status Epilepticus in Adults: Still More Questions than Answers — Lancet Neurology 2011 — données épidémiologiques toujours citées",
+        "Ferlisi M, Shorvon S — The outcome of therapies in refractory and super-refractory convulsive status epilepticus — Epilepsia 2012",
+        "SFMU/SRLF/SFAR — Protocole National de Diagnostic et de Soins : État de mal épileptique — HAS 2021",
+        "Zeiler FA et al. — The Ketogenic Diet for Super-Refractory Status Epilepticus — Critical Care Medicine 2022",
+        "Graus F et al. — A clinical approach to diagnosis of autoimmune encephalitis — Lancet Neurology 2016 (toujours référence)",
+        "Claassen J et al. — Detection of Brain Activation in Unresponsive Patients with Acute Brain Injury — NEJM 2019"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Homme de 58 ans, EME convulsif généralisé depuis 25 minutes à l'arrivée aux urgences. A reçu 2 mg de lorazépam IV il y a 10 min sans efficacité, puis 2 mg supplémentaires il y a 5 min sans efficacité. GCS avant la crise : 15/15. Pas d'ATCD épileptique connu. Glycémie capillaire : 0,82 g/L.",
+        "question": "Quelle est la prochaine étape thérapeutique la plus appropriée selon les recommandations actuelles ?",
+        "options": {
+          "A": "Administrer une 3e dose de lorazépam 2 mg IV car la dose totale maximale de 8 mg n'est pas atteinte",
+          "B": "Initier du valproate de sodium IV 40 mg/kg sur 15 min en parallèle d'une correction de la glycémie par G30%",
+          "C": "Procéder directement à l'intubation oro-trachéale et démarrer le propofol IV en IVSE",
+          "D": "Administrer du phénobarbital IV 20 mg/kg sur 30 min en 1re intention de 2e ligne"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : après échec de 2 doses de BZD, la 2e ligne antiépileptique s'impose immédiatement. Le valproate IV 40 mg/kg est un choix de 1re intention de 2e ligne (avec lévétiracétam et phénytoïne). La glycémie à 0,82 g/L est limite basse — une correction préventive ou au moins une surveillance rapprochée est justifiée. Piège A : répéter une 3e dose de BZD est une erreur — 2 doses constituent l'échec de la 1re ligne, ajouter une 3e dose retarde la 2e ligne sans bénéfice démontré et augmente le risque de dépression respiratoire. Piège C : l'anesthésie générale est la 3e ligne (EMER), indiquée après échec de la 2e ligne antiépileptique — la sauter est prématuré à ce stade. Piège D : le phénobarbital est une alternative de 2e ligne valide mais n'est pas le 1er choix recommandé en France chez l'adulte hors allergie ou indisponibilité des autres agents — valproate, lévétiracétam ou phénytoïne sont préférés."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Femme de 34 ans, EME réfractaire depuis 2 heures, intubée sous propofol IVSE 6 mg/kg/h depuis 52 heures. L'équipe note une acidose métabolique (pH 7,22, bicarbonates 14 mmol/L, lactates 4,8 mmol/L), une élévation des CPK à 12 000 UI/L et une élévation de la troponine I à 1,2 ng/mL. ECG : bloc de branche droit complet d'apparition récente.",
+        "question": "Quel diagnostic doit être évoqué en priorité et quelle est la conduite à tenir immédiate ?",
+        "options": {
+          "A": "Rhabdomyolyse liée aux crises épileptiques — poursuivre le propofol et augmenter les apports hydriques",
+          "B": "Propofol Infusion Syndrome (PRIS) — arrêt immédiat du propofol et relais par midazolam ou thiopental",
+          "C": "Syndrome de Tako-Tsubo lié au stress sympathique de l'EME — réduire la dose de propofol de 50 %",
+          "D": "Sepsis sur infection pulmonaire nosocomiale — bilan infectieux et antibiothérapie probabiliste"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la triade acidose métabolique + rhabdomyolyse (CPK élevée) + atteinte cardiaque (troponine élevée, BBD) chez une patiente sous propofol > 4-5 mg/kg/h depuis > 48 h est la présentation classique du PRIS. L'arrêt immédiat du propofol est le seul traitement étiologique — relais par midazolam IVSE ou thiopental. Si insuffisance rénale : dialyse. Piège A : la rhabdomyolyse liée aux crises est plausible, mais la CPK à 12 000 associée à l'acidose et à l'atteinte cardiaque dans ce contexte oriente vers le PRIS — poursuivre le propofol serait catastrophique. Piège C : le Tako-Tsubo est possible en contexte de stress intense mais n'explique pas l'acidose lactique et la CPK élevée — de plus, réduire de 50 % sans arrêter est insuffisant face au PRIS. Piège D : un sepsis peut coexister mais ne cause pas une acidose lactique avec atteinte musculaire et cardiaque simultanée dans ce contexte précis."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Patient de 24 ans en EMSR depuis 5 jours malgré propofol + midazolam en IVSE. L'EEG montre des décharges épileptiques toutes les 30-45 minutes malgré un burst-suppression pattern entre les crises.",
+        "question": "Parmi les options thérapeutiques suivantes, laquelle est la plus pertinente à ajouter en priorité pour contrôler cet EMSR ?",
+        "options": {
+          "A": "Augmenter le midazolam jusqu'à 3 mg/kg/h",
+          "B": "Débuter la kétamine IV en bolus puis IVSE comme adjuvant anesthésique",
+          "C": "Administrer une 2e dose de lévétiracétam IV 4500 mg en urgence",
+          "D": "Réaliser une hyperventilation mécanique cible pCO2 à 30 mmHg pour réduire le débit cérébral"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la kétamine (antagoniste NMDA) est l'adjuvant anesthésique de choix dans l'EMSR. Son mécanisme d'action est complémentaire à celui du propofol et du midazolam (mécanismes GABAergiques). Des séries de cas et revues systématiques (2019-2022) rapportent une efficacité dans 50-60 % des EMSR réfractaires aux anesthésiques classiques. Dose : bolus 1-2 mg/kg puis IVSE 1-5 mg/kg/h. Piège A : augmenter le midazolam à 3 mg/kg/h dépasse très largement les doses thérapeutiques validées (max 2 mg/kg/h), expose à une accumulation toxique et à une toxicité propylène glycol (excipient du midazolam concentré) — sans bénéfice démontré au-delà du plateau pharmacologique. Piège C : répéter la dose de lévétiracétam n'est pas indiqué si le patient a déjà reçu des doses optimales de 2e ligne — les antiépileptiques conventionnels n'ont pas d'indication à être re-administrés en bolus dans l'EMSR sous AG. Piège D : l'hyperventilation ciblée à pCO2 30 mmHg est une technique de gestion de l'HTIC, non une thérapeutique antiépileptique — elle réduit le DSC mais est délétère si prolongée (vasoconstriction, ischémie)."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Femme de 28 ans hospitalisée pour EME réfractaire. IRM cérébrale : hypersignal FLAIR bilatéral insulaire et frontal. LCR : méningite lymphocytaire modérée, protéinorachie 0,72 g/L, glycorachie normale. Anticorps anti-NMDA dans le LCR : positifs.",
+        "question": "Quelle est la stratégie immunothérapeutique de 1re ligne la plus appropriée ?",
+        "options": {
+          "A": "Méthylprednisolone IV seule 1 g/j × 5 jours",
+          "B": "IgIV seules 2 g/kg sur 5 jours",
+          "C": "Association méthylprednisolone IV 1 g/j × 5 j et IgIV 2 g/kg sur 5 j de manière simultanée ou rapprochée",
+          "D": "Rituximab IV 375 mg/m² × 4 semaines en 1re ligne compte tenu de la positivité des anti-NMDA"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : dans l'encéphalite anti-NMDA avec EMSR, la 1re ligne d'immunothérapie associe méthylprednisolone IV haute dose ET immunoglobulines IV, souvent en parallèle ou avec un intervalle court. Les échanges plasmatiques peuvent être utilisés en alternative ou en complément. Cette association est recommandée par l'EFNS/EAN 2016-2020 et les consensus d'experts. Piège A : les corticoïdes seuls sont insuffisants dans l'encéphalite anti-NMDA sévère avec EME — l'association est supérieure. Piège B : les IgIV seules sont une option dans les formes moins sévères mais insuffisantes dans l'EMSR sur encéphalite anti-NMDA. Piège D : le rituximab est la 2e ligne d'immunothérapie (après échec de la 1re ligne à 2-4 semaines), pas la 1re — le démarrer d'emblée retarderait inutilement un traitement de 1re ligne plus rapidement disponible et potentiellement efficace."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patient de 67 ans diabétique de type 2 sous metformine, insuffisance rénale chronique stade 3B (DFG = 28 mL/min/1,73m²). EME convulsif généralisé depuis 35 min, lorazépam 4 mg IV administré sans efficacité.",
+        "question": "Quel antiépileptique de 2e ligne faut-il éviter en priorité dans ce contexte ?",
+        "options": {
+          "A": "Valproate de sodium IV 40 mg/kg",
+          "B": "Lévétiracétam IV 60 mg/kg",
+          "C": "Fosphénytoïne IV 20 mg/kg équivalent phénytoïne",
+          "D": "Phénobarbital IV 20 mg/kg"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le lévétiracétam a une élimination rénale prédominante (66 % sous forme inchangée). En cas d'insuffisance rénale sévère (DFG < 30 mL/min), sa dose doit être réduite de 50 % pour éviter l'accumulation — à DFG 28 mL/min, la dose standard de 60 mg/kg est à risque de surdosage (somnolence, aggravation neurologique, rarement psychose). La dose adaptée serait de 30 mg/kg. Piège A : le valproate a une métabolisation hépatique prédominante — l'insuffisance rénale modérée ne contre-indique pas son usage et ne nécessite pas d'adaptation posologique majeure (attention à la fraction libre aumentée si hypoalbuminémie). Piège C : la fosphénytoïne est métabolisée en phénytoïne par les phosphatases plasmatiques puis conjuguée au foie — l'insuffisance rénale modérée n'est pas une contre-indication formelle (surveiller signes cardiaques). Piège D : le phénobarbital a également une élimination rénale partielle (~25 %) mais une adaptation fine est moins critique à ce niveau de DFG comparée au lévétiracétam — reste utilisable avec vigilance."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patient de 45 ans en réanimation pour EMSR depuis 72 h, sous thiopental IVSE 5 mg/kg/h, valproate IV et lévétiracétam. EEG : suppression complète iso-électrique depuis 24 h. L'équipe discute d'un sevrage progressif du thiopental.",
+        "question": "Quelle est la stratégie de sevrage de sédation anesthésique la mieux validée dans ce contexte ?",
+        "options": {
+          "A": "Arrêt brutal du thiopental avec passage en sédation légère par midazolam pour permettre un réveil rapide et l'évaluation neurologique",
+          "B": "Décroissance progressive du thiopental sur 12-24 h avec cEEG continu, antiépileptiques de fond optimisés, en ciblant initialement la suppression des crises plutôt que l'EEG plat",
+          "C": "Maintien du thiopental en suppression complète pendant 5 jours minimum avant toute tentative de sevrage",
+          "D": "Sevrage du thiopental et remplacement immédiat par propofol à dose équi-anesthésique pour faciliter le réveil ultérieur"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le sevrage de l'anesthésie dans l'EMSR se fait de manière progressive (sur 12-24 h minimum), sous cEEG continu, avec pour objectif intermédiaire la suppression des crises EEG (pas nécessairement le maintien du burst-suppression ou de l'iso-électricité). Les antiépileptiques de fond doivent être à dose optimale avant et pendant le sevrage. Chaque récidive repart pour 24 h. Piège A : l'arrêt brutal expose à la récidive immédiate de l'EME (effet rebond, élimination rapide du thiopental) et à un syndrome de sevrage — la décroissance lente est indispensable. Piège C : aucune donnée ne valide une durée fixe de 5 jours de suppression complète — c'est un consensus d'experts de 24-48 h de stabilité EEG, pas 5 jours ; prolonger inutilement aggrave les complications (hémodynamiques, infectieuses, accumulation). Piège D : le remplacement immédiat par propofol à dose équi-anesthésique ne réduit pas le risque de récidive et expose au PRIS si le patient est déjà sous propofol depuis longtemps — la transition doit être planifiée, pas immédiate."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "L'équipe de réanimation surveille un patient en EMSR sous sédation anesthésique et curarisation par atracurium pour dyssynchronie ventilatoire sévère. L'interne propose d'évaluer le contrôle de l'EME par l'examen clinique.",
+        "question": "Quelle est l'affirmation correcte concernant le monitorage de cet EME sous curares ?",
+        "options": {
+          "A": "L'absence de manifestations motrices sous atracurium confirme le contrôle de l'activité épileptique",
+          "B": "Le monitorage EEG continu est indispensable car les curares abolissent les manifestations cliniques sans modifier l'activité électrique cérébrale épileptique",
+          "C": "L'EEG quantifié (aEEG) seul suffit pour surveiller un EMNC sous curares, sans lecture experte",
+          "D": "L'utilisation des curares est contre-indiquée dans l'EMSR car elle empêche toute évaluation de la réponse thérapeutique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les curares bloquent la jonction neuromusculaire périphérique sans aucun effet sur l'activité électrique cérébrale. Un patient curarité peut présenter un EME électrique actif sans aucune manifestation motrice visible — seul le cEEG permet de détecter et monitorer cette activité. C'est une règle absolue en réanimation. Piège A : c'est l'erreur classique et grave — l'absence de mouvements ne reflète que l'effet neuromusculaire périphérique des curares, absolument pas le contrôle de l'épilepsie. Piège C : l'EEG quantifié (aEEG) est un outil d'aide à la surveillance continue mais ne remplace pas la lecture experte — il peut rater des crises brèves, des EMNC subtils ou des patterns IIC complexes. Il doit être complété par une relecture experte régulière. Piège D : les curares ne sont pas contre-indiqués dans l'EMSR, ils sont parfois nécessaires pour la gestion ventilatoire — la contre-indication concerne leur utilisation sans cEEG concomitant, pas leur utilisation en elle-même."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Femme enceinte de 32 semaines d'aménorrhée, 29 ans, EME réfractaire depuis 40 min, résistant à 2 doses de lorazépam IV.",
+        "question": "Quel antiépileptique de 2e ligne est formellement contre-indiqué dans ce contexte ?",
+        "options": {
+          "A": "Lévétiracétam IV",
+          "B": "Magnésium sulfate IV",
+          "C": "Valproate de sodium IV",
+          "D": "Phénytoïne IV"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le valproate de sodium est formellement contre-indiqué pendant la grossesse en raison de sa tératogénicité majeure (malformations congénitales, syndrome fœtal à l'acide valproïque, neurotoxicité fœtale) classée catégorie X. Dans ce contexte, en cas d'EME résistant aux BZD chez une femme enceinte de 32 SA, les alternatives sont le sulfate de magnésium IV (traitement de l'éclampsie), la phénytoïne IV (si l'EME n'est pas lié à une éclampsie), ou le lévétiracétam IV (utilisé hors AMM, données rassurantes de tératogénicité). Piège A : le lévétiracétam a un profil de sécurité relativement favorable en grossesse — il n'est pas formellement contre-indiqué bien qu'il traverse la barrière placentaire. Piège B : le magnésium est le traitement de 1re ligne des convulsions éclamptiques — il n'est pas contre-indiqué, c'est même une indication potentielle. Piège D : la phénytoïne a une certaine tératogénicité (syndrome fœtal à l'hydantoïne) mais n'est pas formellement contre-indiquée dans l'urgence vitale comme l'EME — le rapport bénéfice/risque reste favorable à court terme."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Patient de 52 ans en EMSR depuis 4 jours. L'EEG montre des GRDA (Generalized Rhythmic Delta Activity) à 2 Hz de manière quasi-continue. L'équipe discute de la signification clinique de ce pattern.",
+        "question": "Quelle est l'affirmation la plus exacte concernant ce pattern EEG en réanimation ?",
+        "options": {
+          "A": "Les GRDA à 2 Hz sont un pattern ictale formel — il faut augmenter immédiatement la sédation anesthésique",
+          "B": "Les GRDA font partie du continuum ictal-interictal (IIC) — leur signification clinique est incertaine et nécessite une évaluation clinico-EEG intégrée, potentiellement un test diagnostique aux BZD",
+          "C": "Les GRDA sont un signe de bonne évolution neurologique — ils traduisent la disparition de l'activité épileptique sous traitement",
+          "D": "Les GRDA à 2 Hz sont pathognomoniques d'une encéphalopathie métabolique et ne nécessitent pas de modification du traitement antiépileptique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : selon la terminologie ACNS 2021, les GRDA (et les autres patterns rythmiques généralisés) font partie du spectre ictal-interictal continuum (IIC). Leur signification clinique est ambiguë — ils peuvent représenter une activité ictale, péri-ictale ou simplement une encéphalopathie sévère. L'approche recommandée est l'évaluation clinico-EEG intégrée, et si le doute persiste, un test diagnostique par benzodiazépine IV à faible dose avec évaluation simultanée de l'amélioration clinique et EEG (test au midazolam 1-2 mg). Piège A : affirmer que c'est un pattern ictale formel nécessitant une escalade thérapeutique immédiate est inexact — une escalade non justifiée expose aux complications de la sédation. Piège C : les GRDA ne sont pas un signe de bonne évolution — ils témoignent d'une dysfonction cérébrale significative, et peuvent précéder ou suivre des crises. Piège D : les GRDA peuvent accompagner une encéphalopathie métabolique mais ne sont pas pathognomoniques de cette étiologie — les affirmer bénins serait une erreur de lecture EEG."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Homme de 19 ans, EMSR depuis 7 jours sans étiologie identifiée malgré le bilan standard. L'équipe discute de la mise en place d'un régime cétogène.",
+        "question": "Parmi les affirmations suivantes concernant le régime cétogène dans l'EMSR, laquelle est exacte ?",
+        "options": {
+          "A": "Le régime cétogène est contre-indiqué sous ventilation mécanique car il ne peut être administré que par voie orale",
+          "B": "L'efficacité du régime cétogène dans l'EMSR est démontrée par des essais randomisés de niveau 1 — il devrait être débuté dès la 48e heure d'EME",
+          "C": "Le régime cétogène peut être administré par sonde nasogastrique ou jéjunale en réanimation, avec un délai d'efficacité de 24-72 h, et représente une option thérapeutique valide dans l'EMSR rebelle aux anesthésiques",
+          "D": "Le régime cétogène est contre-indiqué en cas de valproate de sodium concomitant car l'interaction est létale"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le régime cétogène (rapport lipides/glucides+protéines de 3:1 à 4:1, apports en glucides < 20-50 g/j) peut être administré par sonde entérale en réanimation. Des séries rétrospectives et revues systématiques (Zeiler et al., Critical Care Medicine 2022 ; autres séries 2019-2023) rapportent un taux de contrôle de l'EME de 50-60 % dans les cas réfractaires. Le délai d'efficacité est de 24-72 h (temps nécessaire pour atteindre la cétose). Son mécanisme antiépileptique inclut la modulation GABAergique, la réduction du glutamate et des effets sur les canaux potassiques. Piège A : le régime cétogène peut parfaitement être administré par sonde nasogastrique ou jéjunale — il existe des formules liquides spécifiques — la ventilation mécanique n'est pas une contre-indication. Piège B : il n'existe pas d'essais randomisés de niveau 1 sur le régime cétogène dans l'EMSR — les données sont des séries de cas et des revues systématiques (niveau faible, grade C) — débuter à 48 h est prématuré selon les recommandations actuelles qui le réservent aux EMSR rebelles à plusieurs lignes. Piège D : l'association valproate + régime cétogène n'est pas létale mais peut augmenter le risque d'acidose et de stéatose hépatique — c'est une précaution d'emploi, pas une contre-indication absolue."
+      }
+    ]
   }
 ]
