@@ -6,7 +6,7 @@ async function main() {
   const response = await fetch(`https://ntfy.sh/${process.env.NTFY_TOPIC}`, {
     method: "POST",
     headers: {
-      "Title": "Quiz AR du jour",
+      "Title": "Quiz MAR du jour",
       "Priority": "high",
       "Tags": "stethoscope",
       "Click": PAGES_URL,
