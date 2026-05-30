@@ -72,9 +72,32 @@ Anesthésie : "Gestion des anticoagulants en périopératoire", "Anesthésie pou
 Réanimation : "Défaillance ventriculaire droite aiguë en réa", "HTIC : monitorage et escalade thérapeutique", "Sevrage de la ventilation mécanique", "Choc septique réfractaire : vasopresseurs et corticothérapie", "CIVD en réanimation"
 
 Réponds UNIQUEMENT en JSON valide :
-{ "topic": "Titre très précis et clinique", "cat": "Catégorie (Cardio-anesthésie, ALR, Obstétrique, Périopératoire, Voies aériennes, Urgences peranesthésiques, Réanimation, Neuroréanimation, Choc & Hémodynamique, Réa respiratoire...)" }`;
+{ "topic": "Titre très précis et clinique" }`;
 
-  return JSON.parse(await apiCall([{ role: "user", content: prompt }], 300));
+  const result = JSON.parse(await apiCall([{ role: "user", content: prompt }], 200));
+  return result.topic;
+}
+
+
+async function assignCategory(topic) {
+  const CATEGORIES = [
+    "Réanimation",
+    "Anesthésie",
+    "Pédiatrie",
+    "Obstétrique",
+    "ALR",
+  ];
+
+  const prompt = `Voici un thème de révision en anesthésie-réanimation : "${topic}"
+
+Assigne-lui LA catégorie la plus proche parmi cette liste (réponds uniquement avec le nom exact) :
+${CATEGORIES.join(", ")}
+
+Réponds UNIQUEMENT en JSON : { "cat": "Catégorie exacte" }`;
+
+  const result = JSON.parse(await apiCall([{ role: "user", content: prompt }], 100));
+  const cat = result.cat;
+  return CATEGORIES.includes(cat) ? cat : CATEGORIES.find(c => cat.toLowerCase().includes(c.toLowerCase())) || "Réanimation";
 }
 
 async function generateContent(topic) {
@@ -181,18 +204,14 @@ function md(text) {
 
 function catColor(cat) {
   const map = {
-    "Cardio-anesthésie":    { bg: "#fee2e2", text: "#991b1b", border: "#fca5a5" },
-    "Obstétrique":          { bg: "#fce7f3", text: "#831843", border: "#f9a8d4" },
-    "ALR":                  { bg: "#dbeafe", text: "#1e40af", border: "#93c5fd" },
-    "Périopératoire":       { bg: "#fef3c7", text: "#92400e", border: "#fcd34d" },
-    "Réanimation":          { bg: "#dcfce7", text: "#14532d", border: "#86efac" },
-    "Neuroréanimation":     { bg: "#ede9fe", text: "#5b21b6", border: "#c4b5fd" },
-    "Voies aériennes":      { bg: "#ccfbf1", text: "#134e4a", border: "#5eead4" },
-    "Urgences peranesthésiques": { bg: "#ffedd5", text: "#7c2d12", border: "#fdba74" },
-    "Pédiatrie":            { bg: "#fdf4ff", text: "#581c87", border: "#e879f9" },
-    "Pharmacologie":        { bg: "#f0fdf4", text: "#166534", border: "#86efac" },
+    "Réanimation": { bg: "#fee2e2", text: "#991b1b", border: "#fca5a5" },
+    "Anesthésie":  { bg: "#dbeafe", text: "#1e40af", border: "#93c5fd" },
+    "Pédiatrie":   { bg: "#f0fdf4", text: "#166534", border: "#86efac" },
+    "Obstétrique": { bg: "#ede9fe", text: "#5b21b6", border: "#c4b5fd" },
+    "ALR":         { bg: "#fef9c3", text: "#854d0e", border: "#fde047" },
   };
-  for (const key of Object.keys(map)) {
+  const keys = Object.keys(map).sort((a, b) => b.length - a.length);
+  for (const key of keys) {
     if (cat && cat.toLowerCase().includes(key.toLowerCase())) return map[key];
   }
   return { bg: "#f1f5f9", text: "#334155", border: "#cbd5e1" };
@@ -432,14 +451,20 @@ function generateIndexHTML(history) {
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f4f8;padding:16px}
 .container{max-width:720px;margin:0 auto}
-.header{background:#1a3a5c;color:white;border-radius:16px;padding:24px;margin-bottom:16px}
-.header-title{font-size:22px;font-weight:700;margin-bottom:4px}
-.header-sub{font-size:14px;opacity:.75}
-.streak-box{display:flex;align-items:center;gap:16px;margin-top:16px;background:rgba(255,255,255,.12);border-radius:12px;padding:14px 16px}
-.streak-num{font-size:42px;font-weight:800;line-height:1}
-.streak-right{display:flex;flex-direction:column;gap:2px}
-.streak-label{font-size:13px;font-weight:600;opacity:.9}
-.streak-msg{font-size:12px;opacity:.7}
+.banner{background:#0f1f3d;color:white;border-radius:20px;margin-bottom:16px;overflow:hidden;position:relative}
+.banner-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0f1f3d 0%,#162e52 50%,#1a3a6b 100%)}
+.banner-glow{position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(56,189,248,.15) 0%,transparent 70%);pointer-events:none}
+.banner-glow2{position:absolute;bottom:-30px;left:-30px;width:150px;height:150px;background:radial-gradient(circle,rgba(99,102,241,.1) 0%,transparent 70%);pointer-events:none}
+.banner-inner{position:relative;z-index:1;padding:24px 22px}
+.banner-eyebrow{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(148,210,255,.7);margin-bottom:6px}
+.banner-title{font-size:28px;font-weight:800;line-height:1.15;margin-bottom:2px}
+.banner-title span{color:#38bdf8}
+.banner-divider{width:32px;height:2px;background:linear-gradient(90deg,#38bdf8,transparent);border-radius:2px;margin:12px 0}
+.banner-stats{display:flex;gap:8px}
+.bstat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 14px;flex:1}
+.bstat-num{font-size:20px;font-weight:800;line-height:1;color:white;margin-bottom:2px}
+.bstat-label{font-size:10px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.06em}
+.bstat-fire .bstat-num{color:#fbbf24}
 .random-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:white;border:none;border-radius:14px;font-size:15px;font-weight:700;color:#1a3a5c;cursor:pointer;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .15s,box-shadow .15s}
 .random-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
 .random-btn .dice{font-size:20px}
@@ -487,14 +512,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </head><body>
 <div class="container">
   <div id="main-panel">
-    <div class="header">
-      <div class="header-title">Mes révisions AR</div>
-      <div class="header-sub">Anesthésie-Réanimation · DESC</div>
-      <div class="streak-box">
-        <div class="streak-num">${streak}</div>
-        <div class="streak-right">
-          <div class="streak-label">jour${streak > 1 ? 's' : ''} de suite 🔥</div>
-          <div class="streak-msg">${streakMsg}</div>
+    <div class="banner">
+      <div class="banner-bg"></div>
+      <div class="banner-glow"></div>
+      <div class="banner-glow2"></div>
+      <div class="banner-inner">
+        <div class="banner-eyebrow">Anesthésie · Réanimation · DES</div>
+        <div class="banner-title">Mes <span>révisions</span></div>
+        <div class="banner-divider"></div>
+        <div class="banner-stats">
+          <div class="bstat"><div class="bstat-num">${history.length}</div><div class="bstat-label">Séances</div></div>
+          <div class="bstat"><div class="bstat-num">${history.length * 10}</div><div class="bstat-label">Questions</div></div>
+          <div class="bstat bstat-fire"><div class="bstat-num">${streak} 🔥</div><div class="bstat-label">Streak</div></div>
         </div>
       </div>
     </div>
@@ -573,18 +602,22 @@ async function main() {
   const history = loadHistory();
 
   console.log("1/3 — Génération du thème...");
-  const topicObj = await generateTopic(history);
-  console.log(`    Thème : ${topicObj.topic} [${topicObj.cat}]`);
+  const topic = await generateTopic(history);
+  console.log(`    Thème : ${topic}`);
 
   console.log("2/3 — Génération cours + 10 questions (avec auto-vérification intégrée)...");
-  const content = await generateContent(topicObj.topic);
+  const content = await generateContent(topic);
   console.log(`    ${content.questions.length} questions générées et vérifiées`);
+
+  console.log("    Catégorisation...");
+  const cat = await assignCategory(topic);
+  console.log(`    Catégorie : ${cat}`);
 
   const today = new Date();
   const date = today.toISOString().slice(0, 10);
   const dateStr = today.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
 
-  const entry = { date, dateStr, topic: topicObj.topic, cat: topicObj.cat, course: content.course, questions: content.questions };
+  const entry = { date, dateStr, topic, cat, course: content.course, questions: content.questions };
   history.push(entry);
   saveHistory(history);
 
