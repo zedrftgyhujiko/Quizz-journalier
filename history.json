@@ -1274,5 +1274,362 @@
         "explanation": "Réponse C correcte : le régime cétogène (rapport lipides/glucides+protéines de 3:1 à 4:1, apports en glucides < 20-50 g/j) peut être administré par sonde entérale en réanimation. Des séries rétrospectives et revues systématiques (Zeiler et al., Critical Care Medicine 2022 ; autres séries 2019-2023) rapportent un taux de contrôle de l'EME de 50-60 % dans les cas réfractaires. Le délai d'efficacité est de 24-72 h (temps nécessaire pour atteindre la cétose). Son mécanisme antiépileptique inclut la modulation GABAergique, la réduction du glutamate et des effets sur les canaux potassiques. Piège A : le régime cétogène peut parfaitement être administré par sonde nasogastrique ou jéjunale — il existe des formules liquides spécifiques — la ventilation mécanique n'est pas une contre-indication. Piège B : il n'existe pas d'essais randomisés de niveau 1 sur le régime cétogène dans l'EMSR — les données sont des séries de cas et des revues systématiques (niveau faible, grade C) — débuter à 48 h est prématuré selon les recommandations actuelles qui le réservent aux EMSR rebelles à plusieurs lignes. Piège D : l'association valproate + régime cétogène n'est pas létale mais peut augmenter le risque d'acidose et de stéatose hépatique — c'est une précaution d'emploi, pas une contre-indication absolue."
       }
     ]
+  },
+  {
+    "date": "2026-05-31",
+    "dateStr": "dimanche 31 mai",
+    "topic": "Anesthésie pour chirurgie cardiaque sous circulation extracorporelle chez le patient sous double antiagrégation plaquettaire : stratégie de prise en charge périopératoire, délais chirurgicaux et gestion hémostatique peranesthésique",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "La chirurgie cardiaque programmée ou urgente chez un patient sous double antiagrégation plaquettaire (DAPT) représente l'un des défis hémostatiques majeurs en anesthésie-réanimation : le risque de saignement majeur est multiplié par 2 à 5, tandis qu'une interruption prématurée expose à la thrombose de stent avec mortalité pouvant dépasser 30 %. La maîtrise des délais chirurgicaux, des tests de fonction plaquettaire et des stratégies de reversal est désormais une compétence incontournable du DESC d'anesthésie-réanimation.",
+      "sections": [
+        {
+          "title": "1. Définitions et rappels pharmacologiques essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **double antiagrégation plaquettaire (DAPT)** associe de façon quasi-systématique l'**aspirine** (inhibiteur irréversible de la COX-1) à un **inhibiteur du récepteur P2Y12 de l'ADP** (thiénopyridines ou cyclopentyl-triazolo-pyrimidines). Elle est le standard après syndrome coronarien aigu (SCA) et pose coronaire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Aspirine** : inhibition irréversible COX-1/TXA2 — durée d'effet = 7-10 jours (vie plaquettaire) — dose habituelle 75-100 mg/j",
+                "**Clopidogrel (Plavix®)** : prodrogue, activation hépatique CYP2C19 — inhibition irréversible P2Y12 — demi-vie active ~8h, effet plaquettaire 5-7 jours",
+                "**Prasugrel (Efient®)** : prodrogue, activation plus rapide et constante — inhibition irréversible P2Y12 — effet plaquettaire 7-10 jours — CI si ATCD AVC/AIT, poids <60 kg, âge >75 ans (relatif)",
+                "**Ticagrelor (Brilique®)** : molécule active, liaison RÉVERSIBLE au P2Y12 — demi-vie 8-12h — effet résiduel 3-5 jours après arrêt — métabolite actif AR-C124910XX",
+                "**Cangrelor (Kengrexal®)** : IV, liaison réversible, demi-vie plasmatique ~3-5 min, offset en 60 min — utilisé en pontage thérapeutique (bridging)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE FRÉQUENT : Le ticagrelor a une liaison RÉVERSIBLE au P2Y12 mais son effet persiste 3-5 jours après arrêt car sa demi-vie est longue (8-12h) et celle de son métabolite actif AR-C124910XX est encore plus longue (~9h). Ne pas confondre 'réversible' avec 'délai court de récupération plaquettaire'."
+            },
+            {
+              "type": "formula",
+              "content": "Récupération fonctionnelle plaquettaire suffisante : aspirine = 3-5 jours | clopidogrel = 5 jours | prasugrel = 7 jours | ticagrelor = 5 jours (délais recommandés EACTS/ESC 2021 avant chirurgie élective)"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie : interactions DAPT, CEC et hémostase",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **circulation extracorporelle (CEC)** induit per se une dysfonction plaquettaire acquise par activation et séquestration (contact avec les surfaces du circuit), hémodilution, hypothermie et génération de thrombine paradoxale. La DAPT ajoute une inhibition pharmacologique surajoutée, créant une vulnérabilité hémostatique multi-factorielle."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Dilution des facteurs de coagulation** : drop de 30-50% selon volume d'amorçage du circuit (400-800 mL)",
+                "**Consommation plaquettaire** : activation par contact avec les surfaces synthétiques → dégranulation → thrombopénie relative (chute de 30-50% du taux plaquettaire)",
+                "**Fibrinolyse** : activation du plasminogène par le contact avec les surfaces → hyperfibrinolyse (picmax en fin de CEC)",
+                "**Héparine résiduelle** : antagonisation incomplète par protamine possible — risque de 'héparine rebound' 4-6h post-CEC",
+                "**Hypothermie** : T° < 32°C — inhibition des enzymes de coagulation et de l'agrégation plaquettaire",
+                "**Effet de la DAPT sur la CEC** : les plaquettes inhibées par aspirine/P2Y12 ne répondent plus normalement aux agonistes (collagène, ADP, TXA2) libérés lors du contact CEC → saignement majeur ×2-5"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : L'héparine non fractionnée utilisée pendant la CEC (objectif ACT ≥ 480 s) n'antagonise PAS les effets des antiagrégants. La protamine neutralise l'héparine mais n'a aucun effet sur l'inhibition plaquettaire par aspirine ou inhibiteurs P2Y12."
+            },
+            {
+              "type": "formula",
+              "content": "ACT cible en CEC : ≥ 480 secondes (certains centres : ≥ 400 s avec circuit biocompatible héparinisé) — surveillance toutes les 30 minutes et après chaque bolus d'héparine"
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation préopératoire et tests de fonction plaquettaire",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation du **risque hémorragique** repose sur la combinaison de l'**anamnèse médicamenteuse précise** (date de dernière prise, molécule, indication), du **bilan standard de coagulation** et des **tests de fonction plaquettaire** dont la place en chirurgie cardiaque est désormais bien validée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bilan standard minimum** : NFS-plaquettes, TP/TCA, fibrinogène, groupe sanguin RAI",
+                "**VerifyNow P2Y12** (point-of-care) : mesure l'inhibition résiduelle du P2Y12 en PRU (Platelet Reactivity Units) — résultat en 5-10 min — PRU < 208 = inhibition significative = risque chirurgical augmenté",
+                "**ROTEM/TEG** : viscoélasticité — évalue la formation du caillot globalement — EXTEM/FIBTEM/INTEM — guide la transfusion peropératoire en temps réel",
+                "**Multiplate (impedance aggregometry)** : test ADP et ASPI — en valeurs U — moins disponible en urgence",
+                "**Temps d'occlusion PFA-100** : screening global mais peu spécifique des inhibiteurs P2Y12 en monothérapie — sensible à l'aspirine (cartouche COL/EPI)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Un TP et un TCA normaux ne permettent PAS d'exclure une dysfonction plaquettaire induite par la DAPT. Ces tests explorent les facteurs de coagulation plasmatique, pas la fonction plaquettaire. Un patient sous DAPT peut avoir un bilan standard parfaitement normal tout en saignant de façon cataclysmique en CEC."
+            },
+            {
+              "type": "formula",
+              "content": "VerifyNow P2Y12 : PRU > 208 = inhibition plaquettaire faible (fenêtre chirurgicale acceptable) | PRU < 208 = inhibition significative = risque hémorragique majoré — seuil validé dans les études PARIS et TARGET-CABG"
+            }
+          ]
+        },
+        {
+          "title": "4. Délais chirurgicaux recommandés selon la molécule et l'urgence",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les **délais d'arrêt** avant chirurgie cardiaque élective représentent un compromis entre risque de thrombose de stent (si arrêt trop tôt) et risque hémorragique chirurgical (si délai insuffisant). Les recommandations ESC/EACTS 2021 et ACC/AHA 2022 proposent des délais fondés sur le niveau de preuve et la cinétique des molécules."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Aspirine seule** : MAINTENU jusqu'à la chirurgie dans la plupart des cas — la balance bénéfice/risque est en faveur du maintien pour la chirurgie cardiaque sous CEC (grade IIa, ESC 2021)",
+                "**Clopidogrel** : arrêt ≥ 5 jours avant chirurgie cardiaque élective (grade I, ESC 2021) — si VerifyNow PRU > 208 après 3 jours, la chirurgie peut être envisagée plus tôt",
+                "**Prasugrel** : arrêt ≥ 7 jours avant chirurgie (grade I, ESC 2021) — inhibition plus puissante que clopidogrel, délai plus long impératif",
+                "**Ticagrelor** : arrêt ≥ 5 jours avant chirurgie (grade I, ESC 2021) — malgré liaison réversible, la demi-vie longue justifie ce délai",
+                "**Stratégie de bridging (pontage)** : remplacement par cangrelor IV si risque thrombotique très élevé et chirurgie urgente — arrêt cangrelor 1h avant incision — données insuffisantes pour recommandation forte (IIb, ESC 2021)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR : En cas de SCA avec stent actif récent (< 1 mois), la chirurgie cardiaque urgente ne doit PAS être différée plus de 24-48h même sous DAPT. Le risque de thrombose de stent (mortalité > 30%) surpasse le risque hémorragique gérable peropératoire. La décision relève d'une concertation cardiochirurgie-cardiologie-anesthésie (Heart Team)."
+            },
+            {
+              "type": "formula",
+              "content": "Urgence chirurgicale cardiaque classifiée selon EuroSCORE II et délai : EMERGENTE (< 24h) > URGENTE (< 72h) > PRIORITAIRE (< 7 jours) > ÉLECTIVE (> 6 semaines) — le délai DAPT s'adapte à cette classification"
+            }
+          ]
+        },
+        {
+          "title": "5. Stratégie de prise en charge peranesthésique et hémostase peropératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **gestion peranesthésique** repose sur une approche multimodale : optimisation des agents antifibrinolytiques, monitorage viscoélastique en temps réel, algorithmes transfusionnels et utilisation raisonnée des produits dérivés du sang et des concentrés de facteurs. L'objectif est d'atteindre une hémostase chirurgicale satisfaisante sans surtransfusion."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Acide tranexamique (ATX)** : antifibrinolytique de référence en chirurgie cardiaque — inhibiteur compétitif du plasminogène — dose : 10-30 mg/kg en bolus IV lent ± perfusion continue 1-2 mg/kg/h — réduit les saignements et la transfusion (grade I, ESC 2021) — ATX remplace l'aprotinine dans la plupart des pays (risque rénal/thrombotique de l'aprotinine)",
+                "**Protamine** : neutralisation de l'héparine post-CEC — ratio 1 mg protamine / 100 UI héparine totale administrée — objectif ACT retour < 130 s (proche de base) — surdosage protamine = effet anticoagulant paradoxal",
+                "**Fibrinogène (RiaSTAP®/Haemocomplettan®)** : si fibrinogène < 2 g/L (ou FIBTEM A10 < 10 mm au ROTEM) — dose 30-50 mg/kg — objectif fibrinogène ≥ 2 g/L peropératoire",
+                "**Concentré de complexe prothrombique (CCP/Octaplex®/Beriplex®)** : si déficit en facteurs K-dépendants (II, VII, IX, X) — dose 25-50 UI/kg selon bilan — guidé par ROTEM (EXTEM CT prolongé non corrigé par fibrinogène)",
+                "**Concentrés plaquettaires (CPA/MCP)** : indication si plaquettes < 50 G/L avec saignement actif, ou < 80 G/L en chirurgie cardiaque à risque — 1 CPA élève les plaquettes de ~20-30 G/L (adulte 70 kg)",
+                "**Plasma frais congelé (PFC)** : indications réduites — principalement si déficit global en facteurs (EXTEM CT > 80 s, INTEM CT > 240 s) non corrigé par CCP — dose 10-15 mL/kg",
+                "**Desmopressine (DDAVP, Minirin®)** : libère le vWF des cellules endothéliales — peut améliorer la fonction plaquettaire résiduelle sous aspirine — dose 0,3 µg/kg IV sur 20 min — effet modeste en DAPT, données limitées",
+                "**Transfusion de concentrés érythrocytaires (CGR)** : seuil transfusionnel Hb < 8 g/dL en chirurgie cardiaque (< 7 g/dL si stable), objectif Hb ≥ 8 g/dL — guidé par ROTEM (amplitude réduite = hémodilution/anémie)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ERREUR CLASSIQUE : Transfuser des plaquettes de façon empirique et systématique chez tout patient sous DAPT en CEC n'est PAS recommandé. Les plaquettes transfusées peuvent être à leur tour inhibées par les concentrations résiduelles d'antiagrégants circulants (surtout ticagrelor avec liaison réversible). La décision doit être guidée par le ROTEM/TEG et le compte plaquettaire, pas par l'anamnèse médicamenteuse seule."
+            },
+            {
+              "type": "formula",
+              "content": "Algorithme ROTEM peropératoire en chirurgie cardiaque sous DAPT : 1) FIBTEM A10 < 10 mm → fibrinogène 2-4 g IV | 2) EXTEM CT > 80 s + INTEM CT > 240 s → CCP 25-50 UI/kg | 3) EXTEM A10/MCF basse malgré fibrinogène correct → plaquettes | 4) EXTEM LI30 > 15% → ATX complémentaire (si non donné)"
+            }
+          ]
+        },
+        {
+          "title": "6. Complications spécifiques et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications hémorragiques de la chirurgie cardiaque sous CEC chez un patient sous DAPT sont plus fréquentes et plus sévères que dans la population générale. Elles nécessitent une anticipation et une prise en charge codifiée dès la salle d'opération."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Saignement médiastinal excessif** : défini par > 200 mL/h pendant 2h ou > 400 mL en 1h post-CEC — indication de reprise chirurgicale si non corrigé par traitement médical dans les 2-3h",
+                "**Coagulopathie de dilution** : favorisée par volume de priming élevé, hypothermie profonde, transfusion massive — guidée par ROTEM en temps réel",
+                "**CIVD** : rare mais possible en chirurgie cardiaque prolongée, sepsis associé, ischémie prolongée — traitement causal + support en facteurs",
+                "**Heparin rebound** : réapparition d'activité héparinique 4-6h après neutralisation protamine par libération des dépôts tissulaires — surveillance ACT en SSPI, protamine supplémentaire si nécessaire",
+                "**Thrombose de stent peropératoire** : complication redoutée si la DAPT a été interrompue trop tôt ou si le patient est en état pro-inflammatoire majeur (chirurgie, CEC) — diagnostic ECG + troponine + coronarographie en urgence si possible",
+                "**Thrombopénie induite par l'héparine de type II (TIH)** : à distinguer de la thrombopénie de dilution en CEC — début J5-J10 après exposition héparine — test ELISA anti-PF4 + confirmation fonctionnelle — substitution par argatroban ou bivalirudine si TIH confirmée et CEC nécessaire"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE CRITIQUE : Une thrombopénie post-CEC isolée (chute de 30-50% du taux) est quasi-CONSTANTE et ne doit pas être confondue avec une TIH. La TIH est associée à une chute ≥ 50% du taux plaquettaire, survenant entre J5-J10 d'exposition à l'héparine, souvent avec événement thrombotique associé. Le score 4T (Thrombopénie, Timing, Thrombose, Autre cause) guide le diagnostic."
+            },
+            {
+              "type": "formula",
+              "content": "Score 4T pour TIH : 0-3 = faible probabilité (VPN > 99%) — 4-5 = probabilité intermédiaire — 6-8 = forte probabilité — Seuil d'arrêt héparine : score ≥ 4 en attente des tests confirmatoires"
+            }
+          ]
+        },
+        {
+          "title": "7. Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ESC/EACTS 2021 (Chieffo et al.)** — Chirurgie cardiaque sous DAPT : délais d'arrêt (clopidogrel 5j, prasugrel 7j, ticagrelor 5j) — Grade I/B pour chirurgie élective — Maintien aspirine Grade IIa/B",
+                "**ACC/AHA 2022 (Lawton et al.)** — Guidelines Coronary Revascularization — Pontage coronaire sous clopidogrel : délai 5j minimum (Grade I) — ticagrelor 5j (Grade I) — prasugrel 7j (Grade I)",
+                "**SFAR 2021 — Recommandations formalisées d'experts (RFE) Gestion des agents antiplaquettaires en périopératoire** — Maintien aspirine en chirurgie cardiaque sauf CI spécifique (Grade 1+) — ATX systématique en chirurgie cardiaque sous CEC (Grade 1+)",
+                "**ESA/ESAIC 2023 (Afshari et al.) — Guidelines Management of Severe Perioperative Bleeding** — Algorithme ROTEM/TEG recommandé pour guider la transfusion en chirurgie cardiaque (Grade A) — Fibrinogène comme premier concentré de facteurs (Grade A)",
+                "**EACTS 2019 (Boer et al.) — Expert Consensus on Perioperative Anticoagulation in Cardiac Surgery** — ACT cible ≥ 480 s pendant CEC conventionnelle (Grade IIa) — Monitoring continu ACT toutes les 30 min (consensus fort)",
+                "**NICE Guideline NG24 (2016, révisée 2020)** — Point-of-care testing (ROTEM/TEG/VerifyNow) recommandé pour réduire transfusion en chirurgie cardiaque (Grade A)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ATTENTION AUX CONFLITS DE RECOMMANDATIONS : Certaines sociétés maintiennent le ticagrelor à 3 jours si la balance penche vers l'urgence chirurgicale et que le VerifyNow PRU est revenu > 208. Les recommandations de 5 jours sont pour la chirurgie ÉLECTIVE. En urgence, la décision est individualisée par la Heart Team avec le support des tests de fonction plaquettaire."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Délais d'arrêt impératifs (élective)** : clopidogrel ≥ 5j / prasugrel ≥ 7j / ticagrelor ≥ 5j — l'aspirine est habituellement MAINTENUE en chirurgie cardiaque (Grade IIa ESC 2021)",
+        "**VerifyNow PRU > 208** : seuil de récupération plaquettaire suffisante permettant d'envisager la chirurgie même avant le délai théorique — outil clé pour individualiser la décision",
+        "**Acide tranexamique systématique** : 10-30 mg/kg avant CEC ± perfusion continue — réduction prouvée des saignements et de la transfusion (Grade I SFAR 2021) — jamais remplacé par l'epsilon-aminocaproïque en Europe",
+        "**ROTEM/TEG peropératoire** : guide ciblé des concentrés (fibrinogène → CCP → plaquettes → PFC) — réduit la transfusion globale et améliore les outcomes versus approche empirique",
+        "**Ne pas confondre thrombopénie post-CEC (constante, bénigne) et TIH** : score 4T si doute, arrêt héparine si ≥ 4 points, substitution argatroban/bivalirudine si CEC nécessaire sous TIH"
+      ],
+      "references": [
+        "Chieffo A et al. — ESC/EACTS Guidelines on Myocardial Revascularization — European Heart Journal 2021",
+        "Lawton JS et al. — 2021 ACC/AHA/SCAI Guideline for Coronary Artery Revascularization — JACC 2022",
+        "SFAR — Recommandations formalisées d'experts : gestion périopératoire des agents antiplaquettaires — Anaesth Crit Care Pain Med 2021",
+        "Afshari A et al. — European Guidelines on Perioperative Venous Thromboembolism Prophylaxis and Severe Bleeding — European Journal of Anaesthesiology (ESA/ESAIC) 2023",
+        "Boer C et al. — 2018 EACTS Expert Consensus on Perioperative Anticoagulation in Adult Cardiac Surgery — European Journal of Cardio-Thoracic Surgery 2019",
+        "Fassl J et al. — The Role of Viscoelastic Haemostatic Assays in Cardiac Surgery — British Journal of Anaesthesia 2022",
+        "Mahla E et al. — Platelet Function Measurement-Based Strategy to Reduce Bleeding and Waiting Time in Clopidogrel-Treated Patients Undergoing CABG (ISAR-CABG) — JACC 2012 (référence fondatrice toujours citée)",
+        "Ranucci M et al. — The Endothelium-Fibrinogen Axis and Coagulation Management in Cardiac Surgery — Frontiers in Physiology 2021"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 65 ans est opéré en urgence d'un pontage aorto-coronarien sous CEC pour SCA NSTEMI avec lésion tritronculaire. Il a reçu du ticagrelor il y a 48 heures (dernière prise). Son VerifyNow P2Y12 mesure PRU = 145.",
+        "question": "Concernant la stratégie hémostatique peropératoire la plus appropriée, quelle affirmation est CORRECTE ?",
+        "options": {
+          "A": "La transfusion préventive de 2 concentrés plaquettaires avant la CEC est recommandée en raison du PRU abaissé",
+          "B": "L'acide tranexamique doit être administré systématiquement (10-30 mg/kg) et le ROTEM doit guider les concentrés de facteurs en temps réel, sans transfusion plaquettaire prophylactique",
+          "C": "Le cangrelor IV doit être initié immédiatement pour assurer le pontage antithrombotique jusqu'à l'induction",
+          "D": "La desmopressine (0,3 µg/kg) en prophylaxie avant CEC est l'intervention de premier rang pour corriger l'inhibition P2Y12 résiduelle"
+        },
+        "correct": "B",
+        "explanation": "B est correct : l'ATX est systématique en chirurgie cardiaque sous CEC (Grade I), et le ROTEM guide la transfusion ciblée sans excès. PIÈGE A : la transfusion plaquettaire prophylactique n'est pas recommandée — les plaquettes transfusées peuvent être inhibées par le ticagrelor résiduel circulant (liaison réversible, concentration plasmatique active résiduelle à 48h). PIÈGE C : le cangrelor est un agent d'ARRÊT (bridging vers une intervention), pas une thérapeutique peropératoire de sauvetage; ici on est déjà au bloc. PIÈGE D : la desmopressine libère le vWF endothélial et peut améliorer la fonction plaquettaire sous aspirine, mais n'antagonise pas l'inhibition P2Y12 — son effet sur les inhibiteurs P2Y12 est très limité et n'en fait pas un agent de premier rang."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Un patient de 72 ans opéré d'un remplacement valvulaire aortique sous CEC présente un saignement médiastinal de 280 mL/h à H+1 de la SSPI. Il était sous clopidogrel jusqu'à J-3 avant l'opération. Le ROTEM montre : EXTEM CT = 65 s (N), EXTEM MCF = 52 mm (N basse), FIBTEM A10 = 8 mm (abaissé, VN > 10 mm).",
+        "question": "Quelle est la priorité thérapeutique hémostatique immédiate ?",
+        "options": {
+          "A": "Concentré de complexe prothrombique (CCP) 25 UI/kg IV en raison du CT EXTEM prolongé",
+          "B": "Concentré de fibrinogène 2-4 g IV pour corriger le FIBTEM A10 abaissé",
+          "C": "Transfusion de 2 concentrés plaquettaires en raison de la dysfonction plaquettaire résiduelle post-clopidogrel",
+          "D": "Plasma frais congelé 10 mL/kg car le ROTEM oriente vers un déficit global en facteurs"
+        },
+        "correct": "B",
+        "explanation": "B est correct : le FIBTEM A10 < 10 mm indique un déficit en fibrinogène comme composant principal du saignement — le fibrinogène est le premier facteur à substituer selon les guidelines ESA 2023 et les algorithmes ROTEM validés. PIÈGE A : le CCP est indiqué quand l'EXTEM CT est PROLONGÉ (> 80 s) et non corrigé par le fibrinogène — ici CT = 65 s, normal, donc pas d'indication de CCP à ce stade. PIÈGE C : les plaquettes sont indiquées si l'EXTEM MCF reste basse APRÈS correction du fibrinogène, ou si plaquettes < 50 G/L avec saignement — ici MCF = 52 mm encore limite mais FIBTEM abaissé suggère que la composante fibrinogène est prioritaire; transfuser des plaquettes d'abord serait une erreur de hiérarchisation. PIÈGE D : le PFC est l'option la moins concentrée en facteurs, avec risque de surcharge volémique — les concentrés spécifiques (fibrinogène, CCP) sont toujours préférés en première intention quand le ROTEM permet l'identification précise du déficit."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Vous prenez en charge un patient de 58 ans pour un pontage coronaire électif. Il est sous prasugrel depuis un SCA il y a 3 semaines. La chirurgie est programmée dans 4 jours.",
+        "question": "Quelle est la stratégie d'arrêt du prasugrel la plus conforme aux recommandations actuelles (ESC/EACTS 2021) ?",
+        "options": {
+          "A": "Arrêter le prasugrel maintenant et opérer à J+4 comme prévu, car 4 jours suffisent pour le prasugrel",
+          "B": "Maintenir le prasugrel et opérer sous DAPT complète dans 4 jours en se fiant au protocole d'épargne transfusionnelle",
+          "C": "Décaler la chirurgie à J+7 minimum après arrêt du prasugrel, avec maintien de l'aspirine seule et surveillance cardiologique rapprochée",
+          "D": "Substituer le prasugrel par le cangrelor IV à partir d'aujourd'hui jusqu'à 1h avant l'incision dans 4 jours"
+        },
+        "correct": "C",
+        "explanation": "C est correct : le prasugrel nécessite un délai d'arrêt de 7 jours minimum avant chirurgie cardiaque élective (Grade I, ESC/EACTS 2021) en raison de son inhibition irréversible puissante et constante du P2Y12 — l'aspirine est maintenue. PIÈGE A : 4 jours sont insuffisants pour le prasugrel (délai requis = 7 jours) — confondre avec le délai du ticagrelor ou clopidogrel (5 jours) est une erreur classique d'interne. PIÈGE B : opérer sous prasugrel ×aspirine en chirurgie élective est contraire aux recommandations, avec risque hémorragique inacceptable (×2-5) sans bénéfice thrombotique prouvé supérieur à aspirine seule pour le chirurgical. PIÈGE D : le bridging par cangrelor est une option qui peut être discutée dans les cas à très haut risque thrombotique (stent < 1 mois), mais n'est pas recommandé en routine pour remplacer un arrêt organisé et planifiable — la classe de recommandation est IIb pour le bridging (données limitées)."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "En CEC conventionnelle, l'ACT mesuré 20 minutes après un bolus initial de 400 UI/kg d'héparine non fractionnée est de 350 secondes.",
+        "question": "Quelle est la conduite à tenir immédiate la plus appropriée ?",
+        "options": {
+          "A": "Débuter la CEC car l'ACT > 300 s est suffisant pour un circuit biocompatible héparinisé",
+          "B": "Administrer un bolus supplémentaire d'héparine (50-100 UI/kg) et recontroler l'ACT avant de démarrer la CEC",
+          "C": "Administrer de l'antithrombine III concentrée car la résistance à l'héparine suggère un déficit en AT III",
+          "D": "Interrompre le protocole et switcher vers la bivalirudine en raison d'une résistance à l'héparine absolue"
+        },
+        "correct": "B",
+        "explanation": "B est correct : l'ACT cible en CEC conventionnelle est ≥ 480 s (certains centres acceptent ≥ 400 s avec circuit héparinisé mais 350 s est insuffisant dans tous les cas) — un bolus supplémentaire d'héparine est requis avant toute mise en CEC. PIÈGE A : 350 s est insuffisant pour la CEC conventionnelle — même sur circuit biocompatible, l'ACT ≥ 400 s est un minimum absolu; débuter à 350 s expose à la thrombose du circuit et des coronaires. PIÈGE C : un déficit en ATIII peut effectivement causer une résistance à l'héparine (et justifier de l'ATIII concentrée si ACT insuffisant après bolus supplémentaire), mais la première étape est TOUJOURS d'administrer une dose supplémentaire d'héparine avant de conclure à une résistance vraie — sauter à l'ATIII sans bolus héparine supplémentaire est prématuré. PIÈGE D : la bivalirudine en CEC est réservée aux cas de TIH avérée — la résistance relative à l'héparine n'est pas une indication de switch vers la bivalirudine."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Un patient opéré d'une chirurgie valvulaire complexe développe à J+7 post-opératoire une thrombopénie à 68 G/L (préopératoire : 195 G/L). Il a reçu de l'héparine non fractionnée en peropératoire puis de l'héparine bas poids moléculaire en postopératoire pour thromboprophylaxie. Il n'y a pas de saignement actif mais une thrombose de la veine jugulaire interne droite est documentée à l'écho.",
+        "question": "Quel est le mécanisme physiopathologique le plus probable et la prise en charge immédiate la plus appropriée ?",
+        "options": {
+          "A": "Thrombopénie de dilution post-CEC tardive — surveillance simple avec contrôle NFS à J+10",
+          "B": "Thrombopénie immune induite par l'héparine de type II (TIH2) — arrêt immédiat de toute héparine et substitution par argatroban",
+          "C": "CIVD post-chirurgie cardiaque — bilan de coagulation complet et PFC si TP < 50%",
+          "D": "Purpura thrombopénique immunologique (PTI) post-transfusionnel — corticothérapie 1 mg/kg/j et immunoglobulines IV"
+        },
+        "correct": "B",
+        "explanation": "B est correct : le tableau est HAUTEMENT évocateur de TIH2 (score 4T = 6-8) : thrombopénie ≥ 50% (195→68 G/L = -65%), survenue entre J5-J10 d'exposition à l'héparine, avec thrombose veineuse associée, sans autre cause évidente — l'arrêt IMMÉDIAT de toute héparine (y compris rinçages, HBPM) et la substitution par argatroban sont impératifs. PIÈGE A : la thrombopénie de dilution post-CEC survient dans les 24-48h PEROPÉRATOIRES et se corrige spontanément en 5-7 jours — une thrombopénie PROGRESSIVE à J+7 avec thrombose n'est pas une dilution. PIÈGE C : la CIVD serait associée à un allongement du TP/TCA, chute du fibrinogène et schizocytes — ce tableau isolé avec thrombose plutôt qu'hémorragie oriente clairement contre la CIVD. PIÈGE D : le PTI post-transfusionnel (purpura post-transfusionnel) survient typiquement à J+5-9 après transfusion chez un patient alloimmunisé HPA-1a, sans thrombose associée — l'association thrombopénie + thrombose est pathognomonique de la TIH2."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Un patient de 55 ans avec stent actif posé il y a 3 semaines pour un SCA-ST doit bénéficier d'une chirurgie de remplacement valvulaire mitral urgente (régurgitation sévère aiguë). Il est sous aspirine + ticagrelor. La chirurgie ne peut être différée.",
+        "question": "Concernant la gestion de la DAPT dans cette situation d'urgence absolue, quelle stratégie est la plus appropriée selon les recommandations actuelles ?",
+        "options": {
+          "A": "Arrêt du ticagrelor et attente de 5 jours minimum — différer la chirurgie valvulaire même si urgente",
+          "B": "Chirurgie sous DAPT complète après discussion multidisciplinaire (Heart Team), avec préparation hémostatique maximale (ATX, ROTEM disponible, réserve de CPA) et maintien de l'aspirine postopératoire",
+          "C": "Arrêt aspirine + ticagrelor et démarrage de bivalirudine IV en bridging jusqu'à la chirurgie",
+          "D": "Administration de ticagrelor antidote (MEDI2452/bentracimab) en préopératoire pour reverser l'inhibition plaquettaire"
+        },
+        "correct": "B",
+        "explanation": "B est correct : en cas de chirurgie cardiaque urgente avec stent actif < 1 mois, le risque de thrombose de stent (mortalité > 30%) contre-indique le report chirurgical — la décision de Heart Team permet d'opérer sous DAPT avec préparation hémostatique maximale (ATX systématique, ROTEM peropératoire, réserve de concentrés plaquettaires, fibrinogène). PIÈGE A : différer une chirurgie valvulaire urgente en régurgitation aiguë sévère est potentiellement mortel (choc cardiogénique) — le délai de 5 jours n'est applicable qu'à la chirurgie ÉLECTIVE; en urgence absolue, la balance penche vers l'opération sous DAPT avec couverture hémostatique. PIÈGE C : la bivalirudine n'est pas un bridging antithrombotique après stent — elle est anticoagulante (thrombine directe) mais n'assure pas la prévention de la thrombose de stent médiée par les plaquettes; de plus arrêter l'aspirine expose au thrombose de stent encore plus. PIÈGE D : le MEDI2452 (bentracimab), antagoniste du ticagrelor, est en développement clinique (essai REVERSE-IT phase III) et n'est PAS disponible en pratique clinique courante en 2024 — le citer comme option valide est une erreur de pratique actuelle."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "En fin de CEC pour pontage coronaire, après neutralisation de l'héparine par protamine (ratio 1:100 UI), l'ACT mesure 185 secondes (valeur de base préopératoire : 115 s). Le saignement chirurgical paraît excessif.",
+        "question": "Quelle est la cause la plus probable et la prise en charge la plus appropriée en première intention ?",
+        "options": {
+          "A": "Surdosage en protamine (effet anticoagulant paradoxal de la protamine) — antagonisation par sulfate de protamine supplémentaire contre-indiquée, réversion impossible",
+          "B": "Héparine résiduelle non neutralisée — administration d'une dose supplémentaire de protamine (25-50 mg) après vérification par test au sulfate de protamine ou thromboélastographie",
+          "C": "Coagulopathie de dilution pure — transfusion de PFC 10 mL/kg en première intention",
+          "D": "Dysfibrinogénémie acquise — dosage du fibrinogène et administration de fibrinogène concentré sans autre investigation"
+        },
+        "correct": "B",
+        "explanation": "B est correct : un ACT persistant à 185 s (au lieu du retour à la base de 115 s) après dose standard de protamine évoque une héparine résiduelle non neutralisée — la dose de protamine peut être insuffisante si des bolus d'héparine supplémentaires ont été administrés en CEC sans être comptabilisés; une dose supplémentaire de protamine (25-50 mg) est indiquée, guidée si possible par test au sulfate de protamine ou ROTEM (HEPTEM vs INTEM). PIÈGE A : le surdosage en protamine (ratio > 1,3 mg/100 UI) peut causer un effet anticoagulant — mais ce diagnostic n'est évoqué que si l'ACT ne se corrige pas après la dose supplémentaire ET si le ratio total protamine/héparine est clairement excédentaire; il n'est pas la PREMIÈRE cause à évoquer. PIÈGE C : le PFC est une option de dernier recours — le ROTEM doit d'abord orienter le traitement et le diagnostic de coagulopathie de dilution pure ne peut être porté sur le seul ACT élevé. PIÈGE D : la dysfibrinogénémie acquise peut survenir mais nécessite une orientation ROTEM (FIBTEM) avant traitement aveugle — ne pas rechercher d'abord une héparine résiduelle serait une erreur de hiérarchisation diagnostique."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Vous administrez de l'acide tranexamique pour une chirurgie cardiaque sous CEC. Le patient présente des antécédents de thrombose veineuse profonde il y a 2 ans, actuellement sans traitement anticoagulant.",
+        "question": "Quelle affirmation concernant l'acide tranexamique en chirurgie cardiaque est CORRECTE ?",
+        "options": {
+          "A": "L'ATX est contre-indiqué en cas d'ATCD thromboembolique veineux — utiliser l'epsilon-aminocaproïque à la place",
+          "B": "L'ATX à doses élevées (> 100 mg/kg total) est associé à un risque augmenté de convulsions post-opératoires, justifiant une dose maximale ≤ 30 mg/kg en bolus",
+          "C": "L'ATX doit être administré exclusivement après la protamine pour éviter une interaction procoagulante synergique pendant la CEC",
+          "D": "L'ATX peut être omis si le patient bénéficie d'un circuit CEC avec revêtement hépariné (biocompatible) car l'activation fibrinolytique est alors négligeable"
+        },
+        "correct": "B",
+        "explanation": "B est correct : l'ATX à doses élevées (> 80-100 mg/kg total, ou bolus > 30 mg/kg) est associé à un risque augmenté de crises convulsives postopératoires — mécanisme probable d'inhibition des récepteurs GABA-A et glycine par l'ATX — dose recommandée : 10-30 mg/kg en bolus avec perfusion optionnelle 1-2 mg/kg/h (doses dans cette fourchette = rapport efficacité/sécurité optimal). PIÈGE A : un ATCD thromboembolique ancien sans anticoagulation n'est pas une contre-indication formelle à l'ATX en chirurgie cardiaque où le bénéfice hémostatique est majeur — les vraies CI sont la thrombose artérielle active, l'allergie, l'insuffisance rénale sévère (accumulation); l'epsilon-aminocaproïque est peu utilisé en Europe et a un profil moins favorable. PIÈGE C : l'ATX doit être administré AVANT et PENDANT la CEC pour contrer l'hyperfibrinolyse induite par le contact CEC — l'administrer seulement après la protamine prive le patient de la protection antifibrinolytique peropératoire la plus utile. PIÈGE D : même avec circuit biocompatible héparinisé, la CEC induit une activation fibrinolytique mesurable — l'ATX reste bénéfique et recommandé indépendamment du type de circuit."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un patient sous aspirine + clopidogrel depuis 8 mois pour stent actif bénéficie d'un pontage coronaire électif. Son VerifyNow P2Y12 à J+5 d'arrêt du clopidogrel donne un PRU = 230. Son TP est à 82%, plaquettes 178 G/L, fibrinogène 3,2 g/L.",
+        "question": "Quelle conclusion tirez-vous du PRU = 230 et quelle est la conduite la plus logique ?",
+        "options": {
+          "A": "PRU = 230 signifie inhibition plaquettaire résiduelle significative — reporter la chirurgie à J+7 minimum",
+          "B": "PRU = 230 indique une récupération de la fonction plaquettaire P2Y12 suffisante — la chirurgie peut être réalisée dans des conditions hémostatiques acceptables",
+          "C": "Le VerifyNow P2Y12 est non interprétable à J+5 pour le clopidogrel car la molécule peut encore être active — seul le Multiplate est fiable à ce délai",
+          "D": "PRU = 230 correspond à une résistance au clopidogrel préexistante et ne reflète pas une récupération réelle — compléter par un génotypage CYP2C19"
+        },
+        "correct": "B",
+        "explanation": "B est correct : le seuil de récupération plaquettaire acceptable est PRU > 208 selon les études de référence (ISAR-CABG, TARGET-CABG) — PRU = 230 > 208 indique une inhibition P2Y12 faible résiduelle compatible avec une chirurgie cardiaque dans des conditions hémostatiques satisfaisantes; couplé à un bilan standard normal, la chirurgie est justifiée. PIÈGE A : PRU > 208 signifie précisément l'OPPOSÉ de l'inhibition significative — une valeur haute de PRU correspond à une réactivité plaquettaire normale (haute réactivité = peu d'inhibition); l'inversion de l'interprétation est l'erreur classique des internes. PIÈGE C : le VerifyNow est parfaitement validé et interprétable à J+5 pour le clopidogrel — c'est précisément son intérêt clinique de permettre une décision individuelle indépendamment du délai théorique. PIÈGE D : une résistance au clopidogrel (par polymorphisme CYP2C19) se manifeste par un PRU ÉLEVÉ DÈS LE DÉBUT du traitement, pas après 5 jours d'arrêt — ici le PRU à 230 après 5j d'arrêt est simplement la preuve de la récupération normale de la fonction plaquettaire."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Lors d'un pontage coronaire sous CEC chez un patient qui était sous ticagrelor (dernière prise J-5), vous observez en SSPI un saignement médiastinal persistant à 180 mL/h à H+2. ROTEM : EXTEM CT = 68 s (N), EXTEM A10 = 45 mm (limite basse), FIBTEM A10 = 12 mm (normal), plaquettes = 95 G/L. Le bilan standard est normal.",
+        "question": "Quel est le mécanisme le plus probable du saignement et la première mesure thérapeutique à prioriser ?",
+        "options": {
+          "A": "Hyperfibrinolyse résiduelle — bolus supplémentaire d'ATX 10 mg/kg IV",
+          "B": "Inhibition plaquettaire résiduelle par le ticagrelor — transfusion de 2 concentrés plaquettaires (CPA)",
+          "C": "Déficit en fibrinogène masqué — administration de fibrinogène concentré 2 g malgré FIBTEM normal",
+          "D": "Héparine résiduelle (rebound) — protamine supplémentaire 25 mg IV après vérification de l'ACT"
+        },
+        "correct": "D",
+        "explanation": "D est correct : l'ACT/ROTEM à H+2 avec CT dans les limites hautes de la normale et EXTEM A10 légèrement abaissée sans anomalie de fibrinogène, dans un contexte de chirurgie cardiaque à H+2, doit faire évoquer en PREMIER le rebound hépariné — la libération des dépôts tissulaires d'héparine 2-6h après neutralisation par la protamine est classique et sous-diagnostiquée; une dose supplémentaire de protamine 25 mg après vérification de l'ACT (ou ROTEM HEPTEM/INTEM) est la mesure de première intention. PIÈGE A : une hyperfibrinolyse aurait un ROTEM avec LI30 > 15% ou chute de l'amplitude — ici le ROTEM ne montre pas de signe de lyse; l'ATX supplémentaire n'est pas indiqué. PIÈGE B : transfuser des plaquettes à 95 G/L sans ROTEM orientant vers une thrombopathie (A10 basse peut être due à la dilution post-CEC ou à l'inhibition plaquettaire) est prématuré — et les plaquettes transfusées peuvent être inhibées par le ticagrelor résiduel. Cependant, si l'ACT est normal et le rebound exclu, les plaquettes deviendraient la deuxième option. PIÈGE C : administrer du fibrinogène avec un FIBTEM A10 normal (12 mm > 10 mm) est une erreur — le FIBTEM normalindique que le fibrinogène n'est pas le facteur limitant, une surcorrection expose à un état prothrombotique inutile."
+      }
+    ]
   }
 ]
