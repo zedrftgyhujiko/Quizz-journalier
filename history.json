@@ -1631,5 +1631,402 @@
         "explanation": "D est correct : l'ACT/ROTEM à H+2 avec CT dans les limites hautes de la normale et EXTEM A10 légèrement abaissée sans anomalie de fibrinogène, dans un contexte de chirurgie cardiaque à H+2, doit faire évoquer en PREMIER le rebound hépariné — la libération des dépôts tissulaires d'héparine 2-6h après neutralisation par la protamine est classique et sous-diagnostiquée; une dose supplémentaire de protamine 25 mg après vérification de l'ACT (ou ROTEM HEPTEM/INTEM) est la mesure de première intention. PIÈGE A : une hyperfibrinolyse aurait un ROTEM avec LI30 > 15% ou chute de l'amplitude — ici le ROTEM ne montre pas de signe de lyse; l'ATX supplémentaire n'est pas indiqué. PIÈGE B : transfuser des plaquettes à 95 G/L sans ROTEM orientant vers une thrombopathie (A10 basse peut être due à la dilution post-CEC ou à l'inhibition plaquettaire) est prématuré — et les plaquettes transfusées peuvent être inhibées par le ticagrelor résiduel. Cependant, si l'ACT est normal et le rebound exclu, les plaquettes deviendraient la deuxième option. PIÈGE C : administrer du fibrinogène avec un FIBTEM A10 normal (12 mm > 10 mm) est une erreur — le FIBTEM normalindique que le fibrinogène n'est pas le facteur limitant, une surcorrection expose à un état prothrombotique inutile."
       }
     ]
+  },
+  {
+    "date": "2026-06-01",
+    "dateStr": "lundi 1 juin",
+    "topic": "Anesthésie pour endartériectomie carotidienne : monitorage neurologique peropératoire, gestion de la pression artérielle et choix entre anesthésie générale et locorégionale",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "L'endartériectomie carotidienne (EAC) est l'intervention de référence pour la prévention de l'AVC ischémique sur sténose carotidienne symptomatique ≥ 50% (NASCET) ou asymptomatique ≥ 60-70%. L'anesthésiste joue un rôle central : le clampage carotidien expose à l'ischémie cérébrale ipsilatérale, nécessitant un monitorage neurologique peropératoire adapté et une gestion rigoureuse de la pression artérielle. Le choix entre anesthésie générale (AG) et locorégionale (ALR) reste débattu malgré l'essai GALA (2008), avec des nuances importantes selon le contexte clinique.",
+      "sections": [
+        {
+          "title": "Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'**endartériectomie carotidienne** consiste à ouvrir la carotide commune et interne pour exciser la plaque athéromateuse. Le **clampage carotidien** (durée médiane 20-40 min) interrompt le flux ipsilatéral et dépend de la **suppléance par le polygone de Willis** pour maintenir la perfusion cérébrale."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Sténose symptomatique** : AVC ou AIT dans les 6 mois précédents, indication chirurgicale si ≥ 50% (critères NASCET) — bénéfice maximal si chirurgie dans les 14 jours après l'événement neurologique",
+                "**Sténose asymptomatique** : indication si ≥ 60-70% (NASCET) avec espérance de vie > 5 ans, en centre à faible morbidité (< 3%)",
+                "**Shunt carotidien** : pontage temporaire interne permettant de maintenir le flux pendant le clampage — utilisé de façon systématique, sélective (sur critères de monitorage) ou jamais selon les équipes",
+                "**Patch de fermeture** : fermeture de l'artériotomie par patch (veineux ou prothétique) pour réduire le risque de resténose — recommandé en routine (Grade A, ESVS 2023)",
+                "**Critères NASCET** : méthode de mesure du degré de sténose par rapport au calibre de la carotide interne distale (non la carotide commune)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas confondre les critères NASCET et ECST : pour un même degré anatomique, la sténose NASCET est inférieure à la sténose ECST. Les essais fondateurs (NASCET, ECST, ACAS) utilisent des méthodes différentes — une sténose de 70% NASCET correspond à environ 82% ECST. Les recommandations actuelles utilisent les critères NASCET."
+            },
+            {
+              "type": "formula",
+              "content": "Degré sténose NASCET (%) = [1 − (diamètre résiduel / diamètre carotide interne distale saine)] × 100"
+            }
+          ]
+        },
+        {
+          "title": "Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le risque neurologique peropératoire repose sur deux mécanismes distincts : l'**ischémie hémodynamique** par hypoperfusion lors du clampage (dépend de la suppléance controlatérale et des collatérales) et l'**embolie cérébrale** (per- ou post-opératoire) par fragments de plaque ou thrombus, représentant la cause la plus fréquente d'AVC postopératoire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Autorégulation cérébrale** : maintien du DSC constant pour une PAM entre 60 et 150 mmHg chez le sujet sain — cette plage est décalée vers les hautes pressions chez l'hypertendu chronique",
+                "**Pression de perfusion cérébrale (PPC)** : PPC = PAM − PIC — en cas de sténose serrée, la PPC ipsilatérale peut être critique même pour des PAM normales",
+                "**Syndrome d'hyperperfusion cérébrale (SHC)** : survient dans 0,3-3% des cas après restauration du flux — lié à la perte d'autorégulation dans le territoire longtemps hypo-perfusé, risque d'AVC hémorragique",
+                "**Débit sanguin cérébral (DSC) critique** : en dessous de 15-18 mL/100g/min, l'EEG se modifie (silencing) ; en dessous de 10 mL/100g/min, risque de mort cellulaire irréversible",
+                "**Réflexe sino-carotidien** : la dissection du glomus carotidien peut provoquer bradycardie, hypotension ou hypertension réflexes — nécessite une injection locale de lidocaïne par le chirurgien"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'hyperventilation (hypocapnie) provoque une vasoconstriction cérébrale et aggrave l'ischémie de clampage : maintenir la PaCO2 entre 35 et 40 mmHg en AG. À l'inverse, une hypercapnie modeste (PaCO2 40-45 mmHg) peut améliorer le DSC collatéral — certaines équipes visent une légère normo-hypercapnie permissive pendant le clampage."
+            },
+            {
+              "type": "formula",
+              "content": "DSC critique (seuil EEG) : < 15-18 mL/100g/min → modifications EEG | DSC critique (seuil infarctus) : < 10 mL/100g/min → lésions irréversibles"
+            }
+          ]
+        },
+        {
+          "title": "Évaluation préopératoire / Monitorage neurologique peropératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation préopératoire doit documenter le **statut neurologique de base**, la **polygone de Willis** (écho-Doppler, ARM), la **fonction cardiovasculaire** (coronaropathie fréquente : 30-50% des patients) et le **traitement antiagrégant** en cours. Le monitorage neurologique peropératoire vise à détecter l'ischémie de clampage pour décider de la pose d'un shunt."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Monitoring clinique (ALR)** : évaluation neurologique directe du patient vigile (serrage de main, réponse aux ordres simples) — standard de référence (gold standard) pour détecter l'ischémie, sensibilité ≈ 100%, spécificité ≈ 99%",
+                "**EEG peropératoire** : monitorage continu, détecte la réduction du DSC ipsilatéral — critères d'alarme : diminution de l'amplitude > 50% ou apparition d'ondes delta dans les 2-3 minutes post-clampage ; sensibilité 50-80%, spécificité 60-98% selon les études",
+                "**Potentiels évoqués somesthésiques (PES)** : surveillance des voies sensitives, critères d'alarme : diminution amplitude > 50% ou augmentation latence > 10% — plus robuste que l'EEG seul dans certaines configurations",
+                "**Doppler transcrânien (DTC)** : mesure vélocimétrique sur l'artère cérébrale moyenne — seuil d'alarme : vélocité résiduelle après clampage < 15-20% de la valeur de base OU < 30 cm/s en valeur absolue ; très utile aussi pour détecter les microemboles (HITS)",
+                "**Pression du moignon carotidien (stump pressure)** : pression mesurée en aval du clamp sur la carotide interne — seuil d'alarme traditionnel < 40-50 mmHg (certains : < 25 mmHg) — méthode simple mais peu fiable en monitorage isolé (nombreux faux positifs/négatifs)",
+                "**Oxymétrie cérébrale (NIRS/rSO2)** : mesure non invasive de la saturation régionale en O2 — seuil d'alarme : diminution absolue > 20% ou valeur absolue < 50% — utile mais nombreuses limites (artefacts lumineux, scalp contaminant la mesure)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "La pression du moignon carotidien utilisée seule a une valeur prédictive positive médiocre pour l'ischémie de clampage (jusqu'à 40% de faux positifs et 20% de faux négatifs selon les séries). Elle ne doit pas être le seul critère de décision de mise en place d'un shunt — la combiner avec un autre monitorage (EEG, DTC ou NIRS) améliore la fiabilité."
+            },
+            {
+              "type": "formula",
+              "content": "Seuil DTC : vélocité résiduelle ACM < 15-20% de la vélocité de base → indication de shunt | Seuil NIRS : ↓ rSO2 > 20% en valeur relative OU < 50% en valeur absolue → alarme ischémie"
+            }
+          ]
+        },
+        {
+          "title": "Choix entre Anesthésie Générale et Locorégionale",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le débat AG vs ALR est tranché sur le plan de la mortalité/morbidité majeure par l'essai **GALA (2008, n=3526)** : pas de différence significative pour le critère composite AVC/infarctus/décès à 30 jours (AG 4,8% vs ALR 4,5%, p=0,77). Le choix dépend donc de l'expertise du centre, de l'état du patient et des préférences de l'équipe."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bloc cervical superficiel** : infiltration des branches superficielles du plexus cervical (C2-C4) — réalisation simple, suffisant pour une incision cutanée, mais insuffisant seul pour la dissection profonde vasculaire",
+                "**Bloc cervical profond** : bloc des racines C2-C4 au niveau du processus transverse — complications significatives (injection intrathécale, bloc phrénique homolatéral quasi-constant, bloc du nerf récurrent laryngé) — abandonné par la plupart des équipes au profit du bloc intermédiaire ou superficiel + infiltration chirurgicale",
+                "**Bloc cervical intermédiaire (BCI)** : injection entre le fascia d'investissement cervical et le fascia prévertébral — profil de sécurité intermédiaire, efficacité comparable au bloc profond selon méta-analyses récentes — technique de référence en ALR pour l'EAC dans de nombreux centres",
+                "**Avantages ALR** : monitorage neurologique clinique en temps réel (standard de référence), réduction du taux de shunt sélectif, possible réduction de la durée d'hospitalisation, meilleure stabilité hémodynamique selon certaines études, patient vigile coopérant",
+                "**Avantages AG** : confort patient (anxieux, claustrophobie, surpoids, SAOS), contrôle des voies aériennes, neuroprotection pharmacologique potentielle, durée d'intervention sans contrainte de tolérance patient, facilite la gestion des complications chirurgicales",
+                "**Contre-indications relatives à l'ALR** : troubles cognitifs sévères, barrière linguistique, anxiété majeure non contrôlée, apnée obstructive posturale, chirurgie de reprise complexe prévisible, patient non coopérant"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Le bloc cervical profond est contre-indiqué en cas de sténose carotidienne controlatérale sévère ou d'EAC bilatérale car le bloc phrénique homolatéral (quasi-constant) associé à un bloc phrénique controlatéral potentiel peut conduire à une insuffisance respiratoire grave. Préférer le bloc cervical intermédiaire ou superficiel + infiltration peropératoire par le chirurgien."
+            },
+            {
+              "type": "formula",
+              "content": "GALA Trial 2008 : AG vs ALR — AVC/IDM/décès à 30j : 4,8% vs 4,5% (OR 1,07, IC95% 0,80-1,43, p=0,77) — Pas de différence significative"
+            }
+          ]
+        },
+        {
+          "title": "Gestion peropératoire de la pression artérielle",
+          "items": [
+            {
+              "type": "text",
+              "content": "La gestion de la **pression artérielle** est l'un des éléments les plus critiques de la prise en charge anesthésique de l'EAC. L'objectif évolue en trois phases : avant le clampage (normo-tension ou légère hypertension), pendant le clampage (hypertension permissive pour favoriser la suppléance), et après déclampage (éviter l'hyperperfusion)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Phase pré-clampage** : maintenir la PAM à ± 20% de la valeur de base préopératoire — éviter l'hypotension (réduction du DSC collatéral) et l'hypertension excessive (rupture de plaque, embolie)",
+                "**Phase de clampage** : objectif PAM ≥ 20-30% au-dessus de la valeur de base préopératoire (ou PAM ≥ 80-100 mmHg) pour maximiser la perfusion par le polygone de Willis — utiliser la phényléphrine (vasopresseur de choix car pas d'effet tachycardisant) ou l'éphédrine, parfois noradrénaline",
+                "**Phase de déclampage** : risque d'hypotension par levée de la vasoconstriction réflexe et bradycardie sino-carotidienne — puis risque d'hypertension rebond et de syndrome d'hyperperfusion — objectif : PAM proche de la valeur de base, éviter PAM > 120-130 mmHg",
+                "**Phényléphrine** : vasopresseur alpha-pur de choix pendant le clampage — dose : 50-200 µg IV en bolus ou 0,5-2 µg/kg/min en perfusion — augmente la PAM sans tachycardie réflexe délétère",
+                "**Éphédrine** : réservée si bradycardie associée à l'hypotension — dose : 3-6 mg IV bolus — effet combiné alpha + bêta",
+                "**Antihypertenseurs peropératoires** : nicardipine (anticalcique) 0,5-2 mg IV bolus ou 2-10 mg/h IVSE — labétalol 5-10 mg IV si FC élevée associée — en cas d'hypertension réfractaire post-déclampage évoquant un SHC : nicardipine à dose antihypertensive",
+                "**Traitement du réflexe sino-carotidien** : atropine 0,5-1 mg IV pour bradycardie, ou infiltration locale de lidocaïne 1% par le chirurgien au niveau de la bifurcation carotidienne"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'utilisation de l'éphédrine en phase de clampage est discutée car sa composante bêta-adrénergique augmente la consommation en O2 du myocarde (risque chez coronarien) et sa tachycardie réflexe réduit la diastole coronarienne. La phényléphrine est préférable en première intention chez le coronarien. De plus, éviter la noradrénaline à fortes doses qui peut paradoxalement réduire le DSC par vasoconstriction des artérioles cérébrales."
+            },
+            {
+              "type": "formula",
+              "content": "Objectif PAM pendant clampage : PAM cible = PAM de base préopératoire + 20 à 30 mmHg (minimum PAM ≥ 80 mmHg) | Syndrome d'hyperperfusion : PAM cible ≤ 100-110 mmHg en postopératoire immédiat si facteurs de risque"
+            }
+          ]
+        },
+        {
+          "title": "Conduite de l'anesthésie générale — Protocoles et Neuroprotection",
+          "items": [
+            {
+              "type": "text",
+              "content": "La conduite de l'AG pour EAC vise à assurer une **stabilité hémodynamique maximale**, à éviter toute **variation de DSC**, et à permettre un **réveil rapide** pour l'examen neurologique postopératoire immédiat. L'induction est le moment de plus grand risque hémodynamique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Induction** : propofol 1-2 mg/kg IV ou étomidate 0,2-0,3 mg/kg (patient coronarien instable ou fraction d'éjection altérée) — sufentanil 0,3-0,5 µg/kg ou rémifentanil 0,5-1 µg/kg pour blunter la réponse à la laryngoscopie",
+                "**Intubation** : atropine préventive 0,5 mg si bradycardie prévisible, prémédication avec lignocaïne 1,5 mg/kg pour limiter la poussée hypertensive à la laryngoscopie",
+                "**Entretien** : halogénés (sévoflurane, desflurane) ou TIVA (propofol + rémifentanil) — les deux sont acceptables — le sévoflurane offre une neuroprotection préclinique (préconditionnement ischémique) mais sans bénéfice clinique démontré chez l'humain",
+                "**Objectif BIS** : 40-60 pendant la phase de clampage — un BIS trop bas masque les modifications EEG d'ischémie si l'EEG est utilisé comme monitorage",
+                "**Neuroprotection pharmacologique** : pas de traitement démontré efficace en pratique clinique — thiopental et méthylprednisolone abandonnés — propofol (TIVA) à doses hypnotiques normales — maintenir glycémie entre 7 et 10 mmol/L (éviter hyperglycémie aggravant l'ischémie et hypoglycémie)",
+                "**Analgésie** : paracétamol 1g IV, kétamine 0,5 mg/kg sub-dissociative, bloc de l'incision par le chirurgien avec ropivacaïne 0,2% pour réduire le besoin en morphiniques",
+                "**Réveil** : rapide et calme impératif — éviter les poussées hypertensives au réveil (risque de SHC) — extuber au bloc pour examen neurologique immédiat"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'utilisation du BIS en AG pour EAC avec monitorage EEG simultané est délicate : les agents anesthésiques modifient l'EEG de base et peuvent masquer les signes précoces d'ischémie. Certaines équipes maintiennent une anesthésie légère (BIS 50-60) pendant la phase de clampage pour améliorer la sensibilité de l'EEG. La TIVA au propofol produit un EEG différent des halogénés et peut compliquer l'interprétation — une formation spécifique de l'équipe est nécessaire."
+            },
+            {
+              "type": "formula",
+              "content": "Glycémie cible peropératoire EAC : 7-10 mmol/L (126-180 mg/dL) | BIS cible entretien : 40-60 | BIS cible phase clampage (si EEG simultané) : 50-65 pour ne pas masquer l'ischémie"
+            }
+          ]
+        },
+        {
+          "title": "Complications et leur Gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications majeures de l'EAC sont principalement **neurologiques** (AVC 1-3%), **cardiovasculaires** (IDM 0,5-1%) et locales (hématome cervical compressif 2-5%). La reconnaissance rapide et la prise en charge immédiate conditionnent le pronostic neurologique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**AVC peropératoire sur ischémie de clampage** : mettre en place le shunt immédiatement si pas encore en place, augmenter la PAM à +30-40% de la base, vérifier la PaCO2 (objectif 40-45 mmHg), traitement de l'hypovolémie",
+                "**AVC embolique postopératoire** : survient surtout dans les 24h — thrombose de l'artériotomie, embolie de plaque résiduelle — retour immédiat au bloc chirurgical si déficit neurologique nouveau en postopératoire — imagerie urgente (scanner sans injection d'abord pour éliminer l'hémorragie)",
+                "**Syndrome d'hyperperfusion cérébrale (SHC)** : tableau de céphalées homolatérales ipsilatérales, convulsions focales, déficit neurologique, pouvant évoluer vers l'AVC hémorragique — survient 12h à 7 jours post-op — traitement : contrôle strict PA (PAM < 100-110 mmHg), antiépileptiques si convulsions, éviter anticoagulants",
+                "**Hématome cervical compressif** : urgence chirurgicale — compression trachéale → asphyxie — CAT : ouvrir immédiatement les agrafes/sutures au lit, intubation en urgence (fibroscopie ou cricothyroïdotomie si impossible), retour au bloc",
+                "**Lésion des nerfs crâniens** : nerf hypoglosse (XII, déviation de la langue), nerf vague et récurrent laryngé (dysphonie, troubles déglutition), nerf grand auriculaire (hypoesthésie lobule de l'oreille), nerf marginal de la mandibule (branche du VII) — incidence globale 10-15% des cas",
+                "**Instabilité hémodynamique postopératoire** : bradycardie par hypersensibilité du sinus carotidien réopéré ou hypertension par dénervation — surveillance scope en SSPI au moins 2-4h, traitement symptomatique",
+                "**Complications cardiaques** : IDM (0,5-1%) — ECG postopératoire systématique, troponines à H4-H8 si facteurs de risque cardiovasculaire"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'hématome cervical compressif post-EAC est une urgence vitale : la compression trachéale peut conduire à l'asphyxie en quelques minutes. En dehors du bloc opératoire, la première action est d'ouvrir les agrafes cutanées et les sutures sous-cutanées pour décomprimer, AVANT toute tentative d'intubation. Ne jamais tenter l'intubation sans avoir d'abord décomprimé l'hématome si la trachée est comprimée."
+            },
+            {
+              "type": "formula",
+              "content": "Incidence complications neurologiques majeures (AVC/AIT) EAC centre expert : 1-3% | Hématome cervical compressif : 2-5% | SHC symptomatique : 0,3-3% | Lésions nerfs crâniens (transitoires) : 10-15%"
+            }
+          ]
+        },
+        {
+          "title": "Recommandations Clés (Grades et Années)",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les recommandations actuelles pour l'EAC sont principalement issues des guidelines **ESVS 2023** (European Society for Vascular Surgery), des recommandations **ESA 2019** sur l'anesthésie pour chirurgie vasculaire, et du consensus **SFAR/SFN** sur la prise en charge neurologique peropératoire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Grade I / Recommandation forte (ESVS 2023)** : Fermeture par patch systématique pour réduire le risque de resténose et d'AVC ipsilatéral précoce",
+                "**Grade I (ESVS 2023)** : Chirurgie dans les 14 jours après un AIT ou AVC mineur si sténose ≥ 50% NASCET — délai idéal < 48-72h si AIT",
+                "**Grade IIa (ESVS 2023)** : Poursuite de l'aspirine en peropératoire (arrêt augmente le risque thrombotique postopératoire) — ne pas arrêter le traitement antiagrégant mono",
+                "**Grade IIb (ESVS 2023)** : Choix AG vs ALR selon les préférences de l'équipe et du patient (pas de supériorité démontrée de l'une sur l'autre — GALA 2008)",
+                "**Grade IIa (ESVS 2023)** : Monitorage neurologique peropératoire recommandé pour guider la mise en place sélective du shunt — la modalité (EEG, DTC, NIRS, clinique) dépend de l'expertise du centre",
+                "**Grade I (ESA 2019)** : Monitoring hémodynamique invasif (cathéter artériel radial) recommandé en AG — mise en place AVANT l'induction pour détecter et corriger immédiatement les variations de PAM",
+                "**Grade IIa (SFAR 2021 — Anesthésie chirurgie vasculaire)** : Échocardiographie transthoracique préopératoire si coronaropathie connue ou suspectée — évaluation LVEF et cinétique segmentaire",
+                "**Accord d'experts (ESA 2019)** : Maintenir la PAM ≥ 80% de la valeur de base pendant le clampage — utiliser un vasopresseur (phényléphrine en première intention) plutôt qu'une réduction de l'anesthésie"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "La double antiagrégation (aspirine + clopidogrel) au moment de l'EAC augmente le risque d'hématome de loge cervical (jusqu'à 7%) mais le bénéfice sur la thrombose postopératoire est débattu. En dehors d'une indication coronarienne précise (stent actif récent), la double antiagrégation ne doit pas être initiée avant l'EAC. Le clopidogrel seul peut être poursuivi mais augmente le risque hémorragique local."
+            },
+            {
+              "type": "formula",
+              "content": "Délai optimal chirurgie après AIT/AVC mineur : < 14 jours (Grade I ESVS 2023) | Délai idéal si AIT à haut risque (score ABCD2 ≥ 4) : < 48-72h | Risque acceptable centre expert : AVC/décès 30j < 3% (asymptomatique) et < 6% (symptomatique)"
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Monitorage neurologique peropératoire** : le monitoring clinique sous ALR (patient vigile) reste le gold standard ; en AG, combiner EEG + DTC ou NIRS pour décision de shunt sélectif — aucun monitorage isolé n'est parfait",
+        "**Gestion de la PA pendant clampage** : objectif PAM = valeur de base + 20-30 mmHg minimum — phényléphrine en première intention (alpha-pur, pas de tachycardie) — la PAM est le principal levier de neuroprotection disponible en AG",
+        "**AG vs ALR (GALA 2008)** : absence de différence statistiquement significative sur critère composite AVC/IDM/décès — le choix doit être individualisé selon patient (coopération, comorbidités), chirurgien (durée, complexité) et expertise du centre",
+        "**Hématome cervical compressif** : urgence vitale — ouvrir les sutures en premier (décompression immédiate) AVANT intubation — prévoir le chariot d'intubation difficile et la cricothyroïdotomie d'emblée en SSPI",
+        "**Syndrome d'hyperperfusion cérébrale** : surveillance hémodynamique stricte 24-72h, PAM cible < 100-110 mmHg, signes d'appel (céphalées homolatérales, convulsions, confusion) — anticoagulants et antiagrégants ne doivent pas être augmentés si ce diagnostic est évoqué"
+      ],
+      "references": [
+        "Naylor AR et al. — Editor's Choice – European Society for Vascular Surgery (ESVS) 2023 Clinical Practice Guidelines on the Management of Atherosclerotic Carotid and Vertebral Artery Disease — European Journal of Vascular and Endovascular Surgery 2023;65(1):7-111",
+        "Howell SJ — Carotid endarterectomy — British Journal of Anaesthesia 2007;99(1):119-131 (référence séminale, complétée par guidelines 2023)",
+        "GALA Trial Collaborative Group — General anaesthesia versus local anaesthesia for carotid surgery (GALA): a multicentre, randomised controlled trial — Lancet 2008;372(9656):2132-2142",
+        "Stoneham MD, Stamou D, Mason J — Regional anaesthesia for carotid endarterectomy — British Journal of Anaesthesia 2015;114(3):372-383",
+        "Etz CD et al. — ESA/ESICM/EACTS/EAPCI/ESVS guidelines on cardiovascular assessment and management of patients undergoing non-cardiac surgery — European Heart Journal 2022;43(39):3826-3924",
+        "Paraskevas KI et al. — Optimal timing of carotid endarterectomy after different types of neurological events — British Journal of Surgery 2020;108(4):369-375",
+        "SFAR — Recommandations pour la pratique clinique : prise en charge anesthésique du patient en chirurgie vasculaire — SFAR 2021",
+        "Moppett IK, Mahajan RP — Transcranial Doppler ultrasonography in anaesthesia and intensive care — British Journal of Anaesthesia 2004;93(5):710-724 (référence technique incontournable pour interprétation DTC)"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 72 ans, hypertendu chronique (PA habituelle 160/90 mmHg), est opéré d'une EAC pour sténose carotidienne interne gauche symptomatique de 75% NASCET. Sous AG au sévoflurane, la PAM de base en salle est de 95 mmHg. Après clampage carotidien, l'EEG montre une diminution d'amplitude de 60% côté gauche à 3 minutes.",
+        "question": "Quelle est la première action anesthésique à entreprendre immédiatement après cette modification EEG ?",
+        "options": {
+          "A": "Augmenter la FiO2 à 100% et diminuer la concentration de sévoflurane",
+          "B": "Injecter de la phényléphrine IV pour viser une PAM de 115-120 mmHg",
+          "C": "Injecter du thiopental 3-5 mg/kg IV pour neuroprotection",
+          "D": "Hyperventiler modérément pour obtenir une PaCO2 à 30-33 mmHg"
+        },
+        "correct": "B",
+        "explanation": "La diminution d'amplitude EEG > 50% après clampage signe une ischémie hémodynamique ipsilatérale. La première mesure anesthésique est d'augmenter la PAM de +20 à +30 mmHg au-dessus de la base (donc viser 115-125 mmHg) par phényléphrine pour maximiser la pression de perfusion via les collatérales (polygone de Willis). Piège A : augmenter la FiO2 ne modifie pas le DSC et réduire le sévoflurane peut aggraver l'hémodynamique ; c'est insuffisant et inadapté comme première mesure. Piège C : le thiopental à doses de neuroprotection est abandonné (pas de bénéfice clinique prouvé, instabilité hémodynamique majeure induite). Piège D : l'hyperventilation aggrave l'ischémie cérébrale par vasoconstriction (réduction PaCO2 → vasoconstriction artériolaire cérébrale réflexe) — c'est l'inverse de ce qu'il faut faire. Parallèlement, alerter le chirurgien pour envisager la pose d'un shunt."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Vous réalisez un bloc cervical pour EAC chez un patient de 68 ans porteur d'une sténose carotidienne droite à 80% symptomatique et d'une sténose carotidienne gauche controlatérale à 65% asymptomatique.",
+        "question": "Quel type de bloc cervical est formellement contre-indiqué dans cette situation et pourquoi ?",
+        "options": {
+          "A": "Bloc cervical superficiel bilatéral car risque d'hématome bilatéral compressif",
+          "B": "Bloc cervical profond ipsilatéral car bloc phrénique homolatéral et risque d'insuffisance respiratoire si bloc phrénique controlatéral sur la sténose gauche",
+          "C": "Bloc cervical intermédiaire ipsilatéral car diffusion possible vers le plexus brachial",
+          "D": "Tout bloc cervical car la double sténose impose l'anesthésie générale avec shunt systématique"
+        },
+        "correct": "B",
+        "explanation": "Le bloc cervical profond entraîne quasi-systématiquement (> 90% des cas) un bloc du nerf phrénique homolatéral par diffusion aux racines C3-C5 pré-scaléniques. En cas de sténose carotidienne controlatérale significative (ici 65%), un bloc phrénique bilatéral est possible (spontané ou lors d'une future intervention), pouvant conduire à une paralysie diaphragmatique bilatérale et une insuffisance respiratoire aiguë. Le bloc profond est donc contre-indiqué dans cette situation. Piège A : les blocs superficiels bilatéraux ne bloquent pas les nerfs phréniques et ne sont pas contre-indiqués de ce fait. Piège C : la diffusion vers le plexus brachial du bloc intermédiaire est rare et non une contre-indication absolue — le bloc intermédiaire est la technique de référence dans ce contexte. Piège D : la double sténose n'impose pas l'AG par défaut ; l'ALR par bloc intermédiaire ou superficiel reste une excellente option."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "À J1 d'une EAC droite sans complications peropératoires, un patient de 70 ans se plaint de céphalées pulsatiles droites intenses depuis 2h. L'infirmière note une PA à 185/110 mmHg (habituelle 135/80). L'examen neurologique retrouve une confusion légère sans déficit focal.",
+        "question": "Quel diagnostic doit être évoqué en priorité et quelle est la prise en charge immédiate ?",
+        "options": {
+          "A": "AVC ischémique par thrombose de l'artériotomie — anticoagulation curative immédiate et scanner cérébral",
+          "B": "Crise hypertensive post-EAC banale — nicardipine IV et surveillance",
+          "C": "Syndrome d'hyperperfusion cérébrale — contrôle strict de la PA (PAM cible < 100-110 mmHg), scanner cérébral urgent, pas d'anticoagulants",
+          "D": "Hématome sous-dural aigu par la manipulation chirurgicale — IRM cérébrale urgente et neurochirurgie"
+        },
+        "correct": "C",
+        "explanation": "Le tableau associant céphalées ipsilatérales pulsatiles, confusion, hypertension artérielle à J1 d'une EAC est le tableau typique du syndrome d'hyperperfusion cérébrale (SHC). Il survient dans les premières 24-72h (pic J1-J3), lié à la perte d'autorégulation dans le territoire longtemps hypo-perfusé. La priorité est de contrôler la PA (PAM < 100-110 mmHg, nicardipine IVSE) et de réaliser un scanner cérébral urgent pour éliminer un AVC hémorragique (complication du SHC non traité). Les anticoagulants sont formellement contre-indiqués s'il y a un doute de SHC car ils aggraveraient l'hémorragie cérébrale potentielle. Piège A : l'anticoagulation immédiate en cas de SHC peut transformer un œdème vasogénique en hémorragie massive — c'est une erreur potentiellement fatale. Piège B : simple 'crise hypertensive' est insuffisant comme diagnostic — il faut éliminer le SHC et l'AVC hémorragique avant tout. Piège D : l'hématome sous-dural est rarissime après EAC et le tableau clinique avec céphalées ipsilatérales et hypertension oriente beaucoup plus vers le SHC."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Vous utilisez le Doppler transcrânien (DTC) sur l'artère cérébrale moyenne gauche pour monitorer une EAC gauche. La vélocité de base en ACM gauche est de 62 cm/s. Après clampage carotidien, la vélocité résiduelle est de 11 cm/s.",
+        "question": "Quelle est l'interprétation correcte et la conduite à tenir ?",
+        "options": {
+          "A": "Vélocité résiduelle à 18% de la base — en dessous du seuil critique de 15-20% — indication à mettre en place un shunt et augmenter la PAM",
+          "B": "Vélocité résiduelle normale (> 10 cm/s) — pas d'action nécessaire, poursuivre le clampage",
+          "C": "Vélocité résiduelle à 18% de la base — au-dessus du seuil — pas d'indication au shunt",
+          "D": "Le seuil DTC d'alarme est une vélocité absolue < 40 cm/s — ici 11 cm/s impose un shunt immédiat"
+        },
+        "correct": "A",
+        "explanation": "La vélocité résiduelle est 11/62 = 17,7% de la valeur de base, ce qui est EN-DESSOUS du seuil critique de 15-20% (selon les sources, certaines équipes utilisent un seuil à 15%, d'autres à 20% — ici clairement proche du seuil d'alarme). À 17,7%, combiné avec la valeur absolue basse (11 cm/s < 30 cm/s qui est le seuil absolu recommandé par la plupart des auteurs), cela justifie l'indication à un shunt sélectif et l'augmentation de la PAM. La conduite correcte est donc d'informer le chirurgien (shunt) et d'augmenter la PAM par phényléphrine. Piège B : 11 cm/s en valeur absolue est largement en dessous du seuil d'alarme à 30 cm/s — l'absence d'action serait une erreur grave. Piège C : mauvais calcul ou mauvaise interprétation du seuil — 18% est EN-DESSOUS du seuil de 20%, donc alarme. Piège D : le seuil en valeur absolue communément utilisé est < 30 cm/s (et non 40 cm/s) — 40 cm/s serait trop sensible et générerait trop de faux positifs ; ici la valeur de 11 cm/s est de toute façon très inférieure au seuil de 30 cm/s."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Un patient de 75 ans, coronarien avec stent actif posé il y a 4 mois (bithérapie aspirine + ticagrelor), doit bénéficier d'une EAC pour AIT hémisphérique il y a 5 jours sur sténose carotidienne interne droite de 70% NASCET.",
+        "question": "Quelle est la stratégie antiagrégante peropératoire optimale pour ce patient ?",
+        "options": {
+          "A": "Arrêter ticagrelor 5 jours avant et maintenir aspirine seule — risque hémorragique local trop élevé sous bithérapie",
+          "B": "Arrêter toute antiagrégation 5 jours avant la chirurgie — la chirurgie est urgente mais le risque hémorragique prime",
+          "C": "Maintenir la bithérapie (aspirine + ticagrelor) pendant l'EAC — arrêt du ticagrelor à 4 mois de stent actif expose à thrombose de stent potentiellement fatale",
+          "D": "Substituer par héparine non fractionnée IV en peropératoire pour couvrir le risque coronarien"
+        },
+        "correct": "C",
+        "explanation": "Un stent actif de 4 mois est toujours dans la période critique de risque de thrombose de stent (risque élevé jusqu'à 6-12 mois post-implantation). L'arrêt du ticagrelor avant 12 mois (certaines recommandations disent 6 mois minimum) expose à un risque de thrombose de stent dont la mortalité dépasse 25-40%. La recommandation ESC/ESVS est de maintenir la bithérapie si le bénéfice de la chirurgie est urgent (ici EAC pour AIT récent — bénéfice maximal dans les 14 jours). L'hémostase chirurgicale minutieuse et la fermeture par patch limitent le risque d'hématome. Piège A : arrêter le ticagrelor à 4 mois de stent actif est potentiellement fatal par thrombose de stent — l'aspirine seule ne protège pas suffisamment. Piège B : arrêt de toute antiagrégation combine le risque de thrombose de stent ET le risque d'AVC peropératoire par thrombose carotidienne — double risque inacceptable. Piège D : l'HNF IV ne remplace pas le mécanisme antiplaquettaire spécifique (inhibition P2Y12) et expose à un saignement chirurgical majeur sans protéger suffisamment le stent."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Lors d'une EAC gauche sous AG, la pression du moignon carotidien (stump pressure) mesurée après clampage est de 55 mmHg. L'EEG simultané ne montre aucune modification à 5 minutes de clampage.",
+        "question": "Quelle est la conduite à tenir la plus appropriée ?",
+        "options": {
+          "A": "Mettre en place le shunt systématiquement car stump pressure > 50 mmHg signifie une bonne suppléance — pas de shunt nécessaire",
+          "B": "Ne pas mettre en place le shunt car la stump pressure est au-dessus du seuil de 40-50 mmHg ET l'EEG est normal — poursuivre le clampage",
+          "C": "Mettre en place le shunt car 55 mmHg est insuffisant selon les critères modernes (seuil > 60 mmHg requis)",
+          "D": "Arrêter le clampage immédiatement et décider d'un shunt systématique pour toute la suite de l'intervention"
+        },
+        "correct": "B",
+        "explanation": "La stump pressure de 55 mmHg est AU-DESSUS du seuil traditionnel d'alarme de 40-50 mmHg, et surtout l'EEG est normal à 5 minutes — ce qui est le critère fonctionnel le plus fiable disponible. La combinaison stump pressure > 50 mmHg + EEG normal constitue la meilleure réassurance disponible : pas d'indication au shunt. C'est la conduite correcte. Piège A : la formulation est inversée dans l'option A et la conclusion est erronée — la stump pressure > 50 mmHg est effectivement rassurante mais ce n'est pas parce qu'elle est > 50 qu'il faut un shunt, c'est l'inverse. Piège C : le seuil de 60 mmHg n'est pas un seuil standardisé recommandé — les seuils usuels sont 40-50 mmHg selon les équipes, et 55 mmHg est donc au-dessus. Piège D : convertir en shunt systématique sans critère objectif n'est pas justifié ici et expose aux complications du shunt lui-même (embolie d'air, lésion de l'intima)."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "En SSPI, à H2 d'une EAC droite, un patient de 68 ans présente brutalement une hémiplégie gauche complète d'installation rapide. La PA est à 150/90 mmHg. Le scanner cérébral réalisé en urgence montre une occlusion de l'artère cérébrale moyenne droite sans infarctus constitué.",
+        "question": "Quelle est la prise en charge thérapeutique la plus appropriée dans l'heure qui suit ?",
+        "options": {
+          "A": "Thrombolyse intraveineuse par altéplase 0,9 mg/kg immédiatement",
+          "B": "Retour immédiat au bloc opératoire pour exploration chirurgicale de la carotide et thrombectomie mécanique si échec",
+          "C": "Anticoagulation curative par héparine non fractionnée IV en urgence",
+          "D": "Augmentation des antiagrégants (double antiagrégation) et surveillance neurologique"
+        },
+        "correct": "B",
+        "explanation": "L'AVC ischémique aigu post-EAC dans les premières heures est très probablement d'origine thrombotique locale (thrombose de l'artériotomie, lambeau intimal) ou embolique à partir du site opératoire. La prise en charge de référence est le retour immédiat en chirurgie pour exploration de la carotide (thrombectomie sur table) — c'est beaucoup plus efficace que la thrombolyse dans ce contexte et moins risqué pour le site opératoire récent. La thrombectomie mécanique endovasculaire peut être associée si occlusion de l'ACM distale non accessible chirurgicalement. Piège A : la thrombolyse IV est contre-indiquée en post-opératoire immédiat (chirurgie < 14 jours selon les critères classiques de la thrombolyse) — risque hémorragique majeur sur l'artériotomie carotidienne et le site opératoire cervical. Piège C : l'héparine IV seule sans exploration chirurgicale est insuffisante pour l'occlusion aiguë et expose à l'hémorragie sur le site opératoire sans bénéfice neurologique comparable à la chirurgie. Piège D : totalement inadapté à une occlusion aiguë de l'ACM — délai trop long, inefficacité certaine sur le thrombus constitué."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Vous planifiez la prise en charge anesthésique d'une EAC chez un patient de 74 ans, BPCO sévère (VEMS 45%), coronarien stable, porteur d'un pacemaker DDD pour bloc auriculo-ventriculaire complet. Il est très anxieux et refuse l'ALR.",
+        "question": "Quel agent vasopresseur devez-vous éviter en première intention pour l'augmentation tensionnelle pendant le clampage carotidien chez ce patient spécifique ?",
+        "options": {
+          "A": "Phényléphrine car effet alpha-pur entraîne bradycardie réflexe — particulièrement problématique avec le pacemaker DDD",
+          "B": "Noradrénaline car son effet vasodilatateur paradoxal cérébral",
+          "C": "Éphédrine car sa composante bêta-adrénergique augmente la consommation en O2 myocardique chez ce coronarien",
+          "D": "Dopamine car elle provoque une vasodilatation splanchnique réduisant la PAM efficace"
+        },
+        "correct": "C",
+        "explanation": "L'éphédrine est un sympathomimétique mixte (alpha + bêta). Sa composante bêta-1 augmente la fréquence cardiaque, la contractilité et la consommation myocardique en O2 — particulièrement délétère chez un coronarien stable dont la réserve coronarienne est réduite. De plus, la tachycardie induite réduit le temps de remplissage diastolique et donc la perfusion coronarienne sous-endocardique. La phényléphrine alpha-pur est préférable. Piège A : certes la phényléphrine peut entraîner une bradycardie réflexe (baroréflexe), mais chez ce patient porteur d'un pacemaker DDD pour BAV complet, la FC sera de toute façon stimulée par le pacemaker — la bradycardie réflexe sera 'couverte'. La phényléphrine reste le meilleur choix. Piège B : la noradrénaline n'a pas d'effet vasodilatateur paradoxal cérébral aux doses vasopressives usuelles — c'est une erreur pharmacologique. Piège D : la dopamine à doses vasopressives (> 5 µg/kg/min) a un effet vasoconstriction splanchnique prédominant, pas vasodilatateur — et n'est pas l'agent de première intention pour l'EAC de toute façon."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un patient de 66 ans bénéficie d'une EAC droite sous ALR (bloc cervical intermédiaire). Lors du clampage carotidien, le patient rapporte une faiblesse du membre supérieur gauche avec difficultés à serrer la main. La PA est à 95/60 mmHg (de base 145/85).",
+        "question": "En dehors de l'augmentation de la PA, quelle est la conduite à tenir chirurgicale immédiate ?",
+        "options": {
+          "A": "Convertir en anesthésie générale pour sécuriser les voies aériennes avant tout geste chirurgical",
+          "B": "Demander au chirurgien de mettre en place un shunt carotidien immédiatement",
+          "C": "Pratiquer une injection intrathécale de sérum salé pour améliorer le débit carotidien",
+          "D": "Injecter du mannitol 20% 0,5 g/kg pour réduire l'œdème cérébral"
+        },
+        "correct": "B",
+        "explanation": "La faiblesse du membre supérieur gauche chez ce patient sous ALR vigile EST le signe clinique d'ischémie hémodynamique ipsilatérale droite (le monitoring clinique — serrage de main controlatérale — est précisément le gold standard de la détection d'ischémie de clampage sous ALR). La conduite à tenir immédiate comprend deux actions simultanées : (1) augmenter la PAM par phényléphrine (traitement de l'hypotension), ET (2) demander au chirurgien la mise en place d'un shunt carotidien de sauvetage. C'est la raison d'être du monitoring clinique sous ALR — permettre un shunt sélectif guidé par la clinique. Piège A : convertir en AG prend du temps, induit une période de risque supplémentaire et ne résout pas l'ischémie en cours — de plus, l'intubation avec hypotension associée est particulièrement risquée. Piège C : l'injection intrathécale de SSI n'a aucun fondement physiopathologique pour améliorer la perfusion carotidienne — réponse absurde. Piège D : le mannitol est indiqué pour l'hypertension intracrânienne, non pour l'ischémie aiguë de clampage — son effet délai est trop long et ne résout pas le problème causal."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Vous discutez en staff vasculaire de la stratégie d'une EAC chez un patient de 71 ans, AIT hémisphérique droit il y a 7 jours, sténose carotidienne interne droite à 72% NASCET, score ASA III, NYHA II, pas d'insuffisance rénale. L'équipe débat entre AG avec EEG + DTC et ALR avec monitoring clinique.",
+        "question": "D'après les données de la littérature et les recommandations actuelles (ESVS 2023, GALA 2008), quelle affirmation est exacte concernant le choix de la technique anesthésique ?",
+        "options": {
+          "A": "L'ALR réduit significativement le taux d'AVC et de décès à 30 jours par rapport à l'AG — c'est la technique recommandée en Grade I",
+          "B": "L'AG avec TIVA au propofol offre une neuroprotection pharmacologique démontrée réduisant les lésions ischémiques par rapport aux halogénés",
+          "C": "Il n'existe pas de différence significative sur le critère composite AVC/IDM/décès à 30 jours entre AG et ALR (essai GALA) — le choix doit être individualisé selon patient et expertise du centre",
+          "D": "L'AG est contre-indiquée pour l'EAC car elle ne permet pas de monitoring neurologique clinique — seule l'ALR est recommandée en Grade I par l'ESVS 2023"
+        },
+        "correct": "C",
+        "explanation": "L'essai GALA (2008, n=3526, seul grand ECR sur cette question) a montré l'absence de différence significative entre AG et ALR pour le critère composite AVC/IDM/décès à 30 jours (4,8% AG vs 4,5% ALR, p=0,77, OR 1,07). Les recommandations ESVS 2023 (Grade IIb) reflètent cette absence de supériorité et recommandent de choisir selon les préférences de l'équipe, du patient et l'expertise du centre. Piège A : FAUX — l'ALR ne réduit PAS significativement le taux d'AVC/décès vs AG dans GALA — une méta-analyse (Cochrane 2013 mise à jour 2021) confirme l'absence de différence significative — il n'y a pas de Grade I en faveur de l'ALR. Piège B : FAUX — la neuroprotection du propofol par rapport aux halogénés n'est pas démontrée cliniquement chez l'humain en EAC — des données précliniques favorables existent mais sans traduction clinique prouvée. Piège D : FAUX — l'AG n'est pas contre-indiquée pour l'EAC, et l'ESVS 2023 ne donne pas de Grade I contre l'AG — le monitoring neurologique sous AG est assuré par EEG/DTC/NIRS."
+      }
+    ]
   }
 ]
