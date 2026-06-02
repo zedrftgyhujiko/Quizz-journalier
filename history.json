@@ -2028,5 +2028,412 @@
         "explanation": "L'essai GALA (2008, n=3526, seul grand ECR sur cette question) a montré l'absence de différence significative entre AG et ALR pour le critère composite AVC/IDM/décès à 30 jours (4,8% AG vs 4,5% ALR, p=0,77, OR 1,07). Les recommandations ESVS 2023 (Grade IIb) reflètent cette absence de supériorité et recommandent de choisir selon les préférences de l'équipe, du patient et l'expertise du centre. Piège A : FAUX — l'ALR ne réduit PAS significativement le taux d'AVC/décès vs AG dans GALA — une méta-analyse (Cochrane 2013 mise à jour 2021) confirme l'absence de différence significative — il n'y a pas de Grade I en faveur de l'ALR. Piège B : FAUX — la neuroprotection du propofol par rapport aux halogénés n'est pas démontrée cliniquement chez l'humain en EAC — des données précliniques favorables existent mais sans traduction clinique prouvée. Piège D : FAUX — l'AG n'est pas contre-indiquée pour l'EAC, et l'ESVS 2023 ne donne pas de Grade I contre l'AG — le monitoring neurologique sous AG est assuré par EEG/DTC/NIRS."
       }
     ]
+  },
+  {
+    "date": "2026-06-02",
+    "dateStr": "mardi 2 juin",
+    "topic": "Prise en charge périopératoire du phéochromocytome : préparation médicale préopératoire, gestion des crises hypertensives peranesthésiques et instabilité hémodynamique au déclampage veineux surrénalien",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "Le phéochromocytome est une tumeur sécrétant des catécholamines dont la mortalité peropératoire atteignait historiquement 50% et reste aujourd'hui < 1% grâce à une préparation médicale rigoureuse. Sa gestion anesthésique est un exercice d'équilibriste : contrôler les paroxysmes hypertensifs à l'induction et à la manipulation tumorale, puis anticiper l'effondrement hémodynamique brutal au déclampage veineux — deux situations opposées qui surviennent à quelques minutes d'intervalle.",
+      "sections": [
+        {
+          "title": "1. Définitions et Rappels Essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **phéochromocytome** est une tumeur chromaffine de la médullosurrénale sécrétant des **catécholamines** (adrénaline, noradrénaline, dopamine). Le **paragangliome** désigne la même tumeur d'origine extra-surrénalienne (ganglions sympathiques). Ensemble, ils constituent le spectre des **PPGL** (PhéoParaGanglionomes)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Incidence** : 2–8 cas/million/an ; retrouvé dans 0,1–0,6% des hypertensions artérielles",
+                "**Localisation** : 85–90% surrénalienne, 10–15% extra-surrénalienne (organe de Zuckerkandl, vessie, médiastin)",
+                "**Règle des 10%** (historique, révisée) : 10% bilatéraux, 10% malins, 10% familiaux — en réalité ~40% sont héréditaires (SDH, VHL, RET, NF1, MAX)",
+                "**Sécrétion** : noradrénaline prédominante dans les formes surrénaliennes pures ; adrénaline sécrétée uniquement par la médullosurrénale (enzyme PNMT)",
+                "**Malignité** : définie par la présence de métastases dans des sites normalement dépourvus de tissu chromaffin — aucun critère histologique absolu"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Un phéochromocytome peut être NORMOTENSIF dans 10–15% des cas (sécrétion dopaminergique pure ou stockage sans décharge). L'absence d'HTA n'élimine pas le diagnostic."
+            },
+            {
+              "type": "formula",
+              "content": "Critère biochimique de référence : métanéphrines plasmatiques libres (sensibilité 97%, spécificité 85%) ou métanéphrines urinaires fractionnées sur 24h. Seuil diagnostique : métanéphrine plasmatique > 0,5 nmol/L ET/OU normétanéphrine > 0,9 nmol/L (valeurs laboratoire-dépendantes)."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie et Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La tumeur libère des catécholamines de façon **paroxystique et imprévisible**, entraînant une activation massive des récepteurs α1 (vasoconstriction), β1 (tachycardie, inotropisme) et β2 (bronchodilatation, hypoglycémie rebond). La **désensibilisation chronique des récepteurs adrénergiques** explique paradoxalement la tolérance relative en période intercritique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Hypertension paroxystique** : activation α1 → vasoconstriction artériolaire → ↑ RVS → HTA sévère pouvant dépasser 250/150 mmHg",
+                "**Cardiomyopathie catécholaminergique** : toxicité directe myocardique (nécrose en bandes de contraction) → dysfonction VG systolique et/ou tako-tsubo",
+                "**Hypovolémie relative** : vasoconstriction chronique → contraction du volume plasmatique circulant effectif → effondrement au déclampage",
+                "**Hypotension post-déclampage** : levée brutale de la sécrétion catécholaminergique + hypovolémie + désensibilisation des récepteurs + demi-vie courte des catécholamines (2–3 min)",
+                "**Hyperglycémie peropératoire** : inhibition de l'insulinosécrétion par activation α2 pancréatique",
+                "**Hypoglycémie post-opératoire** : rebond insulinique après levée de l'inhibition α2"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE PHYSIOPATHOLOGIQUE : La cardiomyopathie catécholaminergique peut être RÉVERSIBLE après exérèse tumorale. Ne pas récuser un patient pour dysfonction VG sévère (FE < 30%) sans réévaluation post-préparation médicale."
+            },
+            {
+              "type": "formula",
+              "content": "Demi-vie plasmatique des catécholamines : 2–3 minutes. Après déclampage veineux surrénalien, l'hypotension peut survenir en < 5 minutes — anticiper AVANT le geste chirurgical."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation Préopératoire et Critères de Préparation Adéquate",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation préopératoire a pour objectif de vérifier l'adéquation de la **préparation médicale**, d'évaluer le **retentissement cardiaque** (échocardiographie systématique) et d'anticiper les difficultés de gestion peranesthésique. Le **bilan d'extension** doit être complété avant toute chirurgie."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bilan biologique** : NFS (polyglobulie possible par hépocidinase), ionogramme, glycémie, créatinine, bilan thyroïdien si MEN2",
+                "**Échocardiographie transthoracique** : systématique — recherche cardiomyopathie catécholaminergique, dysfonction VG/VD, HVG, épanchement péricardique",
+                "**ECG** : troubles de repolarisation, HVG, arythmies (FA, ESV)",
+                "**Imagerie tumorale** : TDM thoraco-abdomino-pelvien + IRM surrénalienne (caractérisation), scintigraphie MIBG-I123 ou TEP-FDOPA/FDG pour paragangliomes",
+                "**Test génétique** : recommandé chez tout patient < 45 ans ou forme multifocale/familiale",
+                "**Critères de préparation adéquate** : PA < 130/80 mmHg assis, absence de crises hypertensives, FC < 80 bpm au repos, absence d'ondes T inversées persistantes sur ECG, réexpansion volémique clinique (légère hypotension orthostatique acceptable, nez bouché accepté)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Ne pas se fier à une PA normale en consultation pour affirmer une préparation adéquate. Demander la surveillance tensionnelle ambulatoire sur 24h (MAPA) et vérifier l'absence de paroxysmes nocturnes."
+            },
+            {
+              "type": "formula",
+              "content": "Durée minimale de préparation médicale préopératoire : 10–14 jours selon les recommandations ESE/ENSAT 2020. Certains experts préconisent 4–6 semaines pour les formes volumineuses ou très sécrétantes."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de Prise en Charge — Préparation Médicale Préopératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **préparation médicale préopératoire** est la pierre angulaire de la prise en charge : elle réduit le risque de crise hypertensive peropératoire, permet la **réexpansion volémique** et protège le myocarde. Le blocage α-adrénergique est TOUJOURS initié en premier."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Étape 1 — Bloc α (OBLIGATOIRE EN PREMIER)** : phénoxybenzamine (α-bloquant non sélectif irréversible) 10 mg x2/j PO, titration jusqu'à 1 mg/kg/j ; OU doxazosine (α1-bloquant sélectif réversible) 2 mg/j → titration 8–16 mg/j — mieux tolérée, moins de tachycardie réflexe",
+                "**Étape 2 — Bloc β (UNIQUEMENT après bloc α établi)** : introduit si tachycardie persistante (FC > 100 bpm) ou arythmie — propranolol 10–40 mg x3/j OU aténolol 25–50 mg/j",
+                "**Étape 3 — Expansion volémique** : NaCl 0,9% + alimentation riche en sel (> 5 g/j) à initier avec le bloc α pour compenser la vasodilatation induite",
+                "**Alternative — Métyrosine (α-méthyl-para-tyrosine)** : inhibiteur de la tyrosine hydroxylase → ↓ synthèse catécholamines de 40–80% ; utilisée en complément dans les formes volumineuses ou métastatiques ; non disponible en France en routine",
+                "**Calcium-bloquants** (nicardipine, amlodipine) : alternative ou adjuvant au blocage α, particulièrement utiles si intolérance ou forme dopaminergique pure",
+                "**Magnésium IV** : utilisé en peropératoire (inhibition de la libération de catécholamines + vasodilateur direct) ; rôle préopératoire limité"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "CONTRE-INDICATION ABSOLUE : Ne jamais introduire un bêta-bloquant AVANT le blocage α. La levée de la vasodilatation β2 sans opposition α entraîne une vasoconstriction paradoxale massive → hypertensive crise potentiellement fatale par effet α non opposé."
+            },
+            {
+              "type": "formula",
+              "content": "Phénoxybenzamine : dose initiale 10 mg x2/j, augmentation de 10–20 mg/j tous les 2–3 jours jusqu'à contrôle tensionnel (cible PA < 130/80 mmHg). Dose maximale habituelle : 1 mg/kg/j en 2–3 prises."
+            }
+          ]
+        },
+        {
+          "title": "5. Stratégie Anesthésique — Peropératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "La gestion peranesthésique repose sur un **monitorage invasif systématique**, une équipe entraînée et des agents vasoactifs préparés AVANT l'induction. La communication chirurgien-anesthésiste sur les étapes tumorales clés est indispensable."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Monitorage** : cathéter artériel radial (AVANT induction), voie veineuse centrale (VVC), scope continu, capnographie, SvO2 si instabilité, débit cardiaque (PiCCO ou Swan-Ganz dans formes complexes)",
+                "**Induction** : éviter les agents histaminorégulateurs (morphine, atracurium, succinylcholine à moindre mesure) — propofol (2 mg/kg) + fentanyl/sufentanil + cisatracurium ou rocuronium",
+                "**Entretien** : isoflurane/sévoflurane (attention : le desflurane peut stimuler le système sympathique à induction rapide) ; éviter le kétamine (↑ sécrétion catécholamines)",
+                "**Agents à éviter** : halopéridol, dropéridol (libèrent catécholamines), métoclopramide (idem), glucagon, morphiniques histaminolibérateurs",
+                "**Analgésie** : péridurale thoracique (T8-T10) pour laparotomie, ou infiltration/TAP-block pour cœlioscopie — réduit les besoins en vasoactifs",
+                "**Position** : décubitus latéral souvent requis pour voie rétropéritonéoscopique — vérifier la stabilité hémodynamique au changement de position"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : La laparoscopie n'est PAS moins à risque de crise catécholaminergique — le pneumopéritoine au CO2 peut déclencher des décharges catécholaminergiques par compression/étirement tumorale. Surveiller la PA dès l'insufflation."
+            }
+          ]
+        },
+        {
+          "title": "6. Gestion des Crises Hypertensives Peranesthésiques",
+          "items": [
+            {
+              "type": "text",
+              "content": "Toute **élévation tensionnelle > 160/100 mmHg** ou toute augmentation soudaine de PA > 30 mmHg par rapport à la valeur de base doit être traitée sans délai. Les agents d'action rapide titrables par voie IV sont la référence."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**1ère intention — Nicardipine IV** : bolus 0,5–1 mg IV, puis IVSE 1–5 mg/h ; antagoniste calcique de référence peropératoire (délai 1–2 min, durée 20–30 min)",
+                "**2ème intention — Phentolamine IV** : bolus 1–5 mg IV (α-bloquant non sélectif) ; durée d'action courte (10–15 min) ; disponibilité limitée en France",
+                "**Alternative — Nitroprussiate de sodium** : 0,5–10 µg/kg/min IVSE ; action quasi-immédiate ; risque de toxicité cyanurée si perfusion prolongée > 2 mg/kg",
+                "**Alternative — Urapidil IV** : bolus 12,5–25 mg, puis IVSE 5–40 mg/h ; α1-bloquant + agoniste 5-HT1A central ; bien toléré",
+                "**Sulfate de magnésium** : 40–60 mg/kg IV sur 10–15 min (2–4 g), puis 1–2 g/h IVSE — inhibe la libération de catécholamines et est vasodilatateur",
+                "**Tachycardie/arythmie associée** : une fois bloc α établi, esmolol IV 0,5 mg/kg bolus puis 50–300 µg/kg/min IVSE (β-bloquant cardiosélectif d'action ultra-courte)",
+                "**À NE PAS UTILISER** : labétalol en première intention (composante β > α dans ce contexte), nifédipine sublinguale (vasodilatation imprévisible)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Nitroprussiate : dose maximale sécurisée < 10 µg/kg/min ; durée < 10 min à dose maximale. Seuil de toxicité cyanurée : > 2 mg/kg cumulés ou administration > 48h."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : En cas de crise hypertensive réfractaire au nicardipine + phentolamine, penser à une sécrétion concomitante de neuropeptide Y ou à un phéochromocytome bilatéral non identifié en préopératoire."
+            }
+          ]
+        },
+        {
+          "title": "7. Instabilité Hémodynamique au Déclampage Veineux Surrénalien",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **déclampage veineux surrénalien** est le moment le plus critique de la chirurgie : il marque l'arrêt brutal de la sécrétion catécholaminergique par la tumeur. L'hypotension qui s'ensuit est multifactorielle et peut être profonde (PAM < 50 mmHg)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mécanismes de l'hypotension post-déclampage** : ① arrêt brutal de la stimulation α1 (vasodilatation) + ② désensibilisation/down-regulation des récepteurs (hyporéactivité vasculaire) + ③ hypovolémie relative préexistante + ④ demi-vie catécholamines 2–3 min + ⑤ dépression myocardique résiduelle",
+                "**Anticipation AVANT le déclampage** : ① réduire ou arrêter les vasodilatateurs en cours (nicardipine IVSE) + ② expansion volémique guidée (cristalloïdes/colloïdes, objectif PVC 8–12 ou VVE/VPP < 13%) + ③ préparer noradrénaline IVSE prête à injecter",
+                "**Noradrénaline** : vasopresseur de 1ère intention — 0,05–0,5 µg/kg/min IVSE ; restaurer les RVS et la PA par effet α1",
+                "**Vasopressine** (Pitressin/Terlipressine) : en cas d'hypotension réfractaire à la noradrénaline (récepteurs V1a indépendants des récepteurs adrénergiques) — vasopressine 0,01–0,04 U/min IVSE",
+                "**Corticothérapie substitutive** : si surrénalectomie bilatérale ou surrénale contralatérale non fonctionnelle — hydrocortisone 100 mg IV, puis 200–300 mg/24h (BUTS : couvrir insuffisance corticosurrénalienne aiguë)",
+                "**Hypoglycémie post-opératoire** : surveillance glycémique toutes les 30–60 min après déclampage ; rebond insulinique → hypoglycémie possible dans les 2–4h post-résection"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Hydrocortisone en cas de surrénalectomie bilatérale : 100 mg IV en bolus à l'induction, puis 200–300 mg/24h en perfusion continue ou 50–100 mg/6h. Relais oral à J1–J2 : fludrocortisone 0,1 mg/j indispensable (activité minéralocorticoïde)."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR : En cas d'hypotension réfractaire post-déclampage ne répondant pas à la noradrénaline à doses usuelles, TOUJOURS évoquer : ① insuffisance surrénalienne aiguë non couverte ② cardiomyopathie catécholaminergique décompensée ③ pneumothorax (voie rétropéritonéale) ④ saignement actif non reconnu."
+            }
+          ]
+        },
+        {
+          "title": "8. Complications Spécifiques et leur Gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications post-opératoires les plus redoutées sont l'**insuffisance surrénalienne aiguë**, la **cardiomyopathie catécholaminergique**, les **arythmies malignes** et l'**hypoglycémie sévère**. Leur prévention débute en préopératoire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Choc cardiogénique catécholaminergique** : assistance circulatoire (IABP, ECMO VA) si FE < 20% réfractaire aux inotropes — dobutamine 5–20 µg/kg/min en 1ère intention, levosimendan en alternative",
+                "**Arythmies ventriculaires peropératoires** : lidocaïne 1–1,5 mg/kg IV + esmolol ± amiodarone ; défibrillation si FV/TV sans pouls",
+                "**Insuffisance surrénalienne aiguë** : tableau de choc + nausées + hypoglycémie + hyponatrémie/hyperkaliémie → hydrocortisone 100 mg IV bolus IMMÉDIAT",
+                "**Hypoglycémie post-opératoire** : G30% 1–2 ampoules IV si glycémie < 0,6 g/L ; surveillance glycémique horaire les 6 premières heures",
+                "**Phéochromocytome résiduel ou récidive** : PA élevée persistante à J1–J2 — doser métanéphrines plasmatiques à J2–J3, puis à 3 mois",
+                "**Thromboembolie** : héparine préventive standard (risque thrombo-embolique élevé par polyglobulie et stase)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : La cardiomyopathie catécholaminergique est POTENTIELLEMENT RÉVERSIBLE en 2–6 semaines après exérèse. Ne pas implanter un DAI ou proposer une transplantation cardiaque en urgence sans période d'observation post-chirurgicale."
+            }
+          ]
+        },
+        {
+          "title": "9. Recommandations Clés avec Grades",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Grade A (ENSAT/ESE 2020)** : Préparation médicale préopératoire obligatoire avant toute exérèse de PPGL — blocage α en première intention",
+                "**Grade A (ENSAT/ESE 2020)** : La phénoxybenzamine ou la doxazosine sont les agents de référence pour le blocage α préopératoire",
+                "**Grade B (ENSAT/ESE 2020)** : Les β-bloquants ne doivent être introduits QU'APRÈS un bloc α établi (≥ 3–7 jours)",
+                "**Grade B (ESA 2020)** : Monitorage artériel invasif systématique, posé AVANT l'induction",
+                "**Grade B (ESA 2020)** : Nicardipine et/ou phentolamine IV recommandées pour le traitement des crises hypertensives peranesthésiques",
+                "**Grade B (Endocrine Society 2014, confirmé ESE 2020)** : Durée minimale de préparation médicale : 10–14 jours ; optimum 4 semaines",
+                "**Grade C (ESE 2020)** : Substitution corticoïde systématique en cas de surrénalectomie bilatérale ou surrénale unique fonctionnelle",
+                "**Consensus d'experts (SFAR 2021)** : Noradrénaline en vasopresseur de première intention pour l'hypotension post-déclampage",
+                "**Consensus d'experts** : Surveillance en SSPI ≥ 4h puis USC/réanimation si instabilité — surveillance glycémique continue 6–12h post-opératoire"
+              ]
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Bloc α TOUJOURS en premier** : introduire un bêta-bloquant avant le bloc α est une erreur potentiellement fatale par vasoconstriction paradoxale α non opposée",
+        "**Doxazosine vs phénoxybenzamine** : la doxazosine (α1 sélective réversible) est de plus en plus préférée pour son profil de tolérance, mais la phénoxybenzamine (non sélective irréversible) offre un blocage plus solide peropératoire",
+        "**Anticiper le déclampage** : préparer la noradrénaline IVSE et réduire les vasodilatateurs AVANT le déclampage veineux — ne pas attendre l'effondrement tensionnel",
+        "**Cardiomyopathie réversible** : une FE sévèrement altérée préopératoire peut récupérer après exérèse — ne pas récuser sans réévaluation échocardiographique post-préparation",
+        "**Hypoglycémie post-opératoire** : piège classique méconnu — surveiller la glycémie toutes les 30–60 min dans les 4–6 premières heures post-résection"
+      ],
+      "references": [
+        "Lenders JWM, Langton K, Langton CM et al. — Pheochromocytoma and Paraganglioma: An Endocrine Society Clinical Practice Guideline — J Clin Endocrinol Metab 2014 (mise à jour ESE/ENSAT 2020)",
+        "Fassnacht M, Arlt W, Bancos I et al. — Management of adrenal incidentalomas: European Society of Endocrinology Clinical Practice Guideline — Eur J Endocrinol 2016 (révisé 2023)",
+        "Kiernan CM, Du L, Chen X et al. — Predictors of hemodynamic instability during surgery for pheochromocytoma — Ann Surg Oncol 2014",
+        "Riester A, Weismann D, Quinkler M et al. — Life-threatening events in patients with pheochromocytoma — Eur J Endocrinol 2015",
+        "Därr R, Nambuba J, Del Rivero J et al. — Novel insights into the polycythemia-paraganglioma-somatostatinoma triad — Endocr Relat Cancer 2016",
+        "Tufton N, Sahdev A, Drake WM et al. — Radiological Surveillance Screening in Asymptomatic Succinate Dehydrogenase Mutation Carriers — J Endocr Soc 2017",
+        "SFAR — Recommandations formalisées d'experts : Prise en charge anesthésique du phéochromocytome — SFAR 2021",
+        "ESE/ENSAT — Pheochromocytoma and paraganglioma: an update — Eur J Endocrinol 2020",
+        "Groeben H, Walz MK, Nottebaum BJ et al. — International multicentre review of perioperative management of phaeochromocytomas and paragangliomas — Br J Surg 2020",
+        "Buitenwerf E, Osinga TE, Timmers HJLM et al. — Efficacy of α-Blockers on Hemodynamic Control during Pheochromocytoma Resection: A Randomized Controlled Trial — J Clin Endocrinol Metab 2020"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 42 ans doit être opéré d'un phéochromocytome surrénalien gauche (noradrénaline urinaire x8N, adrénaline x2N). Il est sous phénoxybenzamine depuis 12 jours. La PA en consultation est à 128/78 mmHg. Il présente une tachycardie sinusale à 108 bpm persistante malgré le repos. Sa FE est à 62%.",
+        "question": "Quelle est la conduite la plus appropriée concernant la tachycardie ?",
+        "options": {
+          "A": "Introduire immédiatement du labétalol PO car il combine blocage α et β",
+          "B": "Introduire un bêta-bloquant cardiosélectif (aténolol 25 mg/j) car le blocage α est établi depuis > 10 jours",
+          "C": "Ne rien ajouter : la tachycardie sinusale est une conséquence attendue et bénigne du blocage α",
+          "D": "Augmenter la dose de phénoxybenzamine pour mieux contrôler la tachycardie réflexe"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : après ≥ 10 jours de blocage α bien établi (PA contrôlée), l'introduction d'un bêta-bloquant est licite et indiquée si FC > 100 bpm. Le cardiosélectif (aténolol, bisoprolol, métoprolol) est préféré pour limiter le blocage β2. Piège A : le labétalol a une composante β/α de 7:1 — sa composante β prédomine fortement et son usage en PREMIÈRE intention (sans bloc α solide) est dangereux. Ici le bloc α est établi, mais la sélectivité β reste préférable. Piège C : une FC > 100 bpm persistante expose à une décompensation cardiaque et à des arythmies peropératoires — ne pas la laisser sans traitement. Piège D : la phénoxybenzamine bloque les α mais non les β — augmenter sa dose ne fait qu'aggraver la tachycardie réflexe par vasodilatation supplémentaire."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "En salle d'opération, lors de l'insufflation du pneumopéritoine pour une surrénalectomie laparoscopique, la PA passe de 135/80 à 240/130 mmHg en 90 secondes, avec FC à 115 bpm.",
+        "question": "Quel est le traitement de première intention le plus adapté ?",
+        "options": {
+          "A": "Esmolol IV 0,5 mg/kg bolus pour contrôler simultanément la PA et la FC",
+          "B": "Nicardipine IV 1 mg bolus, à répéter si nécessaire, puis IVSE",
+          "C": "Labétalol IV 5 mg bolus car il contrôle PA et FC en une seule injection",
+          "D": "Nitroprussiate de sodium 0,5 µg/kg/min IVSE à instaurer immédiatement"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la nicardipine IV est l'antagoniste calcique de référence pour les crises hypertensives peranesthésiques du phéochromocytome — délai d'action 1–2 min, durée 20–30 min, titrable. Piège A : l'esmolol est un β-bloquant pur — administré avant ou sans bloc α adéquat, il lève la vasodilation β2 et aggrave la vasoconstriction α, pouvant aggraver la crise hypertensive (contre-indication relative si le blocage α est insuffisant). Piège C : le labétalol a une prédominance β (7:1) — même mécanisme délétère potentiel ; de plus sa durée d'action longue rend le titrage difficile peropératoire. Piège D : le nitroprussiate est une option valide mais de 2ème intention car risque de toxicité cyanurée et monitoring plus complexe ; la nicardipine est plus maniable et plus sûre en 1ère intention."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Après déclampage de la veine surrénalienne gauche, la PAM chute de 85 à 42 mmHg en 3 minutes. Le chirurgien confirme l'absence de saignement. Vous administrez 500 mL de cristalloïdes sans amélioration tensionnelle satisfaisante.",
+        "question": "Quel vasopresseur administrez-vous en première intention ?",
+        "options": {
+          "A": "Adrénaline 0,1 µg/kg/min IVSE car elle combine effets α et β nécessaires au choc profond",
+          "B": "Noradrénaline 0,05–0,5 µg/kg/min IVSE",
+          "C": "Dopamine 5–10 µg/kg/min IVSE car elle préserve le débit rénal",
+          "D": "Vasopressine 0,04 U/min IVSE d'emblée car les récepteurs adrénergiques sont désensibilisés"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la noradrénaline est le vasopresseur de première intention en cas d'hypotension post-déclampage — elle restaure les RVS (α1) avec une stimulation β1 modérée. C'est le consensus SFAR 2021 et les recommandations internationales. Piège A : l'adrénaline est réservée au choc réfractaire ou à la défaillance cardiaque associée — sa composante β2 peut aggraver l'hypotension par vasodilatation périphérique à faibles doses et est plus arythmogène. Piège C : la dopamine à 5–10 µg/kg/min est moins efficace comme vasopresseur que la noradrénaline, plus arythmogène, et l'argument 'protection rénale' est invalidé par des essais randomisés (De Backer NEJM 2010). Piège D : la vasopressine est une option de sauvetage en 2ème intention (récepteurs V1a indépendants des récepteurs adrénergiques désensibilisés) — la démarrer d'emblée à 0,04 U/min sans noradrénaline est une erreur de séquence thérapeutique."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Vous prenez en charge un patient porteur d'un phéochromocytome dont la FE est à 25% à l'échocardiographie préopératoire, avec signes de cardiomyopathie catécholaminergique. La chirurgie est programmée dans 2 semaines.",
+        "question": "Quelle est la conduite la plus appropriée ?",
+        "options": {
+          "A": "Récuser le patient et orienter vers une transplantation cardiaque",
+          "B": "Opérer en urgence différée dans les 48h pour lever rapidement la cause toxique",
+          "C": "Poursuivre et optimiser la préparation médicale, réévaluer l'ETT à 4–6 semaines, discuter support hémodynamique peropératoire",
+          "D": "Implanter un DAI prophylactique avant la chirurgie d'exérèse"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la cardiomyopathie catécholaminergique est potentiellement RÉVERSIBLE après exérèse tumorale et préparation médicale. Une FE de 25% peut récupérer à 50–60% en 2–6 semaines. La stratégie est : optimiser le blocage α/β, réévaluer par ETT, planifier l'exérèse avec support hémodynamique (dobutamine, IABP voire ECMO VA en attente). Piège A : récuser est une erreur — la cardiotoxicité est réversible ; la transplantation sans exérèse préalable est contre-indiquée. Piège B : opérer en urgence une FE à 25% sans préparation et sans réduction de la cardiomyopathie est catastrophique — le risque opératoire est maximal. Piège D : le DAI n'est pas indiqué en contexte de cardiomyopathie réversible — le poser avant l'évaluation post-exérèse est un sur-traitement délétère (recommandations ESC : réévaluer la FE à 3 mois avant décision d'implantation)."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Un phéochromocytome est découvert chez une patiente de 35 ans présentant des paroxysmes hypertensifs. Le bilan biochimique montre une élévation isolée de la dopamine urinaire (x6N) sans élévation significative de la noradrénaline ni de l'adrénaline. La PA de base est à 125/75 mmHg.",
+        "question": "Quelle est la particularité clinique et thérapeutique de cette forme ?",
+        "options": {
+          "A": "Cette forme est bénigne et ne nécessite pas de préparation médicale préopératoire",
+          "B": "La phénoxybenzamine est particulièrement efficace car elle bloque aussi les récepteurs dopaminergiques D2",
+          "C": "Cette forme peut être normotensive et plus souvent maligne ; les antagonistes calciques sont préférés car le blocage α pur est moins efficace sur la dopamine",
+          "D": "Le diagnostic est erroné car les phéochromocytomes sécrètent exclusivement noradrénaline et adrénaline"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : les phéochromocytomes à sécrétion dopaminergique pure sont souvent normotensifs (la dopamine a une action vasodilatatrice dominante à doses physiologiques), plus fréquemment malins (association SDH-B), et moins contrôlés par le blocage α seul. Les antagonistes calciques (nicardipine, amlodipine) sont l'alternative thérapeutique préopératoire de référence dans ce cas. Piège A : l'absence d'HTA ne signifie pas l'absence de risque peropératoire — les paroxysmes peropératoires restent possibles et le risque tumoral (malignité) est même plus élevé. Piège B : la phénoxybenzamine bloque les récepteurs α1 et α2 mais PAS les récepteurs dopaminergiques D2. Piège D : les phéochromocytomes peuvent sécréter de la dopamine, surtout les formes SDHB-mutées et les paragangliomes — ce n'est pas une exclusion diagnostique."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "En fin d'intervention de surrénalectomie bilatérale pour phéochromocytomes bilatéraux (NEM2A), à la sortie de salle, le patient présente une PA à 80/50 mmHg sous noradrénaline 0,3 µg/kg/min, une hypoglycémie à 0,45 g/L, une natrémie à 129 mmol/L et une kaliémie à 5,8 mmol/L.",
+        "question": "Quel diagnostic devez-vous traiter en urgence absolue ?",
+        "options": {
+          "A": "Hypoglycémie iatrogène par hyperinsulinisme rebond — G30% IV en urgence",
+          "B": "Insuffisance surrénalienne aiguë — hydrocortisone 100 mg IV bolus immédiat",
+          "C": "Choc vasoplégique post-catécholaminergique — vasopressine 0,04 U/min IVSE",
+          "D": "Hyponatrémie de dilution — NaCl hypertonique 3% IVSE"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le tableau est celui d'une INSUFFISANCE SURRÉNALIENNE AIGUË après surrénalectomie bilatérale — association choc réfractaire aux vasopresseurs + hypoglycémie + hyponatrémie + hyperkaliémie est pathognomonique. L'hydrocortisone 100 mg IV bolus IMMÉDIAT est le traitement salvateur, suivi de 200–300 mg/24h. Piège A : l'hypoglycémie est réelle et doit être traitée (G30% IV) mais c'est un SIGNE de l'insuffisance surrénalienne, pas la cause primaire — traiter uniquement l'hypoglycémie sans corticothérapie est insuffisant. Piège C : le choc vasoplégique peut coexister mais la triade (hypoglycémie + hyponatrémie + hyperkaliémie + choc) oriente vers l'insuffisance surrénalienne — la vasopressine seule sans hydrocortisone est insuffisante. Piège D : l'hyponatrémie est liée à l'insuffisance surrénalienne (déficit en cortisol → ADH inapproprié + perte sodée) — l'hyponatrémie se corrige avec l'hydrocortisone ; le NaCl hypertonique est inutile voire délétère ici."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Vous préparez un patient pour une résection de phéochromocytome volumineuse (7 cm). Le chirurgien vous demande votre accord pour une voie laparoscopique rétropéritonéoscopique.",
+        "question": "Concernant la gestion anesthésique de cette voie d'abord, quelle affirmation est exacte ?",
+        "options": {
+          "A": "La voie laparoscopique est contre-indiquée pour les phéochromocytomes > 6 cm — privilégier la laparotomie",
+          "B": "Le pneumopéritoine au CO2 peut déclencher des crises catécholaminergiques par compression tumorale — surveiller la PA dès l'insufflation, avec nicardipine IV prête",
+          "C": "La voie rétropéritonéoscopique expose moins aux crises catécholaminergiques que la voie transpéritonéale car elle évite la manipulation intestinale",
+          "D": "La pression d'insufflation doit être augmentée à 20 mmHg pour améliorer l'exposition chirurgicale sur les tumeurs volumineuses"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : quelle que soit la voie laparoscopique, l'insufflation au CO2 peut comprimer ou étirer la tumeur et déclencher des décharges catécholaminergiques. La surveillance tensionnelle doit être continue (cathéter artériel) et les agents d'action rapide (nicardipine) doivent être préparés AVANT l'insufflation. Piège A : il n'existe pas de contre-indication absolue liée à la taille en laparoscopie — de nombreux centres opèrent des tumeurs de 6–10 cm par voie mini-invasive avec une expérience suffisante (recommandations ESE 2020 : pas de seuil absolu). Piège C : la voie rétropéritonéoscopique n'est pas prouvée moins à risque de crise catécholaminergique — toutes les voies laparoscopiques exposent au même risque de décharge par compression/rétraction. Piège D : augmenter la pression d'insufflation à 20 mmHg augmente le risque de décharge catécholaminergique et de décompression vasculaire — la pression standard est 12–15 mmHg."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Un patient sous phénoxybenzamine depuis 15 jours présente en consultation préanesthésique : PA assis 126/76 mmHg, PA debout 105/68 mmHg, FC 78 bpm, nez bouché, légère asthénie. Il doit être opéré dans 3 jours.",
+        "question": "Comment interprétez-vous ce tableau et quelle décision prenez-vous ?",
+        "options": {
+          "A": "Hypotension orthostatique excessive — reporter la chirurgie et réduire la dose de phénoxybenzamine",
+          "B": "Préparation inadéquate car la PA debout doit rester > 120/80 — augmenter la phénoxybenzamine",
+          "C": "Préparation médicale ADÉQUATE — les signes observés (légère hypotension orthostatique, congestion nasale, asthénie) sont des marqueurs de blocage α efficace",
+          "D": "Substituer la phénoxybenzamine par la doxazosine car la congestion nasale est une contre-indication à la poursuite du traitement"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la légère hypotension orthostatique (chute de PAD ≥ 5–10 mmHg en orthostatisme), la congestion nasale (vasodilatation muqueuse α-bloquée) et l'asthénie sont des signes ATTENDUS ET SOUHAITÉS du blocage α bien établi — ils attestent d'un blocage adéquat avec réexpansion volémique en cours. La cible est PA < 130/80 assis avec hypotension orthostatique acceptable. Piège A : une hypotension orthostatique MODÉRÉE est un signe de bon blocage, non un signe d'excès — la réduire comprometrait la protection peropératoire. Piège B : la cible n'est pas 'PA debout > 120/80' — imposer une PA debout normale nécessiterait de sous-doser le bloc α. Piège D : la congestion nasale est un effet classe des α-bloquants non sélectifs (phénoxybenzamine) par vasodilatation muqueuse — c'est un signe d'efficacité, non une contre-indication ; de plus changer à J-3 de la chirurgie serait dangereux."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "En peropératoire d'une surrénalectomie, malgré nicardipine 4 mg IV en bolus fractionné et sulfate de magnésium 3 g IV, la PA reste à 220/110 mmHg lors de la mobilisation tumorale. Le chirurgien demande s'il peut continuer.",
+        "question": "Quelle est la conduite à tenir la plus appropriée ?",
+        "options": {
+          "A": "Arrêter la chirurgie et réveiller le patient pour améliorer la préparation médicale",
+          "B": "Administrer du labétalol IV 10 mg pour son double blocage α+β",
+          "C": "Instaurer du nitroprussiate de sodium IVSE 0,5–3 µg/kg/min tout en demandant au chirurgien de temporiser la manipulation",
+          "D": "Administrer de l'urapidil 25 mg IV puis demander au chirurgien de stopper temporairement la manipulation tumorale"
+        },
+        "correct": "D",
+        "explanation": "Réponse D correcte : l'urapidil IV (ou phentolamine IV si disponible) en bolus associé à une pause chirurgicale temporaire est la stratégie optimale — la crise est souvent liée à la manipulation directe ; stopper le stimulus pendant que l'agent vasodilatateur agit est rationnel. L'urapidil est rapidement disponible en France, actif en 2–5 min. Piège A : arrêter la chirurgie n'est approprié qu'en cas d'instabilité RÉFRACTAIRE menaçant le pronostic vital — une crise traitée par associations médicamenteuses + pause chirurgicale permet le plus souvent de continuer. Piège B : le labétalol a une composante β >> α en IV (7:1) — en peropératoire de phéochromocytome avec sécrétion active, son effet β dominant peut aggraver la crise hypertensive par levée de la vasodilation β2. Piège C : le nitroprussiate est une option mais de 2ème ligne ; son délai de préparation (photoprotection), son risque cyanhydrique et la nécessité d'une titration précise en font un agent moins maniable que l'urapidil ou la nicardipine en 1ère intention immédiate."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Vous évaluez en préopératoire un patient de 28 ans avec phéochromocytome surrénalien droit (normétanéphrine plasmatique x12N). La génétique retrouve une mutation SDHB. L'IRM montre une tumeur de 5 cm, homogène. La scintigraphie MIBG est négative.",
+        "question": "Quelle implication clinique majeure cette combinaison (mutation SDHB + MIBG négative) a-t-elle pour la prise en charge ?",
+        "options": {
+          "A": "La négativité MIBG confirme l'absence de métastases — pas d'examen complémentaire nécessaire",
+          "B": "La mutation SDHB est associée à un risque élevé de malignité (30–40%) et la négativité MIBG impose de réaliser une TEP-FDG ou TEP-FDOPA pour bilan d'extension complet avant chirurgie",
+          "C": "La mutation SDHB contre-indique la surrénalectomie laparoscopique",
+          "D": "La nécessité d'un traitement à la métyrosine est systématique dans les mutations SDHB pour réduire le risque métastatique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la mutation SDHB est le facteur génétique le plus fortement associé à la malignité des PPGL (risque 30–40% vs < 5% pour les formes sporadiques). La MIBG a une sensibilité réduite dans les formes SDHB (captation faible), et sa négativité ne peut PAS exclure les métastases — la TEP-FDG (haute sensibilité pour les métastases) ou la TEP-FDOPA doit compléter le bilan. La chirurgie ne doit pas être programmée sans bilan d'extension complet. Piège A : la MIBG est peu sensible dans les formes SDHB (sensibilité 50–60% vs 85% pour les formes sporadiques) — sa négativité ne permet PAS d'exclure des métastases ; un complément par TEP est obligatoire. Piège C : il n'existe pas de contre-indication à la cœlioscopie liée au statut SDHB ; c'est la taille et l'extension qui guident le choix de la voie d'abord. Piège D : la métyrosine n'a pas d'indication systématique dans les mutations SDHB en dehors des formes métastatiques prouvées ou des tumeurs très volumineuses — son usage est réservé à des cas sélectionnés et elle n'est pas disponible en routine en France."
+      }
+    ]
   }
 ]
