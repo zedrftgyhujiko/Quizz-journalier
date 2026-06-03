@@ -2435,5 +2435,391 @@
         "explanation": "Réponse B correcte : la mutation SDHB est le facteur génétique le plus fortement associé à la malignité des PPGL (risque 30–40% vs < 5% pour les formes sporadiques). La MIBG a une sensibilité réduite dans les formes SDHB (captation faible), et sa négativité ne peut PAS exclure les métastases — la TEP-FDG (haute sensibilité pour les métastases) ou la TEP-FDOPA doit compléter le bilan. La chirurgie ne doit pas être programmée sans bilan d'extension complet. Piège A : la MIBG est peu sensible dans les formes SDHB (sensibilité 50–60% vs 85% pour les formes sporadiques) — sa négativité ne permet PAS d'exclure des métastases ; un complément par TEP est obligatoire. Piège C : il n'existe pas de contre-indication à la cœlioscopie liée au statut SDHB ; c'est la taille et l'extension qui guident le choix de la voie d'abord. Piège D : la métyrosine n'a pas d'indication systématique dans les mutations SDHB en dehors des formes métastatiques prouvées ou des tumeurs très volumineuses — son usage est réservé à des cas sélectionnés et elle n'est pas disponible en routine en France."
       }
     ]
+  },
+  {
+    "date": "2026-06-03",
+    "dateStr": "mercredi 3 juin",
+    "topic": "Insuffisance rénale aiguë sévère en réanimation : indications et modalités d'épuration extrarénale continue, critères de démarrage, choix du mode et gestion de l'anticoagulation du circuit",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "L'insuffisance rénale aiguë (IRA) sévère concerne 5 à 6 % des patients de réanimation et est associée à une mortalité dépassant 50 % lorsqu'elle requiert une épuration extrarénale (EER). Le choix du mode, du timing et de l'anticoagulation conditionne directement la survie rénale et globale. Maîtriser ces décisions est un attendu fondamental du DESC de réanimation.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'IRA est définie par les critères **KDIGO 2012** selon trois stades de sévérité croissante, intégrant créatininémie, diurèse et délai de survenue. La classification distingue les IRA fonctionnelles (hypovolémie, bas débit), organiques (nécrose tubulaire aiguë principalement) et obstructives."
+            },
+            {
+              "type": "formula",
+              "content": "KDIGO Stade 1 : créatinine ×1,5–1,9 baseline OU +26,5 µmol/L en 48h, OU diurèse < 0,5 mL/kg/h sur 6–12h\nKDIGO Stade 2 : créatinine ×2–2,9 baseline OU diurèse < 0,5 mL/kg/h sur ≥ 12h\nKDIGO Stade 3 : créatinine ×3 baseline OU ≥ 354 µmol/L OU EER OU diurèse < 0,3 mL/kg/h sur ≥ 24h OU anurie ≥ 12h"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**CRRT (Continuous Renal Replacement Therapy)** : technique continue (≥ 24h/j), adaptée au patient instable hémodynamiquement",
+                "**IHD (Intermittent Hemodialysis)** : séances de 3–4h, débit élevé, patient hémodynamiquement stable",
+                "**SLED (Sustained Low-Efficiency Dialysis)** : technique hybride, 6–12h, compromis entre CRRT et IHD",
+                "**CVVH** : hémofiltration continue veinoveineuse — épuration par convection",
+                "**CVVHD** : hémodialyse continue veinoveineuse — épuration par diffusion",
+                "**CVVHDF** : hémodiafiltration continue veinoveineuse — diffusion + convection (mode le plus utilisé en France)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Piège classique : confondre la diurèse conservée avec une fonction rénale préservée. Un patient peut avoir une diurèse > 1 mL/kg/h avec une urée et une créatinine en forte hausse (IRA non oligurique). La décision d'EER ne repose PAS sur la diurèse seule."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **nécrose tubulaire aiguë (NTA)** est la cause principale d'IRA organique en réanimation, résultant de lésions ischémiques (bas débit, vasoplégie septique) et/ou toxiques (aminosides, produits de contraste, myoglobine). Elle survient dans un contexte de perte d'autorégulation du flux sanguin rénal, exacerbée par la dysfonction endothéliale systémique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mécanismes ischémiques** : vasoconstriction afférente, réduction du DFG, apoptose des cellules épithéliales tubulaires (segment S3 du tube proximal et anse de Henle particulièrement vulnérables)",
+                "**Mécanismes inflammatoires** : libération de DAMP (Damage-Associated Molecular Patterns), activation du complément, infiltration de neutrophiles, NF-κB",
+                "**Surcharge volumique** : augmentation de la pression veineuse rénale → réduction du gradient de perfusion → aggravation de l'ischémie médullo-corticale",
+                "**Syndrome de loge abdominal** : pression intra-abdominale > 20 mmHg → compression veines rénales → IRA par compression directe",
+                "**Mécanismes septiques** : vasodilatation périphérique avec vasoconstriction intra-rénale paradoxale, microthrombi, activation de la coagulation rénale"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Pression de perfusion rénale = PAM − Pression veineuse centrale (PVC)\nObjectif PAM ≥ 65 mmHg (≥ 75 mmHg si HTA chronique sévère)\nPression intra-abdominale normale < 12 mmHg — hypertension intra-abdominale ≥ 12 mmHg — syndrome de loge abdominal ≥ 20 mmHg avec dysfonction d'organe"
+            },
+            {
+              "type": "warning",
+              "content": "Erreur fréquente : remplissage excessif pour 'protéger' les reins. La surcharge volumique augmente la pression veineuse rénale, aggrave l'œdème interstitiel rénal et majore le risque de progression vers l'IRA sévère. Le bilan hydrique positif cumulé est un facteur indépendant de mortalité en réanimation."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation / Diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation initiale vise à distinguer IRA fonctionnelle, organique et obstructive, à quantifier la sévérité KDIGO, à identifier la cause et à rechercher les indications urgentes d'EER. L'écographie rénale et vésicale est systématique pour éliminer une obstruction."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bilan biologique** : créatinine, urée, ionogramme sanguin et urinaire, pH, bicarbonates, lactates, NFS, TP/TCA, bilan hépatique, CPK (rhabdomyolyse)",
+                "**Indices urinaires** : FENa (fraction d'excrétion du sodium) < 1 % → IRA fonctionnelle, > 2 % → organique (non interprétable sous diurétiques)",
+                "**Biomarqueurs émergents** : NGAL urinaire et plasmatique, KIM-1, TIMP-2×IGFBP7 (NephroCheck®) — détection précoce de NTA (intérêt diagnostique, pas encore intégré en routine selon KDIGO 2012)",
+                "**Échographie rénale** : taille, différenciation cortico-médullaire, doppler résistance (index de résistivité > 0,70 associé à mauvais pronostic de récupération rénale)",
+                "**Évaluation hémodynamique** : PAM, pression veineuse centrale, débit cardiaque, état volémique (pas de remplissage systématique — évaluation par PLR, VVE, δPP)",
+                "**Pression intra-abdominale** : mesure par sonde vésicale si suspicion de syndrome de loge abdominal"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "FENa (%) = [(Na urinaire × Créatinine plasmatique) / (Na plasmatique × Créatinine urinaire)] × 100\nFEUrée < 35 % → IRA fonctionnelle (plus fiable sous diurétiques que FENa)"
+            },
+            {
+              "type": "warning",
+              "content": "Piège : la créatininémie sous-estime la sévérité de l'IRA chez les patients dénutris, les femmes âgées sarcopéniques ou en cas de dilution (surcharge volumique). Un doublement de créatinine correspond à une réduction de 50 % du DFG — mais la créatinine peut ne pas augmenter avant 24–48h après l'insulte rénale initiale."
+            }
+          ]
+        },
+        {
+          "title": "4. Critères de démarrage de l'EER — Indications",
+          "items": [
+            {
+              "type": "text",
+              "content": "La question du **timing** d'initiation de l'EER est l'une des plus débattues en réanimation. Les essais AKIKI (2016), IDEAL-ICU (2018) et STARRT-AKI (2020) ont tous convergé vers la même conclusion : une stratégie d'initiation **précoce systématique** n'améliore pas la survie et expose à des complications (hypophosphatémie, dépendance à l'EER, infections liées au cathéter). Une stratégie d'attente guidée par des critères cliniques est recommandée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Indications urgentes absolues (initiation immédiate)** : hyperkaliémie sévère réfractaire K+ > 6,5 mmol/L malgré traitement médical, acidose métabolique sévère pH < 7,15 réfractaire, surcharge volumique sévère réfractaire aux diurétiques (OAP, hypertension intracrânienne), urémie symptomatique (encéphalopathie urémique, péricardite, saignement urémique)",
+                "**Seuil urée pour urgence** : urée > 36 mmol/L (> 100 mg/dL) avec symptômes urémiques — la valeur isolée sans symptômes n'est PAS une indication urgente",
+                "**Critères KDIGO 2012 de démarrage** : KDIGO stade 3 avec une ou plusieurs défaillances d'organes, ou progression rapide malgré traitement conservateur optimal",
+                "**Stratégie retardée acceptable** : KDIGO stade 2–3 sans indication urgente → observation 48–72h avec traitement conservateur optimisé (correction volémie, arrêt néphrotoxiques, traitement de la cause)",
+                "**Ne PAS initier l'EER** : si récupération rénale attendue imminente (IRA fonctionnelle en cours de correction), en fin de vie sans objectif curatif, si contre-indication absolue à l'anticoagulation sans alternative"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "AKIKI (NEJM 2016) : EER précoce vs. tardive (KDIGO 3) → pas de différence mortalité J60 (48,5 % vs 49,7 %)\nIDEAL-ICU (NEJM 2018) : précoce (72h AKI) vs. tardif (défaillance) → pas de différence mortalité J90 (58 % vs 54 %)\nSTARRT-AKI (NEJM 2020) : EER précoce → davantage de patients EER-dépendants à J90 (10,4 % vs 6,0 %, p<0,001)"
+            },
+            {
+              "type": "warning",
+              "content": "Erreur critique : initier une EER systématiquement dès KDIGO stade 3 sans critère urgent, uniquement parce que le patient est 'grave'. Cela augmente la durée de dépendance à l'EER et expose aux complications du circuit sans bénéfice démontré sur la mortalité. La décision doit être individualisée."
+            }
+          ]
+        },
+        {
+          "title": "5. Modalités d'EER — Choix du mode et paramètres",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le choix entre EER continue (CRRT) et intermittente (IHD) doit être guidé principalement par la **stabilité hémodynamique** du patient. En France, la **CVVHDF** (hémodiafiltration continue veinoveineuse) est le mode le plus utilisé car il combine épuration par diffusion et convection, permettant une meilleure élimination des molécules de taille intermédiaire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**CRRT (continu)** : indiqué si instabilité hémodynamique (noradrénaline > 0,1 µg/kg/min), HIC (HTIC — CRRT maintient mieux la pression de perfusion cérébrale), insuffisance hépatique aiguë grave",
+                "**IHD/SLED** : indiqué si patient stable, intoxication aiguë (dialysance élevée en intermittent pour molécules dialysables), élimination rapide d'un toxique (lithium, méthanol)",
+                "**Débit sang CRRT** : 150–200 mL/min standard",
+                "**Dose de dialyse recommandée** : effluent 20–25 mL/kg/h (KDIGO 2012, grade 1A) — prescrire 25–30 mL/kg/h pour atteindre la dose délivrée de 20–25 mL/kg/h (pertes circuit ~20 %)",
+                "**Température du dialysat** : 35–36,5°C standard ; abaissement à 35°C si HTIC pour contrôle thermique",
+                "**Solutions de substitution/dialysat** : solutions bicarbonate tamponnées (pH 7,35–7,45, bicarbonates 30–35 mmol/L), sans lactate si insuffisance hépatique sévère",
+                "**Membrane** : high-flux synthétique (polysulfone, polyacrylonitrile AN69) — cutoff standard 20–40 kDa, membranes high cut-off (HCO) ou medium cut-off (MCO) en évaluation pour sepsis"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Dose d'effluent cible (KDIGO 2012, grade 1A) : 20–25 mL/kg/h en dose délivrée\nDose prescrite recommandée : 25–30 mL/kg/h pour compenser les pertes circuit et les interruptions\nEx. patient 70 kg : prescription 70 × 28 = 1960 mL/h ≈ 2000 mL/h d'effluent total"
+            },
+            {
+              "type": "warning",
+              "content": "Piège de dose : la dose prescrite ≠ dose délivrée. Les interruptions de circuit (coagulation, changements de filtre, examens) réduisent le temps effectif de traitement de 20–30 %. Majorer systématiquement la prescription de 20–25 % par rapport à la cible pour compenser."
+            }
+          ]
+        },
+        {
+          "title": "6. Anticoagulation du circuit — Stratégies et gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **coagulation du circuit** est la première cause d'interruption de l'EER continue. Elle réduit la dose délivrée et majore les coûts. L'anticoagulation optimale doit protéger le circuit sans aggraver le risque hémorragique systémique. En 2019, l'ESICM recommande l'**anticoagulation régionale au citrate (ARC)** comme traitement de première intention pour les patients sans contre-indication."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Anticoagulation régionale au citrate (ARC)** : technique de référence (ESICM 2019, KDIGO 2012 grade 2B) — durée de vie du filtre 50–70h vs. 30–40h avec héparine",
+                "**Mécanisme du citrate** : chélation du calcium ionisé (Ca2+ < 0,35 mmol/L en post-filtre → inhibition de la cascade coagulation) — calcium restitué systémiquement en post-filtre",
+                "**Surveillance ARC** : Ca2+ ionisé post-filtre cible 0,25–0,35 mmol/L (ajustement débit citrate) ; Ca2+ ionisé systémique cible 1,10–1,30 mmol/L (ajustement perfusion Ca2+ systémique)",
+                "**Rapport Ca total/Ca ionisé** : > 2,5 → accumulation de citrate (signe d'alerte) ; > 2,5 avec acidose, anion gap élevé → toxicité citrate (insuffisance hépatique, bas débit)",
+                "**Contre-indications relatives ARC** : insuffisance hépatique sévère (Child-Pugh C, biliaires > 100 µmol/L), choc cardiogénique sévère (bas débit → accumulation citrate), hypocalcémie sévère réfractaire, alcalose métabolique sévère",
+                "**Héparine non fractionnée (HNF)** : alternative si contre-indication au citrate — bolus 2000–5000 UI puis perfusion continue pré-filtre ; cible TCA 1,5–2× témoin OU anti-Xa 0,3–0,5 UI/mL",
+                "**Héparine de bas poids moléculaire (HBPM)** : non recommandée en CRRT (accumulation par élimination rénale réduite, demi-vie prolongée, difficile à surveiller) — utilisation possible en SLED avec ajustement",
+                "**Argatroban** : anticoagulant direct de référence si TIH (thrombocytopénie induite par héparine) — cible TCA 1,5–3× ou ACT 1,5–2× — avantage : élimination hépatique (non rénale), voie IV continue",
+                "**Sans anticoagulation** : possible si risque hémorragique majeur (post-chirurgie majeure < 24h, hémorragie active, plaquettes < 20 G/L), en optimisant le débit sang ≥ 200 mL/min et en prédiluant"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Rapport Ca total/Ca ionisé systémique (surveillance toxicité citrate) :\n< 2,1 → normal\n2,1–2,5 → zone d'alerte → réduire débit citrate\n> 2,5 → accumulation de citrate → bilan urgence (pH, bicarbonates, lactates)\nFormule : rapport = Ca total (mmol/L) / Ca ionisé (mmol/L)\nEx. : Ca total 2,8 / Ca ionisé 1,0 → rapport 2,8 → toxicité probable"
+            },
+            {
+              "type": "warning",
+              "content": "Piège TIH en réanimation : la TIH de type 2 doit être évoquée devant toute thrombopénie > 50 % du nadir sous héparine à J5–J14, ou thrombose nouvelle. ARRÊTER immédiatement toute héparine (y compris les rinçages) et substituer par argatroban ou danaparoïde. Le score 4T doit être calculé : ≥ 6 → forte probabilité de TIH. Ne jamais transfuser de plaquettes en cas de TIH suspectée."
+            }
+          ]
+        },
+        {
+          "title": "7. Complications de l'EER et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Hypophosphatémie** : complication très fréquente en CRRT (phosphate dialysé activement) — surveiller phosphatémie 2×/j et supplémenter si < 0,65 mmol/L — utiliser dialysats avec phosphate si disponibles",
+                "**Hypocalcémie** : surtout sous ARC — surveiller Ca2+ ionisé systémique toutes les 4–6h initialement",
+                "**Hypothermie** : CRRT sans réchauffeur → perte thermique 2–3°C possible — utiliser réchauffeur intégré (cible 37°C sauf HTIC)",
+                "**Hypokaliémie** : élimination accrue du potassium par dialyse — supplémenter dans le dialysat ou IV",
+                "**Alcalose métabolique** : surdosage en bicarbonates via le dialysat ou citrate — ajuster tampon du dialysat",
+                "**Déperdition médicamenteuse** : antibiotiques, anticonvulsivants, immunosuppresseurs — adapter les posologies (principalement β-lactamines, vancomycine, méropénème — TDM recommandé)",
+                "**Thrombose du cathéter** : rinçage insuffisant, mauvais positionnement — vérifier position sous scopie, rinçage avec sérum physiologique ou héparine selon protocole",
+                "**Hémorragie** : sur-anticoagulation, ponction artérielle, thrombopénie — surveillance quotidienne NFS, TP, TCA"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Adaptation antibiotiques en CRRT (exemples cliniques) :\nMéropénème : dose standard 1g/8h OU 2g/8h en mode continu (perfusion étendue 3h) selon spectre\nVancomycine : TDM indispensable — cible AUC/CMI 400–600 — dose de charge 25 mg/kg puis ajustement\nPipéracilline-tazobactam : 4g/0,5g × 3–4/j ou perfusion continue selon pharmacocinétique\nRègle générale : les molécules de faible liaison protéique et faible volume de distribution sont les plus dialysées"
+            },
+            {
+              "type": "warning",
+              "content": "Erreur fatale : ne pas ajuster les antibiotiques en CRRT. La CRRT modifie radicalement la clairance des antibiotiques. Sous-doser expose à l'échec thérapeutique et à l'émergence de résistances. Sur-doser expose à une toxicité (neurotoxicité à la vancomycine et β-lactamines, néphrotoxicité résiduelle des aminosides). Le recours à la mesure des concentrations (TDM) est indispensable."
+            }
+          ]
+        },
+        {
+          "title": "8. Recommandations clés avec grades",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**KDIGO 2012, grade 1A** : dose d'effluent délivrée 20–25 mL/kg/h en CRRT",
+                "**KDIGO 2012, grade 2B** : anticoagulation au citrate préférable à l'héparine si pas de contre-indication",
+                "**KDIGO 2012, grade 1C** : ne pas utiliser uniquement la valeur de créatinine ou urée pour décider l'initiation — tenir compte du contexte global",
+                "**ESICM 2019** : ARC recommandée en première intention pour CRRT (recommandation forte, preuves modérées)",
+                "**SFAR-SRLF 2020** : stratégie de démarrage retardée (attente des critères urgents) préférable à l'initiation précoce systématique (accord fort)",
+                "**STARRT-AKI 2020 (NEJM)** : stratégie précoce → pas de bénéfice survie + davantage de dépendance EER à J90",
+                "**AKIKI-2 (Lancet 2021)** : stratégie ultra-tardive vs. tardive → pas de différence survie mais davantage de décès sans EER dans le groupe ultra-tardif → une stratégie trop attentiste peut être délétère",
+                "**KDIGO AKI 2024 (mise à jour)** : confirmation du seuil 20–25 mL/kg/h, intégration des biomarqueurs (TIMP-2×IGFBP7) pour identification précoce, mais pas de changement des indications d'EER"
+              ]
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Timing EER** : ne pas initier systématiquement dès KDIGO stade 3 — attendre une indication urgente (hyperkaliémie sévère réfractaire, acidose pH < 7,15 réfractaire, surcharge réfractaire, urémie symptomatique) ou une progression malgré traitement conservateur optimal",
+        "**Citrate en première intention** : l'ARC est le gold standard de l'anticoagulation du circuit CRRT, avec une durée de filtre supérieure à l'héparine — surveiller le rapport Ca total/Ca ionisé > 2,5 comme signe de toxicité",
+        "**Dose d'effluent** : prescrire 25–30 mL/kg/h pour atteindre une dose délivrée de 20–25 mL/kg/h (KDIGO 1A) — les interruptions et pertes circuit représentent 20–30 % de la dose prescrite",
+        "**TIH en réanimation** : arrêt immédiat de toute héparine dès suspicion, calcul du score 4T, remplacement par argatroban (ou danaparoïde selon disponibilité) — ne jamais transfuser de plaquettes",
+        "**Adaptation médicamenteuse** : systématiser le TDM des antibiotiques en CRRT (vancomycine, β-lactamines, aminosides) — la CRRT modifie profondément la pharmacocinétique des molécules de faible liaison protéique et petit volume de distribution"
+      ],
+      "references": [
+        "Zarbock A et al. — Effect of Early vs. Delayed Initiation of Renal Replacement Therapy on Mortality in Critically Ill Patients With Acute Kidney Injury (AKIKI) — JAMA 2016",
+        "Barbar SD et al. — Timing of Renal-Replacement Therapy in Patients with AKI and Sepsis (IDEAL-ICU) — NEJM 2018",
+        "STARRT-AKI Investigators — Timing of Initiation of Renal-Replacement Therapy in AKI — NEJM 2020",
+        "Gaudry S et al. — Timing of Renal Replacement Therapy for Severe AKI in Critically Ill Patients (AKIKI-2) — Lancet 2021",
+        "Ostermann M et al. — Controversies in Acute Kidney Injury : Conclusions from a Kidney Disease Improving Global Outcomes (KDIGO) Conference — Kidney International 2020",
+        "Joannidis M et al. — Prevention of Acute Organ Dysfunction with the Use of an Extracorporeal CO2 Removal Device — ESICM CRRT Guidelines — Intensive Care Medicine 2019",
+        "KDIGO Clinical Practice Guideline for Acute Kidney Injury — Kidney International Supplements 2012 (version de référence, mise à jour 2024 en cours de publication)",
+        "SFAR-SRLF — Prise en charge de l'insuffisance rénale aiguë en réanimation — Recommandations formalisées d'experts 2020",
+        "Honore PM et al. — Cytokine Removal in Critically Ill Patients : Where Are We and Where Are We Going? — Annals of Intensive Care 2019",
+        "Neyra JA, Tolwani A — Anticoagulation for Continuous Renal Replacement Therapy — Clinical Journal of the American Society of Nephrology 2021"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Homme 58 ans, choc septique sur pneumonie à pneumocoque sous noradrénaline 0,35 µg/kg/min. KDIGO stade 3, diurèse 0,2 mL/kg/h depuis 18h, K+ 5,8 mmol/L, pH 7,28, bicarbonates 16 mmol/L, urée 28 mmol/L. Pas d'urémie symptomatique.",
+        "question": "Quelle est la conduite la plus appropriée concernant l'initiation de l'EER ?",
+        "options": {
+          "A": "Initier immédiatement l'EER car KDIGO stade 3 avec anurie > 12h",
+          "B": "Poursuivre le traitement conservateur optimisé (correction volémique, vasopresseurs, arrêt néphrotoxiques) et réévaluer sous 12–24h en l'absence de critère urgent",
+          "C": "Initier immédiatement l'EER car K+ > 5,5 mmol/L constitue une indication urgente",
+          "D": "Initier immédiatement l'EER car l'acidose métabolique avec pH 7,28 est une indication urgente absolue"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : ce patient a une IRA KDIGO 3 sévère, mais ne présente aucun critère d'urgence absolue. Le K+ à 5,8 mmol/L est traitable médicalement (résines, insuline-glucose, salbutamol), l'acidose à pH 7,28 est sévère mais pas réfractaire au traitement de la cause (pas encore essayé), l'urée à 28 mmol/L est sans symptômes urémiques. Les études AKIKI, IDEAL-ICU et STARRT-AKI montrent qu'une initiation différée guidée par les critères urgents est non-inférieure en mortalité et réduit l'exposition inutile à l'EER. Piège A : KDIGO stade 3 seul n'est pas une indication urgente d'EER — c'est l'association avec des critères réfractaires qui la justifie. Piège C : K+ > 5,5 mmol/L est préoccupant mais le seuil d'urgence réfractaire est > 6,5 mmol/L malgré traitement médical optimal. Piège D : le pH 7,28 est grave mais le seuil d'urgence est pH < 7,15 réfractaire au traitement conservateur."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Patiente 72 ans, IRA sur NTA post-chirurgie vasculaire majeure, sous CRRT-CVVHDF depuis 48h avec anticoagulation régionale au citrate. Ca2+ ionisé systémique : 1,05 mmol/L, Ca2+ ionisé post-filtre : 0,30 mmol/L, Ca total sérique : 3,2 mmol/L. pH 7,38, bicarbonates 26 mmol/L.",
+        "question": "Quelle est votre interprétation de ce bilan et quelle action s'impose en priorité ?",
+        "options": {
+          "A": "Contrôle ARC satisfaisant — pas de modification nécessaire, simple surveillance",
+          "B": "Accumulation de citrate probable — calculer le rapport Ca total/Ca ionisé, réduire le débit citrate et réévaluer la fonction hépatique",
+          "C": "Hypocalcémie systémique isolée — augmenter la perfusion de calcium systémique sans modifier le débit citrate",
+          "D": "Surdosage en calcium de substitution — réduire la perfusion de calcium systémique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le rapport Ca total/Ca ionisé = 3,2/1,05 = 3,05, soit > 2,5 — signe d'accumulation de citrate. Le Ca2+ post-filtre à 0,30 mmol/L est dans la cible (0,25–0,35 mmol/L), ce qui confirme que le circuit est bien anticoagulé. Le Ca2+ ionisé systémique à 1,05 mmol/L est légèrement bas (cible 1,10–1,30 mmol/L) mais le problème principal est l'accumulation de complexes calcium-citrate non métabolisés, signant une insuffisance de clairance hépatique du citrate. La conduite est : réduire le débit citrate, évaluer la fonction hépatique (bilan hépatique, lactates), considérer le passage à l'héparine. Piège A : le rapport 3,05 > 2,5 est pathologique et ne doit pas être négligé. Piège C : augmenter le calcium sans comprendre le mécanisme aggraverait la situation — le calcium total est déjà élevé (3,2 mmol/L) car lié au citrate. Piège D : le Ca2+ ionisé systémique est bas, pas élevé — ce n'est pas un surdosage calcique."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Homme 45 ans, pancréatite aiguë sévère, IRA KDIGO 3 sous CRRT depuis 8 jours avec héparine non fractionnée pré-filtre. Plaquettes J0 : 180 G/L, J5 : 95 G/L, J8 : 52 G/L. Thrombose veineuse profonde fémorale droite découverte à J8.",
+        "question": "Quel est le score 4T et quelle est la prise en charge immédiate la plus appropriée ?",
+        "options": {
+          "A": "Score 4T probable 4–5 — arrêt héparine, switch vers danaparoïde ou argatroban, dosage anticorps anti-PF4/héparine en urgence, pas de transfusion plaquettaire",
+          "B": "Score 4T probable 4–5 — arrêt héparine, transfusion de plaquettes jusqu'à 80 G/L, puis switch vers HBPM",
+          "C": "Score 4T probable 2–3 — poursuite héparine avec surveillance accrue des plaquettes",
+          "D": "Score 4T probable 4–5 — arrêt héparine, switch vers fondaparinux, anticoagulation du circuit par citrate"
+        },
+        "correct": "A",
+        "explanation": "Réponse A correcte : score 4T estimé : thrombopénie > 50 % (2 points) + délai J5–J10 (2 points) + thrombose veineuse prouvée (2 points) + pas d'autre cause évidente (2 points) = 8/8, haute probabilité de TIH. La conduite est : arrêt immédiat de toute héparine (y compris rinçages et héparines de chasse de cathéters), anticoagulation par argatroban (élimination hépatique, contrôle par TCA ou ACT) ou danaparoïde, dosage des anticorps anti-FP4/héparine (ELISA + test fonctionnel). Le citrate pour le circuit est une excellente décision complémentaire. Piège B : la transfusion plaquettaire est formellement contre-indiquée en cas de TIH — elle peut aggraver la thrombose en alimentant les agrégats plaquettaires-IgG. Piège C : le score 4T est clairement ≥ 6 (haute probabilité) — poursuivre l'héparine serait dangereux. Piège D : le fondaparinux est un pentasaccharide anti-Xa — il est parfois utilisé en prophylaxie mais n'est PAS validé pour le traitement curatif de la TIH (données insuffisantes, pas recommandé en curatif)."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Patient 80 kg sous CVVHDF depuis 48h. Prescription initiale : effluent 2000 mL/h (25 mL/kg/h). Analyse des données machine : temps effectif de traitement sur 24h = 18h (arrêts pour soins, examen scanner, coagulation filtre). Quelle est la dose d'effluent réellement délivrée ?",
+        "question": "Quelle est la dose d'effluent délivrée sur 24h et quelle action est nécessaire ?",
+        "options": {
+          "A": "Dose délivrée 25 mL/kg/h — aucune modification nécessaire",
+          "B": "Dose délivrée ≈ 18,75 mL/kg/h — insuffisante, augmenter la prescription à 30–32 mL/kg/h pour compenser les pertes",
+          "C": "Dose délivrée ≈ 18,75 mL/kg/h — insuffisante, doubler le débit pendant 6h pour rattraper le déficit",
+          "D": "Dose délivrée ≈ 18,75 mL/kg/h — acceptable car proche de la cible minimale KDIGO de 20 mL/kg/h"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : dose délivrée = (2000 × 18) / (80 × 24) = 36 000 / 1920 = 18,75 mL/kg/h, en dessous de la cible KDIGO de 20–25 mL/kg/h. La solution est d'augmenter la prescription à 30–32 mL/kg/h (≈ 2400–2560 mL/h pour 80 kg), ce qui, avec 18h de temps effectif, permettra d'atteindre la cible : (2400 × 18)/(80 × 24) = 43 200/1920 = 22,5 mL/kg/h. Piège A : confusion classique entre dose prescrite et dose délivrée — le temps effectif réduit considérablement la dose réellement administrée. Piège C : doubler le débit pendant 6h est dangereux (déséquilibres électrolytiques brutaux, hypophosphatémie aiguë, alcalose) et non recommandé — on ajuste prospectivement la prescription. Piège D : 18,75 mL/kg/h est en dessous du minimum recommandé de 20 mL/kg/h — ce n'est pas acceptable à terme."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patient septique sous CRRT-CVVHDF, infection à Pseudomonas aeruginosa sensible. Méropénème prescrit à 2g/8h (perfusion étendue sur 3h). CMI méropénème = 2 mg/L. Concentration résiduelle mesurée par TDM : 4,5 mg/L.",
+        "question": "Comment interpréter ce TDM du méropénème et quelle est la conduite à tenir ?",
+        "options": {
+          "A": "Concentration insuffisante — augmenter à 2g/6h car la cible PK/PD est T > CMI ≥ 40 % du temps pour une bactéricidie optimale",
+          "B": "Concentration satisfaisante pour une perfusion étendue — cible T > 4× CMI ≥ 100 % du temps en cas de bactérie difficile, soit concentration résiduelle ≥ 8 mg/L — augmenter à 2g/6h ou passer en perfusion continue",
+          "C": "Concentration excessive — risque de toxicité neurologique (crises), réduire à 1g/8h",
+          "D": "Concentration satisfaisante — cible T > CMI ≥ 40 % est atteinte, pas de modification"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : pour les β-lactamines, l'efficacité est liée au temps au-dessus de la CMI (pharmacodynamie temps-dépendante). Pour Pseudomonas aeruginosa (pathogène difficile) et une CMI à 2 mg/L, la cible optimale est T > 4×CMI = 8 mg/L pendant 100 % du temps (recommandation EUCAST/PK-PD pour pathogènes difficiles). La concentration résiduelle de 4,5 mg/L est > CMI (2 mg/L) mais < 4×CMI (8 mg/L) — sous-thérapeutique pour ce pathogène. Il faut augmenter la dose (2g/6h) ou passer en perfusion continue (6g/24h). La CRRT augmente la clairance des β-lactamines. Piège A : la cible de 40 % T > CMI est minimale pour les germes sensibles non difficiles — pour Pseudomonas, on vise 100 % T > 4×CMI. Piège C : la concentration de 4,5 mg/L n'est pas toxique pour le méropénème ; la neurotoxicité des carbapénèmes survient à des concentrations très élevées et est favorisée par l'insuffisance rénale mais pas par une concentration de 4,5 mg/L. Piège D : 40 % T > CMI est insuffisant pour un pathogène difficile comme Pseudomonas en contexte de soins intensifs."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patient en ARDS sévère avec HTIC sur traumatisme crânien associé (PIC 28 mmHg), IRA KDIGO stade 3. Hémodynamique stable sous noradrénaline 0,05 µg/kg/min. L'équipe hésite entre IHD et CRRT.",
+        "question": "Quel est l'argument le plus solide pour préférer la CRRT à l'IHD dans ce contexte précis ?",
+        "options": {
+          "A": "La CRRT permet une dose d'effluent plus élevée que l'IHD",
+          "B": "La CRRT maintient une osmolarité plasmatique plus stable, préservant la pression de perfusion cérébrale et évitant les shifts hypotoniques qui aggravent l'œdème cérébral",
+          "C": "La CRRT est supérieure à l'IHD pour la récupération rénale à long terme",
+          "D": "La CRRT est moins thrombogène que l'IHD et ne nécessite pas d'anticoagulation systémique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la raison principale de préférer la CRRT en cas d'HTIC est la stabilité osmotique. L'IHD entraîne des variations rapides d'osmolarité plasmatique (chute d'urée rapide → gradient osmotique → shift d'eau vers le compartiment cérébral → aggravation de l'œdème cérébral et de l'HTIC). La CRRT, avec son élimination progressive et continue des solutés, maintient l'osmolarité stable. C'est une indication reconnue de la CRRT indépendamment de la stabilité hémodynamique. Piège A : la dose d'effluent peut être équivalente entre CRRT et IHD intensive — ce n'est pas l'argument principal ici. Piège C : aucune étude de haut niveau ne montre une supériorité de la CRRT sur l'IHD pour la récupération rénale à long terme (méta-analyses neutres sur ce point). Piège D : faux — la CRRT nécessite une anticoagulation plus continue et soutenue que l'IHD ; l'IHD avec ses débits élevés est souvent réalisable avec des bolus d'héparine ponctuels."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Patient en insuffisance hépatique aiguë sur cirrhose Child-Pugh C, IRA KDIGO 3 (syndrome hépato-rénal type 1 vs. NTA). Bilan : bilirubine 250 µmol/L, TP 25 %, lactates 4,2 mmol/L. Décision d'initier une CRRT.",
+        "question": "Concernant l'anticoagulation du circuit dans ce contexte, quelle est la stratégie la plus adaptée ?",
+        "options": {
+          "A": "Citrate régional en première intention car c'est la recommandation ESICM 2019",
+          "B": "Héparine non fractionnée à faible dose car le TP est effondré et l'anticoagulation systémique est déjà naturelle",
+          "C": "Anticoagulation régionale au citrate contre-indiquée en cas d'insuffisance hépatique sévère — préférer l'héparine à faible dose ou absence d'anticoagulation avec optimisation du circuit",
+          "D": "Argatroban de première intention car il est éliminé par voie hépatique et donc prévisible dans ce contexte"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : l'insuffisance hépatique sévère est une contre-indication relative à l'ARC car le foie est le site principal de métabolisation du citrate (cycle de Krebs). En cas d'insuffisance hépatique sévère (Child C, hyperlactatémie, bas débit), le citrate s'accumule, chélate le calcium systémique (hypocalcémie) et génère une acidose métabolique avec anion gap élevé (toxicité citrate). L'alternative est l'héparine à faible dose en tenant compte de l'anticoagulation naturelle (TP bas, thrombopénie souvent associée), ou l'absence d'anticoagulation avec optimisation du débit sanguin (≥ 200 mL/min) et prédilution. Piège A : la recommandation ESICM 2019 pour le citrate exclut explicitement l'insuffisance hépatique sévère comme contre-indication — appliquer le citrate systématiquement serait une erreur. Piège B : un TP bas ne contre-indique pas formellement l'utilisation d'héparine mais la dose doit être minimale ; surtout, ce n'est pas la justification principale. Piège D : l'argatroban est éliminé par voie hépatique — mais c'est un avantage en cas d'IRA (pas d'accumulation rénale), pas une raison de le choisir en première intention en IHA ; son utilisation est réservée à la TIH."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Femme 65 ans, 55 kg, IRA KDIGO 3 sur pyélonéphrite sévère, CRRT-CVVHDF initiée. À J3, phosphatémie : 0,45 mmol/L (normale : 0,80–1,50 mmol/L). La patiente présente une faiblesse musculaire marquée et des difficultés de sevrage ventilatoire.",
+        "question": "Quelle est l'étiologie la plus probable et la prise en charge la plus appropriée ?",
+        "options": {
+          "A": "Hypophosphatémie de renutrition — arrêter la nutrition entérale pendant 48h",
+          "B": "Hypophosphatémie par épuration excessive au cours de la CRRT — supplémenter en phosphate (IV ou dialysat enrichi) et discuter la réduction de dose d'effluent si dose > cible",
+          "C": "Hypophosphatémie par malabsorption intestinale — bilan gastro-entérologique",
+          "D": "Hypophosphatémie par hyperparathyroïdie secondaire à l'IRA — supplémenter en vitamine D"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'hypophosphatémie est la complication métabolique la plus fréquente de la CRRT (survient dans 65–80 % des cas). Le phosphate est une petite molécule librement dialysée par convection et diffusion. À 0,45 mmol/L, la carence est sévère et peut expliquer la faiblesse du diaphragme et l'échec de sevrage ventilatoire (l'hypophosphatémie altère la contractilité musculaire). La prise en charge est la supplémentation IV en phosphate de sodium ou potassium (surveiller la kaliémie), l'utilisation de dialysats enrichis en phosphate si disponibles, et la vérification que la dose d'effluent n'est pas excessive (> 35 mL/kg/h inutilement). Piège A : la renutrition peut causer de l'hypophosphatémie mais le contexte CRRT est bien plus puissant ; stopper la nutrition aggraverait le catabolisme. Piège C : la malabsorption intestinale est peu probable en l'absence de contexte digestif ; de plus, sous nutrition entérale/parentérale, l'apport est suffisant si non dialysé. Piège D : l'hyperparathyroïdie secondaire de l'IRA chronique cause une hyperphosphatémie, pas une hypophosphatémie aiguë — mécanisme inverse."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Patient sous CRRT pour IRA sévère post-CEC (chirurgie cardiaque). L'équipe envisage d'utiliser une membrane à haute perméabilité (High Cut-Off, HCO, seuil > 100 kDa) en lieu et place de la membrane standard (seuil 20 kDa), arguant d'un bénéfice sur l'élimination des cytokines dans le sepsis associé.",
+        "question": "Quelle est la position la plus juste vis-à-vis des membranes HCO (High Cut-Off) dans ce contexte ?",
+        "options": {
+          "A": "Les membranes HCO sont recommandées en première intention dans l'IRA septique — elles réduisent significativement la mortalité",
+          "B": "Les membranes HCO permettent l'élimination de cytokines pro-inflammatoires plus larges mais entraînent également une perte d'albumine et d'immunoglobulines — leur bénéfice clinique sur la mortalité n'est pas démontré et elles ne font pas l'objet d'une recommandation forte",
+          "C": "Les membranes HCO sont formellement contre-indiquées en post-CEC en raison du risque d'hémolyse accru",
+          "D": "Les membranes HCO sont équivalentes aux membranes standard en termes d'élimination des cytokines car l'élimination est principalement par adsorption et non par taille de pore"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les membranes HCO (seuil de coupure > 60–100 kDa) permettent l'élimination de molécules de plus grande taille incluant certaines cytokines (IL-6 ~21 kDa, TNF ~17 kDa — en réalité dans la zone de coupure des membranes standard à haut flux). Leur vrai avantage est l'élimination de molécules intermédiaires (chaînes légères, myoglobine). Mais elles entraînent une déperdition d'albumine (69 kDa), d'IgG (~150 kDa partiellement) et d'autres protéines utiles. L'étude IVOIRE (JASN 2013) sur les membranes HCO dans le choc septique n'a pas montré de bénéfice de survie. Il n'existe pas de recommandation forte pour leur utilisation systématique. Piège A : aucune étude de niveau 1 ne démontre une réduction de mortalité avec les membranes HCO dans l'IRA septique. Piège C : les membranes HCO ne sont pas contre-indiquées en post-CEC — il n'existe pas de risque spécifique d'hémolyse lié à ce type de membrane. Piège D : l'adsorption joue un rôle mais il est transitoire (saturation des sites en quelques heures) ; l'argument de taille de pore est réel mais ne justifie pas leur usage systématique."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Patient de 70 ans en IRA KDIGO stade 3 sous CRRT depuis 15 jours. Évolution favorable de la défaillance multi-organes. L'équipe envisage le sevrage de l'EER. Diurèse actuelle : 800 mL/j (sous furosémide 40 mg/j), urée stable à 18 mmol/L, potassium 4,2 mmol/L, bicarbonates 22 mmol/L.",
+        "question": "Quels critères permettent le mieux d'identifier les patients aptes à être sevrés de l'EER sans rechute ?",
+        "options": {
+          "A": "Diurèse > 500 mL/j spontanée (sans diurétiques) est le critère principal et suffisant pour tenter le sevrage",
+          "B": "La clairance de la créatinine urinaire sur 2h > 23 mL/min est un bon prédicteur de succès de sevrage (score CRRT Weaning Score ou critères de Viallet) ; une diurèse > 400–500 mL/j spontanée est un signe favorable mais insuffisant seul",
+          "C": "La valeur absolue de la créatininémie < 300 µmol/L est le critère principal de sevrage de l'EER",
+          "D": "Le retour en sinusale d'un bilan hydrique nul sur 48h est le critère principal de sevrage de l'EER"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le sevrage de la CRRT est une décision complexe. La diurèse résiduelle > 400–500 mL/j spontanée (sans diurétiques) est un bon signe mais insuffisant seul. La mesure de la clairance de la créatinine urinaire sur 2h > 23 mL/min a montré une valeur prédictive positive de succès de sevrage dans plusieurs études (Uchino, Ronco). Plus globalement, les prédicteurs validés incluent : diurèse spontanée > 500 mL/j, clairance créatinine sur 2–6h calculée, absence de surcharge hydrique sévère, absence de défaillance hémodynamique sévère active, normalisation de la kaliémie et des bicarbonates. Piège A : une diurèse résiduelle sans évaluation de la clairance rénale peut être trompeuse (diurèse osmotique, IRA non oligurique avec faible DFG résiduel) — critère nécessaire mais pas suffisant. Piège C : la valeur absolue de créatinine est un mauvais prédicteur de sevrage — elle dépend de la masse musculaire, de la cinétique et peut rester élevée même si le DFG est suffisant pour maintenir l'équilibre sans EER. Piège D : le bilan hydrique nul est un objectif thérapeutique souhaitable mais n'est pas un critère validé de sevrage de l'EER — c'est une condition favorisante, non un prédicteur de succès."
+      }
+    ]
   }
 ]
