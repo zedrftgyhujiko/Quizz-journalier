@@ -2821,5 +2821,388 @@
         "explanation": "Réponse B correcte : le sevrage de la CRRT est une décision complexe. La diurèse résiduelle > 400–500 mL/j spontanée (sans diurétiques) est un bon signe mais insuffisant seul. La mesure de la clairance de la créatinine urinaire sur 2h > 23 mL/min a montré une valeur prédictive positive de succès de sevrage dans plusieurs études (Uchino, Ronco). Plus globalement, les prédicteurs validés incluent : diurèse spontanée > 500 mL/j, clairance créatinine sur 2–6h calculée, absence de surcharge hydrique sévère, absence de défaillance hémodynamique sévère active, normalisation de la kaliémie et des bicarbonates. Piège A : une diurèse résiduelle sans évaluation de la clairance rénale peut être trompeuse (diurèse osmotique, IRA non oligurique avec faible DFG résiduel) — critère nécessaire mais pas suffisant. Piège C : la valeur absolue de créatinine est un mauvais prédicteur de sevrage — elle dépend de la masse musculaire, de la cinétique et peut rester élevée même si le DFG est suffisant pour maintenir l'équilibre sans EER. Piège D : le bilan hydrique nul est un objectif thérapeutique souhaitable mais n'est pas un critère validé de sevrage de l'EER — c'est une condition favorisante, non un prédicteur de succès."
       }
     ]
+  },
+  {
+    "date": "2026-06-04",
+    "dateStr": "jeudi 4 juin",
+    "topic": "Sevrage de la ventilation mécanique chez le patient difficile à sevrer : identification des causes d'échec, épreuve de ventilation spontanée, place de la ventilation non invasive post-extubation et critères de trachéotomie",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le sevrage de la ventilation mécanique représente 40 % du temps total sous ventilateur et concentre une part majeure des complications en réanimation. Chez le 'patient difficile à sevrer' (20 % des patients ventilés), l'échec répété expose à la surmortalité, aux pneumonies acquises sous ventilateur et à la dépendance ventilatoire chronique. Maîtriser la démarche structurée — de l'identification des causes d'échec à la décision de trachéotomie — est un impératif pour tout réanimateur.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La classification internationale (Task Force ESICM/ATS 2007, réaffirmée 2022) distingue trois catégories de sevrage selon le nombre d'épreuves de ventilation spontanée (EVS) et la durée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Sevrage simple** : succès dès la 1ʳᵉ EVS, sans difficulté — représente ~69 % des patients",
+                "**Sevrage difficile** : nécessite jusqu'à 3 EVS ou ≤ 7 jours après la 1ʳᵉ EVS — ~15 % des patients",
+                "**Sevrage prolongé** : > 3 EVS ou > 7 jours après la 1ʳᵉ EVS — ~16 % des patients, mortalité hospitalière 30-40 %",
+                "**Échec d'EVS** : signes de détresse respiratoire, SpO₂ < 90 %, agitation, altération hémodynamique conduisant à la réintubation ou à l'arrêt de l'épreuve avant 30-120 min",
+                "**Extubation réussie** : absence de recours à la ventilation (invasive ou non invasive) dans les 48-72 h post-extubation selon les études",
+                "**Réintubation** : retour à la ventilation invasive après extubation — marqueur de mauvais pronostic indépendant (mortalité ×8)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : confondre 'échec d'EVS' et 'échec d'extubation'. Un patient peut réussir l'EVS (paramètres corrects sur pièce en T) mais échouer à l'extubation (stridor, encombrement, détresse neurologique). Ces deux entités ont des causes et des prises en charge différentes."
+            },
+            {
+              "type": "formula",
+              "content": "Index de Tobin (RSBI = Rapid Shallow Breathing Index) = Fréquence respiratoire (cycles/min) / Volume courant (litres). Seuil prédictif de succès : RSBI < 105 cycles/min/L (VPP ~78 %, VPN ~95 % dans l'étude originale de Yang & Tobin, NEJM 1991)."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes d'échec",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'échec de sevrage résulte d'un **déséquilibre entre la charge imposée aux muscles respiratoires et leur capacité à y répondre**. Une analyse structurée selon les quatre grands mécanismes permet d'identifier la ou les causes curables."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Augmentation de la charge élastique** : œdème pulmonaire cardiogénique (cause n°1 d'échec), épanchement pleural, atélectasie, pneumonie, SDRA résiduel, bronchospasme, hyperinflation dynamique (BPCO, asthme)",
+                "**Augmentation de la charge résistive** : sécrétions bronchiques, œdème glottique/sous-glottique, trachéobronchite, sonde d'intubation de petit calibre (résistance ∝ 1/r⁴ — loi de Poiseuille)",
+                "**Insuffisance de la pompe respiratoire** : dysfonction diaphragmatique induite par la ventilation mécanique (VIDD — atrophie musculaire dès 18-69 h), myopathie de réanimation, neuropathie de réanimation, dénutrition sévère (albumine < 20 g/L), hypophosphatémie, hypomagnésémie, dysthyroïdie",
+                "**Dysfonction cardiovasculaire** : l'EVS équivaut à un sevrage brutal de la PEEP — augmentation du retour veineux → surcharge VG → ischémie myocardique silencieuse → OAP de sevrage (jusqu'à 30 % des échecs chez le coronarien)",
+                "**Dysfonction neurologique et troubles de la déglutition** : altération de la commande ventilatoire centrale (sédation résiduelle, encéphalopathie), troubles de déglutition (présents chez 50 % après > 48 h d'intubation), incapacité à tousser efficacement (débit de pointe à la toux < 60 L/min = risque élevé d'échec)",
+                "**Facteurs psychologiques** : anxiété, dépendance psychologique au ventilateur, syndrome post-traumatique — souvent sous-estimés"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : l'OAP de sevrage est silencieux dans 50 % des cas — pas de râles, pas d'élévation spectaculaire du BNP en aigu. Suspecter devant une tachycardie, une désaturation progressive et une augmentation des pressions de remplissage à l'ETT de sevrage. Mesurer le BNP AVANT et pendant l'EVS (élévation > 48 % ou valeur absolue > 275 ng/L pendant l'EVS = forte suspicion)."
+            },
+            {
+              "type": "formula",
+              "content": "Débit de pointe à la toux (Peak Cough Flow, PCF) : seuil de sécurité pour l'extubation = PCF > 60 L/min. Si PCF < 60 L/min : risque élevé d'encombrement et d'échec post-extubation, discuter kinésithérapie respiratoire intensive et/ou aspiration nasotrachéale."
+            },
+            {
+              "type": "text",
+              "content": "La **dysfonction diaphragmatique induite par la ventilation (VIDD)** est proportionnelle à la durée de ventilation en mode contrôlé. L'échographie diaphragmatique permet de quantifier la **fraction d'épaississement diaphragmatique (FED = (épaisseur fin inspiration - épaisseur fin expiration) / épaisseur fin expiration × 100)**, avec un seuil de succès > 20-30 % selon les études."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation et Épreuve de Ventilation Spontanée (EVS)",
+          "items": [
+            {
+              "type": "text",
+              "content": "Avant toute EVS, vérifier les **critères de préparation au sevrage (readiness criteria)** — leur présence simultanée conditionne la sécurité de l'épreuve."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Critère respiratoire** : FiO₂ ≤ 0,40-0,50 avec SpO₂ ≥ 92 %, PEEP ≤ 5-8 cmH₂O, FR < 35/min",
+                "**Critère de cause** : cause de la décompensation respiratoire traitée ou en voie de résolution",
+                "**Critère hémodynamique** : pas de vasopresseur ou dose faible stable (noradrénaline ≤ 0,1 µg/kg/min acceptable selon contexte), FC < 140/min, PAS 90-160 mmHg",
+                "**Critère neurologique** : patient éveillé, coopérant (RASS 0 à -1), capable d'obéir à des ordres simples",
+                "**Critère de protection des voies aériennes** : réflexe de toux présent, absence de sécrétions abondantes non contrôlables",
+                "**Bilan biologique** : absence de trouble électrolytique majeur (K⁺, PO₄²⁻, Mg²⁺), Hb > 7-8 g/dL (pas de seuil strict mais anémie sévère = facteur d'échec)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Protocole d'EVS recommandé (ESICM 2022) : Pièce en T OU Aide inspiratoire basse (AI 5-8 cmH₂O + PEEP 0-5 cmH₂O) — durée : 30 min à 2 h. Les deux modalités sont équivalentes en termes de taux d'extubation réussie (méta-analyses 2020-2022). L'EVS en AI légère est mieux tolérée sur le plan du confort."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Critères d'arrêt immédiat de l'EVS** : FR > 35/min pendant > 5 min, SpO₂ < 90 %, PaO₂ < 50 mmHg sous FiO₂ ≤ 0,50, variations de PAS > 20 % ou PA systolique < 90 mmHg, FC > 140/min ou variation > 20 %, agitation, altération de la conscience, sueurs profuses, tirage intercostal, paradoxe abdomino-thoracique",
+                "**Test du ballonnet (cuff-leak test)** : dégonfler le ballonnet et mesurer le volume courant — différence entre VT ballonnet gonflé et VT ballonnet dégonflé. Seuil : fuite < 110 mL (ou < 10-15 % du VT) prédit un risque élevé de stridor post-extubation (Se 73 %, Sp 89 %)",
+                "**Échographie pulmonaire de sevrage** : B-lines > 3 par espace intercostal avant/pendant l'EVS = surcharge pulmonaire vasculaire — prédictif d'échec",
+                "**Screening neurologique** : test de déglutition (eau froide 50 mL en petites gorgées), évaluation de la force de toux (spontanée et sur demande)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : ne pas confondre le RSBI mesuré sous ventilateur (peu prédictif) avec le RSBI mesuré pendant l'EVS en pièce en T. Le RSBI doit être mesuré en condition d'EVS réelle pour avoir une valeur prédictive. Un RSBI < 105 est nécessaire mais non suffisant : ne pas extúber sur ce seul critère."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge du patient difficile à sevrer",
+          "items": [
+            {
+              "type": "text",
+              "content": "Face à un patient en sevrage difficile ou prolongé, la stratégie repose sur **trois piliers simultanés** : identifier et traiter la cause d'échec, optimiser les conditions de sevrage, et planifier une stratégie ventilatoire adaptée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Traitement de la surcharge cardiaque** : diurétiques (furosémide IV 0,5-1 mg/kg) si BNP élevé et/ou ETT évocatrice — objectif UO > 1 mL/kg/h, réduction du BNP > 48 % entre J0 et J1",
+                "**Traitement de la VIDD** : protocole d'exercice diaphragmatique (biofeedback, stimulation électrique transdiaphragmatique) — preuves encore limitées mais en progression (essais DIA-TRAIN, 2023)",
+                "**Traitement des troubles hydro-électrolytiques** : phosphore IV si < 0,6 mmol/L (hypophosphatémie = altération contractile diaphragmatique), magnésium IV si < 0,7 mmol/L, optimisation nutritionnelle (éviter surnutrition : CO₂ excessif si QR élevé)",
+                "**Réhabilitation précoce** : kinésithérapie motrice et respiratoire dès J1-J2 — réduit la durée de VM (Méta-analyse Cochrane 2022, NNT ≈ 8)",
+                "**Protocole de sevrage de la sédation** : protocole d'interruption quotidienne ou titration à RASS cible — réduit durée de VM de 2-4 jours (PAD 2018 guidelines, niveau 1B)",
+                "**Stratégie ventilatoire optimisée** : entre les EVS, préférer mode VSAI (AI+PEEP) plutôt que ventilation contrôlée — limite la VIDD, préserve l'effort musculaire. Éviter l'AI trop haute (> 15-18 cmH₂O) qui supprime l'effort musculaire (sous-assistance = fatigue, sur-assistance = atrophie)",
+                "**Tracheostomie trachéale précoce** : discuter si > 7-10 jours de ventilation prévus (voir section trachéotomie)"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "La **Ventilation Non Invasive (VNI) post-extubation** occupe une place centrale dans la gestion du sevrage difficile, avec deux indications distinctes aux mécanismes et aux modalités différents."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**VNI préventive (prophylactique)** : appliquée immédiatement à l'extubation chez les patients à haut risque d'échec AVANT apparition de la détresse — indication forte (Grade 1A, ESICM 2022). Population cible : BPCO, insuffisance cardiaque, hypercapnie pré-extubation, obésité, > 48-72 h de VM, comorbidités multiples, échec d'EVS borderline",
+                "**Optiflow/OHD (Oxygénothérapie Haut Débit)** : alternative à la VNI préventive chez les patients non-hypercapniques à haut risque — non-inférieure à la VNI dans l'essai OPTINIV (Hernandez 2016, JAMA) chez les patients sans hypercapnie. Débit : 40-60 L/min, FiO₂ titrée",
+                "**VNI curative** : appliquée après apparition d'une insuffisance respiratoire post-extubation — résultats décevants. L'essai Esteban 2004 (NEJM) montrait une surmortalité vs réintubation précoce. À ÉVITER si détresse franche : risque de délai à la réintubation",
+                "**Modalités VNI post-extubation** : masque facial total ou oro-nasal, mode BiPAP — AI : 8-12 cmH₂O, PEEP : 5-8 cmH₂O, FiO₂ titrée, séances de 4-8 h/jour minimum avec plages de sevrage progressif",
+                "**Réintubation : ne pas temporiser** si : SpO₂ < 90 % sous VNI bien conduite ≥ 1 h, détresse respiratoire sévère, obstruction des VA, agitation incoercible, vomissements, arrêt cardiaque"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR : la VNI curative post-extubation (initiée après la détresse) NE DOIT PAS retarder la réintubation. Dans l'essai Esteban (NEJM 2004), le groupe VNI curative avait une mortalité significativement supérieure au groupe réintubation immédiate (25 % vs 14 %), probablement par retard à la prise en charge. La VNI curative n'est acceptable que dans des situations très sélectionnées (OAP cardiogénique pur, exacerbation de BPCO) avec réévaluation toutes les 30-60 minutes."
+            },
+            {
+              "type": "formula",
+              "content": "Critères de RÉINTUBATION urgente : FR > 35/min + SpO₂ < 90 % sous O₂ 15 L/min OU VNI bien conduite ≥ 1 h, Glasgow < 10 ou agitation menaçant la sécurité, instabilité hémodynamique (PAS < 90 mmHg non expliquée), arrêt respiratoire ou cardiaque imminent."
+            }
+          ]
+        },
+        {
+          "title": "5. Critères et timing de la trachéotomie",
+          "items": [
+            {
+              "type": "text",
+              "content": "La trachéotomie est indiquée pour faciliter le sevrage d'une ventilation mécanique prolongée, améliorer le confort, réduire la résistance des voies aériennes et permettre la rééducation. La décision de timing reste débattue mais des données récentes permettent de guider la pratique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Avantages de la trachéotomie** : réduction du travail respiratoire (résistance ↓ par rapport à la sonde d'intubation), sevrage de la sédation facilité, rééducation orthophonique possible, communication facilitée, pneumonie acquise sous ventilateur potentiellement réduite, confort patient amélioré",
+                "**Trachéotomie précoce (< 7-10 jours)** : pas de bénéfice démontré sur la mortalité ou la durée de VM dans les grandes études (TracMan, NEJM 2013 ; TRACH, 2021). Réservée aux situations où l'on prédit avec certitude une VM > 14-21 jours (lésion neurologique haute, tétraplégie, polytraumatisme sévère)",
+                "**Trachéotomie tardive (> 10-14 jours)** : recommandée si : 3 EVS échouées + cause d'échec non réversible à court terme (≤ 7 jours), prévision de VM > 14-21 jours, trouble de déglutition sévère définitif, protection des voies aériennes insuffisante avec sonde d'intubation",
+                "**Technique** : trachéotomie percutanée par dilatation (TPC, technique de Ciaglia) préférée à la trachéotomie chirurgicale en réanimation — moins de complications (Grade 1B, SRLF 2017). Réaliser sous fibroscopie bronchique systématique",
+                "**Contre-indications relatives à la TPC** : coagulopathie non corrigée (TP < 50 %, plaquettes < 50 000/mm³), obésité morbide avec cou court, anomalie anatomique cervicale, trachéotomie antérieure récente, instabilité cervicale",
+                "**Gestion post-trachéotomie** : première canule en place 7-10 jours minimum avant 1ᵉʳ changement (risque de fausse route), utiliser valve de phonation (Passy-Muir) dès que patient sevre — permet alimentation orale et évaluation de la déglutition",
+                "**Décanulation** : possible si EVS réussie > 24-48 h sans aide, PCF > 160 L/min avec occlusion de la canule, déglutition efficace, conscience normale — protocole d'occlusion progressive avant décanulation définitive"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : ne pas décider une trachéotomie dans les 48 premières heures sauf situation neurologique évidente (tétraplégie haute, état végétatif certain). La grande majorité des patients initialement 'difficiles à sevrer' seront sevrés avant J14 si les causes d'échec sont correctement identifiées et traitées."
+            },
+            {
+              "type": "formula",
+              "content": "Score NEMS de prédiction de trachéotomie : absence de modèle validé universellement — la décision repose sur le jugement clinique combinant : durée prévisionnelle de VM > 14-21 jours + cause non réversible + 3 EVS échouées. Timing optimal selon données actuelles : J10-J14 si ces critères sont réunis."
+            }
+          ]
+        },
+        {
+          "title": "6. Complications et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Stridor post-extubation** : dû à l'œdème sous-glottique — incidence 10-15 %. Prévention : méthylprednisolone 20 mg/6 h × 12 h avant extubation si cuff-leak test négatif (Grade 1A, ESICM 2017). Traitement curatif : adrénaline nébulisée 1 mg dans 4 mL de sérum physiologique, héliox, réintubation si échec",
+                "**Pneumonie d'inhalation post-extubation** : liée aux troubles de déglutition — incidence 30-50 % après > 48 h de VM. Prévention : évaluation systématique de la déglutition avant alimentation orale, kinésithérapie maxillo-faciale, position semi-assise 30-45°",
+                "**OAP de sevrage** : traitement par diurétiques IV (furosémide 1-2 mg/kg), VNI (BiPAP) en urgence, réintubation si échec. Identifier et traiter l'ischémie myocardique sous-jacente (troponine, ECG, ETT)",
+                "**Complications de la trachéotomie percutanée** : hémorragie peropératoire (1-3 %), fausse route (< 1 % sous fibroscopie), pneumothorax (< 1 %), infection du stomate (5-10 %), sténose trachéale tardive (1-5 % à 1 an — lésion des cartilages trachéaux), fistule trachéo-œsophagienne (rare, < 0,5 %)",
+                "**Myopathie et neuropathie de réanimation** : présentes chez 25-50 % des patients en sevrage prolongé — dépistage par ENMG (électroneuromyographie) si suspicion. Traitement : kinésithérapie intensive, mobilisation précoce, contrôle glycémique strict (cible 7-10 mmol/L), éviter corticoïdes prolongés et curares si possible",
+                "**Dysphonie et lésions laryngées** : laryngoscopie ORL systématique si dysphonie persistante > 48 h post-extubation — granulome, ulcération aryténoïde, paralysie récurrentielle (lésion par manchette ballonnet)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : ne pas négliger la dimension psychologique. Le syndrome de stress post-traumatique (SSPT) touche 20-30 % des survivants de réanimation et est un facteur de rechec de sevrage et de réhospitalisation. L'introduction précoce d'un journal de réanimation, le soutien psychologique et la présence des proches sont des interventions à faible coût et haut impact (ABCDEF bundle)."
+            }
+          ]
+        },
+        {
+          "title": "7. Recommandations clés (avec grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Évaluer quotidiennement la readiness au sevrage** + protocole de réveil quotidien (Grade 1A — PAD Guidelines SCCM 2018, ESICM 2022)",
+                "**EVS en pièce en T ou AI basse (5-8 cmH₂O + PEEP 0-5)** — durée 30-120 min — les deux modalités équivalentes (Grade 1A — ESICM Weaning Guidelines 2022)",
+                "**VNI préventive immédiate post-extubation** chez les patients à haut risque (BPCO, hypercapnie, comorbidités) — réduit la réintubation et la mortalité (Grade 1A — ESICM 2022 ; méta-analyse Cochrane 2022)",
+                "**OHD (haut débit nasal)** non inférieure à la VNI préventive chez les patients sans hypercapnie (Grade 1B — Hernandez JAMA 2016, réaffirmé ESICM 2022)",
+                "**VNI curative post-extubation déconseillée** si détresse franche — risque de retard à la réintubation (Grade 1B — Esteban NEJM 2004, confirmé recommandations ESICM 2022)",
+                "**Méthylprednisolone prophylactique** avant extubation si cuff-leak test négatif : 20 mg/6 h IV × 4 doses, débutée 12 h avant l'extubation (Grade 1A — Girard NEJM 2006, Francois JAMA 2007)",
+                "**Trachéotomie précoce (< J7) non recommandée** en routine — pas de bénéfice sur mortalité ni durée de VM (Grade 1A — TracMan NEJM 2013, TRACH 2021)",
+                "**Kinésithérapie respiratoire et motrice précoce** — réduit la durée de VM et améliore les capacités fonctionnelles à la sortie (Grade 1B — Cochrane 2022, ABCDEF bundle SCCM 2018)",
+                "**Trachéotomie percutanée préférée à la chirurgicale** en réanimation sous contrôle fibroscopique (Grade 1B — SRLF 2017, SFR 2022)",
+                "**Contrôle glycémique** cible 7-10 mmol/L (Grade 1B — NICE-SUGAR 2009, réaffirmé ESICM 2019) — prévention de la neuropathie de réanimation"
+              ]
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Classifier le sevrage dès J1** (simple/difficile/prolongé) — la catégorie conditionne l'intensité de la recherche étiologique et la stratégie thérapeutique.",
+        "**L'OAP de sevrage est une cause d'échec fréquente et silencieuse** (30 % des échecs chez le coronarien) — systématiser ETT et BNP avant/pendant l'EVS chez tout patient à risque cardiovasculaire.",
+        "**VNI préventive oui, VNI curative non** — la VNI doit être initiée AVANT la détresse chez les patients à risque. Après la détresse, préférer la réintubation rapide plutôt que de temporiser avec la VNI curative.",
+        "**La trachéotomie précoce systématique est abandonnée** — décider au cas par cas après J10-J14 si ≥ 3 EVS échouées et cause non réversible identifiée, en visant le confort et le sevrage progressif.",
+        "**Penser toujours à la VIDD, à l'hypophosphatémie et aux troubles de déglutition** — trois causes d'échec systématiquement recherchées et traitables, souvent ignorées en pratique courante."
+      ],
+      "references": [
+        "Béduneau G et al. — Epidemiology of Weaning Outcome according to a New Definition — Am J Respir Crit Care Med 2017",
+        "Thille AW et al. — Comparaison des modalités d'EVS (AI vs Pièce en T) — NEJM 2021 (BREATHE trial)",
+        "Hernandez G et al. — Effect of Postextubation High-Flow Nasal Cannula vs Conventional Oxygen Therapy on Reintubation — JAMA 2016",
+        "Esteban A et al. — Noninvasive Positive-Pressure Ventilation for Respiratory Failure after Extubation — NEJM 2004",
+        "Young D et al. — TracMan: Early vs Late Tracheotomy in ICU — NEJM 2013",
+        "Francois B et al. — 12-h Pretreatment with Methylprednisolone versus Placebo for Prevention of Postextubation Laryngeal Edema — Lancet 2007",
+        "Devlin JW et al. — PAD Clinical Practice Guidelines (SCCM) — Critical Care Medicine 2018",
+        "Rochwerg B et al. — ESICM Clinical Practice Guidelines for Mechanical Ventilation Weaning — Intensive Care Medicine 2022",
+        "Thomas P et al. — TRACH: A Randomized Trial of Early vs Late Tracheotomy in ICU — Lancet Respiratory Medicine 2021",
+        "Cochrane Review — Early Rehabilitation in Mechanically Ventilated Patients — Cochrane Database 2022",
+        "Llamas-Alvarez AM et al. — Accuracy of Lung and Diaphragm Ultrasound in Predicting Successful Extubation — Chest 2017",
+        "SRLF — Recommandations d'experts : trachéotomie en réanimation — 2017"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 68 ans, BPCO GOLD III (VEMS 42 % théorique), est ventilé depuis 9 jours pour pneumonie communautaire. Il a échoué 2 EVS successives. Lors de la 3ᵉ EVS en pièce en T, on note : FR à 28/min, SpO₂ 94 %, Volume courant 310 mL, PaCO₂ 58 mmHg (vs 52 mmHg à J0, hors épisode aigu). La cause principale de l'échec évoquée est la BPCO elle-même.",
+        "question": "Quelle est la stratégie POST-EVS la plus appropriée selon les recommandations actuelles ?",
+        "options": {
+          "A": "Décider immédiatement d'une trachéotomie percutanée car 3ème EVS échouée",
+          "B": "Initier une VNI curative (BiPAP) en urgence pour corriger l'hypercapnie post-EVS avant décision",
+          "C": "Remettre le patient sous ventilation invasive en mode VSAI (aide inspiratoire + PEEP) avec EVS quotidienne, et planifier une VNI prophylactique à la prochaine extubation",
+          "D": "Réaliser une fibroscopie bronchique diagnostique et thérapeutique avant toute nouvelle EVS"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : après un échec d'EVS, la conduite recommandée (ESICM 2022) est de remettre le patient sous VM en mode VSAI (non contrôlé, pour préserver l'effort musculaire et limiter la VIDD), de réaliser une EVS quotidienne, et de planifier une VNI prophylactique immédiate à la prochaine extubation chez ce patient BPCO à haut risque. Piège A : la trachéotomie n'est pas indiquée d'emblée après 3 EVS — elle est discutée si la cause d'échec est non réversible à court terme ET après ≥ 7-10 jours supplémentaires ; ici la BPCO peut être optimisée (bronchodilatateurs, corticoïdes, kinésithérapie). Piège B : la VNI curative (après détresse) est à éviter selon les données d'Esteban 2004 ; en revanche, la VNI prophylactique (avant détresse, immédiatement post-extubation) est indiquée chez la BPCO. Piège D : la fibroscopie est utile si suspicion d'obstruction bronchique, mais n'est pas la priorité immédiate dans ce contexte de BPCO connue avec hypercapnie chronique."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Patient de 72 ans, cardiopathe ischémique connu (stent LAD 2021), ventilé pour choc septique d'origine pulmonaire. J7 de VM. Premier EVS en pièce en T : FR 22/min, SpO₂ 96 %, VT 450 mL, RSBI 49 cycles/min/L. À 45 min d'EVS, le patient se plaint de dyspnée. L'infirmière note une diaphorèse. SpO₂ chute à 91 %. Auscultation : quelques crépitants des bases.",
+        "question": "Quel examen est le plus pertinent à réaliser EN URGENCE pour guider la prise en charge immédiate ?",
+        "options": {
+          "A": "BNP plasmatique en urgence",
+          "B": "Troponine I ultrasensible",
+          "C": "Échographie transthoracique au lit (ETT) avec mesure des pressions de remplissage et de la FEVG",
+          "D": "Radiographie thoracique de face"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le tableau évoque un OAP de sevrage (diaphorèse, désaturation, crépitants à 45 min d'EVS chez un coronarien). L'ETT au lit est l'examen le plus rapide, non irradiant, fournissant IMMÉDIATEMENT des informations sur la FEVG, le remplissage (E/e' ratio), la présence d'un épanchement et orientant vers l'ischémie (trouble de cinétique segmentaire). Piège A : le BNP est utile mais son délai de rendu (15-30 min minimum) est trop long pour guider la décision immédiate ; de plus, le BNP peut être élevé de façon chronique chez ce cardiopathe. Piège B : la troponine recherche une ischémie sous-jacente mais ne permet pas de confirmer l'OAP ni de quantifier la dysfonction en urgence immédiate — elle sera réalisée mais en second temps. Piège D : la radiographie thoracique a un délai et une sensibilité insuffisants pour diagnostiquer l'OAP de sevrage en temps réel."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Patiente de 58 ans, IMC 38 kg/m², SAOS sévère appareillée (CPAP nocturne). Ventilée 5 jours pour état de mal asthmatique. Paramètres actuels : FiO₂ 0,35, SpO₂ 97 %, PEEP 5 cmH₂O, FR 14/min, VT 520 mL, PaCO₂ 42 mmHg. Sédation sevrée, RASS 0. L'EVS en AI 7 cmH₂O + PEEP 5 cmH₂O pendant 60 min est réussie (RSBI 32, paramètres stables).",
+        "question": "Quelle est la stratégie optimale immédiatement après l'extubation selon les recommandations actuelles (ESICM 2022) ?",
+        "options": {
+          "A": "Oxygénothérapie standard au masque à haute concentration, réévaluation à H4",
+          "B": "VNI préventive prophylactique (BiPAP) pour les premières 12-24 h minimum",
+          "C": "Oxygénothérapie à haut débit nasal (OHD) 50 L/min, FiO₂ 0,40 — aussi efficace que la VNI dans ce profil",
+          "D": "Extubation sur ventilation non invasive directe avec passage immédiat en CPAP nocturne (CPAP de son SAOS)"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : cette patiente cumule plusieurs facteurs de haut risque d'échec post-extubation : obésité morbide (IMC 38), SAOS sévère (hypercapnie nocturne probable), asthme sévère. La VNI prophylactique est le standard de soin chez les patients à haut risque d'échec, notamment ceux avec un risque d'hypoventilation nocturne (recommandation Grade 1A, ESICM 2022). Piège A : l'oxygénothérapie standard est insuffisante chez ce profil à haut risque — taux de réintubation ×3 à ×4 sans VNI prophylactique. Piège C : l'OHD est non inférieure à la VNI chez les patients SANS hypercapnie (Hernandez JAMA 2016). Ici, le SAOS sévère et l'obésité exposent à une hypoventilation nocturne avec hypercapnie — profil où la VNI (avec PEP) est supérieure à l'OHD seule. L'OHD reste une alternative raisonnable de jour mais la VNI nocturne est indispensable. Piège D : le passage direct à la CPAP du SAOS est insuffisant car il ne corrige pas la composante hypercapnique éventuelle — une aide inspiratoire (BiPAP) est nécessaire en post-extubation immédiate."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Patient de 45 ans, polytraumatisé (ISS 38), TC grave (Glasgow initial 6), ventilé depuis 6 jours. Il est maintenant éveillé (Glasgow 14, suit des yeux, obéit aux ordres simples), RASS -1. Paramètres satisfaisants. Lors de l'évaluation pré-extubation, le cuff-leak test montre un VT gonflé = 560 mL et un VT dégonflé = 480 mL (fuite de 80 mL).",
+        "question": "Quelle est la conduite à tenir la plus appropriée concernant ce résultat ?",
+        "options": {
+          "A": "Extraire malgré le résultat car la fuite de 80 mL est proche du seuil — surveiller cliniquement le stridor",
+          "B": "Administrer méthylprednisolone 20 mg IV toutes les 6 h pendant 12 h avant l'extubation programmée",
+          "C": "Contre-indiquer l'extubation jusqu'à obtenir une fuite > 110 mL — pas de corticothérapie",
+          "D": "Réaliser une laryngoscopie directe au bloc opératoire avant toute extubation"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : un cuff-leak test négatif (fuite < 110 mL) indique un risque élevé de stridor post-extubation par œdème sous-glottique. La méthylprednisolone 20 mg IV toutes les 6 h, débutée au moins 12 h avant l'extubation programmée, réduit significativement l'incidence du stridor (Francois JAMA 2007 : 22 % vs 3,3 %) et de la réintubation pour œdème laryngé (Grade 1A). Piège A : extraire sans préparation un patient avec cuff-leak test négatif expose à un stridor sévère — l'extubation non préparée n'est pas sécurisante. Piège C : attendre une fuite spontanée > 110 mL peut prolonger inutilement la VM — la corticothérapie permet l'extubation dans les 12-24 h en réduisant l'œdème sous-glottique. Piège D : la laryngoscopie directe est invasive, nécessite une anesthésie, et n'est pas indiquée en routine — elle peut être envisagée si la corticothérapie est contre-indiquée ou en cas de suspicion de lésion structurelle spécifique."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patient de 62 ans, BPCO GOLD IV, ventilé 12 jours pour exacerbation sévère. Après extubation réussie (EVS concluante), il est mis sous VNI prophylactique (BiPAP : AI 12 cmH₂O, PEEP 6, FiO₂ 0,40). À H6 post-extubation, il présente une détresse respiratoire aiguë (FR 38/min, SpO₂ 85 % sous VNI, GCS 12, agitation). Les fuites du masque sont minimes. L'OHD est testé brièvement sans amélioration.",
+        "question": "Quelle est la décision immédiatement prioritaire ?",
+        "options": {
+          "A": "Augmenter le niveau d'aide inspiratoire à 18 cmH₂O et la PEEP à 10 cmH₂O, réévaluer à 30 min",
+          "B": "Administrer adrénaline nébulisée 1 mg et héliox pour suspicion de stridor tardif",
+          "C": "Réintubation orotrachéale en urgence sans délai supplémentaire",
+          "D": "Appeler l'ORL pour laryngoscopie en urgence avant réintubation"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la détresse respiratoire sévère (FR 38, SpO₂ 85 %, GCS 12) sous VNI bien conduite (fuites minimes, paramètres déjà élevés) depuis > 1 h constitue un échec de la VNI curative et une indication formelle de réintubation immédiate. Temporiser davantage augmente le risque d'arrêt respiratoire et de réintubation en urgence avec conditions dégradées (données Esteban NEJM 2004 : mortalité augmentée par le retard à la réintubation). Piège A : augmenter encore les paramètres de VNI est dangereux — le patient est déjà à des niveaux élevés (AI 12 + PEEP 6), une AI > 15-18 cmH₂O dépasse la capacité compensatrice et expose au barotraumatisme ; le délai supplémentaire est délétère. Piège B : l'adrénaline nébulisée et l'héliox sont des traitements du stridor aigu post-extubation — ici la tableau est celui d'une insuffisance respiratoire globale sans caractère obstructif laryngé prédominant ; ces thérapeutiques ne dispensent pas de la réintubation urgente dans ce contexte. Piège D : appeler l'ORL avant réintubation retarde la prise en charge d'un patient en défaillance immédiatement menaçante — la sécurité des voies aériennes prime sur tout examen complémentaire."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patient de 55 ans, ventilé depuis 8 jours pour SDRA modéré (P/F ratio nadir 130) d'origine virale. Actuellement : FiO₂ 0,35, PEEP 5 cmH₂O, SpO₂ 97 %, décurarisation complète (TOF ratio 1,0), sédation sevrée. L'échographie diaphragmatique montre une fraction d'épaississement diaphragmatique (FED) droite de 8 % sous VSAI (AI 14 cmH₂O).",
+        "question": "Quelle est l'interprétation et la conséquence pratique de cette mesure ?",
+        "options": {
+          "A": "FED normale (> 5 %) — procéder à l'EVS",
+          "B": "FED effondrée évoquant une dysfonction diaphragmatique sévère (VIDD) — réduire l'aide inspiratoire pour stimuler le diaphragme avant l'EVS",
+          "C": "FED effondrée évoquant une paralysie phrénique — indication d'une électroneuromyographie (ENMG) phrénique en urgence",
+          "D": "FED non interprétable sous AI > 10 cmH₂O — mesurer uniquement en pièce en T"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : une FED < 20-30 % sous VSAI témoigne d'un effort diaphragmatique insuffisant, compatible avec une VIDD. La FED normale lors d'un effort actif est ≥ 20-30 %. À 8 %, il existe une dysfonction diaphragmatique significative (VIDD probable après 8 jours dont plusieurs en mode contrôlé pour SDRA). La conduite recommandée est de réduire progressivement l'AI (diminution de 2 cmH₂O/j) pour stimuler l'effort diaphragmatique et éviter l'atrophie par sur-assistance, tout en maintenant la surveillance (éviter la sous-assistance qui génère la fatigue). Piège A : 8 % n'est pas normal — le seuil de 20-30 % est le cut-off des études validées (Llamas-Alvarez Chest 2017) ; confondre avec le seuil d'excursion diaphragmatique est une erreur classique. Piège C : la paralysie phrénique (unilatérale ou bilatérale) est un diagnostic différentiel, mais la VIDD est beaucoup plus fréquente après VM prolongée en mode contrôlé pour SDRA — l'ENMG n'est pas urgent en l'absence d'arguments pour une atteinte neurologique (traumatisme cervical, chirurgie thoracique). Piège D : la FED est mesurable et interprétable sous VSAI à toute valeur d'AI — c'est précisément l'effort résiduel du patient qui est évalué."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Une réunion de réanimation discute d'un patient de 78 ans, post-opératoire de pontage aorto-coronarien (triple pontage), dont la VM dure depuis 14 jours. Il a eu 4 EVS échouées dont la dernière hier. Il reste vigile mais fatigué après 10 minutes de pièce en T. L'échographie retrouve une dysfonction VG modérée (FEVG 35 %). La cause principale d'échec est plurifactorielle (cardiaque + VIDD). Le médecin senior propose une trachéotomie percutanée.",
+        "question": "Parmi les contre-indications relatives à la trachéotomie percutanée (TPC), laquelle est la plus pertinente à vérifier en PRIORITÉ chez ce patient ?",
+        "options": {
+          "A": "Âge > 75 ans",
+          "B": "Antécédent de pontage aorto-coronarien récent (sternotomie médiane)",
+          "C": "FEVG < 40 %",
+          "D": "Durée de VM > 7 jours"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la trachéotomie percutanée par dilatation (Ciaglia) nécessite une voie d'abord cervicale antérieure. La sternotomie médiane récente (post-PAC < 3-4 semaines) constitue une contre-indication relative majeure à la TPC car : la cicatrice sternale haute peut atteindre l'espace cervical bas, le risque hémorragique est augmenté (médiastin ouvert récent, anticoagulation probable), et le pontage lui-même peut modifier l'anatomie vasculaire cervicale. Dans ce contexte, la trachéotomie chirurgicale (si nécessaire) réalisée par un ORL ou un chirurgien thoracique est préférée, ou une TPC doit être discutée avec contrôle scanner et expertise séniorisée. Piège A : l'âge > 75 ans n'est pas une contre-indication à la TPC — la décision repose sur le bénéfice-risque clinique, pas sur un seuil d'âge. Piège C : la dysfonction VG modérée n'est pas une contre-indication à la TPC — elle justifie une optimisation hémodynamique péri-procédurale (remplissage prudent, support vasopresseur si besoin) mais ne contre-indique pas la procédure. Piège D : la durée de VM > 7 jours est précisément une indication, non une contre-indication, à la trachéotomie."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Patiente de 67 ans, IMC 29, post-opératoire de chirurgie abdominale majeure (hépatectomie droite). Extubée à J2 post-op. À H8, développe une détresse respiratoire (FR 32/min, SpO₂ 88 % sous 6 L/min d'O₂). On initie une VNI avec masque facial total : IPAP 14 cmH₂O, EPAP 8 cmH₂O, FiO₂ 0,60. À 40 min de VNI, SpO₂ remonte à 95 %, FR à 24/min. Le gaz du sang montre PaO₂ 78 mmHg, PaCO₂ 38 mmHg, pH 7,38.",
+        "question": "Quelle est la durée minimale recommandée de VNI (en heures cumulées sur 24 h) pour que la VNI soit efficace dans cette indication post-opératoire ?",
+        "options": {
+          "A": "2 à 4 heures par 24 h",
+          "B": "6 à 8 heures par 24 h (incluant une session nocturne)",
+          "C": "12 heures consécutives minimales par 24 h",
+          "D": "VNI continue (24 h/24 h) jusqu'à amélioration"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les recommandations pour la VNI dans l'insuffisance respiratoire post-opératoire et post-extubation préconisent des séances de VNI totales ≥ 6-8 heures par 24 h, incluant obligatoirement une session nocturne non interrompue (au moins 4-6 h consécutives la nuit), avec des plages de sevrage en OHD de jour. Ce schéma a montré son efficacité dans les études (Perrin AJRCCM 2007, Squadrone JAMA 2005). Piège A : 2-4 h/24 h est insuffisant — les bénéfices de la VNI (réexpansion alvéolaire, réduction du travail respiratoire) nécessitent une durée minimale ; en dessous de 6 h/24 h, l'efficacité sur la prévention de la réintubation n'est pas démontrée. Piège C : 12 h consécutives obligatoires n'est pas le standard recommandé — cela correspond à un schéma de VNI pour BPCO sévère ou obésité hypoventilante ; en post-opératoire, des fenêtres de sevrage sont souhaitables pour permettre alimentation, kinésithérapie et confort. Piège D : la VNI continue 24 h/24 h est associée à un inconfort majeur, une hypersalivation, des escarres faciales et une dépendance psychologique — réservée aux situations exceptionnelles de bridge vers une décision thérapeutique."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Patient de 50 ans, syndrome de Guillain-Barré sévère (AIDP), intubé depuis 3 semaines, aucune EVS réussie. La capacité vitale est de 800 mL (12 mL/kg de poids idéal). L'ENMG montre une atteinte axonale sévère (AMAN variant). Le patient est parfaitement vigile, anxieux, communique par écrit.",
+        "question": "Concernant la décision de trachéotomie chez ce patient, quelle affirmation est la plus exacte ?",
+        "options": {
+          "A": "La trachéotomie est contre-indiquée car le Guillain-Barré est potentiellement réversible — attendre la récupération neurologique",
+          "B": "La trachéotomie est indiquée et permet un sevrage progressif, une communication, une rééducation, et une réduction de la sédation — les bénéfices surpassent les risques chez ce patient éveillé",
+          "C": "La trachéotomie doit être différée jusqu'à récupération d'une CV > 1 500 mL (seuil de sécurité pour extubation)",
+          "D": "La trachéotomie percutanée est contre-indiquée dans le Guillain-Barré car le tonus musculaire cervical est insuffisant pour l'hyperextension nécessaire"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : dans le Guillain-Barré sévère avec VM prolongée > 3 semaines et atteinte axonale (récupération lente, > 6-12 mois attendue), la trachéotomie est clairement indiquée et recommandée. Elle permet : sevrage progressif de la sédation, communication (valve de phonation), alimentation orale éventuelle, rééducation respiratoire et motrice, réduction des PAV, confort psychologique majeur. La réversibilité potentielle ne contre-indique pas la trachéotomie qui pourra être retirée secondairement. Piège A : attendre la récupération neurologique dans un AMAN sévère expose à des mois de VM avec sonde d'intubation — les complications sont majeures (lésions laryngées, PAV, dépendance sédation) ; la réversibilité potentielle n'est pas une contre-indication. Piège C : le seuil CV > 1 500 mL ou > 20 mL/kg est un critère de surveillance de l'aggravation neurologique et d'indication à l'intubation — pas un critère de décision de trachéotomie, qui repose sur la durée prévisionnelle de VM. Piège D : l'hyperextension cervicale pour la TPC peut être adaptée (coussin sous les épaules) et le tonus musculaire cervical résiduel est généralement suffisant — ce n'est pas une contre-indication dans le Guillain-Barré."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Un interne présente en staff une patiente de 72 ans, insuffisance rénale chronique (DFG 22 mL/min/1,73m²), ventilée depuis 6 jours pour pneumonie bilatérale à pneumocoque. L'EVS du matin (30 min, pièce en T) montre : FR 18/min, SpO₂ 97 %, VT 420 mL, RSBI 43, hémodynamique stable, RASS 0. Le diurne urinaire est à 600 mL/24 h. L'interne souhaite extúber directement sans support post-extubation.",
+        "question": "Quel élément MANQUANT dans l'évaluation de cet interne constitue le risque d'échec d'extubation le plus probable et le plus sous-estimé ?",
+        "options": {
+          "A": "Absence de mesure du BNP pré-EVS",
+          "B": "Absence d'évaluation formelle de la déglutition et du pic de toux (PCF)",
+          "C": "Absence de gaz du sang artériel post-EVS",
+          "D": "Absence de radiographie thoracique de contrôle pré-extubation"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : une patiente de 72 ans, après 6 jours de VM pour pneumonie bilatérale sévère, est à haut risque de troubles de déglutition post-extubation (incidence 30-50 % après > 48 h de VM, plus élevée chez le sujet âgé et les pneumonies). L'absence d'évaluation de la déglutition (test de l'eau, évaluation orthophonique) et du pic de toux (PCF < 60 L/min = risque d'encombrement et d'inhalation) est la lacune principale. Les paramètres de l'EVS sont bons (RSBI 43, stabilité hémodynamique) — l'EVS ventilatoire est réussie, mais l'extubation peut échouer pour une cause non ventilatoire. Piège A : le BNP est utile en cas de suspicion de surcharge cardiovasculaire — ici l'hémodynamique est stable et les paramètres ventilatoires sont excellents ; bien que l'IRC soit un facteur de rétention hydrique, ce n'est pas la cause d'échec la plus probable. Piège C : un gaz du sang post-EVS est utile pour détecter une hypercapnie masquée (BPCO, obésité) — ici il n'y a pas de BPCO connue et la SpO₂ est à 97 %, ce n'est pas l'élément manquant le plus critique. Piège D : la radiographie thoracique est peu contributive à la décision d'extubation et non recommandée en routine — son absence n'est pas la lacune principale identifiée."
+      }
+    ]
   }
 ]
