@@ -3204,5 +3204,366 @@
         "explanation": "Réponse B correcte : une patiente de 72 ans, après 6 jours de VM pour pneumonie bilatérale sévère, est à haut risque de troubles de déglutition post-extubation (incidence 30-50 % après > 48 h de VM, plus élevée chez le sujet âgé et les pneumonies). L'absence d'évaluation de la déglutition (test de l'eau, évaluation orthophonique) et du pic de toux (PCF < 60 L/min = risque d'encombrement et d'inhalation) est la lacune principale. Les paramètres de l'EVS sont bons (RSBI 43, stabilité hémodynamique) — l'EVS ventilatoire est réussie, mais l'extubation peut échouer pour une cause non ventilatoire. Piège A : le BNP est utile en cas de suspicion de surcharge cardiovasculaire — ici l'hémodynamique est stable et les paramètres ventilatoires sont excellents ; bien que l'IRC soit un facteur de rétention hydrique, ce n'est pas la cause d'échec la plus probable. Piège C : un gaz du sang post-EVS est utile pour détecter une hypercapnie masquée (BPCO, obésité) — ici il n'y a pas de BPCO connue et la SpO₂ est à 97 %, ce n'est pas l'élément manquant le plus critique. Piège D : la radiographie thoracique est peu contributive à la décision d'extubation et non recommandée en routine — son absence n'est pas la lacune principale identifiée."
       }
     ]
+  },
+  {
+    "date": "2026-06-05",
+    "dateStr": "vendredi 5 juin",
+    "topic": "Prise en charge du choc hémorragique traumatique sévère : damage control resuscitation, transfusion massive et ratio thérapeutique, place des agents procoagulants et objectifs de l'hémostase en phase précoce",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le choc hémorragique traumatique sévère est la première cause de décès évitable en traumatologie, représentant 30 à 40 % des décès traumatiques. La 'triade létale' (hypothermie, acidose, coagulopathie) s'auto-entretient et doit être brisée dès la phase préhospitalière. La stratégie de Damage Control Resuscitation (DCR) intègre l'hémostase chirurgicale précoce, la restriction volémique, la transfusion massive équilibrée et les agents procoagulants dans une approche protocolisée et temporisée.",
+      "sections": [
+        {
+          "title": "Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **choc hémorragique** est défini par une perte sanguine aiguë entraînant une inadéquation entre apport et besoins en oxygène tissulaire. La classification ATLS distingue 4 classes selon le volume perdu, la fréquence cardiaque, la pression artérielle et le statut neurologique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Classe I** : perte < 750 mL (< 15 % volémie), FC normale, PA normale, pas de traitement requis",
+                "**Classe II** : perte 750–1500 mL (15–30 %), FC 100–120/min, PA maintenue, remplissage cristalloïdes",
+                "**Classe III** : perte 1500–2000 mL (30–40 %), FC > 120/min, PAS < 90 mmHg, transfusion nécessaire",
+                "**Classe IV** : perte > 2000 mL (> 40 %), FC > 140/min, choc profond, pronostic vital immédiat",
+                "**Damage Control Resuscitation (DCR)** : stratégie globale associant hypotension permissive, transfusion équilibrée (ratio CGR/PFC/plaquettes), restriction des cristalloïdes et correction précoce de la coagulopathie",
+                "**Damage Control Surgery (DCS)** : chirurgie écourtée visant le contrôle hémorragique et de la contamination, reportant la réparation définitive après stabilisation",
+                "**Coagulopathie Traumatique Aiguë (CTA)** : coagulopathie endogène présente dès l'impact chez 25–35 % des traumatisés sévères, distincte de la coagulopathie par dilution/hypothermie/acidose"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Volémie estimée adulte : 70 mL/kg (homme), 65 mL/kg (femme). Choc sévère = perte > 30 % volémie = > 2100 mL pour 70 kg."
+            },
+            {
+              "type": "warning",
+              "content": "La CTA (coagulopathie traumatique aiguë) n'est PAS une coagulopathie de dilution : elle précède tout remplissage, médiée par l'hypoperfusion tissulaire, la thrombomoduline soluble et l'activation de la Protéine C. Ne pas attendre les résultats biologiques pour initier la transfusion de PFC."
+            }
+          ]
+        },
+        {
+          "title": "Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **triade létale** associe hypothermie (< 35 °C), acidose métabolique (pH < 7,2) et coagulopathie. Ces trois composantes s'aggravent mutuellement : l'hypothermie inhibe les enzymes de la coagulation, l'acidose réduit l'activité du facteur X et la thrombine, et la coagulopathie amplifie le saignement qui aggrave l'hypoperfusion."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mécanisme de la CTA** : hypoperfusion → libération de thrombomoduline par l'endothélium lésé → activation de la Protéine C → inactivation des facteurs Va et VIIIa + activation de la fibrinolyse (PAI-1 inhibé)",
+                "**Hyperfibrinolyse** : présente chez 30 % des traumatisés sévères, associée à une mortalité x3 ; dépistée par TEG/ROTEM (LY30 > 3 % ou ML > 15 %)",
+                "**Effet de l'hypothermie** : à 33 °C, activité des facteurs de coagulation réduite de 40–50 % ; plaquettes dysfonctionnelles dès 34 °C",
+                "**Effet de l'acidose** : pH 7,2 → activité du facteur VIIa réduite de 90 % ; pH 7,0 → quasi-abolition de la génération de thrombine",
+                "**Dilution iatrogène** : chaque litre de cristalloïde ou colloïde dilue les facteurs de coagulation et les plaquettes, aggravant la coagulopathie",
+                "**Cercle vicieux** : saignement → hypoperfusion → CTA → saignement aggravé → instabilité hémodynamique → davantage de remplissage → dilution"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Seuil critique d'hypothermie coagulopathique : température centrale < 35 °C. Objectif de correction : T° centrale > 36 °C."
+            },
+            {
+              "type": "warning",
+              "content": "L'hyperfibrinolyse peut être masquée biologiquement (fibrinogène normal, TP normal) : seul le ROTEM/TEG permet un diagnostic rapide. Un EXTEM-ML > 15 % ou un FIBTEM-A5 < 10 mm signe une fibrinolyse significative justifiant l'acide tranexamique."
+            }
+          ]
+        },
+        {
+          "title": "Évaluation / Diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation de la gravité hémorragique combine des scores cliniques, biologiques et visuels. Le score **ABC (Assessment of Blood Consumption)** et le **TASH score** permettent de prédire le besoin de transfusion massive dès l'accueil. La biologie standard et le **ROTEM/TEG** orientent la stratégie de substitution en facteurs."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Score ABC** : ≥ 2/4 points (FC > 120, PAS ≤ 90, mécanisme pénétrant, FAST positif) prédit le besoin de transfusion massive avec Se 75 %, Sp 86 %",
+                "**Bilan biologique initial** : NFS, TP/TCA, fibrinogène, lactates, gaz du sang, ionogramme, créatinine, groupe sanguin-RAI, bilan hépatique",
+                "**ROTEM/TEG** : analyse viscoélastique en point of care, résultats en 5–15 min, guide la substitution ciblée en fibrinogène, facteurs, plaquettes",
+                "**EXTEM-CT** : évalue la voie extrinsèque (allongé si facteurs II, VII, X, V déficients ou anticoagulants)",
+                "**FIBTEM-A5** : reflet du fibrinogène fonctionnel ; < 10 mm → substitution en fibrinogène (concentré ou PFC)",
+                "**EXTEM-A5** : < 35 mm → thrombopénie ou dysfonction plaquettaire",
+                "**Lactates** : > 4 mmol/L signe une hypoperfusion sévère ; objectif de normalisation à 2 mmol/L en 6 h",
+                "**Déficit en base (BE)** : BE < −6 mEq/L corrèle avec la gravité et le besoin transfusionnel"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Critères de transfusion massive : ≥ 10 CGR/24 h, ou ≥ 3 CGR/h sur 3 heures consécutives, ou remplacement > 50 % de la volémie en 3 h."
+            },
+            {
+              "type": "warning",
+              "content": "Le TP et le TCA sont des examens statiques peu adaptés au monitoring de la coagulopathie traumatique en phase aiguë (résultats différés 45–60 min, n'évaluent pas la fibrinolyse ni la fonction plaquettaire). Ils ne doivent pas retarder la décision thérapeutique en contexte hémorragique actif."
+            }
+          ]
+        },
+        {
+          "title": "Stratégie de prise en charge — Damage Control Resuscitation",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **DCR** repose sur 4 piliers : (1) contrôle rapide du saignement (chirurgie/IR/garrot), (2) hypotension permissive, (3) transfusion équilibrée avec ratio CGR/PFC/plaquettes, (4) correction précoce de la coagulopathie par agents hémostatiques. Elle doit être initiée en préhospitalier et poursuivie en salle de déchocage."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Hypotension permissive** : objectif PAS 80–90 mmHg (PAM 50–65 mmHg) jusqu'au contrôle chirurgical du saignement, SAUF traumatisme crânien associé (TCC : PAM ≥ 80 mmHg) ou lésion médullaire",
+                "**Restriction des cristalloïdes** : limiter à 1 L maximum en phase préhospitalière ; chaque litre supplémentaire augmente la mortalité de 6 % (étude PROPPR 2015)",
+                "**Ratio transfusionnel équilibré** : CGR/PFC/CPA = 1:1:1 (recommandation grade 1C, ESICM/ESA 2023), objectif ratio plasmatique ≥ 1:1:1",
+                "**Plasma Lyophilisé (PLYO)** : disponible en préhospitalier militaire et SMUR en France depuis 2020 ; avantage = pas de décongélation, activation rapide ; contient tous les facteurs de coagulation",
+                "**Fibrinogène** : objectif > 2 g/L (> 1,5 g/L selon ESICM 2023 grade 1B) ; concentré de fibrinogène humain 2–4 g IV si FIBTEM-A5 < 10 mm ou fibrinogène < 1,5 g/L",
+                "**Acide tranexamique (ATX)** : 1 g IV en 10 min dans les 3 premières heures (idéalement < 1 h) puis 1 g en 8 h ; CRASH-2 : réduit la mortalité de 1,5 % si < 3 h, l'augmente si > 3 h",
+                "**Calcium** : apporter systématiquement lors de transfusion massive (ionised Ca²⁺ cible > 1,1 mmol/L) ; 1 g CaCl2 IV ou 3 g gluconate Ca²⁺ IV pour 4 CGR transfusés",
+                "**Complexe prothrombinique (CCP)** : 25 UI/kg (max 2500 UI) si sous anticoagulants anti-vitamine K ou en l'absence de PFC disponible",
+                "**Facteur VIIa recombinant (rFVIIa)** : usage compassionnel en sauvetage (hors AMM trauma), 90–120 µg/kg IV, après correction de l'acidose (pH > 7,2), hypothermie (T > 35 °C) et thrombopénie (plaquettes > 50 G/L)",
+                "**Plaquettes** : objectif > 50 G/L (> 100 G/L si TCC ou saignement continu) ; 1 CPA élève les plaquettes de 30–50 G/L"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "ATX : dose de charge 1 g IV en 10 min DANS LES 3 PREMIÈRES HEURES post-traumatisme (efficacité si < 1 h ++), suivi de 1 g en perfusion sur 8 h. Contre-indiqué > 3 h (augmentation mortalité, CRASH-2)."
+            },
+            {
+              "type": "formula",
+              "content": "Objectifs biologiques en phase hémorragique active : Hb > 70–80 g/L (> 100 g/L si instabilité ou TCC) | Plaquettes > 50 G/L (> 100 si TCC) | Fibrinogène > 1,5–2 g/L | TP > 40 % | pH > 7,2 | T° > 35 °C | Calcium ionisé > 1,1 mmol/L."
+            },
+            {
+              "type": "warning",
+              "content": "L'ATX est CONTRE-INDIQUÉ après 3 heures post-traumatisme : l'étude CRASH-2 montre une augmentation de mortalité toutes causes (OR 1,44) et de mortalité hémorragique dans ce délai. De plus, après 3 h, la fibrinolyse réactionnelle physiologique (nécessaire à la recanalisation) est inhibée, aggravant le risque thromboembolique."
+            },
+            {
+              "type": "warning",
+              "content": "Ne jamais administrer le rFVIIa sans avoir corrigé préalablement : pH > 7,2, température > 35 °C, fibrinogène > 1 g/L et plaquettes > 50 G/L. En dessous de ces seuils, le rFVIIa est inefficace et expose à un risque thromboembolique artériel sévère (AVC, IDM)."
+            }
+          ]
+        },
+        {
+          "title": "Complications et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "La transfusion massive expose à des complications spécifiques qui aggravent le pronostic si non anticipées. La **triade létale** doit être corrigée en parallèle du contrôle hémorragique, et les complications transfusionnelles doivent être reconnues rapidement."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**TRALI (Transfusion-Related Acute Lung Injury)** : œdème pulmonaire non cardiogénique < 6 h post-transfusion, lié aux anticorps anti-HNA/HLA ; traitement symptomatique, ventilation protectrice, contre-indication aux diurétiques",
+                "**TACO (Transfusion-Associated Circulatory Overload)** : OAP par surcharge, FR 1–8 % des transfusions massives ; traitement : diurétiques, VNI/IOT",
+                "**Hypocalcémie ionisée** : le citrate des poches sanguines chélate le calcium ; surveillance ionogramme toutes les 2 CGR, supplémentation systématique",
+                "**Hyperkaliémie** : libération de K⁺ par hémolyse des poches (risque surtout avec CGR > 14 jours) ; ECG systématique lors de transfusion massive rapide",
+                "**Hypothermie par transfusion** : réchauffer les produits sanguins à 37–40 °C via réchauffeur de perfusion (ex. Level 1, Belmont) ; objectif T° centrale > 36 °C",
+                "**CID (Coagulation Intravasculaire Disséminée)** : complication tardive ou en cas de retard à l'hémostase ; traitement : contrôle de la cause + substitution ciblée en PFC, fibrinogène, plaquettes",
+                "**Syndrome du compartiment abdominal** : complication du damage control avec pression intra-abdominale > 20 mmHg + dysfonction d'organe ; prévention par abdomen ouvert temporaire (laparostomie)",
+                "**ARDS post-traumatique** : fréquent après transfusion massive et choc prolongé ; ventilation protectrice précoce (Vt 6 mL/kg, PEP 5–8 cmH2O)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Syndrome du compartiment abdominal : pression intra-abdominale (PIA) > 20 mmHg + au moins une défaillance d'organe = indication de décompression chirurgicale."
+            },
+            {
+              "type": "warning",
+              "content": "La thromboprophylaxie VEINEUSE doit être initiée le plus tôt possible après contrôle de l'hémostase (généralement 24–48 h post-opératoire) : le traumatisé sévère est à très haut risque de TVP/EP (risque relatif x 13). Ne pas omettre les moyens mécaniques (compression pneumatique intermittente) dès l'admission."
+            }
+          ]
+        },
+        {
+          "title": "Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les recommandations internationales sont convergentes (ESICM 2023, ESA/ESICM 2023, SFAR/SRLF 2021, EAST 2022) et insistent sur la précocité, le monitoring viscoélastique et la transfusion équilibrée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Acide tranexamique** : administration < 3 h (idéalement < 1 h) post-traumatisme, 1 g IV bolus + 1 g en 8 h — Grade 1A (ESICM 2023, CRASH-2)",
+                "**Ratio CGR/PFC/Plaquettes 1:1:1** : recommandé pour les transfusions massives — Grade 1C (PROPPR Trial, ESICM 2023)",
+                "**Fibrinogène** : objectif > 1,5 g/L (minimum), préférence pour > 2 g/L en hémorragie active — Grade 1B (ESICM 2023)",
+                "**Monitoring viscoélastique (ROTEM/TEG)** : recommandé pour guider la substitution en facteurs vs transfusion empirique — Grade 1B (ESICM 2023)",
+                "**Hypotension permissive** : PAS cible 80–90 mmHg jusqu'au contrôle chirurgical (hors TCC) — Grade 1C (ESICM 2023, EAST 2022)",
+                "**Restriction des cristalloïdes** : limiter à 1–1,5 L maximum avant contrôle hémorragique — Grade 1B (ESICM 2023)",
+                "**Calcium** : supplémenter pour maintenir Ca²⁺ ionisé > 1,1 mmol/L — Grade 1C (ESICM 2023)",
+                "**Plaquettes** : objectif > 50 G/L (> 100 G/L si TCC associé ou saignement persistant) — Grade 1C (ESICM 2023)",
+                "**rFVIIa** : usage compassionnel en dernier recours, pas de recommandation de grade A ; réservé après échec des mesures standards — Grade 2C (ESICM 2023)",
+                "**Plasma lyophilisé préhospitalier** : recommandé si disponible pour initier la réanimation hémostatique dès le préhospitalier — Grade 2B (ESICM 2023, REACTing 2021)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Critère End-point de réanimation (sortie du DCR) : lactates < 2 mmol/L, BE > −6 mEq/L, débits urinaires > 0,5 mL/kg/h, normalisation du ROTEM, T° > 36 °C, pH > 7,35."
+            },
+            {
+              "type": "warning",
+              "content": "La stratégie DCR n'est PAS une réanimation conventionnelle 'améliorée' : elle impose une RESTRICTION active des cristalloïdes et une acceptation temporaire de l'hypotension. Tolérer une PAS à 85 mmHg en attendant le contrôle chirurgical est délibéré et recommandé (grade 1C), sauf TCC ou blessé médullaire."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**ATX avant 3 heures** : l'acide tranexamique (1 g IV bolus) doit être administré le plus tôt possible (< 1 h idéal) et JAMAIS après 3 h post-traumatisme (augmente la mortalité, CRASH-2 grade 1A)",
+        "**Ratio 1:1:1** : la transfusion massive doit respecter un ratio CGR/PFC/Plaquettes de 1:1:1 pour éviter la coagulopathie par dilution et normaliser le rapport plasmatique (grade 1C, PROPPR 2015)",
+        "**CTA ≠ coagulopathie de dilution** : la coagulopathie traumatique aiguë est présente chez 25–35 % des traumatisés dès l'arrivée, avant tout remplissage ; elle est médiée par l'activation de la Protéine C et impose un traitement procoagulant immédiat",
+        "**Calcium systématique** : chélation du calcium par le citrate lors de toute transfusion massive ; supplémenter pour Ca²⁺ ionisé > 1,1 mmol/L (1 g CaCl2 toutes les 4 CGR)",
+        "**ROTEM/TEG guide la stratégie** : le monitoring viscoélastique permet une substitution ciblée (fibrinogène si FIBTEM-A5 < 10 mm, plaquettes si EXTEM-A5 < 35 mm, ATX si fibrinolyse ML > 15 %) et réduit la consommation de produits sanguins vs transfusion empirique"
+      ],
+      "references": [
+        "Spahn DR et al. — Management of bleeding and coagulopathy following major trauma: an updated European guideline (ESICM/ESA) — Critical Care 2023",
+        "Holcomb JB et al. (PROPPR Trial) — Transfusion of plasma, platelets, and red blood cells in a 1:1:1 vs 1:1:2 ratio — JAMA 2015;313(5):471-482",
+        "CRASH-2 Collaborators — Effects of tranexamic acid on death, vascular occlusive events, and blood transfusion in trauma patients — Lancet 2010;376:23-32 (confirmé CRASH-3 2019)",
+        "Moore HB et al. — Acute Fibrinolysis Shutdown after Injury Occurs Frequently and Increases Mortality — J Am Coll Surg 2019 (données fondatrices, toujours référencées 2023)",
+        "SFAR/SRLF — Transfusion en réanimation : recommandations de pratique clinique — Anesthésie & Réanimation 2021",
+        "Cannon JW — Hemorrhagic Shock — New England Journal of Medicine 2018;378(4):370-379 (revue fondamentale, toujours citée)",
+        "Nantais J et al. — Prehospital resuscitation with lyophilized plasma — Journal of Trauma and Acute Care Surgery 2021",
+        "EAST Practice Management Guidelines — Management of coagulopathy in hemorrhagic shock — Journal of Trauma and Acute Care Surgery 2022",
+        "Rossaint R et al. — The STOP the Bleeding Campaign and update of European guidelines on management of major bleeding — Critical Care 2023",
+        "Johansson PI, Stensballe J — Hemostatic resuscitation for massive bleeding: the paradigm of plasma and platelets — Transfusion 2020"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un homme de 35 ans, 75 kg, est admis en déchocage après un AVP haute énergie. À l'arrivée : PAS 78 mmHg, FC 128/min, GCS 15, FAST positif (épanchement péri-hépatique), T° 35,8 °C. Délai trauma-arrivée : 45 minutes. Bilan : Hb 8,2 g/dL, plaquettes 145 G/L, fibrinogène 1,8 g/L, pH 7,18, lactates 6,2 mmol/L.",
+        "question": "Quelle est la première mesure pharmacologique prioritaire à initier chez ce patient ?",
+        "options": {
+          "A": "Transfusion de 4 CGR O négatif en urgence vitale immédiate",
+          "B": "Administration d'acide tranexamique 1 g IV en 10 minutes",
+          "C": "Injection de concentré de fibrinogène 4 g IV car fibrinogène < 2 g/L",
+          "D": "Correction de l'acidose par bicarbonate de sodium 42 ‰ 250 mL IV"
+        },
+        "correct": "B",
+        "explanation": "L'acide tranexamique (ATX) doit être administré en PRIORITÉ dans les 3 premières heures (idéalement < 1 h) : ce patient est à J0 H0+45 min, donc dans la fenêtre d'efficacité maximale. L'ATX réduit la mortalité hémorragique de 30 % si < 1 h (CRASH-2). Piège A : la transfusion de CGR est certes nécessaire mais n'est pas pharmacologique et n'est pas la mesure la plus urgente avant l'ATX ; l'Hb à 8,2 g/dL ne justifie pas une urgence vitale immédiate isolément. Piège C : le fibrinogène à 1,8 g/L est au-dessus du seuil critique (1,5 g/L) ; de plus, sans ROTEM disponible, l'ATX est la priorité absolue car l'hyperfibrinolyse non traitée va consommer le fibrinogène. Piège D : les bicarbonates sont contre-indiqués en acidose métabolique de perfusion (acidose lactique) car ils aggravent le pH intracellulaire et l'acidose tissulaire ; la correction de l'acidose passe par le contrôle du saignement et la restauration de la perfusion."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Même patient. L'ATX a été administré, une transfusion massive est initiée (ratio 1:1:1). Après 8 CGR, 8 PFC et 2 CPA, le ROTEM montre : EXTEM-CT 78 s (N < 80 s), EXTEM-A5 28 mm (N > 35 mm), FIBTEM-A5 14 mm (N > 10 mm). Le bilan biologique montre plaquettes 48 G/L, fibrinogène 2,1 g/L, pH 7,24, T° 35,2 °C.",
+        "question": "Quelle est l'interprétation ROTEM et la substitution la plus adaptée ?",
+        "options": {
+          "A": "FIBTEM-A5 normal → pas de substitution en fibrinogène ; transfuser des plaquettes en priorité pour EXTEM-A5 bas",
+          "B": "EXTEM-CT normal → voie extrinsèque préservée ; la thrombopénie relative est la cible prioritaire avec 2 CPA supplémentaires",
+          "C": "EXTEM-A5 bas avec FIBTEM-A5 normal → déficit fonctionnel plaquettaire prédominant, administrer 2 CPA supplémentaires",
+          "D": "FIBTEM-A5 bas (< 10 mm) → substituer en fibrinogène ; mais ici FIBTEM-A5 = 14 mm, donc thrombopénie isolée → 2 CPA"
+        },
+        "correct": "C",
+        "explanation": "La clé du ROTEM est l'algorithme différentiel : EXTEM-A5 bas (28 mm < 35 mm) avec FIBTEM-A5 normal (14 mm > 10 mm) signifie que le fibrinogène est suffisant (confirmé biologiquement à 2,1 g/L) mais que les plaquettes sont déficitaires en nombre OU en fonction (ici plaquettes = 48 G/L < 50 G/L). La substitution prioritaire est 2 CPA. Piège A : le FIBTEM-A5 à 14 mm EST normal (> 10 mm), donc pas de substitution en fibrinogène — mais la conclusion est la même (plaquettes). Le piège réside dans l'interprétation du seuil. Piège B : partiellement vrai mais incomplet ; dire 'voie extrinsèque préservée' est correct mais ce n'est pas l'analyse principale du cas. Piège D : formulation piégeuse — FIBTEM-A5 = 14 mm N'est PAS < 10 mm (seuil de substitution), donc pas d'indication fibrinogène ; la réponse D contient une prémisse fausse ('FIBTEM-A5 bas') et une conclusion correcte, ce qui en fait un distracteur trompeur à ne pas cocher."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un traumatisé crânien sévère (GCS 7, hématome extradural à l'imagerie) présente également un hémopneumothorax gauche avec instabilité hémodynamique. PAS = 72 mmHg, FC = 138/min.",
+        "question": "Quel objectif tensionnel de réanimation est adapté à ce patient, et pourquoi l'hypotension permissive est-elle contre-indiquée ?",
+        "options": {
+          "A": "PAS cible 80–90 mmHg : l'hypotension permissive s'applique car le saignement thoracique prime sur le TCC",
+          "B": "PAM cible ≥ 80 mmHg : chez le traumatisé crânien avec HTIC, une PAM < 80 mmHg aggrave la PPC et le pronostic neurologique",
+          "C": "PAS cible > 110 mmHg : le TCC impose une normo- voire hypertension pour maintenir la PPC",
+          "D": "PAM cible ≥ 65 mmHg : objectif standard de réanimation hémodynamique valable dans tous les chocs"
+        },
+        "correct": "B",
+        "explanation": "En cas de traumatisme crânio-cérébral sévère associé, l'hypotension permissive est formellement CONTRE-INDIQUÉE : la pression de perfusion cérébrale (PPC = PAM − PIC) doit être maintenue ≥ 60 mmHg (objectif PAM ≥ 80 mmHg selon les guidelines BTF 2023). Une PAM < 80 mmHg chez un TCC sévère double la mortalité neurologique. Piège A : l'hypotension permissive PAS 80–90 mmHg est une erreur classique d'interne — elle s'applique uniquement en l'ABSENCE de TCC. Piège C : PAS > 110 mmHg est excessif et risque d'aggraver le saignement actif non contrôlé ; la cible est PAM ≥ 80 mmHg (et non PAS > 110). Piège D : PAM ≥ 65 mmHg est l'objectif standard du choc septique mais INSUFFISANT en cas de TCC avec HTIC suspectée."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Un patient sous warfarine (INR = 4,2 pour FANV) est admis en choc hémorragique traumatique après une chute. Le scanner révèle un hémopéritoine massif nécessitant une laparotomie d'hémostase en urgence.",
+        "question": "Quelle est la stratégie de neutralisation de l'anticoagulant la plus appropriée ?",
+        "options": {
+          "A": "PFC 15 mL/kg IV pour correction rapide de l'INR et apport en tous les facteurs vitamine K dépendants",
+          "B": "Vitamine K1 10 mg IV seule : traitement de référence de surdosage aux AVK avant chirurgie urgente",
+          "C": "Concentré de complexe prothrombinique (CCP) 25 UI/kg + vitamine K1 5–10 mg IV pour réversion rapide et durable",
+          "D": "Andexanet alpha IV : antidote spécifique des AVK recommandé en urgence hémorragique"
+        },
+        "correct": "C",
+        "explanation": "La réversion d'urgence des AVK en contexte hémorragique chirurgical repose sur CCP (25 UI/kg, max 2500 UI) associé à la Vitamine K1 IV (5–10 mg). Le CCP normalise l'INR en 10–15 min (délai chirurgical compatible), alors que la Vitamine K1 prend 4–6 h seule. L'association permet une réversion rapide (CCP) ET durable (Vit K1 assure la synthèse hépatique des facteurs). Piège A : le PFC nécessite des volumes importants (1–1,5 L pour INR 4), expose au TACO et TRALI, avec un délai de décongélation 20–30 min ; il est inférieur au CCP en urgence chirurgicale AVK selon les guidelines. Piège B : la Vitamine K1 seule est totalement insuffisante en urgence chirurgicale (délai 4–6 h, pas de correction immédiate) ; elle n'est jamais utilisée seule dans ce contexte. Piège D : l'Andexanet alpha est l'antidote des anti-Xa directs (rivaroxaban, apixaban), PAS des AVK ; son administration dans ce contexte serait une erreur médicamenteuse grave."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "En salle de déchocage, un patient reçoit sa 12ème unité de CGR en 2 heures. L'infirmière signale une tétanie des extrémités et un allongement du QT sur le monitorage ECG. La dernière mesure de Ca²⁺ ionisé datait de 1 heure (valeur : 1,05 mmol/L).",
+        "question": "Quelle est l'origine de cette complication et la prise en charge appropriée ?",
+        "options": {
+          "A": "Hypomagnésémie par dilution ; administrer 2 g MgSO4 IV et monitorer le QTc",
+          "B": "Hypocalcémie ionisée par chélation citrée ; administrer 1 g CaCl2 IV (ou 3 g gluconate de calcium) et contrôler Ca²⁺ ionisé 15 min après",
+          "C": "Hyperkaliémie par lyse des hématies transfusées ; réaliser ECG 12 dérivations et administrer gluconate de calcium 1 g IV + insuline/glucose",
+          "D": "Hypocalcémie fonctionnelle par alcalose métabolique transfusionnelle ; corriger le pH par ventilation mécanique"
+        },
+        "correct": "B",
+        "explanation": "La transfusion massive expose à une hypocalcémie ionisée par chélation du calcium par le citrate (anticoagulant des poches sanguines). À 12 CGR en 2 heures, la charge citrée dépasse la capacité hépatique de métabolisation. Les signes : tétanie, allongement du QT, hypotension réfractaire. Traitement : 1 g CaCl2 IV (ou 3 g gluconate Ca²⁺ moins irritant) + contrôle Ca²⁺ ionisé. Objectif : Ca²⁺ ionisé > 1,1 mmol/L. Piège A : l'hypomagnésémie peut allonger le QT mais n'explique pas la tétanie aiguë dans ce contexte transfusionnel ; l'hypocalcémie est le diagnostic de premier appel. Piège C : l'hyperkaliémie transfusionnelle peut allonger le QT et faire vomir/tétaniser, mais la tétanie (Chvostek/Trousseau) est spécifique de l'hypocalcémie ; de plus le traitement par insuline/glucose n'est pas prioritaire ici. Piège D : l'alcalose post-transfusionnelle est une entité réelle (métabolisme du citrate en bicarbonate) mais ne cause pas de tétanie aiguë immédiate lors de transfusion en cours."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Un patient de 28 ans (80 kg) est en choc hémorragique réfractaire après polytraumatisme. Malgré 14 CGR, 14 PFC, 3 CPA, 4 g fibrinogène, 2 g ATX, Ca²⁺ normalisé, la chirurgie d'hémostase est en cours mais le saignement diffus persiste. Le ROTEM montre une normalisation des paramètres (EXTEM-A5 42 mm, FIBTEM-A5 16 mm, CT 68 s). Bilan : pH 7,22, T° 34,8 °C, plaquettes 58 G/L, fibrinogène 2,3 g/L.",
+        "question": "Le chirurgien demande l'administration de rFVIIa (NovoSeven®). Quelle est votre attitude ?",
+        "options": {
+          "A": "Administrer 90 µg/kg IV immédiatement : c'est la dose recommandée en sauvetage et les facteurs de coagulation sont corrigés",
+          "B": "Refuser l'administration : le ROTEM est normalisé, donc il n'y a pas d'indication au rFVIIa dans ce contexte",
+          "C": "Différer l'administration jusqu'à correction de l'hypothermie (T° > 35 °C) et de l'acidose (pH > 7,2 est borderline, viser > 7,3) avant injection, puis 90–120 µg/kg IV si persistance du saignement",
+          "D": "Administrer 45 µg/kg IV (demi-dose) en raison de la thrombopénie relative (plaquettes 58 G/L < seuil recommandé de 100 G/L)"
+        },
+        "correct": "C",
+        "explanation": "Le rFVIIa est inefficace et dangereux si les conditions biologiques minimales ne sont pas réunies. Les prérequis OBLIGATOIRES avant administration : pH > 7,2 (ici pH = 7,22, borderline, préférable d'attendre > 7,3), T° > 35 °C (ici 34,8 °C — insuffisant), fibrinogène > 1 g/L (OK à 2,3 g/L), plaquettes > 50 G/L (ici 58 G/L, limite acceptable). La T° est insuffisante (< 35 °C) : en dessous, l'activité enzymatique du rFVIIa est fortement réduite et le risque thromboembolique (AVC, IDM) augmente sans bénéfice hémostatique. Dose correcte si conditions réunies : 90–120 µg/kg IV. Piège A : administrer maintenant malgré T° 34,8 °C est une erreur ; l'hypothermie rend le rFVIIa quasi-inefficace. Piège B : le ROTEM normalisé indique que le saignement diffus n'est pas d'origine factorielle ou plaquettaire, mais le rFVIIa peut avoir un rôle en amplificateur de la génération de thrombine sur site chirurgical ; l'indication reste valide si conditions remplies. Piège D : la demi-dose n'existe pas dans les protocoles validés ; le seuil plaquettaire pour le rFVIIa est > 50 G/L (et non 100 G/L comme pour le TCC)."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Une patiente de 55 ans développe, 90 minutes après une transfusion de 6 CGR, une détresse respiratoire aiguë avec SpO2 à 84 % sous O2 15 L/min, fièvre à 38,8 °C, hypotension à PAS 85 mmHg et infiltrats bilatéraux à la radio de thorax. Le bilan cardiaque (BNP, ETT) est normal. Elle n'est pas en surcharge volémique (PVC 8 mmHg).",
+        "question": "Quel diagnostic doit être évoqué en priorité et quelle est la prise en charge ?",
+        "options": {
+          "A": "TACO (Transfusion-Associated Circulatory Overload) : diurèse forcée par furosémide 40 mg IV et restriction hydrique",
+          "B": "TRALI (Transfusion-Related Acute Lung Injury) : arrêt de la transfusion, ventilation mécanique protectrice, traitement symptomatique sans diurétiques",
+          "C": "Sepsis transfusionnel par contamination bactérienne : hémocultures, antibiotiques large spectre, noradrénaline",
+          "D": "SDRA post-traumatique : intubation-ventilation, corticothérapie précoce à 1 mg/kg/j méthylprednisolone"
+        },
+        "correct": "B",
+        "explanation": "Le tableau est typique du TRALI : détresse respiratoire aiguë < 6 h post-transfusion, infiltrats bilatéraux non cardiogéniques, absence de surcharge (BNP normal, PVC normale, bilan cardiaque normal). Mécanisme : anticorps anti-HNA ou anti-HLA dans le produit transfusé → activation des neutrophiles → lésion capillaire pulmonaire. Traitement : arrêt immédiat de la transfusion, intubation-ventilation protectrice (Vt 6 mL/kg, PEP 5–8 cmH2O), JAMAIS de diurétiques (aggrave la déplétion volémique sans bénéfice sur l'œdème lésionnel). Piège A : le TACO est possible mais exclu ici par BNP normal et PVC basse ; surtout, les diurétiques sont contre-indiqués dans le TRALI et pourraient être délétères. Piège C : le sepsis transfusionnel est possible (fièvre + hypotension) mais le tableau respiratoire avec infiltrats bilatéraux rapide post-transfusion oriente vers le TRALI ; les hémocultures et antibios peuvent compléter mais ne sont pas le premier diagnostic. Piège D : la corticothérapie dans le SDRA/TRALI n'a pas de preuve d'efficacité en phase précoce (< 24 h) et n'est pas recommandée en 1ère intention."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Un patient est admis en choc hémorragique post-traumatique. Le ROTEM montre à H0+20 min : EXTEM-ML (Maximum Lysis) = 24 %, FIBTEM-A5 = 8 mm, EXTEM-A5 = 22 mm. Le bilan biologique est en cours.",
+        "question": "Quelle est la première interprétation et conduite à tenir devant ce ROTEM ?",
+        "options": {
+          "A": "Fibrinolyse et déficit en fibrinogène associés : administrer ATX 1 g IV + concentré de fibrinogène 3–4 g IV en priorité",
+          "B": "Thrombopénie isolée (EXTEM-A5 bas) avec fibrinolyse réactionnelle ; transfuser 2 CPA et observer l'évolution",
+          "C": "EXTEM-ML élevé signe une anticoagulation thérapeutique ; rechercher une prise d'anticoagulant et administrer CCP",
+          "D": "Résultats ROTEM non interprétables < 30 min post-traumatisme ; attendre le bilan biologique standard avant de décider"
+        },
+        "correct": "A",
+        "explanation": "Ce ROTEM montre une triple anomalie : hyperfibrinolyse (ML = 24 % >> seuil 15 %), déficit en fibrinogène (FIBTEM-A5 = 8 mm < seuil 10 mm) et déficit global de l'hémostase (EXTEM-A5 = 22 mm < 35 mm). Conduite : ATX 1 g IV EN PRIORITÉ (anti-fibrinolytique, stoppe la lyse du fibrinogène) + concentré de fibrinogène 3–4 g IV (FIBTEM-A5 < 10 mm). Le traitement de la fibrinolyse doit précéder la substitution en fibrinogène car sans ATX, le fibrinogène apporté serait rapidement lysé. Piège B : l'EXTEM-A5 bas est partiellement expliqué par le déficit en fibrinogène (qui contribue à la rigidité du caillot) et la fibrinolyse ; les plaquettes ne sont pas la cible principale ici, le FIBTEM-A5 oriente vers le fibrinogène. Piège C : le ML élevé en contexte traumatique signe une fibrinolyse endogène (activation de la Protéine C, PAI-1 inhibé), pas une anticoagulation thérapeutique. Piège D : le ROTEM est précisément un outil de point-of-care créé pour guider la transfusion en temps réel (résultats < 15 min) ; attendre le bilan standard est une erreur méthodologique majeure dans ce contexte."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un polytraumatisé en damage control resuscitation reçoit son 18ème CGR. L'infirmière de réanimation signale une pression intra-abdominale (mesure vésicale) à 24 mmHg, une oligurie (0,2 mL/kg/h depuis 3 heures), et des pressions de ventilation qui augmentent (Ppeak 42 cmH2O, Pplat 38 cmH2O).",
+        "question": "Quel est le diagnostic et la prise en charge de première intention ?",
+        "options": {
+          "A": "ARDS post-transfusionnel : augmenter la PEP à 14 cmH2O et décubitus ventral",
+          "B": "Syndrome du compartiment abdominal (SCA) : décompression chirurgicale urgente (laparostomie) après confirmation de la stabilisation hémodynamique relative",
+          "C": "Hypertension intra-abdominale (HIA) grade III sans SCA : réduire les apports liquidiens et réévaluer à 2 heures",
+          "D": "Distension intestinale post-opératoire : néostigmine 2 mg IV et sonde rectale de décompression"
+        },
+        "correct": "B",
+        "explanation": "Le tableau est typique du Syndrome du Compartiment Abdominal (SCA) : PIA > 20 mmHg (ici 24 mmHg) + au moins une dysfonction d'organe (oligurie = rein, augmentation Pplat = poumon). La définition de la WSACS requiert PIA > 20 mmHg ET dysfonction d'organe nouvelle. Indication de décompression chirurgicale urgente (laparostomie ou résection de plaque prothétique). La laparostomie est le seul traitement définitif. Piège A : l'ARDS post-transfusionnel (TRALI) expliquerait l'augmentation des pressions ventilatoires mais pas l'association oligurie + PIA > 20 mmHg ; l'augmentation de PEP en SCA aggraverait le retour veineux déjà compromis. Piège C : HIA grade III = PIA 16–20 mmHg ; ici PIA = 24 mmHg = grade IV (> 20 mmHg) AVEC défaillances d'organes = SCA avéré. Attendre 2 heures est une erreur dans un SCA constitué. Piège D : la néostigmine traite l'iléus fonctionnel (pseudo-obstruction colique) mais est totalement inadaptée dans un SCA post-traumatique massif par œdème viscéral et remplissage."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Lors d'une staff de traumatologie, un interne propose de traiter un polytraumatisé stabilisé (J3 post-trauma, Hb 9,5 g/dL, asymptomatique, SvO2 72 %, pas de saignement actif) par 2 CGR supplémentaires pour 'optimiser l'oxygénation' et préparer une chirurgie différée.",
+        "question": "Quelle est la position correcte concernant les seuils transfusionnels en phase post-hémorragique stabilisée ?",
+        "options": {
+          "A": "Transfuser car Hb < 10 g/dL : seuil classique en réanimation chirurgicale post-traumatique pour prévenir l'ischémie d'organe",
+          "B": "Ne pas transfuser : en phase stable post-hémorragique, le seuil transfusionnel restrictif est Hb < 7 g/dL (Hb 7–9 g/dL selon contexte) ; Hb 9,5 g/dL ne justifie pas la transfusion",
+          "C": "Transfuser si chirurgie programmée dans les 24 h : seuil péri-opératoire = Hb 10 g/dL pour chirurgie majeure",
+          "D": "Ne pas transfuser mais perfuser du fer IV : l'anémie post-traumatique est toujours fonctionnelle et répond au fer"
+        },
+        "correct": "B",
+        "explanation": "En phase post-hémorragique stabilisée, les recommandations (SFAR 2021, TRICC Trial, TRISS Trial) préconisent une stratégie RESTRICTIVE : transfusion si Hb < 7 g/dL en l'absence de syndrome coronarien ou insuffisance cardiaque sévère, ou Hb < 8 g/dL en cas de cardiopathie ischémique. Une Hb à 9,5 g/dL chez un patient asymptomatique avec SvO2 correcte (72 %) ne justifie PAS la transfusion. La stratégie restrictive réduit la mortalité par rapport à la stratégie libérale (TRICC 1999, confirmé par TRISS 2014). Piège A : le seuil Hb < 10 g/dL est une pratique ancienne abandonnée depuis le TRICC Trial (1999) ; il est associé à une surmortalité et une augmentation des complications infectieuses et immunologiques. Piège C : il n'existe pas de seuil transfusionnel péri-opératoire universel à 10 g/dL ; le seuil en chirurgie majeure cardiaque est Hb < 8 g/dL (SFAR), et encore adapté au contexte. Piège D : le fer IV est utile dans l'anémie ferriprive ou post-opératoire différée, mais une Hb à 9,5 g/dL asymptomatique ne requiert ni transfusion ni fer IV en urgence ; l'anémie post-traumatique aiguë est d'abord une anémie de déplétion (perte + inflammation) et non systématiquement ferriprive."
+      }
+    ]
   }
 ]
