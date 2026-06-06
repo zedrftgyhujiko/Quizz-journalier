@@ -3565,5 +3565,383 @@
         "explanation": "En phase post-hémorragique stabilisée, les recommandations (SFAR 2021, TRICC Trial, TRISS Trial) préconisent une stratégie RESTRICTIVE : transfusion si Hb < 7 g/dL en l'absence de syndrome coronarien ou insuffisance cardiaque sévère, ou Hb < 8 g/dL en cas de cardiopathie ischémique. Une Hb à 9,5 g/dL chez un patient asymptomatique avec SvO2 correcte (72 %) ne justifie PAS la transfusion. La stratégie restrictive réduit la mortalité par rapport à la stratégie libérale (TRICC 1999, confirmé par TRISS 2014). Piège A : le seuil Hb < 10 g/dL est une pratique ancienne abandonnée depuis le TRICC Trial (1999) ; il est associé à une surmortalité et une augmentation des complications infectieuses et immunologiques. Piège C : il n'existe pas de seuil transfusionnel péri-opératoire universel à 10 g/dL ; le seuil en chirurgie majeure cardiaque est Hb < 8 g/dL (SFAR), et encore adapté au contexte. Piège D : le fer IV est utile dans l'anémie ferriprive ou post-opératoire différée, mais une Hb à 9,5 g/dL asymptomatique ne requiert ni transfusion ni fer IV en urgence ; l'anémie post-traumatique aiguë est d'abord une anémie de déplétion (perte + inflammation) et non systématiquement ferriprive."
       }
     ]
+  },
+  {
+    "date": "2026-06-06",
+    "dateStr": "samedi 6 juin",
+    "topic": "Anesthésie pour chirurgie de l'aorte thoracique descendante par voie endovasculaire (TEVAR) : protection médullaire peropératoire, drainage du liquide céphalorachidien et gestion hémodynamique ciblée pour prévenir la paraplégie ischémique",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "La chirurgie endovasculaire de l'aorte thoracique descendante (TEVAR) expose à un risque de paraplégie ischémique de 2 à 10 %, conséquence dévastatrice d'une ischémie médullaire par interruption des artères spinales. L'anesthésiste joue un rôle central dans la prévention de cette complication via trois piliers interdépendants : le drainage du LCR (DLCR), l'optimisation hémodynamique ciblée et la neuroprotection pharmacologique. Maîtriser ces stratégies est indispensable pour tout senior de garde en chirurgie vasculaire.",
+      "sections": [
+        {
+          "title": "1. Définitions et Rappels anatomiques essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **TEVAR** (Thoracic Endovascular Aortic Repair) consiste en l'exclusion d'une lésion aortique thoracique descendante (anévrisme, dissection de type B, traumatisme) par déploiement d'une endoprothèse couverte par voie fémorale. La zone d'atterrissage proximale (zone 2 à 4 selon la classification de Criado) détermine le niveau de couverture et donc le risque médullaire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Artère d'Adamkiewicz (arteria radicularis magna)** : principale artère alimentant la moelle thoraco-lombaire basse (T8-L2), naît de l'aorte entre T5 et L2 dans 75 % des cas, le plus souvent à gauche (80 %). Son occlusion provoque un syndrome de l'artère spinale antérieure.",
+                "**Syndrome de l'artère spinale antérieure** : paraplégie flasque avec dissociation sensitivo-motrice (douleur et température abolies, tact épicritique conservé), survenant dans les heures post-TEVAR.",
+                "**Pression de perfusion médullaire (PPM)** : PPM = PAM − (PLCR ou PVEINEUSE CENTRALE, la plus élevée des deux). La PLCR est le déterminant principal en post-TEVAR.",
+                "**Classification Crawford modifiée** : décrit l'étendue des anévrismes thoraco-abdominaux (TAAA) ; le risque médullaire est maximal pour les types II (de T6 à L2) mais s'applique aussi au TEVAR étendu.",
+                "**Zone de couverture aortique** : couverture > 20 cm ou > 3 segments costaux intercostaux est un facteur de risque majeur de paraplégie.",
+                "**Artères intercostales et lombaires** : contribuent à la vascularisation médullaire via un réseau anastomotique périmédullaire ; leur sacrifice lors du déploiement de l'endoprothèse réduit la réserve de perfusion."
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Erreur fréquente : confondre la zone de couverture TEVAR avec la longueur totale de l'endoprothèse. Ce qui compte pour le risque médullaire est la longueur d'aorte COUVERTE (artères intercostales sacrifiées), pas la longueur de prothèse déployée. Un TEVAR court sur aorte pathologique étendue peut occlure des collatérales critiques."
+            },
+            {
+              "type": "formula",
+              "content": "PPM = PAM − PLCR | Objectif : PPM ≥ 70 mmHg en peropératoire et ≥ 70 mmHg en postopératoire immédiat"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie de l'ischémie médullaire en TEVAR",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'ischémie médullaire en TEVAR résulte d'un déséquilibre entre **apports** (débit sanguin médullaire) et **besoins** (consommation en O₂ de la moelle). Deux mécanismes principaux coexistent : l'interruption directe des artères segmentaires et l'élévation réflexe de la **pression du LCR** (PLCR) liée à l'œdème médullaire de reperfusion."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mécanisme 1 — Interruption des afférences aortiques** : le déploiement de l'endoprothèse occlut les ostia des artères intercostales T6-T12 et lombaires, réduisant le débit dans le réseau anastomotique périmédullaire (corona vasorum).",
+                "**Mécanisme 2 — Hypertension intrarachidienne** : l'ischémie et la reperfusion génèrent un œdème de la moelle épinière, augmentant la PLCR (normale ≤ 10 mmHg). Une PLCR > 10-12 mmHg réduit mécaniquement la PPM en diminuant le gradient de perfusion.",
+                "**Mécanisme 3 — Hypotension per/postopératoire** : toute chute de la PAM réduit directement la PPM. Le clampage aortique temporaire lors des conversions open, ou les manipulations guidées de la prothèse, peuvent aggraver l'hypoperfusion.",
+                "**Mécanisme 4 — Embolies** : migration de thrombus ou de debris athéromateux de l'aorte pathologique lors de la navigation des guides et de la prothèse (mécanisme moins fréquent mais décrit).",
+                "**Phénomène de vol collatéral (steal)** : après couverture d'une longue portion aortique, le réseau anastomotique peut être 'volé' au profit d'autres territoires, réduisant la perfusion de la moelle basse.",
+                "**Ischémie retardée** : 30 à 40 % des paraplégiEs surviennent de façon RETARDÉE (> 24h post-TEVAR), au moment du réveil, lors d'une hypotension ou d'une hypoxie intercurrente, soulignant l'importance de la surveillance postopératoire prolongée."
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Piège : la paraplégie post-TEVAR peut être transitoire et réversible si diagnostiquée et traitée dans les 2 premières heures (fenêtre thérapeutique). Tout déficit moteur post-TEVAR est une URGENCE ABSOLUE : augmenter la PAM, drainer le LCR immédiatement si drain en place, et débuter la neuroprotection."
+            },
+            {
+              "type": "text",
+              "content": "Le réseau **corona vasorum** (cercle périmédullaire anastomotique) agit comme collatéralité de sécurité. Sa capacité de recrutement peut être augmentée en préopératoire par une montée progressive en pression (concept de **pré-conditionnement hémodynamique**) ou en postopératoire par le maintien d'une PAM élevée."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation préopératoire et stratification du risque médullaire",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation préopératoire doit identifier les patients à **haut risque de paraplégie** afin de décider de la mise en place prophylactique d'un drain de LCR et d'adapter la stratégie anesthésique. Le score de risque médullaire repose sur des facteurs anatomiques, chirurgicaux et patient-dépendants."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Facteurs de risque anatomiques (imagerie préopératoire indispensable)** : longueur de couverture aortique > 20 cm, couverture de l'artère sous-clavière gauche sans revascularisation, couverture de l'aorte depuis la zone 2 de Criado, chirurgie aortique antérieure (aorte abdominale déjà opérée réduisant la réserve collatérale).",
+                "**Facteurs de risque patient** : athérosclérose sévère (réduisant le réseau collatéral), artériopathie des membres inférieurs sévère, insuffisance rénale (marqueur d'artériopathie diffuse), diabète, antécédent de radiothérapie thoracique.",
+                "**Facteurs chirurgicaux** : urgence (dissection aiguë, rupture), nécessité de couvrir l'artère sous-clavière gauche sans bypass carotido-sous-clavier préalable, utilisation de plusieurs endoprothèses (couverture extensive).",
+                "**Imagerie préopératoire** : angio-TDM pour cartographier l'artère d'Adamkiewicz (visible dans 60-80 % des cas sur CTA avec coupes fines), évaluer la longueur de couverture prévue, identifier une chirurgie aortique antérieure.",
+                "**Angio-IRM médullaire préopératoire** : peut localiser l'artère d'Adamkiewicz avec plus de précision (gold standard si disponible en urgence différée), mais rarement réalisable en urgence.",
+                "**Décision de DLCR prophylactique** : recommandé dès qu'un facteur de risque majeur est présent (couverture > 20 cm, chirurgie aortique antérieure, couverture sous-clavière gauche sans revascularisation). Certaines équipes le placent systématiquement pour tout TEVAR étendu."
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Critères de DLCR prophylactique (consensus 2020-2023) : ≥ 1 critère parmi : couverture aortique prévue > 20 cm ; chirurgie aortique antérieure (endovasculaire ou chirurgie ouverte) ; couverture artère sous-clavière gauche non revascularisée ; anévrisme thoraco-abdominal (TAAA)"
+            },
+            {
+              "type": "warning",
+              "content": "Contre-indication au DLCR préopératoire : thrombopénie < 50 G/L, INR > 1,5, traitement anticoagulant non neutralisé, infection cutanée au point de ponction, hypertension intracrânienne (risque d'engagement). Discuter le rapport bénéfice/risque avec le chirurgien vasculaire et le neurologue."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie anesthésique peropératoire — Les 3 piliers de protection médullaire",
+          "items": [
+            {
+              "type": "text",
+              "content": "La stratégie peropératoire de protection médullaire repose sur trois piliers interdépendants appliqués simultanément : **(1) le drainage du LCR**, **(2) l'optimisation hémodynamique ciblée** et **(3) la neuroprotection pharmacologique**. Ces mesures s'inscrivent dans un protocole institutionnel validé, dont la rigueur d'application est le principal garant de l'efficacité."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**PILIER 1 — Drain de LCR (DLCR)** :",
+                "Insertion : sous anesthésie locale ou sédation légère, en décubitus latéral ou assis, espace L3-L4 ou L4-L5 (aiguille de Tuohy 14G ou cathéter spinal), AVANT l'induction anesthésique si prophylactique.",
+                "Objectif de pression LCR : PLCR ≤ 10 mmHg en peropératoire et postopératoire immédiat (72 h).",
+                "Drainage actif vs passif : drainage passif par gravité (sac collecteur positionné 10 cm au-dessus du méat auditif externe) ou drainage actif par aspiration douce si PLCR > 10 mmHg résistante.",
+                "Volume maximal de drainage : ≤ 10 à 15 mL/heure pour éviter l'hypotension intracrânienne et l'hématome sous-dural (complication du sur-drainage). Volume total ≤ 20-25 mL sur 4 h.",
+                "Durée du drain : maintenu 48-72 h postopératoires, retiré quand PLCR stable ≤ 10 mmHg depuis 24 h sans drainage actif.",
+                "**PILIER 2 — Optimisation hémodynamique ciblée** :",
+                "Objectif de PAM peropératoire : PAM ≥ 80-90 mmHg pendant le déploiement de la prothèse et les premières 24 h postopératoires.",
+                "Objectif de PPM : PPM = PAM − PLCR ≥ 70 mmHg en permanence.",
+                "Monitorage invasif systématique : cathéter artériel radial DROIT (évite les erreurs de mesure si couverture de l'artère sous-clavière gauche), voie veineuse centrale, PAP si cardiopathie sévère.",
+                "Vasopresseurs de choix : noradrénaline en première ligne (récepteurs α1 > β1, pas de tachycardie réflexe). Phényléphrine en deuxième ligne si tachycardie. Éviter l'adrénaline en première intention (tachycardie augmentant les besoins myocardiques).",
+                "Remplissage vasculaire : éviter l'hypervolémie (aggrave œdème médullaire de reperfusion et augmente PLCR). Objectif euvolémie ciblée par monitoring du débit cardiaque (EchoTD ou FloTrac).",
+                "**PILIER 3 — Neuroprotection pharmacologique** :",
+                "**Méthylprednisolone** : non recommandée en routine (études négatives, risque infectieux). Peut être discutée au cas par cas selon protocole institutionnel.",
+                "**Mannitol** (0,5 g/kg IV) : peut réduire la PLCR par effet osmotique, utilisé si PLCR > 10 mmHg résistante au drainage. Non recommandé en routine.",
+                "**Hypothermie légère** (35-36°C) : diminue les besoins métaboliques médullaires, peut être maintenue passivement en peropératoire par limitation du réchauffement actif. L'hypothermie profonde (< 32°C) est réservée aux conversions en chirurgie ouverte sous CEC.",
+                "**Papavérine intrathécale** : décrite dans certains protocoles (vasodilatateur des artères spinales) mais non validée en routine, risque de neurotoxicité.",
+                "**Éviter hypoxie et anémie** : maintenir SpO₂ > 95 %, Hb > 8-9 g/dL (10 g/dL si signe d'ischémie médullaire). L'anémie aggrave l'ischémie médullaire par réduction du transport en O₂."
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Objectifs hémodynamiques TEVAR : PAM ≥ 80-90 mmHg peropératoire et H0-H24 | PLCR ≤ 10 mmHg | PPM = PAM − PLCR ≥ 70 mmHg | SpO₂ ≥ 95 % | Hb ≥ 8-9 g/dL (10 g/dL si ischémie)"
+            },
+            {
+              "type": "text",
+              "content": "**Choix de la technique anesthésique** : l'anesthésie générale (AG) est standard pour TEVAR complexe. L'**anesthésie locorégionale** (ALR — sédation + anesthésie locale) est une alternative pour TEVAR électif simple chez patient à risque respiratoire élevé, permettant un **monitoring neurologique clinique continu** (patient communiquant). L'AG avec **monitoring électrophysiologique** (potentiels évoqués moteurs — PEM, et potentiels évoqués somesthésiques — PES) est recommandée si patient non coopérant ou TEVAR complexe."
+            },
+            {
+              "type": "warning",
+              "content": "Piège anesthésique majeur : lors d'une AG pour TEVAR, les agents halogénés (sévoflurane > 0,5 MAC) et les curares non dépolarisants ABOLISSENT les potentiels évoqués moteurs (PEM). Si le monitoring électrophysiologique est utilisé, privilégier une TIVA (propofol + rémifentanil) avec maintien de la curarisation à un TOF ≥ 2 réponses ou curarisation évitée après intubation."
+            }
+          ]
+        },
+        {
+          "title": "5. Monitoring neurologique peropératoire et postopératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le monitoring neurologique peropératoire vise à détecter l'ischémie médullaire **en temps réel** afin de permettre une intervention corrective immédiate (augmentation de la PAM, drainage LCR). Deux modalités complémentaires existent selon le contexte : le monitoring électrophysiologique sous AG et le monitoring clinique sous ALR."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Potentiels évoqués moteurs (PEM)** : générés par stimulation corticale transcrânienne, recueillis aux membres inférieurs. Détectent l'ischémie de la voie cortico-spinale (moelle antérieure). Sensibilité et spécificité > 90 % pour la paraplégie post-TEVAR. Alerte : diminution d'amplitude > 50 % ou disparition → intervention immédiate.",
+                "**Potentiels évoqués somesthésiques (PES)** : testent la voie lemniscale (cordons postérieurs). Moins sensibles pour l'ischémie médullaire antérieure (syndrome de l'artère spinale antérieure) mais complémentaires des PEM.",
+                "**Monitoring clinique continu sous ALR** : patient vigile évalue sa force motrice aux membres inférieurs à intervalles réguliers (toutes les 5-10 minutes). Test de référence en cas d'ischémie : demander au patient de fléchir les genoux. Avantage : détection immédiate, sans artéfact, pas de retard lié au traitement du signal.",
+                "**Near-infrared spectroscopy (NIRS)** : monitoring de l'oxymétrie tissulaire régionale cérébrale, non validé pour la moelle épinière en TEVAR mais utile pour détecter les ischémies cérébrales liées à la couverture de l'artère sous-clavière gauche.",
+                "**Surveillance postopératoire** : examen neurologique moteur et sensitif des membres inférieurs toutes les heures pendant 24 h, puis toutes les 2-4 h jusqu'à J3. PLCR surveillée en continu si drain en place. Tout déficit moteur = urgence (voir section complications).",
+                "**Oxymétrie intrarachidienne** : technique expérimentale (sonde de Clark intrarachidienne) permettant de mesurer la PO₂ médullaire in situ. Prometteuse mais non disponible en pratique courante (2024)."
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Les PEM sont ABOLIES par : halogénés > 0,5 MAC, kétamine en bolus, benzodiazépines à doses sédatives, lithium, hypothermie < 33°C, et toute curarisation profonde (TOF = 0). Si les PEM disparaissent brutalement sans cause pharmacologique évidente, c'est une ischémie médullaire jusqu'à preuve du contraire."
+            }
+          ]
+        },
+        {
+          "title": "6. Complications et leur gestion — Protocole d'urgence paraplégie",
+          "items": [
+            {
+              "type": "text",
+              "content": "La paraplégie post-TEVAR est une urgence thérapeutique dont le pronostic est directement lié à la **rapidité de prise en charge**. La fenêtre thérapeutique pour une récupération complète est estimée à **2-6 heures** après le début de l'ischémie. Tout déficit moteur des membres inférieurs post-TEVAR doit déclencher un protocole institutionnel préétabli."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Protocole d'urgence paraplégie post-TEVAR (séquence ABCDE)** :",
+                "A — **Alerter** : chirurgien vasculaire + anesthésiste senior + neurochirurgien (si drain absent) IMMÉDIATEMENT.",
+                "B — **Blood pressure UP** : augmenter PAM à 90-100 mmHg (voire 100-110 mmHg transitoirement). Noradrénaline titration. Objectif PPM ≥ 70 mmHg.",
+                "C — **CSF drainage** : si drain en place → drainer 20-25 mL de LCR sur 20-30 minutes (ne pas dépasser 20-25 mL/h). Si pas de drain → pose urgente en salle de réveil ou réanimation (L3-L4 ou L4-L5).",
+                "D — **Détecter** les causes réversibles : hypotension (corriger remplissage + vasopresseurs), anémie (transfusion si Hb < 9-10 g/dL), hypoxie (O₂ supplementation), positionnement (éviter Trendelenburg inverse).",
+                "E — **Envisager** conversion chirurgicale ouverte si ischémie irréversible malgré les mesures médicales maximales (indication exceptionnelle, mortalité élevée).",
+                "**Hématome péridural sur drain de LCR** : complication rare mais gravissime. Tableau : dorsalgie intense + déficit moteur de progression rapide + contexte de coagulopathie ou d'anticoagulation. Diagnostic : IRM médullaire en urgence. Traitement : décompression chirurgicale urgente si ischémie constituée.",
+                "**Méningite sur drain de LCR** : risque augmente avec la durée du drain (> 72 h). Signes : fièvre + raideur méningée + LCR trouble. Traitement : retrait du drain + antibiothérapie adaptée.",
+                "**Hématome sous-dural intracrânien par sur-drainage** : complication rare du drainage agressif (> 20-25 mL/h). Prévention : respect strict des limites de drainage horaire.",
+                "**Ischémie cérébrale** : liée à la couverture de l'artère sous-clavière gauche sans revascularisation préalable, ou à l'embolie lors de la navigation de la prothèse. Prévention : bypass carotido-sous-clavier préopératoire si couverture de la sous-clavière gauche prévue.",
+                "**Insuffisance rénale aiguë** : liée à l'utilisation de produit de contraste iodé, à l'ischémie rénale par couverture du tronc cœliaque ou artères rénales, et aux embolies. Prévention : hydratation IV préopératoire, limitation du volume de contraste, utilisation de CO₂ si patient insuffisant rénal."
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Drainage LCR en urgence paraplégie : 20-25 mL en 20-30 minutes, puis ajustement pour maintenir PLCR ≤ 10 mmHg. NE PAS dépasser 20-25 mL/heure (risque hématome sous-dural intracrânien)"
+            },
+            {
+              "type": "warning",
+              "content": "Erreur fatale : retirer prématurément le drain de LCR dans les premières 48h post-TEVAR pour 'simplifier la surveillance'. Les paraplégies retardées (jusqu'à J3-J4) sont précisément celles qui bénéficient le plus du drain. Le drain doit être maintenu au minimum 48-72h avec contrôles neurologique réguliers."
+            }
+          ]
+        },
+        {
+          "title": "7. Recommandations clés et niveaux de preuve",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ESVS 2017 / Mise à jour 2022** (European Society for Vascular Surgery) — Grade I, Niveau B : le drainage prophylactique du LCR est recommandé pour les TEVAR étendus (couverture > 20 cm, chirurgie aortique antérieure).",
+                "**ESVS 2022** — Grade IIa, Niveau C : l'objectif de PAM ≥ 80 mmHg pendant 24-48h post-TEVAR est recommandé pour la protection médullaire.",
+                "**SVS/STS 2010 (Safi HJ et al., mise à jour 2020)** — Grade I : le monitoring électrophysiologique (PEM + PES) est recommandé sous anesthésie générale pour TEVAR complexe.",
+                "**SFAR 2022** (Recommandations pour la prise en charge anesthésique des chirurgies aortiques) : recommande la mise en place d'un protocole institutionnel de protection médullaire pour tout TEVAR, incluant DLCR, objectifs hémodynamiques écrits et surveillance neurologique standardisée.",
+                "**STS/SVS 2021** : la revascularisation de l'artère sous-clavière gauche avant couverture endovasculaire est recommandée (Grade I, Niveau B) pour réduire le risque d'ischémie médullaire et vertébro-basilaire.",
+                "**ESC/EACTS 2014 (mise à jour 2024 en attente)** : l'évitement de l'hypothermie peropératoire sévère (< 35°C) n'est pas recommandé pour le TEVAR standard ; l'hypothermie légère passive (35-36°C) est acceptable.",
+                "**Pas de recommandation de grade I** pour la méthylprednisolone, la papavérine intrathécale ou le mannitol en routine dans la prévention de la paraplégie post-TEVAR (données insuffisantes, Grade IIb ou III)."
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Point de controverse actuel (2023-2024) : l'utilisation SYSTÉMATIQUE du DLCR pour TOUS les TEVAR (y compris courts et non étendus) est débattue. Le drain lui-même comporte des risques (hématome péridural, méningite). La tendance actuelle est à une approche SÉLECTIVE basée sur le risque individuel, plutôt qu'un drainage universel. Certaines équipes réservent le drain aux TEVAR à haut risque et le posent en curatif si paraplégie survient."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**PPM = PAM − PLCR ≥ 70 mmHg** : c'est le gradient de perfusion médullaire à maintenir en permanence. Toute hypotension ou augmentation de la PLCR réduit ce gradient et risque de provoquer une ischémie médullaire.",
+        "**30-40 % des paraplégiEs sont retardées** (> 24h post-TEVAR) : la surveillance neurologique doit être prolongée jusqu'à J3 minimum et le drain de LCR maintenu 48-72h. Ne jamais retirer le drain précocement.",
+        "**Fenêtre thérapeutique de 2-6h** : la paraplégie post-TEVAR peut être réversible si le protocole d'urgence (↑PAM + drainage LCR immédiat) est déclenché rapidement. Tout déficit moteur = urgence absolue, délai zéro toléré.",
+        "**PEM abolies par halogénés > 0,5 MAC** : si monitoring électrophysiologique peropératoire, utiliser une TIVA (propofol + rémifentanil) et éviter ou minimiser la curarisation après intubation.",
+        "**Drainage LCR limité à ≤ 20-25 mL/heure** : le sur-drainage rapide provoque une hypotension intracrânienne et risque d'hématome sous-dural intracrânien. En urgence paraplégie, drainer 20-25 mL en 20-30 minutes maximum."
+      ],
+      "references": [
+        "Czerny M, Schmidli J, Adler S, et al. — Current options and recommendations for the treatment of thoracic aortic pathologies involving the aortic arch — ESVS/EACTS Guidelines 2019 update — Eur J Cardiothorac Surg 2019",
+        "Isselbacher EM, Preventza O, Hamilton Black J, et al. — 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease — Circulation 2022",
+        "Coselli JS, LeMaire SA, Preventza O, et al. — Outcomes of 3309 thoracoabdominal aortic aneurysm repairs — J Thorac Cardiovasc Surg 2016 (référence fondatrice sur le DLCR)",
+        "Safi HJ, Estrera AL, Miller CC, et al. — Evolution of risk for neurologic deficit after descending and thoracoabdominal aortic repair — Ann Thorac Surg 2005 (données risque médullaire fondatrices)",
+        "Hnath JC, Mehta M, Taggert JB, et al. — Problems with failure of lumbar cerebrospinal fluid drainage after thoracic endovascular aortic repair — J Vasc Surg 2008",
+        "Ullery BW, Wang GJ, Low D, et al. — Neurological complications of thoracic endovascular aortic repair — Semin Cardiothorac Vasc Anesth 2011",
+        "Weigang E, Hartert M, Siegenthaler MP, et al. — Neurophysiological intraoperative monitoring during thoracoabdominal aortic surgery — Eur J Cardiothorac Surg 2006",
+        "SFAR — Recommandations formalisées d'experts : Anesthésie pour chirurgie de l'aorte — 2022",
+        "Oderich GS, Forbes TL, Chaer R, et al. — Reporting standards for endovascular aortic repair of aneurysms involving the renal-mesenteric arteries — J Vasc Surg 2021",
+        "von Aspern K, Haunschild J, Hoyer A, et al. — Impact of collateral network preservation on spinal cord ischemia in TEVAR — J Endovasc Ther 2020"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un homme de 68 ans, ATCD de chirurgie de l'aorte abdominale sous-rénale par voie ouverte il y a 8 ans, est opéré d'un TEVAR pour anévrisme de l'aorte thoracique descendante. La couverture prévue s'étend de T6 à T12 (18 cm). L'artère sous-clavière gauche sera couverte sans revascularisation préalable.",
+        "question": "Concernant la mise en place d'un drain de LCR (DLCR), quelle est la décision la plus appropriée ?",
+        "options": {
+          "A": "Ne pas poser de DLCR car la couverture est < 20 cm (18 cm), seuil non atteint",
+          "B": "Poser un DLCR prophylactique car au moins deux facteurs de risque majeurs de paraplégie sont présents",
+          "C": "Poser le DLCR uniquement si les PEM se dégradent en peropératoire (approche curative)",
+          "D": "Différer la pose du DLCR après l'induction anesthésique pour éviter tout inconfort au patient"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la décision de DLCR prophylactique repose sur la présence de facteurs de risque, pas sur un seuil unique de longueur. Ce patient cumule DEUX facteurs de risque majeurs : (1) chirurgie aortique antérieure ouverte (réduisant la réserve collatérale médullaire) et (2) couverture de l'artère sous-clavière gauche sans revascularisation. La couverture de 18 cm est en-deçà du seuil de 20 cm mais les autres facteurs imposent le drainage prophylactique. Piège A : le seuil de 20 cm n'est pas le seul critère, il s'applique isolément ; en présence d'autres facteurs de risque, le DLCR est indiqué même si la couverture est < 20 cm. Piège C : attendre la dégradation des PEM est une approche curative acceptable dans certains centres mais sous-optimale chez un patient à haut risque cumulant plusieurs facteurs ; la pose prophylactique permet une intervention plus rapide. Piège D : le DLCR doit être posé AVANT l'induction anesthésique (patient coopérant, facilite le positionnement, permet de tester le bon fonctionnement) ; le différer après l'induction est une erreur organisationnelle."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Pendant le déploiement d'une endoprothèse aortique thoracique sous anesthésie générale (sévoflurane 1,5 % avec TIVA partielle), le monitoring électrophysiologique montre une disparition brutale des potentiels évoqués moteurs (PEM) aux deux membres inférieurs. La PAM est à 72 mmHg, la PLCR mesurée est à 14 mmHg.",
+        "question": "Quelle est la première mesure thérapeutique PRIORITAIRE à mettre en œuvre immédiatement ?",
+        "options": {
+          "A": "Augmenter la FiO₂ à 100 % et vérifier la SpO₂",
+          "B": "Arrêter le sévoflurane et passer en TIVA propofol-rémifentanil pour éliminer une cause pharmacologique d'abolition des PEM",
+          "C": "Augmenter la PAM à ≥ 90 mmHg PAR noradrénaline ET drainer le LCR pour ramener la PLCR ≤ 10 mmHg simultanément",
+          "D": "Administrer du méthylprednisolone 30 mg/kg IV en bolus immédiatement"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la disparition des PEM avec PAM à 72 mmHg et PLCR à 14 mmHg représente une urgence d'ischémie médullaire probable. La PPM calculée est de 72 − 14 = 58 mmHg, très inférieure à l'objectif de ≥ 70 mmHg. La double action simultanée (↑PAM + ↓PLCR) restaure la PPM. Ces deux mesures sont synergiques et doivent être appliquées EN MÊME TEMPS sans délai. Piège B : il est vrai que le sévoflurane à 1,5 % (> 0,5 MAC) peut abolir les PEM par effet pharmacologique, et l'arrêt des halogénés fait partie de la démarche — MAIS ce n'est pas la première priorité si la PPM est simultanément basse. Arrêter le sévoflurane ne corrige pas l'ischémie en cours si la PPM reste insuffisante ; les deux actions (pharmacologique ET hémodynamique) doivent être menées de front. Piège A : augmenter la FiO₂ est utile mais n'est pas prioritaire sur la correction hémodynamique urgente. Piège D : la méthylprednisolone n'a pas de grade de recommandation I pour la protection médullaire en TEVAR et ne doit pas retarder les mesures hémodynamiques urgentes."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un patient opéré de TEVAR le matin est en salle de réveil avec un drain de LCR en place. La PLCR est à 8 mmHg. À H6 post-extubation, l'infirmière signale que le patient n'arrive plus à bouger les jambes. La PAM est à 85 mmHg.",
+        "question": "Quel volume de LCR drainer en urgence et sur quelle durée maximale pour respecter les limites de sécurité ?",
+        "options": {
+          "A": "Drainer 50 mL en 30 minutes pour décomprimer rapidement la moelle",
+          "B": "Drainer 20-25 mL en 20-30 minutes, puis ajuster pour maintenir PLCR ≤ 10 mmHg sans dépasser 20-25 mL/heure",
+          "C": "Drainer 10 mL en 60 minutes (1 mL toutes les 6 minutes) pour éviter tout risque d'hématome sous-dural",
+          "D": "Ne pas drainer (PLCR à 8 mmHg, donc pas d'indication) et uniquement augmenter la PAM à 100 mmHg"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : en urgence paraplégie post-TEVAR, le protocole recommande un drainage rapide de 20-25 mL en 20-30 minutes pour décomprimer rapidement le canal rachidien, puis un ajustement pour maintenir PLCR ≤ 10 mmHg sans dépasser 20-25 mL/heure. Ce seuil limite prévient l'hématome sous-dural intracrânien par hypotension intracrânienne soudaine. Piège A : 50 mL en 30 minutes représente un sur-drainage massif (débit > 100 mL/h) qui expose à une hypotension intracrânienne sévère et à l'hématome sous-dural bilatéral, complication potentiellement fatale. Piège C : 10 mL en 60 minutes est trop lent en situation d'urgence avec ischémie médullaire active ; la fenêtre thérapeutique est courte et chaque minute compte. Piège D : même si la PLCR est à 8 mmHg (< 10 mmHg), la paraplégie peut résulter d'une ischémie mécanique ; drainer pour amener la PLCR à 5-6 mmHg augmente la PPM et peut améliorer la perfusion médullaire. De plus, la PLCR peut avoir été mesurée avant la montée de l'œdème post-ischémique."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Vous planifiez une anesthésie générale pour TEVAR complexe avec monitoring électrophysiologique (PEM + PES). L'anesthésie est induite au propofol et l'entretien prévu au sévoflurane.",
+        "question": "Quelle est l'erreur pharmacologique à éviter pour préserver la qualité du monitoring électrophysiologique des PEM ?",
+        "options": {
+          "A": "Utiliser du propofol en TIVA car il réduit les amplitudes des PEM",
+          "B": "Maintenir le sévoflurane à une concentration > 0,5 MAC car il abolit les PEM",
+          "C": "Utiliser du rémifentanil car il supprime les PEM par action sur les récepteurs opioïdes spinaux",
+          "D": "Administrer de la kétamine en entretien car elle inhibe les voies corticospinales"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les agents halogénés (sévoflurane, desflurane, isoflurane) abolissent les PEM de façon dose-dépendante à partir de 0,5 MAC. Au-delà de 0,5 MAC, les PEM deviennent inexploitables. La règle pour le monitoring électrophysiologique est d'utiliser une TIVA (propofol + rémifentanil) sans halogénés. Piège A : le propofol en TIVA RÉDUIT légèrement les amplitudes des PEM (effet dose-dépendant) mais ne les abolit pas aux concentrations cibles d'entretien (1-4 µg/mL). Il est l'agent de choix pour le monitoring électrophysiologique. Piège C : le rémifentanil a un effet MINIME sur les PEM aux doses analgésiques usuelles et ne les supprime pas ; il est compatible avec le monitoring. Piège D : la kétamine en bolus peut supprimer les PEM transitoirement mais n'est pas l'agent d'entretien décrit ici, et à doses sub-dissociatives elle a peu d'effet sur les PEM."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Femme de 72 ans, TEVAR pour anévrisme de l'aorte thoracique descendante (zone 4), sans chirurgie aortique antérieure. La couverture prévue est de 12 cm. La pose d'un DLCR prophylactique est discutée lors de la réunion de staff préopératoire.",
+        "question": "Quelle contre-indication absolue au DLCR prophylactique doit être systématiquement vérifiée ?",
+        "options": {
+          "A": "Un BMI > 30 kg/m² (obésité rendant la ponction lombo-sacrée difficile)",
+          "B": "La prise de clopidogrel arrêtée 5 jours avant l'intervention",
+          "C": "Un INR à 2,1 (anticoagulation thérapeutique par AVK non neutralisée)",
+          "D": "Un antécédent de lombalgie chronique avec arthrose lombaire"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : un INR > 1,5 est une contre-indication formelle au DLCR en raison du risque d'hématome péridural ou spinal au site de ponction, complication pouvant elle-même causer une paraplégie. L'anticoagulation par AVK doit être neutralisée (vitamine K ± CCP selon urgence) avec contrôle de l'INR < 1,5 avant toute ponction lombaire pour drain de LCR. Piège B : le clopidogrel arrêté 5 jours avant l'intervention est compatible avec la pose d'un DLCR selon les recommandations ESRA/SFAR sur les techniques neuraxiales et les antiplaquettaires (délai minimum 5 jours pour le clopidogrel). Piège A : l'obésité rend la ponction techniquement plus difficile mais n'est pas une contre-indication absolue ; elle justifie un repérage échoguidé. Piège D : l'arthrose lombaire est une difficulté technique potentielle (palpation des espaces, calcifications ligamentaires) mais n'est pas une contre-indication absolue ; elle peut nécessiter un repérage radiologique ou échographique."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Un patient de 65 ans est opéré de TEVAR sous anesthésie locale et sédation légère (dexmédétomidine, midazolam 1 mg). Le chirurgien demande d'approfondir la sédation car le patient bouge. La PAM est stable à 85 mmHg, PLCR à 8 mmHg.",
+        "question": "Pourquoi l'approfondissement de la sédation présente-t-il un risque spécifique dans ce contexte ?",
+        "options": {
+          "A": "La sédation profonde peut provoquer une hypertension artérielle réactionnelle augmentant le risque de rupture aortique",
+          "B": "La perte de la coopération du patient supprime le monitoring neurologique clinique continu, seul outil de détection précoce de l'ischémie médullaire disponible sous ALR",
+          "C": "La dexmédétomidine en combinaison avec le midazolam abolit les potentiels évoqués moteurs",
+          "D": "L'approfondissement de la sédation entraîne une vasodilatation systémique et réduira mécaniquement la PPM"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'un des avantages majeurs de l'ALR pour TEVAR est de permettre un MONITORING NEUROLOGIQUE CLINIQUE CONTINU (patient éveillé pouvant bouger les membres inférieurs à la demande). Si la sédation est approfondie au point que le patient ne coopère plus, on perd cet avantage sans avoir les alternatives du monitoring électrophysiologique (qui nécessiterait une AG + TIVA + électrodes de surface). Cela crée un 'angle mort' de surveillance neurologique. Piège A : la sédation n'entraîne pas d'hypertension réactionnelle significative et ce risque n'est pas le problème principal ici. Piège C : la dexmédétomidine et le midazolam aux doses sédatives ont des effets modérés sur les PEM mais l'ALR + sédation n'utilise pas le monitoring électrophysiologique comme outil principal ; ce n'est donc pas le risque spécifique à cette situation. Piège D : la dexmédétomidine peut effectivement diminuer la PAM, mais cet effet est gérable par vasopresseurs et n'est pas la raison principale d'éviter l'approfondissement de la sédation dans ce contexte."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "À J2 post-TEVAR, un patient a son drain de LCR en place, PLCR stable à 7 mmHg depuis 18 heures. L'examen neurologique est normal. L'équipe de chirurgie propose de retirer le drain pour 'simplifier la prise en charge'.",
+        "question": "Quelle est la durée minimale recommandée de maintien du drain de LCR post-TEVAR et pourquoi ?",
+        "options": {
+          "A": "Le drain peut être retiré à J2 si la PLCR est stable ≤ 10 mmHg depuis 18 heures et que l'examen neurologique est normal",
+          "B": "Le drain doit être maintenu 48 à 72 heures post-TEVAR en raison du risque de paraplégie retardée pouvant survenir jusqu'à J3-J4",
+          "C": "Le drain doit être maintenu 7 jours car le risque de paraplégie persiste pendant toute la première semaine",
+          "D": "La durée du drain dépend uniquement de la longueur de couverture aortique : < 20 cm = retrait à J1, > 20 cm = maintien à J3"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : 30-40 % des paraplégies post-TEVAR sont RETARDÉES (survenant après H24, et parfois jusqu'à J3-J4), typiquement lors d'une hypotension, d'une anémie ou d'une hypoxie intercurrente. Le drain de LCR constitue la protection principale contre ces événements retardés. La durée recommandée est de 48 à 72 heures minimum, avec retrait uniquement si : PLCR stable ≤ 10 mmHg depuis ≥ 24h sans drainage actif + examen neurologique normal. Dans ce cas, le patient est à J2 avec 18h de stabilité, soit < 24h de stabilisation : le retrait est prématuré. Piège A : 18 heures de stabilité ne suffit pas selon les recommandations ; le seuil est de 24 heures minimum de stabilité + durée totale ≥ 48-72h. Piège C : 7 jours est excessif et expose inutilement au risque de méningite (risque augmentant avec la durée). Les guidelines ne recommandent pas de maintien > 72h en routine. Piège D : la durée du drain n'est pas uniquement fonction de la longueur de couverture ; elle dépend de la stabilisation clinique et de la PLCR, quel que soit le profil anatomique."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Vous gérez un TEVAR en cours d'AG. La PAM descend à 65 mmHg lors du déploiement de la prothèse. Vous augmentez la noradrénaline. Le chirurgien vous signale simultanément qu'il doit couvrir l'artère sous-clavière gauche de façon non prévue initialement.",
+        "question": "Quel risque supplémentaire la couverture non revascularisée de l'artère sous-clavière gauche ajoute-t-elle, et quelle mesure de monitorage devient prioritaire ?",
+        "options": {
+          "A": "Risque d'ischémie du membre supérieur gauche ; surveiller la SpO₂ au membre supérieur gauche",
+          "B": "Risque d'ischémie cérébrale postérieure (vertébro-basilaire) et médullaire cervicale basse ; vérifier la NIRS cérébrale bilatérale et envisager un bypass carotido-sous-clavier en urgence différée",
+          "C": "Risque d'ischémie myocardique si IVA naît de l'artère sous-clavière gauche ; surveiller l'ECG",
+          "D": "Risque d'hypertension artérielle réactionnelle du membre supérieur gauche ; placer un cathéter artériel à gauche"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la couverture de l'artère sous-clavière gauche (ASG) sans revascularisation préalable expose à deux risques majeurs : (1) ischémie du territoire vertébro-basilaire (l'ASG alimente l'artère vertébrale gauche, principale composante de la circulation de la fosse postérieure) avec risque d'AVC cérébelleux et du tronc cérébral, et (2) aggravation du risque d'ischémie médullaire cervicale basse via l'artère spinale antérieure cervicale. La NIRS bilatérale peut détecter une asymétrie d'oxymétrie cérébrale. L'idéal est de planifier un bypass carotido-sous-clavier préopératoire ; en per-opératoire, si non revascularisée, une surveillance étroite neurologique post-opératoire est indispensable. Piège A : l'ischémie du membre supérieur gauche est réelle (voie brachiale compensée par le polygone de Willis et les artères intercostales) mais rarement grave en aigu ; ce n'est pas le risque prioritaire. Piège C : l'IVA ne naît pas de l'artère sous-clavière gauche dans l'anatomie coronarienne normale (elle naît de l'artère coronaire gauche). Exception : mammaire interne gauche utilisée comme pontage coronarien — dans ce cas un syndrome de 'vol coronarien' est effectivement possible, mais ce n'est pas le risque principal dans la question. Piège D : la couverture de l'ASG n'entraîne pas d'HTA réactionnelle mais plutôt une hypoperfusion distale."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "À H12 post-TEVAR, un patient développe une paraplégie brutale. Le drain de LCR est en place. Vous décidez de drainer 20 mL en 20 minutes et d'augmenter la PAM à 95 mmHg. Trente minutes plus tard, le patient se plaint d'une céphalée intense en casque.",
+        "question": "Quel diagnostic de complication iatrogène du drain de LCR devez-vous suspecter en priorité et quelle est la conduite à tenir immédiate ?",
+        "options": {
+          "A": "Méningite post-drain : prélever une ponction lombaire diagnostique et débuter une antibiothérapie probabiliste",
+          "B": "Hématome sous-dural intracrânien par hypotension intracrânienne : fermer immédiatement le drain, réaliser un scanner cérébral en urgence, appeler le neurochirurgien",
+          "C": "Hypertension artérielle réactionnelle liée au traitement vasopresseur : réduire la noradrénaline",
+          "D": "Hémorragie sous-arachnoïdienne sur traumatisme de ponction : contrôler l'aspect du LCR drainé et réaliser une IRM médullaire"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la céphalée intense en casque survenant immédiatement après un drainage rapide de LCR évoque un HEMATOME SOUS-DURAL INTRACRANIEN par hypotension intracrânienne (sur-drainage). Le mécanisme est une chute brutale de la pression intracrânienne créant un gradient qui déchire les veines pontines. La conduite à tenir est : (1) fermeture IMMEDIATE du drain de LCR, (2) scanner cérébral en urgence pour confirmer le diagnostic, (3) appel neurochirurgien pour évaluation d'une éventuelle évacuation chirurgicale. C'est précisément pourquoi le drainage est limité à 20-25 mL/h maximum. Piège A : la méningite post-drain se développe sur plusieurs jours (48-72h minimum), se présente avec fièvre, raideur méningée, LCR purulent, pas avec une céphalée en casque dans les 30 minutes suivant un drainage. Piège C : la céphalée en casque n'est pas un signe d'HTA dans ce contexte ; les céphalées liées à une HTA sévère sont progressives et non en casque brutal. Piège D : l'hémorragie sous-arachnoïdienne sur traumatisme de ponction serait survenue dès la pose du drain (complications immédiates), pas 12 heures après lors d'un drainage."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Vous analysez les résultats d'un audit institutionnel sur les paraplégies post-TEVAR de votre centre sur 5 ans. Vous identifiez que 35 % des paraplégies sont survenues APRES la sortie de salle de réveil (délai moyen : H18 post-chirurgie).",
+        "question": "Quel facteur déclenchant est le PLUS fréquemment impliqué dans les paraplégies retardées post-TEVAR selon la littérature ?",
+        "options": {
+          "A": "La réintroduction précoce des anticoagulants en postopératoire (héparine à dose curative pour FA)",
+          "B": "Un épisode d'hypotension artérielle (PAM < 70 mmHg) survenant lors d'un lever ou d'une hypovolémie relative nocturne, réduisant la PPM en-dessous du seuil critique",
+          "C": "L'analgésie postopératoire par morphiniques IV qui induirait une vasodilatation médullaire paradoxale",
+          "D": "Le retrait du cathéter artériel dans les 12 premières heures entraînant une perte de monitorage de la PAM"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le facteur déclenchant le plus fréquemment identifié dans les paraplégies retardées post-TEVAR est un épisode d'HYPOTENSION ARTÉRIELLE survenant lors d'une mobilisation (lever, transfert), d'une hypovolémie nocturne (jeûne, pertes digestives, effet de fin d'action des vasopresseurs) ou d'une saignée per-procédure. La moelle thoraco-lombaire est dans un état de 'perfusion marginale' après TEVAR, et toute baisse de PAM en-dessous du seuil critique (PPM < 70 mmHg) peut déclencher l'ischémie. C'est pourquoi la surveillance de la PAM (cathéter artériel maintenu 24-48h) et les objectifs hémodynamiques stricts sont prolongés au-delà de la salle de réveil. Piège A : les anticoagulants peuvent augmenter le risque de complications hémorrachiques du drain mais ne sont pas le facteur déclenchant principal des paraplégies retardées dans la littérature. Piège C : les morphiniques n'induisent pas de vasodilatation médullaire paradoxale ; cet effet n'est pas décrit dans la physiopathologie de l'ischémie médullaire post-TEVAR. Piège D : le retrait précoce du cathéter artériel est une erreur organisationnelle qui PRIVE de monitorage mais n'est pas en soi un facteur déclenchant d'ischémie médullaire ; la paraplégie résulterait d'une hypotension non détectée et non traitée, pas du retrait lui-même."
+      }
+    ]
   }
 ]
