@@ -3943,5 +3943,426 @@
         "explanation": "Réponse B correcte : le facteur déclenchant le plus fréquemment identifié dans les paraplégies retardées post-TEVAR est un épisode d'HYPOTENSION ARTÉRIELLE survenant lors d'une mobilisation (lever, transfert), d'une hypovolémie nocturne (jeûne, pertes digestives, effet de fin d'action des vasopresseurs) ou d'une saignée per-procédure. La moelle thoraco-lombaire est dans un état de 'perfusion marginale' après TEVAR, et toute baisse de PAM en-dessous du seuil critique (PPM < 70 mmHg) peut déclencher l'ischémie. C'est pourquoi la surveillance de la PAM (cathéter artériel maintenu 24-48h) et les objectifs hémodynamiques stricts sont prolongés au-delà de la salle de réveil. Piège A : les anticoagulants peuvent augmenter le risque de complications hémorrachiques du drain mais ne sont pas le facteur déclenchant principal des paraplégies retardées dans la littérature. Piège C : les morphiniques n'induisent pas de vasodilatation médullaire paradoxale ; cet effet n'est pas décrit dans la physiopathologie de l'ischémie médullaire post-TEVAR. Piège D : le retrait précoce du cathéter artériel est une erreur organisationnelle qui PRIVE de monitorage mais n'est pas en soi un facteur déclenchant d'ischémie médullaire ; la paraplégie résulterait d'une hypotension non détectée et non traitée, pas du retrait lui-même."
       }
     ]
+  },
+  {
+    "date": "2026-06-07",
+    "dateStr": "dimanche 7 juin",
+    "topic": "Anesthésie obstétricale pour césarienne chez la patiente prééclamptique sévère : choix de la technique anesthésique, gestion de l'hypotension sous rachianesthésie, prévention de l'éclampsie peranesthésique et prise en charge du HELLP syndrome en périopératoire",
+    "cat": "Obstétrique",
+    "course": {
+      "intro": "La prééclampsie sévère complique 1 à 2 % des grossesses et représente une cause majeure de morbi-mortalité maternelle et fœtale mondiale. La césarienne chez ces patientes condense en un seul temps opératoire plusieurs défis anesthésiques simultanés : choix de la technique (rachianesthésie vs APD vs AG), gestion hémodynamique en terrain vasoconstricté, prévention de l'éclampsie peranesthésique et surveillance d'un HELLP syndrome potentiellement évolutif — autant de décisions qui n'admettent pas d'improvisation.",
+      "sections": [
+        {
+          "title": "1. Définitions et rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **prééclampsie** est définie par l'association d'une **HTA ≥ 140/90 mmHg** (≥ 2 mesures à 4h d'intervalle) après 20 SA et d'une **protéinurie ≥ 300 mg/24h** (ou ratio protéine/créatinine urinaire ≥ 30 mg/mmol), ou à défaut d'une atteinte d'organe cible."
+            },
+            {
+              "type": "formula",
+              "content": "Prééclampsie SÉVÈRE (au moins UN critère) : PAS ≥ 160 mmHg ou PAD ≥ 110 mmHg ; créatininémie ≥ 90 µmol/L ; oligurie < 500 mL/24h ; ALAT/ASAT > 2× N ; plaquettes < 100 G/L ; douleur épigastrique ou barre ; signes neurologiques (céphalées résistantes, troubles visuels) ; œdème pulmonaire ; RCIU sévère."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**HELLP syndrome** : Hemolysis (LDH > 600 UI/L, schizocytes, bilirubine > 12 mg/L), Elevated Liver enzymes (ASAT > 2× N), Low Platelets (< 100 G/L) — classification de Sibai",
+                "**Classe 1 de Mississippi** : plaquettes < 50 G/L — risque hémorragique maximal",
+                "**Classe 2** : plaquettes 50–100 G/L",
+                "**Classe 3** : plaquettes 100–150 G/L",
+                "**Éclampsie** : convulsions tonico-cloniques généralisées survenant dans le contexte de prééclampsie, sans autre cause neurologique retrouvée"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Une prééclampsie sévère peut survenir SANS protéinurie significative si une atteinte d'organe cible est présente (thrombopénie, cytolyse hépatique, insuffisance rénale, signes neurologiques). Ne pas exiger la protéinurie pour poser le diagnostic."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Le HELLP syndrome peut débuter ou s'aggraver dans les 48h du POST-PARTUM — la surveillance biologique doit impérativement se poursuivre après la délivrance."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie et mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prééclampsie résulte d'un **défaut de placentation** (invasion trophoblastique incomplète des artères spiralées) générant une **ischémie placentaire** chronique. Le placenta libère alors des facteurs anti-angiogéniques (sFlt-1, sEndogline) qui induisent un **dysfonctionnement endothélial systémique** : le nœud physiopathologique central de toutes les complications."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Vasoconstriction généralisée** : augmentation des résistances vasculaires systémiques, HTA, hypoperfusion organique",
+                "**Hypovolémie relative** : fuite capillaire, hypo-albuminémie, espace vasculaire réduit malgré des œdèmes périphériques",
+                "**Coagulopathie** : consommation plaquettaire (activation endothéliale), CIVD dans les formes sévères",
+                "**Atteinte rénale** : endothéliose glomérulaire → protéinurie, oligourie, élévation créatinine",
+                "**Atteinte hépatique** : dépôts de fibrine sinusoïdaux → cytolyse, distension capsulaire (douleur en barre), risque d'hématome sous-capsulaire",
+                "**Atteinte cérébrale** : perte de l'autorégulation vasculaire cérébrale, œdème vasogénique → céphalées, troubles visuels, éclampsie",
+                "**Susceptibilité à l'hypotension sous rachianesthésie** : paradoxale — la vasoconstriction de base efface la marge hémodynamique lors d'un bloc sympathique brutal"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE physiopathologique : La patiente prééclamptique est HYPOVOLÉMIQUE malgré son HTA — l'expansion volémique agressive est délétère (risque d'œdème pulmonaire). Le remplissage doit rester raisonné et ciblé (< 500 mL cristalloïdes en co-charge)."
+            },
+            {
+              "type": "text",
+              "content": "La **barrière hémato-encéphalique altérée** et l'**hyperexcitabilité neuronale** (liées à l'hypomagnésémie relative et à l'œdème vasogénique) expliquent le risque convulsif, majoré par la douleur, le laryngoscope ou une stimulation nociceptive sous-dosée en AG."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation préopératoire spécifique",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation préanesthésique doit être **systématique et multidimensionnelle**, intégrant le bilan biologique, l'état des voies aériennes, le statut neurologique et le contexte fœtal. Elle conditionne directement le choix de la technique anesthésique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bilan biologique urgent** : NFS-plaquettes, TP/TCA/fibrinogène, ASAT/ALAT, LDH, bilirubine, créatinine, uricémie, ionogramme, groupage-RAI, bilan d'hémolyse (frottis, haptoglobine)",
+                "**Seuil de sécurité pour anesthésie locorégionale** : plaquettes ≥ 70–80 G/L selon la plupart des recommandations (SFAR 2022, OAA-AAGBI 2022), avec tendance stable sur 4–6h",
+                "**Évaluation des voies aériennes** : œdème laryngé fréquent (grossesse + prééclampsie) → score de Mallampati, ouverture de bouche, mobilité cervicale — prévoir 2 lames, mandrin, kit de cricothyroïdotomie",
+                "**Bilan neurologique** : céphalées, troubles visuels, ROT vifs, signe de Babinski — si anomalies : discuter TDM/IRM avant AG si le délai le permet",
+                "**Bilan cardiaque** : signes d'œdème pulmonaire (SpO2, crépitants, radio thorax si possible), fonction VG si dysfonction suspectée",
+                "**État du fœtus** : RCF, écho Doppler — urgence fœtale = facteur déterminant du délai et de la technique"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Délai décision-incision : Urgence immédiate (souffrance fœtale aiguë, HRP, éclampsie) → objectif < 30 min (AG souvent incontournable) ; Urgence différée → 30–75 min (ALR préférable si conditions réunies)."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Ne pas se fier à un seul dosage de plaquettes. Un comptage stable à 90 G/L est moins préoccupant qu'un comptage chutant rapidement de 150 à 85 G/L en 2h — la CINÉTIQUE est aussi importante que la valeur absolue."
+            }
+          ]
+        },
+        {
+          "title": "4. Choix de la technique anesthésique",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **rachianesthésie** est actuellement la technique de **premier choix** pour la césarienne chez la patiente prééclamptique non compliquée (SFAR 2022, OAA-AAGBI 2022, SOAP 2021). L'idée ancienne que l'hypotension sous rachianesthésie soit incontrôlable chez la prééclamptique a été infirmée par des données solides : son incidence et sa sévérité sont moindres que chez la patiente normotendue."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Rachianesthésie (RA)** — avantages : rapidité d'installation, qualité analgésique supérieure, évite intubation (voies aériennes difficiles !), hypotension moindre qu'attendue car vasoconstriction de base",
+                "**Analgésie péridurale (APD) déjà en place** — avantage : titration progressive, stabilité hémodynamique optimale, conversion en anesthésie péridurale pour césarienne possible ; privilégier si cathéter en place depuis le travail",
+                "**Rachipéridurale combinée (CSE)** : option valide, intérêt si durée opératoire incertaine ou analgésie postopératoire optimale souhaitée",
+                "**Anesthésie générale (AG)** : réservée aux contre-indications absolues à l'ALR (refus éclairé, CIVD/plaquettes < 70–80 G/L non rattrapable, troubles de l'hémostase majeurs, urgence extrême < 15 min, instabilité neurologique sévère)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Doses de RA pour césarienne prééclamptique : Hyperbarique bupivacaïne 0,5% = 8–10 mg (dose réduite recommandée par certains, ex : 8–9 mg vs 10–12,5 mg chez normotendue) + sufentanil intrathécal 2,5–5 µg + morphine intrathécale 100 µg (analgésie postopératoire). Certains experts n'adaptent pas la dose de bupivacaïne à la baisse, car le bloc est identique et le risque d'extension insuffisante augmente."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR EN AG : Lors de l'induction séquence rapide (ISR), la laryngoscopie et l'intubation provoquent une POUSSÉE HYPERTENSIVE SÉVÈRE potentiellement fatale (AVC, HRP, œdème pulmonaire). Prévoir systématiquement une prémédication antiHTA : Esmolol 0,5–1 mg/kg IV OU Remifentanil 1–2 µg/kg IV (précaution : dépression néonatale) OU Lidocaïne 1,5 mg/kg IV — 90 secondes avant laryngoscopie."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**ISR en prééclampsie** : Propofol 2 mg/kg (prudence : hypotension) ou Thiopental 4–5 mg/kg (si disponible) + Succinylcholine 1,5 mg/kg (premier choix si estomac plein) ; Rocuronium 1,2 mg/kg si CI succinylcholine (antidote : sugammadex 16 mg/kg)",
+                "**Kétamine en prééclampsie** : à éviter ou utiliser à dose titrée très réduite (0,5–1 mg/kg) — effet hypertenseur additionnel",
+                "**Entretien AG** : Sévoflurane ≤ 1 CAM (vasodilatation légère utile) + rémifentanil IVSE + vécuronium ou rocuronium ; la profondeur d'anesthésie (BIS 40–60) réduit le risque convulsif peropératoire"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "5. Gestion de l'hypotension sous rachianesthésie",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'hypotension sous rachianesthésie est définie par une **baisse de la PAS > 20% par rapport à la valeur de base** ou une **PAS < 100 mmHg** (selon les études) après injection intrathécale. Chez la prééclamptique, son incidence est **30–40%** (versus 50–80% chez la normotendue), mais elle n'est pas nulle et doit être anticipée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Position maternelle** : déplacement utérin gauche systématique (inclinaison de table 15° ou cunéiforme) pour lever la compression aorto-cave",
+                "**Co-charge cristalloïde** : Ringer Lactate ou NaCl 0,9% 250–500 mL administré PENDANT la rachianesthésie (co-charge) — supérieure à la pré-charge seule en efficacité, moins risquée que les colloïdes (SFAR 2022) ; rester prudent sur le volume total (terrain de fuite capillaire)",
+                "**Vasopresseurs prophylactiques — PREMIER CHOIX : Phényléphrine** : 50–100 µg IV en bolus ou IVSE 25–100 µg/min (alpha-1 agoniste pur, ne compromet pas le débit cardiaque fœtal, préserve la FSU) — recommandée en prophylaxie systématique (SOAP 2021, OAA 2022)",
+                "**Éphédrine** : alpha + bêta agoniste, associée à une acidose fœtale légère (transfert placentaire + stimulation métabolique fœtale) — à utiliser en 2e intention ou si bradycardie maternelle associée, bolus 5–10 mg IV",
+                "**Noradrénaline** : alternative acceptable à la phényléphrine (alpha dominant), bolus 5–10 µg ou IVSE 0,05–0,1 µg/kg/min — données croissantes mais moins de recul",
+                "**Objectif tensionnel** : maintenir PAS ≥ 80–90% de la valeur de base (éviter > 160 mmHg aussi !)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Protocole prophylaxie hypotension recommandé : Phényléphrine IVSE démarrée dès l'injection intrathécale à 50 µg/min, adaptée selon la PAS (toutes les 1–2 min), arrêtée si PAS ≥ valeur de base. Bolus de sauvetage : 100 µg phényléphrine si PAS < 80% base ET FC > 60/min ; éphédrine 5–10 mg si bradycardie associée (FC < 60/min)."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : En prééclampsie, les valeurs de base de PAS sont ÉLEVÉES (ex : 160/100). Viser 80% de la PAS de base (= 128 mmHg) peut sembler 'hypotension' sur un moniteur habituel — mais représente un objectif adéquat. NE PAS sur-traiter pour 'corriger' jusqu'à 160 mmHg."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE INVERSE : Une hypotension réfractaire à la phényléphrine doit faire suspecter une hémorragie occulte (HRP, atonie utérine débutante, HELLP avec rupture hépatique) — réévaluation clinique urgente."
+            }
+          ]
+        },
+        {
+          "title": "6. Prévention et traitement de l'éclampsie péri-anesthésique",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **sulfate de magnésium (MgSO4)** est le traitement de référence pour la prévention et le traitement des crises d'éclampsie. Son instauration doit précéder l'anesthésie chez toute patiente prééclamptique sévère avec signes prodromiques neurologiques, et être maintenue pendant et après l'acte."
+            },
+            {
+              "type": "formula",
+              "content": "Protocole MgSO4 antiéclampsie (MAGPIE Trial, WHO) : Dose de charge 4 g IV en 20 min (LENTE, jamais en bolus rapide) → Dose d'entretien 1–2 g/h IVSE pendant au minimum 24h post-partum."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Surveillance de la magnésiémie clinique** (si dosage indisponible immédiatement) : ROT présents = magnésémie < 5 mmol/L (zone thérapeutique 2–3,5 mmol/L)",
+                "**Premiers signes de surdosage** : abolition des ROT (magnésémie ≈ 5 mmol/L), paralysie respiratoire (≈ 7–8 mmol/L), arrêt cardiaque (> 12–15 mmol/L)",
+                "**Antidote** : Gluconate de calcium 1 g IV lent (10 mL de gluconate 10%) — disponible au lit de la patiente",
+                "**Interaction AG** : MgSO4 potentialise les curares non dépolarisants → réduire les doses de 30–50% et monitorer la curarisation (TOF) — la succinylcholine est moins affectée",
+                "**MgSO4 et rachianesthésie** : aucune contre-indication, peut potentialiser légèrement le bloc sensitif (cliniquement peu significatif)",
+                "**Précautions rénales** : insuffisance rénale → accumulation du magnésium → adapter la dose d'entretien (réduire à 0,5–1 g/h si diurèse < 25 mL/h ou créatinine ≥ 90 µmol/L)"
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Traitement de la crise d'éclampsie peranesthésique** : Libération des voies aériennes + O2 100% → MgSO4 4 g IV en 5–10 min si pas de charge préalable (2 g si déjà sous MgSO4) → si crises répétées : Diazépam 10 mg IV ou Clonazépam 1 mg IV → intubation oro-trachéale si état de mal éclamptique",
+                "**Antihypertenseurs urgents peropératoires** : Nicardipine (Loxen®) 0,5–1 mg IV titré si PAS ≥ 160 mmHg (AMM, référence française) ; Labétalol 20–80 mg IV (si FC normale) ; Hydralazine 5–10 mg IV (délai d'action plus long, moins prévisible) ; Esmolol peropératoire pour pic hypertensif à l'intubation"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Ne pas confondre le traitement d'une crise d'éclampsie avec la prévention. Le MgSO4 n'est PAS un antiépileptique classique — il n'est PAS efficace pour l'épilepsie préexistante. Sa supériorité sur les benzodiazépines est démontrée UNIQUEMENT pour l'éclampsie (MAGPIE Trial 2002, toujours référence)."
+            }
+          ]
+        },
+        {
+          "title": "7. Prise en charge du HELLP syndrome en périopératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le HELLP syndrome complique 0,5 à 0,9% des grossesses et 10 à 20% des prééclampsies sévères. Sa prise en charge anesthésique périopératoire intègre la **gestion de la coagulopathie**, la **correction de la thrombopénie** et la **surveillance des complications hépatiques** potentiellement fatales."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Seuils transfusionnels plaquettaires** : < 50 G/L → transfusion préventive (CPA) avant toute ALR rachidienne ou péridurale ET avant tout geste chirurgical ; 50–70 G/L → décision au cas par cas selon cinétique et urgence ; ≥ 80 G/L → ALR généralement sûre selon SFAR/OAA 2022",
+                "**Objectif plaquettaire pré-opératoire** : ≥ 50 G/L pour césarienne (chirurgie) ; ≥ 80 G/L pour ALR rachidienne selon SFAR 2022",
+                "**Fibrinogène** : transfusion de PFC ou fibrinogène concentré si fibrinogène < 2 g/L (risque hémorragique obstétrical majeur)",
+                "**Corticothérapie** : Bétaméthasone si terme < 34 SA (maturation fœtale) — la Dexaméthasone pour améliorer la thrombopénie maternelle du HELLP est controversée et non recommandée en routine (ACOG 2020)",
+                "**Hématome sous-capsulaire hépatique** : complication rare mais catastrophique (0,9–2% des HELLP) → PEC chirurgicale ou radiologique (embolisation) ; suspecter si douleur de l'hypochondre droit + choc hémorragique inexpliqué",
+                "**Anticoagulation postopératoire** : HBPM à dose préventive dès H12–24 post-partum si plaquettes ≥ 50 G/L et hémostase stabilisée — le HELLP est PROTHROMBOTIQUE (risque de MTEV majoré)",
+                "**Recueil de drainage abdominal** : surveiller les pertes en postopératoire immédiat, une hémorragie intraabdominale est possible sur fond de coagulopathie",
+                "**Surveillance biologique postopératoire** : NFS + bilan hépatique + LDH toutes les 6–12h pendant 48h (aggravation possible en postpartum immédiat)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Règle des '48h post-partum' : Le HELLP syndrome s'aggrave typiquement dans les 24–48h suivant l'accouchement avant de s'améliorer. Le nadir plaquettaire est atteint à J1–J2 post-partum. Une normalisation complète est attendue en 3–7 jours dans la majorité des cas."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE CHIRURGICAL : L'ablation du cathéter péridural chez une patiente HELLP doit être différée jusqu'à ce que les plaquettes soient ≥ 80 G/L ET stables (ou en ascension) — le risque d'hématome périmédullaire existe aussi au RETRAIT du cathéter, pas seulement à sa pose."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Acide tranexamique** : 1 g IV dès l'incision en cas de HELLP + hémorragie du post-partum — données du WOMAN Trial (Lancet 2017) applicables à ce contexte",
+                "**Sulfate de magnésium et HELLP** : maintenir 24–48h post-partum même si pas d'éclampsie clinique (risque convulsif maximal dans cette fenêtre)",
+                "**Recours à la CIVD** : fibrinogène < 2 g/L + consommation plaquettaire rapide + allongement TP/TCA → PFC 15–20 mL/kg + fibrinogène 2–4 g + CPA + discussion avec hématologiste"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "8. Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Rachianesthésie recommandée en 1ère intention** pour la césarienne de la prééclamptique sévère (hors urgence extrême ou CI hématologique) — Grade 1+ SFAR 2022, OAA-AAGBI 2022",
+                "**Phényléphrine en prophylaxie** de l'hypotension sous rachianesthésie — Grade 1+ SOAP 2021, OAA 2022 ; supérieure à l'éphédrine pour préserver l'équilibre acido-basique fœtal",
+                "**MgSO4 recommandé** pour la prévention de l'éclampsie en prééclampsie sévère — Grade 1A, MAGPIE Trial 2002, OMS 2011, CNGOF-SFAR 2022",
+                "**Seuil ALR** : plaquettes ≥ 80 G/L pour rachianesthésie (consensus SFAR/SFMU 2022) ; ≥ 70–75 G/L selon certaines sociétés savantes si autres facteurs favorables",
+                "**Nicardipine IV** : antihypertenseur de première intention en France pour urgence hypertensive périopératoire en obstétrique — AMM, CNGOF 2021",
+                "**Traitement antihypertenseur** si PAS ≥ 160 mmHg persistant > 15 min — Grade 1A ACOG 2022, NICE 2023 (risque d'AVC)",
+                "**Acide tranexamique** : réduction de la mortalité par HPP — WOMAN Trial (Lancet 2017), recommandé en obstétrique SFAR 2022",
+                "**Dexaméthasone** pour amélioration du HELLP maternel : NON recommandée en routine (niveau de preuve insuffisant — ACOG 2020, revue Cochrane 2021)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Objectif tensionnel peropératoire en prééclampsie : PAS 130–155 mmHg / PAD 80–105 mmHg (ne pas normaliser trop rapidement — risque ischémique utéro-placentaire si chute brutale). Objectif post-partum : PAS < 140/90 mmHg."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Rachianesthésie = 1er choix** : l'hypotension est moins fréquente qu'attendue en prééclampsie (vasoconstriction de base), et les risques de l'AG (voies aériennes difficiles, poussée hypertensive à l'intubation) sont bien supérieurs dans cette population.",
+        "**Phényléphrine prophylactique IVSE** dès l'injection intrathécale : réduit l'hypotension sous RA sans compromettre le bien-être fœtal — supérieure à l'éphédrine qui génère une légère acidose fœtale.",
+        "**MgSO4 : charge 4 g en 20 min + entretien 1–2 g/h** — maintenir au moins 24h post-partum, surveiller les ROT (abolition = surdosage) et avoir le gluconate de calcium 1 g prêt.",
+        "**HELLP : surveiller les plaquettes toutes les 6–12h** dans les 48h post-partum (nadir à J1–J2), ne retirer le cathéter péridural que si plaquettes ≥ 80 G/L stables ou croissantes.",
+        "**AG = piège de l'intubation** : pré-traitement anti-hypertenseur OBLIGATOIRE (esmolol, rémifentanil ou lidocaïne IV) + MgSO4 déjà en cours + réduction des doses de curares non dépolarisants de 30–50%."
+      ],
+      "references": [
+        "SFAR — Recommandations pour la pratique clinique : Anesthésie pour césarienne — 2022",
+        "OAA/AAGBI — Guidelines for Obstetric Anaesthetic Services — 2022",
+        "SOAP (Society for Obstetric Anesthesia and Perinatology) — Consensus Statement on the Management of Cardiac Arrest and Vasopressor Use in Obstetrics — 2021",
+        "CNGOF/SFAR — Recommandations pour la prise en charge de la prééclampsie — 2022",
+        "ACOG Practice Bulletin No. 222 — Gestational Hypertension and Preeclampsia — Obstetrics & Gynecology 2020 (reaffirmed 2022)",
+        "Magpie Trial Collaborative Group — Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? — Lancet 2002 (référence fondatrice toujours valide)",
+        "WOMAN Trial Collaborators — Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage — Lancet 2017",
+        "Kinsella SM et al. — International consensus statement on the management of hypotension with vasopressors during caesarean section under spinal anaesthesia — Anaesthesia 2018",
+        "Sibai BM — Diagnosis, controversies, and management of the syndrome of hemolysis, elevated liver enzymes, and low platelet count — Obstetrics & Gynecology 2004 (classification de référence)",
+        "NICE Guideline NG133 — Hypertension in pregnancy: diagnosis and management — 2023 update"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Patiente G2P1, 32 SA, prééclampsie sévère avec PAS 170/110 mmHg, céphalées intenses, phosphènes. Plaquettes 95 G/L stables depuis 4h. Bilan hépatique normal. Décision de césarienne semi-urgente (délai 45 min). La patiente n'a pas de cathéter péridural en place.",
+        "question": "Quelle est la technique anesthésique la mieux adaptée à cette patiente selon les recommandations actuelles (SFAR 2022, OAA 2022) ?",
+        "options": {
+          "A": "Anesthésie générale avec induction séquence rapide : risque d'hypotension sous rachianesthésie trop élevé en cas de prééclampsie sévère",
+          "B": "Rachianesthésie : technique de premier choix, plaquettes ≥ 80 G/L, délai compatible, voies aériennes à risque en AG",
+          "C": "Analgésie péridurale titrée : meilleure stabilité hémodynamique que la rachianesthésie, préférable en prééclampsie sévère quelle que soit la situation",
+          "D": "Rachipéridurale combinée systématique : la dose intrathécale réduite permet d'éviter toute hypotension en prééclampsie"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la rachianesthésie est recommandée en 1ère intention (SFAR 2022, OAA 2022) — plaquettes 95 G/L stables (≥ 80 G/L = seuil de sécurité), délai 45 min compatible. L'hypotension sous RA est MOINS fréquente en prééclampsie qu'en normotension. Piège A : l'idée que la RA est contre-indiquée en prééclampsie sévère est un mythe dépassé — c'est exactement le contraire des recommandations actuelles. Piège C : l'APD titrée est très bonne mais nécessite un cathéter en place ou un délai plus long pour être titrée — sans cathéter préexistant, la RA est plus rapide et pratique. Piège D : la CSE n'est pas systématique ; elle est une option valide mais non supérieure à la RA simple pour ce contexte."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Sous rachianesthésie pour césarienne d'une patiente prééclamptique (PAS de base 165 mmHg), la PAS chute à 105 mmHg 5 minutes après l'injection. Fréquence cardiaque à 78/min. La patiente est sous MgSO4 depuis 30 min.",
+        "question": "Quel vasopresseur administrer en première intention et pourquoi ?",
+        "options": {
+          "A": "Éphédrine 10 mg IV : meilleur effet sur la fréquence cardiaque, évite la bradycardie réflexe et maintient le débit cardiaque utéro-placentaire",
+          "B": "Phényléphrine 100 µg IV : alpha-1 agoniste pur, ne génère pas d'acidose fœtale métabolique, recommandé en 1ère intention pour la prévention/traitement de l'hypotension sous rachianesthésie obstétricale",
+          "C": "Adrénaline 0,1 mg IV : action alpha et bêta, traitement de l'hypotension réfractaire de première intention en obstétrique",
+          "D": "Noradrénaline 0,5 mg IV en bolus : supérieure à la phényléphrine car elle préserve mieux le débit cardiaque maternel grâce à son effet bêta partiel"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : La phényléphrine est le vasopresseur de première intention recommandé (SOAP 2021, OAA 2022, Kinsella 2018). Alpha-1 agoniste pur, elle augmente les RVS sans stimuler le métabolisme fœtal, préservant l'équilibre acido-basique fœtal. Piège A : l'éphédrine traverse le placenta et stimule le métabolisme fœtal, générant une acidose métabolique fœtale légère ; réservée en 2e intention ou si bradycardie (FC < 60/min). Piège C : l'adrénaline n'est pas indiquée en 1ère intention pour l'hypotension obstétricale — réservée aux états de choc réfractaires ou anaphylaxie. Piège D : la noradrénaline est une alternative acceptable mais pas 'supérieure' avec un niveau de preuve moindre ; de plus, 0,5 mg en bolus est une dose excessive (bolus recommandés : 5–10 µg)."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Patiente prééclamptique sévère recevant du MgSO4 (charge 4 g administrée, entretien 1 g/h depuis 2h) pour une césarienne sous anesthésie générale. À l'induction, vous utilisez la succinylcholine 1,5 mg/kg. Pour le maintien, vous envisagez un curarisant non dépolarisant.",
+        "question": "Quel ajustement pharmacologique est OBLIGATOIRE concernant les curares non dépolarisants en présence de MgSO4 ?",
+        "options": {
+          "A": "Aucun ajustement nécessaire : le MgSO4 n'a d'effet que sur les canaux calciques des neurones, sans interaction neuromusculaire significative",
+          "B": "Doubler les doses de curares non dépolarisants car le MgSO4 compète avec les récepteurs nicotiniques",
+          "C": "Réduire les doses de curares non dépolarisants de 30 à 50% et monitorer la curarisation par TOF (Train-Of-Four), car le MgSO4 potentialise le bloc neuromusculaire",
+          "D": "Éviter tout curarisant non dépolarisant : utiliser uniquement la succinylcholine pour l'entretien de la curarisation"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : Le MgSO4 potentialise les curares non dépolarisants par plusieurs mécanismes (inhibition de la libération d'ACh présynaptique, stabilisation de la membrane postsynaptique par compétition avec le calcium, effet direct sur le muscle). Les doses doivent être réduites de 30–50% avec monitorage TOF obligatoire. Piège A : l'interaction neuromusculaire du magnésium est bien documentée et cliniquement significative — l'ignorer expose à une curarisation prolongée. Piège B : le sens de l'interaction est inversé — c'est une potentialisation, pas une compétition nécessitant plus de curare. Piège D : la succinylcholine est moins affectée par le MgSO4 (elle agit par dépolarisation, non par compétition) ; l'utiliser en entretien serait inapproprié et dangereux (fasciculations répétées, hyperkaliémie potentielle)."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Patiente prééclamptique avec HELLP syndrome : plaquettes 45 G/L à la décision de césarienne. Urgence différée (60 min). Fibrinogène 2,8 g/L, TP 78%, TCA 1,3× témoin.",
+        "question": "Quelle décision anesthésique est la plus appropriée concernant la technique ?",
+        "options": {
+          "A": "Rachianesthésie réalisable : le seuil de 50 G/L est admis par certains centres, et le bénéfice de l'ALR dépasse le risque d'hématome médullaire",
+          "B": "Anesthésie générale obligatoire, puis transfusion d'un CPA pour monter les plaquettes ≥ 80 G/L avant la prochaine procédure",
+          "C": "Anesthésie générale indiquée avec induction séquence rapide : plaquettes < 50 G/L sont une contre-indication à toute anesthésie locorégionale rachidienne ou péridurale",
+          "D": "Reporter la césarienne jusqu'à obtenir des plaquettes ≥ 80 G/L après transfusion de CPA, quelles que soient les conditions fœtales"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : Plaquettes < 50 G/L constituent une contre-indication formelle à la rachianesthésie et à la péridurale selon les recommandations SFAR 2022 et OAA 2022 (seuil de sécurité pour l'ALR = ≥ 70–80 G/L selon les sociétés). L'AG avec ISR est donc indiquée ici. Piège A : bien que certains auteurs aient discuté des seuils de 50 G/L, aucune recommandation actuelle ne valide la RA sous ce seuil en routine — le risque d'hématome périmédullaire est catastrophique. Piège B : La question porte sur la technique pour CETTE césarienne (60 min, urgence), pas la suivante — l'AG est la décision immédiate. Piège D : reporter la césarienne en urgence différée n'est pas acceptable si le HELLP évolue avec souffrance fœtale ou instabilité maternelle ; de plus, les plaquettes peuvent continuer à chuter malgré la transfusion."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "En per-opératoire d'une césarienne sous AG (intubation réalisée) pour prééclampsie sévère, la patiente présente une crise tonico-clonique généralisée. Elle est sous MgSO4 depuis 1h (dose de charge reçue, entretien en cours). Monitorage : SpO2 96%, PAS 185/115 mmHg.",
+        "question": "Quelle est la séquence thérapeutique correcte en priorité ?",
+        "options": {
+          "A": "Arrêter le MgSO4 immédiatement (surdosage probable), injecter du diazépam 10 mg IV, puis traiter l'HTA par nicardipine",
+          "B": "Vérifier la position de la sonde d'intubation, approfondir l'anesthésie (propofol ou sévoflurane), injecter MgSO4 2 g IV supplémentaire en 5–10 min, traiter l'HTA par nicardipine si PAS ≥ 160 mmHg persiste",
+          "C": "Injecter immédiatement du gluconate de calcium 1 g IV pour antagoniser le surdosage magnésique, puis phénytoïne IV pour les convulsions",
+          "D": "Injecter du phénobarbital 10 mg/kg IV : supérieur au MgSO4 pour les convulsions éclampiques survenant sous AG"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : En AG déjà intubée, les convulsions sont gérées par approfondissement de l'anesthésie (IVSE propofol ou augmentation sévoflurane) + MgSO4 2 g IV supplémentaire en 5–10 min (bolus de rattrapage pour crise survenant sous MgSO4 déjà en cours). Traitement de l'HTA sévère par nicardipine. Piège A : arrêter le MgSO4 est contre-intuitif et dangereux — la crise sous MgSO4 nécessite un bolus supplémentaire, pas l'arrêt du traitement. Le surdosage se reconnaît à l'abolition des ROT et troubles respiratoires, pas à une crise convulsive. Piège C : le gluconate de calcium s'administre en cas de SURDOSAGE magnésique (abolition des ROT, bradycardie, apnée), pas lors d'une crise convulsive. Piège D : la phénytoïne n'est PAS recommandée pour l'éclampsie — elle est inférieure au MgSO4 dans tous les essais cliniques (MAGPIE Trial)."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patiente prééclamptique sévère, césarienne sous rachianesthésie terminée, J1 post-partum. Plaquettes à J0 (per-opératoire) : 85 G/L. Nouvelles plaquettes à H18 post-partum : 55 G/L. Cathéter péridural non en place (rachianesthésie réalisée). Elle est sous MgSO4.",
+        "question": "Quel aspect de la surveillance/prise en charge est le plus crucial à H18 post-partum dans ce contexte ?",
+        "options": {
+          "A": "Arrêter le MgSO4 à H12 post-partum selon le protocole standard et surveiller l'apparition d'une protéinurie résiduelle",
+          "B": "Réaliser une IRM médullaire urgente pour rechercher un hématome périmédullaire retardé lié à la rachianesthésie",
+          "C": "Poursuivre le MgSO4 au moins 24h post-partum, surveiller les plaquettes toutes les 6–12h (nadir attendu à J1–J2), rechercher des signes de HELLP aggravé (douleur épigastrique, hémolyse) et ne débuter les HBPM qu'après stabilisation des plaquettes ≥ 50 G/L",
+          "D": "Transfuser immédiatement un CPA pour remonter les plaquettes au-dessus de 100 G/L car tout chiffre < 100 G/L est dangereux en post-partum"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : La chute des plaquettes à H18 est attendue dans le HELLP (nadir à J1–J2 post-partum), la priorité est de poursuivre le MgSO4 ≥ 24h post-partum (risque convulsif maximal), surveiller biologiquement toutes les 6–12h et retarder les HBPM jusqu'à stabilisation > 50 G/L. Piège A : arrêter le MgSO4 à H12 est prématuré — le risque d'éclampsie est maximal dans les 24–48h post-partum, c'est pourquoi la durée minimale recommandée est 24h post-partum. Piège B : l'IRM médullaire urgente serait indiquée si la patiente présentait des signes neurologiques (douleur dorsale, déficit sensitivo-moteur) évocateurs d'hématome — en l'absence de cathéter péridural et de signes neurologiques, elle n'est pas indiquée. Piège D : la transfusion de CPA n'est pas indiquée pour un seuil de 55 G/L sans saignement actif — le seuil transfusionnel prophylactique est généralement < 20–30 G/L hors procédure invasive ou saignement."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Patiente prééclamptique sévère, 30 SA, César urgente sous AG. Pendant l'induction (avant intubation), sa PAS monte à 210/130 mmHg. Vous souhaitez atténuer la réaction hypertensive à la laryngoscopie.",
+        "question": "Quel agent permet le mieux d'atténuer la réaction hypertensive à la laryngoscopie dans ce contexte, avec le meilleur profil de sécurité fœtale ?",
+        "options": {
+          "A": "Kétamine 1,5 mg/kg à l'induction : elle maintient la PA et le tonus sympathique, évitant les variations hémodynamiques",
+          "B": "Esmolol 0,5–1 mg/kg IV 60–90 secondes avant la laryngoscopie : bêtabloquant ultrashort permettant d'atténuer la réponse sympathique sans accumulation fœtale significative",
+          "C": "Magnésium 2 g supplémentaires IV en bolus rapide (< 2 min) juste avant la laryngoscopie : vasodilatateur efficace pour éviter le pic hypertensif",
+          "D": "Clonidine 150 µg IV à l'induction : alpha-2 agoniste central efficace pour prévenir la réponse hypertensive à l'intubation en obstétrique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : L'esmolol 0,5–1 mg/kg IV 60–90 s avant laryngoscopie est une option validée pour atténuer le pic hypertensif à l'intubation en prééclampsie. Sa demi-vie de 9 min limite l'accumulation. Alternative : rémifentanil 1–2 µg/kg (mais dépression néonatale possible) ou lidocaïne IV 1,5 mg/kg. Piège A : La kétamine est sympathomimétique — elle AUGMENTE la PA et la FC, absolument contre-indiquée pour atténuer une réponse hypertensive en prééclampsie ; à dose titrée (0,5 mg/kg), elle peut être utilisée pour l'induction si l'objectif n'est pas la neuroprotection, mais pas pour prévenir un pic hypertensif. Piège C : Le bolus rapide de MgSO4 (< 2 min) peut provoquer une vasodilatation brutale avec flush et hypotension sévère, voire arrêt cardiaque — le MgSO4 doit toujours être administré en 15–20 min minimum. Piège D : La clonidine IV n'a pas d'AMM validée en obstétrique pour cette indication, son délai d'action est trop long pour être efficace en prémédication per-induction rapide, et elle traverse le placenta avec risque de bradycardie fœtale."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Patiente sous MgSO4 depuis 3h (dose de charge + entretien 1 g/h), diurèse à 20 mL/h depuis 2h, créatinine à 110 µmol/L. Les ROT sont conservés mais diminués.",
+        "question": "Quelle adaptation du protocole MgSO4 est nécessaire et pour quelle raison ?",
+        "options": {
+          "A": "Arrêter le MgSO4 : l'oligurie et la créatinine élevée indiquent un surdosage imminent, les ROT diminués confirment la toxicité",
+          "B": "Poursuivre sans modification : les ROT présents (même diminués) indiquent une magnésémie dans la zone thérapeutique, l'oligurie est liée à la prééclampsie elle-même",
+          "C": "Réduire le débit d'entretien à 0,5 g/h et surveiller les ROT et la diurèse toutes les 30 min : l'insuffisance rénale relative réduit l'élimination du magnésium et majore le risque d'accumulation",
+          "D": "Augmenter le débit d'entretien à 3 g/h pour compenser la dilution par le remplissage vasculaire concomitant"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : L'oligurie (< 25 mL/h) et la créatinine ≥ 90 µmol/L signalent une insuffisance rénale relative qui réduit l'élimination urinaire du magnésium. Le risque d'accumulation et de surdosage est réel malgré des ROT conservés. La réduction à 0,5 g/h est la réponse adaptée avec surveillance rapprochée des ROT (marqueur clinique fiable d'accumulation) et idéalement du dosage de la magnésémie. Piège A : Les ROT diminués (mais présents) ne signent pas encore le surdosage — ils sont dans la zone thérapeutique haute (2–3,5 mmol/L). Le surdosage se manifeste par l'ABOLITION des ROT. L'arrêt brutal exposerait à une crise d'éclampsie. Piège B : Ne pas adapter la dose malgré une IRA relative est dangereux — le risque d'accumulation progressive vers des zones toxiques (abolition des ROT, apnée) est réel dans les prochaines heures. Piège D : Augmenter le débit est contraire à la physiopathologie — la réduction de l'élimination rénale impose de DIMINUER les apports."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Patiente opérée pour HELLP classe 1 (plaquettes 42 G/L, LDH 1800 UI/L, ASAT 8× N). À J2 post-partum, elle présente une douleur de l'hypochondre droit irradiant vers l'épaule droite, une hypotension (PAS 88 mmHg) et une chute brutale de l'hémoglobine de 10 à 6,5 g/dL en 4h.",
+        "question": "Quel diagnostic doit être évoqué en priorité et quelle est la prise en charge initiale urgente ?",
+        "options": {
+          "A": "Hémorragie du post-partum par atonie utérine retardée : bilan gynécologique urgent, révision utérine, ocytocine IVSE",
+          "B": "Hématome sous-capsulaire hépatique rompu : remplissage vasculaire + transfusion CGR + CPA + fibrinogène, appel chirurgien viscéral et/ou radiologue interventionnel, bilan hépatique et coagulation urgent",
+          "C": "Embolie pulmonaire massive : anticoagulation curative immédiate à dose pleine, thrombolyse si état de choc réfractaire",
+          "D": "Rupture splénique spontanée : complication connue du HELLP, traitement identique à l'hématome hépatique mais laparotomie systématique obligatoire"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : La triade douleur hypochondre droit + irradiation épaule droite (signe phrénique) + choc hémorragique + contexte HELLP sévère évoque en priorité l'hématome sous-capsulaire hépatique rompu (0,9–2% des HELLP, mortalité 50% si rupture). Prise en charge : remplissage, transfusion massive (CGR + CPA + fibrinogène + PFC), appel chirurgien viscéral et radiologue pour embolisation artérielle hépatique (moins invasive que la laparotomie en 1ère intention si disponible), scanner abdominal en urgence si état hémodynamique le permet. Piège A : L'atonie utérine retardée est une cause d'HPP mais ne s'accompagne pas de douleur en hypochondre droit ni de signe phrénique — le siège du saignement oriente vers le foie. Piège C : L'embolie pulmonaire massive ne donne pas de douleur abdominale en hypochondre droit et ne s'accompagne pas d'une chute isolée de l'Hb — de plus, anticoaguler une patiente à 42 G/L de plaquettes avec suspicion d'hémorragie intra-abdominale serait catastrophique. Piège D : la rupture splénique est possible mais beaucoup plus rare que l'hématome hépatique dans le HELLP ; la laparotomie n'est pas systématique si l'embolisation est réalisable."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Patiente prééclamptique sévère, césarienne sous rachianesthésie réalisée. À J1 post-partum, elle est stable, plaquettes 88 G/L en légère ascension, créatinine normale. L'équipe d'obstétrique souhaite démarrer une thromboprophylaxie par HBPM.",
+        "question": "Concernant la thromboprophylaxie par HBPM dans ce contexte, quelle affirmation est exacte ?",
+        "options": {
+          "A": "Les HBPM sont formellement contre-indiquées jusqu'à la normalisation complète des plaquettes (> 150 G/L) en raison du risque de TIH dans le HELLP",
+          "B": "Les HBPM à dose préventive peuvent être initiées dès lors que les plaquettes sont ≥ 50 G/L et stables ou en ascension, l'hémostase correcte et en l'absence de saignement actif — la prééclampsie est un état prothrombotique majeur justifiant cette anticoagulation",
+          "C": "La rachianesthésie ayant été réalisée, il faut attendre 24h supplémentaires après la fin du MgSO4 avant toute anticoagulation",
+          "D": "L'aspirine à dose antiaggrégante (75–100 mg/j) suffit comme thromboprophylaxie post-partum chez la patiente prééclamptique thrombopénique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : La prééclampsie et le HELLP syndrome sont des états d'hypercoagulabilité avec risque élevé de MTEV — le bénéfice de la thromboprophylaxie par HBPM dépasse le risque hémorragique dès lors que les plaquettes sont ≥ 50 G/L, stables ou croissantes, et l'hémostase acceptable. L'ACOG (2022) et la SFAR (2022) recommandent de démarrer la HBPM dès H12–24 post-partum selon les conditions hématologiques. Piège A : attendre > 150 G/L retarderait inutilement l'anticoagulation plusieurs jours, exposant la patiente à une MTEV (embolie pulmonaire) dans une période à très haut risque — le risque de TIH aux HBPM est très faible (< 0,1%) et n'est pas une raison de surseoir. Piège C : le délai lié à la rachianesthésie concerne le cathéter péridural (pas de RA simple) — après rachianesthésie sans cathéter, les recommandations sont identiques à toute patiente obstétricale (HBPM dès H6–12 si pas de contre-indication chirurgicale ou hématologique). Piège D : l'aspirine seule est insuffisante comme thromboprophylaxie post-partum (elle a un rôle en prévention PRIMAIRE de la prééclampsie en anténatal, pas en prophylaxie thrombo-embolique post-partum)."
+      }
+    ]
   }
 ]
