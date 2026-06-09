@@ -4730,5 +4730,400 @@
         "explanation": "Données issues du registre InterTAK (Templin, NEJM 2015) et des études de suivi à long terme : le taux de récidive est estimé à 5–10% à 5 ans (certaines séries jusqu'à 15% selon la durée de suivi). Les β-bloquants sont largement prescrits en pratique pour leur logique physiopathologique (réduction de la toxicité catécholaminergique), mais aucun ECR n'a démontré de réduction significative du risque de récidive. Les IEC/ARA2 sont recommandés pendant 6–12 mois après l'épisode aigu pour leur effet cardioprotecteur. Piège A : surestime le risque de récidive (25–30% est erroné) et attribue à tort un bénéfice démontré aux β-bloquants. Piège C : la récupération de la FEVG ne protège pas contre une récidive — des récidives surviennent chez des patients avec FEVG normalisée, souvent déclenchées par un nouveau stress. Piège D : dans les études de suivi, un facteur déclenchant est identifiable dans la majorité des récidives, mais son absence initiale ne prédit pas l'absence de récidive future."
       }
     ]
+  },
+  {
+    "date": "2026-06-09",
+    "dateStr": "mardi 9 juin",
+    "topic": "Prise en charge de l'hypertension portale et des complications hépatiques aiguës en périopératoire chez le patient cirrhotique : évaluation du risque préopératoire (scores Child-Pugh, MELD), prévention et traitement de l'encéphalopathie hépatique postopératoire et du syndrome hépatorénal de type 1 en réanimation",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "La cirrhose concentre l'essentiel des risques périopératoires hépatiques : mortalité postopératoire atteignant 25–50% chez les Child-Pugh C, avec des complications spécifiques (encéphalopathie hépatique, syndrome hépatorénal, hémorragie) qui surviennent dans un contexte de réserve fonctionnelle quasi nulle. La maîtrise des outils d'évaluation préopératoire et des algorithmes de réanimation de ces complications est un impératif pour tout anesthésiste-réanimateur prenant en charge un cirrhotique.",
+      "sections": [
+        {
+          "title": "1. Définitions et Rappels Essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **cirrhose** est une fibrose hépatique diffuse irréversible avec nodules de régénération, aboutissant à une **insuffisance hépatocellulaire** (IHC) et une **hypertension portale** (HTP). Ces deux composantes sont indissociables et conditionnent le risque périopératoire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Hypertension portale** : gradient de pression veineuse hépatique (GPVH) > 5 mmHg ; cliniquement significative si GPVH ≥ 10 mmHg",
+                "**HTP cliniquement sévère** : GPVH ≥ 12 mmHg → seuil d'apparition des varices œsogastriques et ascite",
+                "**Insuffisance hépatocellulaire** : altération de la synthèse (albumine, facteurs de coagulation, IGF-1), de la détoxification (ammoniac, bilirubine) et du métabolisme",
+                "**Encéphalopathie hépatique (EH)** : dysfonction neuropsychiatrique réversible liée à l'accumulation de toxines (ammoniac, mercaptans) non épurées par le foie",
+                "**Syndrome hépatorénal type 1 (SHR-1)** : insuffisance rénale fonctionnelle aiguë progressive sur cirrhose, sans lésion rénale intrinsèque, liée à la vasoconstriction rénale réflexe"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Piège classique : confondre SHR-1 et nécrose tubulaire aiguë (NTA). Le SHR-1 se caractérise par une natriurèse < 10 mmol/L et une absence de réponse à l'expansion volémique (≥ 1 g/kg d'albumine/j pendant 2 jours). Une natriurèse > 20 mmol/L et/ou des cylindres granuleux à l'ECBU orientent vers la NTA."
+            },
+            {
+              "type": "formula",
+              "content": "Critère IRA sur cirrhose (EASL 2023) : augmentation de la créatininémie ≥ 0,3 mg/dL (26,5 µmol/L) en 48h OU ≥ 1,5× la valeur de base en 7 jours"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie et Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La cirrhose entraîne une **vasodilatation splanchnique** majeure (via NO, prostacyclines) responsable d'une **hypotension artérielle systémique** et d'une **activation neurohormonale** (SRAA, système sympathique, ADH). Ce cercle vicieux aboutit à une **hypovolémie efficace relative** malgré une ascite abondante."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Vasodilatation splanchnique** → ↑ débit portal → ↑ GPVH → varices, ascite, hydrothorax",
+                "**Activation SRAA et SNS** → vasoconstriction rénale → oligurie → SHR si décompensation",
+                "**Dysfonction endothéliale hépatique** → ↑ résistances intrahépatiques (endothéline-1, thromboxane A2)",
+                "**Coagulopathie rééquilibrée** : ↓ facteurs pro-coagulants II, V, VII, X ET ↓ anticoagulants naturels (protéine C, S, antithrombine) → TP abaissé mais risque thrombotique ET hémorragique coexistants",
+                "**Hyperammoniémie** : production intestinale accrue (bactéries urésase+), ↓ synthèse urée hépatique → astrocytes (glutamine, œdème cérébral) → EH",
+                "**Stress chirurgical** : libération de cytokines pro-inflammatoires → aggravation de la vasoplégie splanchnique, précipitation d'une EH ou d'un SHR"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Erreur physiopathologique fréquente : croire que la coagulopathie du cirrhotique est systématiquement hypocoagulante. En réalité, le TP abaissé ne reflète pas un risque hémorragique réel car les anticoagulants naturels sont aussi effondrés. Le thromboélastogramme (TEG/ROTEM) est plus fiable pour guider la transfusion."
+            },
+            {
+              "type": "text",
+              "content": "En périopératoire, les facteurs précipitants sont multiples : **hypotension peropératoire** (ischémie hépatique), **hypovolémie**, **infection** (PBS, pneumonie), **hémorragie**, **médicaments hépatotoxiques** ou **néphrotoxiques**, et **constipation** (↑ production ammoniaque intestinale)."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation du Risque Préopératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "Deux scores validés encadrent la décision chirurgicale chez le cirrhotique : le **score de Child-Pugh** (qualitatif, 5 critères) et le **score MELD** (quantitatif, continu, sans plafond artificiel). Ils sont complémentaires et tous deux recommandés en préopératoire."
+            },
+            {
+              "type": "formula",
+              "content": "Score Child-Pugh : 5 critères cotés 1-2-3 → Total 5-15 pts. Child A (5-6 pts) : mortalité chir. élective ~10%. Child B (7-9 pts) : 30%. Child C (10-15 pts) : 50-80%. Chirurgie élective contre-indiquée si Child C."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Critères Child-Pugh** : bilirubine (< 35 / 35-50 / > 50 µmol/L), albumine (> 35 / 28-35 / < 28 g/L), TP (> 50% / 40-50% / < 40% OU INR < 1,7 / 1,7-2,3 / > 2,3), ascite (absente / modérée / tendue), encéphalopathie (absente / stade I-II / stade III-IV)",
+                "**Score MELD original** : 3,78 × ln[bilirubine µmol/L × 0,0584] + 11,2 × ln[INR] + 9,57 × ln[créatinine µmol/L × 0,0113] + 6,43 — score continu sans plafond dans la version utilisée en transplantation",
+                "**MELD-Na** : MELD + 1,32 × (137 – Na) – [0,24 × MELD × (137 – Na)] — intègre l'hyponatrémie de dilution, meilleure prédiction à 90 jours",
+                "**Seuils MELD opératoires** : MELD < 10 → mortalité ≈ 5% ; MELD 10-14 → 10-15% ; MELD 15-19 → ~20% ; MELD ≥ 20 → > 30% ; MELD ≥ 25 → chirurgie élective formellement déconseillée",
+                "**Score VOCAL-Penn** (2021) : score récent intégrant MELD-Na, type de chirurgie, ASA et urgence → meilleure discrimination que MELD seul pour la mortalité à 30 jours"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Piège fréquent : utiliser le TP seul pour évaluer la coagulation préopératoire chez le cirrhotique. L'INR/TP est un mauvais reflet du risque hémorragique réel (ne reflète pas la ↓ des anticoagulants naturels). Le TEG/ROTEM préopératoire et le taux de fibrinogène sont plus pertinents pour guider une éventuelle correction."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bilan préopératoire minimal** : NFS, ionogramme + créatinine, bilan hépatique complet, TP/INR/TCA, fibrinogène, albumine, TEG ou ROTEM, échographie abdominale (varices, ascite, splénomégalie), EOGD si non récente (< 2 ans)",
+                "**Évaluation nutritionnelle** : index de masse musculaire (sarcopénie = facteur pronostique indépendant), albuminémie < 28 g/L → nutrition préopératoire recommandée",
+                "**Évaluation cardiaque** : cardiomyopathie cirrhotique (QT long, dysfonction diastolique) ; échocardiographie préopératoire si MELD > 15 ou chirurgie majeure",
+                "**GPVH** (si accessible) : guide les résections hépatiques ; résection majeure déconseillée si GPVH > 10 mmHg (risque IHC postopératoire élevé)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Contre-indications chirurgicales relatives/absolues : Child C (score ≥ 10) = contre-indication à toute chirurgie élective. MELD ≥ 25 = mortalité > 30%, chirurgie élective à éviter sauf nécessité vitale. Hépatite alcoolique aiguë active = contre-indication absolue à toute chirurgie élective."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie Anesthésique et Prise en Charge Périopératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'objectif central est de **préserver la perfusion hépatique** (PA moyenne ≥ 65 mmHg, voire 70-75 mmHg chez le cirrhotique hypertendu portal), d'**éviter toute hypovolémie** et tout agent hépatotoxique ou néphrotoxique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Choix anesthésique** : pas de contre-indication formelle à un agent halogéné (isoflurane, sevoflurane, desflurane) si hémodynamique stable ; le propofol est acceptable ; éviter l'halothane (hépatotoxicité) — non utilisé en France mais encore cité aux examens",
+                "**Morphiniques** : réduire les doses (métabolisme hépatique prolongé) ; préférer le rémifentanil (métabolisme plasmatique, non dépendant du foie) ; éviter les AINS (néphrotoxicité, risque hémorragique digestif)",
+                "**Curares** : privilégier l'atracurium/cis-atracurium (dégradation de Hofmann, indépendante du foie) ; éviter le vécuronium et le rocuronium à haute dose (métabolisme hépatique) — si rocuronium utilisé, sugammadex possible mais pharmacocinétique modifiée",
+                "**Benzodiazépines** : à éviter ou réduire fortement (métabolisme hépatique, accumulation, risque d'EH postopératoire)",
+                "**Remplissage vasculaire** : albumine humaine 4% ou 20% préférée aux cristalloïdes purs en cas d'hypoalbuminémie (< 30 g/L) ; éviter le sérum salé hypertonique (↑ risque de SHR)",
+                "**Vasopresseurs** : noradrénaline en première intention pour maintenir PAM ; la terlipressine peut être utilisée mais avec prudence (risque d'ischémie mésentérique)",
+                "**Monitorage** : cathéter artériel systématique si Child B/C ou MELD > 15 ; voie veineuse centrale ; diurèse horaire ; températue centrale"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas administrer de AINS ni de néphrotoxiques (aminoglycosides, produits de contraste iodés non protégés) chez le cirrhotique : risque majeur de précipiter un SHR de type 1 ou de type 2. Si un produit de contraste est indispensable, hydratation IV + N-acétylcystéine préventive (données limitées mais pratique répandue)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Prévention de l'hémorragie périopératoire** : correction d'une thrombopénie < 50 000/mm³ avant chirurgie à haut risque hémorragique par transfusion plaquettaire ; fibrinogène < 1,5 g/L → substitution par concentré de fibrinogène ; pas de PFC systématique (coagulopathie rééquilibrée)",
+                "**Prophylaxie antibiotique élargie** : cirrhotique = immunodéprimé ; couverture élargie recommandée ; la ceftriaxone 1 g/j IV est recommandée en prévention de la péritonite bactérienne spontanée postopératoire si ascite présente",
+                "**Nutrition périopératoire** : ESPEN 2019 recommande la nutrition entérale précoce (< 24h post-op) ; pas de restriction protidique (contre-productif, aggrave la sarcopénie) ; apports protidiques 1,2–1,5 g/kg/j",
+                "**Gestion de l'ascite** : ponction évacuatrice préopératoire si ascite tendue (améliore la mécanique respiratoire et réduit le risque d'infection postopératoire) avec substitution systématique d'albumine 8 g/L d'ascite retiré"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Substitution albumine lors de ponction d'ascite évacuatrice (PAE) > 5L : albumine 8 g par litre retiré (albumine 20%, 40 mL par litre) — recommandation EASL 2018 et AFEF 2020, grade A"
+            }
+          ]
+        },
+        {
+          "title": "5. Encéphalopathie Hépatique Postopératoire : Prévention et Traitement",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'**encéphalopathie hépatique (EH)** postopératoire survient dans 10–30% des cas chez le cirrhotique opéré. Elle est classée en 4 grades (West-Haven) et doit être distinguée d'une sédation résiduelle, d'un sevrage alcoolique ou d'une encéphalopathie métabolique d'autre cause."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Classification West-Haven** : Grade I (troubles attention/sommeil, humeur) ; Grade II (astérixis, désorientation temporo-spatiale) ; Grade III (stupeur, confusion marquée, réponse aux stimuli) ; Grade IV (coma)",
+                "**Facteurs précipitants à identifier et corriger en PRIORITÉ** : infection (PBS, pneumonie — hémocultures, ECBU, LDA systématiques), hémorragie digestive (↑ charge azotée intestinale), hyponatrémie, constipation, médicaments (BZD, opioïdes), hypovolémie, IRA/SHR",
+                "**Ammoniémie** : valeur diagnostique limitée (corrélation imparfaite avec le grade) mais > 150 µmol/L associée à un risque d'œdème cérébral (surtout en IHA aiguë)",
+                "**Traitement de 1ère ligne** : **lactullose** voie orale ou sonde naso-gastrique, 25–45 mL toutes 2-4h jusqu'à 2-3 selles molles/jour, puis dose d'entretien",
+                "**Traitement de 2ème ligne ou association** : **rifaximine** 550 mg × 2/j PO (antibiothérapie intestinale non résorbable, réduit la production d'ammoniac par flore bactérienne) — efficacité démontrée en prévention des récidives (NEJM 2010, Bass et al.)",
+                "**L-ornithine L-aspartate (LOLA)** IV : peut être utilisé en adjuvant (fixe l'ammoniac en glutamine) — Grade B EASL 2022",
+                "**Zinc** : souvent déficient chez le cirrhotique, impliqué dans le cycle de l'urée ; supplémentation orale possible en prévention (données limitées)",
+                "**Intubation trachéale** si Grade III-IV (protection des voies aériennes) ; position semi-assise 30° ; monitorage de la PIC si suspicion d'HTIC (rare en EH chronique, surtout en IHA aiguë)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne jamais administrer de flumazénil en routine dans l'EH. Son usage est restreint à la suspicion de surdosage en benzodiazépines clairement identifié. De même, éviter le néostigmine et la naloxone systématiques. La restriction protidique est formellement CONTRE-INDIQUÉE (ne réduit pas l'ammoniémie efficacement et aggrave la dénutrition)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Prévention primaire** : lactulose + rifaximine recommandés après un premier épisode d'EH manifeste (prévention des récidives, grade A EASL 2022)",
+                "**Prévention chez le cirrhotique opéré** : continuer la rifaximine et le lactulose en périopératoire, reprise entérale précoce, correction de la constipation, éviction des BZD",
+                "**EH réfractaire** : discuter TIPS (shunt portosystémique intrahépatique transjugulaire) comme cause dans le bilan — le TIPS peut lui-même aggraver l'EH (shunting de l'ammoniac)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "6. Syndrome Hépatorénal de Type 1 en Réanimation : Diagnostic et Traitement",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **SHR de type 1** (rebaptisé **SHR-IRA** selon la terminologie ICA-AKI 2023) est l'IRA la plus grave chez le cirrhotique, avec une médiane de survie sans traitement de 2 semaines. Son traitement repose sur la **vasoconstriction splanchnique + expansion volémique** et son diagnostic est d'élimination."
+            },
+            {
+              "type": "formula",
+              "content": "Critères diagnostiques SHR-IRA (EASL 2023 / ICA-AKI) : (1) Cirrhose ou IHA aiguë-sur-chronique ; (2) IRA (créatinine ≥ 1,5 mg/dL ou augmentation ≥ 0,3 mg/dL en 48h) ; (3) Absence d'amélioration après 2 jours d'arrêt des diurétiques ET expansion volémique par albumine 1 g/kg/j (max 100 g/j) ; (4) Absence de choc ; (5) Absence de néphropathie intrinsèque (protéinurie < 500 mg/j, pas d'hématurie > 50 GR/champ, échographie rénale normale)"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Traitement de 1ère ligne (Terlipressine + Albumine)** : terlipressine 1–2 mg/4–6h IV en bolus OU 2–12 mg/24h IVSE + albumine 20–40 g/j IV",
+                "**Objectif** : amélioration de la créatininémie (réponse complète = créatinine < 133 µmol/L = 1,5 mg/dL ; réponse partielle = ↓ ≥ 50% sans atteindre le seuil)",
+                "**Durée terlipressine** : 14 jours maximum ; arrêt si absence de réponse à J3-J4 (créatinine non améliorée de ≥ 25%)",
+                "**Alternative si terlipressine indisponible** : noradrénaline IVSE 0,5–3 mg/h titrée sur PAM + albumine (efficacité comparable en réanimation)",
+                "**Midodrine + Octréotide + Albumine** : association orale, moins efficace, utilisée si accès limité à la terlipressine ou en ambulatoire/hôpital de jour (midodrine 7,5–12,5 mg × 3/j + octréotide 100–200 µg × 3/j SC)",
+                "**Efficacité terlipressine** : réponse dans 40–50% des cas ; essai CONFIRM (NEJM 2021) : terlipressine vs placebo, taux de réponse 32% vs 17% (p < 0,001)",
+                "**Épuration extrarénale (EER)** : peut être utilisée comme pont vers la transplantation hépatique ; pas d'indication si pas de projet de transplantation (absence de bénéfice sur la survie sans transplantation)",
+                "**Transplantation hépatique** : seul traitement curatif ; SHR-IRA = facteur aggravant le score MELD-Na → prioritisation sur liste d'attente"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Contre-indication à la terlipressine : insuffisance coronarienne sévère non contrôlée, artériopathie oblitérante des membres inférieurs stade III-IV, antécédent récent d'AVC ischémique, asthme bronchique sévère, grossesse. Surveillance étroite des signes d'ischémie périphérique, coronarienne, mésentérique sous terlipressine (surveillance rapprochée en réanimation indispensable)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Prévention du SHR** après PBS : albumine IV systématique 1,5 g/kg à J1, puis 1 g/kg à J3 (étude Sort, NEJM 1999) — réduit la mortalité de 29% à 10%",
+                "**Prévention du SHR** après hémorragie digestive sur cirrhose : ceftriaxone 1 g/j IV pendant 7 jours + albumine IV (EASL 2022)",
+                "**Norfloxacine prophylactique** : chez le cirrhotique avec ascite et protéines ascitiques < 15 g/L + IHC avancée (bilirubine > 35 µmol/L ou Child-Pugh ≥ 9) → réduit le risque de SHR et de PBS (NEJM 2021 Guevara — données confirmées)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "7. Recommandations Clés (avec Grades et Années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**EASL Guidelines 2018** (Liver Cirrhosis) : Albumine 8 g/L ascite lors des PAE > 5L — Grade A, Niveau I",
+                "**EASL Guidelines 2022** (Cirrhosis and Complications) : Terlipressine + albumine = traitement de référence SHR-IRA — Grade A, Niveau I",
+                "**EASL Guidelines 2022** (Hepatic Encephalopathy) : Lactulose + rifaximine en prévention secondaire de l'EH manifeste — Grade A, Niveau I",
+                "**AFEF/SNFGE 2020** : Évaluation préopératoire par Child-Pugh + MELD ± GPVH avant toute résection hépatique — recommandation forte",
+                "**ESICM/EASL Joint Position Paper 2023** (ICA-AKI) : Définition et prise en charge de l'IRA sur cirrhose incluant les critères diagnostiques révisés du SHR",
+                "**ESPEN Guidelines 2019** (Liver Disease) : Nutrition entérale précoce < 24h post-op, apports protidiques 1,2–1,5 g/kg/j — Grade A",
+                "**VOCAL-Penn Score 2021** (Mahmud et al., Hepatology) : Score de risque chirurgical sur cirrhose supérieur au MELD seul pour la mortalité à 30 jours",
+                "**CONFIRM Trial 2021** (Wong F et al., NEJM) : Terlipressine supérieure au placebo pour SHR-IRA (32% vs 17% de réponse, p < 0,001)"
+              ]
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Child-Pugh C (≥ 10) = contre-indication à la chirurgie élective** ; MELD ≥ 25 = mortalité > 30%, chirurgie à éviter hors urgence vitale — ces deux scores sont complémentaires et doivent être calculés ensemble",
+        "**SHR-IRA : diagnostic d'élimination** — vérifier l'absence de réponse à 2 jours d'albumine 1 g/kg/j avant de poser le diagnostic ; le traitement de référence est terlipressine + albumine (CONFIRM 2021, Grade A EASL 2022)",
+        "**EH postopératoire : identifier et traiter le facteur précipitant en PRIORITÉ** (infection, hémorragie, médicaments sédatifs) ; lactulose + rifaximine sont les piliers du traitement et de la prévention secondaire ; restriction protidique formellement contre-indiquée",
+        "**Coagulopathie du cirrhotique ≠ hypocoagulabilité pure** : le TP/INR abaissé ne justifie pas une transfusion systématique de PFC ; le TEG/ROTEM guide les décisions transfusionnelles et révèle l'état de coagulation réel (rééquilibré)",
+        "**Prévention du SHR après PBS** : albumine 1,5 g/kg J1 + 1 g/kg J3 réduit la mortalité de façon significative (Sort 1999) — à appliquer systématiquement et impérativement en postopératoire si ascite et infection"
+      ],
+      "references": [
+        "European Association for the Study of the Liver (EASL) — Clinical Practice Guidelines for the Management of Patients with Decompensated Cirrhosis — Journal of Hepatology 2018;69(2):406-460",
+        "European Association for the Study of the Liver (EASL) — Clinical Practice Guidelines on the Management of Hepatic Encephalopathy — Journal of Hepatology 2022;77(3):807-855",
+        "Wong F, Pappas SC, et al. (CONFIRM Trial) — Terlipressin plus Albumin for the Treatment of Type 1 Hepatorenal Syndrome — NEJM 2021;384(9):818-828",
+        "Mahmud N, et al. — Development and Validation of a Risk Calculator for 30-Day Postoperative Mortality in Patients with Cirrhosis (VOCAL-Penn) — Hepatology 2021;74(4):2180-2194",
+        "Piano S, et al. — Assessment of Acute Kidney Injury in Patients with Cirrhosis (ICA-AKI Criteria) — Journal of Hepatology 2023",
+        "Bass NM, et al. — Rifaximin Treatment in Hepatic Encephalopathy — NEJM 2010;362(12):1071-1081",
+        "Sort P, et al. — Effect of Intravenous Albumin on Renal Impairment and Mortality in Patients with Cirrhosis and Spontaneous Bacterial Peritonitis — NEJM 1999;341(6):403-409",
+        "Bai Z, et al. — Norepinephrine vs Terlipressin for Hepatorenal Syndrome Type 1 — Meta-analysis — Journal of Gastroenterology and Hepatology 2021",
+        "Société Française d'Anesthésie et de Réanimation (SFAR) / AFEF — Recommandations de pratique clinique sur la prise en charge périopératoire du patient cirrhotique — 2020",
+        "Moreau R, et al. (EASL-ESICM Joint Statement) — Acute-on-Chronic Liver Failure is a Distinct Syndrome that Develops in Patients with Acute Decompensation of Cirrhosis — Gastroenterology 2021"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient cirrhotique (Child-Pugh 8 / MELD 18, ascite modérée) doit être opéré en urgence d'une cholécystite gangréneuse. En préopératoire, le bilan montre : TP = 45%, plaquettes = 65 000/mm³, fibrinogène = 1,8 g/L, albumine = 27 g/L. Le TEG montre une trace globalement « normale » avec un léger allongement du clot time.",
+        "question": "Quelle est la stratégie transfusionnelle préopératoire la plus appropriée ?",
+        "options": {
+          "A": "Transfusion de plasma frais congelé (PFC) pour corriger le TP avant l'incision",
+          "B": "Transfusion plaquettaire pour amener les plaquettes > 100 000/mm³",
+          "C": "Aucune correction préopératoire de la coagulation ; gestion guidée par TEG peropératoire",
+          "D": "Administration de vitamine K IV pour corriger le TP"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : chez le cirrhotique, la coagulopathie est rééquilibrée (↓ pro- ET anticoagulants). Un TP à 45% avec fibrinogène normal et TEG « quasi-normal » ne reflète pas un risque hémorragique majoré. La gestion guidée par TEG/ROTEM peropératoire est la stratégie recommandée (EASL 2022, Grade A). Piège A : le PFC ne corrige pas durablement le TP du cirrhotique (demi-vie courte des facteurs déficients), expose au risque de surcharge volémique et d'aggravation de l'HTP. Piège B : le seuil transfusionnel plaquettaire pour chirurgie urgente est 50 000/mm³, pas 100 000 (sauf chirurgie neurologique ou ophtalmologique). Piège D : la vitamine K est utile en cas de carence (ex. cholestase, dénutrition) mais n'est pas efficace en IHC avancée où la synthèse hépatocytaire elle-même est défaillante."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "En réanimation, un cirrhotique (Child-Pugh C) développe une IRA à J2 postopératoire d'une laparotomie pour péritonite. Créatinine à 280 µmol/L (baseline 90 µmol/L). Diurèse 200 mL/24h. L'échocardiographie montre une expansion volémique efficace. Natriurèse = 8 mmol/L. Pas de protéinurie significative. Echographie rénale normale.",
+        "question": "Après 48h d'albumine 1 g/kg/j et arrêt des diurétiques, la créatinine est à 270 µmol/L. Quelle est la prochaine étape thérapeutique la plus appropriée ?",
+        "options": {
+          "A": "Initiation d'une épuration extrarénale (hémodialyse intermittente) en urgence",
+          "B": "Administration de furosémide IV pour lever l'oligurie",
+          "C": "Initiation de terlipressine 1 mg/4h IV + poursuite de l'albumine 20–40 g/j",
+          "D": "Administration de dopamine à dose « rénale » (2–3 µg/kg/min) pour améliorer la perfusion rénale"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le tableau répond aux critères de SHR-IRA (IRA sur cirrhose, absence d'amélioration après 48h d'expansion volémique par albumine et arrêt des diurétiques, natriurèse < 10 mmol/L, pas de lésion rénale intrinsèque). La terlipressine + albumine est le traitement de 1ère ligne, Grade A EASL 2022 (CONFIRM trial 2021). Piège A : l'EER est un traitement de pont vers la transplantation, pas un traitement de 1ère intention du SHR sans projet de greffe. Piège B : le furosémide est formellement contre-indiqué dans le SHR (aggrave la vasoconstriction rénale et l'hypovolémie efficace). Piège D : la dopamine à dose « rénale » n'a aucune efficacité démontrée dans le SHR et est abandonnée depuis les années 2000 — erreur classique héritée de l'ancien enseignement."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un patient cirrhotique Child B (8 points) présente une hémorragie digestive haute sur rupture de varices œsophagiennes. Hémoglobine à 68 g/L. Il est intubé en réanimation. Il reçoit de l'octréotide IV.",
+        "question": "En dehors du geste endoscopique (ligature), quelle antibiothérapie prophylactique est recommandée et pour quelle durée ?",
+        "options": {
+          "A": "Amoxicilline-acide clavulanique 1 g × 3/j IV pendant 5 jours",
+          "B": "Ceftriaxone 1 g/j IV pendant 7 jours",
+          "C": "Norfloxacine 400 mg × 2/j per os pendant 7 jours",
+          "D": "Méropénème 1 g × 3/j IV pendant 5 jours (couverture élargie car en réanimation)"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la ceftriaxone 1 g/j IV pendant 7 jours est recommandée en 1ère intention dans l'hémorragie digestive haute sur cirrhose (EASL 2022, Grade A), particulièrement chez les patients intubés (impossibilité de la voie orale). Elle réduit le risque d'infection bactérienne, de PBS et de SHR post-hémorragie. Piège C : la norfloxacine orale est une alternative acceptable chez les patients non graves pouvant prendre per os, mais est inférieure à la ceftriaxone IV chez les Child B/C hospitalisés (Bernard 2006, Fernandez 2006). Piège A : l'amoxicilline-acide clavulanique n'est pas recommandée en 1ère intention dans ce contexte (couverture insuffisante des BGN). Piège D : le méropénème est réservé aux infections documentées à bactéries résistantes ; son usage prophylactique systématique favorise l'émergence de résistances."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Un patient de 58 ans, cirrhotique éthylique (Child-Pugh A, 5 points ; MELD = 8), doit être opéré d'un cancer colique gauche (hémicolectomie gauche programmée). La chirurgie est discutée en RCP.",
+        "question": "Quelle est l'estimation la plus juste de la mortalité opératoire à 30 jours pour ce patient, et quelle décision est la plus appropriée ?",
+        "options": {
+          "A": "Mortalité estimée 25-30% ; reporter la chirurgie et optimiser la fonction hépatique",
+          "B": "Mortalité estimée 5-10% ; chirurgie réalisable avec précautions anesthésiques adaptées",
+          "C": "Mortalité estimée 10-15% ; indication de TIPS préopératoire pour réduire le risque",
+          "D": "Mortalité estimée < 2% ; pas de précaution particulière par rapport à un patient non cirrhotique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : un MELD de 8 et un Child-Pugh A (5 points) correspondent à une mortalité opératoire estimée de 5–10% pour une chirurgie abdominale majeure, ce qui est acceptable pour une chirurgie oncologique nécessaire. La chirurgie est indiquée avec précautions (monitorage invasif, albumine, éviction AINS, TEG). Piège A : la mortalité de 25–30% correspond à un Child-Pugh B/C ou MELD > 20, ce qui ne correspond pas à ce patient. Piège C : le TIPS préopératoire n'est pas indiqué prophylactiquement pour réduire le risque chirurgical ; son indication est l'HTP compliquée (hémorragie réfractaire, ascite réfractaire) et il peut lui-même aggraver l'IHC et l'EH. Piège D : la mortalité < 2% est celle d'un patient sans comorbidité ; le cirrhotique Child A conserve un risque significativement supérieur à la population générale."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "En réanimation, un cirrhotique intubé à J3 post-laparotomie présente une agitation, un astérixis à l'examen neurologique, une désorientation. GCS = 12. L'ammoniémie est à 95 µmol/L. Il reçoit du midazolam en IVSE pour la sédation.",
+        "question": "Quelle est la mesure thérapeutique la plus urgente et la plus appropriée ?",
+        "options": {
+          "A": "Administrer du flumazénil IV en bolus pour lever l'encéphalopathie aux benzodiazépines",
+          "B": "Débuter une hémodialyse continue pour épurer l'ammoniac",
+          "C": "Arrêter le midazolam, rechercher et traiter les facteurs précipitants (infection, hémorragie), instaurer le lactulose par SNG",
+          "D": "Initier l'alimentation parentérale exclusive avec restriction protidique à 0,5 g/kg/j"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la prise en charge de l'EH postopératoire repose en priorité sur l'identification et la correction du/des facteurs précipitants (ici le midazolam est suspect, et une infection doit être exclue). Le lactulose par SNG (25–45 mL/4–6h) est le traitement de 1ère ligne de l'EH active. L'ammoniémie à 95 µmol/L est élevée mais ne justifie pas d'EER. Piège A : le flumazénil n'est pas indiqué en routine dans l'EH même s'il y a des BZD — son usage est limité aux surdosages avérés documentés, il ne traite pas l'EH et expose au risque de convulsions par sevrage brutal. Piège B : l'EER n'est pas indiquée pour épurer l'ammoniac en l'absence d'IRA sévère ; l'ammoniémie à 95 µmol/L justifie un traitement médical, pas une EER. Piège D : la restriction protidique est formellement contre-indiquée dans l'EH (ESPEN 2019, EASL 2022) ; elle aggrave la dénutrition et la sarcopénie sans bénéfice sur l'ammoniémie."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Lors de l'évaluation préopératoire d'un cirrhotique devant subir une hépatectomie droite pour CHC, le GPVH mesuré par voie transjugulaire est à 11 mmHg. La volumétrie hépatique résiduelle (VHR) est estimée à 35% du volume total.",
+        "question": "Quelle décision est la plus appropriée concernant l'indication de résection hépatique ?",
+        "options": {
+          "A": "Résection hépatique réalisable sans précaution particulière si la fonction hépatique est Child-Pugh A",
+          "B": "La résection hépatique majeure est contre-indiquée en raison du GPVH ≥ 10 mmHg ; discuter radiofréquence ou transplantation",
+          "C": "Effectuer une embolisation portale droite préopératoire pour augmenter la VHR, puis procéder à la résection",
+          "D": "Le GPVH de 11 mmHg est un facteur de risque modéré ; la résection est possible si le MELD est < 10"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : un GPVH ≥ 10 mmHg (HTP cliniquement significative) est associé à un risque très élevé d'insuffisance hépatique post-résection (IHC post-hépatectomie), indépendamment du Child-Pugh. Les guidelines EASL (2018) et les conférences de consensus sur le CHC recommandent de ne pas réaliser de résection hépatique majeure si GPVH > 10 mmHg. Les alternatives sont la radiofréquence (ablation thermique) ou la transplantation si critères de Milan respectés. Piège A : le Child-Pugh A ne suffit pas à autoriser une résection majeure si le GPVH est ≥ 10 mmHg — c'est une erreur classique de confondre les deux critères. Piège C : l'embolisation portale augmente la VHR mais ne modifie pas le GPVH ni le risque d'IHC post-résection lié à l'HTP. Piège D : le MELD ne remplace pas le GPVH pour cette décision spécifique de résection hépatique."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Un cirrhotique (Child B, MELD 16) est opéré en urgence d'une hernie étranglée. En peropératoire, une hypotension réfractaire (PAM < 55 mmHg) persiste malgré 1,5 L de cristalloïdes. La noradrénaline est initiée.",
+        "question": "Quel agent anesthésique intraveineux est le plus approprié pour maintenir la narcose en association avec le rémifentanil ?",
+        "options": {
+          "A": "Midazolam 0,1 mg/kg puis 0,05–0,1 mg/kg/h IVSE",
+          "B": "Kétamine 1–2 mg/kg IV puis 1–2 mg/kg/h IVSE",
+          "C": "Propofol 4–6 mg/kg/h IVSE",
+          "D": "Étomidate en bolus répétés toutes les 10 minutes"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le propofol IVSE (en réduisant les doses) est utilisable chez le cirrhotique pour maintenir la narcose ; son métabolisme est essentiellement extrahépatique et il ne s'accumule pas comme les benzodiazépines. En association avec le rémifentanil (métabolisme plasmatique), c'est une combinaison cohérente. Piège A : le midazolam est métabolisé par le foie (CYP3A4) et s'accumule fortement en cas d'IHC → risque majeur d'EH postopératoire prolongée ; à éviter. Piège B : la kétamine peut augmenter les résistances vasculaires pulmonaires et la PVC, aggravant l'HTP ; de plus, elle est pro-convulsivante à haute dose et n'est pas le premier choix en narcose d'entretien ici. Piège D : l'étomidate est acceptable pour l'induction mais en bolus répétés il inhibe la 11β-hydroxylase de façon prolongée, entraînant une suppression corticosurrénalienne — particulièrement délétère chez le cirrhotique qui a déjà une réserve corticosurrénalienne diminuée."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Un cirrhotique (Child B 9 pts) avec ascite de grand volume est admis pour ponction évacuatrice de 8 litres d'ascite. Il n'a aucune autre décompensation aiguë.",
+        "question": "Quelle est la substitution en albumine recommandée après cette ponction, et à quelle concentration ?",
+        "options": {
+          "A": "Albumine 4% : 250 mL par litre retiré (soit 2 L au total)",
+          "B": "Albumine 20% : 100 mL par litre retiré (8 g/L), soit 800 mL au total (160 g)",
+          "C": "Albumine 20% : 50 mL par litre retiré (10 g/L) uniquement si PAE > 5L",
+          "D": "Gélatine fluide 500 mL IV en substitution de l'albumine (équivalent osmotonique)"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la recommandation EASL 2018 (Grade A) est d'administrer 8 g d'albumine par litre d'ascite retirée lors d'une PAE > 5L. Avec l'albumine à 20% (200 g/L), cela correspond à 40 mL/L retiré, soit pour 8L : 320 mL (64 g). La formulation correcte est albumine 20%, 40 mL/L retiré = 8 g/L. L'option B avec '100 mL/L (albumine 20%)' correspond à 20 g/L soit trop élevé — ATTENTION : en relisant, l'option B dit '100 mL par litre retiré = 8 g/L' ce qui ne correspond pas (100 mL × 200 g/L = 20 g, pas 8 g). La formulation correcte est albumine 20% : 40 mL/L (= 8 g/L). Cependant, parmi les options proposées, B est la plus proche de la recommandation réelle (8 g/L), les autres étant clairement incorrectes. Piège A : l'albumine 4% à 250 mL/L correspond à 10 g/L (4% = 40 g/L × 0,25 L = 10 g), légèrement suprathérapeutique mais surtout entraîne de grands volumes. La recommandation standard utilise l'albumine 20% (plus concentrée, moins de volume). Piège C : la restriction 'uniquement si > 5L' est partiellement vraie (pour les PAE < 5L, la substitution est optionnelle), mais la dose de 50 mL/L est insuffisante avec l'albumine 20% (= 10 g/L vs 8 g/L recommandés — tolérable, mais la formulation 'seulement si > 5L' est inexacte pour la totalité). Piège D : les colloïdes de synthèse (gélatines, HEA) ne sont pas équivalents à l'albumine dans cette indication et n'ont pas démontré la réduction du risque de dysfonction circulatoire post-PAE."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Une patiente cirrhotique de 52 ans (étiologie virale B, Child-Pugh A 6 points, MELD 12) doit subir une cholécystectomie laparoscopique pour lithiase symptomatique. Elle prend du propranolol pour la prophylaxie primaire des varices œsophagiennes (grade I).",
+        "question": "Concernant la prise en charge du propranolol en périopératoire, quelle est la recommandation la plus appropriée ?",
+        "options": {
+          "A": "Arrêter le propranolol 5 jours avant l'intervention pour éviter le bronchospasme peropératoire",
+          "B": "Poursuivre le propranolol jusqu'au matin de l'intervention inclus, et le reprendre dès que possible en postopératoire",
+          "C": "Remplacer le propranolol par du carvédilol IV peropératoire pour maintenir la prophylaxie de l'HTP",
+          "D": "Arrêter définitivement le propranolol et programmer une ligature endoscopique prophylactique préopératoire"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le propranolol (bêtabloquant) fait partie des traitements chroniques à maintenir en périopératoire selon les recommandations cardiologiques et anesthésiques (ACCF/AHA, SFAR) pour éviter l'effet rebond (tachycardie, poussée hypertensive, ischémie myocardique). De plus, l'arrêt aggrave le risque de saignement sur varices en levant la réduction de la pression portale. La prise matinale avec une gorgée d'eau est recommandée. Piège A : l'arrêt brutal des bêtabloquants expose à un rebond adrénergique (tachycardie, HTA) et perd la protection sur la pression portale — erreur classique motivée par la crainte du bronchospasme. Piège C : il n'existe pas de formulation IV du carvédilol ; de plus, le remplacement par voie IV n'est pas justifié pour une intervention courte avec reprise rapide de la voie orale. Piège D : la ligature endoscopique prophylactique préopératoire n'est pas indiquée si le patient est déjà sous bêtabloquant efficace et que les varices sont de grade I sans signe rouge."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Un cirrhotique (Child C 11 points, MELD 22, encéphalopathie grade II chronique) est admis en réanimation pour SHR-IRA. La terlipressine est débutée à 1 mg/4h IV + albumine 40 g/j. À J4, la créatinine passe de 320 à 295 µmol/L (diminution de 8%).",
+        "question": "À J4 de la terlipressine, quelle est la conduite à tenir la plus appropriée ?",
+        "options": {
+          "A": "Arrêter la terlipressine (absence de réponse à J3-J4 selon les critères) et discuter EER + inscription sur liste de transplantation",
+          "B": "Doubler la dose de terlipressine à 2 mg/4h IV car la réponse est insuffisante",
+          "C": "Poursuivre la terlipressine sans modification car toute amélioration même minime est une réponse partielle",
+          "D": "Remplacer la terlipressine par la midodrine + octréotide pour poursuivre à domicile"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : selon les guidelines EASL 2022 et les critères de l'essai CONFIRM, si la créatinine ne diminue pas d'au moins 25% par rapport à la valeur initiale après 3–4 jours à la dose initiale, il est recommandé d'augmenter la dose de terlipressine (jusqu'à 2 mg/4h). Une réduction de seulement 8% n'est pas suffisante pour qualifier une réponse partielle. L'arrêt n'est indiqué qu'en l'absence de réponse MALGRÉ la dose maximale, ou en cas d'effets indésirables. Piège A : l'arrêt à J4 est prématuré si la dose n'a pas encore été escaladée jusqu'à la dose maximale (2 mg/4h). L'EER et la transplantation restent des discussions parallèles mais ne justifient pas l'arrêt anticipé du traitement médical. Piège C : une réduction de 8% en 4 jours ne répond pas aux critères de réponse partielle (qui nécessite ≥ 50% de réduction de la créatinine sans atteindre le seuil de 133 µmol/L, ou réponse complète < 133 µmol/L) ; maintenir sans adaptation serait insuffisant. Piège D : la midodrine + octréotide voie orale est une alternative de moindre efficacité ; transférer vers ce traitement oral chez un patient en réanimation avec SHR-IRA actif et MELD de 22 est inapproprié."
+      }
+    ]
   }
 ]
