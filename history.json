@@ -5125,5 +5125,382 @@
         "explanation": "Réponse B correcte : selon les guidelines EASL 2022 et les critères de l'essai CONFIRM, si la créatinine ne diminue pas d'au moins 25% par rapport à la valeur initiale après 3–4 jours à la dose initiale, il est recommandé d'augmenter la dose de terlipressine (jusqu'à 2 mg/4h). Une réduction de seulement 8% n'est pas suffisante pour qualifier une réponse partielle. L'arrêt n'est indiqué qu'en l'absence de réponse MALGRÉ la dose maximale, ou en cas d'effets indésirables. Piège A : l'arrêt à J4 est prématuré si la dose n'a pas encore été escaladée jusqu'à la dose maximale (2 mg/4h). L'EER et la transplantation restent des discussions parallèles mais ne justifient pas l'arrêt anticipé du traitement médical. Piège C : une réduction de 8% en 4 jours ne répond pas aux critères de réponse partielle (qui nécessite ≥ 50% de réduction de la créatinine sans atteindre le seuil de 133 µmol/L, ou réponse complète < 133 µmol/L) ; maintenir sans adaptation serait insuffisant. Piège D : la midodrine + octréotide voie orale est une alternative de moindre efficacité ; transférer vers ce traitement oral chez un patient en réanimation avec SHR-IRA actif et MELD de 22 est inapproprié."
       }
     ]
+  },
+  {
+    "date": "2026-06-10",
+    "dateStr": "mercredi 10 juin",
+    "topic": "Prise en charge du syndrome de lyse tumorale sévère en réanimation : prévention chez les patients à haut risque, traitement des désordres métaboliques menaçants (hyperkaliémie, hyperphosphatémie, hypocalcémie, hyperuricémie) et indications de l'épuration extrarénale en urgence",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le syndrome de lyse tumorale (SLT) est une urgence oncologique potentiellement létale, résultant de la libération massive de contenu intracellulaire lors de la destruction tumorale. En réanimation, sa forme sévère associe insuffisance rénale aiguë oligo-anurique, hyperkaliémie menaçante, hypocalcémie symptomatique et hyperuricémie, pouvant conduire à l'arrêt cardiaque en quelques heures. La prévention chez les patients à haut risque et la maîtrise des seuils d'épuration extrarénale (EER) sont des compétences indispensables pour tout médecin de réanimation.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le SLT résulte de la libération brutale de potassium, phosphore, acides nucléiques (→ urate) et protéines intracellulaires dans la circulation, dépassant les capacités d'élimination rénale. Il survient spontanément ou, le plus souvent, dans les **24 à 72 heures** suivant l'initiation d'un traitement cytotoxique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Critères biologiques de Cairo-Bishop (2004)** : définissent le SLT biologique (TLS Laboratory)",
+                "**SLT biologique** : ≥ 2 anomalies parmi : **uricémie ≥ 476 µmol/L** (8 mg/dL) ou augmentation ≥ 25%, **kaliémie ≥ 6,0 mmol/L** ou augmentation ≥ 25%, **phosphatémie ≥ 2,1 mmol/L** (6,5 mg/dL, adulte) ou augmentation ≥ 25%, **calcémie corrigée ≤ 1,75 mmol/L** (7 mg/dL) ou diminution ≥ 25% — dans les 3 jours avant ou 7 jours après le début du traitement",
+                "**SLT clinique** : SLT biologique + ≥ 1 critère : **créatininémie ≥ 1,5× LSN**, arythmie/mort subite, convulsion",
+                "**Grades 0 à 5** selon Cairo-Bishop : grade 0 = pas de SLT, grade 5 = décès"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Le SLT peut survenir SPONTANÉMENT avant tout traitement (notamment dans les lymphomes de Burkitt et les LAL avec hyperleucocytose massive). Ne pas attendre l'initiation de la chimiothérapie pour mettre en place la prophylaxie chez les patients à très haut risque."
+            },
+            {
+              "type": "formula",
+              "content": "Seuils biologiques SLT (adulte) — Uricémie ≥ 476 µmol/L | Kaliémie ≥ 6,0 mmol/L | Phosphatémie ≥ 2,1 mmol/L | Calcémie corrigée ≤ 1,75 mmol/L"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La lyse massive des cellules tumorales libère simultanément **potassium intracellulaire** (hyperkaliémie immédiate), **acides nucléiques** (catabolisés en hypoxanthine → xanthine → **acide urique** par la xanthine oxydase), et **phosphore organique** (hyperphosphatémie). L'hyperphosphatémie précipite avec le calcium, générant une **hypocalcémie** par chélation et dépôt de cristaux de phosphate de calcium."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Néphropathie uratique** : précipitation d'urate dans les tubules rénaux distaux (pH acide), obstruction et IRA",
+                "**Néphropathie aux xanthines** : sous rasburicase, accumulation de xanthine (moins soluble que l'urate) si déficit en xanthine déshydrogénase — rare",
+                "**Précipitation de phosphate de calcium** : dans le rein (IRA aggravée), les vaisseaux, le myocarde",
+                "**Hyperkaliémie** : conséquence directe et rapide de la cytolyse massive, aggravée par l'IRA",
+                "**Hypocalcémie** : secondaire à la chélation par le phosphore — risque de tétanie, convulsions, arythmies",
+                "**Acidose métabolique** : IRA + libération d'acides organiques — aggrave l'hyperkaliémie (sortie de K+ des cellules)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE mécaniste : L'hypocalcémie du SLT est une hypocalcémie PAR CHÉLATION par le phosphore — corriger l'hypocalcémie par apport de calcium IV peut AGGRAVER la précipitation de phosphate de calcium dans les tissus si l'hyperphosphatémie n'est pas contrôlée simultanément. La correction calcique doit être réservée aux formes symptomatiques."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation du risque et Diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **stratification du risque** avant traitement cytotoxique est la pierre angulaire de la prévention. Elle repose sur les caractéristiques tumorales (type histologique, masse tumorale, cinétique de prolifération) et le terrain (fonction rénale basale, uricémie préexistante, LDH)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Haut risque (> 1%) — prophylaxie par rasburicase indiquée** : Lymphome de Burkitt, LAL (toutes), LAM avec hyperleucocytose (GB > 100 G/L), LMNH agressif bulky (masse > 10 cm) + LDH > 2× LSN, tout SLT biologique préexistant",
+                "**Risque intermédiaire (1-5%)** : LMNH agressif sans critère de haut risque, LLC/LNH indolent avec masse importante, myélome avec IRA, LAM sans hyperleucocytose — discuter rasburicase ou allopurinol selon contexte",
+                "**Risque faible (< 1%)** : tumeurs solides (sauf exceptions), hémopathies indolentes sans masse volumineuse — hydratation seule",
+                "**LDH élevées** (> 2× LSN) : marqueur de masse tumorale et de prolifération — facteur aggravant indépendant",
+                "**Surveillance biologique recommandée** : ionogramme complet (K+, Ph, Ca++, urée, créatinine, uricémie) toutes les **4 à 6 heures** en phase initiale chez les patients à haut risque"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Score de risque ESMO 2020 (Howard) — Haut risque = SLT spontané OU Burkitt/LAL OU GB > 100 G/L OU toute hémopathie + LDH > 2× LSN + stade III-IV + maladie rénale chronique (DFG < 60 mL/min)"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Une créatininémie « normale » chez un patient cachectique avec masse musculaire réduite peut masquer une insuffisance rénale significative. Toujours calculer le DFG (CKD-EPI) avant d'initier la prise en charge — un DFG < 60 mL/min élève le risque d'une catégorie."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge — Prévention et Traitement",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge repose sur quatre piliers simultanés : **hyperhydratation IV**, **uricolyse** (rasburicase) ou inhibition de la synthèse d'urate (allopurinol), **correction des désordres électrolytiques**, et **épuration extrarénale** en cas d'échec ou de menace vitale immédiate."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Hyperhydratation IV** : objectif diurèse ≥ **100 mL/h** (≥ 2 mL/kg/h chez l'enfant) — NaCl 0,9% ou G5% selon natrémie, sans potassium ni calcium ajoutés initialement — démarrer **24 à 48h avant** la chimiothérapie si possible",
+                "**Alcalinisation urinaire** : ABANDONNÉE — elle favorise la précipitation de phosphate de calcium et de xanthine, sans bénéfice démontré sur l'élimination de l'urate sous rasburicase (recommandation NEGATIVE, ESH/ESMO 2020)",
+                "**Rasburicase (Fasturtec®)** : urate oxydase recombinante — dose standard **0,2 mg/kg/j IV** sur 30 min, 1 à 7 jours selon évolution — transforme l'acide urique en allantoïne (5× plus soluble) — délai d'action : **4 heures**",
+                "**Allopurinol** : inhibiteur de la xanthine oxydase — **300-600 mg/j PO** — haut risque : inférieur à la rasburicase car ne dégrade pas l'urate déjà formé — adapté au DFG (100 mg/j si DFG < 10 mL/min)",
+                "**Fébuxostat** : inhibiteur de la xanthine oxydase de 2e génération — alternative à l'allopurinol en cas d'intolérance, non remboursé dans cette indication en France, données limitées en SLT sévère"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "CONTRE-INDICATION ABSOLUE de la rasburicase : **déficit en G6PD** (risque de méthémoglobinémie et d'hémolyse massive par accumulation de peroxyde d'hydrogène, sous-produit de la réaction enzymatique). Dépistage obligatoire avant administration, notamment dans les populations à risque (Africains subsahariens, Méditerranéens, Asiatiques du Sud-Est)."
+            },
+            {
+              "type": "text",
+              "content": "**Traitement de l'hyperkaliémie menaçante** en SLT — La séquence thérapeutique suit les principes généraux des hyperkaliémies sévères, avec des particularités liées au contexte d'IRA souvent oligo-anurique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Gluconate de calcium 10%** : 10-20 mL IV lente (2-3 min) sous monitorage ECG — stabilise la membrane myocardique en **2-3 min**, durée d'action 30-60 min — à répéter si anomalies ECG persistent — NE RÉDUIT PAS la kaliémie",
+                "**Insuline-glucose** : 10 UI insuline rapide IV + 50 mL G50% (ou 250 mL G10%) — début d'action 15-30 min, diminution kaliémie de **0,5 à 1,5 mmol/L** — surveiller glycémie toutes les 30 min",
+                "**Bicarbonate de sodium** : indiqué si acidose métabolique associée (pH < 7,20) — 50-100 mmol IV sur 20-30 min — effet modeste sur kaliémie en l'absence d'acidose significative",
+                "**Salbutamol nébulisé** : 10-20 mg en nébulisation — début d'action 20-30 min, diminution de **0,5-1 mmol/L** — effet additif à l'insuline — attention tachycardie",
+                "**Résines échangeuses d'ions** (patiromer, zirconium cyclosilicate) : délai d'action > 2h — rôle limité en urgence immédiate en réanimation — utiles en relais",
+                "**Furosémide** : inefficace en IRA oligo-anurique — ne pas compter sur la diurèse forcée si anurie installée"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "**Traitement de l'hyperphosphatémie** — L'hyperphosphatémie est souvent la plus difficile à corriger médicalement en SLT sévère, car son évolution est rapide et les chélateurs oraux ont une efficacité limitée en phase aiguë."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Chélateurs du phosphore oraux** : carbonate de calcium, sevelamer, carbonate de lantane — à donner EN DEHORS des repas pour limiter l'absorption — efficacité insuffisante si phosphatémie > 3 mmol/L",
+                "**Restriction des apports en phosphore** : nutrition adaptée (éviter les produits laitiers, les légumineuses, les sodas)",
+                "**Phosphatémie > 2,5 mmol/L** malgré traitement médical : indication potentielle d'EER selon contexte clinique global",
+                "**Éviter les solutés contenant du phosphore** dans les perfusions"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "**Traitement de l'hypocalcémie** — La correction calcique doit être CIBLÉE sur les formes symptomatiques afin d'éviter d'aggraver la précipitation ectopique de phosphate de calcium."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Hypocalcémie asymptomatique** : surveillance stricte, traitement de l'hyperphosphatémie en priorité — NE PAS SUPPLÉMENTER en calcium IV",
+                "**Hypocalcémie symptomatique** (tétanie, convulsions, allongement QT > 500 ms, hypotension) : **Gluconate de calcium 10%, 10-20 mL IV lente** sur 5-10 min, sous monitorage ECG continu — relais par perfusion continue si nécessaire (1-2 mg/kg/h de calcium élément)",
+                "**Calcémie corrigée cible** : > 1,9 mmol/L (7,5 mg/dL) en phase symptomatique — ne pas viser la normalisation complète si hyperphosphatémie non contrôlée"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ERREUR FRÉQUENTE : Administrer du calcium IV à titre préventif chez un patient avec hypocalcémie asymptomatique ET hyperphosphatémie sévère — le produit phosphocalcique (Ca × Ph) peut dépasser 4,4 mmol²/L² et favoriser des calcifications vasculaires et viscérales, voire des troubles du rythme par calcification myocardique."
+            }
+          ]
+        },
+        {
+          "title": "5. Indications de l'Épuration Extra-Rénale en Urgence",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'**EER** représente le traitement de sauvetage du SLT sévère avec défaillance rénale établie ou désordres métaboliques réfractaires au traitement médical. L'indication doit être posée rapidement car les délais d'installation (pose de cathéter, amorçage) peuvent être fatals en cas d'hyperkaliémie ou d'arythmie imminente."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Indications absolues en urgence** :",
+                "**Hyperkaliémie > 6,5 mmol/L** réfractaire au traitement médical maximal (ou tout niveau avec signes ECG graves : onde T en tente, élargissement QRS, rythme sinusoïdal)",
+                "**IRA oligo-anurique** (diurèse < 0,5 mL/kg/h > 6h) avec surcharge hydrosodée ou impossibilité d'hyperhydratation",
+                "**Hyperphosphatémie sévère > 3,0 mmol/L** réfractaire aux chélateurs, avec hypocalcémie symptomatique associée",
+                "**Hyperuricémie > 900 µmol/L** (15 mg/dL) avec IRA — bien que la rasburicase soit efficace, l'EER peut être nécessaire si IRA sévère",
+                "**Acidose métabolique sévère** (pH < 7,15) réfractaire au bicarbonate",
+                "**Surcharge volémique** compromettant la ventilation ou avec OAP installé",
+                "**Indications relatives / anticipation** : Ascension rapide de la kaliémie (> 0,5 mmol/L/h), phosphatémie > 2,5 mmol/L avec tendance évolutive, IRA d'emblée sévère (créatinine > 3× basale) avant même atteinte des seuils critiques"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Produit phosphocalcique (Ca × Ph) > 4,4 mmol²/L² : risque majeur de calcifications ectopiques — EER à discuter en urgence même si kaliémie < 6,5 mmol/L"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Modalité préférée en SLT sévère** : **Hémodiafiltration continue (HDFVVC)** — meilleure épuration des petites et moyennes molécules (phosphore, urate, potassium), hémodynamique stable, contrôle volémique précis — avantage sur l'hémodialyse intermittente en choc septique associé",
+                "**Hémodialyse intermittente (HDI)** : épuration plus rapide du potassium (efficace en urgence hyperkaliémique extrême) — possible si hémodynamique stable — risque de rebond électrolytique entre séances",
+                "**Débit de dialysat/substitut** en HDFVVC : ≥ **35 mL/kg/h** en phase aiguë de SLT pour optimiser l'épuration du phosphore et de l'urate",
+                "**Durée de l'EER** : jusqu'à résolution du SLT biologique ET récupération d'une diurèse adéquate (> 1 mL/kg/h) — généralement 3-7 jours",
+                "**Anticoagulation du circuit** : héparine non fractionnée ou citrate régional (préféré en cas de thrombopénie ou risque hémorragique lié à la chimiothérapie)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : La rasburicase dégrade l'acide urique ex vivo à température ambiante — pour le dosage de l'uricémie sous rasburicase, prélever sur tube au FROID (glace immédiate) et analyser dans l'heure, sinon résultat faussement bas. Un taux « normal » d'acide urique sous rasburicase dans un tube non réfrigéré n'est pas interprétable."
+            }
+          ]
+        },
+        {
+          "title": "6. Recommandations Clés (avec grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ESMO/EHA 2020 (Howard et al.)** : Rasburicase 0,2 mg/kg/j recommandée en haut risque (Grade A) — allopurinol en risque intermédiaire (Grade B) — alcalinisation urinaire non recommandée (Grade D, déconseillée)",
+                "**KDIGO 2012 (AKI)** : EER en urgence si kaliémie menaçante, surcharge volémique non contrôlable, acidose sévère réfractaire (Grade B)",
+                "**Cairo & Bishop 2004** : Critères diagnostiques de référence du SLT biologique et clinique — toujours utilisés en 2024",
+                "**British Committee for Standards in Haematology (BCSH) 2015** : Déficit G6PD — dépistage obligatoire avant rasburicase (Grade 1B) — mesure uricémie sur glace sous rasburicase (Grade 2C)",
+                "**SFAR/SRLF** : Pas de recommandations spécifiques publiées dédiées au SLT en réanimation à ce jour — se référer aux recommandations ESMO 2020 et KDIGO",
+                "**Montesinos et al. — Blood 2020** : Fébuxostat non inférieur à l'allopurinol en prophylaxie (LAM/LLC, faible risque) — données insuffisantes pour le haut risque",
+                "**Jones et al. — JCO 2022** : Rasburicase en dose fixe (3-6 mg dose unique) : efficacité comparable au schéma poids-dépendant pour certains profils — approche pharmacoéconomique en discussion"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ALERTE PRATIQUE : En 2024, la rasburicase peut être en tension d'approvisionnement. En cas d'indisponibilité chez un patient à haut risque, escalader l'allopurinol (600 mg/j, adaptation rénale), hyperhydratation intensive (3-4 L/m²/j) et surveillance rapprochée toutes les 4h sont la stratégie de repli — anticiper l'EER précocement."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Diagnostic SLT biologique** : ≥ 2 critères de Cairo-Bishop (uricémie ≥ 476 µmol/L, K+ ≥ 6,0 mmol/L, Ph ≥ 2,1 mmol/L, Ca++ ≤ 1,75 mmol/L) dans les 3j avant / 7j après traitement — le SLT peut être SPONTANÉ",
+        "**Rasburicase 0,2 mg/kg/j** = standard en haut risque (Burkitt, LAL, GB > 100 G/L) — CI absolue si déficit G6PD — prélèvement uricémie sur GLACE sous traitement",
+        "**Hypocalcémie asymptomatique = ne pas supplémenter** si hyperphosphatémie sévère — risque de précipitation phosphocalcique tissulaire aggravée — traiter d'abord le phosphore",
+        "**EER en urgence** si K+ > 6,5 mmol/L réfractaire, anurie avec surcharge, Ph > 3,0 mmol/L réfractaire, pH < 7,15 — HDFVVC préférée (débit ≥ 35 mL/kg/h) — HDI si urgence hyperkaliémique extrême hémodynamiquement stable",
+        "**Alcalinisation urinaire ABANDONNÉE** — aggrave les précipitations phosphocalciques et de xanthine — hyperhydratation seule (NaCl 0,9%, diurèse cible ≥ 100 mL/h), sans bicarbonate dans les perfusions"
+      ],
+      "references": [
+        "Howard SC, Trifilio S, Gregory TK, et al. — Tumor lysis syndrome in the era of novel and targeted agents in patients with hematologic malignancies: a systematic review — Ann Hematol 2016 (classification de référence toujours valide)",
+        "Cairo MS, Bishop M — Tumour lysis syndrome: new therapeutic strategies and classification — Br J Haematol 2004 — Critères diagnostiques de référence",
+        "Mirrakhimov AE, Ali AM, Khan M, Barbaryan A — Tumor Lysis Syndrome in Solid Tumors: An Up to Date Review of the Literature — Rare Tumors 2014",
+        "ESMO/EHA Guidelines — Howard SC, Jones DP, Pui CH — The tumor lysis syndrome — N Engl J Med 2011 (revue princeps, ≥ 2000 citations)",
+        "Coiffier B, Altman A, Pui CH, Younes A, Cairo MS — Guidelines for the management of pediatric and adult tumor lysis syndrome: an evidence-based review — J Clin Oncol 2008",
+        "Jones GL, Will A, Jackson GH, et al. — British Committee for Standards in Haematology — Guidelines for the management of tumour lysis syndrome in adults and children with haematological malignancies — Br J Haematol 2015",
+        "Montesinos P, Lorenzo I, Martin G, et al. — Tumor lysis syndrome in patients with acute myeloid leukemia — Haematologica 2008",
+        "KDIGO Clinical Practice Guideline for Acute Kidney Injury — Kidney International Supplements 2012 — Sections EER urgence",
+        "Vadhan-Raj S, Fayad LE, Fanale MA, et al. — A randomized trial of a single-dose rasburicase versus five-daily doses in patients at risk for tumor lysis syndrome — Ann Oncol 2012",
+        "Jones GL, et al. (BCSH update discussion) — Management of tumour lysis syndrome — Consensus update 2022 — British Journal of Haematology 2022"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 34 ans est hospitalisé en réanimation pour un lymphome de Burkitt diagnostiqué 48h auparavant. Il n'a pas encore reçu de chimiothérapie. Bilan à l'admission : uricémie 520 µmol/L, K+ 5,8 mmol/L, Ph 1,9 mmol/L, Ca++ corrigé 2,05 mmol/L, créatinine 145 µmol/L (basale estimée 80 µmol/L), LDH 8× LSN. Poids 70 kg, DFG estimé 52 mL/min.",
+        "question": "Quelle est la prise en charge initiale la PLUS APPROPRIÉE concernant l'uricolyse chez ce patient ?",
+        "options": {
+          "A": "Allopurinol 300 mg/j PO + hyperhydratation IV — la rasburicase est réservée au SLT clinique déclaré",
+          "B": "Rasburicase 0,2 mg/kg/j IV après vérification du statut G6PD — en haut risque, elle est indiquée dès la phase de prévention avant chimiothérapie",
+          "C": "Rasburicase 0,2 mg/kg/j IV + alcalinisation urinaire par bicarbonate de sodium pour optimiser l'élimination de l'urate",
+          "D": "Fébuxostat 80 mg/j PO — supérieur à l'allopurinol et ne nécessite pas d'adaptation à l'insuffisance rénale modérée"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : Ce patient présente un lymphome de Burkitt (haut risque intrinsèque) avec SLT biologique SPONTANÉ (uricémie > 476 µmol/L + créatinine > 1,5× basale = SLT clinique grade 2-3). La rasburicase 0,2 mg/kg/j est l'indication de référence, Y COMPRIS avant chimiothérapie, car le SLT spontané est une complication du Burkitt. La vérification G6PD est obligatoire. Piège A : L'allopurinol ne dégrade pas l'urate déjà formé, insuffisant ici avec uricémie déjà > 476 µmol/L et SLT déclaré. Piège C : L'alcalinisation urinaire est formellement DÉCONSEILLÉE (ESMO 2020) car elle favorise la précipitation de phosphate de calcium et de xanthine. Piège D : Le fébuxostat n'a pas de données robustes dans le haut risque/SLT sévère, n'est pas remboursé dans cette indication en France, et les données sont insuffisantes pour en faire le premier choix."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Une patiente de 58 ans sous HDFVVC pour SLT sévère (LAL B en cours de traitement) présente une kaliémie à 6,8 mmol/L malgré une séance de 12h à 30 mL/kg/h. L'ECG montre des ondes T amples et pointues en V1-V4. Diurèse résiduelle quasi nulle. Le débit de dialysat actuel est de 30 mL/kg/h.",
+        "question": "Quelle est la mesure la PLUS URGENTE à prendre en premier ?",
+        "options": {
+          "A": "Augmenter le débit d'HDFVVC à 45 mL/kg/h — cela augmentera la clairance du potassium",
+          "B": "Administrer du gluconate de calcium 10%, 20 mL IV en 3 minutes sous monitorage ECG continu",
+          "C": "Injecter 10 UI d'insuline rapide IV + 50 mL de G50% — traitement de fond de l'hyperkaliémie",
+          "D": "Passer en hémodialyse intermittente (HDI) — plus efficace que l'HDFVVC pour l'épuration rapide du potassium"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : Les signes ECG (ondes T en tente) signent une hyperkaliémie avec risque immédiat d'arythmie ventriculaire létale. La PRIORITÉ ABSOLUE est la STABILISATION MEMBRANAIRE par gluconate de calcium IV, qui agit en 2-3 minutes et protège le myocarde — sans attendre l'effet des autres mesures. Piège A : Augmenter le débit d'HDFVVC améliorera l'épuration à moyen terme mais n'a pas d'effet en quelques minutes sur l'arythmie imminente. Piège C : L'insuline-glucose est le traitement de fond de l'hyperkaliémie (diminution K+ en 15-30 min) mais ne protège pas la membrane immédiatement — à initier en DEUXIÈME temps, après le calcium. Piège D : L'HDI est en effet plus efficace pour épurer rapidement le K+, mais le délai de mise en place (débranchement du circuit, préparation HDI) est incompatible avec l'urgence cardiaque immédiate."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un patient de 45 ans, d'origine africaine subsaharienne, présente un lymphome de Burkitt à très haut risque. Avant d'administrer la rasburicase, le bilan de dépistage G6PD revient « insuffisant » (résultat non interprétable en raison d'hémolyse sur le prélèvement). La chimiothérapie est prévue dans 6 heures.",
+        "question": "Quelle est la conduite à tenir la plus appropriée concernant l'uricolyse en attendant un résultat G6PD fiable ?",
+        "options": {
+          "A": "Administrer la rasburicase immédiatement car le bénéfice dépasse le risque dans le Burkitt à très haut risque",
+          "B": "Reporter la chimiothérapie de 24-48h et répéter le dosage G6PD sur un nouveau prélèvement correct avant toute décision",
+          "C": "Débuter l'allopurinol 600 mg/j IV (ou 600 mg PO) + hyperhydratation intensive + surveiller toutes les 4h en attendant un résultat G6PD fiable — reporter la chimiothérapie si biologiquement instable",
+          "D": "Administrer du fébuxostat 120 mg/j PO — n'a pas de contre-indication liée au G6PD et est équivalent à la rasburicase"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : En l'absence de statut G6PD fiable, la rasburicase ne peut pas être administrée (risque de méthémoglobinémie et hémolyse massive potentiellement fatale). La stratégie de repli est : allopurinol à dose maximale (600 mg/j, à adapter si IRA sévère), hyperhydratation intensive visant diurèse ≥ 100 mL/h, surveillance biologique rapprochée toutes les 4-6h, et nouveau prélèvement G6PD en urgence. Reporter modérément la chimiothérapie (si biologiquement stabilisable) est préférable à l'administration aveugle de rasburicase. Piège A : Administrer la rasburicase sans statut G6PD fiable expose à une hémolyse fulminante pouvant être mortelle — le bénéfice ne justifie pas ce risque alors qu'une alternative existe. Piège B : Reporter 24-48h la chimio dans un Burkitt est risqué (croissance tumorale rapide, SLT spontané), mais la question porte sur l'allopurinol en bridge — option B trop passive. Piège D : Le fébuxostat n'est pas équivalent à la rasburicase (ne dégrade pas l'urate existant) et les données dans le haut risque sont insuffisantes — ce n'est pas un choix validé en 1re intention dans ce contexte."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Patient de 52 ans, SLT clinique grade 3 sous rasburicase depuis 24h. Bilan : uricémie revenue à 120 µmol/L (résultat prélevé à température ambiante, analysé 3h après le prélèvement). Le biologiste vous appelle car le résultat lui semble anormalement bas.",
+        "question": "Quelle est l'interprétation correcte de ce résultat d'uricémie ?",
+        "options": {
+          "A": "Résultat fiable — la rasburicase a été efficace, on peut réduire les doses",
+          "B": "Résultat non interprétable — la rasburicase dégrade l'acide urique ex vivo à température ambiante, le prélèvement aurait dû être acheminé sur glace et analysé dans l'heure",
+          "C": "Résultat évocateur d'une surdose de rasburicase — surveiller l'apparition d'une méthémoglobinémie",
+          "D": "Résultat normal attendu après 24h de rasburicase — aucune action particulière"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : La rasburicase continue de dégrader l'acide urique ex vivo à température ambiante. Un prélèvement non acheminé immédiatement sur glace et analysé plus de 1h après le prélèvement donne un résultat FAUSSEMENT BAS, non interprétable. La recommandation BCSH (Grade 2C) stipule : tube au froid immédiat + analyse dans l'heure. Il faut reprélever dans les conditions correctes avant de conclure à l'efficacité et modifier la prise en charge. Piège A : Réduire les doses sur un résultat non fiable expose à une récidive d'hyperuricémie sévère. Piège C : La méthémoglobinémie est un effet indésirable de la rasburicase en cas de déficit G6PD, non liée au niveau de l'uricémie — le mécanisme n'est pas une 'surdose'. Piège D : Un taux à 120 µmol/L peut être un faux résultat ou un vrai résultat — sans conditions de prélèvement correctes, on ne peut pas conclure."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patient de 62 ans, SLT sévère, Ph = 3,2 mmol/L, Ca++ corrigé = 1,65 mmol/L (asyptomatique : pas de tétanie, pas de convulsion, QTc à 480 ms). Kaliémie 5,6 mmol/L, créatinine 280 µmol/L (basale 90 µmol/L), diurèse 20 mL/h sous furosémide 500 mg/24h.",
+        "question": "Concernant l'hypocalcémie, quelle est la prise en charge la plus adaptée ?",
+        "options": {
+          "A": "Gluconate de calcium 10%, 20 mL IV sur 10 min + relais par perfusion continue de calcium — corriger la calcémie avant d'attaquer le phosphore",
+          "B": "Surveiller la calcémie toutes les 4h, traiter l'hyperphosphatémie en priorité (chélateurs, EER) — ne pas supplémenter en calcium IV si asymptomatique",
+          "C": "Gluconate de calcium 10%, 20 mL IV sur 10 min — le QTc à 480 ms justifie une supplémentation calcique même en l'absence de symptômes cliniques",
+          "D": "Chlorure de calcium 10%, 10 mL IV direct — plus ionisé que le gluconate, effet plus rapide sur le QTc"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : L'hypocalcémie est ASYMPTOMATIQUE (pas de tétanie, pas de convulsion, QTc 480 ms — prolongé mais pas à seuil d'urgence critique > 500 ms en l'absence de symptômes). En présence d'une hyperphosphatémie à 3,2 mmol/L, administrer du calcium IV aggraverait la précipitation de phosphate de calcium dans les tissus (produit phosphocalcique = 3,2 × 1,65 = 5,28 mmol²/L² > 4,4). La priorité est l'EER (indiquée ici : Ph > 3,0 mmol/L, IRA oligo-anurique) pour contrôler la phosphatémie. Piège A : Supplémenter le calcium en priorité avec hyperphosphatémie sévère est une erreur classique — risque de calcifications viscérales. Piège C : QTc 480 ms est une valeur à surveiller mais pas un seuil d'urgence absolue pour la supplémentation calcique systématique en contexte de SLT avec hyperphosphatémie. Piège D : Le chlorure de calcium IV direct hors voie centrale est irritant, peut provoquer des nécroses — et l'indication elle-même est erronée ici."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patient en HDFVVC pour SLT sévère post-chimiothérapie (LAM hyperleucocytaire). Le débit actuel d'effluent est 25 mL/kg/h. Après 18h, la phosphatémie reste à 2,8 mmol/L malgré sevelamer 2400 mg/j et restriction phosphore. La kaliémie est à 5,4 mmol/L, l'uricémie à 180 µmol/L sous rasburicase, la créatinine stable à 320 µmol/L.",
+        "question": "Quelle modification de la stratégie d'EER est la plus pertinente pour améliorer l'épuration du phosphore ?",
+        "options": {
+          "A": "Passer en hémodialyse intermittente quotidienne — l'HDI a une meilleure clairance instantanée du phosphore que l'HDFVVC",
+          "B": "Augmenter le débit d'effluent de l'HDFVVC à 35-40 mL/kg/h — la clairance du phosphore en HDFVVC est dose-dépendante",
+          "C": "Maintenir le débit actuel et attendre 48h supplémentaires — l'équilibre phosphore prend du temps en dialyse continue",
+          "D": "Ajouter une séance de plasmaphérèse — le phosphore est principalement lié aux protéines plasmatiques et mal épuré par la dialyse classique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : La clairance du phosphore en HDFVVC est directement proportionnelle au débit d'effluent (dialysat + substitut). À 25 mL/kg/h, l'épuration est insuffisante pour compenser la libération continue de phosphore en SLT actif. Les recommandations pour le SLT sévère préconisent un débit ≥ 35 mL/kg/h. Augmenter à 35-40 mL/kg/h est la mesure la plus simple et directement efficace. Piège A : L'HDI a une clairance instantanée supérieure sur 4h mais le rebond phosphore entre séances est majeur en SLT (relargage continu) — la HDFVVC maintient un état d'équilibre plus stable sur 24h. Piège C : Attendre 48h avec un phosphore à 2,8 mmol/L en SLT actif expose à l'aggravation des précipitations phosphocalciques. Piège D : Le phosphore est une PETITE molécule non liée aux protéines — parfaitement épurée par dialyse/hémofiltration. La plasmaphérèse n'a aucune indication dans le SLT et serait inefficace et dangereuse."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Un patient de 28 ans présente un SLT spontané sur lymphome de Burkitt (non encore traité). Bilan : uricémie 680 µmol/L, K+ 5,9 mmol/L, Ph 2,3 mmol/L, Ca++ 1,82 mmol/L, créatinine 200 µmol/L, diurèse 60 mL/h, LDH 12× LSN. La rasburicase est administrée depuis 2h. Le pH urinaire mesuré est à 5,2.",
+        "question": "Concernant le pH urinaire, quelle est l'attitude correcte ?",
+        "options": {
+          "A": "Alcaliniser les urines avec du bicarbonate de sodium en perfusion IV pour atteindre pH urinaire > 7,0 — cela prévient la précipitation tubulaire de l'urate",
+          "B": "Ne pas modifier le pH urinaire — sous rasburicase, l'urate est transformé en allantoïne bien plus soluble, l'alcalinisation n'apporte aucun bénéfice et expose à des risques",
+          "C": "Alcaliniser uniquement si uricémie reste > 400 µmol/L à 4h malgré rasburicase — utiliser bicarbonate à 1,4% en continu",
+          "D": "Acidifier les urines pour optimiser l'élimination de l'allantoïne produite par la rasburicase — l'allantoïne est mieux excrétée en milieu acide"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : Sous rasburicase, l'acide urique est transformé en allantoïne, qui est 5 à 10 fois plus soluble que l'urate et ne précipite pas dans les tubules quel que soit le pH urinaire. L'alcalinisation urinaire est donc INUTILE sous rasburicase et DÉCONSEILLÉE par l'ESMO 2020 car elle favorise : (1) la précipitation de phosphate de calcium (solubilité diminuée en milieu alcalin), (2) la précipitation de xanthine. Piège A : Erreur classique — raisonnement valable à l'ère de l'allopurinol (qui crée de la xanthine et de l'hypoxanthine precipitables), mais caduc sous rasburicase. Piège C : L'alcalinisation conditionnelle reste incorrecte sous rasburicase. Piège D : L'allantoïne est soluble à tout pH physiologique — modifier le pH pour son élimination n'a aucun fondement."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Patiente de 70 ans, LLC stade IV, traitement par venetoclax initié il y a 5 jours (dose en escalade, actuellement 100 mg/j). Lors de la consultation de surveillance, la biologiste note : K+ 5,4 mmol/L, Ph 1,8 mmol/L, uricémie 380 µmol/L, Ca++ 2,1 mmol/L, créatinine 130 µmol/L (basale 90 µmol/L). Asymptomatique.",
+        "question": "Selon les critères de Cairo-Bishop, quel est le diagnostic et la prise en charge adaptée ?",
+        "options": {
+          "A": "SLT biologique (critères : K+ ≥ 5,4 mmol/L représente une augmentation ≥ 25% si basale normale, Ph augmenté ≥ 25%) — hospitalisation en réanimation et rasburicase IV",
+          "B": "Pas de SLT biologique selon Cairo-Bishop (aucun critère seuil absolu n'est atteint) — mais le tableau est évocateur d'un SLT débutant sous venetoclax, intensifier la surveillance (toutes les 6-8h) et optimiser l'hydratation",
+          "C": "SLT clinique (créatinine > 1,5× basale) — indication d'EER prophylactique",
+          "D": "SLT biologique (2 critères : créatinine > 1,5× basale et uricémie en hausse) — rasburicase 0,2 mg/kg/j"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : Analyse rigoureuse des critères Cairo-Bishop : K+ 5,4 mmol/L < 6,0 mmol/L (seuil absolu) — pour le critère '25% d'augmentation', on ne connaît pas la basale exacte de K+, mais 5,4 mmol/L est dans les limites hautes du normal — pas de critère K+ validé. Ph 1,8 mmol/L < 2,1 mmol/L (seuil absolu adulte). Uricémie 380 µmol/L < 476 µmol/L. Ca++ normal. Créatinine 130 µmol/L = 1,44× basale < 1,5× (SLT clinique non atteint). On n'a donc pas ≥ 2 critères biologiques atteints → PAS de SLT biologique au sens strict. Cependant, le contexte (venetoclax, tendance évolutive) justifie surveillance renforcée. Piège A : Sur-diagnostic — appliquer les critères Cairo-Bishop de façon rigoureuse, K+ 5,4 mmol/L n'atteint pas le seuil. Piège C : Créatinine 1,44× basale < 1,5× — pas de SLT clinique. Piège D : L'uricémie (380 µmol/L) et la créatinine ne constituent pas 2 critères biologiques (critères biologiques du SLT = les 4 électrolytes/urate, pas la créatinine qui appartient aux critères cliniques)."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Patient de 48 ans, SLT sévère post-RCHOP pour LMNH diffus à grandes cellules B. Il est sous HDFVVC depuis 24h. La kaliémie est revenue à 5,8 mmol/L, mais la phosphatémie est à 3,4 mmol/L et la calcémie corrigée à 1,55 mmol/L malgré sevelamer. Le patient présente des crampes musculaires douloureuses et un signe de Chvostek positif. QTc = 510 ms à l'ECG.",
+        "question": "Quelle est la prise en charge de l'hypocalcémie la plus adaptée dans ce contexte ?",
+        "options": {
+          "A": "Gluconate de calcium 10%, 20 mL IV sur 10 minutes sous monitoring ECG — l'hypocalcémie est désormais symptomatique, justifiant la supplémentation malgré l'hyperphosphatémie",
+          "B": "Ne pas supplémenter en calcium — augmenter uniquement le débit de l'HDFVVC pour corriger l'hyperphosphatémie en premier",
+          "C": "Gluconate de calcium IV + augmentation simultanée du débit d'HDFVVC à 40 mL/kg/h pour contrôler l'hyperphosphatémie pendant la correction calcique",
+          "D": "Magnésium sulfate 2g IV sur 20 min — la tétanie en réanimation est plus souvent liée à une hypomagnésémie qu'à une hypocalcémie"
+        },
+        "correct": "A",
+        "explanation": "Réponse A correcte : La règle 'ne pas supplémenter en calcium si hyperphosphatémie' s'applique à l'hypocalcémie ASYMPTOMATIQUE. Ici, le patient est SYMPTOMATIQUE (crampes, signe de Chvostek, QTc > 500 ms) avec calcémie à 1,55 mmol/L — la menace d'arythmie ventriculaire et de convulsions justifie la correction calcique immédiate, avec monitoring ECG continu. Le risque de précipitation phosphocalcique est réel mais la menace vitale immédiate prévaut. Piège B : Ne pas supplémenter un patient symptomatique avec QTc 510 ms expose à un arrêt cardiaque — erreur par excès de prudence. Piège C : La réponse C est biologiquement cohérente (les deux mesures en simultané) mais dans la formulation des options, la réponse A est la première étape thérapeutique urgente — en pratique, les deux seraient faites quasi-simultanément, mais A capture mieux l'urgence immédiate. Piège D : Évoquer une hypomagnésémie comme diagnostic différentiel est classique mais ici les signes cliniques avec Ca++ à 1,55 mmol/L sont clairement imputables à l'hypocalcémie — le magnésium peut être dosé et corrigé en parallèle mais n'est pas la priorité principale."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Patient de 55 ans, LAL T en cours de traitement (J3 de la chimiothérapie d'induction). SLT biologique grade 3. Sous rasburicase 0,2 mg/kg/j depuis 48h. Bilan J3 : uricémie 95 µmol/L, K+ 4,8 mmol/L, Ph 1,6 mmol/L, Ca++ 2,2 mmol/L, créatinine 115 µmol/L (basale 85 µmol/L), diurèse 95 mL/h. L'interne propose d'arrêter la rasburicase car 'les critères biologiques sont normalisés'.",
+        "question": "Concernant la durée du traitement par rasburicase, quelle est la décision la plus appropriée ?",
+        "options": {
+          "A": "Arrêter la rasburicase — tous les critères biologiques sont normaux, le SLT est résolu, prolonger l'exposition est inutile et risqué",
+          "B": "Poursuivre la rasburicase jusqu'à la fin du cycle de chimiothérapie (J21) — arrêt précoce expose à une récidive sévère",
+          "C": "Poursuivre la rasburicase 1 à 7 jours en fonction de l'évolution clinique et biologique, avec réévaluation quotidienne — la normalisation biologique à J3 ne garantit pas l'absence de rebond lors des prochains cycles de lyse tumorale",
+          "D": "Remplacer la rasburicase par allopurinol 300 mg/j maintenant que les chiffres sont normaux — relais systématique recommandé à J2-J3"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : La durée de la rasburicase est de 1 à 7 jours selon l'évolution. La normalisation biologique à J3 est encourageante mais insuffisante pour justifier un arrêt immédiat dans une LAL T en cours de chimio-induction intensive — le pic de lyse peut se poursuivre plusieurs jours après J3. La réévaluation quotidienne guidant la durée (pas un arrêt systématique à J3 ni une continuation systématique jusqu'à J21) est la stratégie correcte. Piège A : Arrêt trop précoce sur seule normalisation biologique expose à un rebond d'hyperuricémie lors des J4-J7 où la lyse tumorale peut encore être intense. Piège B : Prolonger jusqu'à J21 expose inutilement à des effets indésirables (risque d'hémolyse, coût élevé, disponibilité limitée) — il n'existe pas de recommandation pour une durée aussi longue. Piège D : Il n'existe pas de recommandation formelle de 'relais systématique à J2-J3 par allopurinol' — l'allopurinol serait insuffisant si la lyse tumorale persiste, et la transition n'est pas codifiée à ce stade précoce."
+      }
+    ]
   }
 ]
