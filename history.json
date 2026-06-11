@@ -5502,5 +5502,417 @@
         "explanation": "Réponse C correcte : La durée de la rasburicase est de 1 à 7 jours selon l'évolution. La normalisation biologique à J3 est encourageante mais insuffisante pour justifier un arrêt immédiat dans une LAL T en cours de chimio-induction intensive — le pic de lyse peut se poursuivre plusieurs jours après J3. La réévaluation quotidienne guidant la durée (pas un arrêt systématique à J3 ni une continuation systématique jusqu'à J21) est la stratégie correcte. Piège A : Arrêt trop précoce sur seule normalisation biologique expose à un rebond d'hyperuricémie lors des J4-J7 où la lyse tumorale peut encore être intense. Piège B : Prolonger jusqu'à J21 expose inutilement à des effets indésirables (risque d'hémolyse, coût élevé, disponibilité limitée) — il n'existe pas de recommandation pour une durée aussi longue. Piège D : Il n'existe pas de recommandation formelle de 'relais systématique à J2-J3 par allopurinol' — l'allopurinol serait insuffisant si la lyse tumorale persiste, et la transition n'est pas codifiée à ce stade précoce."
       }
     ]
+  },
+  {
+    "date": "2026-06-11",
+    "dateStr": "jeudi 11 juin",
+    "topic": "Gestion peranesthésique du patient porteur d'un rétrécissement aortique serré symptomatique opéré en chirurgie non cardiaque urgente : stratégie hémodynamique, choix de la technique anesthésique et prévention du collapsus cardiovasculaire peropératoire",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "Le rétrécissement aortique serré (RAS) symptomatique représente la valvulopathie la plus fréquente en chirurgie non cardiaque urgente chez le sujet âgé, avec une mortalité peropératoire jusqu'à 5-10 fois supérieure à la population générale. L'urgence chirurgicale interdit souvent le remplacement valvulaire préalable, imposant à l'anesthésiste-réanimateur une stratégie hémodynamique rigoureuse pour prévenir le collapsus cardiovasculaire. Maîtriser les objectifs hémodynamiques, le choix de la technique anesthésique et la gestion des instabilités peropératoires est un impératif de compétence de niveau DESC.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **rétrécissement aortique** est un obstacle fixe à l'éjection ventriculaire gauche par réduction progressive de la surface valvulaire aortique, entraînant une hypertrophie concentrique du VG (adaptation pressionnelle) et une dépendance critique au maintien du débit cardiaque."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**RAS serré** : Surface valvulaire aortique (SVA) < 1,0 cm² ou < 0,6 cm²/m² de surface corporelle",
+                "**Gradient moyen élevé** : ≥ 40 mmHg (associé à RAS serré avec FE conservée)",
+                "**Gradient moyen bas-débit bas-flux** : < 40 mmHg malgré SVA < 1 cm² — attention au RAS paradoxal bas-flux",
+                "**Vitesse maximale** : ≥ 4 m/s = critère échocardiographique de sévérité",
+                "**Triade symptomatique** : angor, syncope, dyspnée (insuffisance cardiaque) — survie médiane < 2-3 ans sans traitement",
+                "**FE conservée** : fréquente dans le RAS (hypertrophie compensatrice) — ne préjuge pas de la réserve fonctionnelle",
+                "**Compliance réduite** : VG hypertrophié, peu compliante → très sensible aux variations de précharge et de post-charge"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Sévérité : SVA < 1,0 cm² ET/OU gradient moyen ≥ 40 mmHg ET/OU Vmax ≥ 4 m/s (critères ESC 2021)"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Une FE normale (50-60%) chez un patient porteur de RAS ne signifie PAS une réserve contractile préservée. L'hypertrophie concentrique rend le VG extrêmement dépendant de la précharge et intolérant à toute vasodilatation brutale."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le VG hypertrophié du RAS serré présente une **rigidité diastolique** majeure (compliance réduite) et une **dépendance à la précharge** élevée. Le remplissage diastolique dépend majoritairement de la systole auriculaire (contribution auriculaire jusqu'à 40% du VES contre 15-20% en conditions normales)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Obstacle fixe à l'éjection** : le débit cardiaque est quasi-fixe, non augmentable à l'effort → intolérance aux vasodilatations brutales",
+                "**Hypertrophie concentrique** : augmente la demande en O₂, réduit la réserve coronaire → ischémie sous-endocardique fréquente même sans coronaropathie",
+                "**Gradient de pression systolique VG/Ao** : génère une pression systolique intraventriculaire très élevée (jusqu'à 250-300 mmHg) → stress pariétal",
+                "**Sensibilité à la tachycardie** : raccourcissement du temps de remplissage diastolique → chute du VES et ischémie sous-endocardique",
+                "**Sensibilité à la bradycardie extrême** : FC < 45-50/min → chute du débit cardiaque par débit-dépendance",
+                "**Résistances vasculaires systémiques (RVS) élevées compensatoires** : toute chute des RVS → effondrement de la PA sans augmentation compensatrice du débit (obstacle fixe)",
+                "**Hypertrophie septale asymétrique possible** → obstruction dynamique sur certaines morphologies (SAM mitral peropératoire)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Débit Cardiaque = FC × VES — Dans le RAS : VES quasi-fixe (obstacle fixe) → DC essentiellement FC-dépendant. Cible FC : 60-80/min"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE PHYSIOPATHOLOGIQUE MAJEUR : Dans le RAS serré, la baisse des RVS par les agents anesthésiques (propofol, halogénés, rachianesthésie) ne s'accompagne PAS d'une augmentation réflexe du débit cardiaque — l'obstacle valvulaire l'en empêche. Le résultat est un collapsus cardiovasculaire irréversible si non corrigé immédiatement."
+            },
+            {
+              "type": "text",
+              "content": "L'**ischémie sous-endocardique** est la complication myocardique principale : la pression diastolique intraventriculaire élevée comprime les artérioles sous-endocardiques, réduisant la perfusion coronaire diastolique même en l'absence de sténose coronaire épicardique."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation préopératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "En chirurgie urgente, l'évaluation est accélérée mais ne doit pas être sacrifiée. L'**échocardiographie transthoracique (ETT) préopératoire en urgence** est le pivot de la stratégie — elle doit être réalisée avant tout acte anesthésique si le délai chirurgical le permet (même 30 minutes d'évaluation changent la stratégie)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**ETT urgence** : SVA, gradient moyen, Vmax, FE (bi-plan Simpson), pressions de remplissage (E/e'), cinétique segmentaire, volume VG, morphologie mitrale (SAM ?)",
+                "**ECG 12 dérivations** : trouble de repolarisation, HVG (Sokolow-Lyon > 35 mm), bloc de branche, FA (particulièrement délétère dans le RAS)",
+                "**Biologie urgente** : troponine, BNP/NT-proBNP (valeur pronostique), ionogramme, NFS, coagulation, groupage",
+                "**Stratification du risque chirurgical** : score ASA, score AHA/ACC de risque cardiaque peropératoire, RCRI (Lee score)",
+                "**Évaluation de la volémie** : signes cliniques d'hypovolémie, signes de décompensation cardiaque",
+                "**Traitements cardioprotecteurs en cours** : bêtabloquants (NE PAS interrompre), IEC/ARAII (à discuter la veille — risque hypotension prolongée), diurétiques (hypovolémie relative ?)",
+                "**Discussion multidisciplinaire rapide** : anesthésiste, chirurgien, cardiologue si possible — balance bénéfice/risque de l'urgence vs TAVI préalable (en général impossible en urgence vraie)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Critères RAS serré ESC 2021 : SVA < 1,0 cm² + gradient moyen ≥ 40 mmHg + Vmax ≥ 4 m/s. Attention RAS bas-débit bas-flux : SVA < 1 cm² MAIS gradient < 40 mmHg si FE < 40% ou débit réduit (SVA indexée < 0,6 cm²/m²)"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE ÉVALUATIF : Un RAS avec gradient < 40 mmHg peut être PLUS sévère qu'un RAS à gradient élevé — c'est le RAS paradoxal bas-débit/bas-flux à FE préservée (SVAi < 0,6 cm²/m², VS < 35 mL/m²). Ce profil est de plus mauvais pronostic et nécessite une vigilance hémodynamique renforcée."
+            },
+            {
+              "type": "text",
+              "content": "La **valvuloplastie aortique percutanée (BAV)** en pont préopératoire peut être discutée en centre expert pour les chirurgies non immédiates (délai ≥ 24-48h), mais bénéfice limité (resténose rapide en 6-12 mois, complications propres). Le **TAVI en urgence** reste exceptionnel."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge anesthésique",
+          "items": [
+            {
+              "type": "text",
+              "content": "La règle d'or est le maintien des **5 objectifs hémodynamiques fondamentaux** tout au long de la période peranesthésique. La technique anesthésique est choisie en fonction du siège chirurgical, du degré d'urgence et du profil hémodynamique du patient — il n'y a pas de technique universellement supérieure mais des règles absolues communes."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**OBJECTIF 1 — FC : 60-80/min** : Éviter la tachycardie (↓ remplissage diastolique, ↑ consommation O₂) ET la bradycardie sévère (< 45/min). Traiter toute FA avec réponse ventriculaire rapide en urgence (amiodarone, cardioversion électrique si instabilité hémodynamique)",
+                "**OBJECTIF 2 — Rythme sinusal** : La perte de la systole auriculaire dans le RAS entraîne une chute du VES de 20-40%. FA peropératoire = urgence hémodynamique. Cardioversion électrique synchronisée si PA effondrée",
+                "**OBJECTIF 3 — Précharge optimale** : Euvolémie stricte. Éviter l'hypovolémie (↓ précharge → ↓ VES sur VG peu compliant) ET la surcharge (↑ PTDVG → OAP). Remplissage vasculaire prudent par bolus de 100-250 mL de cristalloïdes titrés",
+                "**OBJECTIF 4 — RVS maintenues (normovolémie + vasopresseurs si besoin)** : Éviter toute vasodilatation. Phényléphrine (vasopresseur pur alpha-1) en première intention pour corriger la chute des RVS SANS augmenter la FC",
+                "**OBJECTIF 5 — Contractilité préservée** : Éviter les agents inotropes négatifs puissants. La dobutamine est à utiliser avec extrême prudence (vasodilatation et tachycardie secondaires possibles)"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "**Monitoring recommandé** : KT artériel radial avant induction (référence de pression en temps réel), voie veineuse centrale (si chirurgie majeure), ETO peropératoire idéalement (gold standard pour guider la volémie et détecter la dysfonction VG), oxymètre de pouls, capnographie, BIS si disponible."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**KT artériel AVANT induction** : obligatoire — permet de détecter et traiter immédiatement l'effondrement tensionnel à l'induction",
+                "**ETO peropératoire** : recommandée (grade IIa, ESC 2022) pour guider la volémie, évaluer la fonction VG en temps réel, détecter une ischémie segmentaire ou un SAM",
+                "**Précondition vasopresseur** : Noradrénaline ou phényléphrine en seringue auto-pousseuse prête AVANT induction",
+                "**Défibrillateur externe immédiatement disponible** en salle — risque de TV/FV sur ischémie peropératoire"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "**Choix de la technique anesthésique — Anesthésie générale (AG)** : technique de référence pour les chirurgies sus-ombilicales, intrathoraciques et en urgence. Induction titrée, lente, avec agents à moindre effet vasodilatateur."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Étomidate (0,2-0,3 mg/kg)** : agent d'induction de choix — stabilité hémodynamique, absence d'effet inotrope négatif significatif, maintien des RVS",
+                "**Kétamine (1-2 mg/kg IV)** : alternative acceptable si état hémodynamique précaire (effet sympathomimétique indirect) — prudence si cardiopathie ischémique associée (↑ VO₂ myocardique)",
+                "**Propofol** : à éviter en bolus — vasodilatation et inotropisme négatif majeurs. Si utilisé : doses réduites (0,5-1 mg/kg maximum), titrées lentement, TOUJOURS précédé d'un vasopresseur",
+                "**Morphiniques** : sufentanil (0,2-0,3 µg/kg) ou fentanyl (2-3 µg/kg) en prémédication IV — réduisent la réponse sympathique à l'intubation, peu d'effet hémodynamique intrinsèque",
+                "**Halogénés d'entretien** : effets vasodilatateurs et inotropes négatifs dose-dépendants — préférer les concentrations minimales efficaces (cible BIS 40-60), titration rigoureuse. Sévoflurane > desflurane (moins de tachycardie réflexe)",
+                "**TIVA au propofol** : possible si doses faibles titrées + vasopresseur systématique — non recommandée en première intention",
+                "**Curares** : succinylcholine acceptable en urgence (intubation séquence rapide), vécuronium ou rocuronium en entretien — pas d'effets hémodynamiques significatifs"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "**Anesthésie locorégionale (ALR) — Principes et limites** : L'ALR périmédullaire (rachianesthésie, péridurale) n'est PAS contre-indiquée de manière absolue dans le RAS serré, mais elle exige des précautions majeures en raison du bloc sympathique et de la vasodilatation associée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Rachianesthésie classique** : CONTRE-INDIQUÉE en pratique dans le RAS serré symptomatique en urgence — bloc sympathique brutal, rapide et difficilement titrable → effondrement hémodynamique inévitable sans vasopresseur préventif massif",
+                "**Rachianesthésie à doses fractionnées (cathéter intrathécal)** : technique experte possible en centre spécialisé — titration lente, surveillance rapprochée, vasopresseur prêt. Non recommandée en urgence",
+                "**Péridurale** : plus titrable que la rachi — possible pour chirurgie sous-ombilicale si urgence relative, implémentation très progressive des doses, vasopresseur systématique en prévention",
+                "**ALR périphérique** : technique de choix si applicable à la chirurgie (membres, paroi) — pas de retentissement hémodynamique systémique, idéale dans le RAS",
+                "**Bloc paravertébral / PECS / TAP block** : à privilégier systématiquement comme analgésie péri-opératoire pour réduire la consommation d'opioïdes et limiter les effets hémodynamiques"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ERREUR CLASSIQUE D'INTERNE : Penser que 'la rachi est plus simple et plus rapide' en urgence pour une chirurgie sous-ombilicale chez un patient RAS. C'est potentiellement fatal. Le bloc sympathique thoraco-lombaire T6-L2 de la rachianesthésie entraîne une chute immédiate et profonde des RVS que le VG du RAS est incapable de compenser par augmentation du débit."
+            },
+            {
+              "type": "text",
+              "content": "**Protocole vasopresseur peranesthésique** : La phényléphrine (néosynéphrine) est le vasopresseur de première intention dans le RAS car elle augmente les RVS sans effet chronotrope positif (évite la tachycardie), maintenant la pression de perfusion coronaire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Phényléphrine** : 50-100 µg IV en bolus ou 0,5-2 µg/kg/min IVSE — vasopresseur alpha-pur de référence dans le RAS. Risque : bradycardie réflexe (utile si FC > 80/min, délétère si FC < 60/min)",
+                "**Noradrénaline** : 0,05-0,3 µg/kg/min IVSE — alternative, légèrement inotrope positive (bêta-1 faible), utile si dysfonction VG associée",
+                "**Éphédrine** : à éviter en première intention — effet bêta-1 chronotrope positif → tachycardie délétère. Acceptable en bolus de 3-6 mg si bradycardie associée à hypotension",
+                "**Dobutamine** : uniquement si dysfonction VG sévère documentée (FE < 35%) — risque de tachycardie et de vasodilatation, aggravation du gradient aortique dynamique",
+                "**Adrénaline** : réservée à l'arrêt cardiaque et au choc réfractaire (effet bêta-1 ++ délétère dans le RAS)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Cibles hémodynamiques peropératoires RAS serré : PAM ≥ 70 mmHg (idéalement PAM habituelle du patient ±10%), FC 60-80/min, rythme sinusal impératif, PVC 8-12 mmHg ou PAOcc 12-18 mmHg si cathéter AP"
+            }
+          ]
+        },
+        {
+          "title": "5. Complications peropératoires et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications cardiovasculaires peropératoires dans le RAS serré en chirurgie urgente surviennent dans 10-30% des cas selon les séries. Une anticipation systématique et une réponse thérapeutique immédiate sont indispensables."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Hypotension peropératoire (PAM < 65 mmHg)** : 1ère intention → phényléphrine 50-100 µg IV bolus. Évaluer cause : vasoplégie (→ noradrénaline), hypovolémie (→ remplissage cristalloïdes titrés), dysfonction VG (→ ETO, dobutamine si FE effondrée), ischémie myocardique (→ ECG, correction FC)",
+                "**Fibrillation auriculaire peropératoire avec instabilité hémodynamique** : cardioversion électrique synchronisée 200 J biphasique EN URGENCE. Si stable : amiodarone 300 mg IVL sur 20 min puis 900 mg/24h. Cible : retour en rythme sinusal",
+                "**Tachycardie sinusale ou supraventriculaire** : traiter la cause (douleur, hypovolémie, hypercapnie). Si persistante → bêtabloquant IV titré : métoprolol 1-2 mg IV (bolus répétables). Esmolol 0,5 mg/kg bolus + 50-200 µg/kg/min IVSE si réponse rapide nécessaire",
+                "**Bradycardie sinusale < 45/min** : atropine 0,5 mg IV (répétable jusqu'à 3 mg). Si réfractaire → éphédrine 3-6 mg IV, isoprénaline en dernier recours. Stimulation transcutanée si BAV haut degré",
+                "**Ischémie myocardique peropératoire** : correction immédiate de la FC, de la PAM (perfusion coronaire = PAD - PTDVG), correction de l'anémie (Hb cible ≥ 9 g/dL dans le RAS), nitroglycérine IV à doses très prudentes (risque hypotension ++), consultation cardiologique urgente",
+                "**OAP peropératoire** : CPAP si patient non intubé, furosémide 20-40 mg IV, dérivés nitrés très titrés (risque hypotension), voire assistance ventriculaire gauche (IABP, Impella) en cas d'échec dans un centre expert",
+                "**Arrêt cardiaque peropératoire** : RCP standard 30:2, adrénaline 1 mg/3 min. Discussion ECMO-CPR en centre compétent si non réponse à 15-20 min"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ERREUR FATALE : Utiliser la trinitrine (nitroglycérine) en bolus ou à doses importantes pour traiter l'ischémie myocardique peropératoire d'un patient RAS — la vasodilatation coronaire est minime mais la chute des RVS et de la précharge est majeure, précipitant un collapsus cardiovasculaire irréversible."
+            },
+            {
+              "type": "text",
+              "content": "**Obstruction dynamique sur SAM (Systolic Anterior Motion mitral)** : complication rare mais grave, favorisée par l'hypovolémie, la tachycardie et les inotropes. Diagnostic à l'ETO : gradient CCVG dynamique. Traitement : remplissage, bêtabloquant IV, phényléphrine — ARRÊT IMMÉDIAT de la dobutamine si en cours."
+            },
+            {
+              "type": "formula",
+              "content": "Perfusion coronaire diastolique ≈ PAD - PTDVG. Dans le RAS : PTDVG élevée (15-25 mmHg). Maintenir PAD ≥ 60-65 mmHg pour assurer perfusion sous-endocardique. PAM cible ≥ 70 mmHg."
+            }
+          ]
+        },
+        {
+          "title": "6. Recommandations et grades (ESC/SFAR 2021-2022)",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les recommandations actuelles sur la gestion anesthésique du RAS en chirurgie non cardiaque sont issues des guidelines ESC/EACTS 2021 (valvulopathies), ESC 2022 (chirurgie non cardiaque) et des recommandations SFAR 2021 sur l'évaluation préopératoire cardiaque."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**ESC 2022 — Classe IIa, niveau B** : L'ETO peropératoire est recommandée chez les patients à haut risque cardiaque en chirurgie non cardiaque (dont RAS serré) pour guider le traitement hémodynamique",
+                "**ESC 2022 — Classe I, niveau C** : La prise en charge multidisciplinaire (Heart Team) est recommandée avant toute chirurgie élective chez un patient porteur de valvulopathie sévère symptomatique",
+                "**ESC 2022 — Classe IIb, niveau C** : La valvuloplastie aortique percutanée (BAV) en pont peut être envisagée avant chirurgie non cardiaque urgente en l'absence d'alternative (centre expert)",
+                "**ESC 2022 — Classe IIa, niveau B** : Le monitoring invasif (KT artériel) est recommandé en peropératoire chez les patients porteurs de valvulopathies sévères en chirurgie à risque intermédiaire ou élevé",
+                "**SFAR 2021** : L'évaluation échocardiographique préopératoire urgente est recommandée avant tout acte anesthésique chez un patient porteur d'un souffle cardiaque non évalué ou d'une valvulopathie connue en urgence",
+                "**ESC/EACTS 2021 — Classe I, niveau B** : Le TAVI est recommandé chez les patients porteurs de RAS serré symptomatique à risque chirurgical élevé ou prohibitif (score STS > 8% ou EuroSCORE II > 4%)",
+                "**Consensus d'experts** : La phényléphrine (vasopresseur alpha-pur) est le vasopresseur de première intention peropératoire dans le RAS serré pour maintenir les RVS sans induire de tachycardie"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "POINT RÉGLEMENTAIRE : En chirurgie urgente (urgence vitale immédiate), le principe est 'opérer d'abord, optimiser ensuite' — mais cela ne signifie pas renoncer à l'évaluation échocardiographique rapide (< 30 min) ni à la mise en place du monitoring invasif préalable à l'induction."
+            },
+            {
+              "type": "text",
+              "content": "La **consultation de cardiologie préopératoire urgente** (même par téléphone) est recommandée pour décision collégiale, traçabilité du consentement éclairé adapté et optimisation des thérapeutiques (héparine, antiagrégants, dispositifs d'assistance si disponibles)."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Obstacle fixe = débit quasi-fixe** : dans le RAS serré, toute chute des RVS (anesthésiques, rachianesthésie) ne peut être compensée par une augmentation du débit cardiaque → collapsus immédiat si non anticipé",
+        "**KT artériel AVANT induction, vasopresseur PRÊT** : phényléphrine en seringue auto-pousseuse avant toute induction, monitoring continu de la PAM en temps réel — pas d'induction 'à l'aveugle'",
+        "**Étomidate = agent d'induction de référence** dans le RAS serré : stabilité hémodynamique, pas d'inotropisme négatif, maintien des RVS. Propofol en bolus = contre-indication relative",
+        "**FA peropératoire = urgence absolue** : la perte de la systole auriculaire entraîne une chute du VES de 20-40% dans le VG peu compliant du RAS → cardioversion électrique immédiate si instabilité hémodynamique",
+        "**FC cible 60-80/min, rythme sinusal impératif** : tachycardie → ischémie sous-endocardique + chute du VES ; bradycardie sévère → chute du débit cardiaque. Traiter activement toute anomalie chronotrope"
+      ],
+      "references": [
+        "Vahanian A et al. — 2021 ESC/EACTS Guidelines for the management of valvular heart disease — European Heart Journal 2022;43(7):561-632",
+        "Halvorsen S et al. — 2022 ESC Guidelines on cardiovascular assessment and management of patients undergoing non-cardiac surgery — European Heart Journal 2022;43(39):3826-3924",
+        "SFAR — Recommandations de pratiques professionnelles : Évaluation et réduction du risque cardiaque en chirurgie non cardiaque — Anaesth Crit Care Pain Med 2021",
+        "Calleja AM, Dommaraju S et al. — Cardiac risk in patients aged >75 years with asymptomatic, severe aortic stenosis undergoing noncardiac surgery — Am J Cardiol 2010 (référence de risque, toujours citée)",
+        "Nkomo VT et al. — Burden of valvular heart diseases: a population-based study — Lancet 2006;368:1005-1011",
+        "Fleisher LA et al. — 2014 ACC/AHA Guideline on Perioperative Cardiovascular Evaluation and Management of Patients Undergoing Noncardiac Surgery — JACC 2014;64(22):e77-137 (mise à jour 2022 en cours de référence)",
+        "Dix P, Howell S — Survey of cancellation rate of hypertensive patients undergoing anaesthesia and elective surgery — Br J Anaesth 2001 (principe d'évaluation préopératoire)",
+        "Agricola E et al. — The role of perioperative echocardiography in patients with aortic stenosis undergoing noncardiac surgery — J Am Soc Echocardiogr 2020;33(9):1079-1088"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un homme de 78 ans, porteur d'un RAS serré (SVA = 0,7 cm², gradient moyen = 45 mmHg, FE = 62%) symptomatique (dyspnée de stade II-III NYHA), est admis pour péritonite par perforation sigmoïdienne nécessitant une laparotomie urgente. Ses constantes à l'arrivée : PA 148/85 mmHg, FC 72/min, SpO₂ 94% AA.",
+        "question": "Concernant le choix de la technique anesthésique pour cette laparotomie en urgence, quelle est la proposition la plus adaptée ?",
+        "options": {
+          "A": "Rachianesthésie au bupivacaïne hyperbare 10 mg — technique privilégiée pour son efficacité et sa rapidité de mise en place",
+          "B": "Anesthésie générale avec induction à l'étomidate 0,2-0,3 mg/kg, après mise en place d'un KT artériel radial et d'une seringue de phényléphrine, avec ETO peropératoire",
+          "C": "Anesthésie générale avec induction au propofol 2 mg/kg en bolus rapide pour limiter la durée d'apnée et le risque d'inhalation",
+          "D": "Péridurale thoracique T8-T9 avec injection de ropivacaïne 0,5% 10 mL pour assurer une analgésie périopératoire et éviter l'AG"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'AG avec étomidate (stabilité hémodynamique maximale), KT artériel préalable à l'induction (monitoring PAM en temps réel) et phényléphrine prête (correction immédiate des chutes des RVS) est la stratégie recommandée pour une laparotomie en urgence chez un patient RAS serré. L'ETO peropératoire guide la volémie et détecte les complications. Piège A : la rachianesthésie classique est contre-indiquée en pratique dans le RAS serré — le bloc sympathique T6-L2 brutal entraîne une chute catastrophique des RVS que l'obstacle valvulaire fixe empêche de compenser. Piège C : le propofol en bolus à 2 mg/kg provoque une vasodilatation et un inotropisme négatif majeurs — risque d'effondrement hémodynamique immédiat. Piège D : la péridurale thoracique haute est délétère dans ce contexte (laparotomie urgente, risque sepsis, bloc sympathique étendu)."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Pendant une hémicolectomie droite chez un patient porteur de RAS serré (gradient moyen 48 mmHg, FE 58%), 20 minutes après l'induction, la PAM chute à 52 mmHg avec une FC à 78/min en rythme sinusal. L'ETO montre des cavités gauches peu remplies (VG petit, effacement télésystolique).",
+        "question": "Quel est le traitement de première intention le plus approprié ?",
+        "options": {
+          "A": "Dobutamine 5 µg/kg/min IVSE pour améliorer la contractilité",
+          "B": "Éphédrine 12 mg IV en bolus pour corriger rapidement l'hypotension",
+          "C": "Phényléphrine 100 µg IV en bolus + remplissage par cristalloïdes 250 mL en 10 min",
+          "D": "Adrénaline 0,1 µg/kg/min IVSE pour la stabilisation hémodynamique"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : l'ETO montre une hypovolémie relative (VG petit, effacement télésystolique) associée à une chute des RVS. La phényléphrine (vasopresseur alpha-pur) restaure les RVS sans tachycardie, et le remplissage cristalloïde corrige la précharge insuffisante. La combinaison est optimale. Piège A : la dobutamine en l'absence de dysfonction VG aggrave la vasodilatation et peut induire une tachycardie — doublement délétère ici. Le VG n'est pas défaillant (FE 58%, VG petit = hypovolémie). Piège B : l'éphédrine a un effet bêta-1 chronotrope significatif → risque de tachycardie délétère dans le RAS ; de plus la dose de 12 mg est élevée. Piège D : l'adrénaline IVSE n'est pas indiquée ici, hors arrêt cardiaque — effets bêta-1 chronotropes et inotropes intenses, risque tachycardie et ischémie myocardique."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Une femme de 82 ans avec RAS serré (SVA 0,75 cm², FE 55%, gradient moyen 42 mmHg) est en salle d'opération pour fracture du col fémoral. À J+2 de la chute. L'équipe discute de la technique anesthésique.",
+        "question": "Concernant l'utilisation de la rachianesthésie dans ce contexte, quelle affirmation est exacte ?",
+        "options": {
+          "A": "La rachianesthésie est formellement contre-indiquée dans tout RAS serré, quelle que soit la technique utilisée",
+          "B": "La rachianesthésie standard (bupivacaïne hyperbare 10-12,5 mg en bolus) est acceptable si une pré-charge liquidienne de 500 mL est réalisée au préalable",
+          "C": "La rachianesthésie à doses fractionnées via cathéter intrathécal peut être envisagée par un opérateur expert, avec vasopresseur prophylactique et monitoring invasif, mais reste à risque élevé",
+          "D": "La rachianesthésie est préférée à l'AG dans le RAS car elle épargne le myocarde des effets inotropes négatifs des halogénés"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la rachianesthésie n'est pas formellement contre-indiquée de manière absolue dans TOUS les cas de RAS, mais la technique standard en bolus est extrêmement dangereuse. La rachianesthésie fractionnée via cathéter intrathécal (titration lente, niveau progressif) peut être envisagée par un expert en chirurgie de hanche, avec vasopresseur prophylactique et KT artériel, mais reste une technique à risque élevé ne devant pas être utilisée en routine. Piège A : la contre-indication est de fait pratique mais pas 'absolue formelle' dans les textes — la technique cathéter intrathécal titrée est une option d'expert. Piège B : une pré-charge de 500 mL ne protège pas du bloc sympathique brutal d'une rachi standard — c'est une idée reçue dangereuse. Piège D : raisonnement partiellement vrai (halogénés ont des effets hémodynamiques) mais la rachianesthésie standard génère un risque hémodynamique supérieur dans le RAS serré que l'AG bien conduite à l'étomidate avec vasopresseur."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "En peropératoire d'une chirurgie colique urgente chez un patient RAS serré (gradient moyen 52 mmHg), le tracé ECG montre une fibrillation auriculaire à 115/min. La PA est à 88/55 mmHg malgré phényléphrine 1,5 µg/kg/min.",
+        "question": "Quelle est la conduite à tenir immédiate la plus appropriée ?",
+        "options": {
+          "A": "Amiodarone 300 mg en perfusion sur 20-30 minutes",
+          "B": "Digoxine 0,5 mg IV pour ralentir la réponse ventriculaire",
+          "C": "Cardioversion électrique synchronisée externe 200 J biphasique immédiate",
+          "D": "Métoprolol IV 2,5 mg en bolus pour contrôler la fréquence"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la FA avec instabilité hémodynamique (PA 88/55 malgré vasopresseur) en peropératoire chez un patient RAS serré est une indication formelle de cardioversion électrique synchronisée immédiate. L'objectif est le retour en rythme sinusal en urgence pour restaurer la systole auriculaire (contribution 20-40% du VES dans le VG hypertrophié peu compliant). 200 J biphasique en première intention. Piège A : l'amiodarone (300 mg sur 20-30 min) est trop lente dans ce contexte d'instabilité hémodynamique immédiate — elle peut être utilisée après cardioversion pour maintenir le rythme sinusal. Piège B : la digoxine IV a un délai d'action trop long et ne restaure pas le rythme sinusal — elle ne fait que ralentir la réponse ventriculaire. Piège D : le métoprolol IV est délétère ici — inotropisme négatif et bradycardie sur un VG déjà compromise par la FA et la chute du débit."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Vous évaluez un patient de 76 ans porteur d'un RAS avec ETT récente montrant : SVA = 0,9 cm², gradient moyen = 35 mmHg, FE = 42%, Vmax = 3,8 m/s. Il est symptomatique (dyspnée stade III NYHA).",
+        "question": "Quelle caractérisation échocardiographique est la plus exacte pour ce patient, et quel en est l'impact sur la stratégie anesthésique ?",
+        "options": {
+          "A": "RAS serré à haut gradient avec dysfonction systolique VG — stratégie standard, le gradient confirme la sévérité",
+          "B": "RAS modéré (gradient < 40 mmHg) avec dysfonction systolique VG — le RAS n'est probablement pas hémodynamiquement significatif",
+          "C": "RAS bas-débit bas-flux à bas gradient avec dysfonction VG — SVA sous-estimée par bas débit, probablement plus sévère que ne l'indique le gradient ; stratégie hémodynamique de haute surveillance avec support inotrope possible",
+          "D": "RAS bas-débit bas-flux paradoxal à FE préservée — profil nécessitant un test à la dobutamine préopératoire systématique"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : ce patient présente un RAS bas-débit bas-flux classique (FE effondrée à 42% → bas débit → gradient artificiellement bas malgré SVA < 1 cm²). La SVA de 0,9 cm² est possiblement sous-estimée (effet débit sur le calcul par équation de continuité). Ce profil est de très mauvais pronostic, nécessite une vigilance hémodynamique maximale et la possibilité d'un support inotrope (dobutamine prudente) si dysfonction VG sévère peropératoire. Piège A : le gradient < 40 mmHg exclut la définition 'haut gradient' et impose de reconnaître le profil bas-débit. Piège B : un gradient < 40 mmHg ne signifie PAS que le RAS est modéré quand la SVA est < 1 cm² et la FE effondrée — c'est une erreur d'interprétation classique et potentiellement mortelle. Piège D : le RAS bas-débit bas-flux paradoxal correspond à une FE PRÉSERVÉE avec bas débit (VS < 35 mL/m²) — ce patient a une FE à 42%, donc il s'agit du profil classique avec dysfonction systolique."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Un patient RAS serré est en cours d'hépatectomie droite urgente. L'ETO montre un SAM (Systolic Anterior Motion) mitral avec gradient CCVG dynamique à 65 mmHg, une insuffisance mitrale dynamique modérée. La PA est à 75/45 mmHg. La dobutamine a été initiée 15 minutes auparavant à 5 µg/kg/min pour une suspicion de dysfonction VG.",
+        "question": "Quelle est la mesure thérapeutique la plus urgente ?",
+        "options": {
+          "A": "Augmenter la dobutamine à 10 µg/kg/min pour améliorer l'éjection ventriculaire",
+          "B": "Arrêt immédiat de la dobutamine + phényléphrine IV + remplissage vasculaire",
+          "C": "Adjonction de noradrénaline 0,1 µg/kg/min sans modifier la dobutamine",
+          "D": "Utilisation de nitroglycérine 0,5 µg/kg/min pour réduire la post-charge VG et lever l'obstruction"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le SAM mitral peropératoire avec obstruction dynamique de la CCVG est aggravé par les inotropes positifs (dobutamine → hypercontractilité → rapprochement du feuillet mitral antérieur de la CCVG), la tachycardie et l'hypovolémie. L'arrêt IMMÉDIAT de la dobutamine est la première mesure. Ensuite : phényléphrine (↑ RVS → réduction du gradient dynamique par augmentation de la postcharge) et remplissage (↑ précharge → éloignement du SAM). Piège A : augmenter la dobutamine aggrave catastophiquement l'obstruction dynamique — c'est l'erreur à ne jamais commettre. Piège C : adjonction de noradrénaline sans arrêter la dobutamine est insuffisant — la dobutamine continue d'alimenter le SAM par son effet inotrope et chronotrope. Piège D : la nitroglycérine est absolument contre-indiquée ici — elle réduit la précharge ET les RVS, aggravant l'obstruction dynamique et provoquant un collapsus."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Vous prenez en charge un patient de 80 ans porteur de RAS serré symptomatique (SVA 0,65 cm², angor d'effort, gradient moyen 58 mmHg, FE 60%) pour amputation de jambe droite (urgence relative, délai 6h) pour ischémie critique avec sepsis. Ses traitements habituels incluent ramipril 5 mg/j, bisoprolol 5 mg/j, furosémide 40 mg/j.",
+        "question": "Concernant la gestion des traitements préopératoires, quelle est la recommandation correcte ?",
+        "options": {
+          "A": "Suspendre le bisoprolol la veille de l'intervention pour éviter la bradycardie peropératoire",
+          "B": "Maintenir le bisoprolol (ne pas interrompre un bêtabloquant chronique), discuter la suspension du ramipril J-1, corriger une éventuelle hypovolémie liée au furosémide",
+          "C": "Maintenir tous les traitements sans modification car ils sont cardioprotecteurs",
+          "D": "Arrêter le furosémide et le ramipril, administrer le bisoprolol uniquement si FC > 90/min"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le bisoprolol (bêtabloquant chronique) NE DOIT PAS être interrompu en préopératoire — le risque d'effet rebond (tachycardie, ischémie) est très délétère dans le RAS serré. Les IEC/ARAII (ramipril) sont généralement suspendus la veille ou le matin de l'intervention (risque d'hypotension prolongée résistante aux vasopresseurs, surtout en contexte septique). Le furosémide doit être évalué : s'il a provoqué une hypovolémie relative (bilan négatif, signe de déshydratation), une correction prudente est nécessaire avant induction. Piège A : arrêter un bêtabloquant chronique est formellement déconseillé — effet rebond avec tachycardie et ischémie potentiellement fatale dans le RAS. Piège C : maintenir le ramipril expose à une hypotension peropératoire profonde et prolongée, difficile à corriger. Piège D : conditionner le bisoprolol à la FC > 90/min revient à l'arrêter dans un contexte où le patient est normocarde — la protection chronique du bêtabloquant doit être maintenue."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Lors d'une cholécystectomie laparoscopique urgente pour cholécystite gangréneuse chez un patient RAS serré (SVA 0,8 cm², gradient 46 mmHg), le pneumopéritoine est instauré à une pression de 14 mmHg. Immédiatement, la PAM chute de 78 à 58 mmHg et la FC passe de 74 à 62/min.",
+        "question": "Quel mécanisme explique principalement cette hypotension et quelle est la conduite à tenir initiale ?",
+        "options": {
+          "A": "Réflexe vagal lié à la distension péritonéale → atropine 0,5-1 mg IV",
+          "B": "Compression de la veine cave inférieure par le pneumopéritoine → ↓ précharge → ↓ VES sur VG peu compliant + légère augmentation des RVS. Traitement : réduire la pression du pneumopéritoine à 10-12 mmHg + remplissage cristalloïdes 250 mL + phényléphrine si insuffisant",
+          "C": "Embolie gazeuse → mise en position de Trendelenburg gauche, aspiration du gaz par KT central",
+          "D": "Ischémie myocardique aiguë sur compression coronaire par le pneumopéritoine → nitroglycérine IV"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le pneumopéritoine à haute pression (14 mmHg) comprime la VCI, réduisant le retour veineux et donc la précharge du VG. Dans le RAS, le VG hypertrophié peu compliant est extrêmement sensible aux variations de précharge → chute importante du VES et de la PAM. La légère bradycardie peut être un réflexe vagal mineur associé. La stratégie est : réduire la pression du pneumopéritoine (objectif ≤ 10-12 mmHg dans le RAS serré), remplissage titré, phényléphrine si PAM insuffisante. Piège A : bien qu'un réflexe vagal soit possible, le mécanisme principal est la réduction de la précharge par compression cave — l'atropine seule ne résout pas l'hypotension et pourrait induire une tachycardie délétère. Piège C : l'embolie gazeuse est une complication possible de la laparoscopie mais non le mécanisme le plus probable ici (survenue immédiate à l'insufflation, sans capnographie anormale mentionnée). Piège D : la nitroglycérine est délétère (vasodilatation dans un contexte déjà hypotensif) et le mécanisme ischémique coronaire par pneumopéritoine n'est pas le mécanisme principal de cette présentation."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un patient porteur de RAS serré (SVA 0,7 cm², FE 55%) présente en fin d'intervention (réparation hernie étranglée) une tachycardie sinusale à 108/min avec PAM à 82 mmHg et BIS à 35. L'ETO ne montre pas de trouble de cinétique segmentaire. La PetCO₂ est à 52 mmHg.",
+        "question": "Quelle est la cause la plus probable de la tachycardie et la conduite à tenir ?",
+        "options": {
+          "A": "Ischémie myocardique silencieuse → administration d'esmolol IV en titration",
+          "B": "Réveil sur douleur → bolus de morphinique IV (sufentanil 0,1 µg/kg) et vérification de la profondeur d'anesthésie",
+          "C": "Hypercapnie (PetCO₂ = 52 mmHg) → augmentation de la ventilation minute pour normaliser la PetCO₂, sans traitement chronotrope direct",
+          "D": "Hypovolémie occulte → bolus de remplissage 500 mL de cristalloïdes en 15 min"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la PetCO₂ à 52 mmHg indique une hypercapnie significative, cause classique de tachycardie sympathomimétique peropératoire. La correction de la ventilation (↑ fréquence respiratoire ou volume courant) normalise la PaCO₂ et lève la tachycardie sans intervention pharmacologique. L'hypercapnie est un stimulant sympathique puissant. Piège A : l'absence de trouble de cinétique à l'ETO rend l'ischémie myocardique peu probable comme cause principale de la tachycardie — et l'esmolol sans correction de la cause est insuffisant. Piège B : le BIS à 35 témoigne d'une anesthésie suffisamment profonde, éliminant le réveil sur douleur comme cause principale ; de plus, un morphinique additionnel sans corriger l'hypercapnie serait insuffisant. Piège D : le remplissage 500 mL d'un coup est excessif et potentiellement délétère dans le RAS (risque OAP par surcharge) ; l'ETO aurait montré des signes d'hypovolémie si c'était la cause."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Vous planifiez l'analgésie postopératoire d'un patient de 79 ans porteur de RAS serré (gradient moyen 50 mmHg, FE 52%) opéré d'une laparotomie urgente pour occlusion intestinale. La durée opératoire a été de 2h30, les suites hémodynamiques peropératoires ont été stables sous noradrénaline 0,08 µg/kg/min.",
+        "question": "Quelle stratégie d'analgésie postopératoire est la plus adaptée pour ce patient ?",
+        "options": {
+          "A": "Morphine IV en PCA (Patient Controlled Analgesia) seule — efficace et sans effet cardiovasculaire direct",
+          "B": "AINS (kétorolac) + paracétamol régulier — analgésie multimodale sans opioïdes",
+          "C": "Cathéter péridural thoracique T8-T9 continu avec ropivacaïne 0,2% — gold standard de l'analgésie après laparotomie",
+          "D": "Analgésie multimodale : paracétamol IV régulier + morphinique IV titré (PCA avec bolus faibles) + bloc de paroi (TAP block bilatéral ou bloc de plan du grand droit) — en évitant les AINS et la péridurale",
+          "E": null
+        },
+        "correct": "D",
+        "explanation": "Réponse D correcte : l'analgésie multimodale associant paracétamol (base), PCA morphine à faibles doses titrées et bloc de paroi (TAP block ou bloc ESPB) est optimale après laparotomie chez un patient RAS serré. Elle réduit la consommation de morphiniques (effets cardiovasculaires moindres), évite les AINS et la péridurale. Piège A : la morphine PCA seule est insuffisante en analgésie multimodale et expose à des doses plus élevées de morphiniques — acceptable comme composante mais pas comme stratégie unique. Piège B : les AINS sont contre-indiqués ou à éviter dans ce contexte — rétention hydrosodée aggravant l'insuffisance cardiaque (risque OAP), insuffisance rénale fonctionnelle fréquente en postopératoire de laparotomie en urgence, risque hémorragique digestif. Piège C : la péridurale thoracique en postopératoire d'urgence expose à un bloc sympathique thoracique étendu → chute des RVS et de la précharge très délétère dans le RAS serré ; de plus, le contexte de chirurgie digestive en urgence (sepsis potentiel, anticoagulation) augmente le risque d'hématome péridural."
+      }
+    ]
   }
 ]
