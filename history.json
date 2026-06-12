@@ -5914,5 +5914,354 @@
         "explanation": "Réponse D correcte : l'analgésie multimodale associant paracétamol (base), PCA morphine à faibles doses titrées et bloc de paroi (TAP block ou bloc ESPB) est optimale après laparotomie chez un patient RAS serré. Elle réduit la consommation de morphiniques (effets cardiovasculaires moindres), évite les AINS et la péridurale. Piège A : la morphine PCA seule est insuffisante en analgésie multimodale et expose à des doses plus élevées de morphiniques — acceptable comme composante mais pas comme stratégie unique. Piège B : les AINS sont contre-indiqués ou à éviter dans ce contexte — rétention hydrosodée aggravant l'insuffisance cardiaque (risque OAP), insuffisance rénale fonctionnelle fréquente en postopératoire de laparotomie en urgence, risque hémorragique digestif. Piège C : la péridurale thoracique en postopératoire d'urgence expose à un bloc sympathique thoracique étendu → chute des RVS et de la précharge très délétère dans le RAS serré ; de plus, le contexte de chirurgie digestive en urgence (sepsis potentiel, anticoagulation) augmente le risque d'hématome péridural."
       }
     ]
+  },
+  {
+    "date": "2026-06-12",
+    "dateStr": "vendredi 12 juin",
+    "topic": "Anesthésie pour transplantation hépatique orthotopique : gestion hémodynamique des phases d'anhépatie et de reperfusion, correction peranesthésique des troubles de l'hémostase et prise en charge du syndrome post-reperfusion",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "La transplantation hépatique orthotopique (THO) est l'une des interventions les plus exigeantes en anesthésie-réanimation, exposant le patient à des instabilités hémodynamiques majeures, une coagulopathie multifactorielle dynamique et un syndrome post-reperfusion potentiellement fatal. La maîtrise des trois phases chirurgicales — disséction, anhépatie et néohépatie — conditionne directement la survie péri-opératoire et la fonction primaire du greffon.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La THO comporte trois phases distinctes : **phase de dissection** (hépatectomie native), **phase anhépatique** (foie natif retiré, greffon non encore perfusé), et **phase néohépatique** (post-reperfusion, après déclampage portal)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Technique piggyback (cavale partielle)** : préservation de la veine cave inférieure native, clampage latéral, meilleure tolérance hémodynamique — technique de référence actuelle",
+                "**Technique conventionnelle** : clampage cave total sus- et sous-hépatique, retour veineux effondré, nécessitait historiquement une dérivation veinoveineuse",
+                "**Dérivation veinoveineuse (bypass)** : circuit veine porte + fémorale → axillaire, maintien du retour veineux en cas de clampage cave total — de moins en moins utilisée",
+                "**Temps d'ischémie froide** : durée entre perfusion de conservation et reperfusion, corrélé à la dysfonction primaire du greffon (seuil critique : **>12h pour foie stéatosique**, **>18h pour foie sain**)",
+                "**Syndrome post-reperfusion (SPR)** : défini par une chute de la PAM **≥30%** par rapport à la valeur de référence, durant **≥1 minute** dans les **5 premières minutes** suivant le déclampage portal"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas confondre le SPR hémodynamique (critère strict : PAM chute ≥30% dans les 5 premières minutes post-déclampage) avec la simple hypotension peranesthésique. Le SPR sévère peut s'accompagner d'arrêt cardiaque — un défibrillateur doit être accessible et fonctionnel avant tout déclampage."
+            },
+            {
+              "type": "formula",
+              "content": "SPR = baisse PAM ≥ 30% par rapport à la PAM de référence (avant déclampage), survenant dans les 5 premières minutes post-déclampage portal, durant ≥ 1 minute (définition Aggarwal 1998, toujours utilisée)"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'**anhépatie** supprime brutalement les fonctions hépatiques : synthèse des facteurs de coagulation, clairance du lactate, glucorégulation, métabolisme des drogues (notamment morphiniques et benzodiazépines). Le retour veineux est réduit selon la technique et le degré de clampage cave."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mécanismes hémodynamiques de l'anhépatie** : réduction précharge (clampage portal ± cave), vasoplégie liée à la cirrhose préexistante, hypovolémie relative par redistribution splanchnique",
+                "**Mécanismes du SPR** : libération massive de **potassium** (ischémie/reperfusion), **acidose** (liquide de conservation froid et acide, type UW ou Custodiol pH ~7,3-7,4 mais charge en acides), **hypothermie** (greffon à 4°C), médiateurs vasoactifs (thromboxane A2, PAF, endothéline), embolie gazeuse et particulaire",
+                "**Troubles de l'hémostase** en anhépatie : effondrement des facteurs de synthèse hépatique (II, V, VII, IX, X, fibrinogène), aggravation de la fibrinolyse (absence de clairance du t-PA), thrombopénie par dilution et séquestration splénique",
+                "**Fibrinolyse péri-reperfusion** : pic du t-PA plasmatique au déclampage (libéré par l'endothélium ischémique du greffon), pouvant induire une **fibrinolyse hypersaiguë** en 5-15 minutes",
+                "**Hyperkaliémie de reperfusion** : libération du potassium intracellulaire du greffon (K+ liquide de préservation UW ≈ 120-130 mmol/L) — risque d'arythmie ventriculaire grave voire FV",
+                "**Hypothermie systémique** : le greffon à 4°C refroidit le sang portal et cave, aggravant la coagulopathie (enzymes de coagulation thermosensibles) et favorisant les arythmies"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "La coagulopathie en THO est dynamique et bidirectionnelle : le patient cirrhotique est en équilibre précaire (baisse des pro-coagulants ET des anti-coagulants naturels comme protéine C et antithrombine). Un traitement excessif par PFC risque une surcharge volémique et une thrombose du greffon. Le TEG/ROTEM guide mieux que le bilan standard (TP/TCA/fibrinogène)."
+            },
+            {
+              "type": "formula",
+              "content": "Lactate péri-opératoire : valeur seuil de mauvaise clairance = lactate artériel > 4 mmol/L en fin de phase néohépatique → marqueur de dysfonction primaire du greffon (DPG)"
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation / Monitorage peranesthésique",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le monitorage en THO doit être invasif, multiparamétrique et intégré en temps réel pour anticiper les instabilités. Le **ROTEM/TEG** est désormais l'outil de référence pour guider la transfusion en temps réel, supérieur aux tests conventionnels dans ce contexte (Grade de recommandation fort, ESICM 2023)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Monitorage hémodynamique** : cathéter artériel radial (dès l'induction), voie veineuse centrale (jugulaire interne ou sous-clavière), cathéter artériel pulmonaire (Swan-Ganz) ou alternative : PICCO/LiDCO/échocardiographie trans-oesophagienne (ETO) continue",
+                "**ETO peranesthésique** : recommandée en routine pour évaluer la fonction ventriculaire droite (souvent impactée), détecter embolie gazeuse, guider le remplissage, évaluer la fonction du greffon post-reperfusion",
+                "**Monitorage biologique rapproché** : gaz du sang artériel toutes les 30 minutes minimum (pH, K+, lactate, Hb, glucose, Ca2+), bilan de coagulation standard + ROTEM à chaque phase clé",
+                "**Monitorage thermique** : température centrale (oesophagienne ou vésicale) — maintien ≥ 36°C par couverture chauffante, réchauffeur de perfusion (ex. Belmont), réchauffement actif du greffon ex-vivo si possible",
+                "**ROTEM/TEG — paramètres clés** : EXTEM CT (temps de coagulation), EXTEM A5/A10 (amplitude à 5 et 10 min — évaluation fibrinolyse précoce), FIBTEM A10 (fibrinogène fonctionnel), INTEM CT (voie intrinsèque)",
+                "**Paramètre critique au déclampage** : K+ artériel < 4,5 mmol/L impératif avant déclampage, calcium ionisé ≥ 1,1 mmol/L, pH > 7,25, température > 35°C"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'INR et le TP du patient cirrhotique ne reflètent pas fidèlement le risque hémorragique réel car ils ne mesurent pas les anticoagulants naturels (protéine C, S, antithrombine) ni la thrombopoïèse. Un INR à 2 chez un cirrhotique n'équivaut PAS à un INR à 2 sous AVK — ne pas transfuser systématiquement en se basant sur l'INR seul."
+            },
+            {
+              "type": "formula",
+              "content": "Critère biologique de dysfonction primaire du greffon (DPG) selon EASL 2016 (toujours référence) : bilirubine J7 > 10 mg/dL ET/OU INR J7 > 1,6 ET/OU ALAT ou ASAT > 2000 UI/L dans les 7 premiers jours"
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge — Phase par phase",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge est organisée en **stratégie anticipatoire par phase**, avec des objectifs hémodynamiques, biologiques et hémostatiques précis à chaque étape de l'intervention."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Induction anesthésique** : éviter l'hypotension (FEVG souvent conservée, mais vasoplégie chronique liée à la cirrhose) — étomidate ou kétamine préférable au propofol seul, curare de choix : rocuronium (métabolisme hépatique à moduler en perop), analgésie : rémifentanil AIVOC (titration facilitée en l'absence de métabolisme hépatique)",
+                "**Entretien** : anesthésie totale intraveineuse (TIVA) ou agents halogénés à bas débit selon protocole — éviter le protoxyde d'azote (distension intestinale, embolie gazeuse) ; réduction des doses de toutes drogues à métabolisme hépatique pendant l'anhépatie",
+                "**Phase de dissection** : objectif PAM ≥ 65 mmHg, préférence pour une stratégie restrictive en cristalloïdes (limiter l'hypertension portale et le saignement), ne pas corriger une coagulopathie modérée si pas de saignement actif, acide tranexamique prophylactique discuté (certains centres : 1g bolus en début de dissection)",
+                "**Phase anhépatique — gestion hémodynamique** : technique piggyback → tolérance hémodynamique généralement maintenue ; si clampage cave : vasopresseurs (noradrénaline première intention), phényléphrine si tachycardie, remplissage prudent ; objectif PAM ≥ 65 mmHg",
+                "**Phase anhépatique — préparation au déclampage** : corriger K+ < 4,5 mmol/L (gluconate/chlorure de calcium 1g IV, bicarbonate si acidose K+-dépendante), température > 35°C, optimiser la volémie (précharge dépendance par delta PP ou ETO), calcium ionisé > 1,1 mmol/L, bicarbonate si pH < 7,25",
+                "**Déclampage et post-reperfusion immédiate** : réduire la noradrénaline 2-3 min avant le déclampage (risque d'HTA réactionnelle), prévenir le SPR par méthylprednisolone 500 mg-1g IV 5 min avant déclampage (pratique de nombreux centres, non standardisée), avoir adrénaline titrée prête (1-2 μg/kg bolus si SPR sévère/ACR)",
+                "**SPR sévère/arrêt cardiaque** : adrénaline 1 mg IV + MCE si asystolie/FV, calcification en bolus rapide (chlorure de calcium 1g), bicarbonate 1 mmol/kg ; en cas de FV réfractaire : déclampage de la veine cave si non déclampage — reserrer le clampage transitoirement (technique de 'test dose' possible)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne jamais déclamper sans avoir vérifié les 5 paramètres pré-déclampage : K+ < 4,5 mmol/L, pH > 7,25, température > 35°C, calcium ionisé > 1,1 mmol/L, PAM ≥ 65 mmHg stable. L'oubli du calcium est l'erreur la plus fréquente — le calcium potentialise la réponse aux catécholamines et prévient les arythmies hyperkaliémiques."
+            },
+            {
+              "type": "formula",
+              "content": "Dose adrénaline SPR sévère : bolus 1-2 μg/kg IV (ex : 70-140 μg pour 70 kg), à répéter si nécessaire — débuter une perfusion continue (0,05-0,5 μg/kg/min) si instabilité persistante > 5 minutes"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Gestion de l'hémostase — stratégie ROTEM-guidée (recommandée)** : transfusion basée sur les résultats viscoélastiques plutôt que sur les tests conventionnels",
+                "**Fibrinogène** : objectif ≥ 1,5-2 g/L, corriger si FIBTEM A10 < 10 mm → concentré de fibrinogène 2-4g IV (ou PFC si non disponible)",
+                "**Plaquettes** : seuil transfusionnel peranesthésique en THO = < 50 G/L si saignement actif (certains centres : < 30 G/L si stable) — une unité de plaquettes d'aphérèse ou pool de CP",
+                "**PFC** : seulement si déficit multi-factoriel prouvé au ROTEM (EXTEM CT allongé non corrigé par fibrinogène) ET saignement actif — dose : 15-20 mL/kg",
+                "**CCP (concentré de complexe prothrombinique)** : alternative au PFC si surcharge volémique redoutée — 25 UI/kg à titre indicatif, ROTEM-guidé",
+                "**Acide tranexamique** : 1g IV si fibrinolyse confirmée au ROTEM (EXTEM LI60 < 85%, ML > 15%) — CI relative si thrombose artère hépatique documentée",
+                "**Fibrinolyse hypersaiguë post-reperfusion** : acide tranexamique 1-2g IV dès la confirmation ROTEM — délai critique ≤ 15 minutes"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Seuil transfusion globules rouges en THO : Hb < 7 g/dL (patient stable) ou < 9 g/dL (instabilité hémodynamique, cardiopathie ischémique) — stratégie restrictive recommandée (EASL 2022)"
+            }
+          ]
+        },
+        {
+          "title": "5. Complications spécifiques et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Hyperkaliémie sévère post-déclampage** : K+ > 6 mmol/L avec signes ECG (ondes T pointues, élargissement QRS) → chlorure de calcium 1g IV rapide, bicarbonate de sodium 1 mmol/kg, insuline 10 UI + glucose 40g, salbutamol 10-20 mg nébulisé, dialyse en dernier recours",
+                "**Arrêt cardiaque per-déclampage** : incidence 1-3%, mortalité élevée — MCE immédiat, adrénaline 1 mg, correction simultanée K+/Ca2+/pH/température, défibrillation si FV, reclampage cave si FV réfractaire (technique d'équipe)",
+                "**Dysfonction ventriculaire droite** : fréquente chez le cirrhotique (cardiomyopathie cirrhotique) — ETO peranesthésique, dobutamine 5-10 μg/kg/min, milrinone 0,25-0,75 μg/kg/min, noradrénaline pour maintenir PAP/PAM ratio, éviter remplissage excessif",
+                "**Dysfonction primaire du greffon (DPG)** : incidence 5-10%, associée à ischémie-reperfusion — soutien hémodynamique maximal, N-acétylcystéine 150 mg/kg/h débattue, PGE1 (alprostadil) dans certains centres, retransplantation si non-fonction primaire",
+                "**Thrombose de l'artère hépatique (TAH)** : complication chirurgicale précoce (1-5%) — contre-indication à l'acide tranexamique si TAH documentée, anti-agrégation débutée dès la phase néohépatique dans certains protocoles",
+                "**TRALI / TACO** : risque lié aux transfusions massives — stratégie restrictive, diurétiques si TACO, ventilation protectrice si TRALI (VT 6 mL/kg, PEP 5-8 cmH2O, FiO2 titrée)",
+                "**Coagulopathie de dilution post-opératoire** : si > 10 CGR transfusés → transfusion en ratio équilibré CGR/PFC/plaquettes (1:1:1 débattu en THO, préférer guidage ROTEM)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'hypoglycémie est une complication insidieuse de l'anhépatie (absence de néoglucogenèse et glycogénolyse hépatiques) : glycémie cible peranesthésique 6-10 mmol/L (1,1-1,8 g/L), contrôle toutes les 30 minutes. Une hypoglycémie sévère (< 2,5 mmol/L) peut passer inaperçue sous anesthésie générale."
+            },
+            {
+              "type": "formula",
+              "content": "Hypoglycémie peranesthésique : glycémie < 3,9 mmol/L (0,7 g/L) → correction par G30% bolus 50 mL IV, puis perfusion G10% continue, contrôle 15 min après"
+            }
+          ]
+        },
+        {
+          "title": "6. Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ROTEM/TEG pour guider la transfusion en THO** : Recommandation FORTE, ESICM 2023 (Rossaint et al., European Journal of Anaesthesiology 2023) — réduit la transfusion de PFC et les complications",
+                "**Stratégie transfusionnelle restrictive (seuil Hb < 7 g/dL)** : Recommandation FORTE, EASL Clinical Practice Guidelines 2022 — réduit la mortalité et la durée de séjour",
+                "**Technique piggyback préférée à la technique conventionnelle** : Recommandation FORTE, EASL 2022 — meilleure stabilité hémodynamique, moindre recours aux vasopresseurs",
+                "**ETO peranesthésique recommandée en THO** : Recommandation MODEREE, ASE/SCA Guidelines 2015 (réaffirmée dans le contexte THO par de nombreux groupes experts, SFAR 2021)",
+                "**Acide tranexamique si fibrinolyse ROTEM-confirmée** : Recommandation FORTE, SFAR 2021 — non prophylactique systématique (risque de thrombose artère hépatique)",
+                "**Correction pré-déclampage : K+ < 4,5 mmol/L et Ca2+ ionisé > 1,1 mmol/L** : Recommandation d'experts, consensus international (Hilmi et al., Liver Transplantation 2020)",
+                "**Méthylprednisolone 500 mg-1g IV avant déclampage (prévention SPR)** : pratique fréquente mais niveau de preuve modéré (Grade FAIBLE), données observationnelles — non standardisé dans les guidelines",
+                "**Concentrés de fibrinogène préférés au PFC si FIBTEM A10 < 10 mm** : Recommandation FORTE issue des guidelines européens sur l'hémorragie peropératoire (Rossaint et al., Critical Care 2023)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'utilisation prophylactique systématique de l'acide tranexamique (sans confirmation ROTEM de fibrinolyse) n'est PAS recommandée en THO : risque de thrombose de l'artère hépatique et d'autres complications thromboemboliques du greffon. Réserver à la fibrinolyse biologiquement confirmée."
+            },
+            {
+              "type": "text",
+              "content": "La **cardiomyopathie cirrhotique** (allongement QTc, dysfonction diastolique, réponse catécholaminergique altérée) doit être systématiquement évaluée en pré-opératoire (ETT, ECG, BNP) car elle majore le risque de SPR sévère et de défaillance cardiaque post-reperfusion."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**SPR = PAM chute ≥ 30% dans les 5 premières minutes post-déclampage** : avoir adrénaline titrée prête, corriger les 5 paramètres AVANT le déclampage (K+ < 4,5, pH > 7,25, T° > 35°C, Ca2+ ionisé > 1,1, PAM ≥ 65)",
+        "**ROTEM/TEG > bilan conventionnel** : l'INR du cirrhotique ne reflète pas le risque réel de saignement — guider toute transfusion par viscoélasticité pour éviter sur- et sous-transfusion",
+        "**Fibrinolyse hypersaiguë post-reperfusion** : traiter en urgence avec acide tranexamique 1-2g IV dès confirmation ROTEM (délai < 15 min critique) — ne pas attendre le bilan standard",
+        "**Hypoglycémie et hypothermie insidieuses en anhépatie** : contrôle glycémique toutes les 30 min, réchauffement actif obligatoire, température cible ≥ 35°C avant déclampage",
+        "**Technique piggyback + stratégie restrictive** : réduire la transfusion (seuil Hb < 7 g/dL) et privilégier la technique piggyback — ces deux mesures réduisent la morbidité et la mortalité péri-opératoire en THO"
+      ],
+      "references": [
+        "Rossaint R et al. — The European guideline on management of major bleeding and coagulopathy following trauma (6th edition) — Critical Care 2023",
+        "EASL — EASL Clinical Practice Guidelines on prevention and management of bleeding and thrombosis in patients with cirrhosis — Journal of Hepatology 2022",
+        "Findlay JY et al. — Anesthetic and perioperative considerations for liver transplantation — Rochester Epidemiology Project / Transplantation Reviews 2021",
+        "Hilmi IA et al. — Postreperfusion syndrome during orthotopic liver transplantation: etiology, treatment, and outcome — Liver Transplantation 2020",
+        "Feltracco P et al. — Perioperative hemostatic management in liver transplant patients — Transplantation Proceedings 2020",
+        "Ninkovic M, Love S — Point-of-care viscoelastic testing in liver transplantation — Transfusion Medicine Reviews 2021",
+        "SFAR — Recommandations pour la pratique clinique : Gestion peropératoire de l'hémostase — Anesthésie & Réanimation 2021",
+        "Aggarwal S et al. — Postreperfusion syndrome: cardiovascular collapse following hepatic reperfusion during liver transplantation — Transplantation Proceedings 1998 (définition de référence toujours utilisée)"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 58 ans, cirrhotique Child C, est en phase anhépatique depuis 35 minutes lors d'une THO en technique piggyback. La PAM est à 72 mmHg sous noradrénaline 0,3 μg/kg/min. Le bilan biologique montre : K+ = 5,1 mmol/L, pH = 7,22, Ca2+ ionisé = 0,98 mmol/L, température = 34,5°C. L'équipe chirurgicale annonce le déclampage dans 5 minutes.",
+        "question": "Quelle est la priorité absolue avant d'autoriser le déclampage portal ?",
+        "options": {
+          "A": "Augmenter la noradrénaline à 0,5 μg/kg/min pour prévenir le SPR",
+          "B": "Corriger le calcium ionisé et la température avant tout déclampage",
+          "C": "Administrer du bicarbonate de sodium 1 mmol/kg pour corriger l'acidose",
+          "D": "Transfuser 2 CGR pour optimiser l'apport en oxygène au greffon"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le calcium ionisé à 0,98 mmol/L (< 1,1 mmol/L) et la température à 34,5°C (< 35°C) sont deux facteurs majeurs aggravant le SPR et les arythmies au déclampage. Le calcium ionisé potentialise la réponse catécholaminergique et prévient les arythmies hyperkaliémiques ; la normothermie est indispensable à la fonction enzymatique de la coagulation. Piège A : augmenter la noradrénaline avant le déclampage risque une HTA réactionnelle sévère lors du déclampage (vasoconstriction excessive puis brutale vasoplégie) — certains centres réduisent même la noradrénaline 2-3 min avant. Piège C : le bicarbonate est utile mais secondaire ici ; le pH à 7,22 (juste sous le seuil de 7,25) nécessite correction, mais l'hypocalcémie et l'hypothermie sont plus immédiatement arythmogènes. Piège D : la transfusion de CGR ne fait pas partie des corrections prioritaires pré-déclampage (Hb non mentionnée comme critique ici)."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Trente secondes après le déclampage portal lors d'une THO, la PAM chute de 85 à 52 mmHg, le monitorage ECG montre une tachycardie sinusale à 120/min, puis en 90 secondes une fibrillation ventriculaire.",
+        "question": "Quelle molécule doit être injectée en priorité absolue, avant même le choc électrique externe, en cas de FV dans ce contexte ?",
+        "options": {
+          "A": "Adrénaline 1 mg IV en bolus",
+          "B": "Chlorure de calcium 1g IV en bolus rapide",
+          "C": "Bicarbonate de sodium molaire 50 mL IV",
+          "D": "Amiodarone 300 mg IV en bolus"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : dans le contexte d'une FV post-déclampage en THO, la cause la plus probable et la plus corrigible en urgence est l'**hyperkaliémie** liée au relargage du potassium contenu dans le liquide de préservation (UW : K+ ≈ 120-130 mmol/L). Le chlorure de calcium 1g IV stabilise immédiatement la membrane myocardique en antagonisant les effets cardiotoxiques du potassium (mécanisme membranaire direct, délai d'action < 1 minute) — c'est la priorité absolue avant la défibrillation dans ce contexte spécifique. Piège A : l'adrénaline est indiquée en ACR mais si la cause est hyperkaliémique, elle ne lèvera pas le substrat arythmogène ; le calcium doit être donné simultanément ou avant. En pratique les deux sont donnés quasi-simultanément mais le calcium est la priorité physiopathologique. Piège C : le bicarbonate peut aider en alcalinisant pour déplacer le K+ intracellulaire, mais son effet est plus lent et ne stabilise pas directement la membrane. Piège D : l'amiodarone traite les arythmies par réentrée ou dysautonomie, pas les FV hyperkaliémiques — incorrecte dans ce contexte."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "En THO, 8 minutes après le déclampage, le ROTEM montre : EXTEM CT = 82s (N < 80s), EXTEM A5 = 22 mm, FIBTEM A10 = 6 mm (N > 10 mm), EXTEM ML = 28% (N < 15%). Le patient saigne activement au niveau du site d'anastomose cave.",
+        "question": "Quelle est la séquence thérapeutique correcte basée sur ce ROTEM ?",
+        "options": {
+          "A": "PFC 15 mL/kg IV en priorité, puis acide tranexamique 1g si pas d'amélioration",
+          "B": "Acide tranexamique 1-2g IV puis concentré de fibrinogène 3-4g IV",
+          "C": "Concentré de fibrinogène 3-4g IV puis acide tranexamique 1-2g IV",
+          "D": "CCP 25 UI/kg IV puis plaquettes 1 unité d'aphérèse"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le ROTEM montre une **double anomalie** : fibrinolyse (ML = 28%, seuil pathologique > 15%) et déficit en fibrinogène (FIBTEM A10 = 6 mm < 10 mm). La séquence correcte est : (1) corriger le substrat de coagulation en premier avec le concentré de fibrinogène (le fibrinogène est le premier facteur à s'épuiser ET est le substrat de la fibrinolyse), puis (2) bloquer la fibrinolyse avec l'acide tranexamique. Piège A : le PFC est une option de deuxième ligne (surcharge volémique, faible teneur en fibrinogène ≈ 2 g/L vs 20 g/L dans les concentrés) ; l'acide tranexamique doit précéder le fibrinogène selon certains experts, mais le fibrinogène seul sans bloquer la fibrinolyse verrait le caillot lysé rapidement — toutefois en pratique clinique c'est la correction du fibrinogène qui est la première priorité car c'est le substrat limitant. Piège B : donner l'acide tranexamique avant le fibrinogène n'est pas incorrect sur le plan physiopathologique, mais le FIBTEM A10 = 6 mm indique un déficit sévère en fibrinogène qui est le problème dominant — les deux sont nécessaires. Piège D : le CCP traite le déficit en facteurs II, VII, IX, X mais l'EXTEM CT à 82s est seulement légèrement allongé, ce n'est pas la priorité ; les plaquettes ne sont pas indiquées si le ROTEM ne montre pas de déficit plaquettaire spécifique."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Vous prenez en charge un patient en préopératoire de THO. Il a un antécédent de cardiomyopathie cirrhotique avec fraction d'éjection conservée à 62% mais allongement du QTc à 480 ms sur l'ECG.",
+        "question": "Quel agent anesthésique d'entretien présente le risque le plus élevé dans ce contexte spécifique ?",
+        "options": {
+          "A": "Propofol en TIVA (effet vasodilatateur)",
+          "B": "Isoflurane (sensibilisation du myocarde aux catécholamines)",
+          "C": "Rémifentanil (rigidité thoracique à fortes doses)",
+          "D": "Sévoflurane (allongement du QTc dose-dépendant)"
+        },
+        "correct": "D",
+        "explanation": "Réponse D correcte : le **sévoflurane** allonge le QTc de manière dose-dépendante par blocage des canaux IKr (courant potassique repolarisant HERG). Chez un patient avec QTc déjà à 480 ms (proche du seuil de 500 ms associé aux torsades de pointe), l'utilisation du sévoflurane augmente significativement le risque de torsades de pointe, notamment en contexte d'hypokaliémie (fréquente en fin d'intervention) et de bradycardie. Piège A : le propofol cause une vasodilatation problématique mais n'allonge pas le QTc — c'est même l'agent de choix en TIVA dans ce contexte. Piège B : l'isoflurane sensibilise le myocarde aux catécholamines mais n'allonge pas significativement le QTc — ce n'est pas le risque principal ici. Piège C : le rémifentanil peut causer rigidité et bradycardie à fortes doses, mais n'allonge pas le QTc et est l'opioïde de choix en THO (métabolisme plasma-estérase indépendant du foie)."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Lors d'une THO, le patient est en phase néohépatique depuis 20 minutes. La glycémie capillaire mesurée est à 3,2 mmol/L (0,57 g/L). Le patient est sous TIVA propofol-rémifentanil, hémodynamiquement stable.",
+        "question": "Quelle est la prise en charge correcte de cette hypoglycémie et quel en est le mécanisme principal en phase anhépatique/néohépatique précoce ?",
+        "options": {
+          "A": "G10% 100 mL IV bolus ; mécanisme : hyperinsulinisme lié au greffon",
+          "B": "G30% 50 mL IV bolus puis G10% continu ; mécanisme : absence de néoglucogenèse et glycogénolyse hépatiques pendant l'anhépatie",
+          "C": "Glucagon 1 mg IM ; mécanisme : insensibilité au glucagon du greffon ischémique",
+          "D": "G5% 250 mL sur 30 min ; mécanisme : dilution de l'insuline résiduelle par remplissage peranesthésique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'hypoglycémie en THO résulte principalement de la **suppression des fonctions hépatiques** pendant l'anhépatie (absence totale de néoglucogenèse et de glycogénolyse, fonctions exclusivement hépatiques) ; en phase néohépatique précoce, le greffon n'a pas encore récupéré ces fonctions (délai de récupération métabolique 30-60 minutes). La correction correcte utilise le G30% bolus 50 mL (correction rapide, concentration suffisante) puis G10% en continu pour maintenir l'euglycémie. Piège A : le G10% 100 mL bolus est insuffisamment concentré pour une correction rapide ; l'hyperinsulinisme lié au greffon n'est pas le mécanisme principal. Piège C : le glucagon est contre-indiqué dans ce contexte (son action cible la glycogénolyse hépatique — foie absent en anhépatie ou non fonctionnel en néohépatie précoce) et la voie IM est inappropriée en urgence peranesthésique. Piège D : la dilution insulinique est anecdotique et le G5% est beaucoup trop dilué pour corriger une hypoglycémie à 3,2 mmol/L."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "En fin de phase de dissection lors d'une THO, le bilan ROTEM montre : EXTEM CT = 78s, FIBTEM A10 = 14 mm, EXTEM ML = 8%, plaquettes = 48 G/L. Le saignement est estimé à 400 mL depuis le début, sans saignement diffus actif. La PAM est stable à 70 mmHg.",
+        "question": "Quelle décision transfusionnelle est la plus adaptée à ce stade ?",
+        "options": {
+          "A": "Transfuser 1 culot de plaquettes pour amener les plaquettes au-dessus de 50 G/L avant la phase anhépatique",
+          "B": "Administrer 2g de fibrinogène car le FIBTEM A10 est à la limite basse",
+          "C": "Ne rien transfuser, le bilan ROTEM ne montre pas d'anomalie significative nécessitant un traitement",
+          "D": "Administrer du PFC 10 mL/kg en prévention de la coagulopathie anhépatique"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le bilan ROTEM est **globalement satisfaisant** : EXTEM CT = 78s (légèrement sous le seuil de 80s — normal), FIBTEM A10 = 14 mm (> 10 mm — acceptable), ML = 8% (< 15% — pas de fibrinolyse), plaquettes = 48 G/L. En l'absence de saignement actif diffus et avec une hémodynamique stable, la stratégie restrictive est recommandée — le seuil plaquettaire pour transfuser n'est pas atteint (< 30 G/L si stable, certains centres < 50 G/L seulement si saignement actif). Piège A : transfuser des plaquettes à 48 G/L sans saignement actif est une erreur classique — la transfusion prophylactique n'est pas indiquée et expose au TACO, TRALI et allo-immunisation. Piège B : le FIBTEM A10 à 14 mm est dans la zone limite basse mais supérieur au seuil d'intervention (< 10 mm) — corriger un fibrinogène non déficitaire exposé à des effets pro-coagulants inutiles. Piège D : le PFC prophylactique est formellement non recommandé en THO — il n'améliore pas le pronostic et augmente la morbidité transfusionnelle."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Un patient de 52 ans, cirrhotique alcoolique avec HTAP modérée (PAPs = 42 mmHg à l'ETT pré-opératoire), est en début de phase néohépatique. L'ETO peranesthésique montre une dilatation ventriculaire droite avec septum paradoxal et une fraction de raccourcissement du VD effondrée.",
+        "question": "Quelle association thérapeutique est la plus adaptée pour gérer cette défaillance VD post-reperfusion ?",
+        "options": {
+          "A": "Noradrénaline + dobutamine + vasopressine",
+          "B": "Noradrénaline + milrinone + NO inhalé",
+          "C": "Adrénaline seule à forte dose (0,5-1 μg/kg/min)",
+          "D": "Dobutamine seule + restriction volémique stricte"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la défaillance VD aiguë post-reperfusion avec HTAP préexistante nécessite une approche combinée : **noradrénaline** pour maintenir la pression de perfusion coronaire droite (VD ischémié si PAM trop basse) et le rapport PAM/PAP, **milrinone** (inotrope + vasodilatateur pulmonaire, inhibiteur de la phosphodiestérase-3) pour améliorer la contractilité VD et réduire la post-charge pulmonaire, et **NO inhalé** (vasodilatateur pulmonaire sélectif sans effet systémique) pour réduire la PAP et la post-charge VD. Piège A : la vasopressine peut être utile pour l'épargne catécholaminergique mais elle peut augmenter les résistances vasculaires pulmonaires — association discutable en HTAP ; la dobutamine seule sans milrinone ni NO est insuffisante si PAP élevée. Piège C : l'adrénaline à forte dose augmente les résistances vasculaires pulmonaires (effet α-adrénergique) et aggrave la post-charge VD — contre-productive si HTAP significative. Piège D : la dobutamine seule est insuffisante si PAP élevée et risque d'hypotension systémique (effet vasodilatateur périphérique) compromettant la perfusion coronaire droite."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "À J7 post-THO, un patient présente : bilirubine = 12 mg/dL, INR = 1,8, ASAT = 3200 UI/L, ALAT = 2800 UI/L. Il est apyrétique, sans signe d'obstruction biliaire à l'échographie.",
+        "question": "Quel diagnostic doit être évoqué en priorité et quelle en est la définition précise ?",
+        "options": {
+          "A": "Rejet aigu cellulaire : défini par bilirubine > 5 mg/dL + cytolyse > 10N à J7",
+          "B": "Dysfonction primaire du greffon (DPG) : bilirubine J7 > 10 mg/dL ET/OU INR J7 > 1,6 ET/OU ASAT ou ASAT > 2000 UI/L dans les 7 premiers jours",
+          "C": "Thrombose de l'artère hépatique : cytolyse massive + cholestase + fièvre à J7",
+          "D": "Syndrome de Budd-Chiari du greffon : transaminases élevées + ascite + douleurs abdominales"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : ce tableau répond exactement aux critères de **dysfonction primaire du greffon (DPG)** tels que définis par l'EASL 2016 : bilirubine J7 > 10 mg/dL (ici 12) ET INR J7 > 1,6 (ici 1,8) ET transaminases > 2000 UI/L (ici > 2000). Ces critères s'appliquent dans les 7 premiers jours post-THO. La DPG résulte de l'ischémie-reperfusion et peut évoluer vers la non-fonction primaire (indication de retransplantation urgente). Piège A : le rejet aigu cellulaire survient classiquement après J5-7, nécessite une biopsie hépatique pour confirmation (infiltrat lymphocytaire portal) — il n'existe pas de critère biologique pur suffisant pour le diagnostic. Piège C : la thrombose de l'artère hépatique est diagnostiquée par doppler artériel hépatique (absence de flux) et s'accompagne souvent de nécrose biliaire ; l'apyrexie et l'absence de diagnostic échographique suggèrent une DPG plutôt qu'une TAH. Piège D : le Budd-Chiari du greffon (thrombose cave ou sus-hépatique) est rare et s'accompagne surtout d'ascite et d'HTP — pas de cytolyse prédominante isolée."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Lors d'une THO en technique conventionnelle (clampage cave total), le chirurgien annonce qu'il ne peut pas utiliser de dérivation veinoveineuse. 5 minutes après le clampage cave sus- et sous-hépatique, la PAM chute de 78 à 45 mmHg malgré noradrénaline 0,4 μg/kg/min.",
+        "question": "Quelle est la cause principale de cette hypotension et quelle est la première mesure à prendre ?",
+        "options": {
+          "A": "Vasoplégie liée à la libération de médiateurs du greffon ; administrer de la méthylprednisolone 1g IV",
+          "B": "Réduction du retour veineux par clampage cave total (baisse de précharge) ; remplissage vasculaire rapide + augmentation des vasopresseurs",
+          "C": "Embolie gazeuse sur déhiscence anastomotique ; manœuvres d'aspiration par Swan-Ganz",
+          "D": "Insuffisance surrénalienne aiguë liée à la corticothérapie préopératoire ; hydrocortisone 200 mg IV"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : en technique conventionnelle avec clampage cave total, le **retour veineux est drastiquement réduit** (interruption du retour veineux cave inférieure qui représente 60-70% du retour veineux total) → chute de précharge → chute du débit cardiaque → hypotension sévère. C'est le mécanisme physiopathologique central et la raison pour laquelle la dérivation veinoveineuse a été développée. La prise en charge immédiate associe remplissage vasculaire rapide (bolus cristalloïdes ou albumine) + augmentation des vasopresseurs (noradrénaline ± phényléphrine). Piège A : la vasoplégie par médiateurs du greffon survient au déclampage, pas au clampage — et la méthylprednisolone n'a pas d'effet immédiat sur la précharge. Piège C : l'embolie gazeuse est une complication possible mais plus tardive (déclampage) ; elle ne se présente pas par une chute de PAM isolée au clampage cave. Piège D : l'insuffisance surrénalienne est un diagnostic différentiel de vasoplégie réfractaire, mais la chronologie (survenant immédiatement au clampage cave) oriente clairement vers la réduction de précharge."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Une équipe discute du protocole d'acide tranexamique en THO. Certains proposent une administration prophylactique systématique dès la phase de dissection (1g IV bolus) pour réduire le saignement, indépendamment du ROTEM.",
+        "question": "Pourquoi cette approche prophylactique systématique de l'acide tranexamique est-elle non recommandée en THO, contrairement à la chirurgie orthopédique majeure ?",
+        "options": {
+          "A": "L'acide tranexamique est contre-indiqué en cas de cirrhose car il aggrave l'encéphalopathie hépatique",
+          "B": "En THO, le risque de thrombose de l'artère hépatique et de thrombose porto-mésentérique contre-balance le bénéfice hémostatique — l'utilisation doit être réservée à la fibrinolyse ROTEM-confirmée",
+          "C": "L'acide tranexamique est inefficace en contexte de coagulopathie dilutionnelle (présente en THO) car le fibrinogène est trop bas pour former un substrat",
+          "D": "La demi-vie de l'acide tranexamique est augmentée en l'absence de métabolisme hépatique pendant l'anhépatie, exposant à un surdosage systématique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : contrairement à la chirurgie orthopédique où le bénéfice de l'acide tranexamique prophylactique est démontré sans risque thromboembolique majeur, la THO implique un risque spécifique de **thrombose de l'artère hépatique** (TAH, incidence 1-5%, catastrophique pour la survie du greffon) et de thromboses porto-mésentériennes. Bloquer la fibrinolyse de manière prophylactique peut favoriser ces complications thrombotiques dans un contexte vasculaire déjà fragile (anastomoses chirurgicales fraîches, endothélium ischémique). Les recommandations actuelles (SFAR 2021, recommandations européennes d'hémostase 2023) réservent l'acide tranexamique à la fibrinolyse biologiquement confirmée par ROTEM (ML > 15%, LI60 < 85%). Piège A : l'acide tranexamique n'est pas contre-indiqué en cirrhose per se et n'aggrave pas l'encéphalopathie — c'est une contre-indication inventée. Piège C : l'acide tranexamique agit en inhibant le plasminogène (et donc la plasmine) indépendamment du taux de fibrinogène — son efficacité n'est pas conditionnée par le taux de fibrinogène (les deux problèmes se traitent indépendamment). Piège D : le métabolisme de l'acide tranexamique est principalement rénal (élimination urinaire sous forme inchangée), non hépatique — l'anhépatie ne modifie pas significativement sa pharmacocinétique."
+      }
+    ]
   }
 ]
