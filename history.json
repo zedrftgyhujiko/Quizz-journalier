@@ -6263,5 +6263,388 @@
         "explanation": "Réponse B correcte : contrairement à la chirurgie orthopédique où le bénéfice de l'acide tranexamique prophylactique est démontré sans risque thromboembolique majeur, la THO implique un risque spécifique de **thrombose de l'artère hépatique** (TAH, incidence 1-5%, catastrophique pour la survie du greffon) et de thromboses porto-mésentériennes. Bloquer la fibrinolyse de manière prophylactique peut favoriser ces complications thrombotiques dans un contexte vasculaire déjà fragile (anastomoses chirurgicales fraîches, endothélium ischémique). Les recommandations actuelles (SFAR 2021, recommandations européennes d'hémostase 2023) réservent l'acide tranexamique à la fibrinolyse biologiquement confirmée par ROTEM (ML > 15%, LI60 < 85%). Piège A : l'acide tranexamique n'est pas contre-indiqué en cirrhose per se et n'aggrave pas l'encéphalopathie — c'est une contre-indication inventée. Piège C : l'acide tranexamique agit en inhibant le plasminogène (et donc la plasmine) indépendamment du taux de fibrinogène — son efficacité n'est pas conditionnée par le taux de fibrinogène (les deux problèmes se traitent indépendamment). Piège D : le métabolisme de l'acide tranexamique est principalement rénal (élimination urinaire sous forme inchangée), non hépatique — l'anhépatie ne modifie pas significativement sa pharmacocinétique."
       }
     ]
+  },
+  {
+    "date": "2026-06-15",
+    "dateStr": "lundi 15 juin",
+    "topic": "Prise en charge de la défaillance ventriculaire droite aiguë post-implantation d'assistance ventriculaire gauche (LVAD) en réanimation : diagnostic précoce, optimisation des pressions de remplissage, vasopresseurs pulmonaires sélectifs et indications d'une assistance biventriculaire",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "La défaillance ventriculaire droite (DVR) aiguë post-implantation de LVAD survient dans 20 à 40 % des cas et constitue la première cause de morbi-mortalité précoce après la chirurgie, avec une mortalité hospitalière dépassant 50 % en cas de défaillance biventriculaire non anticipée. Le VD, déjà fragilisé par une cardiopathie chronique et une hypertension pulmonaire secondaire, se retrouve brutalement exposé à une augmentation de précharge (retour veineux augmenté par le LVAD), une modification de la géométrie septale et parfois une ischémie périopératoire. Reconnaître précocement cette défaillance, en comprendre les mécanismes et hiérarchiser les interventions (remplissage, vasopresseurs pulmonaires sélectifs, assistance biV) sont des compétences critiques pour tout réanimateur prenant en charge ces patients.",
+      "sections": [
+        {
+          "title": "Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Un **LVAD (Left Ventricular Assist Device)** est un dispositif d'assistance mécanique circulatoire dérivant le sang du VG (canule d'aspiration dans l'apex VG) vers l'aorte ascendante via une pompe centrifuge ou axiale continue, suppléant partiellement ou totalement la fonction systolique gauche (bridge to transplant, bridge to candidacy ou destination therapy)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Débit LVAD** : dépend de la vitesse de rotation (RPM), de la précharge (VG rempli), de la postcharge aortique et de la résistance de la canule — non autorégulé",
+                "**RVD post-LVAD** : défaillance du VD survenant dans les 30 premiers jours post-implantation nécessitant vasopresseurs ou inotropes prolongés >14 jours, ou nécessitant une assistance VD",
+                "**RVD sévère (RVAD nécessaire)** : incapacité à maintenir un débit LVAD > 2 L/min/m² malgré traitement médical maximal",
+                "**PAPm** : pression artérielle pulmonaire moyenne — hypertension pulmonaire pré-existante fréquente (PAPm > 25 mmHg au repos)",
+                "**RAP (Résistances Artérielles Pulmonaires)** : calculées par (PAPm - PAPO) / débit cardiaque, exprimées en UW (unités Wood) ; normale < 3 UW",
+                "**Gradient transpulmonaire (GTP)** : PAPm − PAPO ; si > 12 mmHg → composante précapillaire (vasculaire) surajoutée",
+                "**TAPSE (Tricuspid Annular Plane Systolic Excursion)** : marqueur échocardiographique de fonction longitudinale VD ; valeur normale > 17 mm"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Piège fondamental : le LVAD en pompant efficacement abaisse les pressions de remplissage VG et la PAPO, mais AUGMENTE le retour veineux systémique → le VD reçoit plus de sang qu'il ne peut en éjecter. Une vitesse de rotation trop élevée d'emblée aggrave la distension et la défaillance VD."
+            },
+            {
+              "type": "formula",
+              "content": "Définition INTERMACS de RVD sévère post-LVAD : nécessité de vasopresseurs/inotropes > 14 jours POST-implantation OU mise en place d'un RVAD dans les 30 jours. Incidence : 20–40 % (toutes formes) ; RVD nécessitant RVAD : 5–10 %."
+            }
+          ]
+        },
+        {
+          "title": "Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La physiopathologie de la DVR post-LVAD est **multifactorielle et auto-entretenue** : l'augmentation du retour veineux systémique induite par le LVAD confronte un VD préalablement défaillant à une surcharge de précharge soudaine, déclenchant une spirale de dilatation-ischémie-défaillance."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Augmentation de précharge VD** : le LVAD draine efficacement le VG → retour veineux augmenté → distension VD → élévation de la PVC",
+                "**Déviation septale paradoxale** : le septum interventriculaire (SIV) est aspiré vers la gauche (effet Bernheim inversé) → perte de la contribution septale à la contraction VD (normalement 25–40 % du débit VD) → chute drastique du débit VD",
+                "**Ischémie VD périopératoire** : chirurgie à cœur battant ou CEC, manipulation chirurgicale, hypotension prolongée → nécrose myocardique VD",
+                "**Hypertension artérielle pulmonaire résiduelle** : RAP non réversibles pré-existantes → postcharge VD élevée non soulagée par le LVAD (contrairement à la postcharge VG)",
+                "**Insuffisance tricuspide sévère** : fréquente dans les cardiomyopathies évoluées → aggravar la surcharge volumique VD",
+                "**Tachycardie et troubles du rythme** : FA rapide, TV → perte de la systole auriculaire droite et raccourcissement du temps de remplissage VD",
+                "**Vasoconstriction pulmonaire hypoxique** : ventilation mécanique avec hypoxémie, acidose, hypothermie → augmentation des RAP",
+                "**Interdépendance ventriculaire** : en cas de distension VD → compression du VG par le péricarde → diminution de la précharge LVAD → baisse de débit LVAD → spirale de choc"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Erreur classique : vouloir 'remplir' un patient en DVR post-LVAD pour augmenter le débit LVAD. Un remplissage excessif aggrave la distension VD, déplace le septum et réduit encore plus la contribution septale. La cible de PVC est 8–12 mmHg et NON > 15 mmHg."
+            },
+            {
+              "type": "formula",
+              "content": "Interdépendance ventriculaire : si VD dilaté → SIV dévié vers VG → réduction du volume VG en diastole → chute de précharge LVAD → baisse de débit LVAD (détectée par alarme de faible débit sur console). Ce mécanisme explique le tableau de 'succion' sur les alarmes LVAD avec PVC haute."
+            }
+          ]
+        },
+        {
+          "title": "Évaluation / Diagnostic précoce",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le diagnostic de DVR post-LVAD repose sur une **combinaison clinique, hémodynamique, échocardiographique et des données de la console LVAD**. Il n'existe pas de critère unique suffisant ; la corrélation entre les différentes sources est indispensable."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Signes cliniques** : turgescence jugulaire, œdèmes périphériques, hépatomégalie douloureuse, anurie (choc cardiogénique), cyanose réfractaire à l'O2",
+                "**Données de la console LVAD** : débit bas (< 2,5 L/min), vitesse de rotation fixée haute mais débit faible → suggère précharge VG insuffisante (VD défaillant), alarmes de succion fréquentes",
+                "**Hémodynamique invasive** : PVC élevée (> 15 mmHg), PVC/PAPO > 0,63 (ratio prédictif de DVR pré-implantation, pertinent aussi en post-op), PAP élevées, index cardiaque bas (< 2,2 L/min/m²) malgré LVAD",
+                "**Biologie** : élévation des lactates (> 2 mmol/L), cytolyse hépatique (transaminases > 3N), bilirubine en hausse, BNP/NT-proBNP en augmentation, troponine T/I élevée",
+                "**ECG** : BBD de novo, signes de souffrance VD (onde S1Q3T3), arythmies (FA), sus-décalage V1-V3 (ischémie VD)",
+                "**Radiographie thoracique** : cardiomégalie, signe de la ligne de Kerley B (surcharge), épanchement pleural droit"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "L'**échocardiographie transthoracique ou transœsophagienne** est l'examen pivot du diagnostic et du monitoring de la DVR post-LVAD. Elle permet d'évaluer la taille et la fonction VD, la position du SIV et la position de la canule d'aspiration."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**TAPSE** : < 17 mm → dysfonction VD significative ; < 13 mm → dysfonction sévère",
+                "**FAC (Fractional Area Change) VD** : < 35 % → dysfonction VD",
+                "**Rapport DTDVD/DTDVG** : > 1 en coupe 4 cavités apicale → dilatation VD pathologique",
+                "**Aplatissement ou déviation septale** (D-sign en parasternal petit axe) : signe de surcharge de pression ou de volume VD",
+                "**Position canule d'aspiration LVAD** : doit être en position médioventriculaire, pas contre la paroi septale (risque de succion septale = obstruction et arythmies)",
+                "**Insuffisance tricuspide** : quantification (PAPS par IT si mesurable), degré de régurgitation",
+                "**Présence d'un foramen ovale perméable (FOP)** : shunt D→G possible si PVC élevée → hypoxémie réfractaire — à rechercher systématiquement en préopératoire"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Score RVAD pré-implantation (Michigan RV Risk Score) : PVC/PAPO ≥ 0,63 + besoins en vasopresseurs préopératoires + ventilation mécanique préopératoire + créatinine ≥ 177 µmol/L → chaque facteur prédit le risque de DVR post-LVAD. Score ≥ 3 : risque > 50 % de DVR sévère."
+            },
+            {
+              "type": "warning",
+              "content": "Piège diagnostique : une PAPO basse sous LVAD efficace peut faussement rassurer. Si la PVC est simultanément élevée (> 15 mmHg) avec PVC/PAPO > 0,63, la DVR est présente même si le LVAD génère un bon débit apparent. Toujours interpréter les pressions de façon intégrée."
+            }
+          ]
+        },
+        {
+          "title": "Stratégie de prise en charge",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge repose sur une approche **graduée et simultanée** : optimiser la précharge VD (sans excès), réduire la postcharge pulmonaire, soutenir l'inotropisme VD et adapter la vitesse LVAD. L'objectif hémodynamique est un index cardiaque > 2,2 L/min/m², une PAM > 65 mmHg, une PVC entre 8 et 12 mmHg et une saturation veineuse centrale ≥ 60 %."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Étape 1 — Optimisation de la précharge VD** : PVC cible 8–12 mmHg. Si PVC > 15 mmHg → diurèse forcée (furosémide IV en continu 5–20 mg/h, ou ultrafiltration si résistance aux diurétiques). Si PVC < 8 mmHg ET hypovolémie clinique → remplissage prudent (NaCl 0,9 % ou albumine 4 %, bolus de 250 mL, réévaluation immédiate)",
+                "**Étape 2 — Optimisation de la vitesse LVAD** : réduire la vitesse si succion ventriculaire (aspiration septale, alarmes), augmenter prudemment si VG bien rempli et VD compensé ; objectif débit LVAD 4–6 L/min",
+                "**Étape 3 — Soutien inotrope VD** : **Dobutamine** 5–10 µg/kg/min (inotrope + vasodilatateur pulmonaire léger) — traitement de référence. **Milrinone** 0,375–0,75 µg/kg/min (inhibiteur phosphodiestérase 3) : inotrope + vasodilatateur pulmonaire plus puissant, mais risque d'hypotension systémique (associer noradrénaline si PAM < 65 mmHg). **Lévosimendan** 0,1–0,2 µg/kg/min 24h : sensibilisateur au calcium, inotrope + lusitropique + vasodilatateur pulmonaire, bénéfice suggéré en post-LVAD (études LEVO-CTS, CHEETAH)",
+                "**Étape 4 — Vasopresseurs pulmonaires sélectifs** : réduction des RAP → amélioration du couplage VD-artère pulmonaire",
+                "**NO inhalé (NOi)** : 10–40 ppm, vasodilatateur pulmonaire sélectif sans effet systémique, réduction des RAP de 20–30 %, à débuter dès les premières heures si RAP > 3 UW",
+                "**Prostacycline inhalée (Iloprost)** : 2,5–5 µg en nébulisation 6 à 9 fois/j, alternative ou complément au NOi, ou en relais lors du sevrage",
+                "**Sildénafil oral/sonde nasogastrique** : 20–50 mg × 3/j (inhibiteur PDE5) — en relais du NOi lors du sevrage, ou en prophylaxie si RAP pré-op élevées ; éviter en phase aiguë si hypotension",
+                "**Treprostinil IV** : prostacycline IV systémique, réservée aux formes réfractaires avec HAP sévère préexistante ; risque hypotension systémique",
+                "**Étape 5 — Ventilation mécanique optimisée** : FiO2 pour SpO2 ≥ 95 %, éviter hypercapnie (PaCO2 < 45 mmHg — hypercapnie = vasoconstriction pulmonaire), Vt 6 mL/kg, PEEP minimale (4–6 cmH2O) car la PEEP augmente la postcharge VD et réduit le retour veineux",
+                "**Étape 6 — Correction des facteurs aggravants** : contrôle du rythme cardiaque (FA → cardioversion électrique ou amiodarone), correction de l'acidose, réchauffement, correction hypocalcémie/hypomagnésémie, transfusion si Hb < 8 g/dL"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Cibles hémodynamiques post-LVAD : PAM 65–80 mmHg | PVC 8–12 mmHg | PAPO 12–18 mmHg | PVC/PAPO < 0,63 | IC > 2,2 L/min/m² | SvO2 ≥ 60 % | Débit LVAD 4–6 L/min | Lactates < 2 mmol/L"
+            },
+            {
+              "type": "warning",
+              "content": "Erreur thérapeutique fréquente : utiliser la noradrénaline seule pour traiter le choc sans inotrope. La noradrénaline augmente les RAP (par vasoconstriction pulmonaire) et aggrave la postcharge VD. Elle est utilisée UNIQUEMENT en association avec un inotrope pour maintenir la PAM systémique tout en attendant l'effet du traitement étiologique."
+            },
+            {
+              "type": "warning",
+              "content": "Contre-indication relative : l'adrénaline en cas de DVR isolée post-LVAD. Sa tachycardie réflexe et sa vasoconstriction pulmonaire peuvent aggraver la DVR. Préférer dobutamine ± noradrénaline. L'adrénaline peut être utilisée en arrêt cardiaque ou en extrême urgence."
+            }
+          ]
+        },
+        {
+          "title": "Indications d'une assistance biventriculaire (BiVAD / RVAD temporaire)",
+          "items": [
+            {
+              "type": "text",
+              "content": "Lorsque le traitement médical maximal échoue, une **assistance mécanique du VD (RVAD)** doit être envisagée sans délai. Le retard à l'implantation d'un RVAD est un facteur de mortalité indépendant. Les dispositifs disponibles sont l'ECMO veino-artérielle (VA-ECMO), l'Impella RP et les RVADs paracorporels (Centrimag)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Indications RVAD** : PVC > 20 mmHg persistante après optimisation + IC < 2,0 L/min/m² malgré inotropes + vasopresseurs optimaux pendant > 2–4 heures, OU choc cardiogénique réfractaire, OU défaillance multiviscérale progressive (IRA, cytolyse hépatique massive)",
+                "**ECMO VA (veino-artérielle)** : canulation fémorale ou centrale — drainer le sang du VD/OD (canule veineuse) et éjecter dans l'aorte (canule artérielle) → décharge VD + soutien hémodynamique systémique. Inconvénient : augmente la postcharge VG (si LVAD non fonctionnel) → risque de distension VG, nécessite surveillance étroite",
+                "**Impella RP** : dispositif axial introduit par voie veineuse fémorale ou jugulaire, positionné dans l'artère pulmonaire, aspire depuis l'OD et éjecte dans l'AP. Débit maximal 4 L/min. Avantage : moins invasif, pas de décharge VG nécessaire si LVAD fonctionnel. Approuvé FDA pour DVR post-LVAD",
+                "**CentriMag RVAD** : circuit centrifuge paracorporel chirurgical (canules OD → AP), débit jusqu'à 8 L/min, référence pour les DVR réfractaires nécessitant un soutien prolongé (bridge to recovery ou bridge to transplant biventriculaire)",
+                "**BiVAD (LVAD + RVAD)** : configuration lors d'utilisation de deux dispositifs paracorporels ou implantables — réservée aux équipes spécialisées, sur liste de transplantation cardiaque",
+                "**Durée de l'assistance VD temporaire** : en général 7–14 jours ; sevrage progressif guidé par l'échocardiographie (TAPSE > 15 mm, FAC VD > 30 %, disparition des signes de DVR)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Critères de non-réponse au traitement médical (indication RVAD) : PVC > 20 mmHg ET IC < 2,0 L/min/m² après ≥ 2 heures de traitement médical optimal incluant NOi + inotropes + optimisation volémique, OU lactates croissants ≥ 4 mmol/L malgré traitement."
+            },
+            {
+              "type": "warning",
+              "content": "Piège : l'ECMO VA seule sans LVAD fonctionnel crée une compétition avec le retour veineux pulmonaire → distension VG si résiduel d'éjection VG. En présence d'un LVAD, l'ECMO VA en drainage fémoral peut également détériorer le débit LVAD par augmentation rétrograde de la postcharge aortique. Une analyse hémodynamique intégrée est indispensable avant de choisir la configuration."
+            }
+          ]
+        },
+        {
+          "title": "Complications et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Thrombose de la canule d'aspiration LVAD** : hémoglobinurie, élévation LDH > 3N, alarme de faible débit, rémontée de la puissance consommée → anticoagulation renforcée (héparine IV, INR cible 2,5–3,5), discussion cardiochirurgicale urgente",
+                "**Succion ventriculaire (suction event)** : vitesse LVAD trop élevée → aspiration de la paroi VG contre la canule → alarme, arythmies, douleur → réduire vitesse de 200–400 RPM, remplissage prudent",
+                "**Épanchement péricardique compressif** : fréquent en post-LVAD (J2–J7), tamponnade possible → tamponnement de la fonction VD mais aussi LVAD (réduction précharge VG) → drainage chirurgical ou percutané urgent",
+                "**Arythmies ventriculaires (TV/FV)** : incidence 15–20 % post-LVAD, favorisées par la succion, l'hypokaliémie, les cathéters de stimulation → cardioversion électrique, amiodarone IV (150 mg bolus puis 1 mg/min), correction électrolytique",
+                "**Insuffisance rénale aiguë** : multifactorielle (bas débit, néphrotoxiques, embolies) — épuration extrarénale si nécessaire (CVVHDF), attention aux doses d'antibiotiques",
+                "**Hémolyse mécanique** : LDH > 2,5N + Hb libre plasmatique > 40 mg/dL → suspecter thrombus pompe ou positionnement canule inadéquat",
+                "**Saignements gastro-intestinaux** : malformation artério-veineuse (MAV) induites par la pression pulsée faible (flux continu LVAD) + anticoagulation → endoscopie, réduction anticoagulation temporaire sous contrôle équipe LVAD",
+                "**AVC ischémique ou hémorragique** : 10–15 % à 2 ans — contrôle strict PAM (65–80 mmHg), INR cible 2–3, antiagrégation aspirine 100 mg/j"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Erreur médicamenteuse critique : ne jamais arrêter brutalement l'anticoagulation en cas de saignement actif sous LVAD sans contact avec l'équipe LVAD référente. Le risque de thrombose de pompe à flux axial continu est immédiat (quelques heures) et peut être fatal. Une anticoagulation réduite (héparinémie cible 0,2–0,3 UI/mL) est souvent possible le temps de stabiliser l'hémorragie."
+            }
+          ]
+        },
+        {
+          "title": "Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ISHLT 2023 Guidelines for Heart Failure** : recommande l'évaluation systématique du risque de DVR pré-implantation (score Michigan ou RVAD Score) — Classe I, Niveau C",
+                "**ESC/EACTS 2021 Heart Failure Guidelines** : LVAD recommandé en bridge-to-transplant chez patients INTERMACS 2–3 sous traitement maximal — Classe IIa, Niveau B ; NO inhalé recommandé pour DVR post-LVAD — mention explicite",
+                "**IMAC-2 Consensus Statement (JHLT 2022)** : définition standardisée de la DVR post-LVAD — nécessité d'inotropes > 14 jours ou RVAD dans les 30 jours — Consensus d'experts",
+                "**Impella RP FDA Approval 2017 (données RECOVER RIGHT trial)** : débit cardiaque moyen passé de 3,3 à 4,0 L/min à 30 jours, taux de survie à 30 jours 73 % — niveau de preuve IIb (petite étude monocentrique)",
+                "**NOi en DVR** : méta-analyse Cochrane 2021 — réduction des RAP de 20–30 % avec NOi 10–40 ppm ; pas d'étude randomisée de puissance suffisante spécifiquement post-LVAD — Grade C",
+                "**Lévosimendan péri-opératoire LVAD** : essai LEVO-CTS (NEJM 2017) — pas de bénéfice en chirurgie cardiaque générale ; données spécifiques LVAD favorables mais limitées (séries rétrospectives 2020–2023) — Grade C",
+                "**Milrinone vs Dobutamine en DVR** : étude DOREMI (NEJM 2021) — absence de différence en mortalité en choc cardiogénique global ; pharmacologie favorable de la milrinone sur les RAP mais hypotension plus fréquente — extrapolation au post-LVAD",
+                "**Objectif PAM post-LVAD** : 65–80 mmHg (consensus INTERMACS 2020) — PAM > 90 mmHg → risque AVC, PAM < 65 mmHg → insuffisance d'organes"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Point réglementaire : le réanimateur prenant en charge un patient porteur de LVAD doit impérativement contacter le centre implanteur référent (astreinte 24h/24) en cas de toute alarme console, de modification du traitement anticoagulant ou d'indication d'assistance VD supplémentaire. Ces décisions ne doivent pas être prises de façon isolée."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Mécanisme central** : le LVAD augmente le retour veineux → surcharge précharge VD + déviation septale gauche → perte de la contribution septale (25–40 % du débit VD) → spirale de défaillance VD → réduction de la précharge LVAD.",
+        "**Diagnostic précoce** : combo PVC élevée + débit LVAD bas + TAPSE < 17 mm + PVC/PAPO > 0,63 → DVR confirmée ; ne pas attendre la défaillance multiviscérale.",
+        "**Remplissage contrôlé** : PVC cible 8–12 mmHg — au-delà, le remplissage aggrave la DVR par distension VD ; utiliser les diurétiques précocement si PVC > 15 mmHg.",
+        "**Vasopresseurs pulmonaires sélectifs en première ligne** : NOi 20–40 ppm dès confirmation DVR + RAP élevées ; associer dobutamine 5–10 µg/kg/min ± milrinone ± lévosimendane selon tolérance hémodynamique.",
+        "**RVAD sans délai** : si IC < 2,0 L/min/m² + PVC > 20 mmHg après 2–4h de traitement médical maximal → contacter le centre référent pour CentriMag ou Impella RP ; le retard à l'implantation est associé à une surmortalité significative."
+      ],
+      "references": [
+        "Kormos RL et al. — Right ventricular failure in patients with the HeartMate II continuous-flow LVAD — J Heart Lung Transplant 2010 (référence séminale, incidence et définitions)",
+        "Bellavia D et al. — Independent predictors of right ventricular failure after LVAD implantation — JACC Heart Fail 2012",
+        "Kiernan MS et al. — ISHLT Consensus Document on Temporary Mechanical Circulatory Support Devices — J Heart Lung Transplant 2022",
+        "Mehra MR et al. — ISHLT 2023 Guidelines for the evaluation and management of heart failure — J Heart Lung Transplant 2023",
+        "McDonagh TA et al. — 2021 ESC/EACTS Guidelines for the diagnosis and treatment of acute and chronic heart failure — Eur Heart J 2021",
+        "Anderson MB et al. — RECOVER RIGHT study: Impella RP for acute right ventricular failure — J Heart Lung Transplant 2015",
+        "Hollenberg SM, Singer M — Pathophysiology of sepsis-induced cardiomyopathy (mécanismes DVR et inotropes) — Nat Rev Cardiol 2021",
+        "Léopold V et al. — Levosimendan for perioperative right ventricular support in patients undergoing LVAD insertion — Crit Care Med 2020",
+        "Konstam MA, Kiernan MS et al. — Short-term right ventricular assist in patients undergoing LVAD implantation (RVAD review) — Circ Heart Fail 2021",
+        "Ponikowski P et al. — 2016 ESC Guidelines for HF (background framework still referenced) + Update 2021 supplementary data — Eur J Heart Fail 2021"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 58 ans, implanté d'un HeartMate 3 il y a 18 heures pour cardiomyopathie dilatée non ischémique (FEVG préopératoire 15 %), est en réanimation. La console affiche un débit LVAD à 2,8 L/min (vitesse fixée à 5400 RPM) avec alarmes de succion répétées. La PVC est à 22 mmHg, la PAPO à 14 mmHg, la PAM à 58 mmHg. L'échocardiographie montre un VD très dilaté avec TAPSE à 9 mm, D-sign marqué en parasternal petit axe.",
+        "question": "Quelle est la première mesure thérapeutique la plus appropriée dans ce contexte ?",
+        "options": {
+          "A": "Augmenter la vitesse du LVAD à 5800 RPM pour améliorer le débit",
+          "B": "Débuter du furosémide IV en perfusion continue et initier le NO inhalé à 20 ppm",
+          "C": "Réaliser un remplissage vasculaire avec 500 mL de NaCl 0,9 % pour corriger la PAM",
+          "D": "Implanter immédiatement un RVAD (CentriMag) sans essai médical préalable"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la PVC à 22 mmHg confirme une surcharge volémique VD — le diurétique réduit la précharge VD. Le NOi réduit les RAP et la postcharge VD, améliorant le couplage VD-AP. Piège A : augmenter la vitesse LVAD aggrave la succion ventriculaire (canule aspire la paroi VG/septale) et ne traite pas la cause (VD défaillant). Piège C : la PAM basse est secondaire à la DVR — le remplissage avec une PVC à 22 mmHg aggraverait la distension VD et le D-sign ; ne pas confondre hypovolémie et DVR. Piège D : l'RVAD est indiqué seulement après 2–4 heures d'échec du traitement médical maximal — l'aller directement prive le patient d'une chance de récupération médicale et expose à des complications chirurgicales supplémentaires."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Patient porteur d'un LVAD depuis 3 jours en DVR modérée. Malgré dobutamine 8 µg/kg/min et NO inhalé 30 ppm, la PAM reste à 55 mmHg. L'interne souhaite ajouter de l'adrénaline pour corriger l'hypotension.",
+        "question": "Pourquoi l'adrénaline est-elle à éviter en priorité dans ce contexte, et quel vasopresseur est préférable ?",
+        "options": {
+          "A": "L'adrénaline provoque une bradycardie réflexe qui diminue le débit cardiaque ; préférer l'isoprénaline",
+          "B": "L'adrénaline augmente les résistances artérielles pulmonaires par vasoconstriction pulmonaire alpha-médiée et aggrave la postcharge VD ; préférer la noradrénaline associée à la dobutamine",
+          "C": "L'adrénaline inhibe la phosphodiestérase 3 et réduit la contractilité VD ; préférer la milrinone",
+          "D": "L'adrénaline est contre-indiquée chez tout porteur de LVAD car elle provoque une thrombose de la pompe ; préférer la vasopressine"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'adrénaline exerce une vasoconstriction pulmonaire (effet alpha-1) qui augmente les RAP, aggravant la postcharge VD déjà compromise — effet délétère dans la DVR. La noradrénaline, associée aux inotropes déjà en place, maintient la PAM systémique avec un effet pulmonaire moindre. Piège A : l'adrénaline provoque une tachycardie (effet bêta-1) et non une bradycardie réflexe — erreur de pharmacologie de base. Piège C : l'adrénaline n'inhibe pas la PDE3 (c'est la milrinone) — confusion pharmacologique fréquente. Piège D : il n'existe pas de contre-indication absolue à l'adrénaline liée au risque de thrombose de pompe ; c'est l'effet vasoconstricteur pulmonaire qui pose problème ici, pas la thrombogenèse."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un patient post-LVAD J2 présente une hypoxémie sévère (SpO2 82 % sous FiO2 100 %). La radiographie thoracique est sans surcharge pulmonaire. L'échocardiographie montre un shunt droite-gauche auriculaire documenté à l'injection de microbulles.",
+        "question": "Quel est le mécanisme physiopathologique responsable de ce tableau et quelle prise en charge spécifique s'impose ?",
+        "options": {
+          "A": "Embolie pulmonaire massive avec effet shunt ; anticoagulation curative urgente",
+          "B": "Ouverture d'un foramen ovale perméable (FOP) par élévation des pressions droites en contexte de DVR ; fermeture percutanée du FOP en urgence ou réduction des pressions droites",
+          "C": "Syndrome de détresse respiratoire aiguë (SDRA) post-transfusionnel (TRALI) ; décubitus ventral",
+          "D": "Dysfonction de la valve aortique native induite par le flux continu du LVAD ; réduction de la vitesse LVAD"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : une PVC élevée > OG (en contexte de DVR) peut réouvrir un FOP présent chez 25–30 % de la population générale, créant un shunt D→G intracardiaque — hypoxémie réfractaire non améliorée par l'O2. La prise en charge passe par la réduction des pressions droites (diurèse, NOi) et/ou la fermeture percutanée du FOP si persistance. Piège A : l'embolie pulmonaire massive donnerait une dilatation VD aiguë de novo et des signes d'HTAP sur l'écho, non un shunt intracardiaque visible aux microbulles. Piège C : le TRALI est possible mais donnerait un infiltrat pulmonaire bilatéral radiographique et une atteinte des deux poumons — l'échocardiographie montre ici spécifiquement un passage de microbulles, signant un shunt intracardiaque. Piège D : l'insuffisance aortique induite par LVAD est une complication réelle (flux continu maintient la valve ouverte en permanence) mais ne cause pas d'hypoxémie par shunt intracardiaque."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Lors du sevrage du NO inhalé à J5 post-LVAD chez un patient stable, une remontée des RAP est observée avec dégradation hémodynamique progressive.",
+        "question": "Quelle stratégie de sevrage du NO inhalé est la plus adaptée pour éviter le rebond vasoconstricteur pulmonaire ?",
+        "options": {
+          "A": "Arrêt brutal du NOi et surveillance rapprochée 2 heures ; aucun traitement relais nécessaire",
+          "B": "Réduction progressive du NOi par paliers de 5 ppm toutes les 4 heures avec introduction de sildénafil oral 20–50 mg × 3/j ou d'iloprost inhalé en relais",
+          "C": "Remplacement immédiat du NOi par bosentan oral 125 mg × 2/j (antagoniste des récepteurs de l'endothéline)",
+          "D": "Augmentation de la FiO2 à 100 % pour compenser la perte de l'effet vasodilatateur du NOi"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'arrêt brutal du NOi provoque un rebond de vasoconstriction pulmonaire par diminution rapide du GMPc endothélial. Le sevrage progressif par paliers (5 ppm toutes les 4h) avec relais par sildénafil (inhibiteur PDE5, prolonge l'effet GMPc) ou iloprost inhalé (prostacycline) est la stratégie validée. Piège A : l'arrêt brutal est la cause classique de rebond vasoconstricteur pulmonaire sévère, potentiellement fatal — erreur par méconnaissance de la pharmacologie du NOi. Piège C : le bosentan est un antagoniste des récepteurs de l'endothéline (ERAs) dont l'effet est retardé (semaines), inadapté au relais aigu du NOi ; de plus, hépatotoxicité et interactions médicamenteuses. Piège D : l'augmentation de FiO2 ne remplace pas l'effet vasodilatateur direct du NOi — l'oxygène a un effet vasodilatateur pulmonaire modeste mais insuffisant pour prévenir le rebond."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Un patient porteur de LVAD HeartMate 3 présente une LDH à 1800 UI/L (N < 250), une hémoglobinurie franche, une bilirubine totale à 85 µmol/L (conjuguée 70 %) et une rémontée de la puissance consommée par la pompe de 2,8 à 6,2 W en 12 heures.",
+        "question": "Quel est le diagnostic le plus probable et quelle est la conduite à tenir immédiate ?",
+        "options": {
+          "A": "Hémolyse par succion ventriculaire ; réduire la vitesse LVAD de 400 RPM et surveiller",
+          "B": "Thrombose intra-pompe du LVAD ; renforcer l'anticoagulation (bolus héparine + objectif antiXa 0,3–0,5 UI/mL) et contacter le centre LVAD référent pour évaluation chirurgicale",
+          "C": "Hépatite médicamenteuse cytolytique ; arrêt de l'amiodarone et bilan hépatique complet",
+          "D": "Septicémie à point de départ sur câble d'entraînement ; hémocultures et antibiothérapie large spectre"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la triade LDH très élevée + hémoglobinurie + rémontée de la puissance consommée est pathognomonique d'une thrombose intra-pompe du LVAD. La thrombolyse ou l'anticoagulation renforcée sont les options médicales ; l'échange de pompe peut être nécessaire. Contacter le centre référent est obligatoire. Piège A : la succion ventriculaire provoque une hémoglobinurie légère et des alarmes de débit bas, non une élévation aussi spectaculaire de la puissance consommée (signature spécifique de la thrombose de pompe) — la distinction est cruciale. Piège C : la bilirubine élevée reflète l'hémolyse (bilirubine conjuguée car métabolisme de l'hème), non une hépatite médicamenteuse qui aurait une prédominance de transaminases ALAT/ASAT — erreur par confusion des mécanismes d'ictère. Piège D : une infection du câble peut exister en parallèle mais ne produit pas la rémontée de puissance ni l'hémoglobinurie directe."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patiente de 45 ans post-LVAD J3 avec DVR sévère. Vous débutez la milrinone à 0,5 µg/kg/min. Dix minutes après le début, la PAM chute de 72 à 48 mmHg. La PVC est à 14 mmHg.",
+        "question": "Quel est le mécanisme de la chute de PAM sous milrinone et quelle est la prise en charge la plus appropriée ?",
+        "options": {
+          "A": "La milrinone inhibe la PDE3 cardiaque uniquement → insuffisance cardiaque paradoxale ; arrêter la milrinone et switcher pour dobutamine",
+          "B": "La milrinone inhibe la PDE3 vasculaire systémique → vasodilatation artérielle systémique → chute de PAM ; ajouter noradrénaline 0,1–0,3 µg/kg/min titrée pour maintenir PAM > 65 mmHg tout en poursuivant la milrinone",
+          "C": "Réaction anaphylactique à la milrinone ; arrêt immédiat et adrénaline IM 0,5 mg",
+          "D": "La milrinone augmente la postcharge pulmonaire par effet réflexe ; arrêter et introduire du NOi"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la milrinone est un inhibiteur de la PDE3 qui agit sur le cœur (inotrope positif) ET sur les vaisseaux systémiques (vasodilatateur artériel et veineux) → réduction des résistances vasculaires systémiques → chute de PAM, surtout si hypovolémie relative. La noradrénaline compense cette vasodilatation systémique tout en laissant la milrinone exercer son effet inotrope et vasodilatateur pulmonaire. Piège A : la milrinone a des effets vasculaires systémiques marqués (pas uniquement cardiaques) — erreur classique par méconnaissance de sa pharmacologie complète. Piège C : l'anaphylaxie est possible mais extrêmement rare et devrait s'accompagner d'urticaire, bronchospasme — la chute isolée de PAM sans autre signe est bien plus cohérente avec l'effet pharmacologique attendu. Piège D : la milrinone a un effet vasodilatateur pulmonaire (réduit les RAP) et non vasoconstricteur pulmonaire — confusion des effets pharmacologiques."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Un patient de 62 ans, porteur d'un LVAD depuis 8 mois en destination therapy, est admis pour choc cardiogénique aigu. L'échocardiographie montre une DVR sévère avec TAPSE à 8 mm. Le cardiologue propose un Impella RP par voie fémorale.",
+        "question": "Quelle contre-indication spécifique à l'Impella RP doit être systématiquement recherchée avant l'implantation ?",
+        "options": {
+          "A": "Insuffisance aortique sévère",
+          "B": "Insuffisance rénale avec DFG < 30 mL/min/1,73 m²",
+          "C": "Thrombose veineuse profonde fémorale ou veine cave inférieure, ou thrombose tricuspide/valvulopathie tricuspide sévère mécanique",
+          "D": "INR > 2,5 nécessitant une neutralisation préalable par vitamine K"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : l'Impella RP est introduit par voie veineuse fémorale et passe par la valve tricuspide pour se positionner dans l'artère pulmonaire. Une thrombose veineuse profonde fémorale ou de la VCI est une contre-indication absolue (obstruction du trajet). Une valvulopathie tricuspide mécanique est une contre-indication absolue (le dispositif ne peut passer). Une sténose tricuspide sévère est également une contre-indication relative. Piège A : l'insuffisance aortique sévère est une contre-indication pour certaines configurations d'assistance VG (Impella LVAD) — non pertinente pour l'Impella RP qui est du côté droit. Piège B : l'insuffisance rénale n'est pas une contre-indication spécifique à l'Impella RP ; c'est une comorbidité à considérer dans le choix global mais pas un critère d'exclusion direct. Piège D : un INR élevé nécessite une gestion de l'anticoagulation mais n'est pas une contre-indication à l'insertion du dispositif en urgence."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Vous recevez un appel de l'interne de garde concernant un patient LVAD dont la console affiche une 'alarme de faible débit' (2,1 L/min) à vitesse fixée. Le patient est tachycarde à 125/min en FA, avec PVC à 7 mmHg et PAM à 70 mmHg.",
+        "question": "Parmi les causes suivantes, quelle est la plus probable et quelle est la priorité de prise en charge ?",
+        "options": {
+          "A": "Thrombose de pompe ; renforcement de l'anticoagulation en urgence",
+          "B": "Hypovolémie relative (précharge VG insuffisante) secondaire à la tachycardie en FA et réduction du remplissage diastolique ; remplissage prudent et contrôle de la fréquence cardiaque",
+          "C": "DVR aiguë ; débuter du NOi 20 ppm immédiatement",
+          "D": "Dysfonction de la canule d'aspiration par déplacement ; echocardiographie urgente puis repositionnement chirurgical"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la PVC à 7 mmHg associée à une tachycardie en FA indique une hypovolémie relative ou une tachycardie réduisant le temps de remplissage diastolique VG → précharge LVAD insuffisante → débit LVAD bas. La priorité est le contrôle de la FC (digoxine IV 0,5 mg ou amiodarone IV, selon hémodynamique), la correction volémique prudente et la recherche d'un facteur déclenchant (fièvre, saignement). Piège A : la thrombose de pompe s'accompagne d'une rémontée de puissance consommée, de LDH élevées et d'hémoglobinurie — non mentionnés ici. Piège C : la DVR donnerait une PVC élevée (> 15 mmHg) et non basse à 7 mmHg — la PVC basse exclut une surcharge VD comme mécanisme principal. Piège D : le déplacement de canule est possible mais rare à distance de l'implantation et doit être évoqué secondairement si les mesures conservatrices échouent."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un interne prescrit de la PEEP à 12 cmH2O chez un patient LVAD en DVR modérée intubé pour IRA hypoxémique.",
+        "question": "Quel est l'effet délétère principal d'une PEEP élevée sur l'hémodynamique d'un patient LVAD en DVR, et quelle est la PEEP recommandée ?",
+        "options": {
+          "A": "La PEEP élevée augmente la postcharge du LVAD en comprimant l'aorte ascendante ; cible PEEP < 10 cmH2O",
+          "B": "La PEEP élevée augmente la postcharge VD (augmentation des résistances vasculaires pulmonaires par compression des capillaires alvéolaires) et réduit le retour veineux systémique, aggravant la DVR ; cible PEEP 4–6 cmH2O",
+          "C": "La PEEP élevée provoque une succion ventriculaire en réduisant la précharge VG ; cible PEEP 0 cmH2O",
+          "D": "La PEEP élevée n'a pas d'effet hémodynamique spécifique chez les patients sous LVAD ; l'ajustement se fait uniquement sur la compliance pulmonaire"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : une PEEP élevée comprime les capillaires alvéolaires (zones I et II de West) → augmentation des RAP → augmentation de la postcharge VD → aggravation de la DVR. De plus, la PEEP réduit le retour veineux cave → diminution de la précharge VD et VG → réduction du débit LVAD. La cible PEEP en DVR est 4–6 cmH2O, en privilégiant des pressions de plateau < 25 cmH2O. Piège A : la PEEP ne comprime pas l'aorte ascendante de façon significative (structure intrathoracique non compressible par la PEEP) — erreur anatomique. Piège C : la PEEP à 0 (ZEEP) augmente le risque d'atélectasies et de dérecrutement, majore l'hypoxémie et donc la vasoconstriction pulmonaire hypoxique — pire encore pour le VD. Piège D : la PEEP a des effets hémodynamiques majeurs et bien documentés chez tous les patients, a fortiori en défaillance circulatoire — méconnaissance physiologique."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Vous évaluez le risque de DVR post-implantation LVAD chez un patient en préopératoire : PAP systolique 58 mmHg, PAPO 28 mmHg, PVC 18 mmHg, IC 1,6 L/min/m², créatinine 195 µmol/L, patient sous noradrénaline 0,3 µg/kg/min.",
+        "question": "En calculant le rapport PVC/PAPO, quelle valeur obtenez-vous et quelle est son interprétation pronostique ?",
+        "options": {
+          "A": "PVC/PAPO = 0,45 → risque faible de DVR post-LVAD ; implantation LVAD seul suffisant",
+          "B": "PVC/PAPO = 0,64 → risque élevé de DVR post-LVAD ; justifie une discussion pluridisciplinaire pour stratégie d'assistance biventriculaire d'emblée ou monitoring VD renforcé péri-opératoire",
+          "C": "PVC/PAPO = 0,84 → insuffisance ventriculaire gauche prédominante ; LVAD seul suffit pour corriger la DVR",
+          "D": "PVC/PAPO = 1,2 → contre-indication absolue à tout dispositif d'assistance mécanique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : PVC/PAPO = 18/28 = 0,64, légèrement supérieur au seuil de 0,63 — validé comme prédicteur de DVR post-LVAD dans les études de Kormos et al. Ce seuil, associé à une dépendance vasopressive préopératoire et une créatinine élevée, place ce patient en catégorie à haut risque de DVR nécessitant une discussion pour BiVAD d'emblée ou monitorage VD intensif péri-opératoire (cathéter de Swan-Ganz, ETO per-opératoire). Piège A : calcul erroné (0,45 serait 12/28 ou 18/40) — erreur arithmétique de distraction ; de plus, 0,45 < 0,63 serait rassurant mais n'est pas le résultat correct ici. Piège C : calcul erroné (0,84 = 18/21 ≠ 18/28) et interprétation inversée — une PVC/PAPO élevée reflète une dysfonction VD prédominante et NON pas une IVG prédominante. Piège D : il n'existe pas de valeur de PVC/PAPO constituant une contre-indication absolue ; le seuil de décision est 0,63 et oriente vers une surveillance renforcée, non une contre-indication."
+      }
+    ]
   }
 ]
