@@ -6646,5 +6646,414 @@
         "explanation": "Réponse B correcte : PVC/PAPO = 18/28 = 0,64, légèrement supérieur au seuil de 0,63 — validé comme prédicteur de DVR post-LVAD dans les études de Kormos et al. Ce seuil, associé à une dépendance vasopressive préopératoire et une créatinine élevée, place ce patient en catégorie à haut risque de DVR nécessitant une discussion pour BiVAD d'emblée ou monitorage VD intensif péri-opératoire (cathéter de Swan-Ganz, ETO per-opératoire). Piège A : calcul erroné (0,45 serait 12/28 ou 18/40) — erreur arithmétique de distraction ; de plus, 0,45 < 0,63 serait rassurant mais n'est pas le résultat correct ici. Piège C : calcul erroné (0,84 = 18/21 ≠ 18/28) et interprétation inversée — une PVC/PAPO élevée reflète une dysfonction VD prédominante et NON pas une IVG prédominante. Piège D : il n'existe pas de valeur de PVC/PAPO constituant une contre-indication absolue ; le seuil de décision est 0,63 et oriente vers une surveillance renforcée, non une contre-indication."
       }
     ]
+  },
+  {
+    "date": "2026-06-16",
+    "dateStr": "mardi 16 juin",
+    "topic": "Prise en charge du patient en arrêt cardiaque réfractaire sous ECMO (ECPR) : critères de sélection, délais d'implantation, gestion peropératoire de la canulation et soins post-arrêt en réanimation",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "L'ECPR (Extra-Corporeal Cardio-Pulmonary Resuscitation) représente une option de sauvetage pour les arrêts cardiaques réfractaires sélectionnés, avec des taux de survie neurologique favorable atteignant 15-30% dans des centres entraînés. Sa mise en œuvre exige une organisation millimétrée — délais stricts, sélection rigoureuse, équipe dédiée — car toute erreur de sélection ou de délai compromet le bénéfice attendu et expose à des complications dévastatrices.",
+      "sections": [
+        {
+          "title": "Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'**ECPR** désigne l'utilisation d'une **ECMO veino-artérielle (VA-ECMO)** implantée en urgence pendant la réanimation cardio-pulmonaire (RCP) d'un arrêt cardiaque réfractaire, dans le but d'assurer une perfusion d'organes pendant la recherche et le traitement de la cause réversible."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Arrêt cardiaque réfractaire (ACR)** : absence de retour en circulation spontanée (RACS) après ≥ 20 minutes de RCP bien conduite avec au moins 3 chocs électriques (si FV/TV sans pouls) et adrénaline",
+                "**ECMO VA** : circuit bypasse cœur et poumons ; canule veineuse en OD (drainage), canule artérielle en artère fémorale (réinjection) ; débit cible 2,2–2,5 L/min/m²",
+                "**No-flow** : durée entre l'effondrement et le début du MCE — pronostic majeur",
+                "**Low-flow** : durée entre le début du MCE et le démarrage de l'ECMO — second déterminant pronostique majeur",
+                "**RACS** : retour en circulation spontanée défini par pouls palpable ou PA systolique ≥ 60 mmHg pendant ≥ 20 minutes sans MCE"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas confondre ECMO VA (ECPR) et ECMO VV : l'ECMO VV n'assiste que les échanges gazeux sans soutien hémodynamique — elle n'a AUCUNE place dans l'ACR réfractaire."
+            },
+            {
+              "type": "formula",
+              "content": "Débit ECMO cible en ECPR : 4–6 L/min (adulte standard) — viser SvO₂ ≥ 70% sur sang veineux de la canule de drainage comme marqueur d'adéquation du débit"
+            }
+          ]
+        },
+        {
+          "title": "Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "Lors d'un ACR, le **MCE conventionnel** ne délivre que 20–30% du débit cardiaque normal, engendrant une **ischémie-reperfusion progressive** des organes nobles. L'ECPR restaure un débit pulsatile (partiel) ou continu, limitant les lésions d'ischémie cérébrale et myocardique et permettant de gagner du temps pour traiter la cause."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Bénéfice principal** : restauration d'un débit perfusant (cerveau, coronaires, reins) pendant le traitement de la cause réversible (IDM, EP massive, intoxication, hypothermie)",
+                "**Syndrome post-arrêt cardiaque (SPAC)** : dysfonction myocardique, réponse inflammatoire systémique, dysfonction cérébrale — l'ECMO VA soutient la phase de récupération myocardique",
+                "**Phénomène d'Harlequin (syndrome mixte)** : en cas de BPCO/SDRA associé, le sang oxygéné par l'ECMO est réinjecté en artère fémorale et remonte de façon rétrograde ; si le VG récupère partiellement, le sang éjecté (pauvre en O₂) peut perfuser coronaires et cerveau — risque de désaturation coronarienne et cérébrale",
+                "**Augmentation de la postcharge VG** : la réinjection rétrograde en aorte augmente la postcharge, pouvant aggraver une distension VG et majorer les lésions myocardiques — indication à un dispositif de décharge (Impella, IABP) si distension",
+                "**Syndrome inflammatoire lié au circuit** : activation du complément, des polynucléaires, thrombogénèse — justifie l'anticoagulation précoce"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Le phénomène d'Harlequin est sous-diagnostiqué : surveiller systématiquement la SpO₂ au membre supérieur droit (reflet de la perfusion coronarienne et cérébrale) et non aux membres inférieurs seuls."
+            }
+          ]
+        },
+        {
+          "title": "Évaluation / Critères de sélection",
+          "items": [
+            {
+              "type": "text",
+              "content": "La sélection des candidats est le facteur pronostique modifiable le plus important. Des critères stricts permettent d'éviter une ECPR futile (ressources épuisées, complications majeures sans bénéfice) ou inappropriée. Les **scores CAHP**, **SAVE** et **MIRACLE2** aident à objectiver le pronostic mais ne remplacent pas le jugement clinique d'équipe."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Critères d'inclusion généraux** (consensus ELSO 2023 / SFAR 2022) :",
+                "— Âge : 18–70 ans (limite relative, certains centres jusqu'à 75 ans selon comorbidités)",
+                "— Rythme initial choquable (FV/TV sans pouls) ou FV réfractaire — meilleur pronostic ; asystolie/AESP acceptée si cause réversible identifiée",
+                "— **No-flow ≤ 5 minutes** (ou no-flow nul si témoin avec MCE immédiat)",
+                "— **Low-flow ≤ 60 minutes** au moment de la canulation (idéalement ≤ 45 min)",
+                "— RCP bien conduite (MCE mécanique ou qualité vérifiée), ventilation assurée",
+                "— Cause potentiellement réversible identifiée ou fortement suspectée (SCA, EP, intoxication médicamenteuse, hypothermie profonde < 30°C, myocardite fulminante)",
+                "— EtCO₂ ≥ 10 mmHg pendant la RCP (marqueur indirect de qualité du MCE et de perfusion résiduelle)",
+                "**Critères d'exclusion absolus** :",
+                "— No-flow > 10 minutes sans témoins ni MCE immédiat",
+                "— Low-flow > 60 minutes (relative, selon équipe et centre)",
+                "— Comorbidités sévères : cancer métastatique, cirrhose Child C, insuffisance rénale chronique terminale, démence sévère",
+                "— Contre-indication à l'anticoagulation (hémorragie active massive intracrânienne)",
+                "— Traumatisme incompatible avec la survie"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Score CAHP (Cardiac Arrest Hospital Prognosis) : calculé à partir de l'âge, du lieu de l'arrêt, du no-flow, du low-flow, du pH initial et de l'adrénaline administrée — Score ≤ 150 associé à survie > 20% ; score > 200 associé à pronostic très sombre (survie < 5%)"
+            },
+            {
+              "type": "formula",
+              "content": "EtCO₂ pendant RCP : seuil de ≥ 10 mmHg requis pour poursuivre la RCP et envisager l'ECPR — valeur < 10 mmHg persistante après 20 min = marqueur de futilité (Grade 2C, ESC/ERC 2021)"
+            },
+            {
+              "type": "warning",
+              "content": "L'hypothermie profonde (< 30°C) est une INDICATION élective d'ECPR même avec des no-flow et low-flow longs : 'pas de mort avant d'être réchauffé et mort'. Ne pas appliquer les critères standards de low-flow à ces patients."
+            }
+          ]
+        },
+        {
+          "title": "Stratégie de prise en charge — Organisation et Délais",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'efficacité de l'ECPR repose sur une **organisation préhospitalière et intra-hospitalière parfaitement codifiée**, avec des délais stricts et une activation précoce de l'équipe ECMO dès l'identification d'un ACR potentiellement éligible (idéalement dès l'appel du SAMU)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Activation de l'équipe ECMO** : dès ≥ 10 min de RCP sans RACS sur rythme choquable avec cause réversible suspectée — ne pas attendre le critère de 20 minutes pour alerter",
+                "**Transport médicalisé** : MCE mécanique (LUCAS®, AutoPulse®) obligatoire pendant le transport pour maintenir la qualité du MCE et libérer les mains",
+                "**Objectif délai canulation** : démarrage de l'ECMO ≤ 60 min après le début de l'ACR (low-flow ≤ 60 min) — chaque minute supplémentaire aggrave le pronostic neurologique",
+                "**Accès vasculaire** : canulation fémorale percutanée bilatérale sous échoguidage — artère fémorale droite (canule artérielle 15–17 Fr) + veine fémorale droite ou gauche (canule veineuse 21–23 Fr)",
+                "**Technique de canulation** : technique de Seldinger modifiée — vérification par ETO ou EFAST peropératoire de la position de la canule veineuse (tip en jonction VCI-OD)",
+                "**MCE pendant la canulation** : ne jamais interrompre le MCE mécanique lors de la mise en place des guides et des canules — risque d'extension de low-flow",
+                "**Héparinisation** : bolus d'héparine non fractionnée **50–100 UI/kg IV** (ou 5000 UI si impossibilité de peser) au moment de la canulation artérielle — avant le démarrage du circuit",
+                "**Démarrage circuit** : montée progressive du débit en 1–2 minutes ; cible débit 4–6 L/min ; arrêt du MCE une fois débit stable ≥ 2 L/min avec retour d'une pulsatilité"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Calibre des canules : veineuse 21–23 Fr (drainage OD-VCI), artérielle 15–17 Fr (réinjection aorto-iliaque) — canule de reperfusion du membre (7 Fr en artère fémorale superficielle homolatérale) systématique pour prévenir l'ischémie de membre"
+            },
+            {
+              "type": "warning",
+              "content": "La canule de reperfusion du membre inférieur (dérivation de la canule artérielle vers la fémorale superficielle) est souvent oubliée en urgence — son absence est la première cause d'ischémie aiguë de membre sous ECMO, complication grave mais évitable."
+            }
+          ]
+        },
+        {
+          "title": "Gestion peropératoire de la canulation",
+          "items": [
+            {
+              "type": "text",
+              "content": "La canulation percutanée en ECPR est réalisée dans des conditions d'urgence extrême, sans anesthésie générale préalable (patient en ACR). La gestion peropératoire vise à optimiser le positionnement des canules, prévenir les complications immédiates et assurer la transition vers une réanimation organisée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Guidage échographique** : obligatoire — echo fémorale pour ponction vasculaire (évite l'artère fémorale profonde, les bifurcations), ETO pour vérification position canule veineuse",
+                "**Vérification de position** :",
+                "— Canule veineuse : tip à la jonction VCI-OD (non en OD, risque de trouble du rythme ; non en VCS, drainage insuffisant)",
+                "— Canule artérielle : tip en artère iliaque commune ou aorte basse — vérification par repère anatomique (bifurcation iliaque au niveau L4-L5) ou ETO",
+                "**Gestion de l'anticoagulation peropératoire** : objectif TCA 60–80 sec (ou ACT 180–220 sec si disponible) — contrôle 30 min après l'héparine initiale",
+                "**Prévention ischémie de membre** : mise en place immédiate canule de reperfusion 7 Fr dans artère fémorale superficielle ou poplitée — vérifier pouls pédieux et tibial postérieur par Doppler dans l'heure suivante",
+                "**Débit initial** : 4–6 L/min pour adulte de taille standard — adapter selon SvO₂ drainage (cible ≥ 70%), lactates et pression pulsée",
+                "**Gestion du débit O₂ (FdO₂ et sweep gas)** : FiO₂ balayage 1,0 initialement ; sweep gas (débit de balayage) 4–6 L/min pour assurer décarboxylation — ajuster sur PaCO₂ (cible 35–45 mmHg)",
+                "**Température** : refroidissement actif déconseillé dans les premières heures si reprise d'activité cardiaque — attendre la stabilisation (cf. soins post-arrêt)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "En cas de ponction artérielle accidentelle de l'artère fémorale profonde ou de la fémorale commune avec introducteur large (> 10 Fr), ne pas retirer immédiatement : le faire sous contrôle chirurgical ou par compression prolongée guidée écho pour éviter l'hématome rétropéritonéal massif."
+            }
+          ]
+        },
+        {
+          "title": "Soins post-arrêt en réanimation sous ECMO",
+          "items": [
+            {
+              "type": "text",
+              "content": "La phase de réanimation post-ECPR intègre simultanément le traitement de la cause déclenchante, la prévention du **syndrome post-arrêt cardiaque (SPAC)**, la neuroprotection et la gestion du circuit ECMO. Ces objectifs sont interdépendants et doivent être poursuivis en parallèle dès l'admission en réanimation."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Traitement de la cause** (priorité absolue) :",
+                "— SCA avec sus-décalage ST : coronarographie ± angioplastie primaire dans les 2h (possible sous ECMO — technique adaptée, radiale ou fémorale controlatérale)",
+                "— EP massive : thrombolyse (risque hémorragique acceptable sous ECMO si bénéfice/risque favorable) ou embolectomie chirurgicale sous ECMO",
+                "— Intoxication : antidote spécifique, épuration extra-rénale si indiqué",
+                "— Hypothermie : réchauffement par ECMO (circuit réchauffeur) jusqu'à 36–37°C",
+                "**Neuroprotection — contrôle thermique ciblé (TTM)** :",
+                "— La normothermie (36–37°C) est désormais recommandée en première intention (données HYPERION 2019, TTM2 trial 2021)",
+                "— Eviter la fièvre (> 37,5°C) activement pendant 72h — recommandation forte",
+                "— L'hypothermie modérée (32–34°C) reste une option dans certains sous-groupes (rythme initial choquable, jeune adulte) — à discuter en équipe",
+                "**Hémodynamique cible** : PAM ≥ 65–70 mmHg (certains experts ciblent ≥ 70–80 mmHg pour la perfusion cérébrale en post-ACR) — titrer avec noradrénaline si besoin",
+                "**Débit ECMO** : adapter pour maintenir SvO₂ ≥ 70% et lactates décroissants ; diminuer progressivement ('weaning') si récupération myocardique — critères : ITV sous-aortique ≥ 10 cm, fraction d'éjection ≥ 20–25%, stabilité hémodynamique à débit réduit (2 L/min)",
+                "**Anticoagulation** : HNF IV à la seringue — objectif TCA 60–80 sec ou anti-Xa 0,3–0,5 UI/mL — contrôle toutes les 6h — risque hémorragique vs thrombotique à équilibrer quotidiennement",
+                "**Ventilation protectrice** : Vt 6 mL/kg poids idéal, Pplat < 30 cmH₂O, PEEP 5–8 cmH₂O — FiO₂ adaptée pour SpO₂ 94–98% et PaO₂ 75–100 mmHg (hyperoxie à éviter en post-ACR)",
+                "**Contrôle glycémique** : cible 7,8–10 mmol/L (140–180 mg/dL) — éviter hypoglycémie et hyperglycémie sévère",
+                "**Surveillance neurologique** : EEG continu dans les 24–48h (dépistage NCSE), potentiels évoqués somesthésiques à J3, NSE à J48–72h — ne pas pronostiquer avant 72h minimum sous TTM",
+                "**Imagerie cérébrale** : scanner cérébral systématique à l'admission (éliminer hémorragie intracrânienne contre-indiquant l'anticoagulation) et à J3–5"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Critères de sevrage ECMO (weaning) : débit réduit à 1,5–2 L/min + FEVG ≥ 20–25% + ITV sous-aortique ≥ 10 cm + PAM ≥ 65 mmHg sans augmentation des catécholamines + SvO₂ stable ≥ 70% — test à débit minimal 30 minutes avant explantation"
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas administrer de bicarbonates pour corriger l'acidose lactique de résidu de RCP : l'acidose se corrige par l'amélioration de la perfusion sous ECMO. Les bicarbonates aggravent l'hypercapnie et peuvent augmenter le CO₂ intracellulaire — indication réservée à pH < 7,10 avec instabilité hémodynamique sévère résistante."
+            }
+          ]
+        },
+        {
+          "title": "Complications et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications de l'ECPR sont fréquentes (30–70% des patients), graves et nécessitent une surveillance protocolisée. Elles se divisent en complications du circuit, complications vasculaires et complications systémiques liées au SPAC."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Ischémie de membre inférieur** (15–20%) : pouls Doppler + SpO₂ locale toutes les 4h ; traitement : canule de reperfusion si absente, revascularisation chirurgicale si nécrose, amputation en dernier recours",
+                "**Hémorragie** (20–40%) : sites de ponction, hémorragie rétropéritonéale, hémothorax — réduire objectif TCA si saignement actif (TCA 50–60 sec) ; transfusion : seuil Hb < 7 g/dL (< 9 g/dL si ischémie myocardique)",
+                "**Thrombose du circuit** : surveillance visuelle du circuit (caillots dans la tête de pompe, échangeur), mesure de la pression transmembranaire — échange de circuit si thrombose confirmée",
+                "**Distension VG et œdème pulmonaire** : ITV sous-aortique effondrée + épanchement pleural + infiltrats — traitement : Impella CP® (décharge mécanique), IABP, voire septostomie atriale ou canulation veineuse OG directe",
+                "**Syndrome d'Harlequin** : SpO₂ main droite < 92% avec PaO₂ artère radiale basse — traitement : augmenter la FiO₂ ventilateur, ajouter une canule de réinjection en artère sous-clavière ou aorte ascendante (configuration VAV), ou convertir en Impella + ECMO VV",
+                "**CIVD** (20–30%) : monitoring fibrinogène, plaquettes, TP/TCA, D-dimères — traitement substitutif (PFC, fibrinogène, plaquettes) ; considérer acide tranexamique si fibrinolyse documentée",
+                "**Insuffisance rénale aiguë** (50–70%) : KDIGO ≥ stade 2 fréquent — hémofiltration continue possible sur circuit ECMO ou séparément ; débuter si oligurie persistante, hyperhydratation ou acidose métabolique réfractaire",
+                "**Infections liées au circuit** : bactériémies à S. aureus ou BGN — hémocultures systématiques à J3 et si pic thermique ; antibiothérapie probabiliste à discuter selon contexte"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Seuil transfusionnel sous ECMO : Hb cible ≥ 7 g/dL (population générale) ou ≥ 9 g/dL si ischémie myocardique active ou dysfonction VG sévère — plaquettes cible ≥ 80 G/L si hémorragie ou procédure invasive, ≥ 50 G/L en l'absence de saignement actif"
+            },
+            {
+              "type": "warning",
+              "content": "La distension VG sous ECMO VA est un cercle vicieux : l'augmentation de postcharge réduit la vidange VG, distend la chambre et aggrave l'œdème pulmonaire malgré un bon débit ECMO — surveiller systématiquement l'ITV sous-aortique et l'aspect du VG à l'échocardiographie quotidienne."
+            }
+          ]
+        },
+        {
+          "title": "Recommandations clés (avec grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ERC/ESICM 2021 (Grade 2C)** : ECPR peut être envisagée pour les ACR réfractaires avec cause potentiellement réversible dans des centres entraînés — evidence insuffisante pour recommandation forte universelle",
+                "**ELSO Guidelines 2022 (Grade 1B)** : activation précoce de l'équipe ECMO dès 10–15 min de RCP sur rythme choquable sans RACS ; low-flow cible ≤ 60 min",
+                "**SFAR/SRLF 2022 — Recommandations de bonne pratique** : MCE mécanique recommandé pendant le transport des patients potentiellement éligibles à l'ECPR (Grade 1+) ; canulation fémorale percutanée sous échoguidage recommandée (Grade 1+)",
+                "**ESC 2023 (ACS guidelines, Grade IC)** : coronarographie en urgence recommandée chez les survivants d'ACR avec sus-décalage ST persistant — à discuter sous ECMO selon faisabilité",
+                "**Essai ARREST (Yannopoulos, NEJM 2020)** : ECPR vs RCP conventionnelle dans les ACR extra-hospitaliers sur FV réfractaire — survie à 6 mois : 43% ECPR vs 7% conventionnel (arrêt prématuré pour bénéfice, n=30 — données préliminaires)",
+                "**Essai PRAGUE OHCA (Belohlavek, NEJM 2022)** : ECPR (n=124) vs standard (n=132) — survie neurologique favorable à 180j : 32% vs 22% (p=0,09 — différence non significative mais tendance) — sous-groupe FV : bénéfice plus marqué",
+                "**TTM2 Trial (Dankiewicz, NEJM 2021)** : normothermie (37°C) non inférieure à hypothermie (33°C) pour la survie neurologique post-ACR — normothermie recommandée en standard, hypothermie optionnelle",
+                "**Recommandation consensus ECMO distension VG (Extracorporeal Life Support Organization 2022)** : décharge VG (Impella, IABP ou autre) recommandée si distension VG documentée sous ECMO VA (Grade 2B)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Les essais ARREST et PRAGUE OHCA ont des effectifs limités et des biais de sélection importants : ne pas extrapoler leurs résultats à tous les ACR réfractaires. L'ECPR reste une technique de centre expert, non généralisable sans formation et organisation adaptées."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Sélection = clé du succès** : no-flow ≤ 5 min, low-flow ≤ 60 min (idéalement ≤ 45 min), cause réversible identifiée, EtCO₂ ≥ 10 mmHg — tout patient hors critères exposé à une ECPR futile avec complications majeures",
+        "**Activation précoce** : alerter l'équipe ECMO dès 10–15 min de RCP sans RACS sur rythme choquable — ne pas attendre 20 min pour activer la filière, car chaque minute de low-flow supplémentaire aggrave irrémédiablement le pronostic neurologique",
+        "**Canule de reperfusion systématique** : 7 Fr dans l'artère fémorale superficielle homolatérale à la canule artérielle — à mettre en place immédiatement, sa omission est la première cause d'ischémie aiguë de membre sous ECMO",
+        "**Surveillance du phénomène d'Harlequin** : mesurer SpO₂ et gazométrie au membre supérieur droit (artère radiale droite) — une saturation basse en position proximale avec débit ECMO adéquat signe ce syndrome et impose une modification de la configuration du circuit",
+        "**Pronostic neurologique : pas de décision avant 72h** : sous ECMO et après TTM, les marqueurs précoces (réflexes du tronc, EEG) sont peu fiables — attendre EEG 24–48h, PESS et NSE à J3 avant toute limitation thérapeutique"
+      ],
+      "references": [
+        "Yannopoulos D et al. — Advanced reperfusion strategies for patients with out-of-hospital cardiac arrest and refractory ventricular fibrillation (ARREST) — Lancet 2020",
+        "Belohlavek J et al. — Extracorporeal cardiopulmonary resuscitation for refractory out-of-hospital cardiac arrest (PRAGUE OHCA) — NEJM 2022",
+        "Dankiewicz J et al. — Hypothermia versus Normothermia after Out-of-Hospital Cardiac Arrest (TTM2 Trial) — NEJM 2021",
+        "Extracorporeal Life Support Organization (ELSO) — ELSO Guidelines for Adult Cardiac Failure — Version 1.4, 2022",
+        "Brodie D, Slutsky AS, Combes A — Extracorporeal Life Support for Adults with Respiratory Failure and Related Indications — JAMA 2019 (référence fondatrice)",
+        "SFAR/SRLF — Prise en charge de l'arrêt cardiaque réfractaire et ECPR — Recommandations de bonne pratique 2022",
+        "Soar J et al. — European Resuscitation Council Guidelines 2021 — Resuscitation 2021",
+        "Ouweneel DM et al. — Impella CP versus intra-aortic balloon pump in STEMI complicated by cardiogenic shock (IMPRESS) — JACC 2017 (référence décharge VG)",
+        "Overtchouk P et al. — Score CAHP : prédiction de la survie après arrêt cardiaque extra-hospitalier — European Heart Journal 2020",
+        "Lorusso R et al. — Venoarterial extracorporeal membrane oxygenation for refractory cardiogenic shock: evidence, indications and complications — European Heart Journal 2021"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un homme de 58 ans est pris en charge pour ACR extra-hospitalier sur FV réfractaire. No-flow estimé à 3 min (témoins présents, MCE immédiat). Le SMUR arrive à 12 min et débute la RCP médicalisée. À 35 min de low-flow, la décision d'ECPR est prise. L'équipe ECMO est alertée.",
+        "question": "Quelle est la valeur seuil d'EtCO₂ pendant la RCP en dessous de laquelle la poursuite de la RCP et l'indication d'ECPR doivent être remises en question selon les recommandations ERC 2021 ?",
+        "options": {
+          "A": "5 mmHg",
+          "B": "10 mmHg",
+          "C": "15 mmHg",
+          "D": "20 mmHg"
+        },
+        "correct": "B",
+        "explanation": "La valeur seuil est 10 mmHg (ERC 2021, Grade 2C). Un EtCO₂ persistamment < 10 mmHg après 20 min de RCP est un marqueur de perfusion insuffisante et de futilité. Piège A : 5 mmHg est trop bas, cette valeur correspond à un état quasi-agonal où toute réanimation est futile, mais le seuil de décision clinique est conventionnellement fixé à 10 mmHg. Piège C : 15 mmHg est souvent cité dans certains anciens textes pour définir un 'bon' MCE, mais n'est pas le seuil décisionnel d'arrêt des manœuvres ou d'indication d'ECPR. Piège D : 20 mmHg est une valeur associée à une bonne qualité de MCE et est parfois utilisée comme critère pronostique favorable, mais n'est pas le seuil de futilité."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Vous implantez une ECMO VA fémorale en ECPR chez une femme de 52 ans. Après démarrage du circuit à 5 L/min, vous constatez une SpO₂ à 99% à l'orteil gauche mais une SpO₂ à 84% au pouce droit, confirmée par une gazométrie radiale droite montrant une PaO₂ à 52 mmHg alors que la gazométrie sur la canule de drainage montre une SvO₂ à 80%.",
+        "question": "Quel est le diagnostic et la première mesure thérapeutique adaptée ?",
+        "options": {
+          "A": "Thrombose de la canule artérielle — échange de circuit",
+          "B": "Phénomène d'Harlequin — augmenter la FiO₂ du ventilateur et envisager une configuration VAV",
+          "C": "Pneumothorax compressif gauche — drainage thoracique en urgence",
+          "D": "Malposition de la canule veineuse en VCS — repositionnement sous scopie"
+        },
+        "correct": "B",
+        "explanation": "Le phénomène d'Harlequin (ou syndrome différentiel) est caractérisé par une hypoxémie des territoires proximaux (couronne céphalique, coronaires) malgré un bon débit ECMO — ici SpO₂ élevée aux membres inférieurs (sang ECMO oxygéné) mais basse au membre supérieur droit (sang éjecté par le VG partiel, hyposaturé car poumons défaillants). La première mesure est d'augmenter la FiO₂ et le Vt du ventilateur pour améliorer l'oxygénation du sang éjecté par le VG ; si insuffisant, ajouter une canule de réinjection en artère sous-clavière/axillaire droite ou convertir en configuration VA+V. Piège A : la thrombose de la canule artérielle se manifesterait par une baisse du débit et une alarme de pression, pas par une désaturation distale sélective. Piège C : un pneumothorax compressif est possible en post-RCP mais n'explique pas l'asymétrie SpO₂ main droite vs orteil. Piège D : une malposition veineuse en VCS réduirait le drainage mais n'expliquerait pas ce pattern asymétrique haut/bas."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un patient de 45 ans est sous ECMO VA en ECPR depuis 18h après ACR sur IDM antérieur. Le débit ECMO est de 4,5 L/min. L'échocardiographie montre un VG dilaté, une FEVG à 10%, une valve aortique ne s'ouvrant plus, et un œdème pulmonaire radiologique croissant malgré la diurèse.",
+        "question": "Quel est le mécanisme principal de cette aggravation et quelle est la prise en charge de première ligne recommandée ?",
+        "options": {
+          "A": "Tamponnade péricardique post-RCP — péricardiocentèse en urgence",
+          "B": "Distension VG par augmentation de postcharge — décharge mécanique VG par Impella ou IABP",
+          "C": "Thrombose veineuse de la canule de drainage — remplacement de la canule veineuse",
+          "D": "SDRA sur inhalation — augmentation de la PEEP à 15 cmH₂O"
+        },
+        "correct": "B",
+        "explanation": "La distension VG sous ECMO VA est due à l'augmentation de la postcharge induite par la réinjection rétrograde en aorte : le VG déjà défaillant ne peut éjecter contre cette pression majorée, la valve aortique ne s'ouvre plus (critère échographique clé), le VG se distend et la pression capillaire pulmonaire s'élève causant l'œdème. La décharge mécanique (Impella CP de première intention, ou IABP en alternative) réduit le volume télédiastolique VG et la pression télédiastolique, soulageant l'œdème pulmonaire. Piège A : la tamponnade est possible après RCP mais se manifeste par un effondrement du débit ECMO et une compression biventriculaire, pas par une non-ouverture isolée de la valve aortique avec VG dilaté. Piège C : la thrombose veineuse réduirait le débit ECMO (alarme, cavitation) mais n'expliquerait pas la distension VG. Piège D : augmenter la PEEP n'est pas la réponse à une distension VG liée à la postcharge et pourrait aggraver le retour veineux."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Homme de 32 ans retrouvé en hypothermie profonde (température rectale 26°C) en FV lors d'une randonnée en montagne. No-flow inconnu (estimé > 15 min), low-flow actuel 55 min.",
+        "question": "Quelle est l'attitude correcte concernant l'ECPR dans ce contexte spécifique ?",
+        "options": {
+          "A": "ECPR contre-indiquée car no-flow inconnu et probablement > 10 min",
+          "B": "ECPR contre-indiquée car température < 28°C — attendre réchauffement externe avant décision",
+          "C": "ECPR indiquée malgré les critères de no-flow/low-flow habituels car l'hypothermie profonde est une indication élective avec principe 'pas de mort avant d'être réchauffé'",
+          "D": "ECPR contre-indiquée car low-flow > 45 min — appliquer les critères standard"
+        },
+        "correct": "C",
+        "explanation": "L'hypothermie profonde (< 30°C) est une indication ÉLECTIVE d'ECPR, indépendamment des critères habituels de no-flow et low-flow. Le refroidissement profound ralentit drastiquement le métabolisme cérébral (réduction de 6-7% de la consommation d'O₂ par degré Celsius) et confère une neuroprotection majeure, permettant des durées de no-flow et low-flow tolérables bien supérieures aux normes de l'ACR normotherme. L'ECMO assure le réchauffement actif (réchauffeur de circuit). Le principe international est : 'no one is dead until warm and dead'. Piège A : le no-flow inconnu est souvent invoqué pour récuser ces patients mais est erroné en contexte hypothermique. Piège B : il n'existe pas de seuil de température pour attendre avant l'ECPR en hypothermie — au contraire, c'est l'indication de la cannulation pour le réchauffement. Piège D : les critères standard de low-flow ne s'appliquent pas en hypothermie profonde."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patiente de 48 ans, ECPR pour ACR sur intoxication médicamenteuse (tricycliques). Elle est maintenant stable sous ECMO VA depuis 6h, débit 4 L/min, noradrénaline 0,3 μg/kg/min. À l'échocardiographie : FEVG 35%, ITV sous-aortique 12 cm, valve aortique s'ouvrant à chaque cycle. Le test de réduction de débit à 2 L/min depuis 30 min montre une stabilité hémodynamique avec PA 75/45 mmHg.",
+        "correct": "B",
+        "question": "Quelle est la décision la plus adaptée concernant la poursuite de l'ECMO ?",
+        "options": {
+          "A": "Maintenir l'ECMO au débit actuel pendant 48h supplémentaires pour consolider la récupération myocardique",
+          "B": "Procéder au sevrage et à l'explantation de l'ECMO — les critères de weaning sont réunis",
+          "C": "Augmenter le débit ECMO à 5,5 L/min car la FEVG < 40% est insuffisante pour envisager le sevrage",
+          "D": "Ajouter un Impella CP avant le sevrage ECMO pour sécuriser la transition"
+        },
+        "explanation": "Les critères de sevrage ECMO sont réunis : FEVG ≥ 20–25% (ici 35%), ITV sous-aortique ≥ 10 cm (ici 12 cm — témoin d'une éjection efficace), valve aortique s'ouvrant (absence de distension VG), hémodynamique stable après 30 min à débit réduit (2 L/min). L'intoxication aux tricycliques a une résolution attendue une fois le toxique métabolisé — procéder à l'explantation est correct. Piège A : prolonger inutilement l'ECMO augmente le risque de complications (saignement, ischémie, infection) sans bénéfice prouvé si les critères de sevrage sont atteints. Piège C : la FEVG seuil pour le sevrage est ≥ 20–25%, pas 40% — une FEVG à 35% est suffisante si les autres critères sont réunis. Piège D : l'Impella n'est pas indiqué ici — il est utilisé pour la décharge d'un VG distenu sous ECMO, pas comme pont systématique au sevrage."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Un patient est sous ECMO VA depuis 24h en post-ECPR. À J1, le bilan biologique montre : fibrinogène 0,8 g/L, TP 35%, plaquettes 45 G/L, D-dimères 15 000 ng/mL, TCA ratio 2,8 (héparine IV en cours, objectif TCA 60–80 sec).",
+        "question": "Quelle est la prise en charge la plus adaptée de ce bilan ?",
+        "options": {
+          "A": "Arrêter immédiatement l'héparine et administrer du sulfate de protamine",
+          "B": "Augmenter le débit d'héparine car le TCA élevé suggère une sous-anticoagulation paradoxale par consommation",
+          "C": "Substitution par fibrinogène (cible ≥ 1,5 g/L), PFC et plaquettes (cible ≥ 50 G/L) — maintenir l'héparinisation à dose adaptée pour objectif TCA 50–60 sec en contexte hémorragique",
+          "D": "Administrer de l'acide tranexamique 1g IV et arrêter l'héparine définitivement"
+        },
+        "correct": "C",
+        "explanation": "Ce tableau est une CIVD de consommation (fibrinogène effondré, TP bas, thrombopénie, D-dimères élevés, TCA allongé par consommation des facteurs — pas uniquement par l'héparine). La prise en charge est substitutive : fibrinogène concentré pour cible ≥ 1,5 g/L (seuil hémostatique sous ECMO), PFC pour les facteurs de coagulation, plaquettes pour cible ≥ 50 G/L (≥ 80 G/L si saignement actif). L'héparinisation doit être maintenue (risque de thrombose du circuit) mais avec objectif TCA réduit à 50–60 sec. Piège A : arrêter l'héparine sans substitution exposerait à la thrombose du circuit ECMO, catastrophique. Piège B : le TCA élevé ici est lié à la CIVD (consommation facteurs) + héparine, pas à une sous-anticoagulation — augmenter l'héparine aggraverait les saignements. Piège D : l'acide tranexamique est indiqué en cas de fibrinolyse documentée (rapport tPA/PAI élevé, test thromboélastographique), pas en CIVD pure de consommation — son utilisation pourrait aggraver la thrombose microvasculaire."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Patient de 61 ans, ECPR pour ACR extra-hospitalier sur FV. À J3 sous ECMO VA et normothermie (37°C), il est sédaté (midazolam + sufentanil). L'EEG montre des bouffées-suppressions sans activité épileptique. La NSE est à 95 μg/L à H48. Les réflexes du tronc sont présents (pupilles réactives, cornéen présent). Le scanner cérébral à J1 était normal.",
+        "question": "Quelle est la décision la plus appropriée concernant le pronostic neurologique ?",
+        "options": {
+          "A": "Pronostic neurologique défavorable établi — limitation thérapeutique raisonnable à J3",
+          "B": "NSE > 60 μg/L à H48 = critère suffisant pour décider d'une limitation thérapeutique immédiate",
+          "C": "Ne pas conclure avant J5 minimum en raison des interférences de la sédation et de l'ECMO sur les marqueurs — compléter par PESS et réévaluation clinique après arrêt sédation",
+          "D": "La NSE à 95 μg/L associée aux bouffées-suppressions EEG est suffisante pour conclure à un pronostic défavorable certain selon les recommandations ERC 2021"
+        },
+        "correct": "C",
+        "explanation": "La pronostication neurologique post-ACR sous ECMO nécessite une approche multimodale et ne doit pas être réalisée avant 72h minimum (recommandations ERC 2021, ESICM). Les bouffées-suppressions peuvent être liées à la sédation (midazolam), pas uniquement à une lésion cérébrale. La NSE à 95 μg/L est préoccupante mais doit être interprétée en tenant compte des interférences (hémolyse liée au circuit ECMO élève faussement la NSE). Les réflexes du tronc présents sont un signe favorable. La décision requiert : EEG sans sédation, PESS à J3, réévaluation clinique, NSE à J72. Piège A : une limitation à J3 serait prématurée — des patients avec NSE élevée récupèrent, notamment sous ECMO où l'hémolyse peut fausser la NSE. Piège B : la NSE seule n'est pas un critère suffisant pour la limitation — son interprétation nécessite d'exclure l'hémolyse (haptoglobine basse, LDH élevé). Piège D : l'ERC 2021 requiert une combinaison de marqueurs concordants et l'absence de facteurs confondants — jamais un seul critère."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Vous préparez la canulation d'un patient en ECPR. À l'échographie fémorale droite, vous visualisez la bifurcation fémorale commune en fémorale superficielle et fémorale profonde à 2 cm en dessous du ligament inguinal.",
+        "question": "Quelle est la stratégie de ponction artérielle optimale ?",
+        "options": {
+          "A": "Ponctionner la fémorale superficielle juste en dessous de la bifurcation pour éviter de monter trop haut",
+          "B": "Ponctionner la fémorale commune au-dessus de la bifurcation, sous guidage échographique temps réel, en évitant la fémorale profonde",
+          "C": "Ponctionner la fémorale commune au pli inguinal sans écho-guidage pour gagner du temps",
+          "D": "Ponctionner l'artère iliaque externe par voie translombaire pour un accès plus direct à l'aorte"
+        },
+        "correct": "B",
+        "explanation": "La ponction doit cibler l'artère fémorale COMMUNE, au-dessus de la bifurcation, sous guidage échographique en temps réel. La fémorale commune offre un calibre suffisant pour la canule artérielle (15–17 Fr) et un support tissulaire adéquat. La ponction doit éviter la bifurcation (risque de pseudoanévrysme et de sténose) et la fémorale profonde (anatomie défavorable pour le passage de la canule vers l'aorte, saignement difficile à comprimer). Piège A : la ponction de la fémorale superficielle est à éviter — son calibre est insuffisant pour les grandes canules et elle se divise rapidement, rendant la compression de l'hémostase difficile. Piège C : l'absence d'écho-guidage augmente significativement le risque de ponction veineuse accidentelle, d'hématome rétropéritonéal et de complications vasculaires — non acceptable en pratique moderne. Piège D : la voie translombaire n'est pas une technique de canulation percutanée d'urgence."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un patient de 55 ans est sous ECMO VA depuis 8h en post-ECPR pour IDM antérieur avec choc cardiogénique. La coronarographie vient d'être réalisée et montre une occlusion thrombotique totale de l'IVA proximale. L'angioplastie primaire avec pose de stent est envisagée.",
+        "question": "Concernant la gestion de l'anticoagulation pour l'angioplastie chez ce patient sous ECMO-VA déjà héparinisé (TCA actuel 72 sec), quelle est l'attitude correcte ?",
+        "options": {
+          "A": "Arrêter l'héparine ECMO pendant l'angioplastie et utiliser uniquement le bivalirudine en bolus intracoronaire",
+          "B": "Vérifier l'ACT (Activated Clotting Time) en salle de cathétérisme et administrer un bolus d'héparine supplémentaire pour cibler un ACT ≥ 250 sec pour l'angioplastie, en maintenant l'anticoagulation ECMO",
+          "C": "Utiliser l'abciximab (anti-GPIIbIIIa) en bolus IV systématique pour optimiser la recanalisation coronarienne",
+          "D": "Suspendre l'anticoagulation ECMO complètement pendant 2h pour réduire le risque hémorragique péri-procédure"
+        },
+        "correct": "B",
+        "explanation": "Pour l'angioplastie sous ECMO, l'anticoagulation doit être maintenue (risque de thrombose du circuit si interruption) et l'ACT doit être mesuré en salle pour atteindre la cible interventionnelle d'ACT ≥ 250 sec (standard interventionnel) — un bolus d'héparine supplémentaire est souvent nécessaire car le patient est déjà héparinisé à dose préventive pour l'ECMO. Le TCA de 72 sec correspond à un ACT approximatif de 180–200 sec, insuffisant pour l'angioplastie. Piège A : le bivalirudine intracoronaire seul est insuffisant pour l'anticoagulation systémique et ne protège pas le circuit ECMO — son utilisation en remplacement de l'héparine systémique pendant l'angioplastie n'est pas la stratégie standard dans ce contexte. Piège C : les anti-GPIIbIIIa augmentent significativement le risque hémorragique sous ECMO (double antiagrégation + anticoagulation) et ne sont pas recommandés en routine dans ce contexte à haut risque. Piège D : suspendre l'anticoagulation ECMO même 2h expose à la thrombose catastrophique du circuit."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Un interne vous demande pourquoi, chez un patient sous ECMO VA depuis 36h post-ECPR, vous prescrivez une FiO₂ de 0,40 au ventilateur alors que le patient a une SpO₂ à 99% et une PaO₂ radiale à 180 mmHg.",
+        "question": "Quelle est la justification physiopathologique correcte de cette limitation de la FiO₂ en post-arrêt cardiaque sous ECMO ?",
+        "options": {
+          "A": "La FiO₂ élevée risque de saturer l'hémoglobine de la canule de réinjection ECMO et de réduire le débit de l'oxygénateur",
+          "B": "L'hyperoxie post-arrêt cardiaque est associée à une aggravation des lésions neurologiques par augmentation du stress oxydatif et de la production de radicaux libres lors de la reperfusion cérébrale",
+          "C": "La FiO₂ > 0,6 favorise les atélectasies de résorption et doit être évitée exclusivement pour protéger le parenchyme pulmonaire, sans lien avec le pronostic neurologique",
+          "D": "Une PaO₂ > 150 mmHg inhibe le réflexe de Hering-Breuer et peut provoquer une apnée centrale irréversible"
+        },
+        "correct": "B",
+        "explanation": "L'hyperoxie post-arrêt cardiaque est délétère neurologiquement : lors de la reperfusion cérébrale, les espèces réactives de l'oxygène (ROS) générées en excès par une PaO₂ élevée aggravent les lésions d'ischémie-reperfusion neuronale (peroxydation lipidique, apoptose, dysfonction mitochondriale). Plusieurs études observationnelles et la méta-analyse de Kilgannon 2011 associent une PaO₂ > 300 mmHg à une surmortalité post-ACR. Les recommandations ERC 2021 ciblent une SpO₂ de 94–98% et une PaO₂ de 75–100 mmHg. Piège A : la saturation de l'hémoglobine dans le circuit ECMO n'est pas affectée par la FiO₂ du ventilateur — la FiO₂ de l'oxygénateur ECMO est indépendante (gaz de balayage propre). Piège C : bien que les atélectasies de résorption soient une vraie préoccupation à FiO₂ élevée, la raison principale de limiter la FiO₂ en post-ACR est neuroprotectrice — explication incomplète et trompeuse. Piège D : le réflexe de Hering-Breuer est un réflexe d'inflation pulmonaire médié par les mécanorécepteurs vagaux, sans rapport avec la PaO₂ — affirmation erronée."
+      }
+    ]
   }
 ]
