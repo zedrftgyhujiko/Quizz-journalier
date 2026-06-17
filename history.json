@@ -7055,5 +7055,364 @@
         "explanation": "L'hyperoxie post-arrêt cardiaque est délétère neurologiquement : lors de la reperfusion cérébrale, les espèces réactives de l'oxygène (ROS) générées en excès par une PaO₂ élevée aggravent les lésions d'ischémie-reperfusion neuronale (peroxydation lipidique, apoptose, dysfonction mitochondriale). Plusieurs études observationnelles et la méta-analyse de Kilgannon 2011 associent une PaO₂ > 300 mmHg à une surmortalité post-ACR. Les recommandations ERC 2021 ciblent une SpO₂ de 94–98% et une PaO₂ de 75–100 mmHg. Piège A : la saturation de l'hémoglobine dans le circuit ECMO n'est pas affectée par la FiO₂ du ventilateur — la FiO₂ de l'oxygénateur ECMO est indépendante (gaz de balayage propre). Piège C : bien que les atélectasies de résorption soient une vraie préoccupation à FiO₂ élevée, la raison principale de limiter la FiO₂ en post-ACR est neuroprotectrice — explication incomplète et trompeuse. Piège D : le réflexe de Hering-Breuer est un réflexe d'inflation pulmonaire médié par les mécanorécepteurs vagaux, sans rapport avec la PaO₂ — affirmation erronée."
       }
     ]
+  },
+  {
+    "date": "2026-06-17",
+    "dateStr": "mercredi 17 juin",
+    "topic": "Prise en charge du syndrome de vasoconstriction cérébrale réversible (SVCR) compliqué en réanimation : diagnostic différentiel avec l'hémorragie sous-arachnoïdienne, stratégie de contrôle tensionnel et gestion des complications ischémiques et hémorragiques",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le syndrome de vasoconstriction cérébrale réversible (SVCR) est une cause sous-diagnostiquée de céphalée thunderclap et d'AVC en réanimation, pouvant mimer parfaitement une hémorragie sous-arachnoïdienne (HSA) anévrysmale. Sa prise en charge est paradoxale : alors que les complications ischémiques dominent le pronostic, les traitements vasodilatateurs classiques sont potentiellement délétères, et le contrôle tensionnel strict reste la pierre angulaire thérapeutique.",
+      "sections": [
+        {
+          "title": "Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **SVCR** est caractérisé par une vasoconstriction segmentaire et diffuse des artères cérébrales de moyen et grand calibre, **réversible spontanément en 1 à 3 mois**, se manifestant typiquement par des **céphalées thunderclap récurrentes** (début < 1 minute, intensité maximale d'emblée) avec ou sans déficit neurologique focal."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Céphalée thunderclap** : intensité maximale atteinte en moins de 60 secondes — critère cardinal, présent dans > 95% des SVCR",
+                "**Vasoconstriction réversible** : normalisation angiographique documentée à 3 mois (critère diagnostique de Call-Fleming)",
+                "**SVCR primaire** : idiopathique (50-60%), souvent post-partum ou post-coïtal",
+                "**SVCR secondaire** : drogues vasoconstrictrices (triptans, ISRS, cocaïne, cannabis, phényléphrine), post-partum, immunosuppresseurs (tacrolimus, ciclosporine), bain/douche froide",
+                "**Critères de Call-Fleming** : céphalée thunderclap + vasoconstriction segmentaire sur angiographie + absence de rupture anévrysmale + résolution à 3 mois"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR : Le SVCR peut être associé à une HSA périmésencéphalique ou corticale (jusqu'à 30% des cas) — la présence de sang sur le scanner NE permet PAS d'éliminer le diagnostic de SVCR et n'impose PAS systématiquement la recherche d'anévrysme en urgence absolue."
+            },
+            {
+              "type": "formula",
+              "content": "Délai de résolution angiographique : vasoconstriction normalisée dans 90-100% des cas à 3 mois (12 semaines) — documenter par ARM ou angio-scanner de contrôle"
+            }
+          ]
+        },
+        {
+          "title": "Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La physiopathologie du SVCR implique une **dysrégulation du tonus vasomoteur cérébral**, avec altération de l'autorégulation et hyperactivité sympathique transitoire. La vasoconstriction est déclenchée par des **stimuli adrénergiques** (effort, orgasme, émotion intense, substances vasoconstrictrices) chez des individus prédisposés (souvent femmes 20-50 ans)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Dysfonction endothéliale** : altération de la production de NO et prostaglandines vasodilatatrices",
+                "**Hyperactivité sympathique** : pic de catécholamines → vasoconstriction artérielle multifocale progressive (proximal → distal)",
+                "**Vague de vasoconstriction** : progression des artères distales vers proximales sur 1-3 semaines — explique l'aggravation paradoxale initiale",
+                "**Rupture de la barrière hémato-encéphalique** : responsable des complications hémorragiques corticales (HSA de surface, HSD cortical)",
+                "**Ischémie par bas débit** : vasoconstriction sévère → infarctus de territoire jonctionnel ou territorial (phase tardive, J7-J21)",
+                "**PRES associé** : dans 10-15% des cas, par hypoperfusion/hyperperfusion alternée — lésions de leucoencéphalopathie postérieure réversible"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ERREUR CONCEPTUELLE : Contrairement à l'HSA anévrysmale, le vasospasme de l'HSA est RÉACTIF (déclenché par le sang sous-arachnoïdien) et survient à J4-J14. Dans le SVCR, la vasoconstriction est PRIMAIRE et PRÉCÈDE toute complication hémorragique — ce renversement chronologique est clé pour le diagnostic."
+            },
+            {
+              "type": "text",
+              "content": "La progression **centripète** (distale → proximale) de la vasoconstriction explique que l'angiographie peut être **normale dans les 4-5 premiers jours** alors que les symptômes sont déjà présents — un angio-TDM ou ARM négatif précoce n'élimine pas le diagnostic."
+            }
+          ]
+        },
+        {
+          "title": "Évaluation / Diagnostic — Différentiel HSA anévrysmale",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le diagnostic de SVCR est **clinico-radiologique** : il repose sur la combinaison d'une présentation clinique typique (céphalées thunderclap récurrentes ± déficit focal) et d'une vasoconstriction artérielle cérébrale confirmée à l'imagerie, après élimination d'une **HSA anévrysmale** par ponction lombaire et angiographie."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**TDM cérébral sans injection** : première intention — recherche HSA (hyperdensité citernes, vallées sylviennes), HSD cortical, hématome intraparenchymateux, infarctus",
+                "**Ponction lombaire** : obligatoire si TDM négatif et céphalée thunderclap < 6h — recherche xanthochromie et hématies au spectrophotomètre (éliminer HSA)",
+                "**ARM ou angio-TDM cérébral** : visualisation de la vasoconstriction multifocale — peut être normale dans les 4-5 premiers jours",
+                "**Artériographie conventionnelle (DSA)** : gold standard si doute persistant — permet aussi d'éliminer anévrysme rompu en urgence",
+                "**IRM cérébrale** : séquences FLAIR (HSA corticale de surface), DWI (infarctus aigu), T1 (dissection), T2* ou SWI (microhémorragies corticales)",
+                "**Score RCVS2** : score prédictif de SVCR vs autre cause de céphalée thunderclap — ≥ 5 points : spécificité 99% pour SVCR"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Score RCVS2 (Rocha et al., 2019) : Thunderclap récurrent +5 / Carotidien/cervical absent -2 / Vasoconstriction présente +3 / Femme +1 / déclencheur sexuel +3 / Âge ≥ 45 ans +1 — Seuil diagnostique : ≥ 5 points (sensibilité 90%, spécificité 99%)"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Arguments pour SVCR vs HSA** : céphalées thunderclap RÉCURRENTES (vs unique dans HSA), facteur déclenchant identifiable, femme jeune post-partum, vasoconstriction distale prédominante, HSA de surface (corticale) et non des citernes basales",
+                "**Arguments pour HSA anévrysmale** : céphalée inaugurale unique et brutale maximale, xanthochromie à la PL, HSA des citernes basales et vallées sylviennes, anévrysme visible à l'angio-TDM",
+                "**HSA corticale non-traumatique (cSAH)** : topographie superficielle (< 3 gyri), principale complication hémorragique du SVCR — à distinguer de la cSAH liée à une angiopathie amyloïde (sujet > 65 ans)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE ANGIOGRAPHIQUE : L'artériographie peut être réalisée en urgence pour éliminer un anévrysme — si elle est normale à J1, elle doit être répétée à J7-J14 pour visualiser la vasoconstriction qui progresse de façon centripète. Une artériographie normale précoce ne ferme PAS le dossier SVCR."
+            }
+          ]
+        },
+        {
+          "title": "Stratégie de prise en charge — Contrôle tensionnel et traitement",
+          "items": [
+            {
+              "type": "text",
+              "content": "Il n'existe **aucun essai randomisé contrôlé** démontrant l'efficacité d'un traitement spécifique dans le SVCR. La prise en charge repose sur l'**éviction des facteurs déclenchants**, un **contrôle tensionnel strict**, et la gestion symptomatique, avec un niveau de preuve limité pour tous les traitements pharmacologiques."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mesure 1 — Arrêt immédiat des facteurs déclenchants** : toutes les substances vasoconstrictrices (triptans, ergotamine, ISRS, décongestionnants, drogues), allaitement si post-partum sous bromocriptine",
+                "**Mesure 2 — Hospitalisation en USINV/réanimation** : surveillance neurologique rapprochée, monitoring tensionnel continu",
+                "**Mesure 3 — Contrôle tensionnel strict** : objectif PA systolique < 160 mmHg (certains experts < 140 mmHg en cas de complication hémorragique)",
+                "**Antihypertenseurs préférentiels** : nicardipine IV (inhibiteur calcique) — vasodilatateur cérébral modéré, bien toléré, titrabilité rapide — dose : 1-15 mg/h en IVSE",
+                "**Inhibiteurs calciques per os** : nimodipine ou vérapamil — données contradictoires, pas de preuve de bénéfice sur la vasoconstriction malgré usage fréquent",
+                "**Magnésium IV** : sulfate de magnésium 1-2 g/h IVSE, utilisé en post-partum (données limitées, potentiel vasodilatateur)",
+                "**Analgésie** : paracétamol, antalgiques de palier 2 — ÉVITER les AINS (risque aggravation HTA et complications rénales)",
+                "**Repos strict au lit** : limitation des efforts physiques qui peuvent déclencher de nouvelles céphalées thunderclap"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "CONTRE-INDICATION MAJEURE : Les corticoïdes sont associés à une aggravation du pronostic dans le SVCR (études rétrospectives, niveau de preuve faible mais signal constant) — ils sont formellement déconseillés, même si le diagnostic différentiel de vascularite cérébrale est évoqué."
+            },
+            {
+              "type": "formula",
+              "content": "Objectif tensionnel en SVCR compliqué : PA systolique CIBLE < 160 mmHg (consensus d'experts) — certains auteurs préconisent < 140/90 mmHg en cas d'HSA corticale associée. Éviter hypotension iatrogène (PAM > 70 mmHg) : risque d'infarctus par bas débit sur vasoconstriction fixée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Nimodipine dans le SVCR** : indiquée si HSA corticale associée (par analogie avec l'HSA anévrysmale) — MAIS absence de preuve d'efficacité sur la vasoconstriction du SVCR elle-même — dose : 60 mg/4h PO ou 2 mg/h IV",
+                "**Vérapamil intra-artériel** : réservé aux formes sévères réfractaires avec ischémie documentée — technique de neuroradiologie interventionnelle, données de séries de cas uniquement",
+                "**Milrinone intra-artérielle** : option émergente dans les SVCR réfractaires sévères (séries canadiennes), inhibiteur des phosphodiestérases — données très limitées",
+                "**Anticoagulation** : NON indiquée en routine — risque de transformation hémorragique des infarctus; thromboprophylaxie à dose préventive uniquement après 24-48h si infarctus sans composante hémorragique"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Complications et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les **complications surviennent dans 5-15% des SVCR** et conditionnent le pronostic neurologique. Elles sont de deux types opposés — hémorragiques (phase précoce, J1-J5) et ischémiques (phase tardive, J7-J21) — ce qui crée un défi thérapeutique majeur en réanimation."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Complications hémorragiques (phase précoce)** : HSA corticale de surface (25-30%), HSD cortical (5%), hématome intraparenchymateux (< 5%) — par rupture de la barrière hémato-encéphalique sur vasoconstriction corticale",
+                "**Complications ischémiques (phase tardive J7-J21)** : infarctus cérébraux dans 6-10% des cas — prédominance aux zones jonctionnelles (territoires-frontières entre ACA/ACM, ACM/ACP)",
+                "**PRES associé (10-15%)** : leucoencéphalopathie postérieure réversible — œdème vasogénique pariéto-occipital bilatéral sur IRM FLAIR — traitement par contrôle tensionnel strict",
+                "**Hydrocéphalie aiguë** : complication rare de l'HSA volumineuse associée — dérivation ventriculaire externe si nécessaire",
+                "**Crises épileptiques** : dans 5-10% des cas (surtout si PRES ou HSD cortical) — traitement antiépileptique au cas par cas"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "DILEMME THÉRAPEUTIQUE MAJEUR : En cas d'infarctus ischémique sur SVCR, la thrombolyse IV (rtPA) est CONTRE-INDIQUÉE si HSA ou HSD associé — et son efficacité est incertaine sur la vasoconstriction (cause principale). La thrombectomie mécanique n'a d'indication que si occlusion artérielle proximale documentée (thrombus et non pure vasoconstriction)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Gestion de l'infarctus sur SVCR** : contrôle tensionnel en évitant l'hypotension (maintenir PAM ≥ 70-80 mmHg), anticoagulation préventive après 48h si absence de composante hémorragique, aspirine 75-300 mg/j (données limitées)",
+                "**Gestion de l'HSA corticale** : renforcement du contrôle tensionnel (objectif PAs < 140 mmHg), nimodipine par analogie, surveillance neurologique rapprochée, pas de chirurgie sauf hématome expansif",
+                "**Aggravation malgré traitement** : reconsidérer le diagnostic (vascularite du SNC — PAN, angiite primitive ?), envisager artériographie avec injection intra-artérielle de vasodilatateur (vérapamil, milrinone)",
+                "**Pronostic** : 90-95% de récupération complète — mortalité < 1-2% — récidives rares (< 5%) mais possibles si facteur déclenchant non supprimé"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Recommandations clés — Grades et Références",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Éliminer HSA anévrysmale en urgence** (Grade A, accord expert) : TDM cérébral + PL + angio-TDM — ne pas se satisfaire d'un bilan négatif à J1 si forte suspicion de SVCR",
+                "**Arrêt de tout traitement vasoconstricteur** (Grade B) : triptans, ergotamine, ISRS, décongestionnants, drogues sympathomimétiques",
+                "**Contrôle tensionnel strict** (Grade B, accord expert) : objectif PAs < 160 mmHg — nicardipine IV en première intention en réanimation",
+                "**Ne pas utiliser les corticoïdes** (Grade C, contre-indication relative) : signal d'aggravation dans plusieurs séries rétrospectives",
+                "**Contrôle angiographique à 3 mois** (Grade B) : ARM ou angio-TDM pour documenter la résolution — critère diagnostique rétrospectif indispensable",
+                "**Nimodipine** : utilisée si HSA associée par analogie (Grade C) — pas de preuve d'efficacité spécifique sur la vasoconstriction du SVCR",
+                "**Score RCVS2** (Grade B) : outil validé d'aide au diagnostic différentiel — seuil ≥ 5 points pour probabilité élevée de SVCR"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Durée de surveillance minimale recommandée : 7-14 jours en milieu spécialisé (USINV ou réanimation neurologique) — les complications ischémiques peuvent survenir jusqu'à J21 malgré amélioration clinique initiale"
+            },
+            {
+              "type": "warning",
+              "content": "POINT DE VIGILANCE POST-SVCR : Informer le patient de la contre-indication définitive aux triptans, aux drogues sympathomimétiques et aux ISRS si facteur déclenchant identifié. Le risque de récidive est faible (< 5%) mais augmente fortement si exposition au facteur causal maintenue."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Diagnostic d'élimination** : le SVCR ne peut être affirmé qu'après exclusion rigoureuse d'une HSA anévrysmale (TDM + PL + artériographie) — l'HSA corticale de surface n'implique pas d'anévrysme mais impose la démarche complète",
+        "**Chronologie inversée** : dans le SVCR, la vasoconstriction est primaire et précède les complications hémorragiques (J1-J5) puis ischémiques (J7-J21) — contrairement au vasospasme de l'HSA qui est réactionnel au sang",
+        "**Contrôle tensionnel = traitement principal** : nicardipine IV avec objectif PAs < 160 mmHg — éviter toute hypotension (PAM > 70 mmHg) pour ne pas aggraver l'ischémie sur vasoconstriction fixée",
+        "**Corticoïdes formellement déconseillés** : malgré la tentation diagnostique face à une vascularite cérébrale — plusieurs séries rétrospectives montrent une aggravation significative sous corticothérapie dans le SVCR",
+        "**Suivi à 3 mois obligatoire** : ARM ou angio-TDM de contrôle pour documenter la résolution de la vasoconstriction — critère diagnostique rétrospectif indispensable et médico-légalement important"
+      ],
+      "references": [
+        "Ducros A — Reversible cerebral vasoconstriction syndrome — Lancet Neurol 2012;11(10):906-917 (référence fondatrice)",
+        "Rocha EA, Topcuoglu MA, Silva GS, Singhal AB — RCVS2 score and diagnostic approach for reversible cerebral vasoconstriction syndrome — Neurology 2019;92(7):e639-e647",
+        "Singhal AB, Hajj-Ali RA, Topcuoglu MA et al — Reversible cerebral vasoconstriction syndromes — Analysis of 139 cases — Arch Neurol 2011;68(8):1005-1012",
+        "Calabrese LH, Dodick DW, Schwedt TJ, Singhal AB — Narrative review: reversible cerebral vasoconstriction syndromes — Ann Intern Med 2007;146(1):34-44",
+        "Tatu L, Moulin T — Vasoconstriction cérébrale réversible — Revue Neurologique 2020;176(1-2):98-107",
+        "Marder CP, Donohue MM, Weinstein JR, Fink KR — Multimodal imaging of reversible cerebral vasoconstriction syndrome — AJNR Am J Neuroradiol 2012;33(8):1403-1410",
+        "Linn J, Fesl G, Ottomeyer C et al — Intra-arterial application of nimodipine in reversible cerebral vasoconstriction syndrome — Cephalalgia 2011;31(10):1148-1151",
+        "SFAR/SFNV — Prise en charge de l'hémorragie sous-arachnoïdienne non traumatique — Recommandations formalisées d'experts — 2021",
+        "Schwedt TJ, Matharu MS, Dodick DW — Thunderclap headache — Lancet Neurol 2006;5(7):621-631",
+        "de Boysson H, Parienti JJ, Mawet J et al — Primary angiitis of the CNS and reversible cerebral vasoconstriction syndrome — Neurology 2018;91(16):e1468-e1478"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Une femme de 34 ans, J5 post-partum, présente une céphalée thunderclap inaugurale. Le TDM cérébral montre une hyperdensité limitée à 2 gyri pariétaux gauches (HSA corticale de surface). L'angio-TDM ne montre pas d'anévrysme. La PL révèle 120 hématies/mm³ sans xanthochromie nette.",
+        "question": "Quelle est la conduite diagnostique la plus appropriée à cette étape ?",
+        "options": {
+          "A": "Arrêter les investigations — HSA corticale post-partum sans anévrysme = SVCR confirmé, traitement immédiat",
+          "B": "Réaliser une artériographie conventionnelle (DSA) en urgence pour éliminer un anévrysme et rechercher une vasoconstriction",
+          "C": "Répéter la PL à 12h pour confirmer la xanthochromie avant tout geste invasif",
+          "D": "Réaliser une IRM cérébrale seule avec ARM — la DSA n'est pas indiquée si l'angio-TDM est négatif"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : devant une HSA corticale avec céphalée thunderclap, l'artériographie conventionnelle reste indiquée même si l'angio-TDM est négatif — elle offre la meilleure résolution pour les petits anévrysmes (collet < 3 mm) et permet de documenter la vasoconstriction distale (invisible à l'angio-TDM). Piège A : le SVCR ne peut être confirmé qu'après exclusion angiographique rigoureuse d'un anévrysme — l'angio-TDM a une sensibilité imparfaite pour les petits anévrysmes. Piège C : répéter la PL ne modifie pas la conduite angiographique urgente — la xanthochromie peut être absente très précocement ou en cas d'HSA de faible volume. Piège D : l'IRM/ARM seule est insuffisante pour exclure formellement un anévrysme de petite taille en urgence."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Un homme de 42 ans présente un SVCR confirmé avec vasoconstriction multifocale à l'artériographie. À J10, il développe un déficit moteur de l'hémicorps droit progressif sur 2 heures. L'IRM montre un infarctus jonctionnel ACA/ACM gauche de 2 cm sans composante hémorragique. La PA est à 185/100 mmHg.",
+        "question": "Quelle est la prise en charge tensionnelle la plus appropriée dans les 24 premières heures ?",
+        "options": {
+          "A": "Normalisation tensionnelle rapide < 140/90 mmHg par labétalol IV — réduire la poussée hypertensive responsable",
+          "B": "Maintien d'une PA systolique entre 140-160 mmHg par nicardipine IV titrée — éviter toute hypotension (PAM > 70 mmHg)",
+          "C": "Pas de traitement antihypertenseur — autoriser une HTA permissive jusqu'à 220/120 mmHg par analogie avec l'AVC ischémique non traité",
+          "D": "Thrombolyse IV rtPA — l'infarctus progressif sur SVCR est une indication si < 4h30 et sans contre-indication formelle"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : dans le SVCR compliqué d'infarctus, le contrôle tensionnel vise PAs < 160 mmHg (traiter l'HTA aggravant la vasoconstriction) MAIS avec maintien d'une PAM > 70 mmHg pour préserver la perfusion en aval de la vasoconstriction fixée. La nicardipine IV est l'agent de choix par sa titrabilité. Piège A : une normalisation rapide < 140 mmHg risque d'aggraver l'ischémie par hypoperfusion sur vasoconstriction fixée — l'objectif n'est pas celui de l'AVC ischémique classique. Piège C : l'HTA permissive sans limite (jusqu'à 220 mmHg) est dangereuse dans le SVCR car l'HTA elle-même entretient et aggrave la vasoconstriction — contrairement à l'AVC ischémique classique où elle est tolérable. Piège D : la thrombolyse IV n'a pas d'indication démontrée dans le SVCR (mécanisme par vasoconstriction et non par thrombose) et est contre-indiquée en cas d'HSA ou HSD associé (présents dans 30% des SVCR)."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Une femme de 29 ans présente un SVCR post-partum sous bromocriptine avec 3 épisodes thunderclap en 48h. L'IRM montre une leucoencéphalopathie pariéto-occipitale bilatérale en FLAIR sans restriction en DWI.",
+        "question": "Quel diagnostic associé au SVCR est le plus probable et quel est son traitement spécifique ?",
+        "options": {
+          "A": "Thrombose veineuse cérébrale — anticoagulation curative par héparine sodique IV en urgence",
+          "B": "Encéphalite auto-immune — bolus de méthylprednisolone 1g/j pendant 3 jours",
+          "C": "Syndrome de leucoencéphalopathie postérieure réversible (PRES) — contrôle tensionnel strict et arrêt de la bromocriptine",
+          "D": "Vascularite cérébrale primitive — biopsie cérébrale pour confirmation histologique"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le tableau clinico-radiologique (SVCR post-partum, HTA, leucoencéphalopathie pariéto-occipitale bilatérale en FLAIR sans restriction DWI = œdème vasogénique) est pathognomonique d'un PRES, complication associée dans 10-15% des SVCR. Le traitement est le contrôle tensionnel strict et l'élimination du facteur causal (bromocriptine vasoactive). Piège A : la TVC peut donner un tableau similaire (céphalées, œdème) mais les lésions sont asymétriques, souvent avec restriction DWI, et le contexte est post-partum avec hypercoagulabilité — l'IRM veineuse est indiquée pour l'écarter, mais l'anticoagulation n'est pas la première réponse. Piège B : les corticoïdes sont contre-indiqués dans le SVCR (signal d'aggravation) — les prescrire sur une suspicion d'encéphalite serait une erreur grave. Piège D : la vascularite primitive est un diagnostic différentiel important mais nécessite une LCS, une angiographie, et le tableau de PRES en contexte post-partum oriente clairement vers le diagnostic C."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Score RCVS2 appliqué à un patient : céphalée thunderclap récurrente (5 épisodes en 72h) — facteur déclenchant sexuel — vasoconstriction visible à l'ARM — femme — sans atteinte carotidienne cervicale.",
+        "question": "Quel est le score RCVS2 calculé et quelle est son implication diagnostique ?",
+        "options": {
+          "A": "Score = 7 points — probabilité élevée de SVCR (spécificité ~99%), diagnostic quasi-certain",
+          "B": "Score = 12 points — score maximal, ne nécessite pas d'artériographie complémentaire",
+          "C": "Score = 5 points — seuil minimal pour diagnostiquer le SVCR sans autre investigation",
+          "D": "Score = 9 points — probabilité élevée mais artériographie conventionnelle toujours obligatoire pour confirmer"
+        },
+        "correct": "D",
+        "explanation": "Réponse D correcte : le calcul donne : thunderclap récurrent +5 / déclencheur sexuel +3 / vasoconstriction présente +3 / femme +1 / carotidien cervical absent (score négatif si présent, ici absent donc neutre) = total 12 points. ATTENTION : le score +5 pour thunderclap récurrent et +3 pour vasoconstriction et +3 pour déclencheur sexuel et +1 pour femme = 12 points, score très élevé. Même avec un score élevé, l'artériographie conventionnelle reste indiquée pour éliminer formellement un anévrysme et documenter la vasoconstriction — le score est un aide au triage et non un substitut à l'imagerie vasculaire. Piège A : le score calculé est 12 et non 7 (erreur de calcul fréquente chez les internes omettant le +3 déclencheur sexuel ou le +3 vasoconstriction). Piège B : 12 points est effectivement le score très élevé calculé, mais l'implication 'ne nécessite pas d'artériographie' est fausse — le score oriente mais n'est pas exclusif. Piège C : 5 points est le seuil diagnostique validé mais le score ici est plus élevé."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Un SVCR sévère réfractaire est suspecté chez un homme de 38 ans avec vasoconstriction proximale persistante malgré nicardipine IV, contrôle tensionnel optimal, et développement d'un infarctus bi-hémisphérique à J15.",
+        "question": "Quelle option thérapeutique de recours est envisageable dans ce SVCR réfractaire sévère ?",
+        "options": {
+          "A": "Bolus de méthylprednisolone 1g/j — les corticoïdes réduisent l'inflammation vasculaire sous-jacente",
+          "B": "Héparine sodique à dose curative — l'ischémie sur vasoconstriction bénéficie d'une anticoagulation complète",
+          "C": "Injection intra-artérielle de vérapamil ou milrinone lors d'une artériographie thérapeutique",
+          "D": "Thrombolyse intra-artérielle locale au site de vasoconstriction maximale"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : les injections intra-artérielles de vasodilatateurs (vérapamil 5-20 mg, ou milrinone) lors d'une artériographie thérapeutique représentent l'option de recours validée dans les séries de cas de SVCR réfractaires sévères — elles permettent une vasodilatation locorégionale directe. Des séries canadiennes ont rapporté l'utilisation de milrinone intra-artérielle avec résultats encourageants. Piège A : les corticoïdes sont formellement contre-indiqués dans le SVCR — plusieurs séries rétrospectives montrent une aggravation significative (infarctus plus fréquents et plus étendus). Piège B : l'anticoagulation curative n'est pas indiquée en routine dans le SVCR ischémique — elle expose au risque de transformation hémorragique des infarctus, particulièrement dangereux si HSA ou HSD associé; l'anticoagulation préventive peut être discutée après 48h. Piège D : la thrombolyse intra-artérielle n'est pas indiquée car le mécanisme est la vasoconstriction et non la thrombose — de plus, elle expose à un risque hémorragique majeur."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Une femme de 31 ans, SVCR confirmé à J8, est sous nicardipine IV. Elle développe brutalement une hémiplégie gauche et une dysarthrie. L'IRM urgente montre un infarctus sylvien droit complet (territoire M1) avec occlusion de l'artère M1 en angio-IRM.",
+        "question": "Quelle est la stratégie de reperfusion la plus appropriée ?",
+        "options": {
+          "A": "Thrombolyse IV (alteplase 0,9 mg/kg) si dans la fenêtre de 4h30 — l'occlusion M1 dépasse le cadre de la vasoconstriction pure",
+          "B": "Thrombectomie mécanique si thrombus M1 identifiable ET absence de contre-indication hémorragique — la vasoconstriction distale associée ne contre-indique pas le geste proximal",
+          "C": "Traitement médical seul renforcé — toute revascularisation est contre-indiquée dans le SVCR quel que soit le tableau",
+          "D": "Angioplastie au ballon de l'artère M1 — technique de choix pour lever la vasoconstriction proximale"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : en cas d'occlusion M1 documentée avec thrombus visible (et non simple vasoconstriction) dans le cadre d'un SVCR, la thrombectomie mécanique peut être discutée après vérification de l'absence de contre-indication hémorragique (HSA, HSD, hématome). La distinction entre vasoconstriction pure et thrombose sur vasoconstriction est cruciale — la thrombectomie n'agit que sur le thrombus. Piège A : la thrombolyse IV est formellement contre-indiquée si HSA ou HSD associé (présents dans jusqu'à 30% des SVCR) — de plus, son efficacité sur une vasoconstriction pure est nulle et le risque hémorragique est élevé. Piège C : une occlusion M1 avec thrombus objectivé justifie une discussion de revascularisation mécanique — le refus systématique de tout geste serait une erreur de gestion. Piège D : l'angioplastie au ballon est contre-indiquée dans le SVCR — le mécanisme est un spasme fonctionnel et non une sténose athéromateuse; l'angioplastie expose à la dissection et à la rupture artérielle."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Lors d'une garde de neurologie, un interne vous présente un patient avec céphalée thunderclap unique, PL normale, et HSA des citernes basales et vallées sylviennes bilatérales au TDM. L'angio-TDM montre un anévrysme de l'artère communicante antérieure de 8 mm.",
+        "question": "Ce tableau est-il compatible avec un SVCR, et quelle est la prise en charge ?",
+        "options": {
+          "A": "Oui, compatible avec SVCR compliqué d'HSA — traitement conservateur avec nicardipine IV et contrôle tensionnel strict",
+          "B": "Non, ce tableau évoque une HSA anévrysmale — exclusion de l'anévrysme en urgence (neurochirurgie ou neuroradiologie interventionnelle)",
+          "C": "SVCR probable car la céphalée est thunderclap — l'anévrysme de 8 mm est fortuit, surveillance à 6 mois",
+          "D": "Doute diagnostique impossible à trancher — traiter comme HSA ET SVCR simultanément avec nimodipine et corticoïdes"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le tableau (céphalée thunderclap UNIQUE, HSA des citernes BASALES et vallées sylviennes — topographie caractéristique de rupture anévrysmale — + anévrysme 8 mm visible) est une HSA anévrysmale jusqu'à preuve du contraire. L'exclusion en urgence par clip neurochirurgical ou coiling endovasculaire est impérative. Piège A : l'HSA corticale de surface (< 3 gyri, topographie convexitale) est celle du SVCR — l'HSA des citernes basales est la signature de la rupture anévrysmale. De plus, la céphalée est unique (premier épisode), ce qui est atypique pour le SVCR. Piège C : un anévrysme de 8 mm n'est jamais 'fortuit' devant une HSA — la coïncidence est trop risquée à accepter; la règle est de traiter l'anévrysme visible devant une HSA. Piège D : les corticoïdes sont contre-indiqués dans le SVCR et ne sont pas indiqués dans l'HSA anévrysmale — les associer est une double erreur."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Une patiente de 45 ans est diagnostiquée avec un SVCR après céphalées thunderclap récurrentes lors de la prise d'un traitement débuté 3 semaines auparavant pour une dépression. L'angiographie confirme une vasoconstriction multifocale.",
+        "question": "Quelle classe médicamenteuse est la plus fréquemment impliquée dans les SVCR iatrogènes et doit être arrêtée en urgence ?",
+        "options": {
+          "A": "Inhibiteurs de la pompe à protons (IPP) — réduction du métabolisme des vasoconstricteurs endogènes",
+          "B": "Inhibiteurs sélectifs de la recapture de la sérotonine (ISRS) — augmentation de la sérotonine intrasynaptique avec effet vasoconstricteur cérébral",
+          "C": "Benzodiazépines — effet vasodilatateur paradoxal induisant un vasospasme réflexe",
+          "D": "Antipsychotiques atypiques — blocage des récepteurs dopaminergiques D2 vasculaires"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : les ISRS (fluoxétine, paroxétine, sertraline, escitalopram) sont les médicaments psychiatriques les plus fréquemment impliqués dans les SVCR iatrogènes — la sérotonine est un vasoconstricteur cérébral direct, et l'accumulation intrasynaptique induit ou aggrave la vasoconstriction. D'autres sérotoninergiques (triptans, IMAO) sont également en cause. Piège A : les IPP n'ont aucun rôle démontré dans la physiopathologie du SVCR — leur implication vasculaire est inexistante. Piège C : les benzodiazépines ne sont pas impliquées dans le SVCR — elles ont un effet dépresseur du SNC sans action vasomotrice cérébrale significative. Piège D : les antipsychotiques atypiques ne sont pas associés au SVCR — leur profil de blocage réceptoriel n'a pas de cible vasomotrice cérébrale directe."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Six mois après un SVCR documenté avec résolution angiographique à 3 mois confirmée, une femme de 36 ans consulte pour migraine sévère avec aura visuelle. Elle souhaite un traitement de la crise.",
+        "question": "Quel traitement de la crise migraineuse est formellement contre-indiqué chez cette patiente ?",
+        "options": {
+          "A": "Paracétamol 1g — risque de néphrotoxicité cumulative sur terrain vasculaire",
+          "B": "AINS (ibuprofène 400 mg) — risque de récidive de SVCR par effet vasoconstricteur direct",
+          "C": "Triptan (sumatriptan) — vasoconstricteur des artères cérébrales, contre-indiqué après SVCR même résolu",
+          "D": "Métoclopramide IV — risque de syndrome extrapyramidal aggravant le tableau neurologique"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : les triptans (agonistes des récepteurs 5-HT1B/1D) sont des vasoconstricteurs artériels cérébraux puissants — ils sont formellement et définitivement contre-indiqués après un SVCR, même résolu, car ils peuvent déclencher une récidive. Cette contre-indication est absolue et permanente quelle que soit la durée écoulée depuis l'épisode. Piège A : le paracétamol est au contraire l'antalgique de choix dans le SVCR et après un SVCR — il n'a aucun effet vasomoteur cérébral. Piège B : les AINS ne sont pas des vasoconstricteurs cérébraux directs — ils sont déconseillés pendant le SVCR actif pour d'autres raisons (risque HTA, interférence rénale) mais ne constituent pas la contre-indication principale à long terme. Piège D : le métoclopramide n'a pas d'effet vasomoteur cérébral significatif — c'est un antiémétique prokinétique utilisé dans le traitement symptomatique de la migraine, sans contre-indication spécifique post-SVCR."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "En réunion de concertation multidisciplinaire, vous discutez d'un patient chez qui le diagnostic différentiel entre SVCR et angiite primitive du SNC (APSNC) reste incertain malgré artériographie et bilan complet.",
+        "question": "Quel élément clinico-paraclinique permet le mieux de distinguer le SVCR de l'angiite primitive du SNC (APSNC) ?",
+        "options": {
+          "A": "La présence de céphalées thunderclap — pathognomonique du SVCR, absente dans l'APSNC",
+          "B": "Le profil du LCS — pléiocytose et hyperprotéinorachie évoquent l'APSNC; LCS normal oriente vers le SVCR",
+          "C": "La topographie des lésions à l'IRM — FLAIR pariéto-occipital bilatéral exclusif pour l'APSNC",
+          "D": "La réponse aux corticoïdes — amélioration rapide sous corticothérapie confirme le SVCR"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'analyse du LCS est l'un des meilleurs éléments discriminants — dans l'APSNC, une pléiocytose lymphocytaire (> 5 cellules/mm³) et/ou une hyperprotéinorachie sont présentes dans 70-90% des cas, reflétant l'inflammation méningée vasculaire. Dans le SVCR, le LCS est typiquement normal (ou avec seulement quelques hématies si HSA associée). Ce critère oriente fortement mais n'est pas absolu (10-15% d'APSNC avec LCS normal). Piège A : les céphalées thunderclap sont caractéristiques du SVCR mais peuvent être présentes dans l'APSNC également (moins typiques) — l'absence de thunderclap ne suffit pas à exclure le SVCR et leur présence n'est pas pathognomonique absolue. Piège C : le FLAIR pariéto-occipital bilatéral est caractéristique du PRES associé au SVCR et non de l'APSNC — confondre les deux topographies est une erreur classique. Piège D : la réponse aux corticoïdes oriente vers l'APSNC (qui y répond) — mais le fait que les corticoïdes aggravent le SVCR est un argument indirect, pas une réponse 'confirmant le SVCR' (les corticoïdes sont contre-indiqués dans le SVCR, on ne peut donc pas les tester à titre diagnostique sans risque)."
+      }
+    ]
   }
 ]
