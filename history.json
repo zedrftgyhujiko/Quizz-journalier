@@ -7414,5 +7414,410 @@
         "explanation": "Réponse B correcte : l'analyse du LCS est l'un des meilleurs éléments discriminants — dans l'APSNC, une pléiocytose lymphocytaire (> 5 cellules/mm³) et/ou une hyperprotéinorachie sont présentes dans 70-90% des cas, reflétant l'inflammation méningée vasculaire. Dans le SVCR, le LCS est typiquement normal (ou avec seulement quelques hématies si HSA associée). Ce critère oriente fortement mais n'est pas absolu (10-15% d'APSNC avec LCS normal). Piège A : les céphalées thunderclap sont caractéristiques du SVCR mais peuvent être présentes dans l'APSNC également (moins typiques) — l'absence de thunderclap ne suffit pas à exclure le SVCR et leur présence n'est pas pathognomonique absolue. Piège C : le FLAIR pariéto-occipital bilatéral est caractéristique du PRES associé au SVCR et non de l'APSNC — confondre les deux topographies est une erreur classique. Piège D : la réponse aux corticoïdes oriente vers l'APSNC (qui y répond) — mais le fait que les corticoïdes aggravent le SVCR est un argument indirect, pas une réponse 'confirmant le SVCR' (les corticoïdes sont contre-indiqués dans le SVCR, on ne peut donc pas les tester à titre diagnostique sans risque)."
       }
     ]
+  },
+  {
+    "date": "2026-06-18",
+    "dateStr": "jeudi 18 juin",
+    "topic": "Anesthésie pour résection pulmonaire sous ventilation unipulmonaire : gestion de l'hypoxémie peropératoire, stratégie ventilatoire protectrice du poumon dépendant et sevrage de la ventilation unipulmonaire en fin d'intervention",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "La ventilation unipulmonaire (VUP) est indispensable à la chirurgie thoracique d'exérèse, mais expose à une hypoxémie peropératoire dans 5 à 10% des cas par effondrement du rapport V/Q sur le poumon non-ventilé. La maîtrise de la stratégie ventilatoire protectrice, des algorithmes de correction de l'hypoxémie et du sevrage de la VUP conditionne directement la morbi-mortalité postopératoire, dominée par les lésions pulmonaires aiguës post-pneumonectomie (incidence 2-4%, mortalité > 50%).",
+      "sections": [
+        {
+          "title": "1. Définitions et rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **ventilation unipulmonaire (VUP)** consiste à ventiler mécaniquement un seul poumon (poumon dépendant, déclive) tout en laissant le poumon opéré (poumon non-dépendant, non-ventilé) collabé. Elle est obtenue par **tube double lumière (TDL)** ou **bloqueur bronchique (BB)**."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Tube double lumière de Carlens/Robertshaw** : intubation sélective, lumières trachéale et bronchique — gold standard pour la VUP",
+                "**Bloqueur bronchique (Arndt, Cohen, EZ-Blocker)** : indiqué si intubation difficile prévisible, voies aériennes rétrécies, trachéotomie en place",
+                "**Poumon dépendant** : poumon inférieur (décubitus latéral), seul ventilé — soumis aux contraintes mécaniques de la VUP",
+                "**Poumon non-dépendant** : poumon opéré, non-ventilé — siège d'un shunt intrapulmonaire droit-gauche obligatoire",
+                "**Shunt vrai peropératoire** : fraction du débit cardiaque perfusant un poumon non-ventilé sans échange gazeux — mécanisme principal de l'hypoxémie sous VUP",
+                "**VATS (Video-Assisted Thoracoscopic Surgery)** : approche mini-invasive la plus fréquente, nécessitant impérativement un isolement pulmonaire complet"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas confondre TDL gauche et TDL droit : le TDL droit comporte une fenestration pour la bronche lobaire supérieure droite (émergence à 1-2 cm de la carène). Son positionnement est plus délicat et doit être vérifié systématiquement à la fibroscopie après tout retournement en décubitus latéral."
+            },
+            {
+              "type": "formula",
+              "content": "Vérification fibroscopique systématique : AVANT la VUP et APRÈS chaque mobilisation du patient. Position cible du TDL gauche : extrémité distale visible à 5-10 mm en dessous de la carène côté gauche, cuff bronchique juste sous la carène sans la déborder."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie de l'hypoxémie sous VUP",
+          "items": [
+            {
+              "type": "text",
+              "content": "Sous VUP, le **shunt intrapulmonaire** (Qs/Qt) s'élève à 20-30% du débit cardiaque via le poumon non-ventilé. L'hypoxémie résultante dépend de l'équilibre entre ce shunt et les mécanismes correcteurs, principalement la **vasoconstriction pulmonaire hypoxique (VPH)**."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Vasoconstriction pulmonaire hypoxique (VPH)** : réflexe alvéolaire local (↓ PO2 alvéolaire → vasoconstriction artériolaire) réduisant le shunt de 50% en déviant le flux vers le poumon ventilé — délai d'action 15-30 min, maximum à 1-2h",
+                "**Facteurs amplifiant le shunt** : hyperdébit cardiaque, vasopresseurs à effet vasodilatateur pulmonaire (nitroprussiate, dobutamine > 5 µg/kg/min), HTAP préexistante, emphysème sévère du poumon opéré (déjà peu perfusé → VPH moindre)",
+                "**Facteurs inhibant la VPH** : halogénés (dose-dépendant, surtout > 1 CAM), vasodilatateurs systémiques, alcalose, hypocapnie sévère, hyperthermie",
+                "**Effet du décubitus latéral** : gravité favorise la perfusion du poumon dépendant (ventilé) → améliore le rapport V/Q, mais compliance réduite par compression médiastinale",
+                "**Compression médiastinale** : poids du médiastin sur le poumon dépendant → ↓ CRF, ↑ fermeture des petites voies aériennes → atélectasie et hypoxémie surajoutée",
+                "**Hypoxémie prévisible si** : SpO2 < 95% avant chirurgie en décubitus latéral, poumon droit opéré (plus grande masse), pneumonectomie planifiée, VEMS/CVF bas, perfusion prédominante du poumon opéré à la scintigraphie"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Les halogénés (sévoflurane, desflurane) inhibent la VPH de façon dose-dépendante mais cet effet est moins marqué aux doses cliniques usuelles (< 1 CAM) qu'aux doses > 1,5 CAM. Le TIVA au propofol n'inhibe pas la VPH et peut être préféré en cas de risque hypoxémique élevé, bien que son supériorité clinique reste débattue."
+            },
+            {
+              "type": "formula",
+              "content": "Fraction de shunt (équation de Fick simplifiée) : Qs/Qt = (CcO2 - CaO2) / (CcO2 - CvO2). Valeur normale < 5%, sous VUP ≈ 20-30%, pathologique si > 30% avec hypoxémie franche (SpO2 < 90%)."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation préopératoire et prédiction du risque",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation préopératoire conditionne la stratégie ventilatoire et l'anticipation de l'hypoxémie. Elle repose sur les **EFR**, la **scintigraphie pulmonaire de perfusion** et les **critères de résécabilité fonctionnelle** standardisés."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**VEMS postopératoire prédit (ppoFEV1)** : VEMS × (1 - fraction de segments réséqués/42). Seuil de risque élevé : ppoFEV1 < 40% théorique ou < 800 mL",
+                "**DLCO postopératoire prédit (ppoDLCO)** : même calcul segmentaire. Seuil de risque élevé : ppoDLCO < 40% théorique",
+                "**Test de marche des 6 minutes (TM6M)** : distance < 400 m → risque chirurgical élevé",
+                "**VO2max** : < 10 mL/kg/min = très haut risque (contre-indication quasi-absolue à la pneumonectomie), 10-15 mL/kg/min = haut risque, > 20 mL/kg/min = risque acceptable",
+                "**Scintigraphie de perfusion** : indispensable si pneumonectomie planifiée — quantifie la perfusion relative de chaque poumon pour calculer la fonction résiduelle prédite",
+                "**Facteurs prédictifs d'hypoxémie peropératoire** : poumon droit opéré, FiO2 préopératoire élevée, SpO2 basse en décubitus latéral avant VUP, HTAP, emphysème homogène bilatéral"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Un VEMS préopératoire normal ne garantit pas l'absence d'hypoxémie sous VUP. La scintigraphie de perfusion est l'outil indispensable avant pneumonectomie : un poumon opéré fortement perfusé (> 55-60% du total) annonce une chute majeure de la SpO2 lors de la VUP."
+            },
+            {
+              "type": "formula",
+              "content": "Calcul du ppoFEV1 (recommandation ERS/ESTS 2022) : ppoFEV1 (%) = FEV1 préop (%) × [1 - (nombre de segments fonctionnels réséqués / nombre total de segments fonctionnels). Total de segments : poumon droit = 19, poumon gauche = 10 selon décompte fonctionnel OU 18+1 selon certaines classifications — utiliser 19 pour le droit et 9 pour le gauche dans la pratique courante (Brunelli 2022)."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie ventilatoire protectrice du poumon dépendant",
+          "items": [
+            {
+              "type": "text",
+              "content": "La ventilation protectrice sous VUP vise à prévenir les **lésions pulmonaires induites par la ventilation mécanique (VILI)** sur le poumon dépendant, tout en maintenant une oxygénation suffisante. Elle repose sur un **faible volume courant, une PEEP adaptée et une FiO2 modérée**."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Volume courant (VT)** : 4-6 mL/kg de poids idéal (IBW) — passage de 10-12 mL/kg en VBP à 4-6 mL/kg en VUP. NE PAS utiliser le même VT qu'en ventilation bipulmonaire",
+                "**Fréquence respiratoire** : 14-18 cycles/min — ajuster pour maintenir PaCO2 35-45 mmHg (tolérer hypercapnie permissive jusqu'à 60 mmHg si nécessaire)",
+                "**PEEP** : 5 cmH2O initialement, titrée selon la mécanique respiratoire (courbes pression-volume) — éviter la PEEP > 10 cmH2O qui majore l'effet shunt en surinflant les alvéoles ventilées et déviant la perfusion vers le poumon non-ventilé",
+                "**Pression de plateau (Pplat)** : objectif < 25 cmH2O — la dépasser expose au barotraumatisme et à la VILI",
+                "**Pression motrice (Driving Pressure = Pplat - PEEP)** : objectif < 14-15 cmH2O — marqueur pronostique de VILI validé en chirurgie thoracique (Fernandez-Bustamante 2020)",
+                "**FiO2** : démarrer à 0,5-0,8 lors de l'établissement de la VUP, puis réduire progressivement si SpO2 ≥ 95% pour limiter l'atélectasie par absorption et la toxicité oxygène",
+                "**Manœuvres de recrutement alvéolaire (MRA)** : indication si atélectasie sur poumon dépendant — recrutement en pression de plateau progressive (25-30 cmH2O × 30 s) suivi d'une PEEP de titration, attention aux effets hémodynamiques",
+                "**Mode ventilatoire** : ventilation contrôlée en pression (VCP) préférée par certains équipes (limitation automatique des pressions), mais pas de supériorité prouvée sur la VCV si les paramètres cibles sont respectés"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'augmentation réflexe du VT pour corriger une hypercapnie sous VUP est une erreur classique et dangereuse : elle expose au VILI par volutraumatisme et peut paradoxalement aggraver l'hypoxémie par surdistension alvéolaire et redistribution du flux vers le poumon non-ventilé. Préférer augmenter la FR ou accepter l'hypercapnie permissive."
+            },
+            {
+              "type": "formula",
+              "content": "Pression motrice (Driving Pressure) = Pression de plateau - PEEP. Seuil critique : DP > 14-15 cmH2O associée à augmentation significative des VILI et de la morbi-mortalité en chirurgie thoracique (Marret 2021, Ferrando 2020). Objectif : DP ≤ 14 cmH2O."
+            }
+          ]
+        },
+        {
+          "title": "5. Prise en charge de l'hypoxémie peropératoire sous VUP",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'hypoxémie sous VUP (SpO2 < 90% ou PaO2 < 60 mmHg sous FiO2 ≥ 0,8) nécessite une réponse **structurée par étapes** ('stepwise approach'), en éliminant d'abord les causes mécaniques avant d'appliquer des thérapeutiques ventilatoires et pharmacologiques spécifiques."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**ÉTAPE 1 — Causes mécaniques à éliminer immédiatement** : mauvais positionnement du TDL (fibroscopie), obstruction par sécrétions (aspiration), pneumothorax sous tension sur poumon dépendant, défaillance du respirateur",
+                "**ÉTAPE 2 — Optimisation de la FiO2** : passer à FiO2 = 1,0 (temporairement) — efficace mais risque atélectasie par résorption si maintenu",
+                "**ÉTAPE 3 — Recrutement alvéolaire du poumon dépendant** : MRA en pression progressive (20→30 cmH2O) avec ajustement de la PEEP (PEEP optimale = point d'inflexion inférieur de la courbe P-V)",
+                "**ÉTAPE 4 — CPAP sur poumon non-dépendant** : CPAP 2-5 cmH2O d'O2 pur sur le poumon non-ventilé via circuit dédié → maintient un volume alvéolaire résiduel, améliore V/Q sans obstruer le champ opératoire si pression faible. Limiter à 5 cmH2O pour ne pas gêner la chirurgie",
+                "**ÉTAPE 5 — Ventilation intermittente du poumon non-dépendant** : insufflations manuelles ou mécaniques brèves (2-3 cycles) en O2 pur — très efficace mais interrompt temporairement la procédure chirurgicale (informer le chirurgien)",
+                "**ÉTAPE 6 — Optimisation hémodynamique** : corriger l'hypodébit cardiaque (vasoconstriction pulmonaire réduite si bas débit), éviter la surcharge volémique (↑ pression artérielle pulmonaire → ↑ shunt)",
+                "**ÉTAPE 7 — Almitrine** : agent pharmacologique potentialisateur de la VPH (agoniste des chémorécepteurs périphériques) — dose 4-8 µg/kg/min IV en perfusion continue — option si échec des étapes précédentes. Attention : HTAP préexistante relative contre-indication",
+                "**ÉTAPE 8 — NO inhalé ou iloprost** : sur poumon dépendant — vasodilatateur sélectif du poumon ventilé → améliore V/Q — rare, réservé à l'HTAP sévère associée",
+                "**ÉTAPE 9 — Retour à la VBP temporaire** : ultime recours, décision conjointe avec le chirurgien — quelques minutes de ventilation bipulmonaire pour récupérer la SpO2 avant de reprendre la VUP"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'application de CPAP > 5 cmH2O sur le poumon non-dépendant risque de distendre le poumon opéré, de gêner la dissection vasculaire et d'augmenter les pertes sanguines. En cas de VATS, même une CPAP de 2-3 cmH2O peut obstruer la vue endoscopique — communication chirurgien/anesthésiste indispensable."
+            },
+            {
+              "type": "warning",
+              "content": "L'almitrine a été retirée du marché en France pour une indication orale (neuropathies périphériques) mais reste disponible pour usage IV peropératoire dans certains centres. Vérifier la disponibilité locale. Son effet peut être antagonisé par les vasodilatateurs systémiques (nitrés, nitroprussiate)."
+            },
+            {
+              "type": "formula",
+              "content": "Seuil d'intervention hypoxémie : SpO2 < 92% (alerte) → démarrer l'algorithme par étapes. SpO2 < 88% persistante > 2 min sous FiO2 = 1,0 → aller aux étapes 4-5. SpO2 < 85% ou PaO2 < 50 mmHg → envisager retour VBP (étape 9)."
+            }
+          ]
+        },
+        {
+          "title": "6. Sevrage de la ventilation unipulmonaire en fin d'intervention",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **sevrage de la VUP** (retour à la ventilation bipulmonaire, VBP) doit être anticipé et progressif. Il expose à deux risques : la **réexpansion pulmonaire trop brutale** (lésion de réexpansion) et la **contamination croisée** (si poumon opéré septique). La séquence de ventilation et la gestion des drains thoraciques conditionnent la qualité de la réexpansion."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Moment du sevrage** : dès la fermeture de la plèvre ou avant le fermeture du thorax selon décision chirurgicale — toujours AVANT l'extubation",
+                "**Séquence de réexpansion** : 1) Informer chirurgien 2) Augmenter FiO2 à 0,5-0,8 3) Ouvrir progressivement la lumière du poumon non-dépendant 4) Insufflations manuelles douces en pression contrôlée (Pmax < 25-30 cmH2O) 5) Reprendre ventilation mécanique bipulmonaire 6) Vérifier réexpansion par fibroscopie et/ou auscultation",
+                "**Pression de réexpansion** : ne jamais dépasser 25-30 cmH2O lors des insufflations manuelles de réexpansion — risque de lésion de réexpansion (RILI) si pression excessive",
+                "**Aspiration progressive des drains thoraciques** : démarrer à -5 à -10 cmH2O, jamais d'aspiration brutale à -20 cmH2O d'emblée après pneumonectomie (risque de déplacement médiastinal rapide et d'œdème pulmonaire de réexpansion)",
+                "**Après pneumonectomie** : PAS de drain thoracique en aspiration active en routine — drain clampé ou absent, contrôle radiologique à J1 pour vérifier la position médiastinale",
+                "**Paramètres ventilatoires au retour en VBP** : reprendre VT 6-8 mL/kg IBW (pas retour aux 10-12 mL/kg) — maintenir stratégie protectrice jusqu'à extubation",
+                "**Extubation** : privilégier l'extubation en salle d'opération ou en SSPI précoce chez patients à risque faible/modéré — ventilation prolongée augmente le risque d'ALI postopératoire",
+                "**Substitution TDL → sonde standard** : si ventilation postopératoire prolongée prévue (réanimation) → remplacer TDL par sonde d'intubation standard (moins traumatique sur la bronche souche sur long terme) avant transfert"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Après lobectomie, le moignon bronchique et les sutures vasculaires sont à risque lors des manœuvres de réexpansion. Les insufflations doivent être douces et progressives. Un crépitement à la fibroscopie ou une fuite aérienne persistante aux drains > 24h doit faire évoquer une fistule bronchopleurale précoce."
+            },
+            {
+              "type": "formula",
+              "content": "Critères de réexpansion satisfaisante : 1) Auscultation : murmure vésiculaire bilatéral symétrique 2) Fibroscopie : absence d'atélectasie lobaire résiduelle majeure 3) SpO2 ≥ 95% sous FiO2 ≤ 0,5 après retour en VBP 4) Absence de fuite aérienne > 500 mL/min aux drains (si présents)."
+            }
+          ]
+        },
+        {
+          "title": "7. Complications spécifiques et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications peropératoires et postopératoires immédiates de la chirurgie thoracique sous VUP associent des complications **ventilatoires**, **hémodynamiques** et **spécifiques à la résection**. Certaines engagent le pronostic vital à court terme."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**ALI/ARDS post-pneumonectomie** : incidence 2-4%, mortalité > 50% — facteurs de risque : grandes résections, transfusion peropératoire, surcharge volémique, volutraumatisme — prévention = stratégie protectrice stricte + restriction hydrosodée peropératoire",
+                "**Torsion de lobe résiduel** : après lobectomie moyenne ou supérieure droite — urgence chirurgicale : bronchospasme unilatéral brutal, désaturation, infiltrat radiologique en aile de papillon — diagnostic fibroscopique (aspect tournis bronchique)",
+                "**Fistule bronchopleurale (FBP) précoce** : déhiscence du moignon bronchique < 7 jours — fuite aérienne massive aux drains, pneumothorax, hypoxémie — urgence chirurgicale, risque d'inondation du poumon controlatéral → intubation sélective en urgence si détresse",
+                "**Hémorragie intra-thoracique** : saignement > 200 mL/h sur drain → reprise chirurgicale. Peropératoire : plaie vasculaire → conversion thoracotomie en urgence",
+                "**Œdème pulmonaire de réexpansion** : rare, après collapsus prolongé du poumon non-dépendant — mécanisme : lésion ischémie-reperfusion + réexpansion rapide → infiltrat unilatéral, hypoxémie réfractaire — traitement : CPAP/VNI, diurétiques, réintubation si sévère",
+                "**Trouble du rythme** : fibrillation auriculaire postopératoire incidence 10-20% après lobectomie, 30-40% après pneumonectomie — prévention : bêtabloquants périopératoires, magnésium, amiodarone prophylactique (débattu)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'ALI post-pneumonectomie est la complication la plus redoutée. Elle peut être déclenchée par un apport liquidien peropératoire excessif : objectif de restriction liquidienne peropératoire (< 6 mL/kg/h en dehors des pertes, apport total < 1500-2000 mL peropératoire pour une lobectomie standard). La transfusion de culots globulaires > 2 CGR peropératoires est un facteur de risque indépendant."
+            },
+            {
+              "type": "formula",
+              "content": "Critères ARDS post-pneumonectomie (adaptation Berlin 2012 au contexte post-chirurgie thoracique) : PaO2/FiO2 < 200 mmHg + infiltrats bilatéraux en dehors d'une surcharge + exclusion cardiogénique + début dans les 72h post-résection pulmonaire. Mortalité > 50%, recours à l'ECMO-VV possible dans les centres experts."
+            }
+          ]
+        },
+        {
+          "title": "8. Recommandations clés et niveaux de preuve",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les recommandations actuelles émanent principalement de la **SFAR (2022)**, de l'**ESTS/ERS (2022)** pour la résécabilité fonctionnelle, et de plusieurs méta-analyses récentes sur la ventilation protectrice en chirurgie thoracique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Grade A — VT 4-6 mL/kg IBW sous VUP** (SFAR 2022, Lohser 2020) : réduction des VILI et de l'ALI postopératoire démontré vs VT > 8 mL/kg",
+                "**Grade A — Vérification fibroscopique du TDL** avant VUP et après retournement : positionnement inadéquat dans 30-48% des cas sans vérification",
+                "**Grade B — PEEP 5 cmH2O de départ, titration individuelle** : pas de supériorité d'une PEEP élevée systématique en chirurgie thoracique (Ferrando 2020)",
+                "**Grade B — Driving Pressure cible ≤ 14 cmH2O** : marqueur associé à la morbidité pulmonaire postopératoire (Marret 2021)",
+                "**Grade B — Restriction liquidienne peropératoire** : < 6 mL/kg/h, objectif zéro bilan ou légèrement négatif pour résections majeures — réduction ALI postopératoire",
+                "**Grade B — Algorithme stepwise pour l'hypoxémie** : approche par étapes validée, CPAP poumon non-dépendant en premier recours avant réouverture VBP",
+                "**Grade C — TIVA vs halogénés** : insuffisamment de preuves pour recommander formellement le TIVA systématique — choix individualisé selon risque hypoxémique",
+                "**Grade C — Almitrine IV** : efficacité démontrée sur l'hypoxémie peropératoire, mais données de morbi-mortalité insuffisantes pour recommandation forte",
+                "**Grade C — NO inhalé peropératoire** : réservé à l'HTAP sévère documentée, pas de recommandation générale",
+                "**Recommandation ESTS/ERS 2022** : calcul ppoFEV1 et ppoDLCO obligatoires avant toute résection, scintigraphie de perfusion systématique si pneumonectomie ou fonction limite"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Aucune étude randomisée de grande taille n'a démontré la supériorité d'un mode ventilatoire (pression vs volume) sous VUP pour les critères durs (mortalité, ALI). Les recommandations reposent surtout sur des données extrapolées de la réanimation (ARDS Network) et des études observationnelles en chirurgie thoracique."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**VT 4-6 mL/kg IBW sous VUP** : règle absolue pour éviter le volutraumatisme — ne pas transposer le VT de la ventilation bipulmonaire",
+        "**Driving Pressure ≤ 14 cmH2O** : surveiller ce paramètre en temps réel — plus prédictif que la seule Pplat pour les VILI en chirurgie thoracique",
+        "**Algorithme stepwise de l'hypoxémie** : toujours commencer par vérifier le positionnement du TDL à la fibroscopie avant toute manipulation pharmacologique",
+        "**CPAP 2-5 cmH2O sur poumon non-dépendant** : intervention de premier recours après correction mécanique — communiquer avec le chirurgien sur la faisabilité selon le type de chirurgie",
+        "**Restriction liquidienne peropératoire + stratégie protectrice** : les deux piliers de la prévention de l'ALI post-pneumonectomie, complication rare mais gravissime (mortalité > 50%)"
+      ],
+      "references": [
+        "Lohser J, Slinger P — Lung Injury After One-Lung Ventilation: A Review of the Pathophysiologic Mechanisms Affecting the Ventilated and Collapsed Lung — Anesthesia & Analgesia 2015 (référence fondatrice, révisée 2020)",
+        "Marret E et al. — Driving pressure and postoperative pulmonary complications in patients undergoing thoracic surgery — BJA 2021",
+        "Ferrando C et al. — Individualised perioperative open-lung approach versus standard protective ventilation in abdominal surgery (iPROVE): a randomised controlled trial — Lancet Resp Med 2018 ; données thoraciques 2020",
+        "Brunelli A et al. — ERS/ESTS clinical guidelines on fitness for radical therapy in lung cancer patients — European Respiratory Journal 2022",
+        "SFAR — Recommandations formalisées d'experts : Anesthésie en chirurgie thoracique — SFAR 2022",
+        "Fernandez-Bustamante A et al. — Perioperative Lung Protective Ventilation in Surgical Patients — Anesthesiology 2020",
+        "Piccioni F et al. — Practical Recommendations on the Management of Perioperative Lung Isolation for Thoracic Surgery — Journal of Thoracic Disease 2022",
+        "Licker M et al. — Acute lung injury following thoracic surgery for lung cancer — European Respiratory Review 2021"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Homme 68 ans, lobectomie supérieure droite par VATS pour CBNPC stade IA. En décubitus latéral gauche, VUP établie depuis 25 minutes. SpO2 chute progressivement de 98% à 88% malgré FiO2 = 1,0 et VT 5 mL/kg IBW. Pplat = 22 cmH2O, PEEP = 5 cmH2O.",
+        "question": "Quelle est la première intervention à réaliser devant cette hypoxémie sous VUP ?",
+        "options": {
+          "A": "Appliquer une CPAP de 5 cmH2O sur le poumon droit non-ventilé",
+          "B": "Vérifier le positionnement du TDL par fibroscopie et aspirer les sécrétions",
+          "C": "Augmenter la PEEP à 10 cmH2O sur le poumon dépendant",
+          "D": "Administrer de l'almitrine 4 µg/kg/min en perfusion IV"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la première étape de l'algorithme stepwise est l'élimination des causes mécaniques, dont le déplacement du TDL (30-48% des cas après retournement) ou une obstruction bronchique par sécrétions. La fibroscopie s'impose avant toute autre intervention. Piège A : la CPAP est une mesure efficace (étape 4) mais ne doit jamais être appliquée avant d'avoir éliminé un problème mécanique — une CPAP sur un poumon mal isolé aggraverait la situation. Piège C : augmenter la PEEP à 10 cmH2O peut paradoxalement aggraver le shunt en surdistendant les alvéoles du poumon dépendant et redistribuant le flux vers le poumon non-ventilé. Piège D : l'almitrine est une étape tardive (étape 7) réservée à l'échec des mesures ventilatoires."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Femme 72 ans, pneumonectomie droite pour CBNPC. Scintigraphie de perfusion préopératoire : 58% droit, 42% gauche. SpO2 préopératoire = 97% en AA.",
+        "question": "Concernant la prédiction du risque hypoxémique peropératoire chez cette patiente, quelle affirmation est exacte ?",
+        "options": {
+          "A": "Le risque d'hypoxémie est faible car le poumon gauche (ventilé) reçoit moins de perfusion",
+          "B": "Le risque d'hypoxémie est élevé car le poumon droit (non-ventilé) reçoit la majorité de la perfusion, créant un shunt important",
+          "C": "La scintigraphie de perfusion n'est pas pertinente pour prédire l'hypoxémie peropératoire",
+          "D": "La SpO2 préopératoire normale garantit l'absence d'hypoxémie sous VUP"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : avec 58% de la perfusion totale dirigée vers le poumon droit (non-ventilé sous VUP), le shunt intrapulmonaire sera majeur. La fraction de shunt Qs/Qt sera approximativement proportionnelle à la fraction de perfusion du poumon non-ventilé. Piège A : c'est l'inverse — plus le poumon non-ventilé est perfusé, plus le shunt est important et l'hypoxémie sévère. Piège C : la scintigraphie de perfusion est précisément l'outil de référence pour quantifier ce risque, obligatoire avant pneumonectomie selon les recommandations ESTS/ERS 2022. Piège D : une SpO2 préopératoire normale en respiration spontanée ne prédit pas le comportement hémodynamique-ventilatoire sous VUP en décubitus latéral et curarisation."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Lors d'une lobectomie inférieure gauche, le patient sous VUP présente une Pplat = 28 cmH2O, PEEP = 5 cmH2O, VT = 6 mL/kg IBW, FR = 16/min, PaCO2 = 58 mmHg, SpO2 = 96%.",
+        "question": "Quelle est la conduite la plus appropriée concernant la ventilation de ce patient ?",
+        "options": {
+          "A": "Augmenter le VT à 8 mL/kg IBW pour corriger l'hypercapnie",
+          "B": "Augmenter la fréquence respiratoire à 20/min et accepter la Pplat actuelle",
+          "C": "Réduire la PEEP à 0 pour diminuer la Pplat",
+          "D": "Maintenir les paramètres actuels, la Pplat est dans les limites acceptables"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la PaCO2 à 58 mmHg constitue une hypercapnie permissive acceptable (seuil ≤ 60 mmHg) mais si l'on souhaite l'améliorer, l'augmentation modérée de la fréquence respiratoire (à 20/min) est la manœuvre appropriée car elle n'aggrave pas le volutraumatisme. En revanche, la Pplat à 28 cmH2O dépasse légèrement la cible recommandée (< 25 cmH2O) et nécessite attention — la driving pressure est 28-5 = 23 cmH2O, au-dessus du seuil de 14-15 cmH2O : il faudrait idéalement réduire le VT plutôt qu'augmenter la FR. Piège A : augmenter le VT pour corriger l'hypercapnie est l'erreur classique — cela aggraverait le volutraumatisme et la Pplat. Piège C : réduire la PEEP à 0 (ZEEP) expose aux atélectasies et peut aggraver l'hypoxémie sans bénéfice sur la Pplat si c'est le VT qui est excessif. Piège D : la Pplat à 28 cmH2O dépasse la cible et la driving pressure à 23 cmH2O est clairement excessive — ne pas maintenir sans intervention."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Patient sous VUP pour résection atypique pulmonaire droite. SpO2 = 87% malgré FiO2 = 1,0. TDL vérifié en bonne position à la fibroscopie. Recrutement alvéolaire du poumon gauche effectué. CPAP 5 cmH2O appliquée sur poumon droit. SpO2 remonte à 91%.",
+        "question": "Si la SpO2 reste à 91% et ne progresse pas après 5 minutes de CPAP sur le poumon droit, quelle est la prochaine étape la plus appropriée selon l'algorithme stepwise ?",
+        "options": {
+          "A": "Augmenter la CPAP à 10 cmH2O sur le poumon droit",
+          "B": "Administrer du NO inhalé sur le poumon gauche ventilé",
+          "C": "Effectuer des insufflations manuelles intermittentes sur le poumon droit en O2 pur",
+          "D": "Administrer un vasoconstricteur (noradrénaline) pour augmenter la pression artérielle systémique"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : après CPAP insuffisamment efficace, l'étape suivante est la ventilation intermittente du poumon non-dépendant (insufflations manuelles en O2 pur, 2-3 cycles), qui rouvre les alvéoles collabées et améliore immédiatement le rapport V/Q. Elle nécessite de prévenir le chirurgien. Piège A : augmenter la CPAP à 10 cmH2O risque de distendre excessivement le poumon opéré, de compromettre les sutures et d'obstruer le champ opératoire en VATS — la CPAP > 5 cmH2O est déconseillée. Piège B : le NO inhalé est réservé à l'HTAP sévère documentée, c'est une étape très tardive (étape 8) peu justifiée ici sans HTAP. Piège D : la noradrénaline peut améliorer le retour veineux et augmenter la pression perfusion pulmonaire, mais n'est pas une intervention de l'algorithme hypoxémique standard et peut aggraver la charge ventriculaire droite."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Pneumonectomie droite réalisée sous VUP. Le chirurgien demande de réexpandre le poumon gauche restant pour vérifier l'hémostase. Le TDL est en place.",
+        "question": "Lors du retour à la ventilation bipulmonaire après pneumonectomie droite, quelle affirmation est correcte concernant la gestion des drains thoraciques ?",
+        "options": {
+          "A": "Le drain thoracique droit doit être mis en aspiration à -20 cmH2O pour accélérer la réexpansion",
+          "B": "Le drain thoracique est habituellement absent ou clampé après pneumonectomie pour contrôler la position médiastinale",
+          "C": "Une aspiration douce à -5 cmH2O est systématiquement recommandée après pneumonectomie",
+          "D": "La réexpansion rapide du poumon gauche doit être réalisée avec des pressions d'insufflation > 35 cmH2O pour rouvrir les atélectasies"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : après pneumonectomie, la logette pleurale droite se remplit progressivement de sérum fibrineux et le médiastin se déplace légèrement vers la droite de façon contrôlée. Un drain en aspiration active risquerait de déplacer brutalement le médiastin vers la droite, provoquant une défaillance hémodynamique aiguë par compression des structures médiastinales gauches et de la VCI. Le drain est classiquement clampé (ou absent) avec contrôle radiologique à J1. Piège A : aspiration à -20 cmH2O après pneumonectomie est une erreur grave pouvant provoquer un déplacement médiastinal brutal et une défaillance circulatoire aiguë. Piège C : l'aspiration douce est utilisée après lobectomie, pas après pneumonectomie. Piège D : les pressions d'insufflation > 30-35 cmH2O lors de la réexpansion constituent un barotraumatisme — l'objectif est une réexpansion douce < 25-30 cmH2O."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Patient de 65 ans, VEMS préopératoire = 65% théorique, lobectomie supérieure droite planifiée (3 segments sur 19). Pas de HTAP.",
+        "question": "Quel est le ppoFEV1 prédit et la catégorie de risque selon les recommandations ESTS/ERS 2022 ?",
+        "options": {
+          "A": "ppoFEV1 = 55% — risque standard, pas d'évaluation supplémentaire nécessaire",
+          "B": "ppoFEV1 = 65% — risque standard, pas de scintigraphie nécessaire",
+          "C": "ppoFEV1 = 55% — risque élevé, scintigraphie de perfusion obligatoire",
+          "D": "ppoFEV1 ≈ 54,9% — risque intermédiaire, TM6M ou VO2max recommandé"
+        },
+        "correct": "A",
+        "explanation": "Réponse A correcte : ppoFEV1 = 65% × [1 - (3/19)] = 65% × (16/19) = 65% × 0,842 = 54,7% ≈ 55% du théorique. Ce seuil est > 40% (seuil de risque élevé ESTS/ERS 2022), donc risque standard sans nécessité d'évaluation complémentaire systématique (TM6M ou VO2max). Piège B : le ppoFEV1 n'est pas égal au VEMS préopératoire — il faut obligatoirement calculer la valeur post-résection en tenant compte des segments réséqués. Piège C : ppoFEV1 ≈ 55% > 40% — ce seuil correspond à un risque standard, pas élevé. La scintigraphie s'impose si ppoFEV1 < 30% ou pour les pneumonectomies. Piège D : le seuil déclenchant une évaluation par TM6M ou VO2max est ppoFEV1 < 30% ou ppoDLCO < 30% selon les recommandations ESTS/ERS 2022, pas à 55%."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Patiente sous VUP pour lobectomie moyenne droite, TIVA au propofol. Hémodynamique stable. FR = 16/min, VT = 5 mL/kg, PEEP = 5 cmH2O, FiO2 = 0,6, SpO2 = 97%.",
+        "question": "Concernant le choix entre TIVA et halogénés pour la VUP en chirurgie thoracique, quelle affirmation correspond le mieux aux données actuelles ?",
+        "options": {
+          "A": "Le TIVA au propofol est formellement recommandé en grade A car il préserve complètement la VPH contrairement aux halogénés",
+          "B": "Le sévoflurane à 1 CAM inhibe totalement la VPH et doit être systématiquement remplacé par le TIVA",
+          "C": "Aux doses cliniques usuelles (≤ 1 CAM), les halogénés inhibent partiellement la VPH mais leur infériorité clinique sur des critères durs n'est pas clairement démontrée",
+          "D": "Le desflurane est préférable au sévoflurane pour la VUP car il inhibe moins la VPH"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : les halogénés inhibent la VPH de façon dose-dépendante, mais à des concentrations ≤ 1 CAM, l'inhibition est partielle et modérée. Les études cliniques comparant TIVA vs halogénés n'ont pas démontré de supériorité nette sur des critères durs (mortalité, ALI) en chirurgie thoracique — le choix reste individualisé. Piège A : aucune recommandation de grade A ne préconise formellement le TIVA systématique en chirurgie thoracique — la recommandation est de grade C avec des données insuffisantes. Piège B : à 1 CAM, l'inhibition de la VPH est partielle (environ 20-30% de réduction de l'effet VPH), pas totale — l'inhibition totale s'observe à des concentrations > 2 CAM rarement utilisées. Piège D : desflurane et sévoflurane ont des profils comparables d'inhibition de la VPH aux doses cliniques — aucune donnée ne démontre la supériorité du desflurane sur ce critère spécifique."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "H2 postopératoire d'une pneumonectomie gauche, un patient de 70 ans développe une détresse respiratoire aiguë avec PaO2/FiO2 = 160 mmHg, infiltrats bilatéraux radiologiques, PVC normale à 6 mmHg, absence d'argument pour une surcharge cardiaque.",
+        "question": "Concernant l'ALI/ARDS post-pneumonectomie, quelle affirmation est exacte ?",
+        "options": {
+          "A": "L'ALI post-pneumonectomie survient exclusivement dans les 6 premières heures",
+          "B": "La transfusion peropératoire de ≥ 2 culots globulaires est un facteur de risque indépendant d'ALI post-pneumonectomie",
+          "C": "L'ECMO veino-veineuse est contre-indiquée après pneumonectomie en raison du risque de saignement au moignon bronchique",
+          "D": "La réexpansion du poumon résiduel par aspiration active -20 cmH2O est le traitement de première intention"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la transfusion peropératoire (≥ 2 CGR) est un facteur de risque indépendant d'ALI post-pneumonectomie, au même titre que la chirurgie étendue, l'apport liquidien excessif et le volutraumatisme peropératoire. Piège A : l'ALI post-pneumonectomie peut survenir dans les 72 premières heures (jusqu'à J3), pas exclusivement dans les 6 premières heures — son délai d'apparition le distingue des autres étiologies. Piège C : l'ECMO VV n'est pas formellement contre-indiquée après pneumonectomie — elle peut être discutée dans des centres experts chez des patients sélectionnés, même si le risque hémorragique est majoré. Elle constitue une option thérapeutique de recours dans les ARDS les plus sévères. Piège D : l'aspiration active -20 cmH2O après pneumonectomie est contre-indiquée (déplacement médiastinal) — la prise en charge de l'ARDS post-pneumonectomie repose sur la ventilation protectrice, les décubitus ventraux et éventuellement l'ECMO."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "En cours de lobectomie supérieure gauche par VATS, après 90 minutes de VUP, le chirurgien signale une distension progressive du poumon gauche opéré malgré la VUP établie. La fibroscopie montre le TDL gauche bien positionné, cuff bronchique gonflé.",
+        "question": "Parmi les causes suivantes, laquelle explique le mieux une distension du poumon non-dépendant malgré un TDL correctement positionné ?",
+        "options": {
+          "A": "Spasme bronchique sévère sur le poumon dépendant",
+          "B": "Fistule broncho-pleurale préexistante du côté opéré",
+          "C": "Dégonflement progressif du cuff bronchique gauche du TDL (fuite autour du ballonnet)",
+          "D": "Pneumothorax sous tension sur le poumon dépendant droit"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : un dégonflement progressif du cuff bronchique (fuite lente de ballonnet) est la cause la plus fréquente de perte de l'isolement pulmonaire avec TDL bien positionné initialement — l'air ventilé passe autour du cuff dégonflé et distend progressivement le poumon non-dépendant. Vérification : contrôle de la pression du cuff (maintenir 20-30 cmH2O) et regonflement si nécessaire. Piège A : le spasme bronchique du poumon dépendant entraînerait une augmentation des pressions ventilatoires et une hypoxémie, pas une distension du poumon non-dépendant. Piège B : une fistule bronchopleural préexistante du côté opéré n'entraînerait pas de distension du poumon mais une fuite aérienne — signe indirect différent. Piège D : un pneumothorax sous tension du poumon dépendant provoquerait une défaillance hémodynamique et une désaturation brutale, pas une distension du poumon controlatéral non-ventilé."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Après lobectomie inférieure droite, le patient est en décubitus latéral gauche. Vous procédez au retour en ventilation bipulmonaire pour la vérification de l'hémostase finale. Vous réouvrez progressivement la lumière bronchique droite du TDL.",
+        "question": "Quelle pression maximale d'insufflation est recommandée lors des manœuvres de réexpansion du poumon non-dépendant en fin d'intervention ?",
+        "options": {
+          "A": "< 15 cmH2O pour éviter tout traumatisme alvéolaire",
+          "B": "< 25-30 cmH2O, avec insufflations progressives et douces",
+          "C": "< 40 cmH2O si la réexpansion est incomplète après 3 insufflations",
+          "D": "Aucune limite de pression si la durée de l'insufflation est < 2 secondes"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la pression maximale recommandée lors des insufflations manuelles de réexpansion est < 25-30 cmH2O. Cette limite prévient le barotraumatisme sur le poumon réexpansé après collapsus prolongé, les lésions de réexpansion (RILI) et les fuites sur les sutures bronchiques et vasculaires fraîches. Les insufflations doivent être progressives (ne pas gonfler brutalement). Piège A : une limite à 15 cmH2O est trop restrictive — à cette pression il peut être difficile de rouvrir des alvéoles après collapsus prolongé de 2-3 heures. La cible de 25-30 cmH2O est un compromis validé en pratique. Piège C : dépasser 30-35 cmH2O lors de la réexpansion expose au barotraumatisme, aux lésions de réexpansion et aux désunions sur les agrafes chirurgicales — jamais justifié même si réexpansion incomplète. Piège D : la durée de l'insufflation ne protège pas du barotraumatisme — c'est la pression de plateau qui détermine le risque de lésion alvéolaire, indépendamment du temps d'application."
+      }
+    ]
   }
 ]
