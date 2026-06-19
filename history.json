@@ -7819,5 +7819,358 @@
         "explanation": "Réponse B correcte : la pression maximale recommandée lors des insufflations manuelles de réexpansion est < 25-30 cmH2O. Cette limite prévient le barotraumatisme sur le poumon réexpansé après collapsus prolongé, les lésions de réexpansion (RILI) et les fuites sur les sutures bronchiques et vasculaires fraîches. Les insufflations doivent être progressives (ne pas gonfler brutalement). Piège A : une limite à 15 cmH2O est trop restrictive — à cette pression il peut être difficile de rouvrir des alvéoles après collapsus prolongé de 2-3 heures. La cible de 25-30 cmH2O est un compromis validé en pratique. Piège C : dépasser 30-35 cmH2O lors de la réexpansion expose au barotraumatisme, aux lésions de réexpansion et aux désunions sur les agrafes chirurgicales — jamais justifié même si réexpansion incomplète. Piège D : la durée de l'insufflation ne protège pas du barotraumatisme — c'est la pression de plateau qui détermine le risque de lésion alvéolaire, indépendamment du temps d'application."
       }
     ]
+  },
+  {
+    "date": "2026-06-19",
+    "dateStr": "vendredi 19 juin",
+    "topic": "Prise en charge du patient porteur d'un défibrillateur automatique implantable (DAI) en périopératoire : reprogrammation préopératoire, interférences électromagnétiques peranesthésiques avec le bistouri électrique et réactivation postopératoire",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "Le patient porteur d'un DAI représente un défi périopératoire majeur : les interférences électromagnétiques (IEM) générées par le bistouri électrique peuvent provoquer des chocs inappropriés ou inhiber la stimulation antitachycardique, avec un risque vital immédiat. Avec plus de 50 000 implantations annuelles en France et une mortalité peropératoire significativement liée à la dysfonction du dispositif, la maîtrise de la prise en charge préopératoire, peranesthésique et postopératoire est incontournable pour tout anesthésiste-réanimateur.",
+      "sections": [
+        {
+          "title": "1. Définitions et Rappels Essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **défibrillateur automatique implantable (DAI)** est un dispositif électronique implanté (boîtier + sondes) capable de détecter et traiter automatiquement les **arythmies ventriculaires malignes** (TV/FV) par des thérapies électriques (choc électrique interne, overstimulation antitachycardique ATP) et d'assurer une stimulation antibradycardique de secours."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**DAI simple chambre (VR)** : sonde unique en ventricule droit — détection et choc ventriculaire uniquement",
+                "**DAI double chambre (DR)** : sondes oreillette droite + ventricule droit — discrimination supraventriculaire améliorée",
+                "**DAI-CRT (CRT-D)** : resynchronisation biventriculaire + défibrillation — insuffisance cardiaque avec bloc de branche gauche",
+                "**DAI sous-cutané (S-ICD)** : sans sonde endovasculaire, pas de stimulation antitachycardique ATP ni de stimulation antibradycardique",
+                "**ATP (Anti-Tachycardia Pacing)** : séquences de stimulation rapide pour réduire une TV sans choc — première ligne thérapeutique",
+                "**Zone de détection** : fréquence seuil au-delà de laquelle le DAI analyse et potentiellement traite (typiquement TV > 150-200 bpm, FV > 200-250 bpm selon programmation)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR : Le DAI n'est PAS un simple pacemaker. La désactivation des thérapies choc laisse en place la stimulation antibradycardique, mais un patient pacemaker-dépendant avec thérapies désactivées est protégé contre la bradycardie mais PAS contre une FV. Ne pas confondre 'désactivation des thérapies choc' et 'désactivation complète du dispositif'."
+            },
+            {
+              "type": "formula",
+              "content": "Zones de thérapie typiques : Zone moniteur (surveillance sans traitement) < Zone ATP (TV lente, ex. 150-180 bpm) < Zone choc basse énergie (TV rapide) < Zone FV (défibrillation haute énergie, ex. > 200-250 bpm) — valeurs VARIABLES selon programmation individuelle"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie des Interférences Électromagnétiques (IEM)",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les **IEM** surviennent lorsque des signaux électriques externes sont captés par les sondes du DAI et interprétés comme une activité cardiaque. Le bistouri électrique (électrochirurgie) est la source d'IEM la plus fréquente et la plus dangereuse en peropératoire, notamment en mode **coagulation monopolaire** à haute fréquence (200 kHz – 3,3 MHz)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mécanisme 1 — Inhibition** : les artefacts IEM sont détectés comme activité ventriculaire → inhibition de la stimulation antibradycardique → risque d'asystolie chez le patient pacemaker-dépendant",
+                "**Mécanisme 2 — Déclenchement inapproprié de choc** : les artefacts IEM dépassent le seuil de détection de la zone FV → choc électrique interne délivré sur rythme sinusal normal → risque de déstabilisation rythmique voire de FV induite",
+                "**Mécanisme 3 — Reversion en mode asynchrone** (mode bruit/interférence) : certains pacemakers/DAI basculent en mode asynchrone (VOO/DOO) lors de détection d'IEM continues — protection partielle mais risque de stimulation sur période réfractaire",
+                "**Mécanisme 4 — Reprogrammation non intentionnelle** : très rare avec les appareils actuels mais possible avec champ magnétique intense (IRM non conditionnelle)",
+                "**Mécanisme 5 — Dommage thermique sur sonde** : passage direct du courant de coagulation le long d'une sonde → brûlure myocardique à l'interface sonde-myocarde → élévation des seuils de stimulation, voire perte de capture"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Le **mode bipolaire** du bistouri électrique réduit considérablement les IEM car le courant circule entre les deux mâchoires de la pince, sans traverser le corps entier. La **distance entre le site opératoire et le boîtier** est le déterminant principal du risque : risque élevé si site opératoire **au-dessus de l'ombilic** ou à moins de **15 cm** du boîtier/sondes."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Le bistouri harmonique (Ultracision®) et les instruments à énergie ultrasonore ne génèrent PAS d'IEM électromagnétiques significatives — ils peuvent être utilisés sans contrainte particulière liée au DAI. En revanche, la radiofréquence (ablation, HIFU) génère des IEM importantes."
+            },
+            {
+              "type": "formula",
+              "content": "Risque IEM ÉLEVÉ si : bistouri monopolaire + site opératoire situé au-dessus de l'ombilic OU distance boîtier-site chirurgical < 15 cm — dans ce cas, reprogrammation ou magnet OBLIGATOIRE selon recommandations HRS/EHRA 2019-2022"
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation Préopératoire du Patient Porteur de DAI",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation préopératoire doit être **systématique et structurée** dès la consultation d'anesthésie. Elle nécessite l'**interrogatoire du dossier de rythmologie**, l'identification du type de dispositif et de son indication, et l'évaluation de la **dépendance à la stimulation** (pacemaker-dépendant ou non)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Identifier le fabricant et le modèle** : Medtronic, Abbott/St Jude, Boston Scientific, Biotronik, Sorin/MicroPort — chaque fabricant a ses propres protocoles et numéros d'urgence 24h/24",
+                "**Carte de porteur** : document indispensable — type de dispositif, modèle, date d'implantation, indication, programmation de base",
+                "**Indication du DAI** : prévention primaire (FEVG ≤ 35%) ou secondaire (TV/FV documentée) — impact sur stratégie de gestion",
+                "**Pacemaker-dépendance** : rythme propre < 30-40 bpm à l'arrêt de la stimulation, stimulation > 95% du temps, bloc AV complet, maladie sinusale sévère — RISQUE MAJEUR d'asystolie si inhibition",
+                "**Date du dernier contrôle** et état de la batterie — si fin de vie imminente (ERI : Elective Replacement Indicator), contacter le rythmologue en urgence avant toute chirurgie élective",
+                "**Traitement antiarythmique associé** : amiodarone, bêtabloquants — peut modifier les seuils de défibrillation et les fréquences de détection",
+                "**ECG de base** : rythme sous-jacent, pourcentage de stimulation estimé",
+                "**Consultation rythmologique préopératoire** : OBLIGATOIRE pour chirurgie à risque IEM élevé — idéalement avec interrogation du dispositif dans les 3-6 mois précédents"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "La **stratification du risque chirurgical** selon les IEM guide la stratégie : **risque faible** (bistouri bipolaire exclusif, site sous-ombilical, chirurgie périphérique distale) vs **risque élevé** (bistouri monopolaire, site sus-ombilical ou thoracique, chirurgie cardiaque ou vasculaire proximale)."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE ADMINISTRATIF : Ne pas se contenter de la carte de porteur qui peut être ancienne et ne pas refléter les reprogrammations successives. Toujours contacter le centre de rythmologie implanteur ou le fabricant pour obtenir la programmation actuelle exacte avant une chirurgie à risque."
+            },
+            {
+              "type": "formula",
+              "content": "Critères de pacemaker-dépendance : fréquence de stimulation > 95% sur Holter/interrogation OU rythme de substitution < 30-40 bpm en cas de panne de stimulation — impose reprogrammation en mode asynchrone (VOO/DOO/AOO) ou protection par magnet peropératoire"
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de Prise en Charge Périopératoire",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge repose sur 3 piliers séquentiels : **reprogrammation préopératoire** (ou utilisation du magnet), **surveillance et mesures de protection peranesthésiques**, et **réactivation/vérification postopératoires**. La décision dépend du niveau de risque IEM et de la dépendance à la stimulation."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**OPTION 1 — Reprogrammation préopératoire (gold standard pour risque élevé)** : par le rythmologue, le dispositif est reprogrammé en : (a) suspension des thérapies choc/ATP (mode 'thérapies OFF') ET (b) reprogrammation en mode asynchrone (VOO/AOO/DOO) si pacemaker-dépendant — garantit stimulation continue malgré IEM + supprime chocs inappropriés",
+                "**OPTION 2 — Application du magnet (alternative acceptable)** : aimant permanent appliqué sur le boîtier → (a) suspend les thérapies choc (sauf S-ICD : comportement VARIABLE selon modèle) ET (b) bascule en mode asynchrone pour certains modèles UNIQUEMENT — à vérifier selon fabricant",
+                "**OPTION 3 — Pas d'intervention (risque IEM faible)** : bistouri bipolaire exclusif, site distal, patient non pacemaker-dépendant → surveillance standard sans reprogrammation",
+                "**Mesures chirurgicales de réduction des IEM** : préférer bistouri BIPOLAIRE, utiliser bursts courts (< 5 secondes) avec pauses, placer la plaque de retour (électrode neutre) aussi loin que possible du boîtier et des sondes, axe plaque-site opératoire perpendiculaire à l'axe boîtier-cœur",
+                "**Monitoring peranesthésique obligatoire** : SpO2 pléthysmographique (permet de détecter perfusion cardiaque même si ECG artefacté), pression artérielle invasive recommandée pour chirurgie majeure, défibrillateur externe TOUJOURS disponible en salle",
+                "**Défibrillateur externe** : électrodes de défibrillation transcutanée (pads) en place AVANT induction pour tout patient porteur de DAI en chirurgie à risque — position antéro-postérieure préférée, à DISTANCE minimale de 8 cm du boîtier implanté",
+                "**S-ICD spécificités** : pas de stimulation antibradycardique → en cas de bradycardie peropératoire, utiliser stimulation transcutanée externe ; la réponse au magnet est variable (Emblem S-ICD Boston Scientific : magnet suspend les thérapies 60 secondes puis reprend si maintenu)"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "**Réactivation postopératoire** : priorité absolue en salle de réveil ou en réanimation. Le DAI doit être **réactivé (thérapies choc remises ON)** dès que la source d'IEM a disparu et que l'état hémodynamique est stable. Un patient sortant de bloc avec thérapies désactivées non réactivées est exposé à une mort subite non protégée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Réactivation immédiate** : dès la fin de chirurgie, interrogation du dispositif par le rythmologue ou le technicien fabricant pour réactivation et vérification de l'intégrité des sondes",
+                "**Si reprogrammation impossible immédiatement** : maintenir le monitoring continu (scope + défibrillateur externe prêt) jusqu'à réactivation par le rythmologue",
+                "**Vérification post-choc** : si choc(s) ont été délivrés peropératoirement (approprié ou non), interrogation obligatoire pour vérifier : seuil de défibrillation, intégrité des sondes, compteurs de thérapies",
+                "**Prescription postopératoire** : noter dans le dossier l'heure de réactivation et la confirmation par interrogation — traçabilité médico-légale essentielle"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ERREUR GRAVISSIME : Oublier de réactiver le DAI en postopératoire. Cette situation expose le patient à une mort subite non protégée en SSPI ou dans les heures suivantes. Un protocole institutionnel écrit (checklist) est INDISPENSABLE pour éviter cet oubli. La réactivation doit être tracée dans le dossier avec heure et nom du professionnel."
+            },
+            {
+              "type": "formula",
+              "content": "Règle des 8 cm : les pads de défibrillation externe doivent être placés à au moins 8 cm du boîtier implanté (idéalement en position antéro-postérieure) pour éviter les arcs électriques et les dommages au dispositif lors d'une défibrillation externe d'urgence"
+            }
+          ]
+        },
+        {
+          "title": "5. Complications et Leur Gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Choc inapproprié peropératoire** : secondaire à IEM détectées comme FV → (1) retirer le bistouri immédiatement, (2) évaluer le rythme cardiaque (ECG non artefacté), (3) si TV/FV réelle : laisser le DAI traiter + défibrillation externe si inefficace, (4) si choc inapproprié sur RS : appliquer le magnet pour suspendre les thérapies + corriger la cause d'IEM",
+                "**Inhibition de stimulation / asystolie** : patient pacemaker-dépendant + IEM → brady/asystolie → (1) retirer le bistouri, (2) stimulation transcutanée externe, (3) atropine IV (0,5-1 mg) si BAV ou dysfonction sinusale, (4) adrénaline si inefficace, (5) reprogrammation d'urgence en mode asynchrone",
+                "**Tempête électrique (electrical storm) postopératoire** : ≥ 3 épisodes de TV/FV en 24h traités par choc → sédation/analgésie IV, bêtabloquant IV (métoprolol ou propranolol), amiodarone IV, consultation rythmologique urgente — le stress chirurgical et les catécholamines endogènes sont des facteurs déclenchants",
+                "**Dysfonction de sonde post-choc externe** : défibrillation externe peut induire microlésions à l'interface sonde-myocarde → élévation seuil de stimulation ou de défibrillation → interrogation obligatoire après toute défibrillation externe",
+                "**Infection du dispositif** : risque majoré en cas de chirurgie contaminée, immunodépression, diabète — antibiothérapie prophylactique adaptée et avis infectieux si suspicion",
+                "**Reprogrammation non intentionnelle** : rare avec bistouri électrique standard, possible avec IRM non-conditionnelle, lithotritie extracorporelle sur champ thoracique, radiothérapie — avis rythmologique systématique"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE DE LA DÉFIBRILLATION EXTERNE EN URGENCE : si le patient est en FV et que le DAI ne choque pas (thérapies désactivées ou dispositif épuisé), la défibrillation externe doit être réalisée SANS DÉLAI même si les pads sont proches du boîtier — le risque de dommage au dispositif est secondaire face à l'urgence vitale. Positionner les pads le plus loin possible du boîtier mais ne pas retarder le choc."
+            },
+            {
+              "type": "text",
+              "content": "La **tempête électrique** est une complication postopératoire grave, favorisée par les états hypersympathiques (douleur, sevrage, hypovolémie, hypokaliémie). La **correction des facteurs déclenchants** (K⁺ > 4 mEq/L, Mg²⁺ > 0,8 mEq/L, équilibre acido-basique, anémie) est indissociable du traitement antiarythmique."
+            }
+          ]
+        },
+        {
+          "title": "6. Recommandations Clés avec Grades et Années",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**HRS/ASA 2011 (Expert Consensus)** — Consensus de référence nord-américain sur la gestion peropératoire des DECI (dispositifs électroniques cardiaques implantables) — base des pratiques actuelles ; mise à jour partielle 2018",
+                "**ESC 2022 (Ventricular Arrhythmias and Prevention of SCD)** — Grade I recommandation de consultation spécialisée préopératoire pour tout porteur de DAI en chirurgie non urgente — Classe I, Niveau C",
+                "**EHRA Consensus 2019 (Blomström-Lundqvist et al., Europace 2019)** — Recommandations européennes détaillées sur la gestion peropératoire des DECI : stratification du risque, protocoles magnet vs reprogrammation, spécificités S-ICD — document de référence européen le plus récent et le plus complet",
+                "**SFAR — Recommandations Formalisées d'Experts (RFE)** — Pas de RFE SFAR dédiée spécifiquement aux DAI à ce jour ; recommandations intégrées dans les RFE sur la consultation préanesthésique (2018) et les dispositifs cardiaques implantables",
+                "**ACC/AHA/HRS 2018 (Kusumoto et al., JACC 2019)** — Guidelines sur les bradycardies et stimulation cardiaque — définition pacemaker-dépendance et indication de reprogrammation — Grade I indication de gestion spécialisée peropératoire",
+                "**Principe Grade A** : pour chirurgie à risque IEM élevé, reprogrammation préopératoire par rythmologue + réactivation postopératoire documentée sont des standards de soins non négociables",
+                "**Principe Grade B** : l'utilisation du magnet est une alternative acceptable à la reprogrammation pour chirurgie à risque modéré si comportement sous magnet du dispositif est connu et documenté"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Résumé décisionnel : Risque IEM FAIBLE (bipolaire, distal) → surveillance standard | Risque IEM ÉLEVÉ + non PM-dépendant → désactivation thérapies choc (magnet ou reprogrammation) | Risque IEM ÉLEVÉ + PM-dépendant → reprogrammation en mode asynchrone (VOO/DOO) OBLIGATOIRE par rythmologue"
+            },
+            {
+              "type": "warning",
+              "content": "ÉVOLUTION RÉCENTE : Les DAI 'MRI-conditional' (compatible IRM sous conditions) sont de plus en plus fréquents mais nécessitent QUAND MÊME une reprogrammation spécifique AVANT l'IRM par un rythmologue — la compatibilité IRM ne signifie pas qu'aucune précaution n'est nécessaire."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Évaluation préopératoire structurée** : identifier type de DAI, fabricant, indication, dépendance à la stimulation et date du dernier contrôle — consulter le rythmologue pour toute chirurgie à risque IEM élevé",
+        "**Bistouri monopolaire sus-ombilical = risque élevé** : impose reprogrammation préopératoire (désactivation thérapies choc + mode asynchrone si PM-dépendant) OU utilisation documentée du magnet selon comportement du dispositif",
+        "**DAI ≠ pacemaker simple** : désactiver les thérapies choc ne supprime pas la stimulation antibradycardique — mais le patient n'est plus protégé contre TV/FV — défibrillateur externe ALWAYS prêt en salle",
+        "**Réactivation postopératoire = urgence non négociable** : doit être réalisée dès la fin des IEM, tracée dans le dossier avec heure et intervenant — l'oubli expose à une mort subite non protégée",
+        "**S-ICD : piège spécifique** : pas de stimulation antibradycardique, réponse au magnet variable selon modèle, ne permet pas d'ATP — adapter la stratégie en conséquence et anticiper la stimulation transcutanée externe si besoin"
+      ],
+      "references": [
+        "Blomström-Lundqvist C et al. — European Heart Rhythm Association consensus document on how to prevent, diagnose and treat cardiac implantable electronic device infections — Europace 2019;21(11):1844-1859 [inclut gestion peropératoire]",
+        "Mulpuru SK et al. — Cardiac Pacemakers: Function, Troubleshooting, and Management — JACC 2017;69(2):189-210",
+        "Kusumoto FM et al. — 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay — JACC 2019;74(7):e51-e156",
+        "Crossley GH et al. — The MASTER Trial: Clinical Management of Implantable Cardioverter-Defibrillators Using Remote Monitoring — JACC 2011;58(16):1660-1668",
+        "American Society of Anesthesiologists — Practice Advisory for the Perioperative Management of Patients with Cardiac Implantable Electronic Devices: Pacemakers and Implantable Cardioverter-Defibrillators — Anesthesiology 2011;114(2):247-261",
+        "ESC Guidelines 2022 — 2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death — European Heart Journal 2022;43(40):3997-4126",
+        "Gifford J et al. — Perioperative Device Evaluation and Pacemaker Reprogramming — Anesthesiology Clinics 2020;38(4):875-894"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 68 ans, porteur d'un DAI double chambre (Medtronic Evoque, implanté pour FEVG à 30% en prévention primaire) est programmé pour une colectomie droite par laparoscopie. L'interrogation préopératoire montre : rythme sinusal à 75 bpm, stimulation ventriculaire 2% du temps, FEVG actuelle à 35%.",
+        "question": "Quelle est la stratégie peropératoire la plus adaptée concernant le bistouri électrique et la gestion du DAI ?",
+        "options": {
+          "A": "Reprogrammation en mode asynchrone VOO obligatoire car patient porteur de DAI",
+          "B": "Utilisation exclusive du bistouri bipolaire avec surveillance standard sans reprogrammation préalable",
+          "C": "Désactivation des thérapies choc par le magnet peranesthésique + bistouri monopolaire accepté + défibrillateur externe prêt",
+          "D": "Contre-indication formelle à la laparoscopie chez le porteur de DAI, conversion en laparotomie obligatoire"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la laparoscopie avec bistouri monopolaire représente un risque IEM élevé (site sus-ombilical, courant monopolaire). Le patient N'est PAS pacemaker-dépendant (stimulation ventriculaire 2%), donc le mode asynchrone n'est pas nécessaire. La stratégie est : désactivation des thérapies choc (magnet ou reprogrammation) + défibrillateur externe disponible + bistouri monopolaire autorisé sous cette protection. Piège A : le mode VOO est réservé aux patients pacemaker-dépendants — l'imposer systématiquement est une erreur car le mode asynchrone expose à une stimulation sur période réfractaire inutilement. Piège B : le bistouri bipolaire seul serait suffisant pour risque faible, mais la laparoscopie abdominale avec coagulation est considérée à risque IEM élevé, et le bistouri monopolaire est couramment utilisé en laparoscopie. Piège D : la laparoscopie n'est pas contre-indiquée chez le porteur de DAI — cette contre-indication n'existe pas dans les recommandations."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "En peropératoire d'une thyroïdectomie totale, le chirurgien utilise le bistouri monopolaire. Le moniteur affiche soudainement une fréquence cardiaque de 0 bpm pendant 4 secondes avant de reprendre à 78 bpm. La pression artérielle non invasive affiche 85/50 mmHg. Le patient est sous AG, stable avant cet épisode. Son DAI est actif (thérapies non désactivées préopératoirement).",
+        "question": "Quel est le mécanisme le plus probable et la conduite à tenir immédiate ?",
+        "options": {
+          "A": "Choc électrique interne inapproprié sur artefact IEM — retirer le magnet du boîtier et poursuivre",
+          "B": "Inhibition de la stimulation antibradycardique par IEM avec asystolie transitoire — interrompre immédiatement le bistouri électrique et évaluer le rythme sous-jacent",
+          "C": "Dysfonction de sonde aiguë par courant de coagulation — défibrillation externe d'urgence",
+          "D": "Artefact de mesure tensionnelle sans signification clinique — poursuivre l'intervention sans modification"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la séquence FC = 0 bpm pendant 4 secondes pendant l'utilisation du bistouri chez un patient avec DAI actif (non désactivé) est évocatrice d'une inhibition de la stimulation par IEM. Si le patient est pacemaker-dépendant (non précisé mais possible), cela représente une asystolie transitoire. Conduite : arrêter immédiatement le bistouri, vérifier le rythme cardiaque réel (SpO2 pléthysmographique, PA invasive), évaluer la conscience/perfusion, envisager reprogrammation en mode asynchrone d'urgence. Piège A : il n'y a pas de magnet mentionné en place — et si un magnet était en place, il aurait déjà désactivé les thérapies et basculé en mode asynchrone, rendant l'inhibition moins probable. Piège C : la dysfonction de sonde aiguë par courant thermique est possible mais ne se présente pas par une asystolie transitoire pendant le bistouri — elle se manifesterait par une perte de capture après l'utilisation. Piège D : une chute de PA à 85/50 associée à une FC à 0 n'est jamais un artefact isolé à ignorer."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un patient porteur d'un S-ICD (Emblem, Boston Scientific) doit bénéficier d'une cure de hernie inguinale sous rachianesthésie. L'équipe chirurgicale prévoit d'utiliser le bistouri monopolaire.",
+        "question": "Quelle affirmation concernant le S-ICD est EXACTE pour guider la prise en charge ?",
+        "options": {
+          "A": "Le S-ICD peut assurer une stimulation antibradycardique de secours en cas de bradycardie peropératoire, comme un DAI endovasculaire",
+          "B": "L'application d'un magnet sur le boîtier du S-ICD Emblem suspend définitivement les thérapies jusqu'à retrait du magnet + 30 secondes",
+          "C": "Le S-ICD ne possède pas de fonction ATP ni de stimulation antibradycardique, nécessitant une stimulation transcutanée externe disponible en cas de bradycardie",
+          "D": "La rachianesthésie est contre-indiquée chez le porteur de S-ICD en raison du risque de modification des seuils de défibrillation"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le S-ICD (sous-cutané) est dépourvu de toute sonde endovasculaire — il ne peut donc assurer NI stimulation antibradycardique NI anti-tachycardia pacing (ATP). En cas de bradycardie peropératoire, la seule option est la stimulation transcutanée externe (ou une voie veineuse centrale pour stimulation transveineuse temporaire si urgence). Piège A : c'est l'erreur classique de confondre S-ICD avec DAI endovasculaire — le S-ICD N'A PAS de fonction pacing. Piège B : pour le S-ICD Emblem de Boston Scientific, l'application du magnet suspend les thérapies pendant que le magnet est maintenu en place, mais le comportement exact (suspension temporaire de 30 secondes ou continue) dépend du modèle et de la programmation — en fait pour l'Emblem, le magnet suspend les chocs pendant qu'il est maintenu en place, sans limite de temps absolue, ce qui rend cette réponse partiellement incorrecte dans ses détails. La réponse C reste la plus précise et cliniquement actionnable. Piège D : la rachianesthésie n'est pas contre-indiquée chez le porteur de S-ICD — aucune recommandation ne l'interdit."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Vous recevez en consultation pré-anesthésique un patient de 72 ans, porteur d'un DAI-CRT-D (Biotronik, implanté il y a 7 ans pour cardiomyopathie dilatée, FEVG 28%, bloc de branche gauche). L'interrogation du dispositif montre une batterie en 'ERI' (Elective Replacement Indicator).",
+        "question": "Quelle est la conduite à tenir prioritaire avant une chirurgie de prothèse totale de hanche programmée dans 3 semaines ?",
+        "options": {
+          "A": "Opérer dans les délais prévus en utilisant exclusivement le bistouri bipolaire, l'ERI ne modifiant pas la prise en charge peropératoire",
+          "B": "Reporter la chirurgie et contacter le rythmologue en urgence pour remplacement du dispositif avant toute intervention programmée",
+          "C": "Maintenir le calendrier chirurgical avec reprogrammation préopératoire systématique en mode asynchrone, l'ERI garantissant encore plusieurs mois de fonctionnement",
+          "D": "Réaliser la chirurgie sous anesthésie locorégionale exclusive pour éviter toute interaction avec le dispositif en fin de vie"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'ERI (Elective Replacement Indicator) signifie que la batterie est en fin de vie élective — le dispositif dispose encore de fonctionnalités complètes mais pour une durée limitée (généralement 3-6 mois selon fabricant et utilisation). Une chirurgie programmée ne devrait pas être réalisée sans remplacement du dispositif ou au minimum sans avis rythmologique formel sur la faisabilité et les risques. Pour Biotronik, contacter le centre de rythmologie est impératif. Piège A : l'ERI modifie SIGNIFICATIVEMENT la prise en charge — un dispositif en ERI peut basculer en mode 'sécurité' (mode de remplacement simplifié) à tout moment, perdant les fonctions de resynchronisation et de défibrillation optimales. Piège C : le mode asynchrone ne résout pas le problème de batterie en fin de vie — de plus, le CRT-D en mode VOO perdrait la resynchronisation biventriculaire au profit d'une simple stimulation VD, aggravant potentiellement la cardiopathie. Piège D : le type d'anesthésie (locorégionale vs générale) ne résout pas le problème fondamental d'un dispositif en fin de vie — et la technique anesthésique seule n'empêche pas une défaillance du DAI pendant l'intervention."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "En salle de réveil, 2 heures après une chirurgie de résection hépatique avec utilisation extensive du bistouri monopolaire, un patient porteur de DAI (thérapies désactivées préopératoirement par le rythmologue) présente une TV soutenue monomorphe à 180 bpm avec instabilité hémodynamique (PA 70/40 mmHg). Le rythmologue est contacté mais ne peut pas intervenir avant 45 minutes.",
+        "question": "Quelle est la conduite à tenir la plus appropriée dans l'immédiat ?",
+        "options": {
+          "A": "Amiodarone IV 300 mg en bolus IV lent en attendant le rythmologue pour réactivation",
+          "B": "Cardioversion électrique externe synchronisée après application préalable d'un magnet pour réactiver le DAI",
+          "C": "Cardioversion électrique externe synchronisée immédiate avec les pads en position antéro-postérieure à distance du boîtier, sans attendre le rythmologue",
+          "D": "Stimulation anti-tachycardique (ATP) transcutanée externe en attendant la réactivation du DAI"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : face à une TV hémodynamiquement instable (PA 70/40 mmHg), la cardioversion électrique externe synchronisée est le traitement de première intention immédiat — l'instabilité hémodynamique ne permet pas d'attendre 45 minutes. Les pads en position antéro-postérieure à ≥ 8 cm du boîtier minimisent les dommages au dispositif mais NE DOIVENT PAS retarder le choc. Piège A : l'amiodarone peut être utile pour prévenir les récidives mais est insuffisante en première intention face à une TV instable — et délayer la cardioversion pour administrer l'amiodarone est une erreur dans ce contexte hémodynamique. Piège B : le magnet NE RÉACTIVE PAS un DAI préalablement reprogrammé avec thérapies désactivées — le magnet suspend les thérapies d'un DAI actif, il ne les réactive pas. Cette confusion est un piège classique. De plus, appliquer un magnet sur un DAI avec thérapies désactivées n'a aucun effet thérapeutique. Piège D : l'ATP transcutanée externe n'existe pas comme technique clinique établie — l'ATP (overstimulation) est une fonction interne du DAI, non disponible en externe."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Un patient porteur de DAI (Abbott/St Jude Fortify Assura) bénéficie d'une chirurgie de remplacement valvulaire aortique par sternotomie. Le chirurgien souhaite utiliser l'électrochirurgie monopolaire pour l'hémostase et prévoit également la défibrillation cardiaque interne directe (à cœur ouvert) lors du sevrage de CEC.",
+        "question": "Concernant la défibrillation interne directe peropératoire chez ce patient porteur de DAI, quelle précaution est INDISPENSABLE ?",
+        "options": {
+          "A": "La défibrillation interne directe est contre-indiquée en présence d'un DAI fonctionnel — il faut impérativement désactiver complètement le dispositif avant CEC",
+          "B": "Les palettes de défibrillation interne directe doivent être placées perpendiculairement à l'axe sonde-boîtier et à distance des sondes cardiaques pour minimiser les dommages à l'interface électrode-myocarde",
+          "C": "Une interrogation du dispositif par le rythmologue est obligatoire immédiatement après la défibrillation interne pour évaluer l'intégrité des sondes et les seuils de stimulation/défibrillation",
+          "D": "L'énergie de défibrillation interne directe doit être réduite de 50% en présence d'un DAI pour éviter d'endommager les circuits électroniques du boîtier"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : toute défibrillation (interne ou externe) peut induire des microlésions à l'interface sonde-myocarde et potentiellement modifier les seuils de stimulation et de défibrillation, voire endommager les circuits du boîtier. Une interrogation systématique post-défibrillation est indispensable avant de restituer le patient au service de soins. Piège A : la défibrillation interne directe n'est pas contre-indiquée en présence d'un DAI — elle est parfois nécessaire lors de chirurgie cardiaque sous CEC. La 'désactivation complète' du dispositif avant CEC n'est pas un standard — on désactive les thérapies choc mais on maintient la stimulation. Piège B : si cette précaution (orientation des palettes) est cliniquement souhaitable pour minimiser les courants traversant les sondes, elle n'est pas présentée comme 'indispensable' dans les recommandations — et en pratique peropératoire sur cœur ouvert, le positionnement est contraint par l'anatomie. La vérification post-défibrillation (C) est plus universellement et explicitement recommandée. Piège D : il n'existe pas de recommandation pour réduire de 50% l'énergie de défibrillation interne en présence d'un DAI — l'énergie utilisée dépend des besoins cliniques (généralement 5-50J en interne)."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Un patient de 58 ans, porteur de DAI pour TV soutenue post-infarctus (prévention secondaire), est hospitalisé en réanimation chirurgicale J1 d'une laparotomie exploratrice pour péritonite. L'infirmière de nuit signale 4 décharges électriques ressenties par le patient en 3 heures. L'ECG entre les épisodes montre un rythme sinusal à 90 bpm, QTc 510 ms, hypokaliémie à 2,8 mEq/L.",
+        "question": "Quel est le diagnostic le plus probable et le traitement PRIORITAIRE ?",
+        "options": {
+          "A": "Tempête électrique sur TV vraies répétées — amiodarone IV + sédation + correction de l'hypokaliémie + appel rythmologue",
+          "B": "Chocs inappropriés répétés par détection de l'onde T sur QTc allongé (oversensing) — désactivation des thérapies par magnet + correction de l'hypokaliémie + appel rythmologue",
+          "C": "Dysfonction de sonde avec oversensing — remplacement chirurgical urgent de la sonde dans les 24 heures",
+          "D": "Fonctionnement normal du DAI traitant des épisodes de TV répétés — poursuivre la surveillance sans modification thérapeutique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : le tableau associant QTc allongé à 510 ms, hypokaliémie à 2,8 mEq/L et chocs multiples en l'absence de TV documentée évoque fortement des chocs INAPPROPRIÉS par oversensing de l'onde T (T-wave oversensing) — phénomène où l'onde T de grande amplitude est détectée comme un second complexe QRS par le DAI, doublement la fréquence 'perçue' et déclenchant des thérapies inappropriées. La conduite immédiate est : application du magnet pour suspendre les thérapies, correction URGENTE de l'hypokaliémie et reprogrammation par rythmologue. Piège A : même si des TV vraies sont possibles (patient à risque), l'ECG entre les épisodes montre un rythme sinusal — et le QTc à 510 ms avec K⁺ à 2,8 est un contexte classique d'oversensing de l'onde T. L'amiodarone qui allonge le QT serait délétère dans ce contexte. Piège C : la dysfonction de sonde est possible mais ne justifie pas un remplacement chirurgical urgent — et la correction d'hypokaliémie doit être réalisée en premier. Piège D : 4 chocs en 3 heures chez un patient en RS entre les épisodes NE sont jamais 'normaux' sans investigation."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Lors de la consultation pré-anesthésique pour une cystoscopie rigide et résection trans-urétrale de prostate (RTUP) sous rachianesthésie, le patient présente une carte de porteur mentionnant un 'pacemaker' implanté il y a 10 ans. À l'examen de la cicatrice, vous identifiez un boîtier en position sous-claviculaire gauche avec deux bosses palpables suggérant deux sondes.",
+        "question": "Concernant l'identification de ce dispositif, quelle démarche est la plus rigoureuse avant l'intervention ?",
+        "options": {
+          "A": "La carte mentionne 'pacemaker' donc pas de risque de choc inapproprié — la RTUP avec courant électrique peut être réalisée avec surveillance standard",
+          "B": "Réaliser une radiographie thoracique de face pour identifier le code de radiotransparence du boîtier (code à 3 lettres ou logo fabricant) et confirmer le type de dispositif",
+          "C": "Contacter le centre implanteur ou le fabricant (via le numéro de série sur la carte ou la radiographie) pour obtenir la programmation exacte et confirmer s'il s'agit d'un pacemaker seul ou d'un DAI",
+          "D": "Considérer par défaut tout dispositif à deux sondes comme un DAI double chambre et appliquer le protocole DAI systématiquement"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : la carte peut être erronée, ancienne ou incomplète — un patient peut avoir eu un pacemaker remplacé par un DAI lors d'une révision. La démarche rigoureuse est de contacter directement le centre implanteur ou le fabricant (numéro de série gravé sur le boîtier, visible sur radiographie ou carte) pour obtenir la programmation actuelle. Les fabricants disposent tous d'une hotline 24h/24 pour les urgences. Piège A : la mention 'pacemaker' sur une carte de 10 ans ne garantit pas que le dispositif n'a pas été upgradé en DAI — c'est une erreur médicale potentiellement fatale. De plus, la RTUP utilise du courant électrique (résecteur) qui génère des IEM importantes. Piège B : la radiographie permet d'identifier le fabricant et le modèle via le code radiopaque, mais c'est une étape diagnostique — elle ne remplace pas le contact direct avec le centre pour obtenir la programmation actuelle. C'est un outil utile mais non suffisant seul. Piège D : appliquer par défaut le protocole DAI est une attitude 'safe' qui peut sembler raisonnable, mais la bonne pratique reste la confirmation certaine — de plus, cette approche systématique sans vérification ne répond pas à la nécessité de connaître la programmation exacte."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Un patient porteur d'un DAI (Medtronic Evoque ICD, non pacemaker-dépendant) doit bénéficier d'une cholécystectomie laparoscopique urgente pour cholécystite aiguë lithiasique. Il est 2h du matin, le rythmologue de garde n'est pas disponible dans l'heure. L'équipe a un magnet disponible.",
+        "question": "Concernant l'utilisation du magnet comme alternative à la reprogrammation dans ce contexte d'urgence, quelle affirmation est EXACTE ?",
+        "options": {
+          "A": "Le magnet appliqué sur un DAI Medtronic Evoque suspend définitivement les thérapies choc jusqu'à sa dépose, quel que soit le temps d'application",
+          "B": "Le magnet appliqué sur un DAI Medtronic Evoque bascule le dispositif en mode VOO (asynchrone) et suspend les thérapies — comportement identique à un pacemaker Medtronic",
+          "C": "Le magnet appliqué sur un DAI Medtronic suspend les thérapies choc/ATP mais NE bascule PAS en mode asynchrone — la stimulation antibradycardique reste en mode inhibé (sensed pacing) ; le mode asynchrone n'est pas induit par le magnet sur les DAI Medtronic",
+          "D": "L'utilisation du magnet est contre-indiquée en urgence chirurgicale sans avis rythmologique préalable documenté"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : c'est une distinction CAPITALE. Pour les DAI Medtronic, l'application du magnet SUSPEND les thérapies choc/ATP MAIS NE BASCULE PAS en mode asynchrone — la stimulation antibradycardique reste programmée en mode inhibé (ex. VVI/DDD). Cela signifie que chez un patient pacemaker-dépendant, les IEM peuvent toujours inhiber la stimulation même avec le magnet. Pour basculer en mode asynchrone, il faut une reprogrammation explicite par le rythmologue. Ce comportement est DIFFÉRENT des pacemakers Medtronic (qui, eux, basculent en mode asynchrone sous magnet) et des autres fabricants (comportements variables). Piège A : 'définitivement' est incorrect — pour Medtronic, le comportement sous magnet est actif pendant que le magnet est en place, mais la 'définitivité' n'est pas le bon terme ; surtout, pour certains fabricants (Boston Scientific notamment), les thérapies se réactivent après retrait du magnet. Piège B : c'est l'erreur classique de confondre pacemaker et DAI Medtronic — le magnet bascule les PACEMAKERS Medtronic en mode asynchrone, mais PAS les DAI Medtronic. Piège D : l'utilisation du magnet en urgence est explicitement reconnue comme alternative acceptable dans les recommandations HRS/EHRA — l'absence de rythmologue disponible ne contre-indique pas son utilisation."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Vous prenez en charge un patient porteur de DAI CRT-D en SSPI après une lobectomie pulmonaire droite par thoracotomie. Le chirurgien a utilisé le bistouri monopolaire extensivement. Le patient est extubé, stable hémodynamiquement. Les thérapies du DAI avaient été désactivées préopératoirement. Le rythmologue doit passer réactiver le dispositif dans 2 heures.",
+        "question": "Parmi les éléments de surveillance en SSPI en attendant la réactivation, lequel est LE PLUS IMPORTANT à mettre en place immédiatement ?",
+        "options": {
+          "A": "Dosage de la troponine T et de la CRP pour évaluer les dommages myocardiques liés au bistouri sur les sondes",
+          "B": "Scope ECG continu + défibrillateur externe (avec pads en place ou immédiatement disponibles) + SpO2 continue + personnel formé à la défibrillation externe disponible",
+          "C": "Perfusion prophylactique d'amiodarone IV (150 mg sur 10 min puis 1 mg/min) pour prévenir les arythmies en l'absence de protection par le DAI",
+          "D": "Interrogation immédiate du DAI par le technicien fabricant pour vérifier l'intégrité des sondes avant de décider si la réactivation peut attendre 2 heures"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : un patient dont le DAI a les thérapies désactivées est sans protection antiarythmique — toute TV/FV sera mortelle sans traitement externe. La priorité absolue est d'assurer une surveillance continue avec capacité de défibrillation externe immédiate (< 3 minutes idéalement). Le scope continu détecte les arythmies, les pads en place permettent une réponse immédiate. Piège A : les dosages biologiques sont utiles à distance mais ne constituent pas la priorité urgente en SSPI — ils ne protègent pas le patient d'une arythmie imminente. Piège C : la perfusion prophylactique d'amiodarone n'est pas indiquée systématiquement en l'absence d'arythmie documentée ou de facteur déclenchant identifié — et l'amiodarone ne remplace pas la surveillance et la disponibilité de la défibrillation externe. De plus, elle expose à des effets secondaires (hypotension, bradycardie) sans bénéfice prouvé en prophylaxie primaire. Piège D : l'interrogation du dispositif est indispensable mais n'est pas le premier geste — la protection du patient contre une arythmie imminente prime sur le diagnostic de l'état du dispositif. L'interrogation peut attendre que la surveillance soit en place."
+      }
+    ]
   }
 ]
