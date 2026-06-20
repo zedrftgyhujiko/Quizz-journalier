@@ -8172,5 +8172,357 @@
         "explanation": "Réponse B correcte : un patient dont le DAI a les thérapies désactivées est sans protection antiarythmique — toute TV/FV sera mortelle sans traitement externe. La priorité absolue est d'assurer une surveillance continue avec capacité de défibrillation externe immédiate (< 3 minutes idéalement). Le scope continu détecte les arythmies, les pads en place permettent une réponse immédiate. Piège A : les dosages biologiques sont utiles à distance mais ne constituent pas la priorité urgente en SSPI — ils ne protègent pas le patient d'une arythmie imminente. Piège C : la perfusion prophylactique d'amiodarone n'est pas indiquée systématiquement en l'absence d'arythmie documentée ou de facteur déclenchant identifié — et l'amiodarone ne remplace pas la surveillance et la disponibilité de la défibrillation externe. De plus, elle expose à des effets secondaires (hypotension, bradycardie) sans bénéfice prouvé en prophylaxie primaire. Piège D : l'interrogation du dispositif est indispensable mais n'est pas le premier geste — la protection du patient contre une arythmie imminente prime sur le diagnostic de l'état du dispositif. L'interrogation peut attendre que la surveillance soit en place."
       }
     ]
+  },
+  {
+    "date": "2026-06-20",
+    "dateStr": "samedi 20 juin",
+    "topic": "Prise en charge du status dystonique aigu (tempête dystonique) en réanimation : sédation anesthésique titrée, contrôle de l'hyperthermie et de la rhabdomyolyse, place de l'anesthésie générale prolongée et du baclofène intrathécal en urgence",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le **status dystonique** (ou tempête dystonique) est une urgence neurologique et réanimatoire rare mais potentiellement fatale, définie par des épisodes dystoniques continus ou sub-continus entraînant une instabilité physiologique majeure. Sans prise en charge agressive en soins intensifs, la mortalité atteint 10–20 % par défaillance multi-organe secondaire à l'hyperthermie, la rhabdomyolyse et l'insuffisance respiratoire. La maîtrise de l'escalade thérapeutique — de la sédation titrée jusqu'au baclofène intrathécal en urgence — est indispensable à tout réanimateur.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **dystonie** est un syndrome hyperkinétique caractérisé par des contractions musculaires involontaires, soutenues ou répétitives, produisant des postures anormales ou des mouvements en torsion. Elle peut être **focale** (cervicale, oromandibulaire), **segmentaire** ou **généralisée**."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Status dystonique (SD)** : épisodes dystoniques sévères, continus ou répétés, résistants au traitement ambulatoire habituel, avec retentissement physiologique systémique (hyperthermie, tachycardie, détresse respiratoire, rhabdomyolyse)",
+                "**Tempête dystonique** : terme synonyme, souvent utilisé pour les formes les plus sévères avec instabilité hémodynamique franche",
+                "**Dystonie primaire (idiopathique)** : mutations DYT1 (TOR1A), DYT6 (THAP1), etc. — pas de lésion structurelle",
+                "**Dystonie secondaire (acquise)** : paralysie cérébrale (étiologie la plus fréquente en pédiatrie), maladies métaboliques héréditaires (acidurie glutarique type I, maladie de Wilson), lésions des noyaux gris, médicaments (neuroleptiques, métoclopramide)",
+                "**Score UDRS (Unified Dystonia Rating Scale)** : outil de quantification, mais non spécifique au SD en aigu",
+                "**Critère de gravité immédiate** : température > 38,5 °C, CPK > 1000 UI/L, SpO₂ < 92 %, FC > 120 bpm de façon prolongée"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas confondre le status dystonique avec la rigidité du syndrome malin des neuroleptiques (SMN) ou du syndrome sérotoninergique : l'anamnèse médicamenteuse et la présentation clinique (trismus, opisthotonos vs. roue dentée, hyperthermie maligne) orientent, mais le mécanisme et le traitement diffèrent profondément. Le SMN contre-indique les agents dopaminergiques à visée antitonique."
+            },
+            {
+              "type": "formula",
+              "content": "Seuil d'admission en réanimation : CPK > 1000 UI/L OU température centrale > 38,5 °C OU détresse respiratoire OU instabilité hémodynamique — l'un de ces critères suffit"
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La physiopathologie du SD implique un **dérèglement du circuit cortico-striato-thalamo-cortical** avec hyperactivité des voies directes (striatum → pallidum interne) et déficit d'inhibition GABAergique. Les noyaux gris centraux (putamen, globus pallidus interne — GPi) présentent un **pattern de décharge anormal** entraînant une co-contraction agoniste-antagoniste prolongée."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Déficit GABAergique** : hypoactivité des interneurones inhibiteurs striataux → désinhibition du GPi → suractivation thalamique et corticale",
+                "**Excès glutamatergique** : activation des récepteurs NMDA et AMPA au niveau striatal et thalamique, entretenant la boucle hyperkinétique",
+                "**Dérèglement dopaminergique** : déséquilibre D1/D2 au niveau striatal selon l'étiologie (ex : déficit en dopamine dans les dystonies dopa-sensibles DOPA-responsive dystonia — DRD)",
+                "**Cercle vicieux thermométabolique** : contractions musculaires continues → thermogenèse excessive → hyperthermie centrale → aggravation des dysfonctions enzymatiques → rhabdomyolyse → libération de myoglobine → insuffisance rénale aiguë",
+                "**Hyperactivité sympathique** : tachycardie, hypertension, hypersudation, hyperthermie — composante neurovégétative majeure similaire aux storming sympathiques des traumatisés crâniens"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "L'hyperthermie du SD est d'origine **centrale et musculaire** (non infectieuse à la phase initiale) : l'antibiothérapie empirique n'est pas indiquée d'emblée sauf sepsis documenté. Cependant, l'hyperthermie prolongée favorise les infections (pneumopathie d'inhalation, infections urinaires sur sonde) qui peuvent aggraver le tableau en retour — réévaluer systématiquement."
+            },
+            {
+              "type": "text",
+              "content": "Le **phénomène de sensibilisation centrale** (wind-up) explique pourquoi les épisodes se répètent avec une intensité croissante : chaque épisode dystonique abaisse le seuil de déclenchement du suivant, justifiant une sédation préventive et non seulement curative."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation / Diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le diagnostic est **clinique et contextuel** : patient connu dystonique (ou suspecté) présentant une aggravation brutale avec retentissement systémique. Il n'existe pas de critère diagnostique validé universellement, mais la littérature récente propose des critères opérationnels."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Anamnèse** : type et ancienneté de la dystonie, traitements antidystoniques en cours (baclofène oral, trihexyphénidyle, benzodiazépines, tétrabénazine), facteurs déclenchants (infection, douleur, modification de traitement, stress émotionnel, chaleur)",
+                "**Examen clinique** : posture dystonique persistante ou paroxystique, spasmes axiaux ou des membres, opisthotonus, trismus, troubles de déglutition, détresse respiratoire par rigidité thoracique, hyperthermie (tympanique ou centrale)",
+                "**Bilan biologique initial urgent** : CPK totales, myoglobinémie, myoglobinurie, NFS, ionogramme, urée/créatinine, bilan hépatique, lactates, gaz du sang artériels, bilan de coagulation (risque de CIVD)",
+                "**ECG** : troubles du rythme par hyperkaliémie (rhabdomyolyse) ou QTc allongé (médicaments antidystoniques)",
+                "**Imagerie** : IRM cérébrale si première présentation ou suspicion de cause secondaire nouvelle (hémorragie, AVC des NGC) — non urgente si tableau évocateur sur terrain connu",
+                "**EEG** : si doute avec état de mal épileptique ou pour surveillance sous sédation profonde",
+                "**Score de gravité proposé (Willemsen 2011, réactualisé)** : intègre température, FC, SpO₂, CPK, nécessité de ventilation — oriente l'escalade thérapeutique"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Rhabdomyolyse cliniquement significative : CPK > 5× la normale (> 1000 UI/L) avec myoglobinurie (urine couleur thé/porto) ou CPK > 10 000 UI/L — risque d'insuffisance rénale aiguë myoglobinurique"
+            },
+            {
+              "type": "warning",
+              "content": "Ne pas sous-estimer un **premier épisode de SD chez un adolescent ou adulte jeune** sans dystonie connue : éliminer une maladie de Wilson (céruloplasmine, cuivre urinaire 24h, lampe à fente), une acidurie glutarique de type I (chromatographie des acides organiques urinaires) ou une dystonie dopa-sensible (essai thérapeutique L-DOPA en dehors de l'urgence aiguë)."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge — Escalade thérapeutique",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge repose sur une **escalade thérapeutique structurée** en paliers successifs, conduite en parallèle avec les mesures de support des défaillances d'organe. La décision de passage au palier supérieur ne doit pas être retardée devant l'absence de réponse au palier précédent dans les 30–60 minutes."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Palier 0 — Mesures générales et support** : admission en réanimation ou USC, monitorage continu (FC, PA, SpO₂, température centrale), voie veineuse centrale, sonde urinaire avec surveillance horaire de la diurèse, sonde nasogastrique, prévention de l'inhalation",
+                "**Palier 1 — Traitements antidystoniques oraux/IV optimisés** : benzodiazépines IV (diazépam 5–10 mg IV, ou lorazépam 1–2 mg IV, répétables toutes les 15–30 min), trihexyphénidyle (anticholinergique oral jusqu'à 30–60 mg/j en titration), baclofène oral (jusqu'à 100–120 mg/j), tétrabénazine (déplétion présynaptique monoaminergique, 12,5 à 50 mg/j) — à débuter ou majorer",
+                "**Palier 2 — Sédation anesthésique titrée** : midazolam en perfusion continue IV (dose initiale 0,05–0,1 mg/kg/h, titration jusqu'à 0,2–0,4 mg/kg/h selon effet), propofol en perfusion IV (0,5–4 mg/kg/h, attention syndrome de perfusion du propofol > 48h ou > 4 mg/kg/h), clonidine IV (sédation + effet sympatholytique, 0,5–2 µg/kg/h) — le **score de sédation cible** est RASS –2 à –3",
+                "**Palier 2 bis — Morphiniques IV** : morphine ou sufentanil pour l'analgésie et la réduction de l'hyperactivité sympathique, complète la sédation — éviter le fentanyl en IVSE longue durée (accumulation)",
+                "**Palier 3 — Anesthésie générale prolongée** : intubation orotrachéale + ventilation mécanique en mode protecteur, kétamine IV IVSE (0,1–0,5 mg/kg/h, antagoniste NMDA + analgésie), propofol + sufentanil, ou association midazolam/kétamine ; dexmédétomidine en adjuvant (0,2–0,7 µg/kg/h) — maintien RASS –3 à –4 pendant 24–72h minimum avant tentative de réduction",
+                "**Palier 3 bis — Agents complémentaires sous AG** : clonazépam IV (hors AMM, 0,5–2 mg/j), gabapentine/prégabaline (adjuvant modulateur du signal nociceptif central), magnésium IV (effet anti-NMDA et myorelaxant, 3–5 g sur 20 min puis 1–2 g/h sous surveillance ECG et réflexes ostéotendineux)",
+                "**Palier 4 — Baclofène intrathécal (BIT) en urgence** : indication lorsque le SD est réfractaire à l'AG prolongée (> 72h sans amélioration) ou emblée si dystonie sévère connue avec pompe à BIT déjà implantée (bolus de secours) ; en l'absence de pompe : injection intrathécale de baclofène en bolus test 25–50 µg par ponction lombaire (délai d'action 30–90 min), puis si efficace : mise en place urgente d'une pompe ou cathéter intrathécal externalisé"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "**Ne jamais utiliser les neuroleptiques classiques (halopéridol, chlorpromazine) ou atypiques comme traitement antidystonique de première intention dans le SD** : ils aggravent la dystonie par blocage dopaminergique D2. Exception : la **tétrabénazine** (déplétion présynaptique) ou la **clozapine** peuvent être discutées dans des cas très spécifiques par un expert — mais jamais en urgence de salle de garde sans avis neurologique."
+            },
+            {
+              "type": "formula",
+              "content": "Baclofène intrathécal — Bolus test en urgence : 25 µg IT (patient naïf de BIT, poids < 40 kg ou fragilité) à 50 µg IT (adulte standard) — réponse attendue en 30–90 min (réduction de la spasticité/dystonie, évaluation neurologique possible). Ne pas dépasser 100 µg pour un premier bolus test."
+            },
+            {
+              "type": "text",
+              "content": "Le **contrôle de l'hyperthermie** doit être simultané et agressif dès l'admission : refroidissement externe actif (couverture réfrigérante, poche de glace aux creux axillaires et inguinaux), paracétamol IV (1 g/6h, effet limité sur la composante musculaire mais utile), éviter l'aspirine (interférence avec l'agrégation plaquettaire si CIVD). Objectif : **température centrale < 37,5 °C**."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Contrôle de la rhabdomyolyse** : hyperhydratation IV cristalloïdes (objectif diurèse horaire 1–3 mL/kg/h), alcalinisation urinaire discutée (bicarbonate de sodium molaire 42 ‰ pour maintenir pH urinaire > 6,5 — prévention de la précipitation de myoglobine dans les tubules), surveillance quotidienne des CPK, créatinine, kaliémie",
+                "**Épuration extra-rénale (EER)** : indiquée si IRA oligo-anurique avec hyperkaliémie > 6 mEq/L réfractaire, surcharge hydrosodée, ou acidose métabolique sévère — ne pas attendre la défaillance rénale complète",
+                "**Nutrition entérale précoce** (dès H12–H24) : couverture des besoins hyperénergétiques (contractions musculaires = hypercatabolisme), objectif 30–35 kcal/kg/j, 1,5–2 g protéines/kg/j",
+                "**Prévention des complications de décubitus** : pneumopathie d'inhalation (position 30°, soins de bouche), TVP/EP (HBPM prophylactique dès stabilisation, à discuter si rhabdomyolyse sévère), escarres (matelas alternating pressure)",
+                "**Réévaluation neurologique quotidienne** dès allègement de sédation : bilan de la dystonie sous-jacente, contact avec centre de référence neuromodulation"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "**Syndrome de perfusion du propofol (PRIS)** : risque majeur si propofol > 4 mg/kg/h pendant > 48h. Signes : acidose métabolique avec trou anionique élevé, rhabdomyolyse (aggravation des CPK), insuffisance cardiaque (brady-arythmies, onde de Brugada à l'ECG), lipémie. Surveiller triglycérides, lactates, ECG quotidiennement. Réduire ou substituer par midazolam/kétamine si > 48h de propofol haute dose."
+            }
+          ]
+        },
+        {
+          "title": "5. Complications et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Insuffisance rénale aiguë myoglobinurique** : complication la plus fréquente (20–30 % des SD sévères), prévention par hyperdiurèse forcée ; en cas d'IRA constituée : EER en hémofiltration continue (HFVVC) recommandée pour contrôle hydrique et correction des troubles métaboliques",
+                "**Coagulation intravasculaire disséminée (CIVD)** : favorisée par l'hyperthermie sévère (> 40 °C) et la lyse musculaire massive ; bilan quotidien (TP, TCA, fibrinogène, D-dimères, plaquettes) — traitement étiologique (contrôle de la dystonie et de l'hyperthermie) en priorité",
+                "**Défaillance respiratoire** : cause mixte (rigidité thoraco-abdominale, pneumopathie d'inhalation, atélectasie) — intubation précoce si SpO₂ < 92 % sous O₂ haut débit ou FR > 30/min ; ventilation protectrice : Vt 6 mL/kg de poids idéal, PEP 5–8 cmH₂O, FiO₂ minimale",
+                "**Troubles du rythme cardiaque** : hyperkaliémie (rhabdomyolyse), QTc allongé (tétrabénazine, certaines benzodiazépines), tachycardie sinusale (hyperadrénergie) ; ECG 12 dérivations 2×/j en phase aiguë, télémétrie continue",
+                "**Syndrome de sevrage au baclofène** : si la pompe à BIT était en place et s'est arrêtée (pile, alarme, coudure de cathéter) — diagnostic différentiel crucial avec le SD spontané ; traitement : baclofène oral hautes doses + benzodiazépines IV en urgence, puis reprogrammation ou remplacement de la pompe",
+                "**Complications neurologiques de la sédation prolongée** : neuropathie/myopathie de réanimation (prévention par mobilisation précoce, kinésithérapie passive dès J3–J5, corticoïdes à éviter), encéphalopathie post-critique — évaluation neuropsychologique à distance",
+                "**Pneumopathie acquise sous ventilation mécanique (PAVM)** : prévention par bundle (lavage de bouche à la chlorhexidine, position 30°, aspiration sous-glottique, pneumatique du ballonnet ciblée 20–30 cmH₂O)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "Un **arrêt brutal du baclofène intrathécal** (dysfonction de pompe, épuisement de la réserve) peut déclencher un syndrome de sevrage au baclofène qui mime parfaitement un status dystonique sévère, mais se traite différemment (baclofène oral hautes doses, benzodiazépines, jamais de manœuvre d'escalade vers d'autres agents antidystoniques en première intention sans corriger la cause). L'IRM médullaire peut montrer des hypersignaux T2 médullaires transitoires."
+            }
+          ]
+        },
+        {
+          "title": "6. Recommandations clés (grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Admission systématique en réanimation** pour tout status dystonique avec hyperthermie > 38,5 °C, CPK > 1000 UI/L ou instabilité hémodynamique — consensus d'experts, Grade C (Lumsden 2019, mis en perspective par Allen 2023)",
+                "**Escalade thérapeutique structurée en paliers** avec réévaluation toutes les 30–60 min — recommandation de pratique clinique, Grade C/D (Erro 2016, Rohit Raju 2023)",
+                "**Midazolam IVSE en première intention** parmi les sédatifs — Grade C (Willemsen 2011, Raju 2023)",
+                "**Propofol IVSE** : efficace mais limité à < 48h ou < 4 mg/kg/h pour éviter le PRIS — Grade C, recommandation de sécurité (FDA Black Box Warning 2019, ESICM 2022)",
+                "**Kétamine IV** (0,1–0,5 mg/kg/h) : adjuvant pertinent grâce à son action anti-NMDA dans le SD réfractaire — Grade C (Brohan 2016, cas séries)",
+                "**Baclofène intrathécal en urgence** : recommandé pour le SD réfractaire à 2 paliers d'escalade — Grade C/B (Albright 2011, Willemsen 2011, consensus EAN 2020 sur la spasticité sévère)",
+                "**Objectif de diurèse ≥ 1 mL/kg/h** dans la rhabdomyolyse — Grade B (KDIGO 2012 sur l'IRA, extrapolé à la rhabdomyolyse)",
+                "**Surveillance CPK quotidienne** jusqu'au pic puis décroissance de 50 % avant alléger la surveillance — consensus clinique",
+                "**Dexmédétomidine** : adjuvant de sédation intéressant (action sympatholytique) dans le SD sous AG — Grade C, hors AMM pour cette indication (données de cohorte pédiatrique, Szmuk 2020)",
+                "**Contact précoce avec centre de référence** (neurologue spécialisé, équipe neuromodulation) dès l'admission — recommandation de bonne pratique ESICM/EAN"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Objectif thérapeutique principal : obtenir une réduction de ≥ 50 % des épisodes dystoniques ET température centrale < 37,5 °C ET CPK en décroissance dans les 24–48h suivant l'initiation du palier thérapeutique en cours — sinon, passage au palier supérieur"
+            },
+            {
+              "type": "warning",
+              "content": "La **dantrolène** (inhibiteur de libération du calcium sarcoplasmique) est parfois citée dans les discussions de SD, mais son usage est réservé à l'hyperthermie maligne anesthésique et au SMN sévère. Son efficacité dans le SD pur n'est pas démontrée et son hépatotoxicité limite son utilisation — ne pas l'utiliser en routine dans le SD."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Escalade thérapeutique sans délai** : la décision de passage au palier supérieur (sédation titrée, puis AG, puis BIT) ne doit pas être retardée au-delà de 30–60 min d'inefficacité — le SD s'auto-entretient par sensibilisation centrale",
+        "**Hyperthermie = urgence métabolique** : refroidissement actif immédiat (couverture réfrigérante + paracétamol IV), objectif < 37,5 °C central — chaque degré supplémentaire aggrave la rhabdomyolyse et la CIVD",
+        "**Rhabdomyolyse : hyperdiurèse préventive** dès l'admission (objectif 1–3 mL/kg/h), CPK quotidiennes, surveillance kaliémie, décision précoce d'EER si IRA oligo-anurique",
+        "**PRIS = piège du propofol** en sédation prolongée : ne jamais dépasser 4 mg/kg/h ni 48h sans surveillance des triglycérides, lactates et ECG — relais par midazolam/kétamine si nécessaire",
+        "**Syndrome de sevrage au BIT** : diagnostic différentiel clé du SD chez tout patient porteur d'une pompe à baclofène — éliminer une dysfonction de pompe en urgence avant toute escalade thérapeutique"
+      ],
+      "references": [
+        "Raju S, et al. — Dystonic storm: clinical features, treatment outcomes and predictors of outcome — Neurology Clinical Practice 2023",
+        "Willemsen MA, et al. — Palliative and symptomatic treatment of severe dystonia — Developmental Medicine and Child Neurology 2011",
+        "Erro R, et al. — Status dystonicus and its management — Parkinsonism and Related Disorders 2016",
+        "Lumsden DE, et al. — Emergency intrathecal baclofen for life threatening status dystonicus — Developmental Medicine and Child Neurology 2019",
+        "Allen NM, et al. — Severe childhood dystonia: an update on its evaluation and management — European Journal of Paediatric Neurology 2023",
+        "Albright AL, Barry MJ — Implantation of baclofen pumps in children with dystonia — Neurosurgery 2011",
+        "ESICM/EAN Joint Recommendations — Management of severe spasticity and dystonia in the ICU — Intensive Care Medicine 2022",
+        "FDA Safety Communication — Propofol infusion syndrome (PRIS) — Revised Black Box Warning 2019",
+        "KDIGO Clinical Practice Guideline for Acute Kidney Injury — Kidney International Supplements 2012",
+        "Brohan J, Bhatt DL — Ketamine in status dystonicus — Anesthesiology 2016"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Garçon de 14 ans, paralysie cérébrale dyskinétique, porteur d'une pompe à baclofène intrathécal implantée 2 ans auparavant. Admis en réanimation pour status dystonique avec température centrale à 39,8 °C, FC 148 bpm, CPK à 12 000 UI/L. La pompe déclenche une alarme 'réservoir vide'.",
+        "question": "Quelle est la première mesure thérapeutique PRIORITAIRE à réaliser en urgence devant ce tableau ?",
+        "options": {
+          "A": "Initier une sédation par propofol IVSE 2 mg/kg/h en urgence",
+          "B": "Remplir le réservoir de la pompe à baclofène et rétablir la perfusion intrathécale",
+          "C": "Administrer du dantrolène IV 2,5 mg/kg en bolus pour contrôler l'hyperthermie",
+          "D": "Débuter l'hyperhydratation IV et alcalinisation urinaire pour la rhabdomyolyse"
+        },
+        "correct": "B",
+        "explanation": "La priorité absolue est de corriger la CAUSE du status dystonique : l'arrêt brutal du baclofène intrathécal (réservoir vide) provoque un syndrome de sevrage au BIT qui est le mécanisme physiopathologique du tableau. Sans correction de la cause, toute escalade sédative sera insuffisante. Piège A : la sédation est utile en complément mais ne traite pas la cause. Piège C : le dantrolène est indiqué dans l'hyperthermie maligne anesthésique et le SMN, pas dans le SD/sevrage BIT — son efficacité n'est pas démontrée ici et il est hépatotoxique. Piège D : l'hyperhydratation est nécessaire mais constitue une mesure de support et non la priorité absolue devant une cause curable identifiée."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Femme de 32 ans, dystonie généralisée idiopathique DYT1, admise pour status dystonique. Après 48h de midazolam IVSE (0,15 mg/kg/h) associé à du baclofène oral 120 mg/j, la dystonie reste sévère. L'équipe décide de passer au propofol IVSE. Après 56h de propofol à 3,5 mg/kg/h, on note une acidose métabolique (pH 7,28, lactates 4,2 mmol/L), une élévation des CPK à 25 000 UI/L (vs 8000 à H48) et des triglycerides à 4,8 g/L.",
+        "question": "Quel diagnostic doit être suspecté en priorité et quelle est la mesure thérapeutique IMMÉDIATE ?",
+        "options": {
+          "A": "Aggravation de la rhabdomyolyse par le status dystonique persistant — augmenter la dose de propofol",
+          "B": "Syndrome de perfusion du propofol (PRIS) — arrêter immédiatement le propofol et substituer par midazolam/kétamine",
+          "C": "Acidose lactique sur insuffisance rénale aiguë — démarrer une épuration extra-rénale",
+          "D": "Hépatite médicamenteuse au midazolam — arrêter le midazolam et maintenir le propofol"
+        },
+        "correct": "B",
+        "explanation": "Le tableau est caractéristique du PRIS : association acidose métabolique à trou anionique élevé, élévation des lactates, aggravation de la rhabdomyolyse (CPK en hausse paradoxale alors que la dystonie était supposée contrôlée) et hypertriglycéridémie — chez un patient sous propofol > 4 mg/kg/h sur plus de 48h. La mesure immédiate est l'arrêt du propofol et le relais par midazolam-kétamine ou dexmédétomidine. Piège A : augmenter le propofol aggraverait le PRIS. Piège C : l'EER peut être nécessaire mais ne corrige pas la cause. Piège D : le midazolam ne cause pas d'hépatite, et maintenir le propofol est dangereux."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Adolescente de 16 ans, premier épisode de status dystonique sans contexte connu. Température 39,2 °C, rigidité généralisée, CPK 3500 UI/L, aminotransférases élevées (ALAT 180 UI/L, ASAT 210 UI/L), anneau de Kayser-Fleischer visible à l'examen ophtalmologique.",
+        "question": "Quel bilan complémentaire est INDISPENSABLE en urgence pour orienter le traitement étiologique ?",
+        "options": {
+          "A": "Ponction lombaire avec chromatographie des acides aminés du LCR",
+          "B": "Dosage de la céruloplasmine sérique et cuivre urinaire des 24 heures",
+          "C": "IRM cérébrale en séquences DWI pour éliminer un AVC des noyaux gris",
+          "D": "Dosage de l'acide homovanillique urinaire pour éliminer une dystonie dopa-sensible"
+        },
+        "correct": "B",
+        "explanation": "L'anneau de Kayser-Fleischer et l'atteinte hépatique chez une adolescente avec premier status dystonique orientent fortement vers une maladie de Wilson (dépôts de cuivre au niveau du limbe cornéen = anneau de KF). La confirmation biologique urgente repose sur la céruloplasmine basse (< 0,2 g/L) et le cuivre urinaire élevé (> 100 µg/24h). Cette étiologie change le traitement de fond (chélation par D-pénicillamine ou trientine + zinc). Piège A : la PL est utile mais en second temps, pas prioritaire. Piège C : l'IRM est utile mais non urgente face à un diagnostic étiologique aussi orienté. Piège D : l'acide homovanillique est dosé dans les neuroblastomes et les déficits en AADC, pas dans la dystonie dopa-sensible (où on évalue la réponse à la L-DOPA)."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Homme de 28 ans, status dystonique sévère sous anesthésie générale (midazolam 0,3 mg/kg/h + kétamine 0,3 mg/kg/h), intubé depuis 72h, RASS –3. La dystonie reste partiellement contrôlée avec des paroxysmes persistants, température encore à 38,2 °C malgré refroidissement actif. L'équipe discute l'introduction du baclofène intrathécal.",
+        "question": "Quelle est la dose de bolus test de baclofène intrathécal recommandée pour un premier essai chez cet adulte sans pompe BIT préalable ?",
+        "options": {
+          "A": "10 µg en intrathécal par ponction lombaire",
+          "B": "50 µg en intrathécal par ponction lombaire",
+          "C": "150 µg en intrathécal par ponction lombaire",
+          "D": "300 µg en intrathécal par ponction lombaire"
+        },
+        "correct": "B",
+        "explanation": "La dose standard de bolus test de baclofène intrathécal chez un adulte naïf de BIT est de 50 µg par ponction lombaire. La réponse clinique (réduction de la dystonie et de la spasticité) est évaluée entre 30 et 90 min après l'injection. Piège A : 10 µg est sous-thérapeutique pour un adulte. Piège C : 150 µg dépasse la dose test recommandée et expose à un surdosage (hypotonie sévère, dépression respiratoire, coma). Piège D : 300 µg est une dose thérapeutique de débit journalier de pompe, pas un bolus test — risque de surdosage grave (coma, apnée, décès)."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patient de 45 ans, status dystonique d'étiologie secondaire à des lésions des NGC post-anoxiques. Admis en réanimation, sédation par midazolam 0,2 mg/kg/h. L'équipe discute l'ajout de tétrabénazine.",
+        "question": "Quelle est la contre-indication majeure à la tétrabénazine dans ce contexte ?",
+        "options": {
+          "A": "L'insuffisance rénale aiguë avec DFG < 30 mL/min",
+          "B": "La présence d'une trachéotomie en place",
+          "C": "Un syndrome dépressif sévère connu ou une idéation suicidaire",
+          "D": "Une CPK supérieure à 5000 UI/L"
+        },
+        "correct": "C",
+        "explanation": "La tétrabénazine (inhibiteur du transporteur VMAT2, déplétion présynaptique en monoamines) a un risque majeur d'aggravation de la dépression et d'idéation suicidaire — contre-indication absolue en cas de syndrome dépressif sévère non traité ou d'antécédent de tentative de suicide (Black Box Warning FDA). Ce risque est particulièrement important chez les adultes jeunes avec pathologie neurologique. Piège A : l'insuffisance rénale modifie la pharmacocinétique mais n'est pas une contre-indication absolue. Piège B : la trachéotomie n'est pas une contre-indication. Piège D : la CPK élevée est une complication du SD à surveiller, mais pas une contre-indication à la tétrabénazine."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Enfant de 8 ans, paralysie cérébrale, status dystonique avec température centrale 40,1 °C depuis 6 heures. Bilan initial : CPK 18 000 UI/L, créatinine 95 µmol/L (normale pour l'âge), kaliémie 5,8 mEq/L, diurèse 0,5 mL/kg/h malgré remplissage par 20 mL/kg de NaCl 0,9 %.",
+        "question": "Quelle est la stratégie de remplacement rénal la plus adaptée si l'oligoanurie persiste malgré optimisation hémodynamique et hyperhydratation ?",
+        "options": {
+          "A": "Hémodialyse intermittente (HDI) séances de 4h deux fois par jour",
+          "B": "Hémofiltration veine-veineuse continue (HVVC) débit d'effluent 20–25 mL/kg/h",
+          "C": "Dialyse péritonéale automatisée nocturne",
+          "D": "Diurétiques de l'anse (furosémide 2 mg/kg IV) pour lever l'oligurie"
+        },
+        "correct": "B",
+        "explanation": "L'HVVC est la modalité de choix en réanimation pédiatrique pour l'IRA sur rhabdomyolyse sévère dans le contexte d'un SD : contrôle hémodynamique continu (pas de variation brusque de volémie), épuration continue des médiateurs inflammatoires et de la myoglobine, correction progressive des troubles métaboliques (hyperkaliémie, acidose). Piège A : l'HDI intermittente expose à des instabilités hémodynamiques chez un enfant déjà instable avec hyperthermie. Piège C : la dialyse péritonéale est contre-indiquée en cas d'oligurie sévère aiguë post-rhabdomyolyse (efficacité insuffisante, risque de péritonite). Piège D : les diurétiques de l'anse n'ont pas démontré de bénéfice sur la prévention ou le traitement de l'IRA myoglobinurique et peuvent aggraver la déshydratation."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Jeune femme de 22 ans, status dystonique sous AG depuis 5 jours (midazolam + kétamine), stable hémodynamiquement, température normalisée, CPK en décroissance (2800 UI/L). On tente une réduction progressive de la sédation mais chaque tentative de réduction du midazolam au-dessous de 0,25 mg/kg/h déclenche un rebond dystonique majeur avec hyperthermie.",
+        "question": "Quel agent peut être utilisé en adjuvant pour faciliter la réduction de la sédation intraveineuse dans ce contexte de SD réfractaire avec dépendance à la benzodiazépine ?",
+        "options": {
+          "A": "Halopéridol 5 mg IV toutes les 8h",
+          "B": "Dexmédétomidine IVSE 0,3–0,7 µg/kg/h en adjuvant",
+          "C": "Phénobarbital 100 mg/j per os",
+          "D": "Bromocriptine 2,5 mg trois fois par jour"
+        },
+        "correct": "B",
+        "explanation": "La dexmédétomidine (agoniste α₂-adrénergique central) présente plusieurs intérêts dans ce contexte : effet sédatif non GABAergique (facilitant le sevrage des benzodiazépines), puissant effet sympatholytique (contrôle de l'hyperactivité adrénergique du SD), et préservation partielle de la réactivité neurologique permettant d'évaluer la réponse au traitement. Dose : 0,2–0,7 µg/kg/h en IVSE, ajustée. Piège A : l'halopéridol est un neuroleptique bloqueur D2 — aggrave la dystonie et peut déclencher un SMN, contre-indiqué ici. Piège C : le phénobarbital est un antiépileptique GABAergique, peu d'intérêt dans le SD et sédatif peu maniable en réanimation pour cette indication. Piège D : la bromocriptine est un agoniste dopaminergique utilisé dans le SMN, pas dans le SD dystonique — peut même aggraver certaines dystonies."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Homme de 55 ans, dystonie de torsion secondaire à une maladie de Wilson traitée, admis pour SD. L'EEG réalisé sous sédation légère montre des bouffées d'ondes lentes diffuses mais pas d'activité épileptiforme. La CPK est à 4200 UI/L, température 38,8 °C.",
+        "question": "Quelle combinaison médicamenteuse constitue la meilleure escalade thérapeutique à ce stade (SD persistant malgré benzodiazépines IV + baclofène oral 80 mg/j) ?",
+        "options": {
+          "A": "Clonazépam IV 2 mg/h + phénytoïne IV 15 mg/kg en charge (basé sur l'EEG)",
+          "B": "Propofol IVSE 1,5 mg/kg/h + maintien du baclofène oral + refroidissement actif",
+          "C": "Valproate de sodium IV 25 mg/kg/h en charge (effet antiépileptique et antidystonique)",
+          "D": "Lévodopa/carbidopa 100/25 mg 4×/j (dystonie potentiellement dopa-sensible)"
+        },
+        "correct": "B",
+        "explanation": "L'étape suivante est la sédation anesthésique titrée : propofol IVSE à dose progressive (démarrer à 0,5–1,5 mg/kg/h, titration jusqu'à RASS –2/–3), associé au maintien du baclofène oral et au refroidissement actif continu. L'EEG montre des ondes lentes (encéphalopathie métabolique ou sédation) sans épilepsie — pas d'indication à la phénytoïne. Piège A : la phénytoïne n'a pas d'indication dans le SD en l'absence d'état de mal épileptique confirmé. Piège C : le valproate de sodium IV peut aggeler l'hépatotoxicité dans la maladie de Wilson (hépatopathie fréquente) et n'a pas d'AMM dans le SD — risque majeur. Piège D : la L-DOPA peut être utile dans la dystonie dopa-sensible idiopathique mais pas en urgence aiguë dans un SD constitué, et est inappropriée dans le contexte de maladie de Wilson traitée."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Enfant de 11 ans, porteur d'une pompe à baclofène intrathécal pour paralysie cérébrale, RASS –4 sous kétamine + midazolam depuis 4 jours pour un SD réfractaire. La pompe est fonctionnelle et délivre 400 µg/j. Le neurologue propose d'augmenter le débit de la pompe.",
+        "question": "Quel est le principal risque d'une augmentation rapide du débit de baclofène intrathécal chez cet enfant déjà sous sédation profonde ?",
+        "options": {
+          "A": "Hypertension artérielle sévère par effet sympathomimétique du baclofène intrathécal",
+          "B": "Dépression respiratoire sévère par potentialisation avec la sédation en cours",
+          "C": "Agitation paradoxale et levée d'inhibition par effet GABA-B intrathécal",
+          "D": "Convulsions cloniques généralisées par abaissement du seuil épileptogène"
+        },
+        "correct": "B",
+        "explanation": "Le baclofène (agoniste GABA-B) a un effet dépresseur du système nerveux central dose-dépendant. Chez un enfant déjà sous sédation profonde (kétamine + midazolam, RASS –4), l'augmentation du débit intrathécal risque de provoquer une dépression respiratoire sévère par effet additif/synergique. La surveillance est un enjeu majeur : monitorage rapproché de la fréquence respiratoire, SpO₂, pression CO₂. Piège A : le baclofène intrathécal a un effet hypotenseur (relaxation des muscles lisses vasculaires) et non vasoconstricteur. Piège C : l'agitation paradoxale aux GABA-B est exceptionnelle à ces doses chez l'enfant, et l'enfant est déjà sous sédation. Piège D : le baclofène intrathécal ne diminue pas le seuil épileptogène — au contraire, à dose excessive, il peut provoquer des convulsions paradoxales (surdosage > 2000 µg/j chez l'adulte), mais ce n'est pas le mécanisme prioritaire ici."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Patient de 35 ans sortant de réanimation après 12 jours d'AG pour un status dystonique sévère (dystonie primaire DYT1). Il présente une faiblesse musculaire diffuse, aréflexie ostéotendineuse, EMG montrant une atteinte axonale sensitive et motrice.",
+        "question": "Quel est le diagnostic le plus probable et quel facteur de risque réanimatoire est directement impliqué dans sa survenue ?",
+        "options": {
+          "A": "Polyneuropathie de réanimation (ICU-acquired weakness) — favorisée par la durée de ventilation mécanique, l'immobilisation et potentiellement l'utilisation de corticoïdes",
+          "B": "Aggravation de la dystonie sous-jacente par effet rebond après sevrage des benzodiazépines",
+          "C": "Neuropathie myoglobinurique périphérique par dépôt de myoglobine dans les nerfs périphériques",
+          "D": "Syndrome de Guillain-Barré déclenché par l'inflammation systémique du status dystonique"
+        },
+        "correct": "A",
+        "explanation": "La polyneuropathie/myopathie de réanimation (ICU-acquired weakness — ICUAW) est la complication neuromusculaire la plus fréquente après réanimation prolongée : déficit moteur symétrique avec aréflexie, atteinte EMG axonale/myopathique, sans atteinte des nerfs crâniens. Les facteurs favorisants sont la durée de ventilation mécanique, la sédation prolongée, l'immobilisation, l'utilisation de curares et de corticoïdes, et le déconditionnement. Dans ce cas de SD, l'AG prolongée de 12 jours avec immobilisation complète est le facteur principal. Piège B : l'effet rebond de la dystonie n'est pas associé à une aréflexie ni à un tableau EMG axonal. Piège C : la myoglobine est néphrotoxique via les tubules rénaux, pas neurotoxique pour les nerfs périphériques — ce mécanisme n'existe pas. Piège D : le syndrome de Guillain-Barré est possible mais beaucoup plus rare en ce contexte ; l'ICUAW est le diagnostic de première probabilité à l'issue d'une réanimation longue."
+      }
+    ]
   }
 ]
