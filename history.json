@@ -8524,5 +8524,363 @@
         "explanation": "La polyneuropathie/myopathie de réanimation (ICU-acquired weakness — ICUAW) est la complication neuromusculaire la plus fréquente après réanimation prolongée : déficit moteur symétrique avec aréflexie, atteinte EMG axonale/myopathique, sans atteinte des nerfs crâniens. Les facteurs favorisants sont la durée de ventilation mécanique, la sédation prolongée, l'immobilisation, l'utilisation de curares et de corticoïdes, et le déconditionnement. Dans ce cas de SD, l'AG prolongée de 12 jours avec immobilisation complète est le facteur principal. Piège B : l'effet rebond de la dystonie n'est pas associé à une aréflexie ni à un tableau EMG axonal. Piège C : la myoglobine est néphrotoxique via les tubules rénaux, pas neurotoxique pour les nerfs périphériques — ce mécanisme n'existe pas. Piège D : le syndrome de Guillain-Barré est possible mais beaucoup plus rare en ce contexte ; l'ICUAW est le diagnostic de première probabilité à l'issue d'une réanimation longue."
       }
     ]
+  },
+  {
+    "date": "2026-06-21",
+    "dateStr": "dimanche 21 juin",
+    "topic": "Prise en charge de l'intoxication aiguë aux anesthésiques locaux en peranesthésique : reconnaissance précoce du syndrome de toxicité systémique, protocole d'émulsion lipidique intraveineuse et algorithme de réanimation cardio-circulatoire spécifique",
+    "cat": "ALR",
+    "course": {
+      "intro": "La toxicité systémique des anesthésiques locaux (TSAL) est une urgence rare mais potentiellement fatale en peranesthésique, survenant le plus souvent après injection intravasculaire accidentelle ou absorption excessive. Sa reconnaissance précoce est difficile car les signes peuvent être atypiques, masqués par la sédation ou l'anesthésie générale. La maîtrise du protocole d'émulsion lipidique intraveineuse (ELIV) et de l'algorithme de réanimation spécifique conditionne le pronostic.",
+      "sections": [
+        {
+          "title": "Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **TSAL** (Toxicité Systémique des Anesthésiques Locaux) résulte d'un taux plasmatique excessif d'AL, atteignant les organes cibles : **système nerveux central (SNC)** et **système cardio-vasculaire (CV)**. Elle survient par injection intravasculaire accidentelle (cause la plus fréquente et la plus rapide), par résorption excessive (surface d'application large, vascularisation importante) ou plus rarement par surdosage absolu."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Anesthésiques locaux amino-amides** (métabolisme hépatique) : bupivacaïne, ropivacaïne, lévobupivacaïne, lidocaïne, mépivacaïne — les plus utilisés en bloc nerveux",
+                "**Anesthésiques locaux amino-esters** (métabolisme plasmatique par pseudocholinestérases) : procaïne, tétracaïne, benzocaïne — moins utilisés en anesthésie locorégionale (ALR)",
+                "**Bupivacaïne** : AL le plus cardiotoxique (ratio cardiotoxicité/neurotoxicité le plus élevé), arrêt cardiaque possible d'emblée sans prodromes neurologiques",
+                "**Ropivacaïne** et **lévobupivacaïne** : cardiotoxicité moindre par rapport à la bupivacaïne racémique pour une efficacité équivalente",
+                "**pKa** : détermine la latence d'action ; **liposolubilité** : détermine la puissance et la durée d'action ; **liaison protéique** : détermine la durée et la fraction libre active"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Doses maximales recommandées (adulte sans vasoconstricteur) : Bupivacaïne/Lévobupivacaïne = 2 mg/kg (max 150 mg) | Ropivacaïne = 3 mg/kg (max 225 mg) | Lidocaïne = 4,5 mg/kg (max 300 mg) | Lidocaïne + épinéphrine = 7 mg/kg (max 500 mg)"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Ces doses maximales sont indicatives et non absolues — la TSAL peut survenir À DES DOSES INFÉRIEURES en cas d'injection intravasculaire directe, d'hypoprotidémie, d'insuffisance hépatique, de grossesse ou chez l'enfant et le sujet âgé. Inversement, des doses supérieures peuvent être tolérées si la résorption est lente."
+            }
+          ]
+        },
+        {
+          "title": "Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les AL bloquent les **canaux sodiques voltage-dépendants** (Nav) en se fixant sur la sous-unité alpha intracellulaire lors de leur état ouvert ou inactivé. Ce mécanisme, essentiel à l'effet anesthésique local, devient délétère à l'échelle systémique en perturbant la conduction dans le SNC et le myocarde."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Toxicité SNC** (seuil plasmatique plus bas que la toxicité CV) : levée des inhibitions corticales → excitation (convulsions) puis dépression généralisée (coma, apnée) — séquence classique mais non constante",
+                "**Toxicité cardiovasculaire** : blocage des canaux Nav myocardiques → allongement PR, élargissement QRS, bradycardie → troubles du rythme ventriculaires (TV, FV) → défaillance myocardique par blocage des canaux calciques et mitochondriaux",
+                "**Bupivacaïne** : dissociation lente des canaux Nav ('fast-in, slow-out') → toxicité CV disproportionnée, résistance à la défibrillation et à l'adrénaline",
+                "**Mécanisme des émulsions lipidiques** : théorie du 'puits lipidique' (lipid sink) — séquestration de l'AL lipophile dans la phase lipidique circulante ; restauration du métabolisme énergétique myocardique (acides gras = substrat préférentiel) ; possible effet cardiotonique direct",
+                "**Facteurs aggravants** : acidose (augmente la fraction ionisée intracellulaire de l'AL), hypoxie (aggrave la toxicité myocardique), hyperkaliémie (favorise les troubles du rythme), grossesse (débit cardiaque élevé, hypoprotidémie relative)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Sous anesthésie générale ou sédation profonde, les signes neurologiques précoces (agitation, convulsions) sont masqués. Le premier signe peut être directement cardiovasculaire (bradycardie, hypotension, élargissement QRS). Un monitorage ECG continu est INDISPENSABLE pendant tout geste d'ALR."
+            },
+            {
+              "type": "formula",
+              "content": "Gradient de toxicité (du plus au moins cardiotoxique) : Bupivacaïne > Lévobupivacaïne ≈ Ropivacaïne > Mépivacaïne > Lidocaïne. Ratio dose neuro-toxique / dose cardio-toxique : Bupivacaïne ≈ 1 (risque d'arrêt cardiaque sans prodrome) vs Lidocaïne ≈ 3-4 (signes neurologiques précèdent la toxicité CV)"
+            }
+          ]
+        },
+        {
+          "title": "Évaluation / Diagnostic — Reconnaissance précoce",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le diagnostic de TSAL est **clinique et contextuel** : survenue dans les **60 minutes** suivant l'injection d'un AL (typiquement dans les 1 à 5 minutes en cas d'injection IV directe, jusqu'à 30 minutes en cas de résorption lente). Il n'existe pas de dosage plasmatique en urgence disponible en peranesthésique."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Signes neurologiques précoces** (excitation) : agitation, anxiété, dysarthrie, acouphènes, goût métallique, paresthésies péribuccales, vertiges, diplopie, tremblements",
+                "**Signes neurologiques tardifs** (dépression) : obnubilation, convulsions généralisées (tonico-cloniques), perte de conscience, coma, apnée",
+                "**Signes cardiovasculaires précoces** : hypertension transitoire, tachycardie sinusale (stimulation sympathique initiale), puis bradycardie, allongement PR",
+                "**Signes cardiovasculaires tardifs** : bloc auriculo-ventriculaire, élargissement QRS (> 120 ms), hypotension, TV (dont torsades de pointes), fibrillation ventriculaire, asystolie, arrêt cardiaque",
+                "**Présentation atypique** (à connaître) : hypotension isolée, agitation seule, bradycardie inexpliquée, arrêt cardiaque d'emblée (bupivacaïne), tableau neurologique pur ressemblant à une attaque de panique"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "CRITÈRES DE PRÉSOMPTION DE TSAL : (1) Injection d'AL dans les 60 min précédentes ET (2) Au moins UN des signes suivants : convulsions, altération de conscience inexpliquée, trouble du rythme ventriculaire, bloc de conduction, collapsus cardiovasculaire — Toute présomption doit déclencher le protocole immédiatement sans attendre la certitude diagnostique."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Ne pas attribuer à tort une hypotension à un pneumothorax (bloc interscalénique), un bloc sympathique extensif (rachianesthésie), un vasovagal ou une réaction anaphylactique. Ces diagnostics différentiels ne doivent pas retarder la décision thérapeutique si la TSAL est possible. Le test aspiration avant injection n'a qu'une sensibilité de 40-60% pour l'injection intravasculaire : un test négatif N'EXCLUT PAS une position intravasculaire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Monitorage minimal obligatoire pendant tout acte d'ALR** : ECG continu, SpO2, pression artérielle non invasive (PANI) toutes les 2-3 min, accès veineux en place",
+                "**Dose-test** : injection de 3-5 mL de lidocaïne 2% + épinéphrine 1:200 000 pour dépister l'injection intravasculaire (accélération FC > 20 bpm = signe positif, mais non fiable si patient sous béta-bloquants ou en AG)",
+                "**Technique d'injection fractionnée** : injection de doses injectées par fractions de 3-5 mL avec aspiration répétée et pause de 30 secondes entre chaque fraction",
+                "**Guidage échographique** : réduit l'incidence des injections intravasculaires accidentelles (grade B) mais ne les élimine pas complètement"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Stratégie de prise en charge — Protocole ELIV et réanimation spécifique",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge de la TSAL repose sur **trois piliers simultanés** : (1) traitement symptomatique des manifestations immédiates (convulsions, hypoxie), (2) administration précoce d'**émulsion lipidique intraveineuse 20%** (Intralipide® ou équivalent), et (3) adaptation de l'algorithme de réanimation cardio-circulatoire aux spécificités de cette intoxication."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**ÉTAPE 0 — ARRÊT IMMÉDIAT** de l'injection de l'AL dès la première suspicion",
+                "**ÉTAPE 1 — APPEL À L'AIDE** : alerter l'équipe, déclencher le plan d'urgence, demander la trousse TSAL (si disponible)",
+                "**ÉTAPE 2 — AIRWAY/BREATHING** : O2 100% au masque haute concentration ou intubation oro-trachéale si convulsions ou coma ; ventilation au masque si apnée",
+                "**ÉTAPE 3 — CONTRÔLE DES CONVULSIONS** : benzodiazépines IV en 1ère intention (midazolam 0,05-0,1 mg/kg IV ou diazépam 0,1-0,2 mg/kg IV) ; propofol en 2ème intention si convulsions réfractaires (doses faibles : 1 mg/kg) — ATTENTION propofol n'est PAS une émulsion lipidique efficace dans ce contexte",
+                "**ÉTAPE 4 — ÉMULSION LIPIDIQUE 20% (ELIV)** : à débuter dès les premiers signes cardiovasculaires ou en cas de convulsions résistantes ou d'emblée si arrêt cardiaque",
+                "**ÉTAPE 5 — MONITORAGE** : bilan biologique (GDS, ionogramme, lactates, glycémie, NFS), ECG 18 dérivations, préparation CEC si disponible"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "PROTOCOLE ELIV (Émulsion Lipidique Intraveineuse 20%) — ADULTE : BOLUS initial = 1,5 mL/kg IV rapide (< 1 min) soit environ 100 mL pour 70 kg | PERFUSION continue = 0,25 mL/kg/min | Si pas d'amélioration CV après 5 min : renouveler le bolus 1-2 fois (max 3 bolus) ET doubler la perfusion à 0,5 mL/kg/min | DOSE MAXIMALE TOTALE = 10-12 mL/kg (soit ~700-840 mL pour 70 kg) — Au-delà : risque d'interférence avec les échangeurs gazeux et les médicaments de réanimation"
+            },
+            {
+              "type": "formula",
+              "content": "PROTOCOLE ELIV — ENFANT (< 20 kg) : Bolus = 1,5 mL/kg IV rapide | Perfusion = 0,25 mL/kg/min | Même schéma de répétition | Dose max = 10 mL/kg | Utiliser Intralipide 20% (SMALIPIDE® ou équivalent pédiatrique)"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**En cas d'ARRÊT CARDIAQUE** : débuter la RCP standard IMMÉDIATEMENT (compressions thoraciques 100-120/min, ratio 30:2 ou ventilation continue si intubé)",
+                "**Adrénaline** : doses RÉDUITES recommandées en cas de TSAL avec arrêt cardiaque : bolus de 10-100 µg IV (vs 1 mg standard) — doses élevées d'adrénaline peuvent aggraver la cardiotoxicité des AL et favoriser les arythmies ventriculaires",
+                "**Défibrillation** : à réaliser dès que la FV est identifiée, mais l'efficacité peut être réduite avec la bupivacaïne — poursuivre ELIV en parallèle",
+                "**Antiarythmiques À ÉVITER** : lidocaïne (même AL, aggravation), amiodarone (controversée — données animales défavorables, utilisée en dernier recours si autre AL que bupivacaïne), propranolol (aggrave la dépression myocardique)",
+                "**Bicarbonate de sodium** : peut être utilisé en cas d'acidose sévère (pH < 7,10) pour réduire la fraction libre de l'AL et améliorer la conduction",
+                "**Vasopresseurs** : noradrénaline plutôt qu'adrénaline pour le traitement d'une hypotension sans arrêt cardiaque ; vasopressine possible",
+                "**CEC / ECMO veino-artérielle** : à envisager PRÉCOCEMENT si arrêt cardiaque réfractaire ou défaillance hémodynamique sévère malgré ELIV — contacter le centre de référence sans délai"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR : Ne pas utiliser le PROPOFOL comme substitut de l'émulsion lipidique dans la TSAL. Le propofol 1% contient seulement 0,1 g/mL de lipides (vs 0,2 g/mL pour Intralipide 20%) et ses effets cardiovasculaires dépresseurs l'éliminent comme alternative thérapeutique lipidique. Son utilisation doit être limitée à la sédation/contrôle des convulsions à doses minimales."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : L'amiodarone est souvent le premier antiarythmique utilisé en cas de trouble du rythme ventriculaire — elle est CONTRE-INDIQUÉE ou à utiliser avec une extrême prudence en cas de TSAL car elle bloque les canaux sodiques et potassiques, aggravant potentiellement la toxicité. La lidocaïne IV est formellement contre-indiquée (quel que soit l'AL responsable)."
+            },
+            {
+              "type": "text",
+              "content": "La durée de surveillance post-TSAL doit être d'au minimum **12 heures** après résolution des symptômes en cas d'AL à longue durée d'action (bupivacaïne, ropivacaïne), du fait du risque de recrudescence liée à la redistribution tissulaire. Une surveillance en **soins intensifs** est systématique."
+            }
+          ]
+        },
+        {
+          "title": "Complications et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**État de mal convulsif** : benzodiazépines IV répétées, phénobarbital si résistance (15-20 mg/kg IV lent), propofol en sédation-intubation ; l'hypoxie et l'acidose qui en résultent aggravent la cardiotoxicité — l'intubation précoce est souvent nécessaire",
+                "**Fibrillation ventriculaire réfractaire** : algorithme ACR (ELIV + RCP + défibrillation répétée) ; envisager ECMO-VA si échec à 20-30 minutes — des cas de survie après plus de 60 minutes de RCP ont été rapportés sous ELIV",
+                "**Hyperlipémie induite par ELIV** : peut interférer avec les dosages biologiques (fausse hyponatrémie, fausse hypoglycémie, perturbation des GDS sur certains analyseurs) — à signaler au laboratoire",
+                "**SDRA post-ELIV** : rare, lié à l'émbolisation lipidique pulmonaire si fortes doses — justifie la limitation à 10-12 mL/kg",
+                "**Troubles neurologiques séquellaires** : encéphalopathie post-anoxique si hypoxie prolongée — neuroprotection standard (normothermie, normoglycémie, normocapnie)",
+                "**Coagulopathie** : l'ELIV peut interférer avec les tests de coagulation et perturber l'hémostase à fortes doses"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : En cas d'ECMO-VA pour TSAL, le circuit extracorporel séquestre une fraction importante des AL ET des lipides. La surveillance et la réplétion en ELIV doivent être adaptées. La warfarine et les anticoagulants utilisés pour le circuit peuvent interagir avec la coagulopathie préexistante."
+            }
+          ]
+        },
+        {
+          "title": "Recommandations clés — Grades et années",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**ESRA/ASRA 2023** (Joint Committee) : recommandent l'ELIV 20% dès les premiers signes de TSAL ou en cas de doute — Grade 1C (forte recommandation, preuves de niveau faible) ; l'adrénaline à doses réduites est recommandée en cas d'ACR sur TSAL (Grade 2C)",
+                "**SFAR 2020** (recommandations formalisées d'experts) : kit TSAL disponible dans tout secteur pratiquant de l'ALR ; formation obligatoire des équipes ; protocole affiché ; surveillance minimale standardisée pendant tout acte d'ALR",
+                "**AAGBI/ACVA 2010, réaffirmé 2021** : premiers à publier un algorithme ELIV structuré, toujours référence internationale avec adaptations — bolus + perfusion continue, schéma de répétition",
+                "**Guidage échographique** : réduit l'incidence des injections intravasculaires et améliore la sécurité des blocs nerveux périphériques — Grade B (ESRA 2020)",
+                "**Réduction des doses d'adrénaline** (10-100 µg vs 1 mg en ACR standard) : recommandation de consensus basée sur des études animales et des séries de cas — absence d'ECR humain possible (Grade 2C/Expert)",
+                "**ECMO-VA** : à envisager PRÉCOCEMENT en cas d'ACR réfractaire sur TSAL — recommandation d'experts, nombreux cas publiés de survie sans séquelles (Grade 2C)",
+                "**Lidocaïne IV** : formellement contre-indiquée comme antiarythmique en cas de TSAL (Grade 1C — logique physiopathologique forte)",
+                "**Surveillance minimale 12h** en soins intensifs après tout épisode de TSAL significatif — recommandation d'experts (Grade 2C)"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "MÉMO DOSES ELIV 70 KG : Bolus 1 = 1,5 mL/kg × 70 = 105 mL IV en < 1 min | Perfusion = 0,25 mL/kg/min × 70 = 17,5 mL/min | Si échec 5 min : Bolus 2 = 105 mL | Bolus 3 possible = 105 mL | Perfusion maximale = 0,5 mL/kg/min = 35 mL/min | TOTAL MAX = 10-12 mL/kg × 70 = 700-840 mL"
+            },
+            {
+              "type": "warning",
+              "content": "ORGANISATION PRATIQUE INDISPENSABLE : Chaque établissement pratiquant de l'ALR DOIT disposer d'un stock d'Intralipide 20% immédiatement accessible (minimum 3-4 flacons de 250 mL), d'un protocole écrit affiché dans les salles d'ALR, et d'une équipe formée. La vérification régulière de la date de péremption et de la disponibilité du stock fait partie des obligations de sécurité."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Toute suspicion de TSAL doit déclencher le protocole immédiatement** : ne pas attendre la certitude diagnostique — les 5 premières minutes sont critiques, surtout avec la bupivacaïne qui peut provoquer un ACR d'emblée",
+        "**ELIV 20% : bolus 1,5 mL/kg puis perfusion 0,25 mL/kg/min, répéter si besoin, dose max 10-12 mL/kg** — commencer dès les premiers signes cardiovasculaires ou convulsions résistantes",
+        "**Adrénaline à doses réduites (10-100 µg) en cas d'ACR sur TSAL** — les doses standard (1 mg) peuvent aggraver la cardiotoxicité des AL et favoriser les arythmies",
+        "**Lidocaïne IV et amiodarone sont contre-indiquées ou à éviter** comme antiarythmiques dans la TSAL — le propofol ne remplace pas l'ELIV lipidique",
+        "**ECMO-VA à envisager précocement si ACR réfractaire** — la survie est possible après plus d'une heure de RCP si l'ELIV est administrée et la réanimation maintenue"
+      ],
+      "references": [
+        "Neal JM et al. — ASRA/ESRA Checklist for Treatment of Local Anesthetic Systemic Toxicity (2023 Version) — Regional Anesthesia and Pain Medicine 2023",
+        "El-Boghdadly K et al. — Local anaesthetic systemic toxicity: current perspectives — Local and Regional Anesthesia 2021",
+        "SFAR — Recommandations sur la pratique des anesthésies locorégionales — 2020",
+        "Fettiplace MR, Weinberg G — The Mechanisms Underlying Lipid Resuscitation Therapy — Regulatory Toxicology and Pharmacology 2018 (référence mécanistique fondatrice)",
+        "Mercier FJ, Bonnet MP — SFAR — Toxicité systémique des anesthésiques locaux — Mise au point 2022",
+        "Weinberg GL — Lipid emulsion infusion: resuscitation for local anesthetic and other drug overdose — Anesthesiology 2012 (référence historique fondatrice, toujours citée)",
+        "Hiller DB et al. — Safety of high volume lipid emulsion infusion: a first approximation of LD50 in rats — Regional Anesthesia and Pain Medicine 2010",
+        "ESRA Europe — Ultrasound-guidance for peripheral nerve blocks — Evidence-based recommendations 2020"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Une patiente de 58 ans, 60 kg, reçoit un bloc paravertébral thoracique pour chirurgie mammaire. Quarante secondes après l'injection de bupivacaïne 0,5% (80 mg total), elle présente sous légère sédation au propofol un élargissement brutal du QRS à 160 ms sur le moniteur ECG, une FC à 45 bpm, puis une perte de conscience. La SpO2 était à 98% avant l'injection.",
+        "question": "Quelle est la première action thérapeutique PRIORITAIRE dans les 30 secondes suivant la reconnaissance de ce tableau ?",
+        "options": {
+          "A": "Injecter de l'atropine 0,5 mg IV pour corriger la bradycardie",
+          "B": "Débuter l'émulsion lipidique 20% en bolus IV 1,5 mL/kg (90 mL) et appeler à l'aide",
+          "C": "Administrer de l'amiodarone 300 mg IV pour traiter le trouble de conduction",
+          "D": "Intuber en séquence rapide puis réaliser un ECG 18 dérivations avant toute thérapeutique"
+        },
+        "correct": "B",
+        "explanation": "Réponse B : Le tableau (QRS élargi brutal + bradycardie + perte de conscience dans la minute suivant une injection de bupivacaïne) est une TSAL cardiovasculaire sévère présumée. L'ELIV 20% doit être débutée IMMÉDIATEMENT, simultanément à l'appel à l'aide et à la prise en charge des voies aériennes. Piège A : l'atropine traite une bradycardie vagale mais est inefficace sur la bradycardie par blocage des canaux Nav — elle ne constitue pas la priorité. Piège C : l'amiodarone est contre-indiquée car elle aggrave le blocage des canaux sodiques et potassiques dans ce contexte — c'est une erreur classique du résident. Piège D : l'intubation est nécessaire mais ne doit pas précéder l'ELIV ni retarder son administration — la prise en charge est simultanée et l'ELIV doit être injectée dès la suspicion sans attendre un ECG complet."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Vous prenez en charge un patient de 80 kg présentant une TSAL avec fibrillation ventriculaire réfractaire à 3 chocs électriques et 15 minutes de RCP. Vous avez déjà administré 2 bolus d'ELIV 20% (1,5 mL/kg chacun) et une perfusion continue à 0,25 mL/kg/min depuis 10 minutes.",
+        "question": "Quelle est la dose totale maximale d'émulsion lipidique 20% à ne pas dépasser et quelle est la prochaine étape si l'ACR reste réfractaire ?",
+        "options": {
+          "A": "Dose max 5 mL/kg ; prochaine étape : adrénaline 1 mg IV répétée toutes les 3-5 min",
+          "B": "Dose max 10-12 mL/kg ; prochaine étape : contact précoce pour ECMO veino-artérielle et poursuite de la RCP",
+          "C": "Dose max 20 mL/kg ; prochaine étape : bicarbonate de sodium molaire 100 mEq IV en bolus",
+          "D": "Dose max 10-12 mL/kg ; prochaine étape : arrêt de la RCP si échec après 30 minutes de réanimation bien conduite"
+        },
+        "correct": "B",
+        "explanation": "Réponse B : La dose maximale d'ELIV 20% est de 10-12 mL/kg (700-840 mL pour 80 kg) au-delà de laquelle le risque d'embolisation lipidique pulmonaire et d'interférence avec les médicaments de réanimation devient préoccupant. En cas d'ACR réfractaire malgré ELIV bien conduite, l'ECMO veino-artérielle doit être envisagée PRÉCOCEMENT — des survies sans séquelles ont été rapportées après > 60 min de RCP dans la TSAL. Piège A : la dose max de 5 mL/kg est incorrecte, trop restrictive — et l'adrénaline 1 mg IV répétée est contre-indiquée en TSAL (doses réduites 10-100 µg). Piège C : 20 mL/kg dépasse largement le seuil de sécurité — le bicarbonate est utile en cas d'acidose sévère (pH < 7,10) mais n'est pas l'étape prioritaire suivante. Piège D : dans la TSAL, l'arrêt de la RCP après 30 minutes est une ERREUR — la durée de réanimation peut être prolongée significativement avec ELIV, en particulier si une ECMO est accessible."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Un interne réalise un bloc fémoral échoguidé chez une patiente de 65 kg pour PTG. Il utilise de la ropivacaïne 0,5%, 30 mL (150 mg). Deux minutes après la fin de l'injection, la patiente signale des acouphènes, un goût métallique et des paresthésies péribuccales. La PA est à 125/75, FC 88/min, SpO2 97%, pas de trouble du rythme sur le scope.",
+        "question": "Quelle conduite tenir est la plus appropriée à ce stade ?",
+        "options": {
+          "A": "Débuter immédiatement l'ELIV 20% en bolus 1,5 mL/kg et prévenir le senior",
+          "B": "Rassurer la patiente, observer 5 minutes et ne débuter l'ELIV que si des convulsions apparaissent",
+          "C": "Arrêter toute injection supplémentaire, O2 au masque, voie veineuse si non faite, monitoring continu ECG/SpO2/PA, prévenir le senior, préparer l'ELIV et observer l'évolution tout en étant prêt à injecter immédiatement",
+          "D": "Injecter du midazolam 5 mg IV en prévention des convulsions et surveiller"
+        },
+        "correct": "C",
+        "explanation": "Réponse C : Les signes présentés (acouphènes, goût métallique, paresthésies péribuccales) sont les prodromes classiques d'une TSAL neurologique légère à modérée. À ce stade sans signes cardiovasculaires ni convulsions, l'ELIV n'est pas encore obligatoire mais doit être préparée et l'équipe alertée. La conduite correcte est : arrêt de toute injection, O2, monitorage renforcé, voie veineuse fonctionnelle, senior prévenu, ELIV prête à être injectée au moindre signe d'aggravation. Piège A : débuter l'ELIV d'emblée pour des prodromes légers sans signe CV est une surestimation — l'ELIV a des effets indésirables potentiels (embolisation pulmonaire, interférences) et les recommandations réservent son utilisation aux signes modérés à sévères ou à la progression. Piège B : attendre les convulsions sans préparer est dangereux — la progression peut être rapide, surtout avec la ropivacaïne. Piège D : le midazolam prophylactique n'est pas recommandé — il masquera les signes d'évolution sans traiter la cause."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "En peropératoire d'une cholécystectomie sous AG, l'anesthésiste injecte une infiltration de plaie avec 40 mL de bupivacaïne 0,25% (100 mg). Cinq minutes plus tard, des extrasystoles ventriculaires polymorphes apparaissent, suivies d'une TV à 180 bpm avec PA mesurée à 65/40 mmHg. Le patient est intubé ventilé sous propofol 4 mg/kg/h et rémifentanil.",
+        "question": "Concernant la gestion antiarythmique de cette TV dans le contexte de TSAL présumée, quelle affirmation est exacte ?",
+        "options": {
+          "A": "L'amiodarone 300 mg IV est le traitement de première ligne car c'est l'antiarythmique de référence des TV hémodynamiquement tolérées",
+          "B": "La lidocaïne IV 1-1,5 mg/kg est indiquée car elle est de classe Ib et agit sur des canaux sodiques différents de la bupivacaïne",
+          "C": "La cardioversion électrique externe synchronisée est l'option privilégiée pour traiter cette TV mal tolérée, en association avec l'ELIV 20%",
+          "D": "Le magnésium IV 2g est le traitement de première ligne car la TV est probablement une torsade de pointes liée à l'allongement du QT par la bupivacaïne"
+        },
+        "correct": "C",
+        "explanation": "Réponse C : Devant une TV hémodynamiquement mal tolérée (PA 65/40) dans un contexte de TSAL, la cardioversion électrique externe synchronisée est indiquée EN URGENCE, associée immédiatement à l'ELIV 20%. Le choc électrique traite l'arythmie directement sans dépendance aux voies pharmacologiques bloquées par l'AL. Piège A : l'amiodarone est contre-indiquée ou fortement déconseillée en TSAL car elle bloque les canaux Na+ et K+ — elle aggrave la cardiotoxicité. Piège B : la lidocaïne IV est formellement contre-indiquée en TSAL quel que soit l'AL en cause — la notion de 'canaux différents' est un argument fallacieux et dangereux fréquemment entendu en guardes. Piège D : le magnésium est le traitement des torsades de pointes (TV polymorphe sur QT long) mais la TV décrite ici est dans un contexte de TSAL par blocage Nav — le magnésium peut être utile en complément mais n'est pas le premier traitement de cette TV hémodynamiquement compromise."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Vous gérez une TSAL sévère avec ACR en FV chez un patient de 90 kg. Après 2 bolus d'ELIV 20% (135 mL chacun) et 20 minutes de RCP, le rythme se convertit en rythme sinusal avec une FC à 70/min mais la PA reste à 55/30 mmmHg malgré la reprise d'une ventilation efficace.",
+        "question": "Quel vasopresseur est préféré en première intention pour traiter cette hypotension post-ACR dans le contexte d'une TSAL à la bupivacaïne ?",
+        "options": {
+          "A": "Adrénaline en seringue électrique à 0,1-0,3 µg/kg/min car c'est le vasopresseur de référence en état de choc post-ACR",
+          "B": "Noradrénaline en seringue électrique titrée, en visant une PAM ≥ 65 mmHg",
+          "C": "Éphédrine 9 mg IV en bolus répétés car elle a un effet à la fois alpha et béta sans aggravation arythmogène",
+          "D": "Dobutamine 5-10 µg/kg/min car la défaillance est principalement myocardique et nécessite un inotrope positif"
+        },
+        "correct": "B",
+        "explanation": "Réponse B : En cas d'hypotension sans ACR actif dans le contexte d'une TSAL, la noradrénaline est préférée car elle permet une vasoplégie sans l'effet chronotrope et inotrope positif de l'adrénaline qui peut favoriser les récidives d'arythmies dans un myocarde encore sensibilisé par l'AL. La titration vers PAM ≥ 65 mmHg est l'objectif standard. Piège A : l'adrénaline en perfusion continue peut être nécessaire en dernier recours mais les doses élevées d'adrénaline sont déconseillées en TSAL en raison du risque de facilitation des arythmies ventriculaires et d'aggravation de la toxicité myocardique — la noradrénaline est préférée en l'absence d'ACR actif. Piège C : l'éphédrine a un effet trop limité et court pour une hypotension profonde post-ACR — elle est inadaptée. Piège D : la dobutamine seule est insuffisante si la composante vasoplégique domine — et augmente la FC ce qui peut favoriser les récidives arythmiques."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Une sage-femme réalise une analgésie péridurale obstétricale chez une parturiente de 28 ans, 65 kg. Elle injecte un bolus de lidocaïne 2% adrénalinée 3 mL (dose-test) puis ropivacaïne 0,2% 15 mL. La parturiente est sous scope : la FC passe de 85 à 118 bpm en 30 secondes après la dose-test, puis redescend.",
+        "question": "Quelle interprétation et quelle conduite sont correctes face à cette tachycardie transitoire après la dose-test ?",
+        "options": {
+          "A": "La tachycardie est un signe de TSAL débutante à la lidocaïne — arrêt immédiat et protocole TSAL",
+          "B": "La tachycardie (> 20 bpm vs baseline) après lidocaïne + adrénaline est un signe d'injection intravasculaire — ne pas injecter la ropivacaïne, retirer et repositionner le cathéter",
+          "C": "La tachycardie est une réponse physiologique normale à la contraction utérine — poursuivre le protocole péridural normalement",
+          "D": "La tachycardie n'est pas interprétable car la dose-test à l'adrénaline est non fiable chez la parturiente — poursuivre avec la ropivacaïne en injection fractionnée"
+        },
+        "correct": "B",
+        "explanation": "Réponse B : Une augmentation de la FC > 20 bpm après injection de lidocaïne + épinéphrine 1/200 000 (3 mL) est le critère classique de positivité de la dose-test, signant une injection intravasculaire accidentelle. Il faut stopper immédiatement, ne pas injecter la ropivacaïne, retirer ou repositionner le cathéter. Piège A : La lidocaïne à 3 mL (60 mg) en injection IV peut provoquer des signes légers de TSAL mais la tachycardie ici est attribuée à l'adrénaline — le diagnostic de TSAL à la lidocaïne n'est pas le premier à évoquer dans ce contexte. Piège C : confondre la tachycardie de contraction utérine avec une réponse à l'adrénaline est l'erreur typique — la chronologie (30 secondes post-injection) et l'amplitude (+ 33 bpm) orientent vers la dose-test positive. Piège D : bien que la dose-test soit effectivement moins fiable chez la parturiente (FC variable, débits cardiaques élevés), une augmentation aussi franche et aussi rapide ne doit pas être ignorée — ce raisonnement justifiant de poursuivre est dangereux."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Vous êtes en garde dans un centre hospitalier général (sans circulation extracorporelle disponible sur site). Un patient de 55 ans présente une TSAL sévère avec ACR en FV réfractaire (> 25 min de RCP malgré 2 bolus d'ELIV 20% et perfusion continue).",
+        "question": "Quelle est la conduite la plus appropriée concernant l'ECMO dans ce contexte ?",
+        "options": {
+          "A": "L'ECMO est contre-indiquée en cas de TSAL car les AL séquestrés dans le circuit aggravent la toxicité",
+          "B": "Contacter immédiatement le centre de référence pour transfert sous RCP mécanique (LUCAS®) et envisager une ECMO-VA sur site si le centre dispose de moyens mobiles d'assistance",
+          "C": "L'ECMO n'est à envisager qu'après 60 minutes de RCP réfractaire documentée",
+          "D": "En l'absence de CEC sur site, l'ECMO est inaccessible — poursuivre la RCP standard et augmenter les doses d'ELIV au-delà de 12 mL/kg si nécessaire"
+        },
+        "correct": "B",
+        "explanation": "Réponse B : L'ECMO-VA doit être envisagée PRÉCOCEMENT (et non après un délai fixe arbitraire) en cas d'ACR réfractaire sur TSAL. Le contact avec le centre de référence doit être établi dès 20-25 minutes de RCP réfractaire malgré ELIV bien conduite. Des équipes mobiles d'ECMO existent dans certains SAMU/CHU et peuvent intervenir ou guider le transfert. La RCP mécanique (LUCAS® ou AutoPulse®) permet un transport sécurisé. Piège A : l'ECMO n'est pas contre-indiquée en TSAL — au contraire, c'est une option de sauvetage validée par de nombreux cas publiés ; la séquestration d'AL dans le circuit est un phénomène réel mais gérable. Piège C : attendre 60 minutes avant d'appeler est une erreur — chaque minute de délai réduit les chances de CEC/ECMO efficace (no-flow et low-flow prolongés). Piège D : dépasser 12 mL/kg d'ELIV expose à des complications graves (SDRA lipidique, interférences) et ne résout pas le problème d'un myocarde résistant — l'escalade thérapeutique passe par l'ECMO et non par la surcharge lipidique."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Un patient obèse (BMI 42, poids réel 130 kg, poids idéal théorique 78 kg) reçoit un bloc du plexus brachial par voie interscalénique sous sédation légère. Le praticien s'apprête à calculer la dose de ropivacaïne.",
+        "question": "Sur quelle base pondérale doit-on calculer la dose maximale de ropivacaïne pour minimiser le risque de TSAL ?",
+        "options": {
+          "A": "Poids réel (130 kg) car la distribution de l'AL dépend de la masse tissulaire totale",
+          "B": "Poids idéal théorique (78 kg) ou poids ajusté ([poids idéal + 0,4 × (poids réel − poids idéal)]) car les AL sont peu distribués dans la masse grasse",
+          "C": "Poids réel plafonné à 100 kg maximum pour simplifier le calcul",
+          "D": "La dose doit être calculée selon le volume attendu à diffuser et non selon le poids du patient"
+        },
+        "correct": "B",
+        "explanation": "Réponse B : Les anesthésiques locaux amino-amides sont peu liposolubles pour leur distribution volumique (ils se lient aux protéines plasmatiques et se distribuent peu dans la masse grasse non perfusée). Chez l'obèse, utiliser le poids réel surestime la dose maximale et expose à la toxicité. Le poids idéal théorique ou le poids ajusté (formule de Cheymol) est recommandé pour le calcul des doses maximales d'AL. Piège A : utiliser le poids réel de 130 kg pour calculer la dose de ropivacaïne (3 mg/kg) donnerait 390 mg — soit 65% de plus que la dose calculée sur le poids idéal (78 kg × 3 = 234 mg), avec un risque de TSAL considérablement augmenté. Piège C : le plafonnement arbitraire à 100 kg est une approximation sans base pharmacologique solide — le poids ajusté est plus rigoureux. Piège D : si l'adaptation au volume est pertinente pour l'efficacité (bloc tronculaire), la sécurité repose sur les doses maximales pondérées au poids ajusté."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Après résolution complète d'une TSAL modérée (convulsions contrôlées par midazolam, sans passage en ACR) traitée par ELIV 20% chez un patient de 75 ans ayant reçu un bloc sciatique poplité à la ropivacaïne 0,5%, vous discutez de la durée de surveillance.",
+        "question": "Quelle est la durée minimale de surveillance recommandée après résolution complète des symptômes de TSAL dans ce contexte, et pourquoi ?",
+        "options": {
+          "A": "2 heures, délai habituel de surveillance post-bloc nerveux périphérique",
+          "B": "4 heures, correspondant à la demi-vie d'élimination de la ropivacaïne",
+          "C": "12 heures minimum en soins intensifs, en raison du risque de recrudescence symptomatique lié à la redistribution tissulaire de l'AL à longue durée d'action",
+          "D": "24 heures systématiques en réanimation quelle que soit la sévérité initiale"
+        },
+        "correct": "C",
+        "explanation": "Réponse C : Après une TSAL à AL à longue durée d'action (bupivacaïne, ropivacaïne, lévobupivacaïne), une surveillance minimale de 12 heures en soins intensifs est recommandée, même après résolution complète des symptômes. En effet, la redistribution des AL depuis les compartiments tissulaires vers le compartiment plasmatique peut provoquer une recrudescence de la toxicité (phénomène de 'rebound'). Cette durée est particulièrement importante chez le sujet âgé (métabolisme hépatique ralenti) et après un bloc de membre inférieur (résorption potentiellement prolongée). Piège A : 2 heures est insuffisant et correspond à la surveillance post-ALR non compliquée — totalement inadapté après une TSAL avérée. Piège B : la demi-vie d'élimination ne correspond pas à la durée de surveillance clinique — la redistribution peut survenir bien après la phase d'élimination initiale. Piège D : 24h systématiques en réanimation est une surestimation pour les cas modérés sans ACR — les recommandations indiquent 12h minimum en soins intensifs avec adaptation à la sévérité initiale."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "En salle de réveil, une infirmière IADE vous appelle pour un patient de 55 ans qui vient de recevoir un bloc paravertébral thoracique bilatéral (ropivacaïne 0,375%, 20 mL de chaque côté = 150 mg au total). Il présente une agitation inexpliquée, une PA à 165/95, FC 110/min, et dit 'entendre un bourdonnement'. Le patient était parfaitement calme 5 minutes auparavant.",
+        "question": "Parmi les diagnostics différentiels suivants, lequel est le plus susceptible de RETARDER À TORT le diagnostic de TSAL et doit donc être activement écarté ?",
+        "options": {
+          "A": "Douleur post-opératoire insuffisamment traitée avec agitation réactionnelle",
+          "B": "Réveil agité post-anesthésie générale avec hypercapnie",
+          "C": "Réaction anaphylactique de grade II aux agents utilisés en peropératoire",
+          "D": "Attaque de panique ou syndrome anxieux aigu"
+        },
+        "correct": "D",
+        "explanation": "Réponse D : Le syndrome anxieux aigu ou l'attaque de panique est le diagnostic différentiel qui retarde le plus fréquemment la reconnaissance d'une TSAL, car il partage exactement les mêmes symptômes : agitation, tachycardie, hypertension transitoire, acouphènes, paresthésies péribuccales. L'erreur classique est de rassurer le patient en lui attribuant ses symptômes à l'anxiété, perdant ainsi un temps précieux avant l'ACR. La chronologie (5 min post-injection d'AL) et le contexte doivent imposer la présomption de TSAL. Piège A : la douleur post-op est fréquente mais ne provoque pas d'acouphènes ni de paresthésies péribuccales — moins susceptible de masquer le diagnostic. Piège B : le réveil agité avec hypercapnie est un diagnostic de salle de réveil courant mais se présente différemment (désorientation, SpO2 abaissée, EtCO2 élevé) et survient sans injection récente d'AL. Piège C : l'anaphylaxie est un diagnostic concurrent important (et peut coexister) mais se présente habituellement avec urticaire/érythème, bronchospasme, hypotension prédominante — son tableau est suffisamment différent pour ne pas être le diagnostic 'le plus susceptible de retarder' spécifiquement la TSAL."
+      }
+    ]
   }
 ]
