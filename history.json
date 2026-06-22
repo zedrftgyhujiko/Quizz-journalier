@@ -8882,5 +8882,373 @@
         "explanation": "Réponse D : Le syndrome anxieux aigu ou l'attaque de panique est le diagnostic différentiel qui retarde le plus fréquemment la reconnaissance d'une TSAL, car il partage exactement les mêmes symptômes : agitation, tachycardie, hypertension transitoire, acouphènes, paresthésies péribuccales. L'erreur classique est de rassurer le patient en lui attribuant ses symptômes à l'anxiété, perdant ainsi un temps précieux avant l'ACR. La chronologie (5 min post-injection d'AL) et le contexte doivent imposer la présomption de TSAL. Piège A : la douleur post-op est fréquente mais ne provoque pas d'acouphènes ni de paresthésies péribuccales — moins susceptible de masquer le diagnostic. Piège B : le réveil agité avec hypercapnie est un diagnostic de salle de réveil courant mais se présente différemment (désorientation, SpO2 abaissée, EtCO2 élevé) et survient sans injection récente d'AL. Piège C : l'anaphylaxie est un diagnostic concurrent important (et peut coexister) mais se présente habituellement avec urticaire/érythème, bronchospasme, hypotension prédominante — son tableau est suffisamment différent pour ne pas être le diagnostic 'le plus susceptible de retarder' spécifiquement la TSAL."
       }
     ]
+  },
+  {
+    "date": "2026-06-22",
+    "dateStr": "lundi 22 juin",
+    "topic": "Prise en charge du choc septique réfractaire aux catécholamines en réanimation : place de la vasopressine et de ses analogues, corticothérapie substitutive à dose physiologique et recours à l'angiotensine II comme vasopresseur de sauvetage",
+    "cat": "Réanimation",
+    "course": {
+      "intro": "Le choc septique réfractaire aux catécholamines représente une situation de menace vitale immédiate, définie par l'incapacité à maintenir une PAM ≥ 65 mmHg malgré des doses croissantes de noradrénaline. La mortalité dépasse 60–70 % dans cette population, justifiant le recours à des vasopresseurs de deuxième et troisième ligne (vasopressine, angiotensine II) et à la corticothérapie à dose physiologique. Maîtriser les mécanismes, les seuils décisionnels et les interactions pharmacologiques de ces thérapeutiques est indispensable au réanimateur senior.",
+      "sections": [
+        {
+          "title": "1. Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **choc septique** (Sepsis-3, 2016) est défini par un sepsis avec nécessité de **vasopresseur pour maintenir PAM ≥ 65 mmHg** ET **lactate > 2 mmol/L** malgré un remplissage adéquat. La mortalité hospitalière associée dépasse 40 %."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Choc septique réfractaire aux catécholamines** : absence de consensus strict, mais définition operationnelle = noradrénaline > 0,25–0,5 µg/kg/min (certains auteurs ≥ 1 µg/kg/min) ne permettant pas d'atteindre PAM ≥ 65 mmHg ou entraînant des effets indésirables dose-dépendants inacceptables",
+                "**Insuffisance corticosurrénalienne relative (IRCSR)** : réponse insuffisante du cortisol au stress, définie par une stimulation au Synacthène® : delta cortisol < 9 µg/dL (248 nmol/L) ou cortisol de base < 10 µg/dL (276 nmol/L) en contexte de choc",
+                "**Vasoplégie** : vasodilatation artérielle profonde avec résistances vasculaires systémiques effondrées (RVS < 800 dyn·s·cm⁻⁵), débit cardiaque conservé ou élevé, constituant le phénotype hémodynamique dominant du choc septique",
+                "**Tachyphylaxie aux catécholamines** : désensibilisation des récepteurs adrénergiques par down-regulation membranaire et découplage des récepteurs β et α₁-adrénergiques, aggravée par l'acidose et la carence en cortisol"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Seuil décisionnel d'introduction de vasopressine (recommandation SSC 2021) : noradrénaline ≥ 0,25 µg/kg/min sans atteinte de la cible PAM — Grade faible, recommandation conditionnelle"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Le choc septique réfractaire n'est pas synonyme de choc cardiogénique surajouté. Avant d'escalader les vasopresseurs, évaluer systématiquement la précharge (VCI, PLR), la fonction VG (ETT) et éliminer une cause curable (drain thoracique, drainage d'abcès, embolie pulmonaire)."
+            }
+          ]
+        },
+        {
+          "title": "2. Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "La **vasoplégie septique** résulte de trois mécanismes convergents : surproduction de **NO** (via iNOS activée par les cytokines), activation des **canaux K⁺-ATP** (hyperpolarisation cellulaire musculaire lisse), et carence relative en **vasopressine endogène** (épuisement des stocks hypothalamiques dans les 24–48 premières heures)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Voie NO/GMPc** : le LPS et les cytokines (IL-1β, TNF-α) induisent iNOS → surproduction de NO → activation guanylate cyclase → ↑ GMPc → relaxation musculaire lisse vasculaire → résistances effondrées",
+                "**Canaux K⁺-ATP** : l'acidose lactique et l'ATP intracellulaire bas activent ces canaux → hyperpolarisation → fermeture des canaux Ca²⁺ voltage-dépendants → réduction de la vasoconstriction",
+                "**Déficit en vasopressine** : la vasopressine plasmatique (normalement 100–200 pg/mL en choc) s'épuise après 24–48 h à des taux inappropriément bas (< 3,6 pg/mL) — phénomène dit de 'déficit relatif en vasopressine'",
+                "**Insuffisance corticosurrénalienne relative** : mécanismes incluent inhibition de la stéroïdogenèse surrénalienne par les cytokines, résistance tissulaire aux glucocorticoïdes, diminution de l'expression des récepteurs aux glucocorticoïdes, et hypoperfusion surrénalienne — favorise la tachyphylaxie aux catécholamines par réduction de la régulation positive des récepteurs adrénergiques",
+                "**Système rénine-angiotensine-aldostérone (SRAA)** : l'angiotensine II exerce une vasoconstriction via récepteurs AT1 (Gq → PLC → IP3/DAG → Ca²⁺), stimule la libération de vasopressine, et restaure la réactivité vasculaire aux catécholamines — son déficit relatif aggrave la vasoplégie"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "La **corticothérapie** agit en restaurant la sensibilité vasculaire aux catécholamines (upregulation des récepteurs α₁-adrénergiques), en inhibant la transcription d'iNOS, et en potentialisant les effets de la vasopressine, indépendamment de son effet anti-inflammatoire propre."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : L'administration de fortes doses de corticoïdes (> 300 mg/j d'hydrocortisone) n'est pas indiquée et est délétère (immunosuppression majeure, surinfections, myopathie). La 'dose physiologique de stress' est de 200 mg/j d'hydrocortisone IV, non 500 mg ou 1 g."
+            }
+          ]
+        },
+        {
+          "title": "3. Évaluation / Diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation du choc septique réfractaire doit être **multimodale et dynamique** : hémodynamique (PAM, PAP, débit cardiaque si cathéter artériel pulmonaire ou PiCCO), biologique (lactate, cortisol, rénine), et échographique (ETT/ETO)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Paramètres hémodynamiques** : PAM cible ≥ 65 mmHg (≥ 80 mmHg si hypertension chronique préexistante selon ATHOS-3 et études de sous-groupes), RVS calculées (normale 800–1200 dyn·s·cm⁻⁵), index cardiaque (normale 2,5–4 L/min/m²)",
+                "**Lactate** : marqueur de sévérité et guide de réponse thérapeutique — objectif de clearance ≥ 10 % toutes les 2 heures selon SSC 2021 ; lactate > 4 mmol/L = pronostic sévère",
+                "**Test au Synacthène® (250 µg IV)** : cortisol à T0 et T60 min — delta < 9 µg/dL (248 nmol/L) = IRCSR. Mais attention : le test au Synacthène n'est PLUS recommandé en routine pour décider de la corticothérapie (SSC 2021, grade faible)",
+                "**Rénine plasmatique** : marqueur émergent du déficit en angiotensine II et prédicteur de réponse à l'angiotensine II (étude ATHOS-3 : rénine élevée = meilleure réponse)",
+                "**ETT en urgence** : évaluation LVEF, pressions de remplissage, tamponnade, dysfonction VD (PAPsystolique, rapport VD/VG), précharge-dépendance (variation du VES ≥ 13 % en ventilation contrôlée)",
+                "**Score SOFA** : quantification de la défaillance d'organes, score ≥ 11 associé à mortalité > 50 %"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Critère IRCSR opérationnel : cortisol aléatoire < 18 µg/dL (497 nmol/L) en choc septique ET/OU dépendance persistante aux vasopresseurs malgré remplissage optimal — décision clinique sans attendre le test Synacthène (SSC 2021)"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Le dosage du cortisol total est faussé par l'hypoalbuminémie (cortisol libre biologiquement actif > cortisol total mesuré). En pratique de réanimation, la corrélation entre cortisol total et état clinique est imparfaite ; la décision de corticothérapie repose d'abord sur la dépendance vasopressive."
+            }
+          ]
+        },
+        {
+          "title": "4. Stratégie de prise en charge — Vasopresseurs de 2e et 3e ligne",
+          "items": [
+            {
+              "type": "text",
+              "content": "La stratégie d'escalade vasopressive suit une logique séquentielle : **noradrénaline en première intention**, puis **vasopressine** comme deuxième vasopresseur, puis selon le tableau clinique **corticothérapie substitutive**, et en dernier recours **angiotensine II** (ATⅡ). L'objectif est de limiter les doses de noradrénaline (effets proarythmiques, ischémie mésentérique, immunosuppression)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Noradrénaline (1ère ligne)** : doses initiales 0,01–0,5 µg/kg/min, cible PAM ≥ 65 mmHg ; effets α₁ dominants à faibles doses, effets β₁ à fortes doses ; administrée en voie veineuse centrale de préférence (peut être débutée brièvement en VVP selon SSC 2021 en attente de VVC)",
+                "**Vasopressine (2e ligne — ajout à la noradrénaline)** : posologie fixe de 0,03 U/min (non titrée) — mécanisme V1a (vasoconstriction artériolaire), V2 (réabsorption eau libre rénale), V1b (sécrétion ACTH). Dose de 0,01–0,03 U/min — ne pas dépasser 0,04 U/min (risque d'ischémie coronarienne, mésentérique, cutanée)",
+                "**Terlipressine** (analogue vasopressine) : utilisée en alternative (surtout hors AMM choc septique en France) — durée d'action plus longue (4–6 h), risque d'ischémie cutanée plus marqué ; dose 1–2 mg/4–6 h IV discontinue ou 1,3 µg/kg/h en continu",
+                "**Corticothérapie substitutive** : hydrocortisone 200 mg/j IV en perfusion continue (ou 50 mg/6 h en bolus) — indication si noradrénaline ≥ 0,25 µg/kg/min pour maintenir PAM cible (SSC 2021, grade faible) ; durée minimum 3–7 jours avec décroissance progressive ; association fludrocortisone 50 µg/j per os controversée (bénéfice dans APROCCHSS 2018, non retrouvé dans ADRENAL 2018)",
+                "**Angiotensine II (3e ligne — sauvetage)** : GIAPREZA® (angiotensine II humaine recombinante) — AMM européenne 2020 pour choc vasoplégique réfractaire ; dose initiale 20 ng/kg/min, titrée par paliers de 15 ng/kg/min toutes 15 min, dose max 80 ng/kg/min (phase initiale 3 h) puis max 40 ng/kg/min ; effets : vasoconstriction AT1, stimulation aldostérone, stimulation libération vasopressine endogène",
+                "**Dopamine** : n'est PLUS recommandée en 2021 (SSC) sauf absence de noradrénaline — surmortalité et arythmies vs noradrénaline (De Backer NEJM 2010)",
+                "**Éphédrine / phényléphrine** : usage ponctuel peranesthésique, pas de place en choc septique établi"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Posologie vasopressine : FIXE à 0,03 U/min (non titrée selon PAM) — maximum absolu 0,04 U/min. Toujours EN ASSOCIATION à la noradrénaline, jamais en monothérapie de première intention."
+            },
+            {
+              "type": "formula",
+              "content": "Angiotensine II (GIAPREZA®) : dose initiale 20 ng/kg/min IV, titration toutes 15 min par paliers de 15 ng/kg/min, maximum 80 ng/kg/min les 3 premières heures, puis maximum 40 ng/kg/min. Solution : 2500 ng/mL (dilution standard). Voie centrale obligatoire."
+            },
+            {
+              "type": "text",
+              "content": "L'étude **ATHOS-3** (Khanna et al., NEJM 2017) a démontré que l'angiotensine II permettait d'atteindre la PAM cible chez 70 % des patients vs 23 % sous placebo à H3, avec réduction significative des doses de noradrénaline. Une analyse post-hoc (Bellomo et al. 2018) suggère un bénéfice de mortalité dans le sous-groupe **déficit en corticoïdes** et **rénine élevée** (≥ 49 pg/mL)."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MAJEUR : La vasopressine ne doit JAMAIS être titrée à la hausse comme la noradrénaline. Au-delà de 0,04 U/min, le risque d'ischémie mésentérique, coronarienne et cutanée (nécrose digitale) devient inacceptable. Si PAM insuffisante malgré 0,03 U/min, augmenter la noradrénaline ou ajouter un 3e agent."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : L'angiotensine II est thrombogène. Elle stimule la production de PAI-1 et le SRAA. Dans l'étude ATHOS-3, incidence accrue d'événements thrombo-emboliques (thrombose veineuse profonde, embolie pulmonaire) dans le groupe ATⅡ. Surveillance rapprochée et thromboprophylaxie systématique obligatoire."
+            }
+          ]
+        },
+        {
+          "title": "5. Corticothérapie substitutive — Détail et controverses",
+          "items": [
+            {
+              "type": "text",
+              "content": "Deux grandes études randomisées récentes ont profondément modifié la pratique : **ADRENAL** (Venkatesh et al., NEJM 2018, n=3800) et **APROCCHSS** (Annane et al., NEJM 2018, n=1241). Ces deux essais diffèrent par leur population, le co-traitement par fludrocortisone et les critères d'inclusion."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**ADRENAL (2018)** : hydrocortisone 200 mg/j IV × 7 jours vs placebo — RÉSULTAT : pas de différence de mortalité à 90 jours (29 % vs 28 % ; p = 0,50) — Mais : sevrage plus rapide des vasopresseurs (3 j vs 4 j, p < 0,001), durée de ventilation mécanique plus courte, sans surrisque infectieux majeur",
+                "**APROCCHSS (2018)** : hydrocortisone 200 mg/j + fludrocortisone 50 µg/j vs placebo — RÉSULTAT : réduction mortalité à 90 jours (43,0 % vs 49,1 % ; p = 0,03) — Différence clé vs ADRENAL : population plus sévère, fludrocortisone ajoutée, test Synacthène négatif non requis",
+                "**SSC 2021 recommande** : hydrocortisone IV si noradrénaline ≥ 0,25 µg/kg/min pour maintenir PAM ≥ 65 mmHg (grade faible, évidence modérée)",
+                "**Dose recommandée** : 200 mg/j en perfusion continue (préférable aux bolus pour éviter l'hyperglycémie intermittente) — durée minimale 3–5 jours, décroissance progressive sur 5–7 jours (rebond hémodynamique si arrêt brutal)",
+                "**Fludrocortisone** : add-on controversé, non recommandé en routine par SSC 2021 faute de consensus (divergence ADRENAL/APROCCHSS), peut être discuté si natriurèse élevée ou hypoaldostéronisme documenté",
+                "**Hyperglycémie** : complication quasi-constante, nécessite protocole insulinothérapie continue — cible glycémique 7,8–10 mmol/L (140–180 mg/dL) selon NICE-SUGAR"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Hydrocortisone : 200 mg/j IV en perfusion continue sur 24 h (soit 8,3 mg/h). Dilution : 200 mg dans 48 mL NaCl 0,9 % = 4 mg/mL, débit 2 mL/h. Durée minimale recommandée : 5–7 jours avec sevrage progressif."
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Ne pas administrer de dexaméthasone à la place de l'hydrocortisone dans ce contexte (sauf si test Synacthène prévu dans l'heure — la dexaméthasone n'interfère pas avec le dosage du cortisol endogène). La dexaméthasone n'a pas d'activité minéralocorticoïde et son effet vasopresseur est moins bien étudié dans le choc septique."
+            }
+          ]
+        },
+        {
+          "title": "6. Complications et leur gestion",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**Ischémie mésentérique** (vasopressine, noradrénaline forte dose) : surveillance clinique abdominale, lactate, envisager TDM abdominal si douleur ou iléus inexpliqué — réduire la vasopressine en priorité si suspicion",
+                "**Ischémie digitale / nécrose cutanée** (vasopressine > 0,04 U/min, noradrénaline prolongée) : limiter la durée d'exposition, éviter l'hypothermie, pas de phentolamine systématique, discuter avis chirurgical vasculaire",
+                "**Hyponatrémie** (effet V2 de la vasopressine → rétention eau libre) : surveiller natrémie/6–8 h, risque si vasopressine prolongée ; peut paradoxalement aggraver l'œdème cérébral en contexte de neurologie associée",
+                "**Hypernatrémie** (effet de l'hydrocortisone et réduction de l'ADH) : bilan sodé quotidien, adaptation des apports hydriques libres",
+                "**Thrombose veineuse / embolie pulmonaire** (angiotensine II) : thromboprophylaxie systématique (HBPM ou HNF) — vérifier plaquettes et fonction rénale",
+                "**Hyperglycémie** (corticoïdes) : protocole insulinothérapie continue, risque hypoglycémique lors du sevrage — glycémie capillaire /1–2 h",
+                "**Surinfection** (corticoïdes > 7 jours, immunosuppression) : réévaluation microbiologique à J5–J7, antibiothérapie ciblée, ne pas prolonger les corticoïdes sans indication",
+                "**Rebond hémodynamique** (sevrage brutal des vasopresseurs ou corticoïdes) : décroissance progressive sur 24–48 h, surveillance PAM continue"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : L'angiotensine II peut masquer une hypovolémie relative en augmentant les RVS sans restaurer la volémie. Toujours s'assurer de l'euvolémie avant d'escalader les vasopresseurs. Un lactate qui remonte sous ATⅡ doit faire évoquer une ischémie mésentérique ou une hypovolémie masquée."
+            }
+          ]
+        },
+        {
+          "title": "7. Recommandations clés (avec grades et années)",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**SSC 2021 (Surviving Sepsis Campaign)** — Noradrénaline 1ère ligne vasopresseur (grade fort, évidence modérée) — Evans L et al., Intensive Care Med / Crit Care Med 2021",
+                "**SSC 2021** — Vasopressine en 2e vasopresseur si noradrénaline ≥ 0,25 µg/kg/min pour épargner les catécholamines (grade faible, évidence modérée)",
+                "**SSC 2021** — Hydrocortisone IV 200 mg/j si noradrénaline ≥ 0,25 µg/kg/min pour maintenir PAM (grade faible, évidence modérée) — PAS de test Synacthène obligatoire avant",
+                "**SSC 2021** — Ne pas utiliser dopamine en routine (grade fort, évidence modérée)",
+                "**ATHOS-3 (NEJM 2017)** — Angiotensine II : vasopresseur de sauvetage en choc vasoplégique réfractaire (catégorie IIA/IIB, usage compassionnel/ATU puis AMM EMA 2020)",
+                "**ADRENAL (NEJM 2018)** — Hydrocortisone 200 mg/j : sevrage vasopresseur plus rapide, pas de réduction de mortalité en population générale",
+                "**APROCCHSS (NEJM 2018)** — Hydrocortisone + fludrocortisone : réduction mortalité à 90 jours dans population sévère (noradrénaline ≥ 0,1 µg/kg/min + dysfonction d'organe)",
+                "**VASST (NEJM 2008)** — Vasopressine 0,03 U/min vs noradrénaline seule : pas de différence mortalité globale, bénéfice possible dans sous-groupe 'choc moins sévère' (noradrénaline 5–14 µg/min)",
+                "**VANCS (Anesthesiology 2017)** — Vasopressine vs noradrénaline en choc vasoplégique post-chirurgie cardiaque : moins de FA et d'insuffisance rénale avec vasopressine",
+                "**SFAR/SRLF — Consensus sur le choc septique** — Recommandations formalisées d'experts 2020 (RFE Choc Septique)"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Les recommandations SSC 2021 soulignent que la **plupart des recommandations relatives aux vasopresseurs de 2e ligne sont de grade faible** (évidence de qualité modérée à faible), reflétant l'hétérogénéité des populations étudiées. La pratique doit rester individualisée selon le profil hémodynamique, les comorbidités et la réponse thérapeutique."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Vasopressine à dose FIXE** : toujours 0,03 U/min (maximum 0,04 U/min), jamais titrée — son rôle est d'épargner la noradrénaline, pas de la remplacer",
+        "**Hydrocortisone 200 mg/j** dès noradrénaline ≥ 0,25 µg/kg/min : ne pas attendre le test Synacthène pour décider (SSC 2021) ; décroissance progressive indispensable pour éviter le rebond",
+        "**Angiotensine II (GIAPREZA®)** : vasopresseur de 3e ligne, thrombogène — surveillance thrombose et thromboprophylaxie obligatoires ; bénéfice maximal si rénine élevée",
+        "**Ne jamais augmenter la vasopressine** au-delà de 0,04 U/min sous peine d'ischémie mésentérique/coronarienne irréversible — escalader sur la noradrénaline ou ajouter ATⅡ",
+        "**Dopamine éliminée** du choc septique en 2021 (surmortalité + arythmies vs noradrénaline, étude De Backer NEJM 2010) — erreur classique d'interne à connaître"
+      ],
+      "references": [
+        "Evans L et al. — Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021 — Intensive Care Med / Crit Care Med 2021",
+        "Khanna A et al. — Angiotensin II for the Treatment of Vasodilatory Shock (ATHOS-3) — N Engl J Med 2017;377:419–430",
+        "Venkatesh B et al. — Adjunctive Glucocorticoid Therapy in Patients with Septic Shock (ADRENAL) — N Engl J Med 2018;378:797–808",
+        "Annane D et al. — Hydrocortisone plus Fludrocortisone for Adults with Septic Shock (APROCCHSS) — N Engl J Med 2018;378:809–818",
+        "Russell JA et al. — Vasopressin versus Norepinephrine Infusion in Patients with Septic Shock (VASST) — N Engl J Med 2008;358:877–887",
+        "De Backer D et al. — Comparison of Dopamine and Norepinephrine in the Treatment of Shock — N Engl J Med 2010;362:779–789",
+        "Bellomo R et al. — Acute kidney injury recovery and the effect of angiotensin II (ATHOS-3 post-hoc) — Crit Care Med 2020;48:e196–e203",
+        "SFAR/SRLF — Recommandations Formalisées d'Experts : Prise en charge du choc septique de l'adulte — 2020",
+        "Tumlin JA et al. — Effect of Angiotensin II on 28-Day Mortality in Catecholamine-Resistant Vasodilatory Shock — Crit Care Med 2018;46:17–26",
+        "Singer M et al. — The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3) — JAMA 2016;315:801–810"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Homme 67 ans, choc septique sur pneumopathie à Klebsiella pneumoniae, intubé-ventilé, noradrénaline à 0,35 µg/kg/min depuis H6, PAM 62 mmHg malgré remplissage 30 mL/kg. Lactate 3,8 mmol/L, ETT : FEVG 55 %, pas d'épanchement. Vous décidez d'introduire la vasopressine.",
+        "question": "Quelle est la posologie initiale correcte de vasopressine et sa modalité de titration en contexte de choc septique ?",
+        "options": {
+          "A": "0,01 U/min, à titrer par paliers de 0,01 U/min jusqu'à PAM ≥ 65 mmHg (max 0,1 U/min)",
+          "B": "0,03 U/min en perfusion continue, dose fixe non titrée, maximum 0,04 U/min",
+          "C": "0,03 U/min, à titrer par paliers de 0,01 U/min toutes les 15 min jusqu'à PAM ≥ 65 mmHg",
+          "D": "0,06 U/min en bolus de 1 U IVD puis relai continu à 0,04 U/min"
+        },
+        "correct": "B",
+        "explanation": "La vasopressine dans le choc septique est utilisée à dose FIXE de 0,03 U/min sans titration vers le haut, avec un maximum absolu de 0,04 U/min. Son rôle est d'épargner les catécholamines, non de remplacer la titration de la noradrénaline. Piège A : titrer la vasopressine comme la noradrénaline est une erreur grave — elle n'est pas titrée selon la PAM. Piège C : même erreur conceptuelle que A avec une cinétique de titration incorrecte. Piège D : les bolus IV de vasopressine à 1 U sont une pratique ancienne d'arrêt cardiaque (FV réfractaire), non indiquée dans le choc septique."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Femme 72 ans, choc septique post-péritonite, noradrénaline 0,55 µg/kg/min + vasopressine 0,03 U/min depuis 24 h, PAM 63 mmHg. Lactate 4,2 mmol/L, température 38,9 °C, cortisol aléatoire : 14 µg/dL.",
+        "question": "Concernant la corticothérapie substitutive, quelle affirmation est exacte selon les recommandations SSC 2021 ?",
+        "options": {
+          "A": "Le test au Synacthène® 250 µg doit être réalisé ; seul un delta cortisol < 9 µg/dL justifie l'hydrocortisone",
+          "B": "L'hydrocortisone 200 mg/j IV est indiquée sans nécessité d'attendre le test Synacthène, car noradrénaline ≥ 0,25 µg/kg/min",
+          "C": "La dexaméthasone 10 mg/j IV est préférable à l'hydrocortisone car elle ne perturbe pas le dosage du cortisol",
+          "D": "L'hydrocortisone n'est indiquée qu'en cas de cortisol aléatoire < 10 µg/dL (276 nmol/L)"
+        },
+        "correct": "B",
+        "explanation": "Selon SSC 2021, l'hydrocortisone 200 mg/j est recommandée (grade faible) quand noradrénaline ≥ 0,25 µg/kg/min pour maintenir PAM ≥ 65 mmHg, sans nécessité d'attendre ni de réaliser le test Synacthène. Piège A : le test Synacthène n'est PLUS requis avant la décision de corticothérapie en SSC 2021 — ancienne recommandation abandonnée. Piège C : si le test Synacthène est PRÉVU dans les minutes qui suivent, la dexaméthasone peut être utilisée transitoirement (n'interfère pas avec le dosage du cortisol endogène), mais elle n'est pas recommandée en routine à la place de l'hydrocortisone. Piège D : le seuil de cortisol aléatoire n'est plus le critère décisionnel principal selon SSC 2021."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Patient 58 ans, choc septique sur fasciite nécrosante, noradrénaline 0,8 µg/kg/min + vasopressine 0,03 U/min + hydrocortisone 200 mg/j depuis 12 h, PAM 59 mmHg malgré optimisation volémique. Lactate 5,1 mmol/L. FEVG 60 % à l'ETT. Vous envisagez l'angiotensine II.",
+        "question": "Parmi les affirmations suivantes concernant GIAPREZA® (angiotensine II), laquelle est exacte ?",
+        "options": {
+          "A": "La dose initiale est 5 ng/kg/min, titrée par paliers de 5 ng/kg/min avec un maximum de 40 ng/kg/min",
+          "B": "Elle peut être administrée en voie veineuse périphérique en urgence, le temps de poser un cathéter central",
+          "C": "La dose initiale est 20 ng/kg/min, titrée par paliers de 15 ng/kg/min toutes 15 min, maximum 80 ng/kg/min les 3 premières heures",
+          "D": "L'angiotensine II est contre-indiquée en cas d'insuffisance rénale aiguë oligo-anurique"
+        },
+        "correct": "C",
+        "explanation": "La posologie recommandée de GIAPREZA® est une dose initiale de 20 ng/kg/min avec titration par paliers de 15 ng/kg/min toutes 15 minutes selon la réponse hémodynamique, avec un maximum de 80 ng/kg/min pendant les 3 premières heures, puis 40 ng/kg/min ensuite (protocole ATHOS-3 et RCP EMA). Piège A : les chiffres de l'option A ne correspondent ni au protocole ATHOS-3 ni à la RCP — erreur de dose typique. Piège B : l'angiotensine II est veinotoxique et doit être administrée impérativement en voie veineuse centrale — risque de nécrose tissulaire en VVP. Piège D : l'insuffisance rénale n'est pas une contre-indication ; au contraire, une analyse post-hoc d'ATHOS-3 suggère un bénéfice rénal potentiel."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Patient sous vasopressine 0,03 U/min depuis 48 h pour choc septique. L'infirmière signale une natrémie à 127 mmol/L (veille 138 mmol/L). Pas de perfusion hypotonique récente.",
+        "question": "Quel mécanisme explique cette hyponatrémie et quelle est la conduite à tenir prioritaire ?",
+        "options": {
+          "A": "Effet minéralocorticoïde de la vasopressine → rétention sodée → dilution — réduire les apports salés",
+          "B": "Activation des récepteurs V2 de la vasopressine → rétention d'eau libre rénale → hyponatrémie de dilution — réévaluer la nécessité de la vasopressine",
+          "C": "Inhibition de l'aldostérone par la vasopressine → natriurèse → hyponatrémie de déplétion — supplémenter en NaCl",
+          "D": "La vasopressine stimule la sécrétion d'ACTH → hypercortisolisme → rétention hydro-sodée — arrêter immédiatement l'hydrocortisone"
+        },
+        "correct": "B",
+        "explanation": "La vasopressine (AVP) agit sur les récepteurs V2 du tube collecteur rénal → insertion des aquaporines 2 → réabsorption d'eau libre → dilution → hyponatrémie. La conduite à tenir est d'évaluer la nécessité de poursuivre la vasopressine (peut-on diminuer la dose ou tenter de sevrer ?) et de restreindre les apports hydriques libres. Piège A : la vasopressine n'a pas d'effet minéralocorticoïde direct significatif. Piège C : la vasopressine n'inhibe pas l'aldostérone directement — c'est l'inverse (les récepteurs V1b stimulent l'ACTH/aldostérone). Piège D : l'hydrocortisone tend plutôt à CORRIGER l'hyponatrémie (via l'aldostérone) et son arrêt brutal risque de déstabiliser le choc."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Vous discutez du bénéfice comparé de la vasopressine versus noradrénaline seule dans le choc septique sur la base de l'étude VASST (Russell 2008).",
+        "question": "Quel est le résultat principal de l'étude VASST et quelle est son interprétation correcte ?",
+        "options": {
+          "A": "Réduction significative de la mortalité à 28 jours dans le groupe vasopressine (35,4 % vs 39,3 %, p = 0,26) — bénéfice démontré en intention de traiter",
+          "B": "Absence de différence significative de mortalité à 28 jours en ITT ; bénéfice possible dans le sous-groupe 'choc moins sévère' (noradrénaline 5–14 µg/min) en analyse exploratoire",
+          "C": "Surmortalité dans le groupe vasopressine liée aux événements ischémiques mésentériques — étude arrêtée prématurément",
+          "D": "Réduction significative de la durée de ventilation mécanique et de la survenue d'insuffisance rénale aiguë avec la vasopressine, sans impact sur la mortalité"
+        },
+        "correct": "B",
+        "explanation": "VASST a randomisé 778 patients choc septique : vasopressine 0,03 U/min vs noradrénaline. Résultat principal : mortalité à 28 jours 35,4 % (vasopressine) vs 39,3 % (noradrénaline), différence NON significative (p = 0,26). En analyse de sous-groupe pré-spécifiée 'choc moins sévère' (noradrénaline 5–14 µg/min à l'inclusion), tendance bénéfique non significative. L'essai n'a pas été arrêté prématurément. Piège A : les chiffres sont exacts MAIS la conclusion 'bénéfice démontré' est fausse (p = 0,26, non significatif). Piège C : aucune surmortalité par ischémie mésentérique n'a conduit à l'arrêt de l'essai. Piège D : la réduction d'insuffisance rénale est un résultat de l'étude VANCS (choc vasoplégique post-chirurgie cardiaque), non de VASST."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "Femme 54 ans, choc septique sous noradrénaline 0,6 µg/kg/min + vasopressine 0,03 U/min + hydrocortisone 200 mg/j. À J5, PAM stable à 70 mmHg. L'équipe envisage de sevrer l'hydrocortisone.",
+        "question": "Quelle est la stratégie de sevrage de l'hydrocortisone la plus appropriée selon les données actuelles ?",
+        "options": {
+          "A": "Arrêt brutal de l'hydrocortisone dès que PAM ≥ 65 mmHg sans vasopresseur, sans risque de rebond documenté",
+          "B": "Décroissance progressive sur 5–7 jours, avec surveillance de la PAM et réintroduction si instabilité hémodynamique",
+          "C": "Test au Synacthène® systématique à J5 avant d'envisager le sevrage, et poursuivre si delta cortisol < 9 µg/dL",
+          "D": "Substituer l'hydrocortisone IV par la prednisone orale (20 mg/j) dès sevrage des vasopresseurs, en décroissance sur 3 semaines"
+        },
+        "correct": "B",
+        "explanation": "Le sevrage de l'hydrocortisone doit être progressif (décroissance sur 5–7 jours) pour éviter le rebond hémodynamique observé lors des arrêts brutaux. La surveillance clinique de la PAM guide la vitesse de décroissance. Piège A : l'arrêt brutal est associé à un rebond vasoplégique documenté dans plusieurs séries — erreur classique des équipes. Piège C : le test au Synacthène de routine pour guider le sevrage n'est plus recommandé — les recommandations actuelles ne le préconisent pas en systématique. Piège D : la transition vers la prednisone orale sur 3 semaines n'a pas de base dans les recommandations du choc septique et correspond aux schémas de corticothérapie prolongée du choc vasoplégique post-chirurgie cardiaque — contexte différent."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Homme 61 ans, choc septique sur pyélonéphrite E. coli BLSE, introduit sous angiotensine II (GIAPREZA®) depuis 6 h après échec noradrénaline + vasopressine + hydrocortisone. À H24, PAM 72 mmHg sous ATⅡ 35 ng/kg/min. Vous notez un œdème du mollet gauche avec douleur.",
+        "question": "Quel risque spécifique à l'angiotensine II explique ce tableau et quelle est la prophylaxie indispensable ?",
+        "options": {
+          "A": "Thrombopénie induite par l'héparine (TIH) — arrêt immédiat de l'anticoagulation et switch fondaparinux",
+          "B": "Thrombose veineuse profonde — risque thromboembolique accru lié à l'ATⅡ (stimulation PAI-1, activation SRAA) — thromboprophylaxie systématique dès l'introduction",
+          "C": "Ischémie du membre inférieur par effet vasoconstricteur artériel de l'ATⅡ — réduire immédiatement la dose à 5 ng/kg/min",
+          "D": "Réaction anaphylactique retardée à la protéine recombinante — bilan immunologique et arrêt définitif"
+        },
+        "correct": "B",
+        "explanation": "L'angiotensine II augmente le risque thrombo-embolique via plusieurs mécanismes : stimulation de la production de PAI-1 (inhibiteur du plasminogène), activation du SRAA, effet pro-thrombotique direct sur les plaquettes et l'endothélium. Dans ATHOS-3, l'incidence de TVP/EP était significativement plus élevée dans le groupe ATⅡ. La thromboprophylaxie (HBPM ou HNF) est donc obligatoire dès l'introduction, sauf contre-indication formelle. Piège A : la TIH est une complication de l'héparine, non de l'ATⅡ elle-même — distraction plausible mais contexte incorrect. Piège C : l'ATⅡ peut théoriquement provoquer une ischémie digitale, mais la TVP est le risque documenté dans les essais, et réduire à 5 ng/kg/min (dose infra-thérapeutique) n'est pas la réponse appropriée. Piège D : les réactions anaphylactiques à GIAPREZA® existent mais sont rares et cette présentation (œdème mollet 24h après introduction) est typique d'une TVP."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Interne en réanimation, vous discutez avec votre chef du choix entre hydrocortisone seule vs hydrocortisone + fludrocortisone dans le choc septique sévère (noradrénaline 0,4 µg/kg/min).",
+        "question": "Quelle est la position actuelle des recommandations SSC 2021 sur l'ajout de fludrocortisone à l'hydrocortisone dans le choc septique ?",
+        "options": {
+          "A": "L'association hydrocortisone + fludrocortisone 50 µg/j est recommandée en grade fort sur la base d'APROCCHSS 2018",
+          "B": "La fludrocortisone n'est pas recommandée en routine ; son bénéfice additionnel reste incertain en raison des résultats divergents d'ADRENAL (sans fludrocortisone) et d'APROCCHSS (avec fludrocortisone)",
+          "C": "La fludrocortisone est contre-indiquée en choc septique en raison du risque d'hypernatrémie et de surcharge hydro-sodée",
+          "D": "L'hydrocortisone est recommandée sans fludrocortisone car cette dernière n'a aucune activité glucocorticoïde utile dans ce contexte"
+        },
+        "correct": "B",
+        "explanation": "SSC 2021 ne recommande pas l'ajout systématique de fludrocortisone (suggestion conditionnelle contre, grade faible). La divergence entre ADRENAL (hydrocortisone seule, pas de bénéfice mortalité) et APROCCHSS (hydrocortisone + fludrocortisone, réduction mortalité) ne permet pas de conclure que la fludrocortisone est indispensable, car les deux études diffèrent aussi par la sévérité des patients et d'autres critères. Piège A : la recommandation SSC 2021 sur la fludrocortisone est de grade FAIBLE et de sens incertain/contre — pas de grade fort. Piège C : la contre-indication n'est pas absolue ; la fludrocortisone peut être discutée en cas d'hypoaldostéronisme documenté. Piège D : la fludrocortisone a bien une activité glucocorticoïde (partielle) et surtout minéralocorticoïde — la justification de la réponse D est pharmacologiquement incorrecte."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Homme 48 ans, choc septique sous noradrénaline 0,45 µg/kg/min. Votre chef propose d'ajouter de la dopamine à faible dose (2 µg/kg/min) pour 'effet dopaminergique rénoprotecteur'.",
+        "question": "Quelle est la réponse la plus appropriée à cette proposition, fondée sur les données actuelles ?",
+        "options": {
+          "A": "Approche raisonnable : la dopamine à 2 µg/kg/min améliore le débit sanguin rénal et réduit l'incidence d'AKI en choc septique — données DOPAMINE (ANZICS 2000)",
+          "B": "La dopamine à faible dose est inefficace comme rénoprotecteur (étude ANZICS 2000) et augmente le risque d'arythmies et la mortalité vs noradrénaline (De Backer NEJM 2010) — non recommandée",
+          "C": "La dopamine peut être ajoutée uniquement si FEVG < 40 % (effet inotrope β₁) mais est contre-indiquée si FEVG conservée",
+          "D": "La dopamine à 2 µg/kg/min est recommandée en association à la noradrénaline pour la protection splanchnique selon SSC 2021"
+        },
+        "correct": "B",
+        "explanation": "L'effet rénoprotecteur de la 'dose dopaminergique' est un mythe réfuté par l'essai ANZICS 2000 (Bellomo et al.) qui n'a montré aucun bénéfice rénal de la dopamine faible dose vs placebo. L'étude De Backer (NEJM 2010) a démontré une surmortalité (sous-groupe choc septique) et significativement plus d'arythmies sous dopamine vs noradrénaline. SSC 2021 recommande formellement de ne pas utiliser la dopamine en routine (grade fort). Piège A : l'étude ANZICS 2000 est exactement celle qui a RÉFUTÉ ce concept — l'inverse de ce qu'affirme la proposition. Piège C : même dans la dysfonction VG, la dobutamine (non la dopamine) est le premier choix inotrope selon SSC 2021. Piège D : cette affirmation est fausse — SSC 2021 recommande explicitement CONTRE la dopamine."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Femme 66 ans, choc septique réfractaire, noradrénaline 0,9 µg/kg/min + vasopressine 0,03 U/min + hydrocortisone 200 mg/j. À H36, elle développe une douleur abdominale diffuse, distension abdominale, lactate passant de 3 à 7 mmol/L en 2 h.",
+        "question": "Quel diagnostic doit être suspecté en priorité et quelle est la démarche immédiate ?",
+        "options": {
+          "A": "Iléus paralytique sous opioïdes — réévaluer l'analgésie et introduire de la néostigmine si besoin",
+          "B": "Ischémie mésentérique aiguë secondaire aux vasopresseurs à forte dose — réduire en priorité la vasopressine, TDM abdominal en urgence, avis chirurgical",
+          "C": "Colite pseudomembraneuse à Clostridioides difficile — prélèvements coprocultures, vancomycine orale urgente",
+          "D": "Syndrome du compartiment abdominal — mesure de la pression intra-abdominale par voie vésicale, décompression chirurgicale si > 20 mmHg"
+        },
+        "correct": "B",
+        "explanation": "La triade douleur abdominale + distension + remontée brutale du lactate (doublement en 2 h) sous vasopresseurs à forte dose (noradrénaline + vasopressine) doit faire évoquer en priorité une ischémie mésentérique aiguë. La vasopressine est particulièrement vasoconstrictrice sur la circulation splanchnique via V1a. La démarche : réduction immédiate de la vasopressine (premier geste — ne pas attendre), TDM abdomino-pelvien avec injection en urgence (si instabilité permet), avis chirurgical viscéral. Piège A : l'iléus n'explique pas une ascension aussi rapide du lactate — distraction classique. Piège C : la colite à C. difficile ne provoque pas une telle ascension du lactate en 2 heures et le contexte sous vasopresseurs oriente davantage vers l'ischémie. Piège D : le syndrome du compartiment peut coexister mais ne constitue pas le premier diagnostic à évoquer devant ce tableau dynamique sous vasopresseurs ; de plus la PIA n'est pas le geste prioritaire avant le TDM et l'évaluation chirurgicale de l'ischémie."
+      }
+    ]
   }
 ]
