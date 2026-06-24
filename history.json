@@ -9250,5 +9250,362 @@
         "explanation": "La triade douleur abdominale + distension + remontée brutale du lactate (doublement en 2 h) sous vasopresseurs à forte dose (noradrénaline + vasopressine) doit faire évoquer en priorité une ischémie mésentérique aiguë. La vasopressine est particulièrement vasoconstrictrice sur la circulation splanchnique via V1a. La démarche : réduction immédiate de la vasopressine (premier geste — ne pas attendre), TDM abdomino-pelvien avec injection en urgence (si instabilité permet), avis chirurgical viscéral. Piège A : l'iléus n'explique pas une ascension aussi rapide du lactate — distraction classique. Piège C : la colite à C. difficile ne provoque pas une telle ascension du lactate en 2 heures et le contexte sous vasopresseurs oriente davantage vers l'ischémie. Piège D : le syndrome du compartiment peut coexister mais ne constitue pas le premier diagnostic à évoquer devant ce tableau dynamique sous vasopresseurs ; de plus la PIA n'est pas le geste prioritaire avant le TDM et l'évaluation chirurgicale de l'ischémie."
       }
     ]
+  },
+  {
+    "date": "2026-06-24",
+    "dateStr": "mercredi 24 juin",
+    "topic": "Prise en charge peranesthésique du patient sous anticoagulation par anti-Xa direct (rivaroxaban/apixaban) nécessitant une chirurgie urgente hémorragique : évaluation du risque résiduel, stratégies d'inversion par andexanet alfa ou concentré de complexe prothrombinique 4 facteurs et gestion de l'hémostase peropératoire",
+    "cat": "Anesthésie",
+    "course": {
+      "intro": "La chirurgie urgente hémorragique chez un patient sous anti-Xa direct (rivaroxaban ou apixaban) représente un défi majeur : l'absence d'antidote universel disponible partout, la variabilité pharmacocinétique individuelle et l'urgence du contrôle hémostatique imposent une décision rapide et structurée. La maîtrise des outils d'évaluation du risque résiduel (biologie, délai dernière prise) et des stratégies d'inversion (andexanet alfa, CCP-4F) conditionne directement la morbi-mortalité peropératoire.",
+      "sections": [
+        {
+          "title": "Définitions / Rappels essentiels",
+          "items": [
+            {
+              "type": "text",
+              "content": "Le **rivaroxaban** (Xarelto®) et l'**apixaban** (Eliquis®) sont des inhibiteurs directs et réversibles du **facteur Xa libre et lié au complexe prothrombinase**. Ils n'inhibent pas la thrombine directement et n'ont pas d'effet sur le fibrinogène."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Rivaroxaban** : biodisponibilité orale ~80-100% (20mg/repas), pic plasmatique 2-4h, demi-vie 5-9h (sujet jeune) / 11-13h (sujet âgé), élimination rénale 66% (dont 33% actif)",
+                "**Apixaban** : biodisponibilité orale ~50%, pic plasmatique 1-3h, demi-vie 8-15h, élimination rénale 27% (moins dépendant de la fonction rénale)",
+                "**Anti-Xa direct (AOD)** : agissent sur le facteur Xa en se fixant de façon compétitive et réversible sur son site actif",
+                "**Chirurgie urgente hémorragique** : urgence chirurgicale < 6h imposant une décision peropératoire sans délai possible d'élimination du médicament",
+                "**CCP-4F** (Concentré de Complexe Prothrombinique 4 facteurs) : contient FII, FVII, FIX, FX + protéines C et S (ex : Kaskadil®, Beriplex®, Octaplex®)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE : Le TCA et le TP/INR sont INSENSIBLES ou peu fiables pour quantifier l'activité anticoagulante des anti-Xa directs. Un INR normal ou sub-normal n'exclut pas une activité anti-Xa significative. Seule l'activité anti-Xa spécifique calibrée pour l'AOD concerné est valide."
+            },
+            {
+              "type": "formula",
+              "content": "Seuils d'activité anti-Xa résiduelle :\n- Risque hémorragique chirurgical faible : < 30 ng/mL\n- Risque hémorragique chirurgical élevé : < 30 ng/mL (objectif identique mais décision plus urgente)\n- Seuil de non-inversion si délai > 5 demi-vies et activité < 30 ng/mL : chirurgie possible sans inversion spécifique"
+            }
+          ]
+        },
+        {
+          "title": "Physiopathologie / Mécanismes",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'inhibition du facteur Xa bloque la génération de **thrombine** via les voies intrinsèque et extrinsèque, en inhibant le **complexe prothrombinase** (FXa/FVa). La génération de thrombine est ainsi réduite de façon dose-dépendante, altérant la formation du clou de fibrine définitif."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Test de génération de thrombine (TGT)** : reflète fidèlement l'effet anticoagulant mais non disponible en urgence clinique",
+                "**Résistance aux CCP-4F** : les CCP-4F inversent l'effet en restaurant la génération de thrombine par excès de substrat (FXa de remplacement), mais ne déplacent pas l'AOD de son site de liaison — mécanisme indirect par saturation compétitive",
+                "**Andexanet alfa** : FXa recombinant modifié (inactif catalytiquement, sans domaine transmembranaire), séquestre l'AOD par liaison directe à forte affinité, réduisant l'AOD libre disponible",
+                "**Hémodilution peropératoire** : aggrave la coagulopathie en diluant les facteurs restants déjà partiellement inhibés",
+                "**Hypothermie et acidose** : réduisent l'activité enzymatique des facteurs de coagulation, aggravant l'effet fonctionnel de l'anticoagulation résiduelle — triade létale"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE MÉCANISTIQUE : L'andexanet alfa séquestre également l'héparine non fractionnée et les HBPM (il est un leurre de FXa), ce qui peut réduire transitoirement toute anticoagulation anti-Xa concomitante. Il séquestre aussi le TFPI (Tissue Factor Pathway Inhibitor), créant un état prothrombotique résiduel — risque thrombo-embolique post-inversion majoré."
+            },
+            {
+              "type": "text",
+              "content": "La **pharmacocinétique** des AOD étant prévisible, l'estimation du taux résiduel à partir du délai depuis la dernière prise et de la fonction rénale (DFG) permet une première stratification du risque avant le dosage biologique."
+            }
+          ]
+        },
+        {
+          "title": "Évaluation du risque résiduel / Diagnostic",
+          "items": [
+            {
+              "type": "text",
+              "content": "L'évaluation repose sur trois axes complémentaires : **l'anamnèse pharmacologique**, **la biologie spécifique** et **l'estimation clinique du saignement**. Ces informations doivent être obtenues simultanément, en parallèle de la prise en charge initiale."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Anamnèse** : nom exact de l'AOD, posologie, heure de la dernière prise (vérifier ordonnance + blister), indication (FA, TVP/EP — doses différentes pour apixaban), observance, automédication associée (AINS, antiagrégants)",
+                "**Fonction rénale** : DFGe (CKD-EPI) — clairance rénale accélère l'élimination, insuffisance rénale prolonge la demi-vie (surtout rivaroxaban)",
+                "**Dosage anti-Xa calibré AOD** : examen de référence — anti-Xa spécifique rivaroxaban ou anti-Xa spécifique apixaban (calibrations différentes, non interchangeables)",
+                "**Tests standards** : TP/TCA — informatifs uniquement en tendance ; rivaroxaban allonge légèrement le TCA et peut allonger le TP ; apixaban a moins d'effet sur TP/TCA",
+                "**Viscoélastométrie (ROTEM/TEG)** : EXTEM/FIBTEM utiles pour guider la transfusion, mais ne quantifient pas spécifiquement l'effet AOD — utiliser avec dosage anti-Xa en parallèle",
+                "**Score HEMORR²HAGES ou HAS-BLED** : non pertinents en urgence chirurgicale, remplacés par l'évaluation directe du saignement peropératoire"
+              ]
+            },
+            {
+              "type": "formula",
+              "content": "Estimation temporelle simplifiée :\n- Rivaroxaban 20mg/J : délai > 24h + DFG normal → activité probable < 30 ng/mL\n- Apixaban 5mg x2/J : délai > 24h + DFG normal → activité probable < 30 ng/mL\n- Règle des 5 demi-vies : élimination > 97% de la dose → rivaroxaban ~55-65h, apixaban ~60-75h (sujet âgé)\n- En urgence : si délai < 12h depuis dernière prise → dosage anti-Xa OBLIGATOIRE avant décision"
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE DIAGNOSTIQUE : Un patient sous apixaban pour FA avec DFG < 30 mL/min (critère de demi-dose) peut avoir une demi-vie prolongée à > 17h. Ne pas se fier uniquement au délai standard — toujours intégrer la fonction rénale et l'âge dans l'estimation."
+            },
+            {
+              "type": "formula",
+              "content": "Interprétation activité anti-Xa calibrée AOD :\n- < 30 ng/mL : risque hémorragique AOD faible → chirurgie envisageable sans inversion spécifique\n- 30–100 ng/mL : zone intermédiaire → peser bénéfice/risque inversion selon urgence et type chirurgie\n- > 100 ng/mL : activité significative → inversion recommandée si chirurgie hémorragique urgente\n- > 200 ng/mL : activité élevée → inversion formellement indiquée"
+            }
+          ]
+        },
+        {
+          "title": "Stratégie de prise en charge peranesthésique",
+          "items": [
+            {
+              "type": "text",
+              "content": "La prise en charge repose sur une **approche multimodale et séquentielle** : optimisation des mesures générales, choix de l'agent d'inversion selon disponibilité et indication, puis gestion hémodynamique et hémostatique peropératoire."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Mesures générales immédiates** : contrôle de la source de saignement chirurgical (priorité absolue), réchauffement actif (T° cible > 35°C), correction acidose (pH > 7,20), calcium ionisé > 1,1 mmol/L",
+                "**Acide tranexamique** : systématique si saignement chirurgical, 1g IV en 10 min puis 1g sur 8h (ou protocole institutionnel) — efficace indépendamment de l'anticoagulation résiduelle",
+                "**Transfusion** : GR si Hb < 7-8 g/dL (< 10 g/dL si cardiopathie ischémique), PFC si rapport PFC/CGR ≥ 1:2 en contexte de transfusion massive, fibrinogène si fibrinogénémie < 1,5-2 g/L"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "**Andexanet alfa (Ondexxya®)** : antidote spécifique des anti-Xa directs (rivaroxaban, apixaban) et indirects (HBPM, fondaparinux). Approuvé EMA 2019, AMM pour saignements menaçant le pronostic vital ou chirurgie urgente hémorragique."
+            },
+            {
+              "type": "formula",
+              "content": "Posologie andexanet alfa — schéma dépendant du délai et de la dose d'AOD :\n\nRivaroxaban ≤ 10mg OU Apixaban ≤ 5mg ET dernière prise > 8h :\n→ Dose faible : bolus 400mg IV en 15-30 min + perfusion 480mg sur 2h (4mg/min)\n\nRivaroxaban > 10mg OU dose inconnue OU dernière prise ≤ 8h :\n→ Dose forte : bolus 800mg IV en 15-30 min + perfusion 960mg sur 2h (8mg/min)\n\nApixaban > 5mg OU dose inconnue OU dernière prise ≤ 8h :\n→ Dose forte : bolus 800mg IV en 15-30 min + perfusion 960mg sur 2h (8mg/min)\n\nONDEXXYA non disponible → CCP-4F en alternative"
+            },
+            {
+              "type": "text",
+              "content": "**CCP-4F (Concentré de Complexe Prothrombinique 4 facteurs)** : alternative validée en l'absence d'andexanet alfa ou en cas d'indisponibilité. Mécanisme indirect par restauration de la génération de thrombine par excès de substrat."
+            },
+            {
+              "type": "formula",
+              "content": "Posologie CCP-4F pour inversion AOD anti-Xa :\n- Dose recommandée : 25-50 UI/kg IV (dose fixe 2000 UI souvent utilisée en pratique)\n- Recommandation SFAR 2021 : 25 UI/kg si activité anti-Xa modérée, 50 UI/kg si activité élevée ou chirurgie à très haut risque hémorragique\n- Dose maximale : ne pas dépasser 5000 UI par administration\n- Contrôle biologique 30-60 min après : activité anti-Xa + TP/TCA\n- Possibilité de 2e dose si persistance activité > 100 ng/mL (décision collégiale)"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Choix andexanet alfa vs CCP-4F** : andexanet alfa préféré si disponible (inversion spécifique, niveau de preuve plus élevé pour AOD anti-Xa) ; CCP-4F si andexanet non disponible ou coût/contrainte logistique",
+                "**Facteur VIIa recombinant (rFVIIa)** : NON recommandé en première intention pour inversion AOD (absence de preuve, risque thrombotique élevé) — réservé à l'échec des autres stratégies en extrême urgence",
+                "**Hémodialyse** : inefficace pour éliminer les AOD anti-Xa (forte liaison protéique : rivaroxaban 92-95%, apixaban 87%)",
+                "**Charbon activé** : utile si ingestion < 2h (intoxication/surdosage récent), inefficace au-delà",
+                "**Protamine** : INEFFICACE sur les anti-Xa directs (spécifique héparine/HBPM uniquement)",
+                "**Plasma frais congelé** : apport facteurs insuffisant pour compenser inhibition anti-Xa directe, non recommandé en première intention pour inversion"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE THÉRAPEUTIQUE MAJEUR : La protamine est inefficace sur les AOD anti-Xa directs. Son administration est une erreur grave sans bénéfice et avec risque d'effets indésirables (hypotension, bronchospasme). Elle reste indiquée UNIQUEMENT pour reverser l'héparine non fractionnée concomitante."
+            },
+            {
+              "type": "text",
+              "content": "**Monitorage peropératoire** : la viscoélastométrie (ROTEM/TEG) guide la transfusion en temps réel mais ne permet pas de quantifier spécifiquement l'effet AOD. L'activité anti-Xa calibrée (prélèvements répétés à H0, H1, H3) permet de suivre l'efficacité de l'inversion."
+            },
+            {
+              "type": "formula",
+              "content": "Protocole de transfusion massive (ratio recommandé en hémorragie massive) :\n- CGR : PFC : CP = 1 : 1 : 1 (recommandation SFAR/SRLF)\n- Fibrinogène si < 1,5 g/L : 3-4g IV (concentré de fibrinogène)\n- Plaquettes si < 50 G/L en saignement actif (< 100 G/L si neurochirurgie)\n- Calcium : 1g CaCl2 IV / 4 CGR transfusés"
+            }
+          ]
+        },
+        {
+          "title": "Complications et leur gestion",
+          "items": [
+            {
+              "type": "text",
+              "content": "Les complications spécifiques de la prise en charge sont dominées par deux risques opposés : le **saignement persistant** (inversion insuffisante) et les **événements thrombo-emboliques** (inversion excessive ou effet rebond pro-thrombotique)."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Effet rebond AOD** : après andexanet alfa, rebond de l'activité anti-Xa possible à H2-H4 par redistribution de l'AOD depuis les tissus — surveillance biologique obligatoire en SSPI/réanimation",
+                "**Événements thrombo-emboliques post-andexanet** : incidence ~10% à J30 dans l'étude ANNEXA-4 (AVC ischémique, EP, TVP, IDM) — séquestration du TFPI et état hypercoagulable résiduel",
+                "**Thrombose sur CCP-4F** : risque thrombo-embolique > héparine non fractionnée (contient FII activé en petite quantité) — surveillance ECG, signes de TVP/EP",
+                "**CIVD** : possible si chirurgie contaminée, choc hémorragique prolongé ou libération massive de facteur tissulaire — diagnostic par fibrinogène, D-dimères, plaquettes en série",
+                "**Saignement persistant malgré inversion** : évoquer coagulopathie dilutionnelle, thrombopénie, hypofibrinogénémie, hypothermie résiduelle, acidose — traitement ciblé par viscoélastométrie",
+                "**Réintroduction de l'anticoagulation** : planification précoce dès J1-J3 post-opératoire selon risque thrombotique (FA à haut risque embolique, TVP récente < 1 mois) — relai HBPM thérapeutique ou réintroduction AOD selon chirurgien"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "PIÈGE POST-OPÉRATOIRE : Ne pas négliger la réintroduction de l'anticoagulation. Chez un patient en FA avec score CHA₂DS₂-VASc ≥ 4, le risque embolique sans anticoagulation dépasse souvent le risque hémorragique chirurgical à J2-J3. La fenêtre sans anticoagulation doit être la plus courte possible et discutée avec le chirurgien."
+            }
+          ]
+        },
+        {
+          "title": "Recommandations clés avec grades et années",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "**SFAR 2021 — Recommandations formalisées d'experts sur les agents hémostatiques** : CCP-4F 25-50 UI/kg recommandé pour inversion AOD anti-Xa en chirurgie urgente si andexanet non disponible (Grade 2+, accord fort)",
+                "**ESA/ESAIC 2023 — Guidelines on perioperative bleeding management** : andexanet alfa recommandé pour inversion rivaroxaban/apixaban avant chirurgie urgente à haut risque hémorragique (Grade 1C) ; CCP-4F alternative acceptable (Grade 2C)",
+                "**ANSM/HAS 2022 — Bon usage des anticoagulants oraux directs** : rappel sur dosage anti-Xa calibré AOD comme seul test valide de quantification ; TP/TCA insuffisants",
+                "**ANNEXA-4 (Connolly et al., NEJM 2019)** : andexanet alfa réduit l'activité anti-Xa de 92% (rivaroxaban) et 93% (apixaban) — hémostase excellente/bonne dans 82% des cas ; événements thrombo-emboliques 10% à J30",
+                "**ESC 2021 — Guidelines on AF management** : réintroduction AOD dès J1-J2 post-op si hémostase stable et risque embolique élevé (Grade IIa B)",
+                "**CRASH-3 / MATTERs** : acide tranexamique recommandé systématiquement en traumatologie hémorragique (Grade 1A) — applicable aux patients sous AOD",
+                "**SFAR/SRLF 2021 — Transfusion en réanimation** : protocole de transfusion massive CGR:PFC:CP 1:1:1, fibrinogène si < 1,5 g/L (Grade 2+)"
+              ]
+            },
+            {
+              "type": "warning",
+              "content": "ATTENTION RÉGLEMENTAIRE : L'andexanet alfa (Ondexxya®) dispose d'une AMM européenne (2019) mais son accès en France reste limité par des contraintes de disponibilité hospitalière et de coût élevé (~15 000–25 000€ par traitement). Vérifier systématiquement la disponibilité en pharmacie avant de le prescrire comme première intention."
+            }
+          ]
+        }
+      ],
+      "keypoints": [
+        "**Dosage anti-Xa calibré AOD** : seul examen biologique valide pour quantifier l'activité résiduelle — TP/TCA insuffisants et potentiellement trompeurs ; seuil décisionnel < 30 ng/mL pour chirurgie sans inversion",
+        "**Andexanet alfa** : antidote spécifique de premier choix si disponible — dose faible (bolus 400mg + 480mg/2h) si rivaroxaban ≤ 10mg ou apixaban ≤ 5mg et prise > 8h ; dose forte (bolus 800mg + 960mg/2h) sinon ; surveillance rebond à H2-H4",
+        "**CCP-4F 25-50 UI/kg** : alternative validée si andexanet non disponible — mécanisme indirect par restauration de la génération de thrombine ; risque thrombo-embolique à surveiller",
+        "**Protamine et rFVIIa NON indiqués** en première intention : protamine inefficace sur anti-Xa directs ; rFVIIa réservé à l'échec thérapeutique en extrême urgence avec risque thrombotique élevé",
+        "**Triade létale à corriger impérativement** : hypothermie (T° > 35°C), acidose (pH > 7,20), hypocalcémie (Ca²⁺ > 1,1 mmol/L) — optimisation systématique en parallèle de l'inversion pharmacologique"
+      ],
+      "references": [
+        "Connolly SJ et al. — Full Study Report of Andexanet Alfa for Bleeding Associated with Factor Xa Inhibitors (ANNEXA-4) — NEJM 2019;380:1326-1335",
+        "Steffel J et al. — 2021 European Heart Rhythm Association Practical Guide on the Use of Non-Vitamin K Antagonist Oral Anticoagulants in Patients with Atrial Fibrillation — EP Europace 2021;23:1612-1676",
+        "Kozek-Langenecker SA et al. — Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology and Intensive Care (ESAIC) 2023 — EJA 2023;40:226-304",
+        "SFAR — Recommandations formalisées d'experts : Agents hémostatiques en anesthésie-réanimation — SFAR 2021",
+        "Hindricks G et al. — 2020 ESC Guidelines for the diagnosis and management of atrial fibrillation — Eur Heart J 2021;42:373-498",
+        "HAS/ANSM — Bon usage des anticoagulants oraux directs (AOD) — Mise à jour 2022",
+        "Franchini M, Liumbruno GM — Andexanet alfa for the reversal of factor Xa inhibitor anticoagulation — Blood Transfus 2022;20:253-261",
+        "Godier A et al. — Prise en charge des surdosages en anticoagulants, des situations à risque hémorragique et des accidents hémorragiques chez les patients traités par AOD — Propositions du GIHP 2021"
+      ]
+    },
+    "questions": [
+      {
+        "num": 1,
+        "difficulty": "expert",
+        "context": "Un patient de 78 ans, 70 kg, DFG 35 mL/min, sous apixaban 5mg x2/J pour FA (CHA₂DS₂-VASc = 5), présente une hémorragie digestive haute massive active. Dernière prise d'apixaban il y a 6h. L'endoscopie urgente est décidée dans 30 min. Quel est l'examen biologique le plus pertinent pour évaluer le risque hémorragique résiduel lié à l'apixaban ?",
+        "question": "Parmi les examens suivants, lequel permet de quantifier de façon fiable l'activité anticoagulante résiduelle de l'apixaban dans ce contexte ?",
+        "options": {
+          "A": "TCA (temps de céphaline activée) avec ratio TCA patient/TCA témoin",
+          "B": "Activité anti-Xa calibrée pour l'apixaban (technique chromogénique spécifique)",
+          "C": "INR / TP exprimé en pourcentage",
+          "D": "Activité anti-Xa calibrée pour les HBPM (anti-Xa anti-héparine standard)"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : seul le dosage anti-Xa calibré avec un étalon spécifique à l'apixaban permet une quantification fiable et précise de l'activité résiduelle. Piège A : le TCA est peu sensible à l'apixaban (moins que pour le rivaroxaban), un TCA normal ou peu allongé n'exclut pas une activité anticoagulante significative. Piège C : l'INR/TP est peu affecté par les anti-Xa directs et ne reflète pas leur activité — valeur normale trompeuse. Piège D : les calibrations anti-Xa HBPM utilisent un étalon enoxaparine ou héparine, ce qui donne des valeurs faussement basses ou non interprétables pour l'apixaban — l'erreur de calibration est un piège classique et grave."
+      },
+      {
+        "num": 2,
+        "difficulty": "expert",
+        "context": "Un patient de 65 ans sous rivaroxaban 20mg/J (prise 4h avant l'accident), victime d'un traumatisme crânien grave (GCS 8, hématome extradural à l'imagerie), nécessite une trépanation en urgence immédiate. L'activité anti-Xa rivaroxaban revient à 180 ng/mL. L'andexanet alfa est disponible. Quelle posologie d'andexanet alfa devez-vous administrer ?",
+        "question": "Quelle est la posologie correcte d'andexanet alfa dans ce contexte ?",
+        "options": {
+          "A": "Bolus 400mg IV sur 15 min, puis 480mg sur 2h",
+          "B": "Bolus 800mg IV sur 15-30 min, puis 960mg sur 2h",
+          "C": "Bolus 800mg IV sur 15-30 min, sans perfusion d'entretien",
+          "D": "Bolus 400mg IV sur 15 min, puis 960mg sur 2h"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la dose forte d'andexanet alfa (bolus 800mg + perfusion 960mg/2h) est indiquée car le rivaroxaban est à 20mg (dose > 10mg) ET la dernière prise est < 8h — les deux critères orientent vers la dose forte. Piège A : la dose faible (400mg + 480mg) n'est appropriée que si rivaroxaban ≤ 10mg ET prise > 8h — conditions non réunies ici. Piège C : l'administration du seul bolus sans perfusion d'entretien est insuffisante car le bolus a une demi-vie courte (~5 min) ; sans perfusion, l'andexanet est rapidement éliminé et l'AOD libre peut reprendre son activité. Piège D : ce schéma mixte (dose faible bolus + dose forte perfusion) n'existe pas dans les recommandations."
+      },
+      {
+        "num": 3,
+        "difficulty": "expert",
+        "context": "Aux urgences, une patiente de 82 ans sous apixaban 2,5mg x2/J (prise il y a 14h), DFG 28 mL/min, doit être opérée en urgence d'une fracture du col du fémur avec saignement peropératoire estimé élevé. L'andexanet alfa n'est pas disponible dans votre établissement. L'activité anti-Xa apixaban est de 65 ng/mL.",
+        "question": "Quelle est la stratégie d'inversion pharmacologique la plus appropriée dans ce contexte ?",
+        "options": {
+          "A": "Plasma Frais Congelé 10-15 mL/kg IV",
+          "B": "Protamine 50mg IV lente",
+          "C": "CCP-4F 25-50 UI/kg IV",
+          "D": "rFVIIa (facteur VIIa recombinant) 90 µg/kg IV"
+        },
+        "correct": "C",
+        "explanation": "Réponse C correcte : le CCP-4F à 25-50 UI/kg est l'alternative validée à l'andexanet alfa pour l'inversion des anti-Xa directs en urgence chirurgicale. À 65 ng/mL avec chirurgie hémorragique, l'inversion est indiquée. Piège B : la protamine est INEFFICACE sur les inhibiteurs directs du FXa (elle neutralise l'héparine/HBPM par interaction ionique, mécanisme inapplicable aux AOD). Piège A : le PFC apporte insuffisamment de facteurs de coagulation pour compenser l'inhibition directe du FXa — les concentrations de facteurs dans le PFC sont trop faibles et le volume nécessaire trop important. Piège D : le rFVIIa n'est pas recommandé en première intention en raison du risque thrombo-embolique élevé et de l'absence de données solides pour cette indication — réservé aux impasses thérapeutiques."
+      },
+      {
+        "num": 4,
+        "difficulty": "expert",
+        "context": "Deux heures après administration d'andexanet alfa dose forte pour inversion de rivaroxaban (20mg/J, activité initiale 220 ng/mL), le contrôle de l'activité anti-Xa montre une remontée à 95 ng/mL. Le patient est en SSPI avec saignement peropératoire contrôlé chirurgicalement mais reprise hémorragique digestive.",
+        "question": "Quel phénomène explique cette remontée de l'activité anti-Xa et quelle est la conduite à tenir ?",
+        "options": {
+          "A": "Échec primaire de l'andexanet alfa — administrer CCP-4F 50 UI/kg en remplacement",
+          "B": "Effet rebond par redistribution de l'AOD depuis les compartiments tissulaires — surveillance biologique rapprochée et réévaluation thérapeutique selon clinique",
+          "C": "Interaction médicamenteuse avec l'acide tranexamique administré en peropératoire",
+          "D": "Dégradation de l'andexanet alfa par protéolyse plasmatique — réadministrer immédiatement une 2e dose forte"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : l'effet rebond de l'activité anti-Xa à H2-H4 après andexanet alfa est un phénomène bien documenté (ANNEXA-4), lié à la redistribution du rivaroxaban depuis les compartiments tissulaires périphériques vers le plasma une fois l'andexanet éliminé (demi-vie andexanet ~60 min après arrêt de la perfusion). La conduite est la surveillance biologique rapprochée et la décision thérapeutique selon l'état clinique. Piège A : il ne s'agit pas d'un échec primaire — l'inversion a bien eu lieu initialement. L'ajout de CCP-4F n'est pas systématique et doit être pondéré. Piège C : l'acide tranexamique n'a aucune interaction avec l'andexanet alfa ou le rivaroxaban. Piège D : la dégradation protéolytique n'est pas le mécanisme du rebond, et la réadministration systématique d'une 2e dose forte sans évaluation clinique est inappropriée et à risque thrombotique."
+      },
+      {
+        "num": 5,
+        "difficulty": "expert",
+        "context": "Patient de 58 ans, 80 kg, traumatisé grave avec hémorragie abdominale massive, sous rivaroxaban 15mg/J. Pas de dosage anti-Xa disponible dans l'immédiat (< 30 min). Décision de laparotomie exploratrice en urgence immédiate. Quelle est la dose de CCP-4F à administrer en urgence selon les recommandations SFAR 2021 si vous décidez d'inverser sans attendre le dosage ?",
+        "question": "En l'absence de dosage anti-Xa disponible et en contexte de chirurgie hémorragique urgente sous rivaroxaban, quelle posologie de CCP-4F est recommandée ?",
+        "options": {
+          "A": "10 UI/kg IV (dose minimale prudente)",
+          "B": "25 UI/kg IV si situation à risque modéré, 50 UI/kg IV si risque élevé (max 5000 UI)",
+          "C": "50 UI/kg IV systématiquement, sans adaptation au poids au-delà de 70 kg",
+          "D": "2000 UI dose fixe quelle que soit la situation"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : selon les recommandations SFAR 2021 et les guidelines ESA/ESAIC 2023, la dose de CCP-4F est de 25 UI/kg si risque modéré et 50 UI/kg si risque élevé, avec un maximum de 5000 UI par administration. En traumatologie hémorragique massive, la dose de 50 UI/kg est appropriée. Piège A : 10 UI/kg est une dose insuffisante pour une inversion efficace dans ce contexte, sans fondement dans les recommandations actuelles. Piège C : la dose n'est pas fixe à 50 UI/kg sans adaptation — la pondéralité est intégrée dans le calcul avec une dose maximale de 5000 UI (au-delà de 100 kg, on plafonne). Piège D : une dose fixe de 2000 UI (= 25 UI/kg pour 80 kg) correspond à la fourchette basse — sous-dose en contexte de traumatisme hémorragique massif à risque très élevé."
+      },
+      {
+        "num": 6,
+        "difficulty": "expert",
+        "context": "En peropératoire d'une résection hépatique urgente pour rupture de CHC chez un patient sous apixaban, la viscoélastométrie ROTEM montre : EXTEM CT allongé à 120s (N < 80s), MCF 42mm (N > 50mm), FIBTEM MCF 8mm (N > 10mm). L'activité anti-Xa apixaban est de 55 ng/mL.",
+        "question": "Quelle est l'interprétation la plus complète du ROTEM et quelle est la priorité thérapeutique ?",
+        "options": {
+          "A": "Coagulopathie de dilution pure — priorité : PFC en ratio 1:1 avec CGR",
+          "B": "Hypofibrinogénémie avec déficit en facteurs de coagulation et activité anti-Xa résiduelle — priorité : concentré de fibrinogène 3-4g + CCP-4F 25-50 UI/kg",
+          "C": "Fibrinolyse primaire — priorité : acide tranexamique 2g IV supplémentaire",
+          "D": "Thrombopénie peropératoire — priorité : transfusion de concentrés plaquettaires"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : EXTEM CT allongé = déficit en facteurs de coagulation (voie extrinsèque + communes) + effet AOD résiduel ; MCF abaissé = déficit de polymérisation/consistance du caillot ; FIBTEM MCF 8mm = hypofibrinogénémie (N > 10mm, traitement si < 10mm selon guidelines ESA). La combinaison oriente vers un déficit mixte : facteurs + fibrinogène + AOD résiduel. Priorité : concentré de fibrinogène ET CCP-4F. Piège A : le PFC seul est insuffisant pour corriger une hypofibrinogénémie documentée par FIBTEM et ne corrige pas l'effet AOD. Piège C : l'EXTEM CT allongé avec MCF abaissé sans anomalie du ratio MCF/MCF EXTEM ne signe pas une fibrinolyse (qui se manifesterait par une lyse du caillot = ML ou LI30 augmentés). Piège D : les plaquettes ne sont pas prioritaires ici, le ROTEM ne montre pas de tableau de thrombopénie (MCF EXTEM dépend aussi des plaquettes mais le FIBTEM oriente vers le fibrinogène)."
+      },
+      {
+        "num": 7,
+        "difficulty": "expert",
+        "context": "Un interne propose d'utiliser la protamine pour reverser l'apixaban chez un patient en hémorragie peropératoire, arguant que 'la protamine inverse tous les anticoagulants anti-Xa'.",
+        "question": "Quelle est l'affirmation EXACTE concernant l'efficacité de la protamine sur les anti-Xa directs ?",
+        "options": {
+          "A": "La protamine inverse partiellement l'apixaban et le rivaroxaban (60-70% d'efficacité) mais pas le fondaparinux",
+          "B": "La protamine est inefficace sur les inhibiteurs directs du FXa (rivaroxaban, apixaban) car son mécanisme repose sur une interaction ionique avec l'héparine, inapplicable aux petites molécules AOD",
+          "C": "La protamine inverse efficacement le rivaroxaban mais pas l'apixaban en raison de différences de liaison protéique",
+          "D": "La protamine peut être utilisée en cas d'indisponibilité de l'andexanet alfa à une dose doublée (2mg/100 UI d'anti-Xa estimées)"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la protamine neutralise l'héparine (HNF et partiellement HBPM) par interaction électrostatique entre sa charge positive et la charge négative de l'héparine — mécanisme totalement inapplicable aux AOD qui sont de petites molécules synthétiques sans charge ionique exploitable. Il n'existe aucune preuve d'efficacité de la protamine sur les anti-Xa directs. Piège A : aucune donnée ne supporte une efficacité partielle de la protamine sur rivaroxaban ou apixaban — il s'agit d'une affirmation erronée issue d'une confusion avec les HBPM (protamine ~60% efficace sur HBPM). Piège C : la différence de liaison protéique (rivaroxaban 92-95%, apixaban 87%) ne confère pas de sensibilité à la protamine — ce critère est pertinent pour l'hémodialysabilité, pas pour la protamine. Piège D : cette proposition n'a aucun fondement pharmacologique ou réglementaire — il ne faut jamais administrer de protamine hors de son indication validée."
+      },
+      {
+        "num": 8,
+        "difficulty": "expert",
+        "context": "Patient de 72 ans, sous rivaroxaban 20mg/J pour FA, opéré en urgence d'une perforation colique avec péritonite. L'activité anti-Xa rivaroxaban est de 28 ng/mL à l'induction. La chirurgie dure 3h avec pertes sanguines estimées à 1200 mL. En fin d'intervention, le chirurgien observe un saignement diffus des sutures.",
+        "question": "En dehors de l'effet AOD résiduel (activité < 30 ng/mL, a priori non significatif), quelle est la cause la plus probable du saignement diffus peropératoire persistant à évaluer en priorité ?",
+        "options": {
+          "A": "Rebond d'activité anti-Xa par redistribution tissulaire",
+          "B": "Coagulopathie multifactorielle (dilution, hypothermie, acidose, hypofibrinogénémie) à évaluer par viscoélastométrie et biologie standard",
+          "C": "Thrombopénie auto-immune induite par la chirurgie",
+          "D": "Résistance aux CCP-4F due à la présence de protéines C et S activées"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : avec une activité anti-Xa < 30 ng/mL, l'effet AOD résiduel est a priori peu significatif. En présence de pertes de 1200 mL, d'une chirurgie de 3h avec péritonite (activation de la coagulation, libération de facteur tissulaire massif), la coagulopathie peropératoire multifactorielle (dilutionnelle, hypothermie, acidose, consommation des facteurs) est de très loin la cause la plus probable. Évaluation par ROTEM + fibrinogène + plaquettes en priorité. Piège A : le rebond AOD survient après andexanet alfa — aucun andexanet n'a été administré ici, ce phénomène n'est pas applicable. Piège C : la thrombopénie auto-immune induite par la chirurgie est exceptionnelle et ne se développe pas en 3h. Piège D : il n'existe pas de phénomène de résistance aux CCP-4F lié aux protéines C/S activées dans ce contexte — affirmation inventée."
+      },
+      {
+        "num": 9,
+        "difficulty": "expert",
+        "context": "Une patiente de 67 ans sous apixaban 5mg x2/J pour EP récente (il y a 3 semaines), doit bénéficier d'une colectomie urgente pour ischémie mésentérique. L'activité anti-Xa apixaban est de 120 ng/mL. De l'andexanet alfa est administré (dose forte). En SSPI à H6 postopératoire, l'infirmière signale une douleur et gonflement du mollet droit.",
+        "question": "Quelle est la complication à évoquer en priorité et quelle est sa physiopathologie dans ce contexte ?",
+        "options": {
+          "A": "Neuropathie du nerf fibulaire par compression peropératoire — complication positionnelle sans lien avec l'andexanet",
+          "B": "Thrombose veineuse profonde sur état hypercoagulable post-andexanet alfa (séquestration TFPI + fenêtre sans anticoagulation) chez une patiente à très haut risque thrombo-embolique (EP récente)",
+          "C": "Hématome de loge postérieure par rebond AOD — indication à une 2e dose d'andexanet",
+          "D": "Infection sur cathéter veineux périphérique — débuter antibiothérapie probabiliste"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte : la TVP postopératoire est la complication thrombo-embolique classique de l'andexanet alfa (incidence ~10% à J30 dans ANNEXA-4). Le mécanisme implique : (1) séquestration du TFPI (inhibiteur de la voie du facteur tissulaire) par l'andexanet → levée d'un frein physiologique de la coagulation ; (2) fenêtre sans anticoagulation chez une patiente à très haut risque (EP à 3 semaines). Confirmation par échographie doppler urgente. Piège A : la neuropathie fibulaire positionnelle ne cause pas de gonflement diffus du mollet et n'est pas liée à l'andexanet. Piège C : un rebond AOD causerait plutôt un saignement, pas une TVP — la confusion saignement/thrombose est un piège classique. Piège D : une infection sur cathéter à H6 est possible mais le contexte d'andexanet + EP récente rend la TVP très prioritaire à exclure."
+      },
+      {
+        "num": 10,
+        "difficulty": "expert",
+        "context": "Un patient de 80 ans, 60 kg, DFG 20 mL/min, sous apixaban 2,5mg x2/J (prise il y a 10h), est admis pour fracture du bassin instable avec choc hémorragique (PAM 55 mmHg, Hb 6,5 g/dL, T° 34,8°C, pH 7,18). L'activité anti-Xa apixaban est de 78 ng/mL. Vous décidez d'administrer du CCP-4F.",
+        "question": "Parmi les mesures suivantes, laquelle NE doit PAS être négligée en parallèle de l'administration du CCP-4F dans ce contexte de choc hémorragique avec triade létale ?",
+        "options": {
+          "A": "Correction de l'hypothermie par réchauffement actif externe et interne, ciblant T° > 35°C",
+          "B": "Administration de bicarbonate de sodium systématique pour corriger l'acidose avant toute hémostase",
+          "C": "Administration de chlorure de calcium IV (1g CaCl₂) pour corriger l'hypocalcémie et restaurer la fonction coagulante",
+          "D": "Acide tranexamique 1g IV en 10 min dès l'admission (avant et indépendamment de l'inversion AOD)"
+        },
+        "correct": "B",
+        "explanation": "Réponse B correcte car c'est la MAUVAISE réponse parmi les mesures proposées : le bicarbonate de sodium en perfusion SYSTEMATIQUE n'est pas recommandé pour corriger l'acidose métabolique en hémorragie massive. La correction de l'acidose passe par le contrôle de la source de saignement et la restauration de la volémie/oxygénation. L'administration de bicarbonate peut aggraver l'hypocalcémie (chélation du Ca²⁺ par le bicarbonate), augmenter la pCO₂ tissulaire et induire une alcalose de rebond. Les mesures A, C et D sont toutes indiquées : réchauffement actif (hypothermie aggrave la coagulopathie enzymatiqu), calcium (essentiel à la coagulation, chélaté par les transfusions de culots/PFC), et acide tranexamique (preuve de niveau 1A en hémorragie traumatique). Piège classique : confondre la correction de l'acidose organique (chirurgicale) avec une correction bicarbonate aveugle, qui est contre-productive."
+      }
+    ]
   }
 ]
