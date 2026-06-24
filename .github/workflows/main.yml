@@ -1,6 +1,7 @@
 name: Quiz quotidien Anesthésie-Réanimation
 
 on:
+if: false
   schedule:
     - cron: "0 7 * * *"
   workflow_dispatch:
